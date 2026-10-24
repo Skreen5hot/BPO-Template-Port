@@ -1,0 +1,728 @@
+# Repository layout contract.
+#
+# One declaration per component, addressed by a logical id. Everything that
+# needs a path asks this file for it, so moving a file is a change here
+# rather than an edit across twenty modules.
+#
+# Carried from the Application Requirement Ontology and the Business
+# Capability Ontology, where it was worked out. Ids are stable: a scope
+# marker in a query, a group name in a report, or a reference from a test
+# survives relocation untouched.
+#
+# `role` is what a component *is*, and it carries consequences. A
+# `generated-artifact` is not hand-edited. A `third-party-reference` is
+# never redistributed. A `test-fixture` is expected to be invalid on
+# purpose and must not be loaded as if it were part of the ontology. A
+# `specification`, when a project has one, is read by the vendoring tool
+# for the upstream terms the design names.
+#
+# A `generated-artifact` must name the `generator` that writes it, or
+# declare itself `orphaned` with the reason.
+#
+# `template` says how a component relates to the template this repository
+# was made from: `owned` means the template maintains it, and
+# tools/template_status.py reports where a project has diverged from it;
+# `only` means it describes the template itself, and tools/init_project.py
+# removes it. Absent means it is the project's own from the first commit.
+#
+# Adding a file to the repository without declaring it here is a test
+# failure, in both directions: an undeclared file has no stated role, and
+# a declared component whose path does not exist is a contract describing
+# something that is not there.
+
+version: 1
+
+components:
+
+  # ---- Authored ontology -------------------------------------------
+  #
+  # One module to start. init renames it to ontology/<id>.ttl. Add a
+  # module by adding a file and a declaration here; the corpus digest and
+  # the validation ladder pick it up from its role.
+
+  - id: ontology.main
+    path: ontology/example.ttl
+    role: ontology-module
+    description: >-
+      The first module: an owl:Ontology header and nothing else until the
+      first term is written. Declared from the first commit so that term
+      is in the corpus digest and under the shapes on the day it lands.
+
+  - id: examples
+    path: examples
+    role: example-data
+    description: >-
+      Instance data the competency questions are answered against, one
+      file per scenario, in the examples namespace under the IRI base.
+      Linted with the modules; never in the corpus digest or the SHACL
+      ladder.
+
+  - id: research
+    path: research
+    role: research
+    description: >-
+      The project's own notes: summaries of sources, comparisons, the
+      reasoning before a decision. Notes, tables and bibliographies only;
+      the sources themselves go in docs/Reference, never tracked.
+
+  - id: mappings
+    path: mappings
+    role: mapping-set
+    description: >-
+      Crosswalks to other vocabularies, one SSSOM mapping set per target.
+      Checked by tools/ontology/mappings.py; never loaded into the ontology
+      graph.
+
+  - id: competency-questions
+    path: competency-questions
+    role: competency-question
+    description: >-
+      What the ontology must be able to answer: one YAML file per question,
+      with its SPARQL and the answer it must give.
+      tools/ontology/competency.py runs every answerable one.
+
+  - id: ontology.vocabulary
+    path: ontology/vocabulary.ttl
+    role: ontology-module
+    generator: tool.vocabulary
+    description: >-
+      The accepted rows of vocabulary/terms.tsv, as classes. Generated; an
+      ordinary module to every check.
+
+  - id: vocabulary.intake
+    path: vocabulary
+    role: vocabulary-intake
+    description: >-
+      Term proposals as rows, for people who do not write Turtle. Reviewed
+      in pull requests; a row is generated only once accepted and signed.
+
+  # ---- Validation ---------------------------------------------------
+
+  - id: validation.wellformedness
+    path: shapes/wellformedness_shapes.ttl
+    role: ontology-validation
+    description: >-
+      Well-formedness of an authored term, whatever module it lives in: a
+      label and a definition on every class, a prefLabel on every concept,
+      and no two values of either in the same language. Targets the
+      authored namespace only, so the vendored extracts in the same data
+      graph are never asked the question.
+
+  - id: validation.realist
+    path: shapes/realist_shapes.ttl
+    role: ontology-validation
+    description: >-
+      What a realist BFO/CCO term must be: anchored in BFO, under one
+      asserted parent, under no two disjoint categories, defined by its
+      genus, fitting the domains and ranges of the relations it is
+      restricted on; plus complete ontology headers and deprecations that
+      name a way forward.
+
+  - id: validation.annotation-profile
+    path: shapes/annotation_profile_shapes.ttl
+    role: ontology-validation
+    generator: tool.profile-shapes
+    description: >-
+      The annotations the project requires on every authored class beyond
+      a label and a definition. Generated from
+      config/annotation-profile.yaml.
+
+  - id: validation.skos
+    path: shapes/skos_shapes.ttl
+    role: ontology-validation
+    description: >-
+      The structure of the project's concept schemes: every concept in a
+      declared scheme, no broader cycles, no broader across schemes, no
+      label repeated as an altLabel, no concept that is also a class, a
+      top concept in every scheme.
+
+  # ---- Deliberately invalid ------------------------------------------
+
+  - id: fixture.wellformedness-bad-examples
+    path: shapes/wellformedness_bad_examples.ttl
+    role: test-fixture
+    description: >-
+      Cases built to break wellformedness_shapes.ttl, with positive
+      controls beside them -- including the multilingual label pair that
+      sh:maxCount 1 would have rejected, so the false positive is a test
+      rather than something somebody remembers.
+
+  - id: fixture.realist-bad-examples
+    path: shapes/realist_bad_examples.ttl
+    role: test-fixture
+    description: >-
+      Cases built to break the realist shapes and the annotation profile,
+      one per constraint, with positive controls. Validated with the
+      vendored extracts in scope, so a case can sit under a real BFO
+      category -- including the one only BFO's AllDisjointClasses, through
+      the derived disjointness file, can catch.
+
+  - id: fixture.skos-bad-examples
+    path: shapes/skos_bad_examples.ttl
+    role: test-fixture
+    description: >-
+      Cases built to break the SKOS shapes, one per constraint, with a
+      well-formed scheme as the positive control.
+
+  # ---- Documentation -------------------------------------------------
+
+  - id: docs.readme
+    path: README.md
+    role: documentation
+    description: The front door.
+
+  - id: docs.claude
+    path: CLAUDE.md
+    role: documentation
+    description: >-
+      Grounding for an agent working here: where the state and the method
+      live, what to run before committing, and what not to touch.
+
+  - id: docs.handoff
+    path: docs/HANDOFF.md
+    role: documentation
+    description: >-
+      What is actually in this repository, what is trustworthy, and what
+      is not. Dated at the commit it describes.
+
+  - id: docs.development
+    path: docs/DEVELOPMENT.md
+    role: documentation
+    template: owned
+    description: >-
+      How to set up, run the checks, add a module or a shape set, and
+      re-vendor the upstream. The conventions and the traps, separated
+      from the reasoning behind them in PROCESS.md.
+
+  - id: docs.process
+    path: docs/process/PROCESS.md
+    role: documentation
+    template: owned
+    description: >-
+      How a repository made from this template is built, and why. Carried
+      from BFO-Aligned ValueNet, where the method was worked out, through
+      ARO and the BCO.
+
+  - id: docs.governance
+    path: docs/governance
+    role: documentation
+    description: >-
+      How a term gets in, what it must be called, how it leaves, and what
+      changed -- each rule beside the check that holds it. The project's
+      own policy; the template ships defaults.
+
+  - id: tool.term-diff
+    path: tools/ontology/term_diff.py
+    role: tool
+    template: owned
+    description: >-
+      The authored terms added, removed, deprecated or changed between two
+      commits, each side read through its own layout contract. A comment on
+      every pull request; CHANGES.md in every release.
+
+  - id: docs.decisions
+    path: docs/decisions
+    role: documentation
+    description: >-
+      The decision record: the architect's acts and choices, recorded
+      verbatim and dated, each citing the digest or commit of what it
+      decided about.
+
+  - id: docs.citation
+    path: CITATION.cff
+    role: documentation
+    description: >-
+      How to cite this repository (Citation File Format). init renders the
+      project's from a skeleton.
+
+  - id: licence.project
+    path: LICENSE
+    role: project-licence
+    description: >-
+      The terms this repository is offered under. Read by the licensing
+      tool rather than assumed.
+
+  # >>> template-only
+  # ---- The template itself -------------------------------------------
+  #
+  # Present in the template repository. tools/init_project.py deletes the
+  # files and everything between the two marker lines.
+
+  - id: template.docs
+    path: docs/template
+    role: documentation
+    template: only
+    description: >-
+      About the template rather than any project: the roadmap, the
+      decisions taken building it, and the skeletons -- the README,
+      CLAUDE.md and HANDOFF a new project starts with, with
+      {{placeholders}} init fills from config/project.yaml.
+
+  - id: template.init-tests
+    path: tests/test_init_project.py
+    role: tool
+    template: only
+    description: >-
+      Runs init in throwaway copies of the template and checks each
+      describes itself. Meaningless in a project, where there is no
+      template left to initialize, so init removes it.
+  # <<< template-only
+
+  # ---- Vendored upstream ontology ------------------------------------
+  #
+  # Redistributed, unlike docs/Reference, and the difference is the
+  # licence rather than the convenience. BFO is CC BY 4.0 and CCO is
+  # BSD-3-Clause; both permit redistribution with attribution, and
+  # vendor/NOTICE.md is that attribution.
+  #
+  # A separate role from `ontology-module` on purpose. These files are not
+  # authored here and must not be counted as this repository's ontology:
+  # the corpus digest would move when an upstream pin changed, and the
+  # licensing tool would report third-party triples as project content.
+
+  - id: vendor.bfo
+    path: vendor/bfo/bfo-core-extract.ttl
+    role: vendored-ontology
+    generator: tool.vendor-upstream
+    redistributable: true
+    description: >-
+      BFO 2020 core, every term it describes, without the axioms whose
+      object is an anonymous class expression. Whole rather than seeded,
+      because BFO is small and a realist ontology answers to all of it.
+
+  - id: vendor.cco
+    path: vendor/cco/cco-extract.ttl
+    role: vendored-ontology
+    generator: tool.vendor-upstream
+    redistributable: true
+    description: >-
+      The CCO v2.0 terms this repository names, plus their named
+      ancestry. Grows as the ontology names more of CCO; the offline
+      check fails until it is rebuilt.
+
+  - id: vendor.bfo-disjointness
+    path: vendor/bfo/bfo-disjointness.ttl
+    role: vendored-ontology
+    generator: tool.vendor-upstream
+    redistributable: true
+    description: >-
+      BFO's owl:AllDisjointClasses axioms written as the pairwise
+      owl:disjointWith triples they are equivalent to. Derived, not copied:
+      the axioms are blank-node lists the extract drops, and without them a
+      class under both an independent and a dependent continuant would pass.
+
+  - id: vendor.bfo-register
+    path: vendor/bfo/bfo-register.json
+    role: vendored-register
+    generator: tool.vendor-upstream
+    redistributable: true
+    description: >-
+      Every term BFO 2020 core describes, with its labels, OWL types and
+      deprecation. What the IRI linter checks an obo: reference against.
+
+  - id: vendor.cco-register
+    path: vendor/cco/cco-register.json
+    role: vendored-register
+    generator: tool.vendor-upstream
+    redistributable: true
+    description: >-
+      Every term CCO v2.0's merged file describes in CCO's namespace, with
+      its labels -- all of CCO, not only what is vendored, so a readable
+      name like "Organization" can be matched to its opaque IRI offline.
+
+  - id: docs.vendor-notice
+    path: vendor/NOTICE.md
+    role: documentation
+    generator: tool.vendor-upstream
+    description: >-
+      Attribution for the vendored extracts, as every upstream licence
+      here requires. Generated, because an attribution file is exactly the
+      kind of document that is right when written and quietly wrong after
+      the next source is added.
+
+  - id: config.upstream-sources
+    path: config/upstream-sources.yaml
+    role: configuration
+    description: >-
+      The pins: url, commit, digest, prefix and licence for each upstream.
+      The url names the commit, so the bytes it serves cannot change.
+
+  - id: generated.upstream-extracts
+    path: config/upstream-extracts.json
+    role: generated-artifact
+    generator: tool.vendor-upstream
+    description: >-
+      What was taken from each upstream and what was left behind:
+      dropped-axiom counts, and the terms a specification names that no
+      pinned file describes.
+
+  # ---- Third-party reference material --------------------------------
+
+  - id: reference.third-party
+    path: docs/Reference
+    role: third-party-reference
+    redistributable: false
+    tracked: false
+    description: >-
+      Licensed sources the work consults: standards, frameworks, papers.
+      None is ours to publish. `tracked: false` is the load-bearing part:
+      the files may live on disk because the work needs them, and a test
+      requires them to be absent from the index. In ARO, four PDFs
+      including a paid ISO standard were committed and served publicly
+      while the README said they were not redistributed, and the history
+      had to be rewritten.
+
+  # ---- Public site -----------------------------------------------------
+  #
+  # Built by tools/site/build_site.py into _site/ (gitignored) and deployed
+  # by .github/workflows/pages.yml from the artifact the checks ran
+  # against. Nothing generated is committed. The fragments and assets are
+  # the template's; site.json is the project's own words.
+
+  - id: site.pages
+    path: site/pages
+    role: site-source
+    template: owned
+    description: >-
+      One body fragment per page, with {{placeholders}} the builder fills
+      from the repository. A placeholder nothing fills, and a fragment no
+      navigation entry names, stop the build.
+
+  - id: site.content
+    path: site/content
+    role: site-source
+    description: >-
+      The curated copy: tagline, navigation, notices, whether to publish,
+      and the words a person has to choose. Holds no figure the build can
+      derive.
+
+  - id: site.assets
+    path: site/src
+    role: site-source
+    template: owned
+    description: >-
+      Stylesheet and the explorer's two scripts, copied verbatim. Carried
+      from BFO-Aligned ValueNet through the Business Capability Ontology,
+      where they were contrast-checked and reviewed in four browser
+      engines; template additions are at the end of the stylesheet. Only
+      .css and .js are allowed here.
+
+  - id: tool.site-build
+    path: tools/site/build_site.py
+    role: tool
+    template: owned
+    description: >-
+      Builds the site deterministically: term index, downloads with
+      checksums, a byte-reproducible bundle, competency questions,
+      crosswalks, concept schemes, and the specification and review when
+      a project has them.
+
+  - id: tool.site-check
+    path: tools/site/check_site.py
+    role: tool
+    template: owned
+    description: >-
+      Checks the built artifact: page structure, no external resources,
+      every internal link and fragment resolving, downloads matching their
+      checksums, the bundle matching its SHA256SUMS.
+
+  # ---- Communications ------------------------------------------------
+
+  - id: communications
+    path: communications
+    role: communication
+    description: >-
+      What this repository has said to, and heard from, other teams: one
+      folder per team with incoming/ and outgoing/. The protocol is
+      communications/README.md; tools/communications.py checks every
+      header, refuses an edited message, and derives which threads are
+      open.
+
+  - id: tool.communications
+    path: tools/communications.py
+    role: tool
+    template: owned
+    description: >-
+      Checks the communications record against its protocol and lists
+      open threads. Status is derived from replies, never stored.
+
+  # ---- Configuration and tooling --------------------------------------
+
+  - id: config.project
+    path: config/project.yaml
+    role: configuration
+    description: >-
+      The project's own values: id, code, title, namespace, prefix,
+      repository. Written by tools/init_project.py; read by every tool
+      through tools/project.py.
+
+  - id: config.annotation-profile
+    path: config/annotation-profile.yaml
+    role: configuration
+    description: >-
+      The annotations every authored class must carry beyond a label and a
+      definition, with severity and reason. CCO's definition source, as a
+      warning, by default.
+
+  - id: config.reasoning
+    path: config/reasoning.yaml
+    role: configuration
+    description: >-
+      The ROBOT pin (version, url, sha256, the commit its tag named), the
+      reasoner, and the Java version the CI jobs install.
+
+  - id: config.naming
+    path: config/naming.yaml
+    role: configuration
+    description: >-
+      The local-name conventions for authored classes, properties and
+      concepts, checked by the IRI linter and the vocabulary generator.
+
+  - id: config.layout
+    path: config/repository-layout.yaml
+    role: configuration
+    description: This file.
+
+  - id: config.licensing-adjudications
+    path: config/licensing-adjudications.yaml
+    role: configuration
+    description: >-
+      Owner rulings where a derived disposition is wrong for one named
+      file. Empty, and policed: an adjudication naming no file fails.
+
+  - id: config.requirements
+    path: requirements-dev.txt
+    role: configuration
+    template: owned
+    description: >-
+      The Python dependencies, pinned exactly, and only what the tools and
+      tests import.
+
+  - id: github.meta
+    path: .github
+    role: configuration
+    template: owned
+    description: >-
+      Dependabot (the SHA-pinned actions and the exact Python pins), the
+      term-request and defect issue forms, and the pull-request checklist.
+
+  - id: ci.workflows
+    path: .github/workflows
+    role: configuration
+    template: owned
+    description: >-
+      The checks every push runs, and the weekly job that rebuilds the
+      extracts from the pinned upstreams.
+
+  - id: tests
+    path: tests
+    role: tool
+    template: owned
+    description: >-
+      The suite, including the falsifications: every check here is shown
+      to fail on the thing it protects against.
+
+  - id: tool.layout
+    path: tools/layout.py
+    role: tool
+    template: owned
+    description: Resolves component ids to paths. Reads this file.
+
+  - id: tool.project
+    path: tools/project.py
+    role: tool
+    template: owned
+    description: >-
+      Reads config/project.yaml, refuses a malformed or self-contradicting
+      one, and fails an uninitialized copy of the template.
+
+  - id: tool.init
+    path: tools/init_project.py
+    role: tool
+    template: owned
+    description: >-
+      Turns a fresh copy of the template into a project: writes the
+      project file, renames the module, rewrites the namespace where a
+      tool cannot read it, renders the skeletons, removes what describes
+      only the template, and regenerates every generated file.
+
+  - id: tool.template-status
+    path: tools/template_status.py
+    role: tool
+    template: owned
+    description: >-
+      Digests every template-owned file. In the template it writes the
+      manifest; in a project it reports which owned files have diverged
+      from the template version the project was made from.
+
+  - id: tool.licensing
+    path: tools/licensing/disposition.py
+    role: tool
+    template: owned
+    description: >-
+      Exactly one disposition per tracked file, derived from role and
+      adjudication rather than from a list of filenames.
+
+  - id: tool.vendor-upstream
+    path: tools/ontology/vendor_upstream.py
+    role: tool
+    template: owned
+    description: >-
+      Fetches the pinned upstreams, extracts the referenced terms and
+      their ancestry, and writes the extracts, the notice and the
+      manifest. Verifies offline by default; rebuilding needs the network.
+
+  - id: tool.validate
+    path: tools/ontology/validate.py
+    role: tool
+    template: owned
+    description: >-
+      The SHACL ladder: every shape set against the authored ontology plus
+      the vendored extracts, and against the fixtures built to break it.
+      Gates against the baseline.
+
+  - id: tool.iri-lint
+    path: tools/ontology/iri_lint.py
+    role: tool
+    template: owned
+    description: >-
+      Verify before assert: every upstream IRI the authored Turtle uses is
+      a term of its pinned release (checked against the registers), every
+      authored IRI is declared, and a readable name gets the opaque IRI
+      suggested. The rules are IRI_Linter's; the code is not.
+
+  - id: tool.claude-hook
+    path: tools/hooks/claude_ttl_lint.py
+    role: tool
+    template: owned
+    description: >-
+      The Claude Code PostToolUse hook: after an agent writes or edits a
+      .ttl here, runs the IRI linter over the authored scope and hands any
+      finding back to the agent.
+
+  - id: config.claude
+    path: .claude/settings.json
+    role: configuration
+    template: owned
+    description: >-
+      Claude Code project settings: registers the IRI-lint hook on Write
+      and Edit.
+
+  - id: hooks.git
+    path: .githooks
+    role: tool
+    template: owned
+    description: >-
+      Git hooks, enabled per clone with `git config core.hooksPath
+      .githooks`: pre-commit runs the IRI linter when a commit touches
+      Turtle.
+
+  - id: tool.competency
+    path: tools/ontology/competency.py
+    role: tool
+    template: owned
+    description: >-
+      Runs every answerable competency question against the modules, the
+      vendored extracts and the examples it names, and refuses an
+      expectation a query matching nothing would meet.
+
+  - id: tool.profile-shapes
+    path: tools/ontology/profile_shapes.py
+    role: tool
+    template: owned
+    description: >-
+      Generates the annotation-profile shapes from
+      config/annotation-profile.yaml, refusing a property no pinned
+      upstream or W3C vocabulary defines.
+
+  - id: tool.reason
+    path: tools/ontology/reason.py
+    role: tool
+    template: owned
+    description: >-
+      ROBOT with ELK over the authored modules plus the full pinned
+      upstreams: consistency and unsatisfiable classes, then the examples'
+      consistency. Needs Java; run by the Reasoning workflow.
+
+  - id: tool.release
+    path: tools/release.py
+    role: tool
+    template: owned
+    description: >-
+      Builds <id>-base and <id>-full as Turtle, RDF/XML and JSON-LD with
+      NOTICE, LICENSE and SHA256SUMS, byte-identical across builds.
+
+  - id: tool.vocabulary
+    path: tools/ontology/vocabulary.py
+    role: tool
+    template: owned
+    description: >-
+      Generates ontology/vocabulary.ttl from the accepted rows of
+      vocabulary/terms.tsv, refusing a row that cannot be placed.
+
+  - id: tool.mappings
+    path: tools/ontology/mappings.py
+    role: tool
+    template: owned
+    description: >-
+      Checks every SSSOM mapping set: metadata, subjects declared here,
+      objects in a declared namespace and not BFO's or CCO's, SKOS mapping
+      predicates, kinds matched for exact matches, semapv justifications.
+
+  - id: tool.protege
+    path: tools/ontology/protege.py
+    role: tool
+    template: owned
+    description: >-
+      Generates protege/edit.ttl, which imports every module and vendored
+      file, and the XML catalog that maps each import to its local file.
+
+  - id: tool.normalize
+    path: tools/ontology/normalize.py
+    role: tool
+    template: owned
+    description: >-
+      Keeps the modules that declare format: canonical in canonical Turtle,
+      for modules edited in Protégé.
+
+  - id: protege
+    path: protege
+    role: generated-artifact
+    generator: tool.protege
+    description: >-
+      The Protégé entry point: open edit.ttl, and catalog-v001.xml beside it
+      resolves every import to a file here, offline. Declares no term.
+
+  - id: tool.corpus-digest
+    path: tools/ontology/corpus_digest.py
+    role: tool
+    template: owned
+    description: >-
+      Ground digest and blank-node fingerprint of the authored ontology.
+
+  - id: generated.validation-baseline
+    path: config/validation-baseline.json
+    role: generated-artifact
+    generator: tool.validate
+    description: >-
+      The findings this repository is known to carry, per shape set. The
+      gate keeps it from growing without a recorded reason.
+
+  - id: generated.corpus-digest
+    path: config/corpus-digest.json
+    role: generated-artifact
+    generator: tool.corpus-digest
+    description: >-
+      Ground digest and blank-node fingerprint of the authored ontology,
+      committed because a test compares it against a fresh measure. An
+      artifact nothing compares is a claim, not a measurement.
+
+  - id: generated.template-manifest
+    path: config/template-manifest.json
+    role: generated-artifact
+    generator: tool.template-status
+    description: >-
+      The digest of every template-owned file, as the template shipped
+      it. In the template a test requires it to be current; in a project
+      it is the record of what the project started from, and divergence
+      from it is reported rather than refused.
