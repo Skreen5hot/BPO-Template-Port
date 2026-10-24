@@ -29,11 +29,11 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix cco:     <https://www.commoncoreontologies.org/> .
 
-<https://fandaws.com/ontology/example/vendor/bfo-core-extract> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
-<https://fandaws.com/ontology/example/vendor/bfo-core-extract> dcterms:source <https://raw.githubusercontent.com/BFO-ontology/BFO-2020/044490fc5100ffed6df7d4d15cbc167698b6fdee/src/owl/bfo-core.ttl> .
-<https://fandaws.com/ontology/example/vendor/bfo-core-extract> owl:versionInfo "Basic Formal Ontology release-2024-01-29, partial extract for Example Ontology"@en .
-<https://fandaws.com/ontology/example/vendor/bfo-core-extract> rdf:type owl:Ontology .
-<https://fandaws.com/ontology/example/vendor/bfo-core-extract> rdfs:comment "Partial extract, not the upstream ontology. 104 axioms whose object is an anonymous class expression were dropped, so a reasoner over this file derives less than one over Basic Formal Ontology and cannot be used to claim consistency with it. Upstream licence as stated by the source: https://creativecommons.org/licenses/by/4.0/"@en .
+<https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+<https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> dcterms:source <https://raw.githubusercontent.com/BFO-ontology/BFO-2020/044490fc5100ffed6df7d4d15cbc167698b6fdee/src/owl/bfo-core.ttl> .
+<https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> owl:versionInfo "Basic Formal Ontology release-2024-01-29, partial extract for Business Process Ontology"@en .
+<https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> rdf:type owl:Ontology .
+<https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> rdfs:comment "Partial extract, not the upstream ontology. 104 axioms whose object is an anonymous class expression were dropped, so a reasoner over this file derives less than one over Basic Formal Ontology and cannot be used to claim consistency with it. Upstream licence as stated by the source: https://creativecommons.org/licenses/by/4.0/"@en .
 
 dcterms:license rdf:type owl:AnnotationProperty .
 

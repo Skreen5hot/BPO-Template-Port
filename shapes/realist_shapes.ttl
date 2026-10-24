@@ -4,7 +4,7 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rs:      <https://fandaws.com/ontology/example/shapes/realist#> .
+@prefix rs:      <https://fandaws.com/ontology/bpot/shapes/realist#> .
 
 # What a realist BFO/CCO ontology must be, asked of every authored term.
 #
@@ -16,7 +16,7 @@
 # SCOPE
 #
 # Authored terms only -- the targets filter on the project namespace,
-# https://fandaws.com/ontology/example#, which tools/init_project.py writes
+# https://fandaws.com/ontology/bpot#, which tools/init_project.py writes
 # here -- validated over the authored modules plus the vendored BFO and
 # CCO extracts and BFO's derived disjointness. The chains the constraints
 # walk run through those files; without them every class would "reach no
@@ -88,7 +88,7 @@ rs:AuthoredClassPlacementShape
         sh:prefixes rs:prefixes ;
         sh:select """SELECT ?this WHERE {
           ?this a owl:Class .
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example#"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot#"))
         }""" ] ;
 
     # Anchored. Everything in a realist ontology is an entity of some BFO
@@ -162,7 +162,7 @@ rs:AuthoredClassReviewShape
         sh:prefixes rs:prefixes ;
         sh:select """SELECT ?this WHERE {
           ?this a owl:Class .
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example#"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot#"))
         }""" ] ;
 
     # Asserted single inheritance. A warning, because a deliberate second
@@ -248,7 +248,7 @@ rs:DeprecatedTermShape
         sh:select """SELECT ?this WHERE {
           ?this owl:deprecated ?flag .
           FILTER(LCASE(STR(?flag)) = "true")
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example#"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot#"))
         }""" ] ;
 
     # A deprecated term somebody still uses has to say where to go.
@@ -279,9 +279,9 @@ rs:OntologyHeaderShape
         sh:prefixes rs:prefixes ;
         sh:select """SELECT ?this WHERE {
           ?this a owl:Ontology .
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example"))
-          FILTER(!STRSTARTS(STR(?this), "https://fandaws.com/ontology/example/vendor/"))
-          FILTER(!STRSTARTS(STR(?this), "https://fandaws.com/ontology/example/shapes/"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot"))
+          FILTER(!STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot/vendor/"))
+          FILTER(!STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot/shapes/"))
         }""" ] ;
 
     sh:property [ sh:path dcterms:title ; sh:minCount 1 ; sh:severity sh:Violation ;

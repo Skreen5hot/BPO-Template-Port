@@ -41,7 +41,7 @@ components:
   # the validation ladder pick it up from its role.
 
   - id: ontology.main
-    path: ontology/example.ttl
+    path: ontology/bpot.ttl
     role: ontology-module
     description: >-
       The first module: an owl:Ontology header and nothing else until the
@@ -242,31 +242,6 @@ components:
       The terms this repository is offered under. Read by the licensing
       tool rather than assumed.
 
-  # >>> template-only
-  # ---- The template itself -------------------------------------------
-  #
-  # Present in the template repository. tools/init_project.py deletes the
-  # files and everything between the two marker lines.
-
-  - id: template.docs
-    path: docs/template
-    role: documentation
-    template: only
-    description: >-
-      About the template rather than any project: the roadmap, the
-      decisions taken building it, and the skeletons -- the README,
-      CLAUDE.md and HANDOFF a new project starts with, with
-      {{placeholders}} init fills from config/project.yaml.
-
-  - id: template.init-tests
-    path: tests/test_init_project.py
-    role: tool
-    template: only
-    description: >-
-      Runs init in throwaway copies of the template and checks each
-      describes itself. Meaningless in a project, where there is no
-      template left to initialize, so init removes it.
-  # <<< template-only
 
   # ---- Vendored upstream ontology ------------------------------------
   #

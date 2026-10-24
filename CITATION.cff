@@ -1,12 +1,13 @@
 cff-version: 1.2.0
-message: If you use this template, please cite it as below.
-title: Ontology Template
+message: If you use this ontology, please cite it as below.
+title: "Business Process Ontology"
 abstract: >-
-  A GitHub template for realist ontologies aligned to BFO 2020 and CCO v2.0:
-  pinned vendoring, a SHACL gate with falsification fixtures, an IRI linter,
-  competency questions, reasoning and deterministic releases.
+  Business processes of the APQC Process Classification Framework (Cross-Industry, v7.4), as BFO 2020 / CCO v2.0 process universals, organization capabilities and roles.
 authors:
-  - name: Aaron Damiano
-repository-code: https://github.com/Skreen5hot/Ontology-Template
+  - name: "Aaron Damiano"
+repository-code: https://github.com/Skreen5hot/BPO-Template-Port
 license: MIT
-type: software
+type: dataset
+identifiers:
+  - type: uri
+    value: https://fandaws.com/ontology/bpot

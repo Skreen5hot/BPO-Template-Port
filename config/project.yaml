@@ -21,36 +21,37 @@
 
 version: 1
 
-template: true
+template: false
 
 #: Lowercase, letters, digits and hyphens. Names the module file and the
 #: namespace.
-id: example
+id: bpot
 
 #: Uppercase. The short name other teams know this repository by; it is
 #: the sender code in communications ids (communications/README.md).
-code: EXAMPLE
+code: BPOT
 
-title: Example Ontology
+title: Business Process Ontology
 
 description: >-
-  A placeholder project. The template repository carries it so that every
-  check has something to run against; init replaces it.
+  Business processes of the APQC Process Classification Framework
+  (Cross-Industry, v7.4), as BFO 2020 / CCO v2.0 process universals,
+  organization capabilities and roles.
 
 #: Where authored terms are minted. Readable local names
 #: (https://fandaws.com/ontology/<id>#SomeClass), not opaque ids.
-namespace: https://fandaws.com/ontology/example#
+namespace: https://fandaws.com/ontology/bpot#
 
 #: The Turtle prefix for `namespace`.
-prefix: example
+prefix: bpot
 
 #: Base for ontology and module IRIs (the owl:Ontology of each module,
 #: the vendored extracts' headers). The namespace without its `#`.
-iri_base: https://fandaws.com/ontology/example
+iri_base: https://fandaws.com/ontology/bpot
 
 #: owner/name on GitHub. In the template, the template's own slug -- that
 #: is how --check tells the template from an uninitialized copy of it.
-repository: Skreen5hot/Ontology-Template
+repository: Skreen5hot/BPO-Template-Port
 
 #: The copyright holder named in LICENSE.
 licence_holder: Aaron Damiano

@@ -1,39 +1,33 @@
-# CLAUDE.md — template grounding
+# CLAUDE.md — project grounding
 
-This is the **ontology template**, not an ontology. Its placeholder project is `example`
-(`https://fandaws.com/ontology/example#`), which exists so every check has something to run
-against. Read `docs/template/ROADMAP.md` for what is built and what is next,
-`docs/DEVELOPMENT.md` for how to run things, `docs/process/PROCESS.md` for the method.
-
-## What is true right now
-
-- `config/project.yaml` says `template: true`. `tools/init_project.py` turns a copy into a
-  project; never run it in this repository.
-- No ontology term exists, and none should: the template ships no terms. The module is an
-  `owl:Ontology` header.
-- Decisions about the template are in `docs/template/DECISIONS.md`.
+Business Process Ontology: a realist ontology aligned to BFO 2020 / CCO v2.0. Read `docs/HANDOFF.md` for
+the state, `docs/DEVELOPMENT.md` for how to run things, `docs/process/PROCESS.md` for the
+method.
 
 ## Rules that are easy to break
 
-- **Template-owned files must not name a project.** Components declared `template: owned`
-  in `config/repository-layout.yaml` (tools, tests, workflows, PROCESS.md, DEVELOPMENT.md)
-  read every project value from `config/project.yaml` through `tools/project.py`. Init
-  refuses to write an owned file, so a hardcoded value there would be copied into every
-  project unchanged.
-- **After changing an owned file**, run `tools/template_status.py --record`. The suite fails
-  while the manifest is stale.
-- **Anything init rewrites** (the module, the shapes, the fixtures, the skeletons) must keep
-  working when `example` becomes another id. `tests/test_init_project.py` runs init in a
-  copy and checks.
-- **Every tracked file is declared** in the layout contract with a role.
+- **Namespace.** Author terms in `https://fandaws.com/ontology/bpot#` (prefix `bpot:`) with readable local
+  names. The value lives in `config/project.yaml`; the SPARQL in `shapes/` repeats it and
+  `tests/test_namespace.py` holds the two together. Change it with both in one commit.
+- **Upstream terms are referenced, never redeclared, and never written from memory.**
+  BFO is `obo:BFO_*`, CCO is `cco:ont*` — opaque ids, not readable names. Grep the vendored
+  register (`vendor/<id>/<id>-register.json`, every term with its label) before using one.
+  `tools/ontology/iri_lint.py` checks every IRI, and a hook runs it after each `.ttl` edit:
+  a `readable_label` finding names the real IRI after `->`.
+- **Every tracked file is declared** in `config/repository-layout.yaml` with a role. A new
+  file without a declaration fails the suite.
 - **A new shape set arrives with its negative fixture** and positive controls in the same
   commit, and its constraint messages are listed by name in a test.
 - **Generated files are regenerated, never edited**: `vendor/**`, `vendor/NOTICE.md`,
   `config/upstream-extracts.json`, `config/validation-baseline.json`,
-  `config/corpus-digest.json`, `config/template-manifest.json`.
-- **Verify before asserting an upstream IRI.** Grep the vendored extract or the cached
-  upstream; never write a `cco:`/`obo:` IRI from memory.
-- **Line endings are LF.** On Windows, write files as bytes (`write_bytes`).
+  `config/corpus-digest.json`. Each names its generator in the layout contract.
+  `config/template-manifest.json` is the record of the template this was made from; leave it.
+- **Decisions are the architect's.** Record an act verbatim in `docs/decisions/` with the
+  digest of what it is about; never perform one.
+- **Line endings are LF** (`.gitattributes`). On Windows, write files as bytes
+  (`write_bytes`), not `write_text`, which writes CRLF.
+- **Communications with other teams** go in `communications/<team>/{incoming,outgoing}/`
+  under `communications/README.md`. A committed message is never edited.
 
 ## Before committing
 
@@ -47,8 +41,10 @@ against. Read `docs/template/ROADMAP.md` for what is built and what is next,
 .venv/Scripts/python tools/ontology/competency.py
 .venv/Scripts/python tools/ontology/reason.py        # needs Java; the Reasoning workflow runs it too
 .venv/Scripts/python tools/communications.py
-.venv/Scripts/python tools/template_status.py --check
 .venv/Scripts/python -m pytest tests/ -q -p no:randomly
 ```
 
-Commit messages carry the reasoning. Nothing is pushed without the architect's say-so.
+If the ontology changed: `tools/ontology/corpus_digest.py -o config/corpus-digest.json`, and
+`tools/ontology/validate.py --record` if a finding was fixed. Commit messages carry the
+reasoning — what was wrong, why the fix is the fix, what was measured, what is not covered.
+Nothing is pushed without the architect's say-so.

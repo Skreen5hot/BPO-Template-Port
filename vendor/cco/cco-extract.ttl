@@ -29,11 +29,11 @@
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix cco:     <https://www.commoncoreontologies.org/> .
 
-<https://fandaws.com/ontology/example/vendor/cco-extract> dcterms:license <https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/510dad76be0ef710b65a421075af912af25342b7/LICENSE> .
-<https://fandaws.com/ontology/example/vendor/cco-extract> dcterms:source <https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/510dad76be0ef710b65a421075af912af25342b7/src/cco-merged/CommonCoreOntologiesMerged.ttl> .
-<https://fandaws.com/ontology/example/vendor/cco-extract> owl:versionInfo "Common Core Ontologies v2.0-2024-11-06, partial extract for Example Ontology"@en .
-<https://fandaws.com/ontology/example/vendor/cco-extract> rdf:type owl:Ontology .
-<https://fandaws.com/ontology/example/vendor/cco-extract> rdfs:comment "Partial extract, not the upstream ontology. 1 axioms whose object is an anonymous class expression were dropped, so a reasoner over this file derives less than one over Common Core Ontologies and cannot be used to claim consistency with it. Upstream licence as stated by the source: BSD 3-Clause: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/LICENSE"@en .
+<https://fandaws.com/ontology/bpot/vendor/cco-extract> dcterms:license <https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/510dad76be0ef710b65a421075af912af25342b7/LICENSE> .
+<https://fandaws.com/ontology/bpot/vendor/cco-extract> dcterms:source <https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/510dad76be0ef710b65a421075af912af25342b7/src/cco-merged/CommonCoreOntologiesMerged.ttl> .
+<https://fandaws.com/ontology/bpot/vendor/cco-extract> owl:versionInfo "Common Core Ontologies v2.0-2024-11-06, partial extract for Business Process Ontology"@en .
+<https://fandaws.com/ontology/bpot/vendor/cco-extract> rdf:type owl:Ontology .
+<https://fandaws.com/ontology/bpot/vendor/cco-extract> rdfs:comment "Partial extract, not the upstream ontology. 1 axioms whose object is an anonymous class expression were dropped, so a reasoner over this file derives less than one over Common Core Ontologies and cannot be used to claim consistency with it. Upstream licence as stated by the source: BSD 3-Clause: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/LICENSE"@en .
 
 cco:ont00001754 cco:ont00001760 "https://www.commoncoreontologies.org/ExtendedRelationOntology"^^xsd:anyURI .
 cco:ont00001754 rdf:type owl:AnnotationProperty .

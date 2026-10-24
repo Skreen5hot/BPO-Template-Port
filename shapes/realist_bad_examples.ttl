@@ -4,7 +4,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix cco:     <https://www.commoncoreontologies.org/> .
-@prefix example:  <https://fandaws.com/ontology/example#> .
+@prefix bpot:  <https://fandaws.com/ontology/bpot#> .
 
 # Cases built to break realist_shapes.ttl and annotation_profile_shapes.ttl,
 # with positive controls beside them.
@@ -22,50 +22,50 @@
 
 # -- positive controls: these must NOT be reported --------------------
 
-example:RealistGood a owl:Class ;
+bpot:RealistGood a owl:Class ;
     rdfs:label "realist good" ;
     rdfs:subClassOf obo:BFO_0000040 ;
     skos:definition "A material entity that the fixture uses as a well-placed class." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
-example:RealistGoodChild a owl:Class ;
+bpot:RealistGoodChild a owl:Class ;
     rdfs:label "realist good child" ;
-    rdfs:subClassOf example:RealistGood ;
+    rdfs:subClassOf bpot:RealistGood ;
     skos:definition "A realist good that sits one level further down." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
-example:fxHasParticipant a owl:ObjectProperty ;
+bpot:fxHasParticipant a owl:ObjectProperty ;
     rdfs:label "fixture has participant" ;
     rdfs:domain obo:BFO_0000015 ;
     rdfs:range obo:BFO_0000002 .
 
-example:RealistGoodRestriction a owl:Class ;
+bpot:RealistGoodRestriction a owl:Class ;
     rdfs:label "realist good restriction" ;
     rdfs:subClassOf obo:BFO_0000015 ,
         [ a owl:Restriction ;
-          owl:onProperty example:fxHasParticipant ;
+          owl:onProperty bpot:fxHasParticipant ;
           owl:someValuesFrom obo:BFO_0000040 ] ;
     skos:definition "A process that has a material entity as a participant." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
-example:RealistDeprecatedWithReplacement a owl:Class ;
+bpot:RealistDeprecatedWithReplacement a owl:Class ;
     rdfs:label "realist deprecated with replacement" ;
     rdfs:subClassOf obo:BFO_0000040 ;
     skos:definition "A material entity kept only to say where to go instead." ;
     cco:ont00001754 "constructed for the realist fixture" ;
     owl:deprecated true ;
-    dcterms:isReplacedBy example:RealistGood .
+    dcterms:isReplacedBy bpot:RealistGood .
 
-<https://fandaws.com/ontology/example/fixtures/realist-complete-header> a owl:Ontology ;
+<https://fandaws.com/ontology/bpot/fixtures/realist-complete-header> a owl:Ontology ;
     dcterms:title "A complete header" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:creator "the fixture" ;
-    owl:versionIRI <https://fandaws.com/ontology/example/fixtures/realist-complete-header/0.0.0> ;
+    owl:versionIRI <https://fandaws.com/ontology/bpot/fixtures/realist-complete-header/0.0.0> ;
     owl:versionInfo "0.0.0" .
 
 # -- R1 reaches no BFO category ---------------------------------------
 
-example:Unanchored a owl:Class ;
+bpot:Unanchored a owl:Class ;
     rdfs:label "unanchored" ;
     skos:definition "A class with no parent at all." ;
     cco:ont00001754 "constructed for the realist fixture" .
@@ -73,7 +73,7 @@ example:Unanchored a owl:Class ;
 # -- R2 two asserted parents (warning) --------------------------------
 # Not disjoint, and the definition names both, so nothing else fires.
 
-example:TwoParents a owl:Class ;
+bpot:TwoParents a owl:Class ;
     rdfs:label "two parents" ;
     rdfs:subClassOf obo:BFO_0000040 , obo:BFO_0000004 ;
     skos:definition "A material entity, and an independent continuant twice over." ;
@@ -82,7 +82,7 @@ example:TwoParents a owl:Class ;
 # -- R3 disjoint categories, by a named owl:disjointWith ---------------
 # continuant (above material entity) and occurrent (above process).
 
-example:ContinuantAndOccurrent a owl:Class ;
+bpot:ContinuantAndOccurrent a owl:Class ;
     rdfs:label "continuant and occurrent" ;
     rdfs:subClassOf obo:BFO_0000040 , obo:BFO_0000015 ;
     skos:definition "A material entity that is also a process, which nothing is." ;
@@ -94,7 +94,7 @@ example:ContinuantAndOccurrent a owl:Class ;
 # in an owl:AllDisjointClasses axiom. The case that shows the derived
 # disjointness file is load-bearing: without it this passes.
 
-example:IndependentAndDependent a owl:Class ;
+bpot:IndependentAndDependent a owl:Class ;
     rdfs:label "independent and dependent" ;
     rdfs:subClassOf obo:BFO_0000040 , obo:BFO_0000019 ;
     skos:definition "A material entity that is also a quality, which nothing is." ;
@@ -102,7 +102,7 @@ example:IndependentAndDependent a owl:Class ;
 
 # -- R4 definition does not name its genus (warning) ------------------
 
-example:VagueDefinition a owl:Class ;
+bpot:VagueDefinition a owl:Class ;
     rdfs:label "vague definition" ;
     rdfs:subClassOf obo:BFO_0000040 ;
     skos:definition "Something the fixture needs." ;
@@ -111,57 +111,57 @@ example:VagueDefinition a owl:Class ;
 # -- R5 range: filler disjoint with the range --------------------------
 # the property relates processes to continuants; the filler is a process.
 
-example:RangeDisjoint a owl:Class ;
+bpot:RangeDisjoint a owl:Class ;
     rdfs:label "range disjoint" ;
     rdfs:subClassOf obo:BFO_0000015 ,
         [ a owl:Restriction ;
-          owl:onProperty example:fxHasParticipant ;
+          owl:onProperty bpot:fxHasParticipant ;
           owl:someValuesFrom obo:BFO_0000015 ] ;
     skos:definition "A process that has a process as a participant." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
 # -- R5 range: filler not known to fall under the range (warning) -----
 
-example:RangeUnknown a owl:Class ;
+bpot:RangeUnknown a owl:Class ;
     rdfs:label "range unknown" ;
     rdfs:subClassOf obo:BFO_0000015 ,
         [ a owl:Restriction ;
-          owl:onProperty example:fxHasParticipant ;
-          owl:someValuesFrom example:Unanchored ] ;
+          owl:onProperty bpot:fxHasParticipant ;
+          owl:someValuesFrom bpot:Unanchored ] ;
     skos:definition "A process that has an unanchored thing as a participant." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
 # -- R5 domain: the restricted class disjoint with the domain ---------
 # the property is said of processes; this is a material entity.
 
-example:DomainDisjoint a owl:Class ;
+bpot:DomainDisjoint a owl:Class ;
     rdfs:label "domain disjoint" ;
     rdfs:subClassOf obo:BFO_0000040 ,
         [ a owl:Restriction ;
-          owl:onProperty example:fxHasParticipant ;
+          owl:onProperty bpot:fxHasParticipant ;
           owl:someValuesFrom obo:BFO_0000040 ] ;
     skos:definition "A material entity said to have a participant." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
 # -- R5 domain: not known to fall under the domain (warning) ----------
 
-example:DomainUnknown a owl:Class ;
+bpot:DomainUnknown a owl:Class ;
     rdfs:label "domain unknown" ;
     rdfs:subClassOf obo:BFO_0000001 ,
         [ a owl:Restriction ;
-          owl:onProperty example:fxHasParticipant ;
+          owl:onProperty bpot:fxHasParticipant ;
           owl:someValuesFrom obo:BFO_0000040 ] ;
     skos:definition "An entity said to have a material entity as a participant." ;
     cco:ont00001754 "constructed for the realist fixture" .
 
 # -- R6 an incomplete ontology header -----------------------------------
 
-<https://fandaws.com/ontology/example/fixtures/realist-incomplete-header> a owl:Ontology ;
+<https://fandaws.com/ontology/bpot/fixtures/realist-incomplete-header> a owl:Ontology ;
     dcterms:title "A header with only a title" .
 
 # -- R7 deprecated with no way forward ----------------------------------
 
-example:DeprecatedNoWayForward a owl:Class ;
+bpot:DeprecatedNoWayForward a owl:Class ;
     rdfs:label "deprecated no way forward" ;
     rdfs:subClassOf obo:BFO_0000040 ;
     skos:definition "A material entity retired without a replacement or a reason." ;
@@ -170,7 +170,7 @@ example:DeprecatedNoWayForward a owl:Class ;
 
 # -- P1 annotation profile: no definition source (warning) ------------
 
-example:NoDefinitionSource a owl:Class ;
+bpot:NoDefinitionSource a owl:Class ;
     rdfs:label "no definition source" ;
     rdfs:subClassOf obo:BFO_0000040 ;
     skos:definition "A material entity whose definition cites nothing." .

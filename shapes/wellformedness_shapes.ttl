@@ -3,7 +3,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix wf:    <https://fandaws.com/ontology/example/shapes/wellformedness#> .
+@prefix wf:    <https://fandaws.com/ontology/bpot/shapes/wellformedness#> .
 
 # Well-formedness of an authored term, whatever module it lives in.
 #
@@ -17,7 +17,7 @@
 # SCOPE: AUTHORED TERMS ONLY
 #
 # The targets filter on this repository's namespace,
-# https://fandaws.com/ontology/example#, which tools/init_project.py
+# https://fandaws.com/ontology/bpot#, which tools/init_project.py
 # writes here from config/project.yaml. The vendored BFO and CCO extracts
 # are in the same data graph, and a violation against one of their terms
 # would be a finding about somebody else's vocabulary.
@@ -88,7 +88,7 @@ wf:AuthoredClassShape
         sh:prefixes wf:prefixes ;
         sh:select """SELECT ?this WHERE {
           ?this a owl:Class .
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example#"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot#"))
         }""" ] ;
 
     # Presence. Native constraints rather than SPARQL, because these are
@@ -129,7 +129,7 @@ wf:AuthoredConceptShape
         sh:prefixes wf:prefixes ;
         sh:select """SELECT ?this WHERE {
           ?this a skos:Concept .
-          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/example#"))
+          FILTER(STRSTARTS(STR(?this), "https://fandaws.com/ontology/bpot#"))
         }""" ] ;
 
     sh:property [
