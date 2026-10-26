@@ -1,0 +1,1643 @@
+@prefix bpot: <https://fandaws.com/ontology/bpot#> .
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+bpot:BuildBuyDecision a owl:Class ;
+    rdfs:label "Build/Buy Decision" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.6). Directive: a decision prescribes the chosen course of action." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes whether a service-delivery solution is to be constructed in-house or purchased." .
+
+bpot:DemandForecastingCapability a owl:Class ;
+    rdfs:label "Demand Forecasting Capability" ;
+    rdfs:comment "Shared section-5.0 capability underlying the forecasting acts in 5.2.1." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization forecasts and revises demand for its services." .
+
+bpot:PCF_12127 bpot:designatesProcessType bpot:P12127 .
+
+bpot:PCF_12128 bpot:designatesProcessType bpot:P12128 .
+
+bpot:PCF_12129 bpot:designatesProcessType bpot:P12129 .
+
+bpot:PCF_12131 bpot:designatesProcessType bpot:P12131 .
+
+bpot:PCF_12132 bpot:designatesProcessType bpot:P12132 .
+
+bpot:PCF_12133 bpot:designatesProcessType bpot:P12133 .
+
+bpot:PCF_12135 bpot:designatesProcessType bpot:P12135 .
+
+bpot:PCF_20026 bpot:designatesProcessType bpot:P20026 .
+
+bpot:PCF_20027 bpot:designatesProcessType bpot:P20027 .
+
+bpot:PCF_20028 bpot:designatesProcessType bpot:ServiceDeliveryGovernanceCapability .
+
+bpot:PCF_20029 bpot:designatesProcessType bpot:ServiceDeliveryPerformanceManagementCapability .
+
+bpot:PCF_20030 bpot:designatesProcessType bpot:ServiceDeliveryDevelopmentManagementCapability .
+
+bpot:PCF_20031 bpot:designatesProcessType bpot:P20031 .
+
+bpot:PCF_20032 bpot:designatesProcessType bpot:P20032 .
+
+bpot:PCF_20033 bpot:designatesProcessType bpot:P20033 .
+
+bpot:PCF_20034 bpot:designatesProcessType bpot:P20034 .
+
+bpot:PCF_20035 bpot:designatesProcessType bpot:P20035 .
+
+bpot:PCF_20036 bpot:designatesProcessType bpot:P20036 .
+
+bpot:PCF_20037 bpot:designatesProcessType bpot:P20037 .
+
+bpot:PCF_20038 bpot:designatesProcessType bpot:P20038 .
+
+bpot:PCF_20039 bpot:designatesProcessType bpot:P20039 .
+
+bpot:PCF_20040 bpot:designatesProcessType bpot:P20040 .
+
+bpot:PCF_20041 bpot:designatesProcessType bpot:P20041 .
+
+bpot:PCF_20042 bpot:designatesProcessType bpot:P20042 .
+
+bpot:PCF_20043 bpot:designatesProcessType bpot:P20043 .
+
+bpot:PCF_20044 bpot:designatesProcessType bpot:P20044 .
+
+bpot:PCF_20045 bpot:designatesProcessType bpot:P20045 .
+
+bpot:PCF_20046 bpot:designatesProcessType bpot:P20046 .
+
+bpot:PCF_20047 bpot:designatesProcessType bpot:P20047 .
+
+bpot:PCF_20048 bpot:designatesProcessType bpot:P20048 .
+
+bpot:PCF_20049 bpot:designatesProcessType bpot:P20049 .
+
+bpot:PCF_20050 bpot:designatesProcessType bpot:P20050 .
+
+bpot:PCF_20051 bpot:designatesProcessType bpot:P20051 .
+
+bpot:PCF_20052 bpot:designatesProcessType bpot:P20052 .
+
+bpot:PCF_20053 bpot:designatesProcessType bpot:P20053 .
+
+bpot:PCF_20054 bpot:designatesProcessType bpot:P20054 .
+
+bpot:PCF_20055 bpot:designatesProcessType bpot:P20055 .
+
+bpot:PCF_20056 bpot:designatesProcessType bpot:P20056 .
+
+bpot:PCF_20057 bpot:designatesProcessType bpot:P20057 .
+
+bpot:PCF_20058 bpot:designatesProcessType bpot:P20058 .
+
+bpot:PCF_20059 bpot:designatesProcessType bpot:P20059 .
+
+bpot:PCF_20060 bpot:designatesProcessType bpot:P20060 .
+
+bpot:PCF_20061 bpot:designatesProcessType bpot:P20061 .
+
+bpot:PCF_20062 bpot:designatesProcessType bpot:P20062 .
+
+bpot:PCF_20063 bpot:designatesProcessType bpot:P20063 .
+
+bpot:PCF_20064 bpot:designatesProcessType bpot:P20064 .
+
+bpot:PCF_20065 bpot:designatesProcessType bpot:P20065 .
+
+bpot:PCF_20066 bpot:designatesProcessType bpot:P20066 .
+
+bpot:PCF_20067 bpot:designatesProcessType bpot:P20067 .
+
+bpot:PCF_20068 bpot:designatesProcessType bpot:P20068 .
+
+bpot:PCF_20069 bpot:designatesProcessType bpot:P20069 .
+
+bpot:PCF_20070 bpot:designatesProcessType bpot:P20070 .
+
+bpot:PCF_20071 bpot:designatesProcessType bpot:P20071 .
+
+bpot:PCF_20072 bpot:designatesProcessType bpot:P20072 .
+
+bpot:PCF_20073 bpot:designatesProcessType bpot:P20073 .
+
+bpot:PCF_20074 bpot:designatesProcessType bpot:P20074 .
+
+bpot:PCF_20075 bpot:designatesProcessType bpot:P20075 .
+
+bpot:PCF_20076 bpot:designatesProcessType bpot:P20076 .
+
+bpot:PCF_20077 bpot:designatesProcessType bpot:P20077 .
+
+bpot:PCF_20078 bpot:designatesProcessType bpot:P20078 .
+
+bpot:PCF_20079 bpot:designatesProcessType bpot:P20079 .
+
+bpot:PCF_20080 bpot:designatesProcessType bpot:P20080 .
+
+bpot:PCF_20081 bpot:designatesProcessType bpot:P20081 .
+
+bpot:PCF_20082 bpot:designatesProcessType bpot:P20082 .
+
+bpot:PCF_20083 bpot:designatesProcessType bpot:P20083 .
+
+bpot:PCF_20084 bpot:designatesProcessType bpot:P20084 .
+
+bpot:ResourceManagementCapability a owl:Class ;
+    rdfs:label "Resource Management Capability" ;
+    rdfs:comment "Shared section-5.0 capability for resource-management standing-functions in 5.2 (e.g. 5.2.2.6 'Monitor and manage resource capacity')." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization plans, allocates, and monitors the resources needed for service delivery." .
+
+bpot:ServiceProvider a owl:Class ;
+    rdfs:label "Service Provider" ;
+    rdfs:comment "Shared section-5.0 agent: the focal organization rendering service. Capability borne on the Organization, not on any ICE (D4)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001954 ;
+            owl:someValuesFrom bpot:ServiceDeliveryCapability ],
+        cco:ont00001180 ;
+    skos:definition "An Organization that has the capability to deliver services to customers." .
+
+bpot:TrainerRole a owl:Class ;
+    rdfs:label "Trainer Role" ;
+    rdfs:comment "Shared section-5.0 role for the training processes (5.2.3.4, 5.2.3.5)." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with imparting service-delivery skills or behaviours to other Agents." .
+
+bpot:designatesProcessType rdfs:comment "Catalog->reality bridge: relates an APQC catalog node (bpo:PCF_<pcfID>) to the reality-layer class (process or capability) it designates." .
+
+bpot:pcfID rdfs:comment "Stable APQC identifier. Anchor process-class IRIs (bpo:P<pcfID>) to this; it persists across PCF versions." .
+
+<https://fandaws.com/ontology/bpot/sections/pcf_5> a owl:Ontology ;
+    dcterms:creator "Aaron Damiano" ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://fandaws.com/ontology/bpo/slice/5.0>,
+        "APQC Process Classification Framework (Cross-Industry) v7.4" ;
+    dcterms:title "Business Process Ontology -- PCF 5.0 Deliver Services" ;
+    rdfs:comment "Reality layer for APQC PCF category 5.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
+    owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_5.ttl> ;
+    owl:versionInfo "0.0.0" .
+
+bpot:ContractFulfillmentConfirmation a owl:Class ;
+    rdfs:label "Contract Fulfillment Confirmation" ;
+    rdfs:comment "Minted locally: APQC 5.3.3.3 output; no shared-vocab ICE supplied." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ServiceDeliveryContract ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes confirmation that all terms of a service-delivery contract have been satisfied." ;
+    skos:example "A sign-off memo stating every contractual deliverable has been met." .
+
+bpot:ContractTermsReview a owl:Class ;
+    rdfs:label "Contract Terms Review" ;
+    rdfs:comment "Minted locally (Gate-F fix, 5.3.1.1): output of bpo:P20060. Rejected reuse of bpo:ServiceDeliveryReview, which is defined as 'an end-to-end evaluation of the SUCCESS of a COMPLETED service-delivery engagement' (a post-delivery retrospective, the correct output of bpo:P20078): a contract-terms appraisal at INITIATION cannot output a completed-engagement success review. 'is about' the contract whose terms it appraises. Descriptive: it records an appraisal judgement." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ServiceDeliveryContract ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement, formed at service-delivery initiation, of the terms of a solutions contract under review prior to their agreement." ;
+    skos:example "Meeting notes recording the agreed and contested clauses of a solutions contract before sign-off." .
+
+bpot:CustomerBusinessObjectives a owl:Class ;
+    rdfs:label "Customer Business Objectives" ;
+    rdfs:comment "Shared section-5.0 input (5.3.1.4). Directive: objectives prescribe an intended end-state. Distinct from bpo:ServiceDeliveryGoal (the provider's own goals)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the business goals a customer intends a delivered service to advance." .
+
+bpot:DeliveryPartner a owl:Class ;
+    rdfs:label "Delivery Partner" ;
+    rdfs:comment "Shared section-5.0 participant (5.2.2.4, 5.3.1.1). Distinguished from bpo:Supplier: a partner collaborates on delivery rather than merely supplying resources." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:DeliveryPartnerRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a delivery-partner role in virtue of collaborating with an organization to supplement its service-delivery skills and capabilities." .
+
+bpot:DeliveryPartnerRole a owl:Class ;
+    rdfs:label "Delivery Partner Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of collaborating with an organization to supplement its service-delivery skills and capabilities." .
+
+bpot:EngagementRules a owl:Class ;
+    rdfs:label "Engagement Rules" ;
+    rdfs:comment "Shared section-5.0 output (5.3.1.6.2). Directive: rules prescribe required conduct." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes how service-delivery resources are to interact with and accommodate the customer." .
+
+bpot:EnvironmentalReadinessConfirmation a owl:Class ;
+    rdfs:label "Environmental Readiness Confirmation" ;
+    rdfs:comment "Shared section-5.0 output (5.3.1.5). Descriptive: a confirmation reports a verified state." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a confirmed judgement that an organization holds the resources and conditions required to deliver a service." .
+
+bpot:HistoricalDemandData a owl:Class ;
+    rdfs:label "Historical Demand Data" ;
+    rdfs:comment "Shared section-5.0 forecasting input (5.2.1.2)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes past levels of customer demand for an organization's services, used as input to forecasting." .
+
+bpot:LaborPolicy a owl:Class ;
+    rdfs:label "Labor Policy" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2.2). Directive: a policy prescribes permitted and required conduct." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes rules governing the use of labor resources in service delivery, consistent with organizational and regulatory requirements." .
+
+bpot:MarketEnvironmentData a owl:Class ;
+    rdfs:label "Market Environment Data" ;
+    rdfs:comment "Shared section-5.0 forecasting input (5.2.1.2). Distinct from bpo:MarketData in the reference module (external-environment scan); kept local to 5.0 as a demand-forecasting input." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes external market conditions relevant to estimating future demand for an organization's services." .
+
+bpot:ObjectiveAlignmentAssessment a owl:Class ;
+    rdfs:label "Objective Alignment Assessment" ;
+    rdfs:comment "Minted locally: APQC 5.3.1.4 output; no shared-vocab ICE supplied." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the degree to which a customer's business objectives align with an agreed service-delivery solution." ;
+    skos:example "A note recording that the proposed solution supports the client's stated growth objective." .
+
+bpot:OpportunityPipelineData a owl:Class ;
+    rdfs:label "Opportunity Pipeline Data" ;
+    rdfs:comment "Shared section-5.0 input to pipeline monitoring (5.2.1.1)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes potential service-delivery opportunities and their stage within a sales or engagement pipeline." .
+
+bpot:P20026 a owl:Class ;
+    rdfs:label "Establish service delivery governance and strategies" ;
+    rdfs:comment "Models APQC process group 5.1 as an occurrent whose two APQC children (5.1.1, 5.1.2) are process parts (cco:ont00001777). Not given existential has-process-part from Category 5.0 (R3). Genus Act of Formulation because its dominant deliverable is prescriptive (governance rules + strategies = Directive ICEs), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20027 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20032 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes the governance and strategies for service delivery by standing up service delivery governance and developing the service delivery strategies that define its goals, policies, processes, and workplace layout." ;
+    skos:example "A service organization's annual cycle of standing up delivery governance and refreshing its service delivery strategy." ;
+    bpot:apqcSourceText "Creating rules and regulations for service delivery to the customer. Establish a system to manage performance, delivery, and direction of service delivery. Engage with the customer for satisfaction feedback. Define goals, policies, processes, and workplace layout and infrastructure as a part of the service delivery strategy." ;
+    bpot:hierarchyID "5.1" ;
+    bpot:pcfID "20026" .
+
+bpot:P20040 a owl:Class ;
+    rdfs:label "Manage service delivery resources" ;
+    rdfs:comment "Models APQC process group 5.2 as a bounded, repeatable resource-management cycle (partonomy anchor). Its APQC children are process parts (cco:ont00001777), not subclasses. Anchored at cco:ont00000511 (Act of Planning) because the cycle's defining output is a directive plan. Gate-F fix: the definitional has-output was changed from bpo:ServiceDeliveryPlan to bpo:ResourcePlan. bpo:ServiceDeliveryPlan is 'the plan of action for rendering a service-delivery solution to a customer' -- a 5.3 RENDERING deliverable; APQC 5.2 is RESOURCE management, whose source ('creating a plan to enable the delivery of services via those resources') and children (bpo:ResourcePlan in 5.2.2, forecasts in 5.2.1) produce a RESOURCE plan, not a service-rendering plan. Asserting ServiceDeliveryPlan as the existential output conflated 5.2 with 5.3 and failed Phase-3 necessity; bpo:ResourcePlan is the cycle's genuine deliverable." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcePlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20041 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20050 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12127 ],
+        cco:ont00000511 ;
+    skos:definition "An Act of Planning that understands the demands placed on service delivery resources and produces a resource plan enabling those resources to deliver services." ;
+    skos:example "An annual service-resource planning cycle that forecasts demand, plans resources, and enables staff before a delivery season." ;
+    bpot:apqcSourceText "Understanding the demands on resources and creating a plan to enable the delivery of services via those resources." ;
+    bpot:hierarchyID "5.2" ;
+    bpot:pcfID "20040" .
+
+bpot:P20058 a owl:Class ;
+    rdfs:label "Deliver service to customer" ;
+    rdfs:comment "Models APQC process group 5.3 as an occurrent; its APQC children are process parts, not subclasses." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20059 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20069 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20077 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that renders a service to a customer by initiating, executing, and completing the tasks associated with service delivery." ;
+    skos:example "A consultancy's full engagement to scope, build, deliver, and close out a service for a client." ;
+    bpot:apqcSourceText "Rendering service to the customer by initiating, executing, and completing tasks associated with service delivery." ;
+    bpot:hierarchyID "5.3" ;
+    bpot:pcfID "20058" .
+
+bpot:PeopleObjectives a owl:Class ;
+    rdfs:label "People Objectives" ;
+    rdfs:comment "Shared section-5.0 output (5.3.1.6.1). Directive: objectives prescribe intended ends for personnel." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the goals and plan of action assigned to the workforce delivering a service." .
+
+bpot:PipelineStatusAssessment a owl:Class ;
+    rdfs:label "Pipeline Status Assessment" ;
+    rdfs:comment "Minted locally (5.2.1.1): no shared-vocab ICE captures the per-stage status output of pipeline monitoring. Descriptive because it represents observed state." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the current stage and status of potential opportunities tracked through a sales or delivery pipeline." ;
+    skos:example "A weekly pipeline report listing each opportunity and the stage it currently occupies." .
+
+bpot:ProceedApprovalDecision a owl:Class ;
+    rdfs:label "Proceed Approval Decision" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.5). Directive: an approval prescribes that work may continue." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes authorization to proceed with delivering a service-delivery solution." .
+
+bpot:ProjectPlan a owl:Class ;
+    rdfs:label "Project Plan" ;
+    rdfs:comment "Shared section-5.0 output/input (5.3.1.3). Directive: a project plan prescribes intended work." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the scope, tasks, and sequence by which a service-delivery engagement is to be carried out." .
+
+bpot:ServiceDeliveryCapability a owl:Class ;
+    rdfs:label "Service Delivery Capability" ;
+    rdfs:comment "Shared section-5.0 capability. Standing-function nodes (R5) realize this; the group agent that mints those acts adds the 'realized in some <act>' restriction (R6)." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization renders services to its customers." .
+
+bpot:ServiceDeliveryCompletionConfirmation a owl:Class ;
+    rdfs:label "Service Delivery Completion Confirmation" ;
+    rdfs:comment "Minted locally (Gate-F fix, 5.3.3.5): output of bpo:P20082, supplying the descriptive completion-confirmation its Act-of-Appraisal genus definitionally produces. Descriptive: a confirmation reports a verified state." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a confirmed judgement that all internal and external aspects of a service delivery have been completed." ;
+    skos:example "A closeout checklist signed off once every internal and external completion item is cleared." .
+
+bpot:ServiceDeliveryDevelopmentManagementCapability a owl:Class ;
+    rdfs:label "Service Delivery Development and Direction Management Capability" ;
+    rdfs:comment "Minted for the R5/R6 demotion of APQC activity 5.1.1.3 'Manage service delivery development and direction' [20030]: a standing guidance/management function with no natural end, hence an Organization Capability (cco:ont00000568) not a bounded process. Specializes the shared bpo:ServiceDeliveryGovernanceCapability; realized in the bounded governance establishment act bpo:P20027 (R6)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P20027 ],
+        bpot:ServiceDeliveryGovernanceCapability ;
+    skos:definition "A Service Delivery Governance Capability that is realized in the ongoing acts by which an organization guides the resources that keep the development and direction of service delivery in line with customer needs." .
+
+bpot:ServiceDeliveryGoal a owl:Class ;
+    rdfs:label "Service Delivery Goal" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2.1). Directive: a goal prescribes an intended end-state." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a target outcome an organization's service delivery is intended to achieve for its customers." .
+
+bpot:ServiceDeliveryPerformanceManagementCapability a owl:Class ;
+    rdfs:label "Service Delivery Performance Management Capability" ;
+    rdfs:comment "Minted for the R5/R6 demotion of APQC activity 5.1.1.2 'Manage service delivery performance' [20029]: a standing oversight function with no natural end, so an Organization Capability (cco:ont00000568) rather than a bounded process. Specializes the shared bpo:ServiceDeliveryGovernanceCapability; realized in the bounded governance establishment act bpo:P20027 (R6)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P20027 ],
+        bpot:ServiceDeliveryGovernanceCapability ;
+    skos:definition "A Service Delivery Governance Capability that is realized in the ongoing acts by which an organization conducts and implements performance measures to ensure successful delivery of service to the customer." .
+
+bpot:ServiceDeliveryPersonnelRole a owl:Class ;
+    rdfs:label "Service Delivery Personnel Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being assigned to perform the work of delivering a service to a customer." .
+
+bpot:ServiceDeliveryPlan a owl:Class ;
+    rdfs:label "Service Delivery Plan" ;
+    rdfs:comment "Shared section-5.0 output (5.2, 5.3.1, 5.3.1.7). Distinct from bpo:ProjectPlan: the action plan for the delivery itself rather than the overall engagement." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the plan of action for rendering a service-delivery solution to a customer." .
+
+bpot:ServiceDeliverySatisfactionAssessment a owl:Class ;
+    rdfs:label "Service Delivery Satisfaction Assessment" ;
+    rdfs:comment "Shared section-5.0 output (5.1.1.4). 'is about' the Customer whose satisfaction it characterises." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement, derived from customer feedback, of how satisfactorily a service was delivered." .
+
+bpot:ServiceDeliverySolution a owl:Class ;
+    rdfs:label "Service Delivery Solution (deployed artifact)" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.6, 5.3.2.7). Modeled as a material entity per the operations material-I/O allowance; where a particular solution is purely informational, group agents may instead use bpo:SolutionSpecification. bpo:SolutionSpecification (Directive ICE) prescribes it; this class is the delivered artifact." ;
+    rdfs:subClassOf obo:BFO_0000040 ;
+    skos:definition "A Material Entity (a built or purchased artifact) that is deployed to a customer to fulfil a service-delivery need." .
+
+bpot:ServiceDeliveryStrategy a owl:Class ;
+    rdfs:label "Service Delivery Strategy" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2). Directive: a strategy prescribes an intended course of action." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the goals, policies, processes, and procedures by which an organization intends to deliver services." .
+
+bpot:ServiceKnowledgeBase a owl:Class ;
+    rdfs:label "Service Knowledge Base" ;
+    rdfs:comment "Shared section-5.0 output (5.3.3.6). 'is about' the service-delivery process the knowledge concerns." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ServiceDeliveryProcessSpecification ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes accumulated lessons and information harvested from completed service-delivery engagements." .
+
+bpot:SolutionBuildRecord a owl:Class ;
+    rdfs:label "Solution Build Record" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.6). The informational deliverable of make/build-or-buy: every process has output is an ICE (D3 / S3), whereas the produced bpo:ServiceDeliverySolution artifact (a material entity) is consumed downstream by deployment (5.3.2.7) only as an input. bpo:SolutionSpecification (Directive ICE) prescribes the solution; this records that it was built/bought." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records that a service-delivery solution has been constructed or purchased and documents how it was realized." .
+
+bpot:SolutionChangeSpecification a owl:Class ;
+    rdfs:label "Solution Change Specification" ;
+    rdfs:comment "Minted locally: APQC 5.3.2.4 output; no shared-vocab ICE supplied. Directive because it prescribes changes to be applied." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes corrections to a drafted solution in response to identified issues." ;
+    skos:example "A change request listing fixes required before a solution can be approved." .
+
+bpot:Supplier rdfs:comment "Shared section-5.0 participant (5.2.2.4, 5.2.2.5, 5.3.1.1). Modeled as cco:Agent to admit both organizational and individual suppliers." ;
+    skos:definition "An Agent that bears a supplier role in virtue of providing resources, skills, or capabilities that supplement an organization's service delivery." .
+
+bpot:TrainingEffectivenessEvaluation a owl:Class ;
+    rdfs:label "Training Effectiveness Evaluation" ;
+    rdfs:comment "Shared section-5.0 output (5.2.3.6, 5.2.3.7). Descriptive: it reports an evaluation judgement." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of how effectively delivered training imparted the targeted skills or behaviours." .
+
+bpot:TrainingFeedback a owl:Class ;
+    rdfs:label "Training Feedback" ;
+    rdfs:comment "Minted locally (Gate-F fix, 5.2.3.7): input to bpo:P12135. Distinct from bpo:CustomerFeedback (a CUSTOMER's evaluation of SERVICES RENDERED). The APQC source for 12135 specifies 'manager or student feedback ... to evaluate training effectiveness' -- i.e. trainee/manager feedback ABOUT TRAINING, not customer feedback about delivered services; reusing bpo:CustomerFeedback here was a definitional category error. Descriptive: it reports an evaluation." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a manager's or trainee's evaluation of training that has been provided, solicited to gauge its effectiveness." ;
+    skos:example "A post-course survey in which a line manager rates how well a trainee can now perform the taught task." .
+
+bpot:TrainingMaterialSpecification a owl:Class ;
+    rdfs:label "Training Material Specification" ;
+    rdfs:comment "Shared section-5.0 output (5.2.3.2). Despite the 'Specification' label this is DESCRIPTIVE (D6 false-friend guard): it records the content and structure of produced training materials, not a prescriptive requirement. A prescriptive training-material requirement would be a Directive ICE, modeled separately. The informational deliverable of training-material development (every has-output is an ICE, D3/S3); the produced bpo:TrainingMaterial bearer is consumed downstream as an input." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the content and structure of the training materials developed to teach service-delivery skills or behaviours." .
+
+bpot:TrainingSchedule a owl:Class ;
+    rdfs:label "Training Schedule" ;
+    rdfs:comment "Minted locally (5.2.3.3): a schedule prescribes (Directive) when/where training occurs; no shared-vocab ICE covers it." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the times, places, and sequence in which training sessions are to be delivered to trainees." ;
+    skos:example "A calendar prescribing which cohorts attend which training modules over a quarter." .
+
+bpot:WorkplaceLayoutPlan a owl:Class ;
+    rdfs:label "Workplace Layout Plan" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2.7). Directive: a layout plan prescribes an intended arrangement." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the physical layout and infrastructure of a workplace to support service delivery." .
+
+bpot:ActOfForecasting rdfs:comment "Inlined canonical shared genus (apqc-ext.ttl registry). Anchored under cco:ont00000371 (Act of Prediction; parent cco:ont00000228), whose definitional output is a Predictive ICE (cco:ont00000626 subClassOf cco:ont00000853) -- exactly the genus of a demand/sales/volume forecast. Recurs in 3.0 and 6.0." .
+
+bpot:CustomerFeedback rdfs:comment "Shared section-5.0 input. Recurs across 5.1.1.4, 5.2.3.7, 5.3.3.6." ;
+    skos:definition "A Descriptive Information Content Entity that describes a customer's evaluation of services rendered, solicited to inform improvement of service delivery." .
+
+bpot:ForecastAccuracyAssessment a owl:Class ;
+    rdfs:label "Forecast Accuracy Assessment" ;
+    rdfs:comment "Shared section-5.0 output (5.2.1.8). Descriptive: it reports a measured comparison." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of how closely a demand forecast matched realized demand." .
+
+bpot:P12127 a owl:Class ;
+    rdfs:label "Enable service delivery resources" ;
+    rdfs:comment "Bounded, repeatable training-enablement cycle (partonomy anchor). Children are process parts (cco:ont00001777). Anchored at the generic cco:ont00000228 (Planned Act) because the cycle composes heterogeneous parts (formulation, material production, instruction, appraisal) and is not reducible to a single act genus." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12128 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12129 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12131 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12132 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12133 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20057 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12135 ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that institutes training to enable service delivery personnel to provide service delivery, comprising planning, material development, scheduling, delivery, and evaluation of training." ;
+    skos:example "An L&D team plans, builds, schedules, delivers, and evaluates onboarding for new delivery staff." ;
+    bpot:apqcSourceText "Instituting training to enable resources to provide service delivery to the customer. Develop a training plan. Create materials that provide for operation and technical training. Schedule, perform, and evaluate training." ;
+    bpot:hierarchyID "5.2.3" ;
+    bpot:pcfID "12127" .
+
+bpot:P12128 a owl:Class ;
+    rdfs:label "Develop service delivery training plan" ;
+    rdfs:comment "Defining output is a Directive training plan, so anchored at bpo:ActOfFormulation per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SkillsTaxonomy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TrainingPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a skills taxonomy and has as output a training plan detailing the actions, deliverers, timing, and location for teaching service delivery skills." ;
+    skos:example "A training lead drafts the curriculum, instructors, and venue plan for a new-hire program." ;
+    bpot:apqcSourceText "Creating a detailed summary of all the actions relevant to teaching a person a particular skill or type of behavior. Determine who will deliver the training. Determine when and where the apprentice or trainee needs to go to receive the structured component of the training." ;
+    bpot:hierarchyID "5.2.3.1" ;
+    bpot:pcfID "12128" .
+
+bpot:P12129 a owl:Class ;
+    rdfs:label "Develop training materials" ;
+    rdfs:comment "Anchored at the generic cco:ont00000228 (Planned Act): the cycle produces training materials but is not reducible to a single information-output act genus. Per D3 / S3 the definitional has output is the Descriptive bpo:TrainingMaterialSpecification (the informational deliverable); the produced bpo:TrainingMaterial artifact (a material entity) is consumed downstream as an input to the training-instruction acts (5.2.3.4, 5.2.3.5). The training plan input is informational (an ICE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TrainingPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TrainingMaterialSpecification ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that has as input a training plan and has as output training material used to provide comprehensive training in service delivery skills." ;
+    skos:example "An instructional designer produces slide decks and an e-learning module for a technical course." ;
+    bpot:apqcSourceText "Developing materials necessary to provide comprehensive training for the skills or behavior needed to deliver services. This can be any number for formats such as classroom or computer based training." ;
+    bpot:hierarchyID "5.2.3.2" ;
+    bpot:pcfID "12129" .
+
+bpot:P12131 a owl:Class ;
+    rdfs:label "Manage training schedule" ;
+    rdfs:comment "Defining output is a Directive training schedule (prescribes when/where), so anchored at bpo:ActOfFormulation per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TrainingPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TrainingSchedule ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a training plan and has as output a training schedule prescribing the timeframe in which training is delivered to meet individual and organizational needs." ;
+    skos:example "A coordinator slots cohorts into training weeks that fit both delivery commitments and learner availability." ;
+    bpot:apqcSourceText "Providing training to the employee within a manageable timeframe to meet the needs of both the individual and the organization." ;
+    bpot:hierarchyID "5.2.3.3" ;
+    bpot:pcfID "12131" .
+
+bpot:P12132 a owl:Class ;
+    rdfs:label "Deliver operations training" ;
+    rdfs:comment "Reuses CCO cco:ont00001075 (Act of Training Instruction): knowledge imparted from agent to agent. Service delivery personnel (the trainees) are definitional participants; training material is a definitional input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TrainingMaterial ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnel ],
+        cco:ont00000228,
+        cco:ont00001075 ;
+    skos:definition "An Act of Training Instruction that imparts knowledge of the organization's operations processes to service delivery personnel using training material." ;
+    skos:example "A senior operator runs an operations-process onboarding session for new delivery staff." ;
+    bpot:apqcSourceText "Educating service delivery personnel on all aspects of the operations process of the organization." ;
+    bpot:hierarchyID "5.2.3.4" ;
+    bpot:pcfID "12132" .
+
+bpot:P12133 a owl:Class ;
+    rdfs:label "Deliver technical training" ;
+    rdfs:comment "Reuses CCO cco:ont00001075 (Act of Training Instruction). Service delivery personnel are definitional participants; training material is a definitional input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TrainingMaterial ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnel ],
+        cco:ont00000228,
+        cco:ont00001075 ;
+    skos:definition "An Act of Training Instruction that imparts knowledge of the technical aspects of service delivery to service delivery personnel using training material." ;
+    skos:example "A technical trainer certifies field engineers on a product's installation procedures." ;
+    bpot:apqcSourceText "Ensuring that all personnel are trained on all technical aspects of service delivery." ;
+    bpot:hierarchyID "5.2.3.5" ;
+    bpot:pcfID "12133" .
+
+bpot:P12135 a owl:Class ;
+    rdfs:label "Evaluate training effectiveness" ;
+    rdfs:comment "Gate-F fix: the has-input was changed from bpo:CustomerFeedback to bpo:TrainingFeedback. bpo:CustomerFeedback is 'a customer's evaluation of SERVICES RENDERED', but the source for 12135 specifies 'manager or student feedback ... to evaluate training effectiveness' -- trainee/manager feedback ABOUT TRAINING, not customer feedback about services; reusing bpo:CustomerFeedback was a definitional category error. Genus re-anchored from bpo:ActOfAnalysis to cco:ont00000636 (Act of Appraisal) to match the 'evaluate' verb and the output bpo:TrainingEffectivenessEvaluation, which is itself defined as a judgement; applied consistently with sibling bpo:P20057 (also re-anchored to Act of Appraisal). GOLDEN PRINCIPLE holds either way (descriptive output)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SkillsCapabilityTestResult ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TrainingFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TrainingEffectivenessEvaluation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a skills and capability test result and training feedback and has as output a training effectiveness evaluation judging how effectively the training imparted the targeted skills." ;
+    skos:example "A training manager combines test scores and manager surveys into an end-of-program effectiveness report." ;
+    bpot:apqcSourceText "Eliciting feedback from various sources to evaluate the training provided. This can be achieved through testing and the practical application of skills. Additionally, manager or student feedback can be garnered to evaluate training effectiveness." ;
+    bpot:hierarchyID "5.2.3.7" ;
+    bpot:pcfID "12135" .
+
+bpot:P20031 a owl:Class ;
+    rdfs:label "Solicit feedback from customer on service delivery satisfaction" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it evaluates/judges delivery effectiveness from the customer's perspective; its definitional output is the Descriptive bpo:ServiceDeliverySatisfactionAssessment (GOLDEN PRINCIPLE: appraisal -> descriptive). The Customer participates (has participant). Customer feedback is a typical input (rdfs:comment, not definitional restriction)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliverySatisfactionAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that engages the customer after delivery to gauge the effectiveness of services rendered and produces a service delivery satisfaction assessment about that customer." ;
+    skos:example "A delivery lead surveys a customer after a project and records a satisfaction assessment to improve future delivery." ;
+    bpot:apqcSourceText "Engaging the customer post delivery to gauge the effectiveness of services rendered in order to improve on key delivery functions going forward." ;
+    bpot:hierarchyID "5.1.1.4" ;
+    bpot:pcfID "20031" .
+
+bpot:P20032 a owl:Class ;
+    rdfs:label "Develop service delivery strategies" ;
+    rdfs:comment "Bounded strategy-construction act whose APQC children (5.1.2.1-5.1.2.7) are process parts (cco:ont00001777). Genus Act of Formulation: its dominant deliverable is the prescriptive bpo:ServiceDeliveryStrategy (Directive ICE), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryStrategy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20033 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20034 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20035 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20036 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20037 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20038 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20039 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that constructs an organization's service delivery strategies, defining the goals, policies, processes, and workplace layout that govern how services are delivered." ;
+    skos:example "A service organization's strategy team drafts its delivery goals, labor policy, process specification, and workplace layout for the year." ;
+    bpot:apqcSourceText "Constructing strategies that identify goals, policies, processes, and procedures in relation to service delivery. Review and validate strategies. Define the workplace layout and infrastructure." ;
+    bpot:hierarchyID "5.1.2" ;
+    bpot:pcfID "20032" .
+
+bpot:P20033 a owl:Class ;
+    rdfs:label "Define service delivery goals" ;
+    rdfs:comment "Genus Act of Formulation: its definitional output bpo:ServiceDeliveryGoal is a Directive ICE (GOLDEN PRINCIPLE). Customer requirements are a typical input (rdfs:comment, not a definitional restriction)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryGoal ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that aligns organizational practice to customer needs by composing the service delivery goals an organization sets for itself." ;
+    skos:example "A delivery organization sets measurable on-time and satisfaction goals aligned to customer needs." ;
+    bpot:apqcSourceText "Aligning organization practices to meet the needs of the customer by creating service delivery goals." ;
+    bpot:hierarchyID "5.1.2.1" ;
+    bpot:pcfID "20033" .
+
+bpot:P20034 a owl:Class ;
+    rdfs:label "Define labor policies" ;
+    rdfs:comment "Genus Act of Formulation: its definitional output bpo:LaborPolicy is a Directive ICE (GOLDEN PRINCIPLE). Regulatory and customer requirements are typical inputs (rdfs:comment, not definitional restrictions)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:LaborPolicy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that outlines an organization's labor policies for its delivery resources so as to satisfy the needs of the organization, the customer, and government regulations." ;
+    skos:example "An HR-and-delivery team drafts staffing and working-hours policies compliant with labor law." ;
+    bpot:apqcSourceText "Outlining labor policies for resources and ensuring that those policies meet the needs of the organization, the customer, and government regulations." ;
+    bpot:hierarchyID "5.1.2.2" ;
+    bpot:pcfID "20034" .
+
+bpot:P20035 a owl:Class ;
+    rdfs:label "Evaluate resource availability" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it evaluates whether resources suffice for customer requirements; its definitional output bpo:ResourceAvailabilityAssessment is a Descriptive ICE (GOLDEN PRINCIPLE: appraisal -> descriptive). Customer requirements are a typical input (rdfs:comment)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceAvailabilityAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that judges the availability of the resources required to meet customer needs and produces a resource availability assessment." ;
+    skos:example "A resourcing manager appraises staff and tooling availability against an upcoming engagement and reports the gap." ;
+    bpot:apqcSourceText "Understanding the needs of the customer and providing the necessary resources to meet those requirements." ;
+    bpot:hierarchyID "5.1.2.3" ;
+    bpot:pcfID "20035" .
+
+bpot:P20036 a owl:Class ;
+    rdfs:label "Define service delivery network and supply constraints" ;
+    rdfs:comment "Genus Act of Analysis (cco:ont00000366 Act of Information Processing): the verb 'identify and understand limitations' is information processing that yields a representation, not a prescription; its definitional output bpo:SupplyConstraintAnalysis is a Descriptive ICE (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplyConstraintAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that identifies and examines the limitations imposed upon an organization's service delivery network and supply and produces a supply constraint analysis." ;
+    skos:example "A delivery planner maps capacity and supplier limits across the delivery network and documents the constraints." ;
+    bpot:apqcSourceText "Identifying and understanding the limitations imposed upon service delivery network and supply." ;
+    bpot:hierarchyID "5.1.2.4" ;
+    bpot:pcfID "20036" .
+
+bpot:P20037 a owl:Class ;
+    rdfs:label "Define service delivery process" ;
+    rdfs:comment "Genus Act of Formulation: its definitional output bpo:ServiceDeliveryProcessSpecification is a Directive ICE (GOLDEN PRINCIPLE). The source text typo 'Defanging' is read as 'Defining'; the verbatim APQC text is preserved in bpo:apqcSourceText." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryProcessSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes the policies and procedures focused on meeting customer needs and expectations within the organization's working parameters, yielding a service delivery process specification." ;
+    skos:example "A process owner documents the standard service delivery procedure customers can expect for a given offering." ;
+    bpot:apqcSourceText "Defanging policies and procedures that focus on meeting the needs and expectations of the customer within the working parameters of the organization." ;
+    bpot:hierarchyID "5.1.2.5" ;
+    bpot:pcfID "20037" .
+
+bpot:P20038 a owl:Class ;
+    rdfs:label "Review and validate service delivery procedures" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges existing procedures against performance parameters; its definitional output bpo:ServiceDeliveryReview is a Descriptive ICE (GOLDEN PRINCIPLE: appraisal -> descriptive). Has the service delivery process specification as a typical input (rdfs:comment); the realignment/revision of the procedures is a downstream formulation step, not part of this review act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that reviews and validates existing service delivery procedures against performance parameters and produces a service delivery review identifying where they fall short of expectations." ;
+    skos:example "A quality lead reviews delivery procedures against KPIs and flags the ones missing their targets for realignment." ;
+    bpot:apqcSourceText "Revisioning service delivery procedures that fall short of performance parameters. Realign procedures with specified expectations in order to provide successful service delivery." ;
+    bpot:hierarchyID "5.1.2.6" ;
+    bpot:pcfID "20038" .
+
+bpot:P20039 a owl:Class ;
+    rdfs:label "Define service delivery workplace layout and infrastructure" ;
+    rdfs:comment "Genus Act of Formulation: its definitional output bpo:WorkplaceLayoutPlan is a Directive ICE (a prescriptive layout/infrastructure plan), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WorkplaceLayoutPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that designs a service delivery workplace best serving the needs of the organization and customer, yielding a workplace layout plan for its layout and infrastructure." ;
+    skos:example "A facilities-and-delivery team designs the floor layout and infrastructure of a new service center." ;
+    bpot:apqcSourceText "Creating a workplace that best serves the needs of the organization and customer through strategic layout and infrastructure." ;
+    bpot:hierarchyID "5.1.2.7" ;
+    bpot:pcfID "20039" .
+
+bpot:P20041 a owl:Class ;
+    rdfs:label "Manage service delivery resource demand" ;
+    rdfs:comment "Bounded, repeatable demand-management cycle. Children are process parts (cco:ont00001777). Anchored at bpo:ActOfAnalysis because its defining output is a Descriptive forecast." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ConsensusDemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20042 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20043 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20044 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20045 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20046 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20047 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20048 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20049 ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that monitors opportunity pipeline and demand signals and produces a consensus demand forecast for service delivery resources." ;
+    skos:example "A planning team builds, reconciles, and tracks a quarterly demand forecast for a services business." ;
+    bpot:apqcSourceText "Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and collaborating with customers. Determine skills needed for service deliver and forecast customer orders. Monitor forecasted orders and modify if where needed. Measure forecast accuracy." ;
+    bpot:hierarchyID "5.2.1" ;
+    bpot:pcfID "20041" .
+
+bpot:P20042 a owl:Class ;
+    rdfs:label "Monitor pipeline" ;
+    rdfs:comment "Anchored at bpo:ActOfMonitoring: the act tracks ongoing opportunity state rather than rendering a value judgement. Descriptive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:OpportunityPipelineData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PipelineStatusAssessment ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that has as input opportunity pipeline data and has as output a pipeline status assessment of opportunities moving through the pipeline." ;
+    skos:example "A sales-operations analyst tracks each opportunity's pipeline stage week over week." ;
+    bpot:apqcSourceText "Tracking potential opportunities as they move through the various stages of the pipeline." ;
+    bpot:hierarchyID "5.2.1.1" ;
+    bpot:pcfID "20042" .
+
+bpot:P20043 a owl:Class ;
+    rdfs:label "Develop baseline forecasts" ;
+    rdfs:comment "Re-anchored (Gate-F) to bpo:ActOfForecasting (Act of Prediction): the output bpo:DemandForecast is a PREDICTIVE ICE about uncertain future demand, matching the Slice-3 forecast pattern rather than generic analysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:HistoricalDemandData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketEnvironmentData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        bpot:ActOfForecasting ;
+    skos:definition "An Act of Forecasting that has as input historical demand data and market environment data and has as output a demand forecast for the organization's services." ;
+    skos:example "A demand planner estimates next quarter's service demand from prior-year volumes and market trends." ;
+    bpot:apqcSourceText "Identifying the demand anticipated for the organization's services. Estimate future demand for services using historical data, analysis of the market environment, and external data." ;
+    bpot:hierarchyID "5.2.1.2" ;
+    bpot:pcfID "20043" .
+
+bpot:P20044 a owl:Class ;
+    rdfs:label "Collaborate with customers" ;
+    rdfs:comment "Gate-F fix: REJECTED bpo:ActOfServiceProvision (a Planned Act in which an Agent renders a service to a customer by completing the tasks that fulfil an agreed service need). No service is rendered here -- this is a requirements-elicitation/communication act in which the organization GATHERS information; the deliverable is an understanding of customer needs (Descriptive), so per the GOLDEN PRINCIPLE the genus is an analysis/information-processing act, bpo:ActOfAnalysis. Re-anchored accordingly. The customer participant is definitional. The understanding of needs is the OUTPUT of the meeting (bpo:CustomerNeedsAnalysis), not a pre-existing input: the prior has-input bpo:CustomerRequirements was removed because the requirements are elicited here, not consumed. Constructing a solution is a typical, not necessary, downstream output (recorded here, not as a restriction). bpo:ActOfServiceProvision is reserved for 5.3 rendering acts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerNeedsAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that engages a customer in a collaborative meeting to elicit and understand the scope of their needs and has as output a customer-needs analysis." ;
+    skos:example "A delivery lead runs a scoping workshop with the customer to capture the in-scope needs." ;
+    bpot:apqcSourceText "Providing a collaborative meeting in which to engage the customer to understand the scope of their needs and constructing solutions based on need and constraints." ;
+    bpot:hierarchyID "5.2.1.3" ;
+    bpot:pcfID "20044" .
+
+bpot:P20045 a owl:Class ;
+    rdfs:label "Develop consensus forecast" ;
+    rdfs:comment "Re-anchored (Gate-F) to bpo:ActOfForecasting: reconciles the baseline forecast with customer input into an agreed PREDICTIVE forecast (bpo:ConsensusDemandForecast)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ConsensusDemandForecast ],
+        bpot:ActOfForecasting ;
+    skos:definition "An Act of Forecasting that has as input a demand forecast and customer feedback and has as output a consensus demand forecast." ;
+    skos:example "Sales and delivery leaders reconcile the baseline forecast with customer commitments into one agreed number." ;
+    bpot:apqcSourceText "Arriving at a consensus over the forecasted levels of demand for services by analyzing baseline forecasts and customer input." ;
+    bpot:hierarchyID "5.2.1.4" ;
+    bpot:pcfID "20045" .
+
+bpot:P20046 a owl:Class ;
+    rdfs:label "Determine availability of skills to deliver on current and forecast customer orders" ;
+    rdfs:comment "Discerns required skillsets against available resources; descriptive assessment output anchors it at bpo:ActOfAnalysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceAvailabilityAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a demand forecast and has as output a resource availability assessment of the skills available to deliver on current and forecast customer orders." ;
+    skos:example "A resource manager checks whether the skills on hand can cover the forecast order book." ;
+    bpot:apqcSourceText "Identifying what skillset is necessary for the delivery of opportunities. Determine the forecast of customer orders based upon those skillsets and the resources available." ;
+    bpot:hierarchyID "5.2.1.5" ;
+    bpot:pcfID "20046" .
+
+bpot:P20047 a owl:Class ;
+    rdfs:label "Monitor activity against forecast and revise forecast" ;
+    rdfs:comment "Anchored at bpo:ActOfMonitoring: the DOMINANT act is oversight of delivery activity against the forecast (source: 'Overseeing all activities'); the emitted revised forecast is a byproduct. Its output bpo:DemandForecast is a PREDICTIVE ICE (cco:ont00000626 subClassOf Descriptive ICE), so the Information-Processing genus still agrees with the descriptive-kind output (GOLDEN PRINCIPLE). The pure forecast-production acts P20043/P20045 use bpo:ActOfForecasting." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ConsensusDemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that has as input a consensus demand forecast and has as output a revised demand forecast reflecting observed delivery activity and emerging issues." ;
+    skos:example "A delivery manager tracks actuals against forecast and updates the forecast when a key resource leaves." ;
+    bpot:apqcSourceText "Overseeing all activities necessary to deliver services to customer. Revise forecast to account for any issues that may arise. This could be changes in market trend, resource changes, etc." ;
+    bpot:hierarchyID "5.2.1.6" ;
+    bpot:pcfID "20047" .
+
+bpot:P20048 a owl:Class ;
+    rdfs:label "Evaluate and revise forecasting approach" ;
+    rdfs:comment "Recognizes problems in the forecasting approach and adjusts it; the corrective change is expressed as a Descriptive revised forecast, so it anchors at bpo:ActOfAnalysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ForecastAccuracyAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a forecast accuracy assessment and has as output a revised demand forecast that better aligns the forecasting approach with demand." ;
+    skos:example "A planning lead diagnoses systematic over-forecasting and recalibrates the model." ;
+    bpot:apqcSourceText "Recognizing potential problems in the current forecast and making the necessary changes to align the forecast meet demand." ;
+    bpot:hierarchyID "5.2.1.7" ;
+    bpot:pcfID "20048" .
+
+bpot:P20049 a owl:Class ;
+    rdfs:label "Measure forecast accuracy" ;
+    rdfs:comment "Compares forecast to actuals to yield a Descriptive accuracy judgement, so it anchors at bpo:ActOfAnalysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ForecastAccuracyAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a demand forecast and has as output a forecast accuracy assessment determined by comparing the forecast against actuals." ;
+    skos:example "An analyst computes MAPE between forecasted and actual service volumes for the prior period." ;
+    bpot:apqcSourceText "Analyzing forecasting against actuals to determine accuracy. Modify forecasting to align with actual need." ;
+    bpot:hierarchyID "5.2.1.8" ;
+    bpot:pcfID "20049" .
+
+bpot:P20050 a owl:Class ;
+    rdfs:label "Create and manage resource plan" ;
+    rdfs:comment "Bounded, repeatable resource-planning cycle (partonomy anchor). Children are process parts (cco:ont00001777). Anchored at bpo:ActOfFormulation because its defining output is a Directive resource plan." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcePlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20051 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20052 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20053 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20054 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20055 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20056 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that aligns resource demand with capacity, skills, and capabilities and has as output a resource plan." ;
+    skos:example "A resource manager assembles and maintains a staffing-and-supplier plan for the delivery portfolio." ;
+    bpot:apqcSourceText "Identifying the need for and creating a resource plan. Understand resource demand and align with capacity, skills, and capabilities. Enlist suppliers and partners to supplement needed skills and capabilities. Monitor and manage capabilities and skills with an eye on critical resources and supplier capacity." ;
+    bpot:hierarchyID "5.2.2" ;
+    bpot:pcfID "20050" .
+
+bpot:P20051 a owl:Class ;
+    rdfs:label "Define and manage skills taxonomy" ;
+    rdfs:comment "Produces a Descriptive classification of skill requirements; anchored at bpo:ActOfAnalysis. The taxonomy describes (does not prescribe) the skill landscape." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerRequirements ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SkillsTaxonomy ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer requirements and has as output a skills taxonomy classifying and organizing the skills needed to deliver services." ;
+    skos:example "An HR analyst builds a structured catalog of the competencies needed across service offerings." ;
+    bpot:apqcSourceText "Analyzing the skills needed to perform services to be delivered. Classify and organize these skills requirements." ;
+    bpot:hierarchyID "5.2.2.1" ;
+    bpot:pcfID "20051" .
+
+bpot:P20052 a owl:Class ;
+    rdfs:label "Create resource plan" ;
+    rdfs:comment "Defining output is a Directive resource plan, so anchored at bpo:ActOfFormulation per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ResourceAvailabilityAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcePlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a resource availability assessment and has as output a resource plan ensuring all resources are available to carry out required services." ;
+    skos:example "A resource manager writes the staffing and equipment plan for an upcoming engagement." ;
+    bpot:apqcSourceText "Creating a plan to ensure that all resources are available to carry out services required for the customer. This can include physical resources and personnel." ;
+    bpot:hierarchyID "5.2.2.2" ;
+    bpot:pcfID "20052" .
+
+bpot:P20053 a owl:Class ;
+    rdfs:label "Match resource demand with capacity, skills, and capabilities" ;
+    rdfs:comment "Descriptive matching judgement output anchors it at bpo:ActOfAnalysis. Enlisting suppliers/partners is the downstream collaboration process (bpo:P20054), not part of the matching analysis itself." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DemandForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceAvailabilityAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a demand forecast and has as output a resource availability assessment matching demand against capacity, skills, and capabilities." ;
+    skos:example "A planner compares the forecast order book against the skills inventory to find gaps." ;
+    bpot:apqcSourceText "Matching demand with skills and capability. Enlisting suppliers and partners to help with demand when needed." ;
+    bpot:hierarchyID "5.2.2.3" ;
+    bpot:pcfID "20053" .
+
+bpot:P20054 a owl:Class ;
+    rdfs:label "Collaborate with suppliers and partners to supplement skills and capabilities" ;
+    rdfs:comment "Gate-F fix: REJECTED bpo:ActOfServiceProvision (rendering a service TO a customer). The source describes the organization OBTAINING resources/skills FROM suppliers to fill gaps -- a procurement/acquisition act in which the org is the RECIPIENT and the supplier is the provider; ServiceProvision's 'render service to a customer' definition does not fit (the roles are reversed). Re-anchored at bpo:ActOfAcquisition (Planned Act; 'obtains from some authority or supplier an entity ... the Agent did not previously hold'), which fits exactly. Supplier and delivery-partner participants are definitional to a third-party acquisition/collaboration act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SupplyConstraintAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Supplier ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:DeliveryPartner ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition that obtains from suppliers and delivery partners the resources, skills, and capabilities needed to supplement gaps in an organization's own service delivery, and has as input a supply constraint analysis." ;
+    skos:example "A resource manager negotiates a partner SOW to obtain a specialist-skill capability for a delivery." ;
+    bpot:apqcSourceText "Understanding organizational need to enlist suppliers to provide resources for gaps in skills and capabilities. Identify where additional skills are needed and collaborate with third parties to fill those demands." ;
+    bpot:hierarchyID "5.2.2.4" ;
+    bpot:pcfID "20054" .
+
+bpot:P20055 a owl:Class ;
+    rdfs:label "Identify critical resources and supplier capacity" ;
+    rdfs:comment "Discerns and registers critical resources and supplier capacity limits; descriptive register output anchors it at bpo:ActOfIdentification (discernment sense), not the CCO communication-sense identifying act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerRequirements ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplyConstraintAnalysis ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that has as input customer requirements and has as output a supply constraint analysis registering the critical resources required and the capacity thresholds of suppliers." ;
+    skos:example "A delivery lead lists the few specialist roles that are single points of failure and the suppliers who can backfill them." ;
+    bpot:apqcSourceText "Realizing critical resources required to perform and carry out customer needs. Engage with suppliers to fulfill those needs, if necessary. Identify supplier threshold for performing those needs." ;
+    bpot:hierarchyID "5.2.2.5" ;
+    bpot:pcfID "20055" .
+
+bpot:P20056 a owl:Class ;
+    rdfs:label "Monitor and manage resource capacity and availability" ;
+    rdfs:comment "Anchored at bpo:ActOfMonitoring: it oversees ongoing workforce capacity and availability and reports state. Output is a Descriptive resource availability assessment. Bounded within a planning cycle (a part of bpo:P20050), so modeled as a process; the standing capacity it realizes is bpo:ResourceManagementCapability." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ResourcePlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceAvailabilityAssessment ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that has as input a resource plan and has as output a resource availability assessment confirming that resources are at capacity and available for service delivery." ;
+    skos:example "A resource manager runs a weekly utilization review to confirm staff are fully and appropriately deployed." ;
+    bpot:apqcSourceText "Directing and managing workforce needs. Ensure that resources are at full capacity. Monitor that all resources are able to skilled in their respective rolls. Make sure that necessary resources are available to provide the needed services." ;
+    bpot:hierarchyID "5.2.2.6" ;
+    bpot:pcfID "20056" .
+
+bpot:P20057 a owl:Class ;
+    rdfs:label "Perform skill and capability testing" ;
+    rdfs:comment "Gate-F reconciliation: genus re-anchored from bpo:ActOfAnalysis to cco:ont00000636 (Act of Appraisal) for sibling consistency with bpo:P12135 'Evaluate training effectiveness'. Administering a competency test verifies/judges the trainee's success (an evaluative act), and its output bpo:SkillsCapabilityTestResult records that judgement. GOLDEN PRINCIPLE holds: descriptive output. Service delivery personnel are the test subjects (definitional participants)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SkillsCapabilityTestResult ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnel ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that administers a test and has as output a skills and capability test result judging whether training was successful through testing and practical application of skills." ;
+    skos:example "A competency assessor administers a hands-on test after a technical course and records pass/fail." ;
+    bpot:apqcSourceText "Verifying that training provided to the person was successful through the administration testing and the application of skills for practical use." ;
+    bpot:hierarchyID "5.2.3.6" ;
+    bpot:pcfID "20057" .
+
+bpot:P20059 a owl:Class ;
+    rdfs:label "Initiate service delivery" ;
+    rdfs:comment "Gate-F fix: re-anchored from cco:ont00000511 (Act of Planning) to bpo:ActOfServiceProvision, and the existential has-output some bpo:ServiceDeliveryPlan was dropped. As a phase-aggregate it is parallel to siblings bpo:P20069 (Execute) and bpo:P20077 (Complete), both anchored to bpo:ActOfServiceProvision with no output restriction; anchoring P20059 alone to Act of Planning with an output broke parallel-sibling consistency. Its seven children are a heterogeneous mix (appraisal P20060/P20064, analysis P20063, selection P20065, formulation P20061/P20062/P20068), so the plan is the output of child bpo:P20068 qua child, not of the aggregate qua aggregate; promoting it to an existential on the parent over-committed (Phase-3 necessity). The service-delivery plan therefore stays as the output of bpo:P20068 and is noted here only in this comment, not as a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20060 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20061 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20062 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20063 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20064 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20065 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20068 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that initiates a service delivery by reviewing scope with the customer, confirming readiness, and identifying, selecting, and assigning resources, as the initiation sub-phase of rendering the service." ;
+    skos:example "A kickoff phase in which scope is agreed, readiness confirmed, a team assigned, and a delivery plan produced." ;
+    bpot:apqcSourceText "Collaborating with the customer to understand service needs. Review, understand, and modify the delivery scope with the organization needs of the customer in mind. Confirm readiness and identify, select, and assign resources. Plan for service delivery." ;
+    bpot:hierarchyID "5.3.1" ;
+    bpot:pcfID "20059" .
+
+bpot:P20060 a owl:Class ;
+    rdfs:label "Review contract and agreed terms" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): the act evaluates and judges the contract terms before agreement. Gate-F fix: the definitional has-output was changed from bpo:ServiceDeliveryReview to bpo:ContractTermsReview. bpo:ServiceDeliveryReview is 'an end-to-end evaluation of the SUCCESS of a COMPLETED service-delivery engagement' (a post-delivery retrospective, the correct output of bpo:P20078 and reused there); a contract-terms appraisal at INITIATION cannot output a completed-engagement success review. A distinct descriptive output ICE (bpo:ContractTermsReview, is about the contract) was minted for this pre-delivery appraisal; bpo:ServiceDeliveryReview is reserved for P20078 (and the aggregate retrospective)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceDeliveryContract ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ContractTermsReview ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a service-delivery contract and has as output a contract-terms review of its terms, and has the customer as participant." ;
+    skos:example "A contract-review meeting where provider, customer, and supplier confirm the terms." ;
+    bpot:apqcSourceText "Meeting with the customer, partner, and/or supplier to review the terms of the solutions contract and agree on the terms set forth." ;
+    bpot:hierarchyID "5.3.1.1" ;
+    bpot:pcfID "20060" .
+
+bpot:P20061 a owl:Class ;
+    rdfs:label "Understand customer requirements and define refine approach" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): the act composes a directive specification. GOLDEN PRINCIPLE: directive output -> formulation genus." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerRequirements ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryProcessSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input customer requirements and has as output a service-delivery process specification expressing a refined service approach." ;
+    skos:example "Translating gathered requirements into a refined delivery approach document." ;
+    bpot:apqcSourceText "Taking the customer requirements for a solution and applying those requirements to a refined approach for service." ;
+    bpot:hierarchyID "5.3.1.2" ;
+    bpot:pcfID "20061" .
+
+bpot:P20062 a owl:Class ;
+    rdfs:label "Modify/revise and approve project plan" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): revising/approving a plan produces a Directive ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProjectPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output an updated and approved project plan aligned with the agreed solution approach." ;
+    skos:example "Revising the project schedule and tasks to match the agreed approach, then approving it." ;
+    bpot:apqcSourceText "Updating the project plan to align with the new solution approach agreed upon with the customer." ;
+    bpot:hierarchyID "5.3.1.3" ;
+    bpot:pcfID "20062" .
+
+bpot:P20063 a owl:Class ;
+    rdfs:label "Review customer business objectives" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis: the act examines objectives against the solution and yields a descriptive judgement." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerBusinessObjectives ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ObjectiveAlignmentAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer business objectives and has as output an objective-alignment assessment relating them to the agreed solution." ;
+    skos:example "Checking that each client objective is served by the agreed solution." ;
+    bpot:apqcSourceText "Aligning the customer business objectives with the agreed service delivery solution." ;
+    bpot:hierarchyID "5.3.1.4" ;
+    bpot:pcfID "20063" .
+
+bpot:P20064 a owl:Class ;
+    rdfs:label "Confirm environmental readiness" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): the act judges whether resources suffice and confirms readiness." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:EnvironmentalReadinessConfirmation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as output an environmental-readiness confirmation that the organization holds the resources needed for the solution." ;
+    skos:example "Verifying staffing, tooling, and facilities are in place before delivery begins." ;
+    bpot:apqcSourceText "Confirming that the organization has the recourses necessary to meet the expectations for the solution for service delivery." ;
+    bpot:hierarchyID "5.3.1.5" ;
+    bpot:pcfID "20064" .
+
+bpot:P20065 a owl:Class ;
+    rdfs:label "Identify, select, and assign resources" ;
+    rdfs:comment "Anchored to bpo:ActOfSelection (Act of Information Processing): it chooses resources from candidates and yields a directive assignment. GOLDEN PRINCIPLE: directive output -> selection genus." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcePlan ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnel ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20066 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20067 ],
+        bpot:ActOfSelection ;
+    skos:definition "An Act of Selection that chooses and assigns the resources required to deliver a service and has as output a resource plan." ;
+    skos:example "Picking the delivery team and assigning each member to the engagement." ;
+    bpot:apqcSourceText "Identifying, selecting, and assigning resources required to deliver service to the customer. Ensure that all objectives are established and met, and the all rules of engagement have been identified and communicated." ;
+    bpot:hierarchyID "5.3.1.6" ;
+    bpot:pcfID "20065" .
+
+bpot:P20066 a owl:Class ;
+    rdfs:label "Establish people objectives" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): articulating objectives produces a Directive ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PeopleObjectives ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output people objectives prescribing the plan of action and goals for the workforce." ;
+    skos:example "Setting each team member's goals for the engagement." ;
+    bpot:apqcSourceText "Providing the workforce with a plan of action and goals necessary to provide a service. Make sure that those objectives are met." ;
+    bpot:hierarchyID "5.3.1.6.1" ;
+    bpot:pcfID "20066" .
+
+bpot:P20067 a owl:Class ;
+    rdfs:label "Establish engagement rules" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): establishing guidelines produces a Directive ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:EngagementRules ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output engagement rules prescribing how delivery resources are to interact with the customer." ;
+    skos:example "Documenting the conduct and accountability rules the team follows with the client." ;
+    bpot:apqcSourceText "Establishing guidelines for how resources engage with the customer. For example, set rules of accountability, interaction, and accommodation when engaging the customer. Resources should be polite, empathetic, and attentive." ;
+    bpot:hierarchyID "5.3.1.6.2" ;
+    bpot:pcfID "20067" .
+
+bpot:P20068 a owl:Class ;
+    rdfs:label "Plan for service delivery" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): producing a plan of action yields a Directive ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a service-delivery plan prescribing the action by which the solution is to be rendered." ;
+    skos:example "Drafting the step-by-step delivery plan for the engagement." ;
+    bpot:apqcSourceText "Establishing a plan of action to successfully render a solution for service delivery." ;
+    bpot:hierarchyID "5.3.1.7" ;
+    bpot:pcfID "20068" .
+
+bpot:P20069 a owl:Class ;
+    rdfs:label "Execute service delivery" ;
+    rdfs:comment "Anchored to bpo:ActOfServiceProvision: execution renders the service. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20070 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20071 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20072 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20073 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20074 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20075 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20076 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that carries out a service delivery by creating, validating, building, and deploying the necessary solution to the customer." ;
+    skos:example "Building and deploying the agreed solution to the client." ;
+    bpot:apqcSourceText "Carrying out service delivery to the customer by creating and deploying the necessary solution. Analyze need and create a solution. Validate the solution and make changes if needed. Obtain approval to build/buy solution and then deploy solution to customer." ;
+    bpot:hierarchyID "5.3.2" ;
+    bpot:pcfID "20069" .
+
+bpot:P20070 a owl:Class ;
+    rdfs:label "Analyze environment and customer needs" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis: it examines requirements and yields a descriptive understanding." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerRequirements ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerNeedsAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer requirements and has as output a customer-needs analysis within the organization's scope." ;
+    skos:example "Discovery work that documents the client's in-scope needs." ;
+    bpot:apqcSourceText "Understanding the needs of the customer and providing the necessary resources to meet those requirements within the scope of the organization." ;
+    bpot:hierarchyID "5.3.2.1" ;
+    bpot:pcfID "20070" .
+
+bpot:P20071 a owl:Class ;
+    rdfs:label "Define solution" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): defining a solution composes a Directive ICE. GOLDEN PRINCIPLE: directive output -> formulation genus." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerNeedsAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SolutionSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a customer-needs analysis and has as output a solution specification for providing the service." ;
+    skos:example "Designing the solution that will satisfy the documented needs." ;
+    bpot:apqcSourceText "Creating a plan of action to provide service delivery to the customer through a possible solution. This solution should be in response to a collaborative effort made by the organization and the customer to meet service delivery needs." ;
+    bpot:hierarchyID "5.3.2.2" ;
+    bpot:pcfID "20071" .
+
+bpot:P20072 a owl:Class ;
+    rdfs:label "Validate solution" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges feasibility and fitness and yields a descriptive result." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SolutionSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SolutionValidationResult ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a solution specification and has as output a solution-validation result judging its feasibility and fit." ;
+    skos:example "Testing the proposed design against the client's requirements." ;
+    bpot:apqcSourceText "Validating that the proposed solution is feasible and provides the needed services for the customer." ;
+    bpot:hierarchyID "5.3.2.3" ;
+    bpot:pcfID "20072" .
+
+bpot:P20073 a owl:Class ;
+    rdfs:label "Identify changes" ;
+    rdfs:comment "Gate-F fix: REJECTED bpo:ActOfIdentification, whose ext definition is a discernment information-processing act that 'produces an Information Content Entity that REGISTERS them' (a descriptive registration). The asserted has-output is bpo:SolutionChangeSpecification, a DIRECTIVE ICE that 'prescribes corrections to a drafted solution', so a descriptive-output discernment genus cannot definitionally yield it. The source ('Realizing issues ... AND providing changes to correct those issues') fuses discernment (descriptive) with formulation of corrective changes (directive); the directive output is the dominant tracked deliverable. Per the GOLDEN PRINCIPLE the genus is aligned to the directive output: re-anchored to bpo:ActOfFormulation (Act of Planning). The 'realizing/discerning issues' aspect is a sub-aspect recorded here rather than split out as a separate part." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SolutionValidationResult ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SolutionChangeSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a solution-validation result and has as output a solution-change specification prescribing corrections to the drafted solution." ;
+    skos:example "Logging defects found in validation and specifying the fixes required." ;
+    bpot:apqcSourceText "Realizing issues within the original drafted solution and providing changes to correct those issues." ;
+    bpot:hierarchyID "5.3.2.4" ;
+    bpot:pcfID "20073" .
+
+bpot:P20074 a owl:Class ;
+    rdfs:label "Obtain approval to proceed" ;
+    rdfs:comment "Anchored to bpo:ActOfAcquisition (Planned Act): the act secures an authorization (a Directive ICE) the agent did not previously hold." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProceedApprovalDecision ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition that obtains from the relevant authorities a proceed-approval decision authorizing the service-delivery solution." ;
+    skos:example "Securing sign-off from finance and the sponsor before building the solution." ;
+    bpot:apqcSourceText "Gaining approval from all avenues to proceed with providing solutions for service delivery." ;
+    bpot:hierarchyID "5.3.2.5" ;
+    bpot:pcfID "20074" .
+
+bpot:P20075 a owl:Class ;
+    rdfs:label "Make build/buy solution" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act). Rejected cco:ont00000051 (Act of Construction: too narrow -- excludes purchasing) and bpo:ActOfAcquisition (covers only obtaining, not building). Per D3 / S3 the definitional has output is the Descriptive bpo:SolutionBuildRecord (the informational deliverable); the produced bpo:ServiceDeliverySolution artifact (a material entity) is consumed downstream as the input to deployment (5.3.2.7). The build/buy decision is a typical accompanying output (rdfs:comment)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SolutionBuildRecord ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that constructs or purchases a service-delivery solution and produces a record that the solution has been built or bought." ;
+    skos:example "Either building the solution in-house or buying it from a vendor." ;
+    bpot:apqcSourceText "Constructing or purchasing solutions necessary to provide service delivery." ;
+    bpot:hierarchyID "5.3.2.6" ;
+    bpot:pcfID "20075" .
+
+bpot:P20076 a owl:Class ;
+    rdfs:label "Deploy solution" ;
+    rdfs:comment "Anchored to bpo:ActOfServiceProvision: deployment renders the solution to the customer. Operations material input (the solution) is legal here." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceDeliverySolution ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryRecord ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that has as input a service-delivery solution, delivers the promised services to the customer, and has as output a service-delivery record, with the customer as participant." ;
+    skos:example "Go-live: handing the working solution and services over to the client." ;
+    bpot:apqcSourceText "Providing the customer with promised services and solutions." ;
+    bpot:hierarchyID "5.3.2.7" ;
+    bpot:pcfID "20076" .
+
+bpot:P20077 a owl:Class ;
+    rdfs:label "Complete service delivery" ;
+    rdfs:comment "Anchored to bpo:ActOfServiceProvision: the closeout phase of rendering the service. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20078 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20079 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20080 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20081 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20082 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20083 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20084 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that completes a service delivery by reviewing success, closing finances, confirming delivery, releasing resources, harvesting knowledge, and archiving records." ;
+    skos:example "Wrapping up an engagement: review, invoice closeout, sign-off, team release, and archival." ;
+    bpot:apqcSourceText "Implementing final steps to complete service delivery to the customer. Evaluate success through project review, complete finance activities, and confirm delivery. Release resources and manage completion by harvesting knowledge and systems by archiving records." ;
+    bpot:hierarchyID "5.3.3" ;
+    bpot:pcfID "20077" .
+
+bpot:P20078 a owl:Class ;
+    rdfs:label "Conduct service delivery/project review and evaluate success" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges the success of the delivery and yields a descriptive review." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that reviews the whole service delivery and has as output a service-delivery review evaluating its success." ;
+    skos:example "A post-mortem evaluating how the engagement went end to end." ;
+    bpot:apqcSourceText "Reviewing the entire service delivery process to evaluate the success of the project from beginning to end." ;
+    bpot:hierarchyID "5.3.3.1" ;
+    bpot:pcfID "20078" .
+
+bpot:P20079 a owl:Class ;
+    rdfs:label "Complete/finalize financial management activities" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act): a bounded financial-closeout act. Detailed financial sub-processes cross-reference APQC Category 9.0; no informational output is definitional here." ;
+    rdfs:subClassOf cco:ont00000228 ;
+    skos:definition "A Planned Act that closes out the financial activities of a service delivery by ensuring all payments are received and all related activities are completed." ;
+    skos:example "Confirming the final invoice is paid and the engagement's ledger is closed." ;
+    bpot:apqcSourceText "Insuring all payments are received and all activates therein are completed." ;
+    bpot:hierarchyID "5.3.3.2" ;
+    bpot:pcfID "20079" .
+
+bpot:P20080 a owl:Class ;
+    rdfs:label "Confirm delivery according to contract terms" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges fulfillment against the contract and yields a descriptive confirmation." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceDeliveryContract ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ContractFulfillmentConfirmation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a service-delivery contract and has as output a contract-fulfillment confirmation that all its terms are satisfied." ;
+    skos:example "Signing off that every contracted deliverable has been met." ;
+    bpot:apqcSourceText "Confirming that the organization has satisfied all terms of the delivery contract set forth in collaboration between the organization and customer." ;
+    bpot:hierarchyID "5.3.3.3" ;
+    bpot:pcfID "20080" .
+
+bpot:P20081 a owl:Class ;
+    rdfs:label "Release resources" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act): a bounded release act. Operations participants (the released resources) are material entities/agents." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnel ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that discharges the resources leveraged for a service delivery and returns them to the resource pool, with service-delivery personnel as participants." ;
+    skos:example "Rolling the delivery team off the engagement and back to the bench." ;
+    bpot:apqcSourceText "Discharging leveraged resources from service delivery commitments upon completion. Returning resources to the resource pool." ;
+    bpot:hierarchyID "5.3.3.4" ;
+    bpot:pcfID "20081" .
+
+bpot:P20082 a owl:Class ;
+    rdfs:label "Manage service delivery completion" ;
+    rdfs:comment "Although labelled 'Manage', here it is bounded to the completion of THIS service delivery (a natural end), so it is a process, not a standing capability. Gate-F fix: REJECTED bpo:ActOfMonitoring, whose definition requires an Agent that REPEATEDLY observes an ongoing process OVER TIME -- this is a bounded one-shot closeout/ensure-completion act, not repeated status-tracking; the monitoring genus is also output-bearing (produces a Descriptive ICE) yet this class asserted no has-output, so genus and modeled facts disagreed. Re-anchored to cco:ont00000636 (Act of Appraisal) because it judges/confirms completeness, consistent with sibling closeout/confirmation acts; added the definitional descriptive output bpo:ServiceDeliveryCompletionConfirmation (GOLDEN PRINCIPLE: appraisal -> descriptive)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceDeliveryCompletionConfirmation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that judges whether all internal and external aspects of a service delivery's closeout are completed and has as output a service-delivery completion confirmation." ;
+    skos:example "A delivery lead confirming that no internal or external closeout item remains outstanding." ;
+    bpot:apqcSourceText "Ensuring that all aspects of the service delivery process are completed both internally and externally." ;
+    bpot:hierarchyID "5.3.3.5" ;
+    bpot:pcfID "20082" .
+
+bpot:P20083 a owl:Class ;
+    rdfs:label "Harvest knowledge" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (Act of Information Processing): it consolidates feedback into a descriptive knowledge base." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceKnowledgeBase ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer feedback and has as output a service knowledge base concerning the services rendered." ;
+    skos:example "Collating lessons learned and client feedback into a reusable knowledge base." ;
+    bpot:apqcSourceText "Garnering feedback from all avenues to collect a knowledge base concerning services rendered." ;
+    bpot:hierarchyID "5.3.3.6" ;
+    bpot:pcfID "20083" .
+
+bpot:P20084 a owl:Class ;
+    rdfs:label "Archive records and update systems" ;
+    rdfs:comment "Anchored directly to cco:ont00000366 (Act of Information Processing): archiving/storing records is information processing (storage), not analysis or appraisal." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceDeliveryRecord ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that has as input service-delivery records and stores them by archiving the records and updating the relevant systems." ;
+    skos:example "Filing the final engagement records and updating the CRM and document systems." ;
+    bpot:apqcSourceText "Completing and archiving all records associated with requested services. Update all necessary systems to reflect those changes." ;
+    bpot:hierarchyID "5.3.3.7" ;
+    bpot:pcfID "20084" .
+
+bpot:ServiceDeliveryRecord a owl:Class ;
+    rdfs:label "Service Delivery Record" ;
+    rdfs:comment "Shared section-5.0 output/input (5.3.3.7). Descriptive: it documents what occurred." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records facts about a delivered service for archival and system-of-record purposes." .
+
+bpot:ServiceDeliveryReview a owl:Class ;
+    rdfs:label "Service Delivery Review" ;
+    rdfs:comment "Shared section-5.0 output (5.3.3.1). Descriptive: it appraises and reports outcomes." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an end-to-end evaluation of the success of a completed service-delivery engagement." .
+
+bpot:SkillsCapabilityTestResult a owl:Class ;
+    rdfs:label "Skills and Capability Test Result" ;
+    rdfs:comment "Minted locally (5.2.3.6): distinct from bpo:TrainingEffectivenessEvaluation (an aggregate appraisal); this records a single test administration outcome. Descriptive because it reports measured performance." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the outcome of administering a skill or capability test to service delivery personnel following training." ;
+    skos:example "A pass/fail record from a hands-on competency test administered after a technical training course." .
+
+bpot:SkillsTaxonomy a owl:Class ;
+    rdfs:label "Skills Taxonomy" ;
+    rdfs:comment "Shared section-5.0 output (5.2.2.1). Descriptive: a classification describes how skills are organized; it does not prescribe action." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that classifies and organizes the skills required to perform an organization's services." .
+
+bpot:SolutionSpecification a owl:Class ;
+    rdfs:label "Solution Specification" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.2). Directive: a specification prescribes what is to be produced." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the service-delivery solution to be built, bought, or deployed to meet a customer's needs." .
+
+bpot:SolutionValidationResult a owl:Class ;
+    rdfs:label "Solution Validation Result" ;
+    rdfs:comment "Shared section-5.0 output (5.3.2.3, 5.3.2.4). Descriptive: it records a validation judgement." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether a proposed service-delivery solution is feasible and meets customer needs." .
+
+bpot:TrainingMaterial a owl:Class ;
+    rdfs:label "Training Material" ;
+    rdfs:comment "Shared section-5.0 output (5.2.3.2). Re-anchored to cco:ont00000253 (Information Bearing Entity) -- the right mid-level for a material/digital bearer of training content -- which is still a material entity (IBE subClassOf Object subClassOf Material Entity), so the material-I/O usage holds. Non-informational training equipment, if needed, would be a separate class." ;
+    rdfs:subClassOf obo:BFO_0000040,
+        cco:ont00000253 ;
+    skos:definition "An Information Bearing Entity (manual, slide deck, e-learning file, workbook, CBT module) produced to support the comprehensive training of personnel in skills or behaviours needed to deliver services." .
+
+bpot:ConsensusDemandForecast rdfs:comment "Shared section-5.0 output (5.2.1.4)." ;
+    skos:definition "A Demand Forecast that describes a level of future demand agreed upon by reconciling baseline forecasts with customer input." .
+
+bpot:CustomerNeedsAnalysis a owl:Class ;
+    rdfs:label "Customer Needs Analysis" ;
+    rdfs:comment "Minted locally: APQC 5.3.2.1 output and input to 5.3.2.2; no shared-vocab ICE supplied." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an understanding of a customer's environment and service needs within the organization's scope." ;
+    skos:example "A discovery report summarizing a client's pain points and the in-scope needs to address." .
+
+bpot:ServiceDeliveryGovernanceCapability a owl:Class ;
+    rdfs:label "Service Delivery Governance Capability" ;
+    rdfs:comment "Shared section-5.0 capability for the governance standing-functions in 5.1.1 (e.g. 5.1.1.1-5.1.1.3 'Manage ...' nodes that R5 resolves to capability, not process)." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization governs the performance, development, and direction of its service delivery." .
+
+bpot:ServiceDeliveryProcessSpecification a owl:Class ;
+    rdfs:label "Service Delivery Process Specification" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2.5, 5.1.2.6, 5.3.1.2). Directive: a procedure prescribes how the work is to be carried out." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the policies and procedures by which a service is delivered within an organization's operating parameters." .
+
+bpot:SupplyConstraintAnalysis a owl:Class ;
+    rdfs:label "Supply Constraint Analysis" ;
+    rdfs:comment "Shared section-5.0 output (5.1.2.4). Descriptive: it identifies and characterises constraints." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the limitations imposed on an organization's service-delivery network and supply." .
+
+bpot:TrainingPlan a owl:Class ;
+    rdfs:label "Training Plan" ;
+    rdfs:comment "Shared section-5.0 output (5.2.3.1). Directive: a training plan prescribes how training is to be conducted." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the actions, timing, locations, and instructors for teaching service-delivery personnel a skill or behaviour." .
+
+bpot:CustomerRequirements a owl:Class ;
+    rdfs:label "Customer Requirements" ;
+    rdfs:comment "Shared section-5.0 input. Recurs across 5.1.1.1, 5.1.2.3, 5.2.1.3, 5.3.1.2, 5.3.2.1. Descriptive: it states needs rather than prescribing a course of action." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the needs, expectations, and constraints a customer places on a service to be delivered." .
+
+bpot:P20027 a owl:Class ;
+    rdfs:label "Establish service delivery governance" ;
+    rdfs:comment "Bounded establishment act (begin/end). Its APQC children that are standing management functions (5.1.1.1-5.1.1.3) are demoted to Organization Capabilities (R5/R6) and are NOT process parts; only the bounded feedback act 5.1.1.4 is a process part. Genus Act of Formulation: the principal deliverable is a governance system (Directive ICE), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20031 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes service delivery governance by standing up a system to manage delivery performance, development, and direction and to gather customer satisfaction feedback." ;
+    skos:example "A delivery organization institutes its governance system and a satisfaction-feedback loop for a new service line." ;
+    bpot:apqcSourceText "Establishing service delivery governance through a system that manages performance, development, and direction. Allow for customer feedback on delivery satisfaction." ;
+    bpot:hierarchyID "5.1.1" ;
+    bpot:pcfID "20027" .
+
+bpot:ServiceDeliveryContract a owl:Class ;
+    rdfs:label "Service Delivery Contract" ;
+    rdfs:comment "Shared section-5.0 input/output. Recurs across 5.3.1.1, 5.3.3.3. Directive: a contract prescribes binding obligations." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the agreed terms and obligations governing the delivery of a service to a customer." .
+
+bpot:Customer rdfs:comment "Shared section-5.0 participant. Modeled as cco:Agent (not Organization) so that both individual and organizational customers are admitted; group agents may narrow to cco:ont00001180 where the customer is specifically an organization." ;
+    skos:definition "An Agent that bears a customer role in relation to an organization delivering a service." .
+
+bpot:ResourceAvailabilityAssessment a owl:Class ;
+    rdfs:label "Resource Availability Assessment" ;
+    rdfs:comment "Shared section-5.0 output. Recurs across 5.1.2.3, 5.2.1.5, 5.2.2.3, 5.3.1.5." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether the resources, skills, and capacity needed for service delivery are available." .
+
+bpot:ResourcePlan a owl:Class ;
+    rdfs:label "Resource Plan" ;
+    rdfs:comment "Shared section-5.0 output (5.2.2.2, 5.3.1.6). Directive: a plan prescribes intended provisioning." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes how the personnel, physical resources, and capabilities required to deliver services are to be provisioned and allocated." .
+
+bpot:ServiceDeliveryPersonnel a owl:Class ;
+    rdfs:label "Service Delivery Personnel" ;
+    rdfs:comment "Shared section-5.0 participant (5.3.1.6, 5.2.3.4, 5.2.3.5). The 'resources' assigned and trained for delivery." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:ServiceDeliveryPersonnelRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a service-delivery personnel role in virtue of being assigned to perform the work of delivering a service to a customer." .
+
+bpot:DemandForecast rdfs:comment "Shared section-5.0 output. Baseline (5.2.1.2) and consensus (5.2.1.4) forecasts are both Demand Forecasts; bpo:ConsensusDemandForecast specialises this. PREDICTIVE (cco:ont00000626, a Descriptive ICE about an uncertain future), matching the Slice-3 forecast pattern -- produced by bpo:ActOfForecasting." ;
+    skos:definition "A Predictive Information Content Entity that describes the anticipated (uncertain, future) level of customer demand for an organization's services." .
+

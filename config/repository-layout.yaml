@@ -44,9 +44,35 @@ components:
     path: ontology/bpot.ttl
     role: ontology-module
     description: >-
-      The first module: an owl:Ontology header and nothing else until the
-      first term is written. Declared from the first commit so that term
-      is in the corpus digest and under the shapes on the day it lands.
+      The core: BPO's annotation and object properties, the canonical act
+      genera (BPO apqc-ext.ttl, its D9 registry), the capability/role
+      foundation (capabilities_roles.ttl) and the delivery processes
+      (delivery_processes.ttl). Ported from BPO by tools/port_from_bpo.py.
+
+  - id: ontology.sections
+    path: ontology/sections
+    role: ontology-module-set
+    description: >-
+      The reality layer, one module per top-level APQC PCF category
+      (pcf_1.ttl ... pcf_13.ttl), ported from BPO's ontology/slices/. A
+      process universal exists only where the bounded-occurrent test passed;
+      standing functions are Organization Capabilities. The act genera each
+      BPO slice inlined live once, in ontology/bpot.ttl.
+
+  - id: ontology.catalog
+    path: ontology/catalog.ttl
+    role: ontology-module
+    description: >-
+      The catalog layer: every APQC PCF row (1,921) as a SKOS concept in
+      one scheme, ported from BPO's apqc-catalog.ttl. Reality-layer classes
+      point at their row with bpot:designatesProcessType.
+
+  - id: ontology.wiring
+    path: ontology/wiring.ttl
+    role: ontology-module
+    description: >-
+      The capability/role wiring overlay (requiresCapability, requiresRole,
+      enablesProcess), ported from BPO's generated capabilities_wiring.ttl.
 
   - id: examples
     path: examples
@@ -446,6 +472,17 @@ components:
       The ROBOT pin (version, url, sha256, the commit its tag named), the
       reasoner, and the Java version the CI jobs install.
 
+  - id: config.annotation-drift
+    path: config/annotation-drift.tsv
+    role: configuration
+    description: >-
+      The known drift carried over from BPO: every term whose label,
+      definition or comment reads differently in different modules, one row
+      per variant (term, property, module, value). Written by
+      tools/port_from_bpo.py; tests/test_bpo_port.py requires the modules
+      to drift exactly this much, so a new variant fails and a
+      harmonization shows up as a diff here.
+
   - id: config.naming
     path: config/naming.yaml
     role: configuration
@@ -634,6 +671,16 @@ components:
     description: >-
       Generates ontology/vocabulary.ttl from the accepted rows of
       vocabulary/terms.tsv, refusing a row that cannot be placed.
+
+  - id: tool.port
+    path: tools/port_from_bpo.py
+    role: tool
+    description: >-
+      One-shot port of the Business Process Ontology (Skreen5hot/
+      BusinessProcessOntology) into this namespace: writes the modules and
+      the record of every renamed IRI. Kept so the port can be re-run and
+      audited against the source commit; the modules are authored from
+      here on, not regenerated.
 
   - id: tool.mappings
     path: tools/ontology/mappings.py

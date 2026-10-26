@@ -1,0 +1,2557 @@
+@prefix bpot: <https://fandaws.com/ontology/bpot#> .
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+bpot:CustomerServiceManagementCapability a owl:Class ;
+    rdfs:label "Customer Service Management Capability" ;
+    rdfs:comment "Target for any R5 'Manage ...' node (e.g. the standing function 'Plan and manage customer service work force') that resolves to a capability rather than a process." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization plans, delivers, and evaluates customer service." .
+
+bpot:InquiryResolution a owl:Class ;
+    rdfs:label "Inquiry Resolution" ;
+    rdfs:comment "Retained for the genuine resolution artifact. Per Gate-F, it is NO LONGER the output of P10395 (6.2.2.3), which the source describes as a routing/channeling (Act of Communication) act that produces no resolution record; any genuine end-to-end inquiry resolution would be a separate downstream act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the resolution determined for a customer problem, request, or inquiry." .
+
+bpot:ManagementPersonnel rdfs:comment "Reuses the supporting pattern from apqc_1_1_1; engaged in 6.5.1.2 (discuss issues with management)." ;
+    skos:definition "An Agent that bears a manager role within an organization." .
+
+bpot:PCF_10218 bpot:designatesProcessType bpot:P10218 .
+
+bpot:PCF_10320 bpot:designatesProcessType bpot:P10320 .
+
+bpot:PCF_10321 bpot:designatesProcessType bpot:P10321 .
+
+bpot:PCF_10322 bpot:designatesProcessType bpot:P10322 .
+
+bpot:PCF_10323 bpot:designatesProcessType bpot:P10323 .
+
+bpot:PCF_10324 bpot:designatesProcessType bpot:P10324 .
+
+bpot:PCF_10325 bpot:designatesProcessType bpot:P10325 .
+
+bpot:PCF_10326 bpot:designatesProcessType bpot:P10326 .
+
+bpot:PCF_10327 bpot:designatesProcessType bpot:P10327 .
+
+bpot:PCF_10328 bpot:designatesProcessType bpot:P10328 .
+
+bpot:PCF_10330 bpot:designatesProcessType bpot:P10330 .
+
+bpot:PCF_10331 bpot:designatesProcessType bpot:P10331 .
+
+bpot:PCF_10332 bpot:designatesProcessType bpot:P10332 .
+
+bpot:PCF_10334 bpot:designatesProcessType bpot:P10334 .
+
+bpot:PCF_10335 bpot:designatesProcessType bpot:P10335 .
+
+bpot:PCF_10336 bpot:designatesProcessType bpot:P10336 .
+
+bpot:PCF_10337 bpot:designatesProcessType bpot:P10337 .
+
+bpot:PCF_10364 bpot:designatesProcessType bpot:P10364 .
+
+bpot:PCF_10378 bpot:designatesProcessType bpot:P10378 .
+
+bpot:PCF_10382 bpot:designatesProcessType bpot:P10382 .
+
+bpot:PCF_10383 bpot:designatesProcessType bpot:P10383 .
+
+bpot:PCF_10387 bpot:designatesProcessType bpot:CustomerServiceWorkforceManagementCapability .
+
+bpot:PCF_10388 bpot:designatesProcessType bpot:CustomerInquiryManagementCapability .
+
+bpot:PCF_10389 bpot:designatesProcessType bpot:CustomerComplaintManagementCapability .
+
+bpot:PCF_10390 bpot:designatesProcessType bpot:P10390 .
+
+bpot:PCF_10391 bpot:designatesProcessType bpot:P10391 .
+
+bpot:PCF_10392 bpot:designatesProcessType bpot:P10392 .
+
+bpot:PCF_10393 bpot:designatesProcessType bpot:P10393 .
+
+bpot:PCF_10394 bpot:designatesProcessType bpot:P10394 .
+
+bpot:PCF_10395 bpot:designatesProcessType bpot:P10395 .
+
+bpot:PCF_10396 bpot:designatesProcessType bpot:P10396 .
+
+bpot:PCF_10397 bpot:designatesProcessType bpot:P10397 .
+
+bpot:PCF_10398 bpot:designatesProcessType bpot:P10398 .
+
+bpot:PCF_10399 bpot:designatesProcessType bpot:P10399 .
+
+bpot:PCF_10400 bpot:designatesProcessType bpot:P10400 .
+
+bpot:PCF_10401 bpot:designatesProcessType bpot:P10401 .
+
+bpot:PCF_10402 bpot:designatesProcessType bpot:P10402 .
+
+bpot:PCF_10403 bpot:designatesProcessType bpot:P10403 .
+
+bpot:PCF_11236 bpot:designatesProcessType bpot:P11236 .
+
+bpot:PCF_11237 bpot:designatesProcessType bpot:P11237 .
+
+bpot:PCF_11238 bpot:designatesProcessType bpot:P11238 .
+
+bpot:PCF_11239 bpot:designatesProcessType bpot:P11239 .
+
+bpot:PCF_11240 bpot:designatesProcessType bpot:P11240 .
+
+bpot:PCF_11241 bpot:designatesProcessType bpot:P11241 .
+
+bpot:PCF_11687 bpot:designatesProcessType bpot:P11687 .
+
+bpot:PCF_11688 bpot:designatesProcessType bpot:P11688 .
+
+bpot:PCF_11689 bpot:designatesProcessType bpot:P11689 .
+
+bpot:PCF_12667 bpot:designatesProcessType bpot:P12667 .
+
+bpot:PCF_12668 bpot:designatesProcessType bpot:P12668 .
+
+bpot:PCF_12669 bpot:designatesProcessType bpot:P12669 .
+
+bpot:PCF_12671 bpot:designatesProcessType bpot:P12671 .
+
+bpot:PCF_12672 bpot:designatesProcessType bpot:P12672 .
+
+bpot:PCF_12673 bpot:designatesProcessType bpot:P12673 .
+
+bpot:PCF_12674 bpot:designatesProcessType bpot:P12674 .
+
+bpot:PCF_12676 bpot:designatesProcessType bpot:P12676 .
+
+bpot:PCF_12677 bpot:designatesProcessType bpot:P12677 .
+
+bpot:PCF_12678 bpot:designatesProcessType bpot:P12678 .
+
+bpot:PCF_12840 bpot:designatesProcessType bpot:P12840 .
+
+bpot:PCF_13482 bpot:designatesProcessType bpot:P13482 .
+
+bpot:PCF_16890 bpot:designatesProcessType bpot:P16890 .
+
+bpot:PCF_16893 bpot:designatesProcessType bpot:P16893 .
+
+bpot:PCF_16928 bpot:designatesProcessType bpot:P16928 .
+
+bpot:PCF_16937 bpot:designatesProcessType bpot:P16937 .
+
+bpot:PCF_18126 bpot:designatesProcessType bpot:P18126 .
+
+bpot:PCF_19072 bpot:designatesProcessType bpot:P19072 .
+
+bpot:PCF_20086 bpot:designatesProcessType bpot:P20086 .
+
+bpot:PCF_20087 bpot:designatesProcessType bpot:P20087 .
+
+bpot:PCF_20088 bpot:designatesProcessType bpot:P20088 .
+
+bpot:PCF_20089 bpot:designatesProcessType bpot:P20089 .
+
+bpot:PCF_20090 bpot:designatesProcessType bpot:P20090 .
+
+bpot:PCF_20091 bpot:designatesProcessType bpot:P20091 .
+
+bpot:PCF_20092 bpot:designatesProcessType bpot:P20092 .
+
+bpot:PCF_20094 bpot:designatesProcessType bpot:P20094 .
+
+bpot:PCF_20095 bpot:designatesProcessType bpot:P20095 .
+
+bpot:PCF_20096 bpot:designatesProcessType bpot:P20096 .
+
+bpot:PCF_20097 bpot:designatesProcessType bpot:P20097 .
+
+bpot:PCF_20098 bpot:designatesProcessType bpot:P20098 .
+
+bpot:PCF_20099 bpot:designatesProcessType bpot:P20099 .
+
+bpot:PCF_20100 bpot:designatesProcessType bpot:P20100 .
+
+bpot:PCF_20101 bpot:designatesProcessType bpot:P20101 .
+
+bpot:PCF_20102 bpot:designatesProcessType bpot:P20102 .
+
+bpot:PCF_20103 bpot:designatesProcessType bpot:P20103 .
+
+bpot:PCF_20104 bpot:designatesProcessType bpot:P20104 .
+
+bpot:PCF_20105 bpot:designatesProcessType bpot:P20105 .
+
+bpot:PCF_20106 bpot:designatesProcessType bpot:P20106 .
+
+bpot:PCF_20107 bpot:designatesProcessType bpot:P20107 .
+
+bpot:PCF_20108 bpot:designatesProcessType bpot:P20108 .
+
+bpot:PCF_20110 bpot:designatesProcessType bpot:P20110 .
+
+bpot:PCF_20111 bpot:designatesProcessType bpot:P20111 .
+
+bpot:PCF_20112 bpot:designatesProcessType bpot:P20112 .
+
+bpot:PCF_20113 bpot:designatesProcessType bpot:P20113 .
+
+bpot:PCF_20114 bpot:designatesProcessType bpot:P20114 .
+
+bpot:PCF_20115 bpot:designatesProcessType bpot:P20115 .
+
+bpot:PCF_20116 bpot:designatesProcessType bpot:P20116 .
+
+bpot:PCF_20117 bpot:designatesProcessType bpot:P20117 .
+
+bpot:PCF_20118 bpot:designatesProcessType bpot:P20118 .
+
+bpot:PCF_20119 bpot:designatesProcessType bpot:P20119 .
+
+bpot:PCF_20120 bpot:designatesProcessType bpot:P20120 .
+
+bpot:PCF_20121 bpot:designatesProcessType bpot:P20121 .
+
+bpot:PCF_20595 bpot:designatesProcessType bpot:P20595 .
+
+bpot:PCF_20605 bpot:designatesProcessType bpot:P20605 .
+
+bpot:RecallManagementCapability a owl:Class ;
+    rdfs:label "Recall Management Capability" ;
+    rdfs:comment "Target for R5 'Manage product recalls ...' standing functions (group 6.4). Realized in the end-to-end recall-execution process bpo:P20110 (R6)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P20110 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization initiates, communicates, reports on, and terminates product recalls." .
+
+bpot:WarrantyManagementCapability a owl:Class ;
+    rdfs:label "Warranty Management Capability" ;
+    rdfs:comment "Target for R5 'Manage warranty ...' standing functions (group 6.3 / 6.5.4)." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that is realized in the acts by which an organization defines, processes, and evaluates product warranties and warranty claims." .
+
+bpot:WarrantyTeam a owl:Class ;
+    rdfs:label "Warranty Team" ;
+    rdfs:comment "Minted. Named as the actor in 6.3.2 (Process warranty claims) and its tasks. Genus Agent to admit both individual administrators and warranty teams." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:WarrantyAdministratorRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a warranty-administrator role, by which it receives, validates, investigates, and dispositions warranty claims on behalf of an organization." .
+
+<https://fandaws.com/ontology/bpot/sections/pcf_6> a owl:Ontology ;
+    dcterms:creator "Aaron Damiano" ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://fandaws.com/ontology/bpo/slice/6.0>,
+        "APQC Process Classification Framework (Cross-Industry) v7.4" ;
+    dcterms:title "Business Process Ontology -- PCF 6.0 Manage Customer Service" ;
+    rdfs:comment "Reality layer for APQC PCF category 6.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
+    owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_6.ttl> ;
+    owl:versionInfo "0.0.0" .
+
+bpot:AdEffectivenessAssessment a owl:Class ;
+    rdfs:label "Ad Effectiveness Assessment" ;
+    rdfs:comment "Minted per Gate-F as the definitional output of P11239 (6.5.3.2). Descriptive (a judgement), satisfying the GOLDEN PRINCIPLE for the Appraisal genus. Captures the ad-effectiveness judgement that the lead gerund 'Assessing the influence of advertisements on purchasing behavior' makes intrinsic to the act; the analysis sibling 6.5.3.4 covers product/service satisfaction generally, not ad influence specifically, so this commitment would otherwise be dropped." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the influence of advertisements on customers' purchasing behavior." .
+
+bpot:ClaimAssessment a owl:Class ;
+    rdfs:label "Claim Assessment" ;
+    rdfs:comment "Minted per Gate-F as the definitional output of P20100 (6.3.2.3.5). An Act of Appraisal is definitionally judgement-producing, so omitting the output left a thin appraisal class (Gate D thin-class risk). Descriptive (a judgement), satisfying the GOLDEN PRINCIPLE. Distinct from bpo:ClaimDisposition (the Directive approve/reject decision committed by the Selection act P12668): P20100 JUDGES the results, P12668 COMMITS the decision." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the warranty team's assessment of the investigation results and corrective-action recommendation toward approving or denying a warranty claim." .
+
+bpot:ClaimClosureRecord a owl:Class ;
+    rdfs:label "Claim Closure Record" ;
+    rdfs:comment "Minted: output of P20105 (close claim). Descriptive closure artifact." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the archival and closure of a warranty claim following a final approve or reject decision." .
+
+bpot:ClaimPreAuthorization a owl:Class ;
+    rdfs:label "Claim Pre-Authorization" ;
+    rdfs:comment "Output of 6.3.2.5. Directive: permits/prescribes that the claim may proceed; distinct from bpo:PaymentAuthorization (authorizes disbursement) and bpo:ClaimDisposition (final decision)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that grants preliminary authorization of a warranty claim prior to its formal submittal." .
+
+bpot:ComplaintResponse a owl:Class ;
+    rdfs:label "Complaint Response" ;
+    rdfs:comment "Output of 6.2.3.4 (Respond to customer complaints)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity communicated to a customer that conveys an organization's reply to their complaint." .
+
+bpot:CompletedServiceOrderRegister a owl:Class ;
+    rdfs:label "Completed Service Order Register" ;
+    rdfs:comment "Minted: output of P10334. Descriptive register." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that registers the service orders that have been successfully completed and delivered to the customer." .
+
+bpot:CustomerComplaintManagementCapability a owl:Class ;
+    rdfs:label "Customer Complaint Management Capability" ;
+    rdfs:comment "R5/R6: models APQC 6.2.3 'Manage customer complaints' (PCF 10389), a standing 'Manage X' function, as a capability realized in its five bounded child acts rather than as a process." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10397 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10398 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10399 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10400 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P19072 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to receive, route, resolve, respond to, and analyze customer complaints." .
+
+bpot:CustomerInquiryManagementCapability a owl:Class ;
+    rdfs:label "Customer Inquiry Management Capability" ;
+    rdfs:comment "R5/R6: models APQC 6.2.2 'Manage customer service problems, requests, and inquiries' (PCF 10388), a standing 'Manage X' function, as a capability realized in its six bounded child acts rather than as a process." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10394 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P13482 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10395 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10396 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P16928 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P16937 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to receive, analyze, resolve, and respond to customer problems, requests, and inquiries and to surface sales opportunities arising from them." .
+
+bpot:CustomerProfile rdfs:comment "Output of 6.3.4.1.2 (Create customer profile); about a Customer." ;
+    skos:definition "A Descriptive Information Content Entity that describes an individual customer's service requirements and personal information." .
+
+bpot:CustomerServiceCapability a owl:Class ;
+    rdfs:label "Customer Service Capability" ;
+    rdfs:comment "Borne by bpo:CustomerServiceRepresentative. Use bpo:CustomerServiceManagementCapability (Organization Capability) for the org-level standing function." ;
+    rdfs:subClassOf cco:ont00001379 ;
+    skos:definition "An Agent Capability that is realized in acts of handling customer problems, requests, inquiries, and complaints." .
+
+bpot:CustomerServiceChannelStrategy a owl:Class ;
+    rdfs:label "Customer Service Channel Strategy" ;
+    rdfs:comment "Output of 6.1.3 (Define and manage customer service channel strategy)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the procedures and channels for customer service and technical support." .
+
+bpot:CustomerServiceExperienceSpecification a owl:Class ;
+    rdfs:label "Customer Service Experience Specification" ;
+    rdfs:comment "Output of 6.1.2 (Define customer service experience)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes what is expected of customer service resources when engaging the customer." .
+
+bpot:CustomerServicePolicy a owl:Class ;
+    rdfs:label "Customer Service Policy" ;
+    rdfs:comment "Output of 6.1.4 (Define customer service policies and procedures)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the rules, regulations, and methods that guide an organization's customer service strategy." .
+
+bpot:CustomerServiceRepresentativeRole a owl:Class ;
+    rdfs:label "Customer Service Representative Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with handling customer problems, requests, inquiries, and complaints on behalf of an organization." .
+
+bpot:CustomerServiceStrategy a owl:Class ;
+    rdfs:label "Customer Service Strategy" ;
+    rdfs:comment "Output of 6.1 (Develop customer service strategy). Directive -> producing act is a Formulation (inlined)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes an organization's plan for removing customer obstacles and delivering customer service." .
+
+bpot:CustomerServiceWorkforceManagementCapability a owl:Class ;
+    rdfs:label "Customer Service Workforce Management Capability" ;
+    rdfs:comment "R5/R6: models APQC 6.2.1 'Plan and manage customer service work force' (PCF 10387), a standing function with no natural end, as a capability realized in its four bounded child acts (forecast, schedule, track utilization, monitor interaction quality) rather than as a process." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10390 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10391 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10392 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10393 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to plan, schedule, track, and assure the quality of the workforce deployed for customer service provision." .
+
+bpot:FieldServiceAgentRole a owl:Class ;
+    rdfs:label "Field Service Agent Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with on-site investigation, repair, and evidence collection for service and warranty processes." .
+
+bpot:FraudulentClaimAssessment a owl:Class ;
+    rdfs:label "Fraudulent Claim Assessment" ;
+    rdfs:comment "Output of 6.5.4.5 (Investigate fraudulent claims)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether a claim contains deliberately incorrect information or was submitted to deceive." .
+
+bpot:HazardRiskAssessment a owl:Class ;
+    rdfs:label "Hazard Risk Assessment" ;
+    rdfs:comment "Output of 6.4.2 (Assess the likelihood and consequences of occurrence of any hazards)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:DefectiveProduct ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the identified hazards of a product, their likelihood, and their adverse consequences." .
+
+bpot:HistoricalContactData a owl:Class ;
+    rdfs:label "Historical Contact Data" ;
+    rdfs:comment "Input to 6.2.1.1 (Forecast volume of customer service contacts)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the past volume, frequency, and servicing capacity of customer service contacts." .
+
+bpot:IncompleteServiceOrderRegister a owl:Class ;
+    rdfs:label "Incomplete Service Order Register" ;
+    rdfs:comment "Minted: output of P10335. Descriptive register." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that registers the service orders that are partially or entirely incomplete or undelivered, together with associated service failures." .
+
+bpot:IndividualServiceRequirement a owl:Class ;
+    rdfs:label "Individual Service Requirement" ;
+    rdfs:comment "Minted per Gate-F as the individual-scope output of P10320 (6.3.4.1 'Confirm specific service requirements for individual customer'). Descriptive because the confirming act validates and records a customer's stated requirements (an appraisal/information-processing judgement), not an enterprise directive. Distinct from the enterprise-wide bpo:CustomerServiceRequirementSpecification (Directive, output of 6.1.1), which prescribes behaviors/skills/policies across the enterprise -- reusing that as the output of an individual-customer confirmation act was a category error." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the validated, individual-customer-specific service requirements confirmed for one customer." .
+
+bpot:InquiryResponse a owl:Class ;
+    rdfs:label "Inquiry Response" ;
+    rdfs:comment "Output of 6.2.2.4 (Respond to customer problems, requests, and inquiries) -> producing act is an Act of Representative Communication." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity communicated to a customer that conveys the answer to their problem, request, or inquiry." .
+
+bpot:InteractionQualityAssessment a owl:Class ;
+    rdfs:label "Interaction Quality Assessment" ;
+    rdfs:comment "Output of 6.2.1.4." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the quality of interactions between customers and customer service representatives." .
+
+bpot:P10218 a owl:Class ;
+    rdfs:label "Service products" ;
+    rdfs:comment "Although the APQC label is 'Service products', the Element Description denotes an end-to-end individual service-delivery process. Genus bpo:ActOfServiceProvision (operations shared genus): bounded end-to-end service delivery. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10320 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10321 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10322 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10323 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that validates a customer's service requirements, schedules resources, renders the service, and assures its quality." ;
+    skos:example "A field-service operation confirms requirements, schedules a technician, performs the repair, and follows up on quality." ;
+    bpot:apqcSourceText "Validating specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery." ;
+    bpot:hierarchyID "6.3.4" ;
+    bpot:pcfID "10218" .
+
+bpot:P10378 a owl:Class ;
+    rdfs:label "Develop customer service strategy" ;
+    rdfs:comment "Models APQC process group 6.1 as an occurrent. Its APQC children are process parts (cco:ont00001777), not subclasses. Output is a Directive ICE, agreeing with the bpo:ActOfFormulation (Planning) genus." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerServiceStrategy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20086 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20087 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20088 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10382 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10383 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20089 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20092 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes a customer service strategy governing how an organization removes customer obstacles, segments customers, and sets service levels." ;
+    skos:example "A customer-service leadership team's annual cycle that issues the organization's customer service strategy." ;
+    bpot:apqcSourceText "Defining a plan that removes customer obstacles by gathering operational insight and competitive insight, as well as improving soft skills and forward resolution for employees. Develop customer segmentation. Define rules and regulations for customer service. Establish service levels for customers." ;
+    bpot:hierarchyID "6.1" ;
+    bpot:pcfID "10378" .
+
+bpot:P12669 a owl:Class ;
+    rdfs:label "Process warranty claims" ;
+    rdfs:comment "Bounded occurrent: begins at claim receipt and ends when the claim is closed. Genus bpo:ActOfResolution (reconciled to cco:ont00000228 Planned Act). Its APQC children are process parts, not subclasses." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ClaimDisposition ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20096 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12671 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20097 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20101 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20102 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12668 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20103 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20104 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20105 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12667 ],
+        bpot:ActOfResolution ;
+    skos:definition "An Act of Resolution that carries a warranty claim from receipt through validation, investigation, settlement decision, and closure." ;
+    skos:example "A warranty team receives a claim, validates it, investigates the issue, decides approve/reject, authorizes payment, and closes the claim." ;
+    bpot:apqcSourceText "Identifying, investigating, and processes warranty claims. This process includes: receipt and validation of a warranty claim; definition and diagnosis /root cause analysis of an issue and recommendation for corrective action; the determination of responsibility for settlement of the claim; the transaction being approved or denied; and the originator being notified and payment authorized. In the case of a recurring event, further investigation (definition and diagnosis or root cause analysis) is performed, and a recommendation for corrective action is made and implemented in production/design. It ends when the claim is closed." ;
+    bpot:hierarchyID "6.3.2" ;
+    bpot:pcfID "12669" .
+
+bpot:P12840 a owl:Class ;
+    rdfs:label "Report incidents and risks to regulatory bodies" ;
+    rdfs:comment "Anchored to cco:ont00000379 (Act of Representative Communication): reporting asserts and transfers a truth-committing report ICE to recipients. The incident report is the definitional output and the regulatory body a definitional participant (recipient)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryIncidentReport ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:RegulatoryBody ],
+        cco:ont00000228,
+        cco:ont00000379 ;
+    skos:definition "An Act of Representative Communication in which an Agent transfers a regulatory incident report concerning return- or recall-related incidents and risks to regulatory bodies and other stakeholders." ;
+    skos:example "A compliance officer files a mandatory safety-incident notice with the industry regulator following a recall." ;
+    bpot:apqcSourceText "Notifying all stakeholders, legal, and industry regulatory bodies of the incidents and risks related to a return or recall, if needed." ;
+    bpot:hierarchyID "6.2.5" ;
+    bpot:pcfID "12840" .
+
+bpot:P20094 a owl:Class ;
+    rdfs:label "Process returns" ;
+    rdfs:comment "Operations process: the returned product is a MATERIAL participant (D-operations / D4), attached via obo:has participant, not has output (has output is reserved for ICEs, D3). Reuses shared bpo:ActOfAcquisition. Its two APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ReturnedProduct ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10364 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20095 ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition in which an Agent takes back a returned product from a customer and determines whether it is to be scrapped or salvaged." ;
+    skos:example "A returns center receives a returned appliance and routes it to refurbishment." ;
+    bpot:apqcSourceText "Acquiring returns and identify if the returns are scraped or salvaged." ;
+    bpot:hierarchyID "6.2.4" ;
+    bpot:pcfID "20094" .
+
+bpot:P20106 a owl:Class ;
+    rdfs:label "Manage supplier recovery" ;
+    rdfs:comment "Scoped to 'individual claims', so bounded per claim (not a standing function); modeled as a process under bpo:ActOfResolution. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplierRecoveryClaim ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20107 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20108 ],
+        bpot:ActOfResolution ;
+    skos:definition "An Act of Resolution that recovers the costs of an individual claim from the responsible supplier, comprising raising and negotiating a supplier recovery claim." ;
+    skos:example "For a settled claim, the company raises a recovery claim and negotiates reimbursement from the supplier." ;
+    bpot:apqcSourceText "Managing the recovery of costs from suppliers for individual claims." ;
+    bpot:hierarchyID "6.3.3" ;
+    bpot:pcfID "20106" .
+
+bpot:P20595 a owl:Class ;
+    rdfs:label "Evaluate customer service operations and customer satisfaction" ;
+    rdfs:comment "Models APQC process group 6.5 as a bounded occurrent (R5: an appraisal cycle, not a never-ending standing function). Its APQC children are process parts (cco:ont00001777), not subclasses. Anchored to cco:ont00000636 (Act of Appraisal): the verb 'evaluate/assess' yields a Descriptive judgement (GOLDEN PRINCIPLE: appraisal -> descriptive)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerSatisfactionAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10401 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10402 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10403 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12672 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20121 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that assesses the operational activities of an organization's customer service function and produces a customer satisfaction assessment of customer service operations." ;
+    skos:example "A customer-service organization runs its annual review of inquiry-, complaint-, and product-satisfaction performance and issues an overall satisfaction assessment." ;
+    bpot:apqcSourceText "Calculating and assessing the operational activities of the customer service function. Evaluation is achieved through the customer requests/inquiries handling process, the customer complaint handling process, and product and services quality. Examine activities to ensure high levels of customer service." ;
+    bpot:hierarchyID "6.5" ;
+    bpot:pcfID "20595" .
+
+bpot:P20605 a owl:Class ;
+    rdfs:label "Register products" ;
+    rdfs:comment "Anchored at cco:ont00000366 (Act of Information Processing): filing a registration stores/records an ICE; output is a Descriptive ProductRegistration." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductRegistration ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that records a customer's product ownership and produces a product registration." ;
+    skos:example "A customer-service system files a newly purchased appliance's registration on behalf of the buyer." ;
+    bpot:apqcSourceText "Filing product registrations." ;
+    bpot:hierarchyID "6.3.1" ;
+    bpot:pcfID "20605" .
+
+bpot:PaymentAuthorization a owl:Class ;
+    rdfs:label "Payment Authorization" ;
+    rdfs:comment "Output of 6.3.2.8 (Authorize payment)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes that a payment be made to a claimant." .
+
+bpot:ProductManagerRole a owl:Class ;
+    rdfs:label "Product Manager Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with managing and improving an organization's products or services." .
+
+bpot:ProductRegistration a owl:Class ;
+    rdfs:label "Product Registration" ;
+    rdfs:comment "Output of 6.3.1 (Register products)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the registration of a product, associating it with a customer for warranty and service purposes." .
+
+bpot:RecallInitiationRecord a owl:Class ;
+    rdfs:label "Recall Initiation Record" ;
+    rdfs:comment "Minted per Gate-F as the Descriptive output of P20111 (6.4.1 'Initiate recall'). The initiation act LAUNCHES the recall by applying the standing recall strategy; it does not re-produce that strategy. Distinct from bpo:RecallStrategy (the Directive procedure, output of 6.1.7), which P20111 consumes as input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:DefectiveProduct ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records that a product recall has been commenced and the removal of the defective product launched." .
+
+bpot:ReturnReasonRecord a owl:Class ;
+    rdfs:label "Return Reason Record" ;
+    rdfs:comment "Output of 6.2.4.2 (Process return and record reason)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ReturnedProduct ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the reason for the return of a product." .
+
+bpot:ReturnRequest a owl:Class ;
+    rdfs:label "Return Request" ;
+    rdfs:comment "Minted per Gate-F as the dedicated input to P10364 (6.2.4.1 'Authorize return'). Distinct from bpo:ServiceRequest (an individual customer's service requirements, minted for 6.3.4.1): the verbatim source for 10364 is a product-RETURN request, a different informational object. Reusing bpo:ServiceRequest there conflated two unrelated ICEs." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records a customer's request to return a product for refund, replacement, or repair." .
+
+bpot:SalesAgentRole a owl:Class ;
+    rdfs:label "Sales Agent Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with pursuing sales leads and selling an organization's offerings." .
+
+bpot:SalesTeam a owl:Class ;
+    rdfs:label "Sales Team" ;
+    rdfs:comment "Minted. Recipient named in 6.2.2.6 (Deliver opportunity to sales team). Denotes a team-level COLLECTIVE agent (not an individual); kept under cco:Agent (CCO's Group of Agents cco:ont00000300 is an Object Aggregate, not an Agent)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:SalesAgentRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a sales-agent role and to which qualified sales leads are delivered for follow-up." .
+
+bpot:ServiceLevelAgreement a owl:Class ;
+    rdfs:label "Service Level Agreement" ;
+    rdfs:comment "Output of 6.1.5 (Establish target service level for each customer segment)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the negotiated service levels, priorities, and responsibilities agreed for a customer segment." .
+
+bpot:ServiceQualityAssessment a owl:Class ;
+    rdfs:label "Service Quality Assessment" ;
+    rdfs:comment "Output of 6.3.4.4 (Ensure quality of service)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the quality of service delivered to customers, including successes, failures, and incorporated feedback." .
+
+bpot:SupplierWarrantyResponsibilityAgreement a owl:Class ;
+    rdfs:label "Supplier Warranty Responsibility Agreement" ;
+    rdfs:comment "Minted: negotiated output of PCF 20090. Directive because it prescribes each party's obligations; the ICE generated by the contract-formation act." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the warranty obligations apportioned between an organization and its suppliers or dealers." ;
+    skos:example "A signed supplier addendum specifying which warranty repairs the manufacturer reimburses." .
+
+bpot:WarrantyAdministratorRole a owl:Class ;
+    rdfs:label "Warranty Administrator Role" ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with receiving, validating, investigating, and dispositioning warranty claims on behalf of an organization." .
+
+bpot:WarrantyClaimDefinition a owl:Class ;
+    rdfs:label "Warranty Claim Definition" ;
+    rdfs:comment "Minted: verbatim output of PCF 20089 'Define warranty claims'. Directive because it sets governing terms/conditions. Distinct from bpo:WarrantyClaim (an input claim) and bpo:WarrantyPolicy (customer-facing assurance)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the exact terms and conditions under which specific warranties apply to certain goods or services." ;
+    skos:example "A warranty-terms schedule listing covered defects, time windows, and product lines." .
+
+bpot:WarrantyOffering a owl:Class ;
+    rdfs:label "Warranty Offering" ;
+    rdfs:comment "Minted: the warranty offering communicated to customers in PCF 20091. Directive because it specifies warranty terms extended to customers. Per Gate-F, P20091 is an Act of Communication that conveys this offering (has input), not an act that composes it (has output)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that specifies the warranties offered to customers for promoted products or services." ;
+    skos:example "A product page listing a 2-year limited warranty bundled with a promoted appliance." .
+
+bpot:WarrantyTransactionReconciliation a owl:Class ;
+    rdfs:label "Warranty Transaction Reconciliation" ;
+    rdfs:comment "Minted: output of P12667 (reconcile warranty transaction). Descriptive judgement of completion." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records confirmation that a warranty transaction has been completed and is internally consistent." .
+
+bpot:WorkforceUtilizationReport a owl:Class ;
+    rdfs:label "Workforce Utilization Report" ;
+    rdfs:comment "Output of 6.2.1.3 (Track work force utilization)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the utilization, performance, and quality of the deployed customer service work force." .
+
+bpot:ComplaintAnalysis a owl:Class ;
+    rdfs:label "Complaint Analysis" ;
+    rdfs:comment "Output of 6.2.3.5 and the complaint-data analysis of 6.5.2." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes patterns and insights drawn from complaint logs for service improvement and customer profiling." .
+
+bpot:ComplaintResolution a owl:Class ;
+    rdfs:label "Complaint Resolution" ;
+    rdfs:comment "Output of 6.2.3.3 (Resolve customer complaints)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the redress determined for a sound and reasonable customer complaint." .
+
+bpot:ContactVolumeForecast a owl:Class ;
+    rdfs:label "Contact Volume Forecast" ;
+    rdfs:comment "Output of 6.2.1.1. PREDICTIVE ICE (cco:ont00000626 subClassOf Descriptive ICE): estimates an uncertain future volume, matching the forecast pattern in slices 3 and 5. Produced by bpo:ActOfForecasting." ;
+    rdfs:subClassOf cco:ont00000626,
+        cco:ont00000853 ;
+    skos:definition "A Predictive Information Content Entity that estimates the future volume of customer service contacts and the workforce required to service them." .
+
+bpot:CustomerServiceRepresentative a owl:Class ;
+    rdfs:label "Customer Service Representative" ;
+    rdfs:comment "Minted (no CCO equivalent). The participant named across 6.2.1.4 and the receive/route/resolve/respond activities of 6.2." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:CustomerServiceRepresentativeRole ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001954 ;
+            owl:someValuesFrom bpot:CustomerServiceCapability ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a customer-service-representative role and has a customer-service capability, by which it handles customer problems, requests, inquiries, and complaints on behalf of an organization." .
+
+bpot:DefectivePart a owl:Class ;
+    rdfs:label "Defective Part" ;
+    rdfs:comment "Material input to 6.3.2.3.3 (Request and receive defective part)." ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact component that has failed and is requested and received for investigation or root-cause analysis of a warranty claim." .
+
+bpot:FieldServiceAgent a owl:Class ;
+    rdfs:label "Field Service Agent" ;
+    rdfs:comment "Minted. Named in 6.3.2.3.2 (Schedule field service) and 6.3.4.3 (Provide service to specific customers)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:FieldServiceAgentRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a field-service-agent role, by which it performs on-site investigation, repair, and evidence collection in support of warranty and service processes." .
+
+bpot:InquiryAnalysis a owl:Class ;
+    rdfs:label "Inquiry Analysis" ;
+    rdfs:comment "Output of 6.2.2.2 (Analyze problems, requests, and inquiries) and 6.3.4.1.1." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the content and appropriate handling of customer problems, requests, and inquiries." .
+
+bpot:P10320 a owl:Class ;
+    rdfs:label "Confirm specific service requirements for individual customer" ;
+    rdfs:comment "Re-anchored to cco:ont00000636 (Act of Appraisal) and re-targeted output per Gate-F review. (1) OUTPUT: now bpo:IndividualServiceRequirement (a newly minted Descriptive, individual-scope ICE) REPLACING the prior bpo:CustomerServiceRequirementSpecification, which is DEFINED as the enterprise-wide Directive output of 6.1.1 'a Directive ICE that prescribes the behaviors, skills, and policies required to provide customer service across an enterprise'; reusing that enterprise policy as the output of an individual-customer confirmation act was a category error. The enterprise spec is retained as a Directive has input that constrains the act. (2) GENUS: the source verb is 'Acquiring or soliciting... validating/confirming' an individual customer's stated needs, i.e. information-processing/appraisal of stated requirements, not Formulation (composing a binding directive plan); the Appraisal genus yields the Descriptive individual requirement record, satisfying the GOLDEN PRINCIPLE. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceRequest ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerServiceRequirementSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:IndividualServiceRequirement ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10324 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10325 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10326 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that validates and confirms an individual customer's stated service requirements and produces an individual service requirement record." ;
+    skos:example "An agent gathers and validates a customer's repair needs and records the confirmed individual requirements." ;
+    bpot:apqcSourceText "Acquiring or soliciting information about specific service requirements for individual customers through the customer service function. Obtain information about customer specific requests, process these requests, and create customer profiles to generate a service order." ;
+    bpot:hierarchyID "6.3.4.1" ;
+    bpot:pcfID "10320" .
+
+bpot:P10321 a owl:Class ;
+    rdfs:label "Identify and schedule resources to meet service requirements" ;
+    rdfs:comment "Genus bpo:ActOfScheduling (PROPOSE-EXT): allocates resources over time; Directive outputs. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceOrder ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcingPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentSchedule ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10327 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10328 ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that determines and allocates the resources required to fulfill service requirements and produces a resourcing plan and a service order fulfillment schedule." ;
+    skos:example "A planner sizes the crew and equipment needed and lays out the fulfillment schedule." ;
+    bpot:apqcSourceText "Determining and scheduling the resources required to fulfill customer service requirements. Create a detailed schedule about the service orders and development of these service orders." ;
+    bpot:hierarchyID "6.3.4.2" ;
+    bpot:pcfID "10321" .
+
+bpot:P10322 a owl:Class ;
+    rdfs:label "Provide service to specific customers" ;
+    rdfs:comment "Genus bpo:ActOfServiceProvision: the rendering/execution of the service. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceOrder ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10330 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10331 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10332 ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that dispatches resources and carries out the daily service orders to fulfill customers' service requirements." ;
+    skos:example "A dispatcher sends technicians to complete the day's scheduled repairs." ;
+    bpot:apqcSourceText "Dispatching resources for managing and fulfilling daily service requirements. Manage the progress of order fulfillment. Complete order blocks." ;
+    bpot:hierarchyID "6.3.4.3" ;
+    bpot:pcfID "10322" .
+
+bpot:P10323 a owl:Class ;
+    rdfs:label "Ensure quality of service" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): judges service quality. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceQualityAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10334 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10335 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10336 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10337 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates the quality of service delivered to customers and produces a service quality assessment." ;
+    skos:example "A quality lead reviews completed and failed orders and customer feedback to rate service quality." ;
+    bpot:apqcSourceText "Guaranteeing the quality of service provided to customers. Identify the successful and unsuccessful orders along with the service failures. Collect customer feedback. Process the feedback to ensure the quality of service in the future." ;
+    bpot:hierarchyID "6.3.4.4" ;
+    bpot:pcfID "10323" .
+
+bpot:P10324 a owl:Class ;
+    rdfs:label "Process customer request" ;
+    rdfs:comment "Genus bpo:ActOfAnalysis: categorizing/prioritizing a request is information processing producing a Descriptive analysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceRequest ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:InquiryAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a service request and has as output an inquiry analysis that categorizes and prioritizes the request." ;
+    skos:example "An agent classifies an incoming request as supportable and high priority." ;
+    bpot:apqcSourceText "Soliciting or acquiring information using various sources such as databases, customer interactions, and customer request forms. Hand them further up the hierarchy to deal with them. Categorize the user's request, determining if the request is supportable and prioritizing the request." ;
+    bpot:hierarchyID "6.3.4.1.1" ;
+    bpot:pcfID "10324" .
+
+bpot:P10325 a owl:Class ;
+    rdfs:label "Create customer profile" ;
+    rdfs:comment "Anchored at cco:ont00000366 (Act of Information Processing): documenting/storing customer data; output is a Descriptive CustomerProfile." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerProfile ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that documents an individual customer's requirements and personal information and produces a customer profile." ;
+    skos:example "An agent builds a profile capturing the customer's equipment and service history." ;
+    bpot:apqcSourceText "Documenting the individual customer service requirements solicited, along with personal information of the customers, in order to generate customized profiles that hasten the delivery process." ;
+    bpot:hierarchyID "6.3.4.1.2" ;
+    bpot:pcfID "10325" .
+
+bpot:P10326 a owl:Class ;
+    rdfs:label "Generate service order" ;
+    rdfs:comment "Genus bpo:ActOfFormulation (inlined): composing the service agreement yields a Directive ServiceOrder." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerServiceRequirementSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceOrder ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that designs a short-term service agreement and produces a service order." ;
+    skos:example "An agent creates a service order specifying the one-time repair to be performed." ;
+    bpot:apqcSourceText "Designing a short-term agreement between the service provider and customer. One-time services are ordered by the service recipient and resource-related billing is performed upon completion. Use the service order to document service and customer service work." ;
+    bpot:hierarchyID "6.3.4.1.3" ;
+    bpot:pcfID "10326" .
+
+bpot:P10327 a owl:Class ;
+    rdfs:label "Create resourcing plan and schedule" ;
+    rdfs:comment "Genus bpo:ActOfScheduling (PROPOSE-EXT): allocates resource types and timing; Directive ResourcingPlan output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourcingPlan ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that develops a plan for sourcing and deploying service resources and produces a resourcing plan." ;
+    skos:example "A planner documents the equipment, personnel, and timing needed to deliver the service." ;
+    bpot:apqcSourceText "Developing a plan for sourcing and deploying the resources required to fulfill customer service needs. Document a detailed summary of all types of resources (equipment, finance, personnel, time, etc.) required to complete customer service requests and procure these resources. Identify and assess various sources in order to effectively create a resourcing plan." ;
+    bpot:hierarchyID "6.3.4.2.1" ;
+    bpot:pcfID "10327" .
+
+bpot:P10328 a owl:Class ;
+    rdfs:label "Create service order fulfillment schedule" ;
+    rdfs:comment "Genus bpo:ActOfScheduling (PROPOSE-EXT): fixes timing/duration of service orders; Directive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentSchedule ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that designs the timing and duration of customer service orders and produces a service order fulfillment schedule." ;
+    skos:example "A planner sequences each service order with its expected timing and duration." ;
+    bpot:apqcSourceText "Designing a detailed summary of customer service order requirements, along with information concerning the timing and duration for these services. Categorize the customer needs. Monitor the services delivered." ;
+    bpot:hierarchyID "6.3.4.2.2" ;
+    bpot:pcfID "10328" .
+
+bpot:P10330 a owl:Class ;
+    rdfs:label "Organize daily service order fulfillment schedule" ;
+    rdfs:comment "Genus bpo:ActOfScheduling (PROPOSE-EXT): sequences the day's service orders; Directive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentSchedule ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that lays out the daily plan of specific service orders to be fulfilled and produces a service order fulfillment schedule." ;
+    skos:example "A dispatcher sequences the technician's stops for the day." ;
+    bpot:apqcSourceText "Laying out a daily plan of specific service orders that need to be fulfilled. Document and systematically order these activities to ensure high effectiveness and efficiency." ;
+    bpot:hierarchyID "6.3.4.3.1" ;
+    bpot:pcfID "10330" .
+
+bpot:P10331 a owl:Class ;
+    rdfs:label "Dispatch and deliver service resources" ;
+    rdfs:comment "Re-anchored to bpo:ActOfServiceProvision (operations delivery genus, consistent with parent P10322 'Provide service to specific customers') per Gate-F review. The verbatim apqcSourceText describes a LOGISTICS/DISPATCH act, not a repair: 'Dispatching and delivering the resources needed for the specific service requirements from the source/warehouse. Manage the dispatch, transportation, and delivery of the services.' There is NO mention of modifying/repairing a product. REJECTED the prior cco:ont00000950 (Act of Maintenance) anchor as a label-vs-source false friend that Gates A-D cannot catch: maintenance restores a Material Artifact's designed qualities, which the description never describes. The prior rdfs:label 'Execute product repair' did not match the dispatch/delivery source text and has been corrected to match the source; the bpo:DefectiveProduct material participant (a repair artifact) is replaced by the field service agent who performs the dispatch/delivery. If APQC truly intends repair here, this label/description discrepancy should be confirmed with the domain owner before reverting to Act of Maintenance." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:FieldServiceAgent ],
+        bpot:ActOfServiceProvision ;
+    skos:definition "An Act of Service Provision that dispatches, transports, and delivers from the source or warehouse the resources needed to fulfil specific service requirements." ;
+    skos:example "A dispatcher releases the parts and equipment from the warehouse and routes a field service agent to deliver them for the day's service orders." ;
+    bpot:apqcSourceText "Dispatching and delivering the resources needed for the specific service requirements from the source/warehouse. Manage the dispatch, transportation, and delivery of the services." ;
+    bpot:hierarchyID "6.3.4.3.2" ;
+    bpot:pcfID "10331" .
+
+bpot:P10332 a owl:Class ;
+    rdfs:label "Manage service order fulfillment" ;
+    rdfs:comment "Genus bpo:ActOfMonitoring (PROPOSE-EXT): ongoing tracking of order progress yields a Descriptive status report. Despite the 'Manage' label the description denotes a bounded, repeatable tracking act, so it is a process." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceOrder ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentStatus ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that tracks the fulfillment progress of service orders and produces a service order fulfillment status." ;
+    skos:example "A coordinator uses GPS trackers to monitor which service orders are delivered." ;
+    bpot:apqcSourceText "Handling and managing orders fulfilled, along with the orders are not or partially fulfilled to track the order fulfillment progress. Use electronic devices such as trackers and GPS in order track and ensure delivery of the orders." ;
+    bpot:hierarchyID "6.3.4.3.3" ;
+    bpot:pcfID "10332" .
+
+bpot:P10334 a owl:Class ;
+    rdfs:label "Identify completed service orders for feedback" ;
+    rdfs:comment "Genus bpo:ActOfIdentification (apqc-ext, discernment sense): enumerates the completed orders; Descriptive register output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentStatus ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CompletedServiceOrderRegister ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns the service orders successfully completed and delivered and produces a completed service order register." ;
+    skos:example "A team lists the orders confirmed delivered to solicit feedback on them." ;
+    bpot:apqcSourceText "Determining the service orders that have been successfully delivered. Identify the service orders completed and delivered to the customer. Leverage communication systems to ensure coordination with the customers in order to avoid mishaps." ;
+    bpot:hierarchyID "6.3.4.4.1" ;
+    bpot:pcfID "10334" .
+
+bpot:P10335 a owl:Class ;
+    rdfs:label "Identify incomplete service orders and service failures" ;
+    rdfs:comment "Genus bpo:ActOfIdentification (apqc-ext, discernment sense): enumerates incomplete orders/failures; Descriptive register output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ServiceOrderFulfillmentStatus ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:IncompleteServiceOrderRegister ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns the partially or entirely incomplete service orders and service failures and produces an incomplete service order register." ;
+    skos:example "A team lists undelivered and failed orders for follow-up." ;
+    bpot:apqcSourceText "Determining orders which have not been completed or delivered. Identify the service orders that are partially or entirely incomplete, as well as the orders that have not been delivered to the customer. Use techniques such as project trackers to recognize the progress of the service orders." ;
+    bpot:hierarchyID "6.3.4.4.2" ;
+    bpot:pcfID "10335" .
+
+bpot:P10336 a owl:Class ;
+    rdfs:label "Solicit customer feedback on services delivered" ;
+    rdfs:comment "Anchored at cco:ont00000402 (Act of Communication): the customer-feedback ICE is transferred from the customer to the organization. Participant bpo:Customer where definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that obtains customer feedback on the services delivered." ;
+    skos:example "An agent calls the customer to collect feedback after a repair." ;
+    bpot:apqcSourceText "Obtaining and procuring customer reviews or feedback on the services delivered. Design a customer feedback form, or communicate with the customer through the phone or online." ;
+    bpot:hierarchyID "6.3.4.4.3" ;
+    bpot:pcfID "10336" .
+
+bpot:P10337 a owl:Class ;
+    rdfs:label "Process customer feedback on services delivered" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): assessing feedback to judge improvement opportunities; Descriptive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input customer feedback and has as output an improvement opportunity analysis for the service plan." ;
+    skos:example "A team reviews survey results and identifies improvements to the service plan." ;
+    bpot:apqcSourceText "Assessing and incorporating customer reviews/feedback into the service plan to ensure high quality of service." ;
+    bpot:hierarchyID "6.3.4.4.4" ;
+    bpot:pcfID "10337" .
+
+bpot:P10364 a owl:Class ;
+    rdfs:label "Authorize return" ;
+    rdfs:comment "Reuses shared bpo:ActOfFormulation (composing a Directive ICE). Output is a Directive ICE (an authorization), agreeing with the formulation/planning genus (GOLDEN PRINCIPLE). Per Gate-F, the has input is the dedicated bpo:ReturnRequest (the customer's product-return request named in the source 'requests by the customers to return the product'), REPLACING the prior false-friend reuse of bpo:ServiceRequest, which is the individual-customer service-requirements ICE of 6.3.4.1 -- an unrelated informational object." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ReturnRequest ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ReturnAuthorization ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as input a customer return request and has as output a return authorization prescribing that the requested product return may proceed." ;
+    skos:example "A warranty desk approves a return request and issues an RMA number." ;
+    bpot:apqcSourceText "Approving and carrying forward the requests by the customers to return the product. This is part of the process of returning a product in order to receive a refund, replacement, or repair during the product's warranty period." ;
+    bpot:hierarchyID "6.2.4.1" ;
+    bpot:pcfID "10364" .
+
+bpot:P10382 a owl:Class ;
+    rdfs:label "Define customer service policies and procedures" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: output is a Directive ICE (the policy)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerServicePolicy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes a customer service policy establishing the rules and regulations that guide the customer service strategy." ;
+    skos:example "A policy team publishes the customer service code of conduct and escalation rules." ;
+    bpot:apqcSourceText "Outlining the framework of policies and methods for developing customer service strategy. Establish the rules and regulations that serve as a guideline for the customer service strategy. Take into account customer needs and behavior." ;
+    bpot:hierarchyID "6.1.4" ;
+    bpot:pcfID "10382" .
+
+bpot:P10383 a owl:Class ;
+    rdfs:label "Establish target service level for each customer segment" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: the definitional output is a Directive ICE (the SLA). Benchmarking is a typical sub-step, not the defining output, so it is not promoted to a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ServiceLevelAgreement ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines target customer service levels per segment and produces a service level agreement defining services, priorities, and responsibilities." ;
+    skos:example "An operations manager negotiates and publishes a tiered SLA for premium and standard customer segments." ;
+    bpot:apqcSourceText "Determining and implementing levels for customer services. Benchmark certain customer service practices, and base customer level services on those benchmarks. Create a service level agreement, which is a negotiated agreement designed to create a common understanding about services, priorities, and responsibilities." ;
+    bpot:hierarchyID "6.1.5" ;
+    bpot:pcfID "10383" .
+
+bpot:P10390 a owl:Class ;
+    rdfs:label "Forecast volume of customer service contacts" ;
+    rdfs:comment "Reuses bpo:ActOfForecasting (PROPOSE-EXT, section 3.0): extrapolation from historical data to a Predictive ICE. Output is descriptive/predictive (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:HistoricalContactData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ContactVolumeForecast ],
+        bpot:ActOfForecasting ;
+    skos:definition "An Act of Forecasting that has as input historical contact data and has as output a contact-volume forecast estimating the future number of customer service contacts over a given time frame." ;
+    skos:example "A contact-center analyst projects next quarter's inquiry volume from last year's contact logs." ;
+    bpot:apqcSourceText "Projecting the total work force required to service customer service inquiries in order to effectively predict the volume of vendor contracts required. Estimate the number of the customer service contracts in an agreed-upon time frame in order to strategically maintain the work force necessitated for customer inquires. Analyze historical data around customer service contracts, the universe of customer inquiries, frequency of inquiries, servicing capability (per head) of the employees, etc." ;
+    bpot:hierarchyID "6.2.1.1" ;
+    bpot:pcfID "10390" .
+
+bpot:P10391 a owl:Class ;
+    rdfs:label "Schedule customer service work force" ;
+    rdfs:comment "Output is a Directive ICE (a schedule), agreeing with the planning genus (GOLDEN PRINCIPLE). The forecast input is definitional (the text fixes the workforce as proportional to the forecast)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ContactVolumeForecast ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WorkforceSchedule ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that has as input a contact-volume forecast and has as output a workforce schedule prescribing the customer service staff to be deployed over time." ;
+    skos:example "A workforce planner builds the week's agent roster from the forecast contact volume." ;
+    bpot:apqcSourceText "Deploying the work force to manage customer service contracts. Create a systematic summary of the operations and service required, as well as the specific amount of work force that is to be deployed to the customer service operations. Ensure work force is directly proportional to the estimated forecast of customer service contracts." ;
+    bpot:hierarchyID "6.2.1.2" ;
+    bpot:pcfID "10391" .
+
+bpot:P10392 a owl:Class ;
+    rdfs:label "Track work force utilization" ;
+    rdfs:comment "Anchored to bpo:ActOfMonitoring (ongoing tracking yielding a descriptive status report), not Appraisal. Output is a Descriptive ICE (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WorkforceUtilizationReport ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that tracks the utilization of the deployed customer service work force and has as output a workforce-utilization report describing its efficiency and effectiveness." ;
+    skos:example "A team lead reviews dashboards and issues a monthly labor-effectiveness report." ;
+    bpot:apqcSourceText "Tracking the utilization of work force deployed for managing customer service operations. Monitor the utility of the work force deployed for managing customer service operations in order to evaluate its efficiency and cost effectiveness. Calculate the overall labor effectiveness, which measures the utility, performance, and quality of the work force." ;
+    bpot:hierarchyID "6.2.1.3" ;
+    bpot:pcfID "10392" .
+
+bpot:P10393 a owl:Class ;
+    rdfs:label "Monitor and evaluate quality of customer interactions with customer service representatives" ;
+    rdfs:comment "Anchored to bpo:ActOfMonitoring (ongoing tracking/recording of interaction quality yielding a descriptive assessment). The customer service representative whose interactions are tracked is a definitional participant." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:InteractionQualityAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:CustomerServiceRepresentative ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that tracks the interactions between customers and customer service representatives and has as output an interaction-quality assessment describing their quality." ;
+    skos:example "A QA analyst reviews recorded calls and scores agents on an interaction-quality rubric." ;
+    bpot:apqcSourceText "Tracking and determining the quality of interactions between the customer and customer representatives. Use electronic devices to record and effectively assess customer representatives' interactions." ;
+    bpot:hierarchyID "6.2.1.4" ;
+    bpot:pcfID "10393" .
+
+bpot:P10394 a owl:Class ;
+    rdfs:label "Receive customer problems, requests, and inquiries" ;
+    rdfs:comment "Anchored to cco:ont00000402 (Act of Communication: an ICE is transferred from one Agent to another); the inquiry is received, so the inquiry ICE is a definitional input and the customer a definitional participant." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a customer service representative receives a customer inquiry transferred by a customer over some channel." ;
+    skos:example "An agent picks up a phone call in which a customer asks about a product feature." ;
+    bpot:apqcSourceText "Receiving requests for information from customers over multiple channels. Receive various requests and inquiries from customers regarding products/services. Accept these inquiries through channels such as email, telephone, online forms, text messages, social media, and in person. Supply dedicated equipment, systems, and personnel." ;
+    bpot:hierarchyID "6.2.2.1" ;
+    bpot:pcfID "10394" .
+
+bpot:P10395 a owl:Class ;
+    rdfs:label "Resolve customer problems, requests, and inquiries" ;
+    rdfs:comment "Re-anchored to cco:ont00000402 (Act of Communication) per Gate-F review, mirroring its sibling P10398 (6.2.3.2 'Route customer complaints'). The verbatim source describes NO settlement: 'Routing customer inquiries in order to service them with the most apposite response. Direct customer inquires to the best suited personnel or system. Have a system or procedure capable of efficiently channeling these requests.' This is routing/channeling, ontologically identical to the complaint-flow sibling P10398, which this module anchors at cco:ont00000402. The inquiry flow has no separate 'route' step, so the routing description was filed under the 'Resolve' label. REJECTED the prior bpo:ActOfResolution anchor as a label-over-description false friend (Step-2 trap): a routing/directing act settles nothing. The existential output bpo:InquiryResolution is DEMOTED -- it is not produced by routing; the inquiry remains the definitional has input (cco:ont00001921) and the customer service representative is the routing participant. If APQC genuinely intends end-to-end resolution here, the missing investigate/decide/close sub-acts would have to be added to justify a Resolution genus; absent them, the routing reading wins as the only thing the text describes." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:CustomerServiceRepresentative ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a received customer inquiry is directed to the personnel or system best suited to service it with the most apposite response." ;
+    skos:example "A triage system routes a technical request to the specialist best suited to answer it." ;
+    bpot:apqcSourceText "Routing customer inquiries in order to service them with the most apposite response. Direct customer inquires to the best suited personnel or system. Have a system or procedure capable of efficiently channeling these requests." ;
+    bpot:hierarchyID "6.2.2.3" ;
+    bpot:pcfID "10395" .
+
+bpot:P10396 a owl:Class ;
+    rdfs:label "Respond to customer problems, requests, and inquiries" ;
+    rdfs:comment "Anchored to cco:ont00000379 (Act of Representative Communication: an Act of Communication committing the speaker to the truth of the asserted reply). The response ICE is the definitional output transferred to the customer." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:InquiryResponse ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000379 ;
+    skos:definition "An Act of Representative Communication in which a customer service representative transfers an inquiry response to the customer who raised the inquiry." ;
+    skos:example "An agent emails the customer the answer and resolution steps for their request." ;
+    bpot:apqcSourceText "Responding to customer requests by email, conversation, interactive voice response, mail, etc. with the most appropriate reply. Instill a robust process to locate the right information for a solution to a customer's problem." ;
+    bpot:hierarchyID "6.2.2.4" ;
+    bpot:pcfID "10396" .
+
+bpot:P10397 a owl:Class ;
+    rdfs:label "Receive customer complaints" ;
+    rdfs:comment "Anchored to cco:ont00000402 (Act of Communication). The complaint ICE is the definitional input received and the customer a definitional participant." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a customer service representative receives a customer complaint transferred by a customer over some channel." ;
+    skos:example "A service desk logs a grievance submitted through an online complaint form." ;
+    bpot:apqcSourceText "Receiving any complaints or grievances from customers for the organization's products/services. Receive objections, complaints, and criticism from customers regarding products/services through email, telephone, online forms, text messages, social media, in person, etc. Dedicate equipment, systems, and personnel." ;
+    bpot:hierarchyID "6.2.3.1" ;
+    bpot:pcfID "10397" .
+
+bpot:P10398 a owl:Class ;
+    rdfs:label "Route customer complaints" ;
+    rdfs:comment "Anchored to cco:ont00000402 (Act of Communication): routing transfers the complaint ICE onward to the appropriate handler. The complaint is the definitional input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a received customer complaint is directed to the personnel or system best suited to address it." ;
+    skos:example "A triage rule forwards a billing complaint to the finance support queue." ;
+    bpot:apqcSourceText "Routing any complaints or grievances received from customers in order to address them in the most appropriate manner. Direct complaints to the best suited personnel or system. Implement a system or procedure capable of efficiently channeling the various objections, complaints, and criticism from customers over the offerings provided by the organization." ;
+    bpot:hierarchyID "6.2.3.2" ;
+    bpot:pcfID "10398" .
+
+bpot:P10399 a owl:Class ;
+    rdfs:label "Resolve customer complaints" ;
+    rdfs:comment "Anchored to bpo:ActOfResolution (PROPOSE-EXT): redressing a sound complaint and recording the settlement. Output is a Descriptive ICE (consistent with the Planned-Act genus)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplaintResolution ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000063 ;
+            owl:someValuesFrom bpot:P10400 ],
+        bpot:ActOfResolution ;
+    skos:definition "An Act of Resolution that has as input a legitimate customer complaint and has as output a complaint resolution recording the corrective action taken to redress it." ;
+    skos:example "A support team issues a replacement unit and records the complaint as resolved." ;
+    bpot:apqcSourceText "Resolving any customer complaints that are deemed to be sound and reasonable. Redress any objections, grievances, and complaints received from customers regarding the offerings provided by the organization. Identify the legitimate complaints, where the situation needs to be appropriately corrected. Deploy personnel who can rectify the issue within a stipulated time frame." ;
+    bpot:hierarchyID "6.2.3.3" ;
+    bpot:pcfID "10399" .
+
+bpot:P10401 a owl:Class ;
+    rdfs:label "Measure customer satisfaction with customer problems, requests, and inquiries handling" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges satisfaction/performance and yields the Descriptive bpo:CustomerSatisfactionAssessment (GOLDEN PRINCIPLE). Customer feedback is a typical input gathered by its child 6.5.1.1, so it is recorded here as commentary rather than a definitional has-input restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerSatisfactionAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11687 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11688 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P18126 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates how customer requests and inquiries are handled and resolved and produces a customer satisfaction assessment." ;
+    skos:example "A contact-centre quality team calculates satisfaction with how inquiries were resolved last quarter and reports the result." ;
+    bpot:apqcSourceText "Calculating satisfaction levels of customers by effectively evaluating the process of handling requests/inquiries of customers. Effectively calculate the performance of customer-requests/inquiries handling and resolution. Obtain information regarding requests/inquiries handling and resolution through customer feedback. Use it to explore new ideas and opportunities for enhanced customer requests/inquiries handling and resolution process." ;
+    bpot:hierarchyID "6.5.1" ;
+    bpot:pcfID "10401" .
+
+bpot:P10402 a owl:Class ;
+    rdfs:label "Measure customer satisfaction with customer-complaint handling and resolution" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it estimates the customers' level of fulfilment and yields the Descriptive bpo:CustomerSatisfactionAssessment (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerSatisfactionAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11236 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11237 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11689 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates how customer complaints are handled and resolved and produces a customer satisfaction assessment." ;
+    skos:example "A complaints-management team measures how satisfied customers were with the resolution of their complaints to support retention." ;
+    bpot:apqcSourceText "Measuring the satisfaction level of customers as pertains to how their complaints are handled and resolved. This process element requires the organization to estimate the customers level of fulfillment with the process reconciling their complaints and towards the objective of ensuring customer retention. The feedback received can be used to develop concepts for new opportunities to boost the level of customer satisfaction." ;
+    bpot:hierarchyID "6.5.2" ;
+    bpot:pcfID "10402" .
+
+bpot:P10403 a owl:Class ;
+    rdfs:label "Measure customer satisfaction with products and services" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it calculates and judges satisfaction levels and yields the Descriptive bpo:CustomerSatisfactionAssessment (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerSatisfactionAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11238 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11239 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20117 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11240 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11241 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates customers' satisfaction with an organization's products and services and produces a customer satisfaction assessment." ;
+    skos:example "A voice-of-customer team calculates post-sale product satisfaction and draws conclusions to improve service operations." ;
+    bpot:apqcSourceText "Calculating satisfaction levels of customers with products/services. Obtain customer feedback on products/services, as well as the effectiveness of the advertising campaigns. Examine this information to reach meaningful conclusions, which could then be used to enhance the customer service operations." ;
+    bpot:hierarchyID "6.5.3" ;
+    bpot:pcfID "10403" .
+
+bpot:P11236 a owl:Class ;
+    rdfs:label "Solicit customer feedback on complaint handling and resolution" ;
+    rdfs:comment "Re-anchored (Gate-F) to cco:ont00000402 (Act of Communication, co-anchored cco:ont00000228 Planned Act for standalone SHACL); the act SOLICITS/OBTAINS feedback from the customer (the customer transfers the feedback ICE), consistent with the other solicit-feedback acts and P10336: it requests, receives, and stores input ICEs (customer feedback); definitional output is the Descriptive bpo:CustomerFeedback. The Customer participates (has participant)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that engages the customer to elicit and collect customer feedback on how complaints are handled and resolved." ;
+    skos:example "An agent invites the customer by phone and email to rate how their complaint was resolved." ;
+    bpot:apqcSourceText "Requesting customer feedback on the process of handling and resolving customer complaints. Obtain information about the effectiveness and performance of the customer complaint handling process from the customers through various means (e.g., online and by phone)." ;
+    bpot:hierarchyID "6.5.2.1" ;
+    bpot:pcfID "11236" .
+
+bpot:P11237 a owl:Class ;
+    rdfs:label "Analyze customer complaint data and identify improvement opportunities" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (shared genus, cco:ont00000366): it categorizes and examines complaint data to discern improvement opportunities; definitional output is the Descriptive bpo:ImprovementOpportunityAnalysis. Input modeled as bpo:CustomerComplaint (the lodged complaint records being examined)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer complaints and has as output an improvement opportunity analysis of the complaint handling process." ;
+    skos:example "An analyst categorizes complaints by speed and accuracy and reports which areas most need enhancement." ;
+    bpot:apqcSourceText "Examining the information obtained through handling and resolving complaints for development/improvement opportunities. Categorize the customer complaints data on the basis of speed, accuracy, courtesy, price, product choice, availability, hours, location, etc. Determine complaint patterns in order to diagnose areas needing enhancement." ;
+    bpot:hierarchyID "6.5.2.2" ;
+    bpot:pcfID "11237" .
+
+bpot:P11238 a owl:Class ;
+    rdfs:label "Gather and solicit post-sale customer feedback on products and services" ;
+    rdfs:comment "Re-anchored (Gate-F) to cco:ont00000402 (Act of Communication, co-anchored cco:ont00000228 Planned Act for standalone SHACL); the act SOLICITS/OBTAINS feedback from the customer (the customer transfers the feedback ICE), consistent with the other solicit-feedback acts and P10336: it gathers/receives input ICEs (customer feedback) via surveys and usability tests; definitional output is the Descriptive bpo:CustomerFeedback. The Customer participates (has participant)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that engages the customer after sale to elicit and collect customer feedback on the quality and utility of products and services." ;
+    skos:example "A team runs a post-purchase survey and usability test to collect feedback on a product's utility." ;
+    bpot:apqcSourceText "Obtaining customer feedback/review on the quality and utility derived from the products/services after the sale is complete. Use techniques such as surveys, feedback boxes, and user activity and usability tests." ;
+    bpot:hierarchyID "6.5.3.1" ;
+    bpot:pcfID "11238" .
+
+bpot:P11239 a owl:Class ;
+    rdfs:label "Solicit post-sale customer feedback on ad effectiveness" ;
+    rdfs:comment "Re-anchored to cco:ont00000636 (Act of Appraisal) per Gate-F review: the APQC Element Description LEADS with an appraisal verb -- 'Assessing the influence of advertisements on purchasing behavior' -- and per Phase 1 the genus comes from the lead gerund ('Assessing' -> Appraisal), not the label verb 'Solicit'. REJECTED the prior cco:ont00000366 (Act of Information Processing, solicit/collect) anchor: it followed the label over the description and risked dropping the ad-effectiveness judgement entirely, since the deferred analysis sibling 6.5.3.4 is about product/service satisfaction generally, not ad influence specifically. Definitional output is the Descriptive bpo:AdEffectivenessAssessment, satisfying the GOLDEN PRINCIPLE (appraisal -> descriptive). The surveys/questionnaires/toll-free numbers are the typical method of gathering the input feedback (commentary), and the customer participates." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:AdEffectivenessAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that assesses the influence of advertisements on customers' purchasing behavior and produces an ad effectiveness assessment." ;
+    skos:example "A team uses product-recognition tests and survey responses to assess and report whether an ad campaign drove customers' purchases." ;
+    bpot:apqcSourceText "Assessing the influence of advertisements on purchasing behavior. Use techniques such as surveys and product recognition tests, questionnaires or feedback flyers, and toll-free numbers in order to encourage customer interaction after the sale." ;
+    bpot:hierarchyID "6.5.3.2" ;
+    bpot:pcfID "11239" .
+
+bpot:P11240 a owl:Class ;
+    rdfs:label "Analyze product and service satisfaction data and identify improvement opportunities" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (shared genus, cco:ont00000366): it examines collected feedback to discern where products/services and the service strategy can improve; definitional output is the Descriptive bpo:ImprovementOpportunityAnalysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer feedback and has as output an improvement opportunity analysis for products, services, and the customer service strategy." ;
+    skos:example "An analyst mines post-sale survey data and lists the improvement opportunities that would most raise satisfaction." ;
+    bpot:apqcSourceText "Assessing the information collected on customer satisfaction levels with products/services in order to determine areas for improvement. Examine the data and information extracted from the customer feedback and reviews to measure the satisfaction levels of the customers. Identify opportunities that could enhance the customer satisfaction levels and the overall customer service strategy." ;
+    bpot:hierarchyID "6.5.3.4" ;
+    bpot:pcfID "11240" .
+
+bpot:P11241 a owl:Class ;
+    rdfs:label "Provide feedback and insights to appropriate teams (product design/development, marketing, manufacturing)" ;
+    rdfs:comment "Re-anchored to cco:ont00000402 (Act of Communication) per Gate-F review, consistently with P18126: the act is a directed hand-off of an ICE to the named recipient bpo:ProductManagementTeam (REJECTED the prior generic cco:ont00000366 Information Processing anchor, which dropped the directedness). OUTPUT corrected: the label promises 'feedback AND insights', so the definitional has output is bpo:ImprovementOpportunityAnalysis (the 'insights' / analysis product) rather than the raw bpo:CustomerFeedback, which is the analyzed input. The source de-conflates 'Analyze information collected through [11238]' (the analysis is performed by sibling P11240 6.5.3.4 producing bpo:ImprovementOpportunityAnalysis) and 'Share with the product management team' (this communication act); this row models the share/transfer and conveys the insights. The cross-reference to 11238 is recorded in apqcSourceText only; precedence is not asserted as the text licenses only an informational hand-off." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductManagementTeam ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which the insights derived from analyzing post-sale customer feedback are transferred to the product management team for consideration in improving or developing offerings." ;
+    skos:example "A service analyst packages the improvement insights drawn from customer product feedback and shares them with product management for the next release planning." ;
+    bpot:apqcSourceText "Providing feedback from customers on products/services to the product management team. Analyze information collected through Gather and solicit post-sale customer feedback on products/services [11238]. Share with the product management team for consideration while improving existing offerings or developing new products/services." ;
+    bpot:hierarchyID "6.5.3.5" ;
+    bpot:pcfID "11241" .
+
+bpot:P11687 a owl:Class ;
+    rdfs:label "Solicit customer feedback on customer service experience" ;
+    rdfs:comment "Re-anchored (Gate-F) to cco:ont00000402 (Act of Communication, co-anchored cco:ont00000228 Planned Act for standalone SHACL); the act SOLICITS/OBTAINS feedback from the customer (the customer transfers the feedback ICE), consistent with the other solicit-feedback acts and P10336: the act elicits, receives, and stores input ICEs (customer feedback) rather than rendering a value judgement; its definitional output is the Descriptive bpo:CustomerFeedback. The Customer participates (has participant)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that engages the customer to elicit and collect customer feedback about their customer service experience." ;
+    skos:example "A service desk emails a short post-resolution survey inviting the customer to rate the handling of their request." ;
+    bpot:apqcSourceText "Creating an avenue for which the customer can provide feedback on their experience with how their inquiry, problem, or request was handled." ;
+    bpot:hierarchyID "6.5.1.1" ;
+    bpot:pcfID "11687" .
+
+bpot:P11688 a owl:Class ;
+    rdfs:label "Analyze customer service data and identify improvement opportunities" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (shared genus, cco:ont00000366): it examines feedback ICEs and produces an understanding of where service can improve; its definitional output is the Descriptive bpo:ImprovementOpportunityAnalysis. Management is a typical participant (commentary), not definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer feedback and has as output an improvement opportunity analysis of the customer service function." ;
+    skos:example "An analyst reviews survey responses and writes up the top three areas where inquiry handling can be improved." ;
+    bpot:apqcSourceText "Reviewing customer service feedback to identify areas in which improvements can be made. Engage with management to discuss issues." ;
+    bpot:hierarchyID "6.5.1.2" ;
+    bpot:pcfID "11688" .
+
+bpot:P11689 a owl:Class ;
+    rdfs:label "Identify common customer complaints" ;
+    rdfs:comment "Anchored to bpo:ActOfIdentification (shared genus, cco:ont00000366, discernment sense): it discerns and registers which complaints recur, rather than rendering a value judgement; definitional output is the Descriptive bpo:ComplaintAnalysis documenting the common problems." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplaintAnalysis ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that has as input customer complaints and has as output a complaint analysis registering the recurrent complaint patterns and common problems discerned." ;
+    skos:example "A team groups recurring complaints and documents the most common problems for correction." ;
+    bpot:apqcSourceText "Determining complaint patterns in order to identify common issues. Document common problems for correction." ;
+    bpot:hierarchyID "6.5.2.3" ;
+    bpot:pcfID "11689" .
+
+bpot:P12667 a owl:Class ;
+    rdfs:label "Reconcile warranty transaction disposition" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): reconciliation evaluates the completeness/consistency of the transaction; Descriptive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyTransactionReconciliation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that verifies a warranty transaction has been completed and produces a warranty transaction reconciliation." ;
+    skos:example "Finance confirms the warranty payout and closure are consistent and complete." ;
+    bpot:apqcSourceText "Assuring that the warranty transaction has been completed." ;
+    bpot:hierarchyID "6.3.2.10" ;
+    bpot:pcfID "12667" .
+
+bpot:P12668 a owl:Class ;
+    rdfs:label "Approve or reject warranty claim" ;
+    rdfs:comment "Genus bpo:ActOfSelection (inlined): chooses from a binary candidate set (approve/reject) and emits a Directive ClaimDisposition, agreeing with the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaimValidation ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ClaimDisposition ],
+        bpot:ActOfSelection ;
+    skos:definition "An Act of Selection that has as input a warranty claim validation and chooses between approval and rejection, producing a claim disposition." ;
+    skos:example "The warranty team approves a claim found to be within warranty parameters." ;
+    bpot:apqcSourceText "Following Defining issue [20098], an approval or rejection with be made against the warranty claim. If it is deemed that the claim falls within the warranty parameters, the claim will be approved. If the claim is deemed to fall outside warranty parameters, the claim with be rejected." ;
+    bpot:hierarchyID "6.3.2.6" ;
+    bpot:pcfID "12668" .
+
+bpot:P12671 a owl:Class ;
+    rdfs:label "Validate warranty claim" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): the act evaluates the claim against the warranty parameters; output is a Descriptive judgement." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyPolicy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyClaimValidation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a warranty claim and a warranty policy and has as output a warranty claim validation judging whether the claim falls within the warranty parameters." ;
+    skos:example "An administrator checks a claim against the policy and records that it is in scope." ;
+    bpot:apqcSourceText "Ensuring that the claim falls within the parameters of the warranty in question. After validation is made, the claim must be investigated." ;
+    bpot:hierarchyID "6.3.2.2" ;
+    bpot:pcfID "12671" .
+
+bpot:P12672 a owl:Class ;
+    rdfs:label "Evaluate and manage warranty performance" ;
+    rdfs:comment "R5: although the APQC label says 'manage', the Element Description ('Assessing the cost and effectiveness of warranties') is a bounded appraisal cycle, so it is modeled as a process, not a standing function. The standing 'manage warranty' capacity is already carried by the shared bpo:WarrantyManagementCapability (R6) and is not re-minted here. Anchored to cco:ont00000636 (Act of Appraisal); definitional output is the Descriptive bpo:WarrantyPerformanceReport (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyPerformanceReport ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20118 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12676 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20119 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12674 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20120 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that assesses the cost and effectiveness of an organization's warranties and produces a warranty performance report." ;
+    skos:example "A warranty team's periodic review of warranty cost and effectiveness culminating in a warranty performance report." ;
+    bpot:apqcSourceText "Assessing the cost and effectiveness of warranties." ;
+    bpot:hierarchyID "6.5.4" ;
+    bpot:pcfID "12672" .
+
+bpot:P12673 a owl:Class ;
+    rdfs:label "Communicate warranty policies and offerings" ;
+    rdfs:comment "Anchored to cco:ont00000402 (Act of Communication): the act transfers an existing Directive ICE (bpo:WarrantyPolicy) to staff rather than composing a new directive, so it is NOT bpo:ActOfFormulation. The warranty policy is the communicated input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyPolicy ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which warranty policies, rules, and updates are transferred to recipients via training manuals and training resources." ;
+    skos:example "Trainers roll out updated warranty rules through new-product training manuals." ;
+    bpot:apqcSourceText "Communicating rules and updates via training manuals for new products and training resources." ;
+    bpot:hierarchyID "6.1.6.5" ;
+    bpot:pcfID "12673" .
+
+bpot:P12674 a owl:Class ;
+    rdfs:label "Identify opportunities to eliminate warranty waste" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (shared genus, cco:ont00000366): it examines usage to discern waste-elimination opportunities; definitional output is the Descriptive bpo:ImprovementOpportunityAnalysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that examines warranty usage and produces an improvement opportunity analysis identifying unused or seldom-used warranties that can be phased out." ;
+    skos:example "An analyst identifies seldom-claimed warranty types and recommends retiring them to cut waste." ;
+    bpot:apqcSourceText "Finding ways to phase out unused or seldom used warranties." ;
+    bpot:hierarchyID "6.5.4.4" ;
+    bpot:pcfID "12674" .
+
+bpot:P12676 a owl:Class ;
+    rdfs:label "Monitor and report on warranty management metrics" ;
+    rdfs:comment "Anchored to bpo:ActOfMonitoring (PROPOSE-EXT, cco:ont00000366): it repeatedly compares warranties against applicable metrics and reports status, rather than rendering a one-off value judgement; definitional output is the Descriptive bpo:WarrantyPerformanceReport." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyPerformanceReport ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that tracks warranty management metrics over time and produces a warranty performance report summarizing significant conclusions." ;
+    skos:example "An analyst tracks warranty cost and resolution-time metrics each month and submits a summary report." ;
+    bpot:apqcSourceText "Comparing warranties by using applicable metrics to see how they are handled and resolved. Develop and submit reports that summarize significant conclusions." ;
+    bpot:hierarchyID "6.5.4.2" ;
+    bpot:pcfID "12676" .
+
+bpot:P12677 a owl:Class ;
+    rdfs:label "Schedule field service" ;
+    rdfs:comment "Genus bpo:ActOfScheduling (PROPOSE-EXT): output is a Directive WorkforceSchedule. Participant bpo:FieldServiceAgent where definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WorkforceSchedule ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:FieldServiceAgent ],
+        bpot:ActOfScheduling ;
+    skos:definition "An Act of Scheduling that fixes the timing and assignment of investigative field service and produces a workforce schedule." ;
+    skos:example "A high-priority claim triggers scheduling a field service agent to gather evidence." ;
+    bpot:apqcSourceText "Scheduling additional investigative field service. This is performed for high priority claims or claims that require additional investigation. Field service engineers will gather additional information, perform further investigation, and qualify the definition of the issue." ;
+    bpot:hierarchyID "6.3.2.3.2" ;
+    bpot:pcfID "12677" .
+
+bpot:P12678 a owl:Class ;
+    rdfs:label "Request and receive defective part" ;
+    rdfs:comment "Genus bpo:ActOfAcquisition (inlined): the organization obtains a part it did not previously hold. Operations category, so the defective part is a Material Entity participant (obo:BFO_0000057), not an ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:DefectivePart ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition that obtains a defective part for further investigation." ;
+    skos:example "The warranty team requests and receives the failed component from the customer." ;
+    bpot:apqcSourceText "Requesting receipt of a defective part for further investigation." ;
+    bpot:hierarchyID "6.3.2.3.3" ;
+    bpot:pcfID "12678" .
+
+bpot:P13482 a owl:Class ;
+    rdfs:label "Analyze problems, requests, and inquiries" ;
+    rdfs:comment "Reuses shared bpo:ActOfAnalysis. Output is a Descriptive ICE (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:InquiryAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a customer inquiry and has as output an inquiry analysis describing the customer's need and candidate answers." ;
+    skos:example "An agent examines an inbound request and characterizes what product information the customer needs." ;
+    bpot:apqcSourceText "Analyzing various requests and inquiries from customers regarding products/services. Provide answers and offerings to satisfy the customer's needs." ;
+    bpot:hierarchyID "6.2.2.2" ;
+    bpot:pcfID "13482" .
+
+bpot:P16890 a owl:Class ;
+    rdfs:label "Create and manage warranty rules/claim codes for products" ;
+    rdfs:comment "Despite the 'manage/maintain' framing, the dominant act is establishing the rules and codes (a Directive ICE), so it is modeled as a process under bpo:ActOfFormulation. Output reuses bpo:WarrantyClaimCode from the shared section vocab." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyClaimCode ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes warranty claims-processing and routing rules and the associated warranty claim codes for products." ;
+    skos:example "A warranty operations team defines fault and repair-time codes and rolls them out across the claims system." ;
+    bpot:apqcSourceText "Establishing and maintaining claims processing and routing rules. Establish and maintain claims processing and routing rules for product warranties, coverage lists, repair, fault, trouble codes, repair time setup, and warranty policy registration. This also includes rolling out the codes and rules, and the improvements/updates to these rules and codes via systematic updates." ;
+    bpot:hierarchyID "6.1.6.2" ;
+    bpot:pcfID "16890" .
+
+bpot:P16893 a owl:Class ;
+    rdfs:label "Determine and document warranty policies" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: output is a Directive ICE (bpo:WarrantyPolicy, reused from the shared section vocab)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyPolicy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes and documents a warranty policy assuring customers that the company will guarantee the warranties it issues." ;
+    skos:example "Legal and warranty teams publish the company's warranty guarantee policy." ;
+    bpot:apqcSourceText "Establishing warranty policies to assure customers that the company will guarantee its warranties that it issues." ;
+    bpot:hierarchyID "6.1.6.1" ;
+    bpot:pcfID "16893" .
+
+bpot:P16928 a owl:Class ;
+    rdfs:label "Identify and capture upsell/cross-sell opportunities" ;
+    rdfs:comment "Reuses shared bpo:ActOfIdentification (discernment sense). Output is a Descriptive ICE (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerInquiry ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SalesLead ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that has as input a customer inquiry and has as output a sales lead representing an upsell or cross-sell opportunity discerned from the inquiry." ;
+    skos:example "While handling a support call, an agent spots that the customer qualifies for a premium tier and records a lead." ;
+    bpot:apqcSourceText "Utilizing customer inquiries as opportunities to either provide a comparable service to the one in question, offer additional complimentary service, or suggest a service that is better than what was initially offered." ;
+    bpot:hierarchyID "6.2.2.5" ;
+    bpot:pcfID "16928" .
+
+bpot:P16937 a owl:Class ;
+    rdfs:label "Deliver opportunity to sales team" ;
+    rdfs:comment "Anchored to cco:ont00000402 (Act of Communication): the lead ICE is transferred from one Agent to another. The sales lead is the definitional input transferred and the sales team a definitional participant (recipient)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SalesLead ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SalesTeam ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a customer service representative transfers a sales lead to the sales team." ;
+    skos:example "An agent forwards a qualified cross-sell lead to the inside-sales queue." ;
+    bpot:apqcSourceText "Providing possible sales leads to the sales team in an effort to garner more business opportunities." ;
+    bpot:hierarchyID "6.2.2.6" ;
+    bpot:pcfID "16937" .
+
+bpot:P18126 a owl:Class ;
+    rdfs:label "Provide customer feedback to product management on customer service experience" ;
+    rdfs:comment "Re-anchored to cco:ont00000402 (Act of Communication) per Gate-F review: the act is a DIRECTED hand-off of an ICE to a named recipient (bpo:ProductManagementTeam), prototypically an Act of Communication. REJECTED the prior generic cco:ont00000366 (Act of Information Processing) anchor as inconsistent with the section's own treatment of structurally identical 'deliver-to-recipient' acts (e.g. bpo:InquiryResponse via Act of Representative Communication; Act of Communication is verified-and-available in the module header): anchoring one directed ICE transfer under Communication and another under generic Information Processing drops the directedness (who the ICE is conveyed TO). The Descriptive output bpo:CustomerFeedback is retained (the GOLDEN PRINCIPLE still holds: communication of a Descriptive ICE). The same anchor is applied to P11241 so all directed-handoff rows in 6.5 are consistent with 6.2's Respond pattern." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductManagementTeam ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which customer feedback on the customer service experience is transferred to the product management team for downstream analysis." ;
+    skos:example "A service lead forwards the consolidated customer-service feedback file to the product management team." ;
+    bpot:apqcSourceText "Handing over data to management to analyze common issues in regards to customer service." ;
+    bpot:hierarchyID "6.5.1.3" ;
+    bpot:pcfID "18126" .
+
+bpot:P19072 a owl:Class ;
+    rdfs:label "Analyze customer complaints and response/redressal" ;
+    rdfs:comment "Reuses shared bpo:ActOfAnalysis. Output is a Descriptive ICE (GOLDEN PRINCIPLE). Operates over the aggregate complaint log, so the complaint input is definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerComplaint ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplaintAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input customer complaints and has as output a complaint analysis describing patterns that inform service improvement and customer profiling." ;
+    skos:example "A quality team mines a quarter of complaint records to find recurring defect themes." ;
+    bpot:apqcSourceText "Analyzing complaint logs to provide input for continuous service improvement and customer profiling." ;
+    bpot:hierarchyID "6.2.3.5" ;
+    bpot:pcfID "19072" .
+
+bpot:P20086 a owl:Class ;
+    rdfs:label "Define customer service requirements across the enterprise" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (cco:ont00000511 Act of Planning): the output is a Directive ICE prescribing requirements." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes a customer service requirement specification enumerating the behaviors, skills, and policies needed to provide customer service across the enterprise." ;
+    skos:example "A service-design team documents the enterprise-wide customer service requirement specification." ;
+    bpot:apqcSourceText "Defining a set of behaviors, skills, and policies needed to provide customer service effectively across the enterprise." ;
+    bpot:hierarchyID "6.1.1" ;
+    bpot:pcfID "20086" .
+
+bpot:P20087 a owl:Class ;
+    rdfs:label "Define customer service experience" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: the defining output is a Directive ICE (the experience specification). Communicating it to staff is the downstream method, not the definitional output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerServiceExperienceSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that articulates a customer service experience specification relating service-level expectations to the workforce for engaging customers." ;
+    skos:example "A CX lead defines the expected tone and resolution standards for every customer interaction." ;
+    bpot:apqcSourceText "Communicating to the customer service resources what is expected when engaging the customer. Relate service level expectations to the workforce. Ensure positive customer experience." ;
+    bpot:hierarchyID "6.1.2" ;
+    bpot:pcfID "20087" .
+
+bpot:P20088 a owl:Class ;
+    rdfs:label "Define and manage customer service channel strategy" ;
+    rdfs:comment "Despite the 'manage' label, the Element Description denotes a bounded act of establishing/refining procedures (a Directive ICE), so it is modeled as a process under bpo:ActOfFormulation rather than as an Organization Capability." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerServiceChannelStrategy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes and refines a customer service channel strategy governing the procedures for customer service and technical support." ;
+    skos:example "A support-operations team establishes the phone, chat, and email channel procedures and revises them quarterly." ;
+    bpot:apqcSourceText "Establishing and refining procedures for customer service and technical support." ;
+    bpot:hierarchyID "6.1.3" ;
+    bpot:pcfID "20088" .
+
+bpot:P20089 a owl:Class ;
+    rdfs:label "Define warranty claims" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: output is a Directive ICE. Its APQC activities (6.1.6.1-6.1.6.5) are process parts via cco:ont00001777." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyClaimDefinition ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16893 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16890 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20090 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20091 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12673 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the exact terms and conditions under which specific warranties apply to certain goods or services, producing a warranty claim definition." ;
+    skos:example "A warranty team sets the covered defects, time windows, and product scope for each warranty type." ;
+    bpot:apqcSourceText "Determining the exact terms and conditions under which specific warranties apply to certain goods or services." ;
+    bpot:hierarchyID "6.1.6" ;
+    bpot:pcfID "20089" .
+
+bpot:P20090 a owl:Class ;
+    rdfs:label "Agree on warranty responsibilities with suppliers" ;
+    rdfs:comment "Re-anchored to cco:ont00000684 (Act of Contract Formation) per Gate-F review: the Element Description ('Negotiating with manufacturers and dealers the obligations of EACH PARTY') and the skos:definition describe a BILATERAL, mutual, legally-binding agreement between two or more parties. cco:ont00000684 is defined as 'An Act of Promising having a lawful object entered into voluntarily by two or more agents with legal capacity, each of whom intends to create one or more legal obligations between them.' REJECTED the prior anchor cco:ont00000821 (Act of Promising) as too generic: per its CCO definition it is a UNILATERAL speech act 'performed by declaring that THE promising agent will do, or refrain from doing, the specified action', whereas this row is a two-party legal obligation. Contract Formation is a direct child of Promising, so the closure (Promising -> Commissive Communication -> Communication -> Planned Act) still holds. NOT bpo:ActOfFormulation, because the act establishes a commitment between parties, not a unilateral plan. Suppliers participate via cco:ont00001833 (has agent)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplierWarrantyResponsibilityAgreement ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001833 ;
+            owl:someValuesFrom bpot:Supplier ],
+        cco:ont00000228,
+        cco:ont00000684 ;
+    skos:definition "An Act of Contract Formation in which an organization and its suppliers or dealers negotiate and commit to the warranty obligations of each party, producing a supplier warranty responsibility agreement." ;
+    skos:example "A manufacturer and dealer sign an agreement apportioning who covers which warranty repairs." ;
+    bpot:apqcSourceText "Negotiating with manufacturers and dealers the obligations of each party in upholding warranties." ;
+    bpot:hierarchyID "6.1.6.3" ;
+    bpot:pcfID "20090" .
+
+bpot:P20091 a owl:Class ;
+    rdfs:label "Define warranty related offerings for customers" ;
+    rdfs:comment "Re-anchored to cco:ont00000402 (Act of Communication) per Gate-F review: the verbatim Element Description ('Informing customers about warranties that apply to promoted products or services') is a pure communication/informing act with no define/specify/compose verb in the source. Per D2 the genus is read from the Element Description, not the label verb 'Define'. This now mirrors the parallel sibling P12673 (6.1.6.5 'Communicate warranty policies and offerings'), whose source is likewise a communication and which is anchored at cco:ont00000402. The warranty offering being informed about is modeled as has input (cco:ont00001921), NOT a definitional has output (the source never mentions composing a specification), per the Phase-3 existential-necessity rule. The customer is the recipient (has participant). REJECTED the prior bpo:ActOfFormulation anchor (and its has output some bpo:WarrantyOffering) as a label-over-description false friend that anchored two near-identical informing acts to two different genera." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyOffering ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which a warranty offering is conveyed to customers, informing them about the warranties that apply to promoted products or services." ;
+    skos:example "A product marketing team informs customers of the warranty bundled with a promoted product line." ;
+    bpot:apqcSourceText "Informing customers about warranties that apply to promoted products or services." ;
+    bpot:hierarchyID "6.1.6.4" ;
+    bpot:pcfID "20091" .
+
+bpot:P20092 a owl:Class ;
+    rdfs:label "Develop recall strategy" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation: output is a Directive ICE (bpo:RecallStrategy, reused from the shared section vocab)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallStrategy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that establishes the procedures for handling recalls of defective products, producing a recall strategy." ;
+    skos:example "A product-safety team documents the steps to execute a recall when a defect is confirmed." ;
+    bpot:apqcSourceText "Establishing procedures to handle recalls of defective products." ;
+    bpot:hierarchyID "6.1.7" ;
+    bpot:pcfID "20092" .
+
+bpot:P20095 a owl:Class ;
+    rdfs:label "Process return and record reason" ;
+    rdfs:comment "Operations process: the returned product is a MATERIAL participant (obo:has participant). The informational output (the reason record) is a Descriptive ICE (GOLDEN PRINCIPLE), attached via has output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ReturnedProduct ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ReturnReasonRecord ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition in which an Agent takes in the returned product and produces a return-reason record documenting why the product was returned." ;
+    skos:example "A clerk inspects a returned item and records 'defective on arrival' as the return reason." ;
+    bpot:apqcSourceText "Notating the reason for the return of the product." ;
+    bpot:hierarchyID "6.2.4.2" ;
+    bpot:pcfID "20095" .
+
+bpot:P20096 a owl:Class ;
+    rdfs:label "Receive warranty claim" ;
+    rdfs:comment "Anchored at cco:ont00000402 (Act of Communication): a warranty-claim ICE is transferred from the originator into the organization." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that takes in an incoming warranty claim, routes it to the responsible department, and documents it." ;
+    skos:example "A service desk logs an incoming claim and routes it to the warranty team." ;
+    bpot:apqcSourceText "Receiving incoming warranty claims. Route claim to correct department. Document claim." ;
+    bpot:hierarchyID "6.3.2.1" ;
+    bpot:pcfID "20096" .
+
+bpot:P20097 a owl:Class ;
+    rdfs:label "Investigate warranty issues" ;
+    rdfs:comment "Genus bpo:ActOfAnalysis (inlined): investigation is information processing producing a descriptive understanding. Its APQC children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RootCauseAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CorrectiveActionRecommendation ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20098 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12677 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12678 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20099 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20100 ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that examines a warranty issue and produces a root cause analysis and a recommendation for corrective action." ;
+    skos:example "The warranty team defines the issue, schedules field service, examines a returned part, and reports a root cause." ;
+    bpot:apqcSourceText "Executing investigational and analysis of warranty claims. This involves notification and definition of a warranty issue, includes the scheduling of a field service agent to perform further investigation; the request and receipt of defective parts; and diagnosis/root cause analysis. This concludes with the receipt of the result and recommendation for corrective action." ;
+    bpot:hierarchyID "6.3.2.3" ;
+    bpot:pcfID "20097" .
+
+bpot:P20098 a owl:Class ;
+    rdfs:label "Define issue" ;
+    rdfs:comment "Genus bpo:ActOfAnalysis: discerning and articulating the claimed issue is information processing producing a descriptive definition." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaimCode ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyIssueDefinition ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a warranty claim and a warranty claim code and has as output a warranty issue definition." ;
+    skos:example "The warranty team characterizes the reported fault against the applicable claim code." ;
+    bpot:apqcSourceText "Defining the issue of the claim. The warranty team will look into the issue and understand whether it is covered by the claim code or if more detail is required. Field service will be scheduled to further qualify the definition of the issue and to collect more evidence." ;
+    bpot:hierarchyID "6.3.2.3.1" ;
+    bpot:pcfID "20098" .
+
+bpot:P20099 a owl:Class ;
+    rdfs:label "Investigate issue/perform root cause analysis" ;
+    rdfs:comment "Genus bpo:ActOfAnalysis: diagnosis/root-cause analysis is information processing producing a descriptive analysis plus a directive corrective-action recommendation." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyIssueDefinition ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RootCauseAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CorrectiveActionRecommendation ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input a warranty issue definition and has as output a root cause analysis and a recommendation for corrective action." ;
+    skos:example "An engineer diagnoses the failure mode and recommends a design fix." ;
+    bpot:apqcSourceText "Investigating claims by an appropriate functional representative. Once the issue has been clearly defined and diagnosed and a recommendation for corrective action is determined, it will be provided to the warranty management team." ;
+    bpot:hierarchyID "6.3.2.3.4" ;
+    bpot:pcfID "20099" .
+
+bpot:P20100 a owl:Class ;
+    rdfs:label "Receive investigation result/recommendation for corrective action" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): the warranty team evaluates the investigation results ('the warranty team will assess the results... to assess claim approval or denial'). Per Gate-F a definitional has output (bpo:ClaimAssessment, a Descriptive judgement) is added: an Act of Appraisal is definitionally judgement-producing and the source makes producing the assessment intrinsic, so omitting it under-specified the genus (Gate D thin-class risk) and the GOLDEN PRINCIPLE (appraisal -> descriptive). DIVISION OF LABOR (deliberate, documented): P20100 (Appraisal) JUDGES the results toward approve/deny and emits a Descriptive bpo:ClaimAssessment; the sibling P12668 'Approve or reject' (bpo:ActOfSelection) COMMITS the binary decision and emits the Directive bpo:ClaimDisposition. The assess/decide split is intentional, not incidental." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RootCauseAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CorrectiveActionRecommendation ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ClaimAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a root cause analysis and a recommendation for corrective action and produces a claim assessment judging the claim toward approval or denial." ;
+    skos:example "The warranty team reviews the root-cause report and records an assessment recommending the claim be approved, before the decision act commits it." ;
+    bpot:apqcSourceText "Receiving investigative results to assess claim approval or denial. The warranty team will assess the results of the investigation and the recommendations for corrective action." ;
+    bpot:hierarchyID "6.3.2.3.5" ;
+    bpot:pcfID "20100" .
+
+bpot:P20101 a owl:Class ;
+    rdfs:label "Determine responsible party" ;
+    rdfs:comment "Genus bpo:ActOfIdentification (apqc-ext, discernment sense): discerns the responsible party; output is a Descriptive determination." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RootCauseAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResponsiblePartyDetermination ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that has as input a root cause analysis and has as output a responsible party determination identifying who is responsible for settling the claim." ;
+    skos:example "The team determines which of several applicable warranties bears settlement responsibility." ;
+    bpot:apqcSourceText "Identifying responsible party for a claim. There is no negotiation with the supplier at this point. There can be multiple warranties applicable to the same part: a new part warranty, a new product warranty (for the product the part is installed on), and a supplier warranty from the company that last repaired the part. The information required for this decision would be the output of Receive component/part and analyze fault [19728]." ;
+    bpot:hierarchyID "6.3.2.4" ;
+    bpot:pcfID "20101" .
+
+bpot:P20102 a owl:Class ;
+    rdfs:label "Manage pre-authorizations" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act): issuing an authorization is a prescriptive act whose output is a Directive ICE; it is not analysis, appraisal, or planning. Despite the 'Manage' label the description denotes a bounded authorization act, so it is a process (not an Organization Capability)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ClaimPreAuthorization ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that grants preliminary authorization of a warranty claim prior to its formal submittal, producing a claim pre-authorization." ;
+    skos:example "A supervisor pre-authorizes a claim so it can be submitted for settlement." ;
+    bpot:apqcSourceText "Authorizing claims prior to submittal." ;
+    bpot:hierarchyID "6.3.2.5" ;
+    bpot:pcfID "20102" .
+
+bpot:P20103 a owl:Class ;
+    rdfs:label "Notify originator of approve/reject decision" ;
+    rdfs:comment "Anchored at cco:ont00000402 (Act of Communication): the approve/reject decision ICE is transferred to the originator. Participant bpo:Customer where definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ClaimDisposition ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that transfers the claim disposition to the claim originator." ;
+    skos:example "The team emails the customer that their claim was approved." ;
+    bpot:apqcSourceText "Contacting the originator of whether the warranty claim has been approved or rejected." ;
+    bpot:hierarchyID "6.3.2.7" ;
+    bpot:pcfID "20103" .
+
+bpot:P20104 a owl:Class ;
+    rdfs:label "Authorize payment" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act): issuing a payment authorization is a prescriptive act with a Directive ICE output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PaymentAuthorization ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that permits a payment to be made to the claimant, producing a payment authorization." ;
+    skos:example "The team authorizes disbursement to a customer for an approved claim." ;
+    bpot:apqcSourceText "Allowing for a payment to be made to the claimant." ;
+    bpot:hierarchyID "6.3.2.8" ;
+    bpot:pcfID "20104" .
+
+bpot:P20105 a owl:Class ;
+    rdfs:label "Close claim" ;
+    rdfs:comment "Anchored at cco:ont00000366 (Act of Information Processing): closing/archiving stores the claim record; output is a Descriptive closure record." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ClaimDisposition ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ClaimClosureRecord ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that archives a warranty claim after a final decision and produces a claim closure record." ;
+    skos:example "After payment, the claim file is archived and marked closed." ;
+    bpot:apqcSourceText "Archiving and closing the warranty claim after a final decision has been made to either approve or reject." ;
+    bpot:hierarchyID "6.3.2.9" ;
+    bpot:pcfID "20105" .
+
+bpot:P20107 a owl:Class ;
+    rdfs:label "Create supplier recovery claims" ;
+    rdfs:comment "Anchored at cco:ont00000366 (Act of Information Processing): raising/recording a recovery claim produces a Descriptive SupplierRecoveryClaim, agreeing with the section vocab's descriptive typing of that ICE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ResponsiblePartyDetermination ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplierRecoveryClaim ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that has as input a responsible party determination and has as output a supplier recovery claim." ;
+    skos:example "The team raises a recovery claim against the supplier of a defective part." ;
+    bpot:apqcSourceText "Raising a supplier recovery claim. This is based off the decision made in Receive investigation result/recommendation for corrective action [20100]." ;
+    bpot:hierarchyID "6.3.3.1" ;
+    bpot:pcfID "20107" .
+
+bpot:P20108 a owl:Class ;
+    rdfs:label "Negotiate recoveries with suppliers" ;
+    rdfs:comment "Anchored at cco:ont00000228 (Planned Act): negotiating/arranging is a prescriptive coordination act, not analysis or appraisal. Operations category: the returned product is a Material Entity participant (obo:BFO_0000057); the arrangement is a Directive ReturnAuthorization. Participant bpo:Supplier where definitional." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ReturnAuthorization ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ReturnedProduct ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Supplier ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that negotiates cost recoveries with suppliers and arranges the return of recalled products, producing a return authorization." ;
+    skos:example "The company arranges with the supplier to return recalled units and recover their cost." ;
+    bpot:apqcSourceText "Arranging the returns of recalled products to suppliers." ;
+    bpot:hierarchyID "6.3.3.2" ;
+    bpot:pcfID "20108" .
+
+bpot:P20110 a owl:Class ;
+    rdfs:label "Manage product recalls and regulatory audits" ;
+    rdfs:comment "Models APQC process group 6.4 as a bounded end-to-end recall-execution occurrent. Its APQC children are process parts (cco:ont00001777), not subclasses. The standing-function 'Manage...' reading is carried by shared bpo:RecallManagementCapability (Organization Capability), which is realized in this process (R6). Anchored at the generic cco:ont00000228 (Planned Act) because the group aggregates heterogeneous sub-acts (planning, appraisal, communication) under no single narrower CCO Act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20111 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20112 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20113 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20114 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20115 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P20116 ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act in which an Organization removes defective products from the distribution chain and participates in audits by regulatory authorities, comprising the initiation, hazard assessment, communication, regulatory reporting, effectiveness monitoring, and termination of a product recall." ;
+    skos:example "A manufacturer's end-to-end campaign to recall a defective product batch, from issuing the recall through filing closing reports with the regulator." ;
+    bpot:apqcSourceText "Removing defective products from the distribution chain. Participate in audits from watchdog agencies." ;
+    bpot:hierarchyID "6.4" ;
+    bpot:pcfID "20110" .
+
+bpot:P20111 a owl:Class ;
+    rdfs:label "Initiate recall" ;
+    rdfs:comment "Re-anchored to the generic cco:ont00000228 (Planned Act) per Gate-F review: the source verb 'Commencing the removal process of defective products' denotes LAUNCHING/triggering an action, not composing a directive document. REJECTED the prior bpo:ActOfFormulation (cco:ont00000511 Act of Planning) anchor with has output some bpo:RecallStrategy: bpo:RecallStrategy is ALREADY the asserted has output of P20092 'Develop recall strategy' (6.1.7), so two distinct process classes asserting has output some <same Directive ICE> double-produces the artifact and mis-genuses a launch/trigger act as a planning act. An initiation act CONSUMES/applies the standing strategy and launches the operational removal. Fix: has input some bpo:RecallStrategy (the pre-existing strategy from 6.1.7 is applied) plus a Descriptive has output some bpo:RecallInitiationRecord (recording that the recall was commenced). The defective product remains the material input (operations category permits material I/O)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DefectiveProduct ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RecallStrategy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallInitiationRecord ],
+        cco:ont00000228 ;
+    skos:definition "A Planned Act that commences the removal of a defective product from the distribution chain by applying the standing recall strategy, producing a recall initiation record." ;
+    skos:example "A quality team applies the recall strategy to activate removal of a defective product lot from distributors and records that the recall has commenced." ;
+    bpot:apqcSourceText "Commencing the removal process of defective products." ;
+    bpot:hierarchyID "6.4.1" ;
+    bpot:pcfID "20111" .
+
+bpot:P20112 a owl:Class ;
+    rdfs:label "Assess the likelihood and consequences of occurrence of any hazards" ;
+    rdfs:comment "Anchored at cco:ont00000636 (Act of Appraisal): the act evaluates and judges hazards. Output is a Descriptive ICE (a judgement), satisfying the GOLDEN PRINCIPLE (appraisal -> descriptive)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:HazardRiskAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates the dangers associated with a defective product, judging their probability and consequences, and produces a hazard risk assessment." ;
+    skos:example "A safety engineer assesses the burn-hazard probability and severity of a recalled appliance and issues a hazard risk assessment." ;
+    bpot:apqcSourceText "Performing risk analysis. Identify all dangers, evaluate how probable they are, and what kinds of negative results or or adverse side effect they carry." ;
+    bpot:hierarchyID "6.4.2" ;
+    bpot:pcfID "20112" .
+
+bpot:P20113 a owl:Class ;
+    rdfs:label "Manage recall related communications" ;
+    rdfs:comment "Anchored at cco:ont00000402 (Act of Communication) because the act consists of transferring recall-related ICEs among parties. Output is a Descriptive ICE (the communication content). Despite the 'Manage' label, the description denotes a bounded communication occurrent." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallCommunication ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which an Agent handles and transfers information related to a product recall and produces a recall communication." ;
+    skos:example "A communications team issues recall notices and responds to inquiries, producing recall communications for customers and retailers." ;
+    bpot:apqcSourceText "Handling communications that are related to product recalls." ;
+    bpot:hierarchyID "6.4.3" ;
+    bpot:pcfID "20113" .
+
+bpot:P20114 a owl:Class ;
+    rdfs:label "Submit regulatory reports" ;
+    rdfs:comment "Anchored at cco:ont00000402 (Act of Communication): a report (an ICE) is transferred from the organization to a regulatory authority. The Regulatory Body is a definitional participant (recipient)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryIncidentReport ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:RegulatoryBody ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication in which an Agent creates and delivers a regulatory incident report to a regulatory body to detail the handling of a product recall." ;
+    skos:example "A compliance officer files a recall incident report with the consumer-safety regulator." ;
+    bpot:apqcSourceText "Creating and delivering reports to regulatory agencies to provide details about handling product recalls." ;
+    bpot:hierarchyID "6.4.4" ;
+    bpot:pcfID "20114" .
+
+bpot:P20115 a owl:Class ;
+    rdfs:label "Monitor and audit recall effectiveness" ;
+    rdfs:comment "Anchored under bpo:ActOfMonitoring (PROPOSE-EXT). The act analyzes/audits effectiveness over time and yields a Descriptive ICE, satisfying the GOLDEN PRINCIPLE (information-processing -> descriptive)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallEffectivenessAssessment ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that examines the performance of an ongoing product recall and produces a recall effectiveness assessment." ;
+    skos:example "An auditor tracks the return rate of a recalled batch and reports the recall's effectiveness." ;
+    bpot:apqcSourceText "Analyzing the effectiveness of product recalls." ;
+    bpot:hierarchyID "6.4.5" ;
+    bpot:pcfID "20115" .
+
+bpot:P20116 a owl:Class ;
+    rdfs:label "Manage recall termination" ;
+    rdfs:comment "Anchored under bpo:ActOfResolution (PROPOSE-EXT, reconciled to cco:ont00000228 Planned Act). The public communication and report filing are sub-acts of concluding the recall; both outputs are recorded as definitional (a recall communication and a regulatory incident report)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallCommunication ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryIncidentReport ],
+        bpot:ActOfResolution ;
+    skos:definition "An Act of Resolution that brings a product recall to a definite close by communicating its conclusion to the public and filing the closing regulatory reports." ;
+    skos:example "A recall coordinator closes out a recall, issues a public termination notice, and files the final report with the regulator." ;
+    bpot:apqcSourceText "Ending product recalls, communicating to the public and filing reports." ;
+    bpot:hierarchyID "6.4.6" ;
+    bpot:pcfID "20116" .
+
+bpot:P20117 a owl:Class ;
+    rdfs:label "Solicit customer feedback on cross-channel experience" ;
+    rdfs:comment "Re-anchored (Gate-F) to cco:ont00000402 (Act of Communication, co-anchored cco:ont00000228 Planned Act for standalone SHACL); the act SOLICITS/OBTAINS feedback from the customer (the customer transfers the feedback ICE), consistent with the other solicit-feedback acts and P10336: it elicits and stores input ICEs (customer feedback) about channel effectiveness; definitional output is the Descriptive bpo:CustomerFeedback. The Customer participates (has participant)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000402 ;
+    skos:definition "An Act of Communication that engages the customer to elicit and collect customer feedback on their cross-channel service experience." ;
+    skos:example "A survey asks customers which channels (chat, phone, app) worked best for them and where they struggled." ;
+    bpot:apqcSourceText "Engaging with the customer to understand their cross-channel experience. Find out what channels were effective and what areas need improvement." ;
+    bpot:hierarchyID "6.5.3.3" ;
+    bpot:pcfID "20117" .
+
+bpot:P20118 a owl:Class ;
+    rdfs:label "Measure customer satisfaction with warranty handling and resolution" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it judges customer satisfaction and yields the Descriptive bpo:CustomerSatisfactionAssessment (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerSatisfactionAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates how satisfied customers are with how product warranties are handled and resolved and produces a customer satisfaction assessment." ;
+    skos:example "A warranty team surveys claimants and reports how satisfied they were with the warranty resolution." ;
+    bpot:apqcSourceText "Evaluating how satisfied customers are with how product warranties are managed and resolved." ;
+    bpot:hierarchyID "6.5.4.1" ;
+    bpot:pcfID "20118" .
+
+bpot:P20119 a owl:Class ;
+    rdfs:label "Identify improvement opportunities" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (shared genus, cco:ont00000366): it examines warranty performance to discern improvement opportunities; definitional output is the Descriptive bpo:ImprovementOpportunityAnalysis. Input (warranty performance report) is typical, recorded as commentary rather than a definitional restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ImprovementOpportunityAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that examines warranty management performance and produces an improvement opportunity analysis of how warranties and warranty management can be made better and more efficient." ;
+    skos:example "A warranty analyst studies the performance report and lists efficiency improvements for the warranty programme." ;
+    bpot:apqcSourceText "Determining how warranties and warranty management can be made better and more efficient." ;
+    bpot:hierarchyID "6.5.4.3" ;
+    bpot:pcfID "20119" .
+
+bpot:P20120 a owl:Class ;
+    rdfs:label "Investigate fraudulent claims" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it reviews and judges the legitimacy of claims; definitional output is the Descriptive bpo:FraudulentClaimAssessment (GOLDEN PRINCIPLE). Input modeled as bpo:WarrantyClaim (the claims under investigation)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FraudulentClaimAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input warranty claims and has as output a fraudulent claim assessment judging whether a claim contains deliberately incorrect or deceptive information." ;
+    skos:example "A claims investigator reviews a suspicious warranty claim and records an assessment that it is fraudulent." ;
+    bpot:apqcSourceText "Reviewing and assessing claims that contain deliberately incorrect information or that have been submitted with the goal to deceive the system." ;
+    bpot:hierarchyID "6.5.4.5" ;
+    bpot:pcfID "20120" .
+
+bpot:P20121 a owl:Class ;
+    rdfs:label "Evaluate recall performance" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): the label verb 'Evaluate recall performance' judges recall performance and yields the Descriptive bpo:RecallEffectivenessAssessment (GOLDEN PRINCIPLE; that ICE being Descriptive is the intended appraisal output, so the principle holds). Per Gate-F review: the apqcSourceText for 20121 is shared BOILERPLATE, verbatim IDENTICAL to P11688 (6.5.1.2) -- 'Reviewing customer service feedback to identify areas in which improvements can be made. Engage with management to discuss issues.' -- which describes an analyze/identify-improvement act and was correctly anchored at bpo:ActOfAnalysis with output bpo:ImprovementOpportunityAnalysis. Here the boilerplate is OVERRIDDEN by the label per the spec's boilerplate provision, so 20121 is engineered as a recall-performance appraisal rather than trusting the mismatched description; this divergence from P11688 is therefore deliberate, not an inconsistency. FLAGGED for APQC source-data correction: the 20121 Element Description should be replaced with recall-specific text so the description is not silently trusted. Customer feedback is a typical input, recorded as commentary rather than a definitional restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RecallEffectivenessAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates the performance of an organization's product recalls and produces a recall effectiveness assessment." ;
+    skos:example "A product-safety team evaluates how effective a recent recall was at reaching affected customers and reports its findings." ;
+    bpot:apqcSourceText "Reviewing customer service feedback to identify areas in which improvements can be made. Engage with management to discuss issues." ;
+    bpot:hierarchyID "6.5.5" ;
+    bpot:pcfID "20121" .
+
+bpot:ProductManagementTeam a owl:Class ;
+    rdfs:label "Product Management Team" ;
+    rdfs:comment "Minted. Recipient named in 6.5.1.3, 6.5.3.5 (Provide feedback/insights to product management / appropriate teams). Denotes a team-level COLLECTIVE agent (not an individual). Kept under cco:Agent: CCO's Group of Agents (cco:ont00000300) is an Object Aggregate, not an Agent, so it would not bear the agent/recipient role used here." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:ProductManagerRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that bears a product-manager role and to which customer feedback and improvement insights are routed for use in improving offerings." .
+
+bpot:RecallCommunication a owl:Class ;
+    rdfs:label "Recall Communication" ;
+    rdfs:comment "Output of 6.4.3 (Manage recall related communications) and the public communication of 6.4.6 (Manage recall termination)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:DefectiveProduct ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity issued to the public and stakeholders that conveys information about a product recall." .
+
+bpot:RecallEffectivenessAssessment a owl:Class ;
+    rdfs:label "Recall Effectiveness Assessment" ;
+    rdfs:comment "Output of 6.4.5 (Monitor and audit recall effectiveness) and the review of 6.5.5 (Evaluate recall performance)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an analysis of the effectiveness of a product recall." .
+
+bpot:RecallStrategy a owl:Class ;
+    rdfs:label "Recall Strategy" ;
+    rdfs:comment "Sole output of 6.1.7 (Develop recall strategy). Per Gate-F it is NOT re-produced by 6.4.1 (Initiate recall), which CONSUMES it as input to launch the operational removal; two process classes must not both assert has output some bpo:RecallStrategy." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the procedures for handling recalls of defective products." .
+
+bpot:RegulatoryBody a owl:Class ;
+    rdfs:label "Regulatory Body" ;
+    rdfs:comment "Genus cco:ont00000408 (Government Organization) reused -- its definition (oversight/administration of governmental functions) fits the watchdog/regulatory agencies of 6.2.5 and 6.4. Distinguished by being a recipient of regulatory reports." ;
+    rdfs:subClassOf cco:ont00000408 ;
+    skos:definition "A Government Organization that is responsible for the oversight, regulation, or auditing of an industry and to which incidents, risks, and recall reports are submitted." .
+
+bpot:ResourcingPlan a owl:Class ;
+    rdfs:label "Resourcing Plan" ;
+    rdfs:comment "Output of 6.3.4.2.1 (Create resourcing plan and schedule)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the sourcing and deployment of the resources required to fulfill customer service requirements." .
+
+bpot:ResponsiblePartyDetermination a owl:Class ;
+    rdfs:label "Responsible Party Determination" ;
+    rdfs:comment "Output of 6.3.2.4 (Determine responsible party). Descriptive: it represents who is responsible, an information-processing judgement." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that identifies the party responsible for settling a warranty claim." .
+
+bpot:ReturnAuthorization a owl:Class ;
+    rdfs:label "Return Authorization" ;
+    rdfs:comment "Output of 6.2.4.1 (Authorize return); reused in 6.3.3.2." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ReturnedProduct ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes approval for a customer to return a product for refund, replacement, or repair." .
+
+bpot:SalesLead rdfs:comment "Output of 6.2.2.5 (Identify and capture upsell/cross-sell opportunities); delivered to the sales team in 6.2.2.6." ;
+    skos:definition "A Descriptive Information Content Entity that describes an upsell or cross-sell opportunity identified during a customer interaction." .
+
+bpot:ServiceRequest a owl:Class ;
+    rdfs:label "Service Request" ;
+    rdfs:comment "Input to 6.3.4.1 (Confirm specific service requirements for individual customer)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records an individual customer's specific service requirements." .
+
+bpot:Supplier rdfs:comment "Minted (no CCO Supplier class). Counterparty in 6.1.6.3 (Agree on warranty responsibilities with suppliers) and 6.3.3 (Manage supplier recovery)." ;
+    skos:definition "An Agent that bears a supplier role in relation to an organization to which it furnishes goods, parts, or services and with which it shares warranty obligations." .
+
+bpot:SupplierRecoveryClaim a owl:Class ;
+    rdfs:label "Supplier Recovery Claim" ;
+    rdfs:comment "Output of 6.3.3.1 (Create supplier recovery claims). Descriptive: it asserts a cost-recovery basis rather than prescribing action." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that asserts an organization's right to recover from a supplier the costs of a settled warranty claim." .
+
+bpot:WarrantyClaimCode a owl:Class ;
+    rdfs:label "Warranty Claim Code" ;
+    rdfs:comment "Output of 6.1.6.2; reused as input to claim definition/validation (6.3.2)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the rules for processing and routing warranty claims, including coverage lists, fault and trouble codes, and repair-time setups." .
+
+bpot:WarrantyClaimValidation a owl:Class ;
+    rdfs:label "Warranty Claim Validation" ;
+    rdfs:comment "Minted: output of P12671 (validate warranty claim) and input to P12668 (approve/reject). Descriptive: it represents a finding rather than prescribing action. Distinct from bpo:ClaimDisposition (the final approve/reject directive)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the judgement of whether a warranty claim falls within the parameters of the applicable warranty." .
+
+bpot:WarrantyIssueDefinition a owl:Class ;
+    rdfs:label "Warranty Issue Definition" ;
+    rdfs:comment "Output of 6.3.2.3.1 (Define issue)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the issue underlying a warranty claim, established by reference to claim codes and collected evidence." .
+
+bpot:WarrantyPerformanceReport a owl:Class ;
+    rdfs:label "Warranty Performance Report" ;
+    rdfs:comment "Output of 6.5.4 and 6.5.4.2 (Monitor and report on warranty management metrics)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes warranty management metrics and the conclusions drawn from comparing warranties." .
+
+bpot:WorkforceSchedule a owl:Class ;
+    rdfs:label "Workforce Schedule" ;
+    rdfs:comment "Output of 6.2.1.2 (Schedule customer service work force) and 6.3.2.3.2 (Schedule field service). Directive -> producing act is Scheduling (proposed genus)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the deployment of the customer service work force across operations and time." .
+
+bpot:CorrectiveActionRecommendation a owl:Class ;
+    rdfs:label "Corrective Action Recommendation" ;
+    rdfs:comment "Output of 6.3.2.3.4 (Investigate issue / root cause analysis), consumed by claim disposition (6.3.2.5-6) and supplier recovery (6.3.3.1)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the corrective action to take in response to a diagnosed warranty issue." .
+
+bpot:CustomerServiceRequirementSpecification a owl:Class ;
+    rdfs:label "Customer Service Requirement Specification" ;
+    rdfs:comment "Output of 6.1.1 (Define customer service requirements across the enterprise). Enterprise-wide scope. Per Gate-F it is NO LONGER the output of the individual-customer act 6.3.4.1 (which now produces the individual-scope bpo:IndividualServiceRequirement); it is retained as a constraining Directive input to 6.3.4.1 and 6.3.4.1.3." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the behaviors, skills, and policies required to provide customer service across an enterprise." .
+
+bpot:P10400 a owl:Class ;
+    rdfs:label "Respond to customer complaints" ;
+    rdfs:comment "Anchored to cco:ont00000379 (Act of Representative Communication). The response ICE is the definitional output transferred to the customer. Source text cross-references Resolve customer complaints [10399]: the resolution precedes and feeds the response." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplaintResponse ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ComplaintResolution ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000228,
+        cco:ont00000379 ;
+    skos:definition "An Act of Representative Communication in which a customer service representative transfers a complaint response to the customer who raised the complaint." ;
+    skos:example "An agent sends the customer an apology and the steps taken to fix their issue." ;
+    bpot:apqcSourceText "Responding to customer complaints including all activities necessitated to service any objections, complaints, or grievances with the most appropriate reply. Source the right information to formulate a response that eases the discomfort being experienced by the customer. (Closely coordinate with Resolve customer complaints [10399].)" ;
+    bpot:hierarchyID "6.2.3.4" ;
+    bpot:pcfID "10400" .
+
+bpot:RegulatoryIncidentReport a owl:Class ;
+    rdfs:label "Regulatory Incident Report" ;
+    rdfs:comment "Output of 6.2.5 (Report incidents and risks to regulatory bodies) and the regulatory reports of 6.4.4 / 6.4.6." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that conveys to stakeholders and regulatory bodies an account of incidents and risks related to a return or recall." .
+
+bpot:ServiceOrderFulfillmentSchedule a owl:Class ;
+    rdfs:label "Service Order Fulfillment Schedule" ;
+    rdfs:comment "Output of 6.3.4.2.2 and the daily schedule of 6.3.4.3.1." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the timing and duration of the services required to fulfill service orders." .
+
+bpot:ServiceOrderFulfillmentStatus a owl:Class ;
+    rdfs:label "Service Order Fulfillment Status" ;
+    rdfs:comment "Minted: output of P10332 (monitoring); input to P10334/P10335. Descriptive state report." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that reports the current fulfillment progress of one or more service orders, including fully, partially, and unfulfilled orders." .
+
+bpot:WarrantyPolicy a owl:Class ;
+    rdfs:label "Warranty Policy" ;
+    rdfs:comment "Directive (prescribes obligations). Output of 6.1.6.1 (Determine and document warranty policies); reused as input wherever claims are validated against warranty parameters (6.3.2.2)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:DefectiveProduct ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the terms and conditions under which an organization will guarantee, repair, or replace its goods or services." .
+
+bpot:ClaimDisposition a owl:Class ;
+    rdfs:label "Claim Disposition" ;
+    rdfs:comment "Directive (a decision -> prescribes). Output of 6.3.2.6 (Approve or reject warranty claim); reused by notify (6.3.2.7) and authorize payment (6.3.2.8)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:WarrantyClaim ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the approval or rejection of a warranty claim." .
+
+bpot:RootCauseAnalysis rdfs:comment "Output of 6.3.2.3.4 (Investigate issue / perform root cause analysis)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:DefectivePart ] ;
+    skos:definition "A Descriptive Information Content Entity that describes the diagnosed root cause of a warranty issue or product fault." .
+
+bpot:ServiceOrder a owl:Class ;
+    rdfs:label "Service Order" ;
+    rdfs:comment "Output of 6.3.4.1.3 (Generate service order). Directive -> producing act is Formulation." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a short-term agreement between a service provider and a customer for a one-time service and its resource-related billing." .
+
+bpot:CustomerSatisfactionAssessment a owl:Class ;
+    rdfs:label "Customer Satisfaction Assessment" ;
+    rdfs:comment "Output of the measurement processes of 6.5 (6.5, 6.5.1, 6.5.2, 6.5.3, 6.5.4.1) -> producing act is an Act of Appraisal." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes measured levels of customer satisfaction with a customer service process, product, or warranty." .
+
+bpot:DefectiveProduct a owl:Class ;
+    rdfs:label "Defective Product" ;
+    rdfs:comment "Material (not informational) entity. Subject of recalls (6.4) and returns (6.2.4)." ;
+    rdfs:subClassOf obo:BFO_0000040,
+        cco:ont00000995 ;
+    skos:definition "A Material Artifact that fails to realize one or more of its designed functions or qualities and is therefore subject to repair, return, or recall." .
+
+bpot:ReturnedProduct rdfs:comment "Material input to 6.2.4 (Process returns); may be scrapped or salvaged per the source." ;
+    skos:definition "A Material Artifact that a customer has sent back to an organization for refund, replacement, or repair." .
+
+bpot:CustomerInquiry a owl:Class ;
+    rdfs:label "Customer Inquiry" ;
+    rdfs:comment "Covers the requests/inquiries/problems received in 6.2.2. Received over email, phone, online forms, social media, etc." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity in which a customer requests information about, or assistance with, an organization's products or services." .
+
+bpot:ImprovementOpportunityAnalysis a owl:Class ;
+    rdfs:label "Improvement Opportunity Analysis" ;
+    rdfs:comment "Output of the 'identify improvement opportunities' activities across 6.5 (6.5.1.2, 6.5.2.2, 6.5.3.4, 6.5.4.3-4) and 6.3.4.4.4." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes identified opportunities to improve customer service operations, products, or warranties." .
+
+bpot:CustomerComplaint a owl:Class ;
+    rdfs:label "Customer Complaint" ;
+    rdfs:comment "Input to 6.2.3 (Manage customer complaints)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity in which a customer expresses an objection, grievance, or criticism regarding an organization's products or services." .
+
+bpot:WarrantyClaim a owl:Class ;
+    rdfs:label "Warranty Claim" ;
+    rdfs:comment "Central informational object processed throughout 6.3.2. Modeled as Descriptive (it asserts a state of affairs / fault), not Directive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity submitted by an originator that asserts a product fault and requests remedy under the terms of a warranty." .
+
+bpot:CustomerFeedback rdfs:comment "Input to the satisfaction-measurement processes of 6.5 and to 6.3.4.4 (Ensure quality of service)." ;
+    skos:definition "A Descriptive Information Content Entity that records a customer's review or evaluation of services delivered, products, advertisements, or service experience." .
+
+bpot:Customer rdfs:comment "Minted because CCO 2.0 has no Customer class. Genus cco:ont00001017 (Agent) so individuals and organizations alike may be customers; the customer-specific aspect is carried by bpo:CustomerRole on an independent continuant (D4)." ;
+    skos:definition "An Agent that bears a customer role in relation to an organization from which it has obtained or seeks goods or services." .
+

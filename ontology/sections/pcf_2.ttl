@@ -1,0 +1,2316 @@
+@prefix bpot: <https://fandaws.com/ontology/bpot#> .
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+bpot:CustomerRole rdfs:comment "Borne by the (organizational or individual) customer; recurs in customer-test and market-review processes (2.1.2.5, 2.3.2.2)." .
+
+bpot:GoNoGoDecision rdfs:comment "Reused naming from the reference module. Directive: a decision prescribes. Used where corporate decisions gate development (2.2.3 narrative)." .
+
+bpot:PCF_10061 bpot:designatesProcessType bpot:ProductServicePortfolioManagementCapability .
+
+bpot:PCF_10062 bpot:designatesProcessType bpot:P10062 .
+
+bpot:PCF_10063 bpot:designatesProcessType bpot:P10063 .
+
+bpot:PCF_10065 bpot:designatesProcessType bpot:P10065 .
+
+bpot:PCF_10066 bpot:designatesProcessType bpot:P10066 .
+
+bpot:PCF_10067 bpot:designatesProcessType bpot:ProductServiceLifecycleManagementCapability .
+
+bpot:PCF_10068 bpot:designatesProcessType bpot:P10068 .
+
+bpot:PCF_10070 bpot:designatesProcessType bpot:P10070 .
+
+bpot:PCF_10071 bpot:designatesProcessType bpot:P10071 .
+
+bpot:PCF_10072 bpot:designatesProcessType bpot:P10072 .
+
+bpot:PCF_10073 bpot:designatesProcessType bpot:P10073 .
+
+bpot:PCF_10074 bpot:designatesProcessType bpot:P10074 .
+
+bpot:PCF_10075 bpot:designatesProcessType bpot:P10075 .
+
+bpot:PCF_10076 bpot:designatesProcessType bpot:P10076 .
+
+bpot:PCF_10077 bpot:designatesProcessType bpot:P10077 .
+
+bpot:PCF_10078 bpot:designatesProcessType bpot:P10078 .
+
+bpot:PCF_10079 bpot:designatesProcessType bpot:P10079 .
+
+bpot:PCF_10083 bpot:designatesProcessType bpot:P10083 .
+
+bpot:PCF_10084 bpot:designatesProcessType bpot:P10084 .
+
+bpot:PCF_10085 bpot:designatesProcessType bpot:P10085 .
+
+bpot:PCF_10086 bpot:designatesProcessType bpot:P10086 .
+
+bpot:PCF_10087 bpot:designatesProcessType bpot:P10087 .
+
+bpot:PCF_10088 bpot:designatesProcessType bpot:P10088 .
+
+bpot:PCF_10089 bpot:designatesProcessType bpot:P10089 .
+
+bpot:PCF_10090 bpot:designatesProcessType bpot:P10090 .
+
+bpot:PCF_10091 bpot:designatesProcessType bpot:P10091 .
+
+bpot:PCF_10092 bpot:designatesProcessType bpot:P10092 .
+
+bpot:PCF_10093 bpot:designatesProcessType bpot:P10093 .
+
+bpot:PCF_10094 bpot:designatesProcessType bpot:P10094 .
+
+bpot:PCF_10095 bpot:designatesProcessType bpot:P10095 .
+
+bpot:PCF_10096 bpot:designatesProcessType bpot:P10096 .
+
+bpot:PCF_10097 bpot:designatesProcessType bpot:P10097 .
+
+bpot:PCF_10098 bpot:designatesProcessType bpot:P10098 .
+
+bpot:PCF_10099 bpot:designatesProcessType bpot:P10099 .
+
+bpot:PCF_10100 bpot:designatesProcessType bpot:P10100 .
+
+bpot:PCF_11331 bpot:designatesProcessType bpot:P11331 .
+
+bpot:PCF_11417 bpot:designatesProcessType bpot:P11417 .
+
+bpot:PCF_11418 bpot:designatesProcessType bpot:P11418 .
+
+bpot:PCF_11423 bpot:designatesProcessType bpot:P11423 .
+
+bpot:PCF_11424 bpot:designatesProcessType bpot:P11424 .
+
+bpot:PCF_11425 bpot:designatesProcessType bpot:P11425 .
+
+bpot:PCF_11426 bpot:designatesProcessType bpot:P11426 .
+
+bpot:PCF_11427 bpot:designatesProcessType bpot:P11427 .
+
+bpot:PCF_11428 bpot:designatesProcessType bpot:P11428 .
+
+bpot:PCF_11740 bpot:designatesProcessType bpot:ProductDataManagementCapability .
+
+bpot:PCF_11741 bpot:designatesProcessType bpot:P11741 .
+
+bpot:PCF_11742 bpot:designatesProcessType bpot:P11742 .
+
+bpot:PCF_11743 bpot:designatesProcessType bpot:P11743 .
+
+bpot:PCF_11744 bpot:designatesProcessType bpot:P11744 .
+
+bpot:PCF_11745 bpot:designatesProcessType bpot:P11745 .
+
+bpot:PCF_11746 bpot:designatesProcessType bpot:P11746 .
+
+bpot:PCF_11747 bpot:designatesProcessType bpot:P11747 .
+
+bpot:PCF_11748 bpot:designatesProcessType bpot:P11748 .
+
+bpot:PCF_11749 bpot:designatesProcessType bpot:P11749 .
+
+bpot:PCF_11750 bpot:designatesProcessType bpot:P11750 .
+
+bpot:PCF_12771 bpot:designatesProcessType bpot:P12771 .
+
+bpot:PCF_12772 bpot:designatesProcessType bpot:P12772 .
+
+bpot:PCF_12773 bpot:designatesProcessType bpot:P12773 .
+
+bpot:PCF_12776 bpot:designatesProcessType bpot:P12776 .
+
+bpot:PCF_16808 bpot:designatesProcessType bpot:P16808 .
+
+bpot:PCF_16809 bpot:designatesProcessType bpot:P16809 .
+
+bpot:PCF_16810 bpot:designatesProcessType bpot:P16810 .
+
+bpot:PCF_16811 bpot:designatesProcessType bpot:P16811 .
+
+bpot:PCF_16812 bpot:designatesProcessType bpot:P16812 .
+
+bpot:PCF_16813 bpot:designatesProcessType bpot:P16813 .
+
+bpot:PCF_16814 bpot:designatesProcessType bpot:P16814 .
+
+bpot:PCF_16815 bpot:designatesProcessType bpot:P16815 .
+
+bpot:PCF_16817 bpot:designatesProcessType bpot:P16817 .
+
+bpot:PCF_16818 bpot:designatesProcessType bpot:P16818 .
+
+bpot:PCF_16819 bpot:designatesProcessType bpot:P16819 .
+
+bpot:PCF_16820 bpot:designatesProcessType bpot:P16820 .
+
+bpot:PCF_16821 bpot:designatesProcessType bpot:P16821 .
+
+bpot:PCF_16822 bpot:designatesProcessType bpot:P16822 .
+
+bpot:PCF_16823 bpot:designatesProcessType bpot:P16823 .
+
+bpot:PCF_16824 bpot:designatesProcessType bpot:P16824 .
+
+bpot:PCF_16826 bpot:designatesProcessType bpot:P16826 .
+
+bpot:PCF_16827 bpot:designatesProcessType bpot:P16827 .
+
+bpot:PCF_17389 bpot:designatesProcessType bpot:P17389 .
+
+bpot:PCF_19646 bpot:designatesProcessType bpot:P19646 .
+
+bpot:PCF_19647 bpot:designatesProcessType bpot:P19647 .
+
+bpot:PCF_19669 bpot:designatesProcessType bpot:P19669 .
+
+bpot:PCF_19697 bpot:designatesProcessType bpot:P19697 .
+
+bpot:PCF_19698 bpot:designatesProcessType bpot:P19698 .
+
+bpot:PCF_19941 bpot:designatesProcessType bpot:P19941 .
+
+bpot:PCF_19985 bpot:designatesProcessType bpot:IntellectualPropertyManagementCapability .
+
+bpot:PCF_19986 bpot:designatesProcessType bpot:P19986 .
+
+bpot:PCF_19987 bpot:designatesProcessType bpot:P19987 .
+
+bpot:PCF_19988 bpot:designatesProcessType bpot:P19988 .
+
+bpot:PCF_19989 bpot:designatesProcessType bpot:P19989 .
+
+bpot:PCF_19990 bpot:designatesProcessType bpot:P19990 .
+
+bpot:PCF_19991 bpot:designatesProcessType bpot:P19991 .
+
+bpot:PCF_19992 bpot:designatesProcessType bpot:P19992 .
+
+bpot:PCF_19993 bpot:designatesProcessType bpot:P19993 .
+
+bpot:PCF_19994 bpot:designatesProcessType bpot:P19994 .
+
+bpot:PCF_19995 bpot:designatesProcessType bpot:P19995 .
+
+bpot:PCF_19996 bpot:designatesProcessType bpot:P19996 .
+
+bpot:PCF_19997 bpot:designatesProcessType bpot:P19997 .
+
+bpot:PCF_19998 bpot:designatesProcessType bpot:P19998 .
+
+bpot:RegulatoryConcernRegister rdfs:comment "Reused naming from the reference module. Output of review/determine-needs acts (2.1.3.1-.3)." ;
+    skos:definition "A Descriptive Information Content Entity that describes identified patent, copyright, and regulatory concerns and needs." .
+
+bpot:ResearchPublication rdfs:comment "Reused naming from the reference module." ;
+    skos:definition "A Descriptive Information Content Entity published as a report, brief, or article and used as analytic or developmental input." .
+
+bpot:designatesProcessType rdfs:comment "ADR-001 R4 bridge: catalog node (bpo:PCF_<id>, defined in apqc-catalog.ttl) -> reality-layer process universal or capability. Populated during reality-layer modeling, NOT by the catalog generator." .
+
+<https://fandaws.com/ontology/bpot/sections/pcf_2> a owl:Ontology ;
+    dcterms:creator "Aaron Damiano" ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://fandaws.com/ontology/bpo/slice/2.0>,
+        "APQC Process Classification Framework (Cross-Industry) v7.4",
+        "APQC Process Classification Framework (Cross-Industry), Category 2.0" ;
+    dcterms:title "Business Process Ontology -- PCF 2.0 Develop and Manage Products and Services" ;
+    rdfs:comment "Reality layer for APQC PCF category 2.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
+    owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_2.ttl> ;
+    owl:versionInfo "0.0.0" .
+
+bpot:BusinessCase a owl:Class ;
+    rdfs:label "Business Case" ;
+    rdfs:comment "Reused naming from the reference module's 'business case' pattern. Descriptive: it argues for/against rather than prescribing. Output of 2.3.1.2, finalized at 2.3.2.3." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an argument weighing the costs and benefits of a proposed product or service project." .
+
+bpot:CostTarget a owl:Class ;
+    rdfs:label "Cost Target" ;
+    rdfs:comment "Output of 2.1.1.4." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a budgetary or development-cost target for a product or service portfolio." .
+
+bpot:Customer rdfs:comment "Modeled as cco:Agent to cover both individual consumers and customer organizations participating in tests/interviews (2.3.2.2)." ;
+    skos:definition "An Agent that bears a customer role in relation to a focal organization's products or services." .
+
+bpot:CustomerTestReport a owl:Class ;
+    rdfs:label "Customer Test Report" ;
+    rdfs:comment "Minted: output of 2.3.2.2; not in shared list. Descriptive, is about the offering." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records qualitative and quantitative findings from customer tests and interviews of a new product or service." .
+
+bpot:DataAccessDecision a owl:Class ;
+    rdfs:label "Data Access Decision" ;
+    rdfs:comment "Minted: authorization decision not in shared list. Directive (a prescriptive authorization) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes whether to permit or deny a data access request according to internal data-security policy." .
+
+bpot:DataAccessRequest a owl:Class ;
+    rdfs:label "Data Access Request" ;
+    rdfs:comment "Minted: input request record not in shared list. Descriptive (it describes a request, not yet a decision)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a requester and the data accessibility being requested." .
+
+bpot:DesignCapability a owl:Class ;
+    rdfs:label "Design Capability" ;
+    rdfs:comment "Borne by design staff Agents; bearer-agnostic between individual and organization, hence Agent Capability. Realized in the design acts of group 2.3 (e.g. bpo:P19995)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P19995 ],
+        cco:ont00001379 ;
+    skos:definition "An Agent Capability that is realized in Acts of Design of products, services, and processes." .
+
+bpot:DesignStaffRole a owl:Class ;
+    rdfs:label "Design Staff Role" ;
+    rdfs:comment "Recurs across the design-and-prototype processes (group 2.3); APQC 'solutioning and/or design staff'." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with creating product/service design specifications and prototypes within an Organization." .
+
+bpot:DevelopmentSchedule a owl:Class ;
+    rdfs:label "Development Schedule" ;
+    rdfs:comment "Output of 2.1.1.5 (specify development timing targets)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes timeframes and deadlines for developing or revising products and services." .
+
+bpot:EngineeringChangeOrder a owl:Class ;
+    rdfs:label "Engineering Change Order" ;
+    rdfs:comment "Output of 2.3.3.3 (request engineering/process change); APQC 'engineering change order'." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes requested changes to production or delivery operations for a product or service." .
+
+bpot:ExternalReviewReport a owl:Class ;
+    rdfs:label "External Review Report" ;
+    rdfs:comment "Minted: output of 2.3.1.7; not in shared list. Descriptive." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the findings of mandatory and elective external reviews of a product or service design specification against external standards." .
+
+bpot:FinancialReview a owl:Class ;
+    rdfs:label "Financial Review" ;
+    rdfs:comment "Minted: no shared-list financial ICE. Descriptive (an evaluation record)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an evaluation of an organization's financial reports and the return on investment of a product/service." .
+
+bpot:IPNeedsAssessment a owl:Class ;
+    rdfs:label "Intellectual Property Needs Assessment" ;
+    rdfs:comment "Minted: no shared-list IP-needs ICE. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an analysis of the business need for patents and copyrights for given products or services." .
+
+bpot:InfringementAssessment a owl:Class ;
+    rdfs:label "Infringement Assessment" ;
+    rdfs:comment "Minted: no shared-list infringement ICE. Descriptive (a judgement)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of patentability and possible infringement, including open-source licensing usage." .
+
+bpot:IntellectualPropertyManagementCapability a owl:Class ;
+    rdfs:label "Intellectual Property Management Capability" ;
+    rdfs:comment "Models APQC 2.1.3 (PCF 19985) as a standing function, not a process (R5/R6)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P16826 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P12771 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to secure, maintain, protect, value, and govern its intellectual property rights, such as patents and copyrights, for its products and services." .
+
+bpot:MarketAcceptanceAnalysis a owl:Class ;
+    rdfs:label "Market Acceptance Analysis" ;
+    rdfs:comment "Minted: no shared-list ICE captures post-launch acceptance analytics. Descriptive (represents measured acceptance)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:Market ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes user engagement and a product/service's acceptance in the market following launch." .
+
+bpot:MaterialsMasterList a owl:Class ;
+    rdfs:label "Materials Master List" ;
+    rdfs:comment "Minted: master-data record not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the storage, utilization, and supplier linkages of an organization's materials." .
+
+bpot:NPDProcessAssessment a owl:Class ;
+    rdfs:label "New Product Development Process Assessment" ;
+    rdfs:comment "Minted: process-assessment output not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes an analysis of the new-product-development steps and their effect on existing products, resources, and functions." .
+
+bpot:P10062 a owl:Class ;
+    rdfs:label "Develop products and services" ;
+    rdfs:comment "APQC Process Group 2.3 modeled as an occurrent. Its APQC children are process parts, not subclasses. The parent Category 2.0 is catalog-only (R3) and has no has-process-part to this group. The developed product/service offering (bpo:ProductServiceOffering, anchored at BFO Entity, not an ICE) is the thing realized by the act, so it is its has-participant, not its informational has-output: section 2.0 is a develop/plan category whose informational outputs (per D3) are ICEs, and bpo:ProductServiceOffering is produced through the design/prototype/build parts below rather than emitted as a single definitional output of the group." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19993 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19996 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19997 ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that creates new products or services from concept through design, prototyping, market testing, and preparation for production." ;
+    skos:example "A firm's end-to-end new-product development programme from idea to production launch." ;
+    bpot:apqcSourceText "Developing new products/services from scratch, including all activities associated with the design, prototyping, evaluation, and market testing of these planned offerings." ;
+    bpot:hierarchyID "2.3" ;
+    bpot:pcfID "10062" .
+
+bpot:P10066 a owl:Class ;
+    rdfs:label "Confirm alignment of product/service concepts with business strategy" ;
+    rdfs:comment "Reality-check appraisal; descriptive output (the alignment judgement). Senior-management participation is definitional per the source ('Enlist senior management executives'). Gate-F: the output filler was changed from bpo:FeasibilityAssessment to the dedicated bpo:StrategicAlignmentAssessment, because the act judges STRATEGIC ALIGNMENT ('Checking the alignment ... with the organization's overall strategy'), not practicability/feasibility -- an inclusiveness/exclusiveness fix. The source's directive sub-output ('creates a plan for assimilating these changes') is recorded here at comment level only, not modeled as a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:BusinessStrategy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:StrategicAlignmentAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SeniorManagement ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input product/service concepts and a business strategy and has as output a strategic alignment assessment of the concepts, with senior management as participant." ;
+    skos:example "Senior executives reality-check a new concept against the business strategy and confirm its alignment before funding." ;
+    bpot:apqcSourceText "Checking the alignment of product/service portfolio, and its individual offerings, with the organization's overall strategy and planning for the development of new or revised solutions. Conduct reality checks on new product/service concepts prior to committing significant investment to ensure that the revamped solutions' portfolio is in line with the overall business strategy, aligns organizational processes for their development, and creates a plan for assimilating these changes in the organization's offerings. Enlist senior management executives." ;
+    bpot:hierarchyID "2.1.1.2" ;
+    bpot:pcfID "10066" .
+
+bpot:P10073 a owl:Class ;
+    rdfs:label "Plan and develop cost and quality targets" ;
+    rdfs:comment "Genus is formulation/planning; outputs are Directive ICEs (cost and quality targets) per the GOLDEN PRINCIPLE. Senior-management participation is definitional ('Enlist senior management executives')." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CostTarget ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:QualityTarget ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SeniorManagement ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a cost target and a quality target prescribing the budget and quality prerequisites for the revised portfolio, with senior management as participant." ;
+    skos:example "Finance and quality leaders set budget and quality targets for the revamped solution portfolio." ;
+    bpot:apqcSourceText "Setting prerequisites for the cost of development and quality standards for the new solutions' portfolio and/or its individual offerings. Set targets for the budget and quality standards for the revamped portfolio of solution offerings. Prepare a plan for the outlay required for revising and adding new product/services. Identify intended levels of quality for these, bearing in mind the existing standards of solutions offered by the organization and its competitors. Enlist senior management executives, particularly those responsible for finance and budgeting, product/service design, manufacturing/processing, delivery, and quality control." ;
+    bpot:hierarchyID "2.1.1.4" ;
+    bpot:pcfID "10073" .
+
+bpot:P10075 a owl:Class ;
+    rdfs:label "Specify development timing targets" ;
+    rdfs:comment "Genus is formulation; output is a Directive ICE (the schedule) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DevelopmentSchedule ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a development schedule prescribing the timeframes and deadlines for developing and revising the portfolio's solutions." ;
+    skos:example "A program manager sets deadlines for each development step and issues the portfolio overhaul schedule." ;
+    bpot:apqcSourceText "Determining the individual and collective timeframe for realizing new/revised solutions. Create a schedule that clearly demarcates the timeframes designated for the development of every new solution and/or revising each of the existing ones. Create a timetable by setting deadlines for each step in overhauling the product/service portfolio." ;
+    bpot:hierarchyID "2.1.1.5" ;
+    bpot:pcfID "10075" .
+
+bpot:P10076 a owl:Class ;
+    rdfs:label "Plan for product/service offering modifications" ;
+    rdfs:comment "Genus is formulation; output is a Directive ICE (the modification plan) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceModificationPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a product/service modification plan prescribing a programmatic procedure for changing the portfolio of offerings." ;
+    skos:example "A team builds a project-flow plan assigning stages, owners, and budget for modifying the offering portfolio." ;
+    bpot:apqcSourceText "Developing a programmatic procedure for changing products/services while paying heed to all stakeholders involved and the prerequisites identified. Create a plan for changing the existing portfolio of solution offerings. Develop a systematic program for the design, processing, and delivery of the new product/service concepts. Construct project-flow diagrams. Identify the stakeholders involved and personnel responsible for each stage, as well as the necessary decisions. Earmark the budgetary outlay, and conduct any strategic planning required." ;
+    bpot:hierarchyID "2.1.1.6" ;
+    bpot:pcfID "10076" .
+
+bpot:P10079 a owl:Class ;
+    rdfs:label "Identify and refine performance indicators" ;
+    rdfs:comment "Genus is formulation; output is a Directive ICE (the indicator specification) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PerformanceIndicatorSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a performance indicator specification prescribing the revised parameters for measuring product/service performance." ;
+    skos:example "An analytics team revises product KPIs to reflect the new portfolio." ;
+    bpot:apqcSourceText "Attuning the performance measures of products/services to better reflect the revamped portfolio of solution offerings. Revise the parameters used to measure performance, apropos the organization's product/service offerings. (Modify these standards in consideration of the changes made to the portfolio by Introduce new products/services [10077] and Retire outdated products/services [10078].)" ;
+    bpot:hierarchyID "2.1.2.4" ;
+    bpot:pcfID "10079" .
+
+bpot:P11423 a owl:Class ;
+    rdfs:label "Conduct post launch review" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE (the review) per the GOLDEN PRINCIPLE. Its seven task children are process parts via cco:ont00001777." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PostLaunchReview ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19646 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11424 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11425 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19647 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11426 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11427 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11428 ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as output a post-launch review judging the market success of a newly launched product/service, and that has as process parts the constituent analytics, market, supply-chain, quality, financial, and process reviews." ;
+    skos:example "A team runs post-launch analytics and compiles a review comparing actual market performance against the business case." ;
+    bpot:apqcSourceText "Learning from either a test or a full production run within the consumer market. Companies use this as an opportunity to both test and react to new products, ideas, or innovations based on the initial reaction of consumers on an individual level. Within this process, analytics are used to determine the relative success of a new product offering. Within this process, companies will launch key analytics to test a products acceptance. They will also review market performance and compare to similar products and against the business case or the financial plan. Companies can also measure the effectiveness of their supply chain network, and can apply what is learned from the post launch review to other new products, processes, and procedures to ensure and enhance the product quality." ;
+    bpot:hierarchyID "2.1.2.5" ;
+    bpot:pcfID "11423" .
+
+bpot:P11742 a owl:Class ;
+    rdfs:label "Manage bills of material" ;
+    rdfs:comment "Genus is data management; output is the Directive ICE bpo:BillOfMaterials (reconciled to one class)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BillOfMaterials ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a bill of materials kept current through regular, error-free updates to the supporting applications." ;
+    skos:example "An engineer updates the BOM in the PLM system after a part substitution." ;
+    bpot:apqcSourceText "Managing the purchase details/bills through regular and error free updates to applications. Create manual entries wherever necessary and ensure timely review of the laid processes and systems." ;
+    bpot:hierarchyID "2.1.4.2" ;
+    bpot:pcfID "11742" .
+
+bpot:P11743 a owl:Class ;
+    rdfs:label "Manage routings" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the routing) describing the operation flow." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:Routing ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a routing specifying the flow of operations from raw form to finished product for a specific product/service layout." ;
+    skos:example "A process engineer maintains routing sheets for a product line in the MES." ;
+    bpot:apqcSourceText "Controlling and executing the flow of operations from raw form to finished product in a defined format using industry applications/routing sheets for the specific product/service layout." ;
+    bpot:hierarchyID "2.1.4.3" ;
+    bpot:pcfID "11743" .
+
+bpot:P11744 a owl:Class ;
+    rdfs:label "Manage specifications" ;
+    rdfs:comment "Genus is data management; output is a Directive ICE (the specification), which prescribes product/service characteristics." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceCharacteristicsSpecification ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a product/service characteristics specification controlling the product/service details necessary to execute the process." ;
+    skos:example "A spec owner controls and versions the product characteristics specification in the PDM system." ;
+    bpot:apqcSourceText "Direct, supervise, and control the product/service details necessary to execute the process. Adhere to details and descriptions for product/service through identified or guided parameters towards final outcome in the market with due critical analysis formed on organizational objectives." ;
+    bpot:hierarchyID "2.1.4.4" ;
+    bpot:pcfID "11744" .
+
+bpot:P11745 a owl:Class ;
+    rdfs:label "Manage drawings" ;
+    rdfs:comment "Genus is data management; output is a Directive ICE (the design specification/drawing), which prescribes the artifact's form." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a design specification (drawing) administered and made accessible for product alteration and new product development." ;
+    skos:example "A CAD librarian administers controlled access to product drawings." ;
+    bpot:apqcSourceText "Administering the specifications of the product/service and ensure accessibility for product alteration/new product development." ;
+    bpot:hierarchyID "2.1.4.5" ;
+    bpot:pcfID "11745" .
+
+bpot:P11746 a owl:Class ;
+    rdfs:label "Manage product/material classification" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the classification)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductMaterialClassification ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a product/material classification controlling product and input-material details throughout the production process." ;
+    skos:example "A data steward maintains the product and material classification taxonomy." ;
+    bpot:apqcSourceText "Controlling the details of the product and the input materials. Manage classification throughout the production process, and for future accessibility to new product development or product enrichment." ;
+    bpot:hierarchyID "2.1.4.6" ;
+    bpot:pcfID "11746" .
+
+bpot:P11747 a owl:Class ;
+    rdfs:label "Develop and maintain quality/inspection documents" ;
+    rdfs:comment "Genus is data management (develop and maintain the document); output is a Directive ICE (the inspection procedure document)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:QualityInspectionDocument ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a quality/inspection document prescribing the procedures for assessing product/service delivery criteria, retained for further review." ;
+    skos:example "A quality engineer authors and retains the inspection procedure document for a product family." ;
+    bpot:apqcSourceText "Determining procedures required to assess the sustainability of defined criterion for product/service delivery to customers. Retain results for further review as a procedural practice." ;
+    bpot:hierarchyID "2.1.4.7" ;
+    bpot:pcfID "11747" .
+
+bpot:P11748 a owl:Class ;
+    rdfs:label "Maintain process specification data" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the process specification data)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProcessSpecificationData ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output process specification data directing and handling the procedural data used across functions and mission-critical applications." ;
+    skos:example "A data owner maintains process-specification records across ERP modules." ;
+    bpot:apqcSourceText "Directing and handling data with respect to the procedures followed across different functions and mission critical applications." ;
+    bpot:hierarchyID "2.1.4.8" ;
+    bpot:pcfID "11748" .
+
+bpot:P11749 a owl:Class ;
+    rdfs:label "Manage traceability data" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the traceability data) with controlled access." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TraceabilityData ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output traceability data controlled through secured access so that it is reachable only by permitted touch points." ;
+    skos:example "A traceability administrator restricts lot-genealogy data to authorized systems." ;
+    bpot:apqcSourceText "Identifying and handling data accessed by the permitted touch points. Ensure that no data is accessible to any unnecessary recipient. Data flow should be controlled through secured access and free from unauthorized access." ;
+    bpot:hierarchyID "2.1.4.9" ;
+    bpot:pcfID "11749" .
+
+bpot:P16824 a owl:Class ;
+    rdfs:label "Develop plan for new product/service development and introduction/launch" ;
+    rdfs:comment "Gate-F re-anchor: from bpo:ActOfDevelopment to bpo:ActOfFormulation (Act of Planning). The source ('Developing a program and managing a perspective for new product/service introduction and launch') describes AUTHORING a plan, and the sole output is a Directive ICE (bpo:LaunchPlan), so the act is a formulation, not a development. bpo:ActOfDevelopment asserts an existent realized state that never occurs here, a genus/output disagreement under the GOLDEN PRINCIPLE; 'Develop' is a false friend. Aligns with the sibling planning rows 2.1.1.4/.5/.6 and 2.1.2.4, all anchored at bpo:ActOfFormulation." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:LaunchPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a product/service launch plan prescribing the program for introducing and launching a new product or service." ;
+    skos:example "A launch team develops the go-to-market program for a new product." ;
+    bpot:apqcSourceText "Developing a program and managing a perspective for new product/service introduction and launch." ;
+    bpot:hierarchyID "2.1.2.1" ;
+    bpot:pcfID "16824" .
+
+bpot:P16827 a owl:Class ;
+    rdfs:label "Determine patent and copyright needs" ;
+    rdfs:comment "Genus is analysis; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:IPNeedsAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as output an intellectual-property needs assessment of the business need for patents and copyrights." ;
+    skos:example "An IP team analyzes a product portfolio and determines which assets warrant patent or copyright protection." ;
+    bpot:apqcSourceText "Determining the business need for patents and copyrights. The patents and copyrights are managed by Manage copyrights and patents [11062]." ;
+    bpot:hierarchyID "2.1.3.3" ;
+    bpot:pcfID "16827" .
+
+bpot:P19697 a owl:Class ;
+    rdfs:label "Define product technical documentation management requirements" ;
+    rdfs:comment "Genus is formulation; output is a Directive ICE (the requirement specification) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that has as output a product/service requirement specification prescribing the sourcing and capability requirements for managing new-product technical documentation." ;
+    skos:example "A team defines the documentation-management capabilities required to support a new product in service." ;
+    bpot:apqcSourceText "Defining sourcing and procurement requirements for new product technical documentation management. Make sourcing-based decisions that identify the capabilities that will be required in order to launch the new product. This documentation will be used to support the product following entry into service. It is compiled and managed in Manage product and process related data [12082], but the capability to manage and maintain this documentation must be defined and established." ;
+    bpot:hierarchyID "2.1.3.4" ;
+    bpot:pcfID "19697" .
+
+bpot:P19698 a owl:Class ;
+    rdfs:label "Generate and define new product/service ideas" ;
+    rdfs:comment "Models APQC process group 2.2 as an occurrent. Its APQC children are process parts, not subclasses." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10065 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19669 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19990 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that conceives and articulates new product or service ideas in light of organizational objectives and produces one or more product/service concepts." ;
+    skos:example "An innovation team's idea-generation cycle that yields a slate of new product concepts for the development pipeline." ;
+    bpot:apqcSourceText "Identifying and describing new product or service thoughts based on organizational objectives/targets." ;
+    bpot:hierarchyID "2.2" ;
+    bpot:pcfID "19698" .
+
+bpot:P19941 a owl:Class ;
+    rdfs:label "Conduct mandatory and elective reviews" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as output a regulatory review judging the enforcement of intellectual-property protection processes." ;
+    skos:example "IP counsel runs the required reviews on protection-process enforcement and records the findings." ;
+    bpot:apqcSourceText "Conducting necessary performance reviews on enforcement of processes and steps to ensure protection. Determine policies and reviews for Manage patents, copyrights, and regulatory requirements [19985]." ;
+    bpot:hierarchyID "2.1.3.1" ;
+    bpot:pcfID "19941" .
+
+bpot:PartnerRequirementSpecification a owl:Class ;
+    rdfs:label "Design/Development Partner Requirement Specification" ;
+    rdfs:comment "Minted: output of 2.3.1.1.1; not in shared list. Directive." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the essential requirements for collaborators involved in the design or development of a product or service." .
+
+bpot:PostLaunchReview a owl:Class ;
+    rdfs:label "Post-Launch Review" ;
+    rdfs:comment "Output of 2.1.2.5 and its task-level reviews (2.1.2.5.1-.7)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the measured market acceptance, performance, and supply-chain effectiveness of a newly launched product or service." .
+
+bpot:ProcessSpecificationData a owl:Class ;
+    rdfs:label "Process Specification Data" ;
+    rdfs:comment "Minted: process-spec master data not in shared list. Modeled Descriptive as managed reference data." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the procedural data followed across different functions and mission-critical applications." .
+
+bpot:ProductDataManagementCapability a owl:Class ;
+    rdfs:label "Product/Service Master Data Management Capability" ;
+    rdfs:comment "Models APQC 2.1.4 (PCF 11740) as a standing function, not a process (R5/R6); realized in bpo:ActOfDataManagement instances." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P11741 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P11750 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to securely store, control, and govern access to product/service master data and other critical data." .
+
+bpot:ProductMaterialClassification a owl:Class ;
+    rdfs:label "Product/Material Classification" ;
+    rdfs:comment "Minted: classification record not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the classification of products and input materials throughout the production process." .
+
+bpot:ProductServiceLifecycleManagementCapability a owl:Class ;
+    rdfs:label "Product/Service Lifecycle Management Capability" ;
+    rdfs:comment "Models APQC 2.1.2 (PCF 10067) as a standing function, not a process (R5/R6)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10077 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10078 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to introduce, sustain, and withdraw product/service offerings across their life cycle." .
+
+bpot:ProductServicePerformanceEvaluation a owl:Class ;
+    rdfs:label "Product/Service Performance Evaluation" ;
+    rdfs:comment "Output of 2.1.1.1; descriptive evaluation, not a prescription." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the capabilities and performance of existing products or services against market opportunities." .
+
+bpot:ProductServicePortfolioManagementCapability a owl:Class ;
+    rdfs:label "Product/Service Portfolio Management Capability" ;
+    rdfs:comment "Models APQC 2.1.1 (PCF 10061) as a standing function, not a process (R5/R6); realized in its bounded child acts. Bearer is an Organization." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10063 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000054 ;
+            owl:someValuesFrom bpot:P10074 ],
+        cco:ont00000568 ;
+    skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to maintain and revamp a portfolio of product/service offerings in alignment with business strategy and market opportunities." .
+
+bpot:ProductServicePriorityList a owl:Class ;
+    rdfs:label "Product/Service Priority List" ;
+    rdfs:comment "Output of 2.1.1.3 (prioritize and select). Directive: it commits the organization to an ordering." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a ranked ordering of product/service concepts selected for development." .
+
+bpot:ProductionDeliveryProcessDesign a owl:Class ;
+    rdfs:label "Production/Delivery Process Design" ;
+    rdfs:comment "Minted: co-output of 2.3.1.10; not in shared list. Directive." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a manufacturing or service-delivery process created for a new product or service." .
+
+bpot:PrototypeTestResult a owl:Class ;
+    rdfs:label "Prototype Test Result" ;
+    rdfs:comment "Minted: co-output of 2.3.1.10; not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records the outcome of trial runs that test a prototype production or service-delivery process." .
+
+bpot:QualityInspectionDocument a owl:Class ;
+    rdfs:label "Quality/Inspection Document" ;
+    rdfs:comment "Minted: inspection-procedure document not in shared list. Directive (it prescribes a procedure)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the procedures for assessing whether a product/service meets defined delivery criteria." .
+
+bpot:QualityPerformanceReview a owl:Class ;
+    rdfs:label "Quality Performance Review" ;
+    rdfs:comment "Minted: no shared-list ICE captures the delivered-quality judgement. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the quality and performance of a product/service delivered to customers." .
+
+bpot:RawMaterial a owl:Class ;
+    rdfs:label "Raw Material" ;
+    rdfs:comment "APQC 'feedstock or raw materials needed to prepare the finished products' (2.3.3.1). Bare material entity because raw stock need not be an artifact." ;
+    rdfs:subClassOf obo:BFO_0000040 ;
+    skos:definition "A Material Entity that is feedstock or input material consumed in producing a finished product." .
+
+bpot:RegulatoryAuthorityRole a owl:Class ;
+    rdfs:label "Regulatory Authority Role" ;
+    rdfs:comment "Borne by the external authority Organization, not by the regulatory ICEs it issues (group 2.1.3)." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Organization in virtue of issuing, administering, or enforcing laws, statutes, permits, codes, or regulatory requirements binding on a focal organization, and overseeing its compliance with them." .
+
+bpot:RegulatoryReview a owl:Class ;
+    rdfs:label "Regulatory Review" ;
+    rdfs:comment "Minted: distinct from RegulatoryConcernRegister/RegulatoryRecord; this records a performance/enforcement review. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of the enforcement of intellectual-property and regulatory protection processes." .
+
+bpot:ResearchAndDevelopmentCapability a owl:Class ;
+    rdfs:label "Research and Development Capability" ;
+    rdfs:subClassOf cco:ont00001379 ;
+    skos:definition "An Agent Capability that is realized in Acts of discovering, developing, and assessing new technologies and product/service concepts." .
+
+bpot:ResearchAndDevelopmentRole a owl:Class ;
+    rdfs:label "Research and Development Role" ;
+    rdfs:comment "Recurs across the discovery-research and concept-generation processes (group 2.2)." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of being tasked with discovering, developing, or assessing new technologies and product/service concepts on behalf of an Organization." .
+
+bpot:ResourceAllocationPlan a owl:Class ;
+    rdfs:label "Resource Allocation Plan" ;
+    rdfs:comment "Minted: output of 2.3.1.1; not in shared list. Directive." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the funds, personnel, and time allocated to a product or service development project." .
+
+bpot:Routing a owl:Class ;
+    rdfs:label "Routing" ;
+    rdfs:comment "Minted: routing record not in shared list. Modeled Descriptive (a record of the operation flow as managed master data)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the flow of operations from raw form to finished product for a specific product/service layout." .
+
+bpot:SalesReport a owl:Class ;
+    rdfs:label "Sales Report" ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes sales volumes, revenue, and market response for a product or service." .
+
+bpot:SeniorManagementRole a owl:Class ;
+    rdfs:label "Senior Management Role" ;
+    rdfs:comment "Recurs where APQC says 'Enlist senior management executives' (2.1.1.2, 2.1.1.4, 2.2.1.x)." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Agent in virtue of holding senior executive authority over strategy, investment, or product decisions within an Organization." .
+
+bpot:StrategicAlignmentAssessment a owl:Class ;
+    rdfs:label "Strategic Alignment Assessment" ;
+    rdfs:comment "Gate-F mint: output of 2.1.1.2. Distinct from bpo:FeasibilityAssessment, which judges practicability/realizability; this judges STRATEGIC ALIGNMENT, a different subject. Replacing the FeasibilityAssessment filler on bpo:P10066 corrects an inclusiveness/exclusiveness violation (the output ICE described the wrong subject)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:BusinessStrategy ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether a product/service concept aligns with the organization's business strategy." .
+
+bpot:SupplyChainEffectivenessReview a owl:Class ;
+    rdfs:label "Supply Chain Effectiveness Review" ;
+    rdfs:comment "Minted: shared list has SupplyChainPerformanceData (input) but no effectiveness-review output. Descriptive (a judgement). Output of the 2.1.2.5.3 APPRAISAL act only; the sibling 2.1.2.5.4 analysis act now outputs the distinct bpo:SupplyChainMethodologyAnalysis." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether a supply chain and distribution network meets the demands of its stakeholders." .
+
+bpot:SupplyChainMethodologyAnalysis a owl:Class ;
+    rdfs:label "Supply Chain Methodology Analysis" ;
+    rdfs:comment "Gate-F mint: output of the 2.1.2.5.4 analysis act (bpo:P19647). Distinct from bpo:SupplyChainEffectivenessReview (the 2.1.2.5.3 appraisal verdict): the .4 source ('Collecting and examining raw data ... drawing conclusions ... Apply the information to make better business decisions') yields an analytic conclusion, not an effectiveness judgement. Previously both sibling acts shared the same effectiveness-review filler despite different act genera (Analysis vs Appraisal); giving .4 a distinct output resolves that inconsistent anchoring. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a data-analytics conclusion correlating gaps and efficiencies across an organization's existing supply-chain methodologies." .
+
+bpot:SupplyChainPartnerRole a owl:Class ;
+    rdfs:label "Supply Chain Partner Role" ;
+    rdfs:comment "Covers APQC 'suppliers, vendors, contractors, subcontractors, distribution partners' (2.1.2.5.3, 2.3.1.14, 2.3.3.x)." ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that is borne by an Organization in virtue of supplying, distributing, or co-producing on behalf of a focal organization within its supply chain." .
+
+bpot:SupportModelSpecification a owl:Class ;
+    rdfs:label "Post-Launch Support Model Specification" ;
+    rdfs:comment "Output of 2.2.3.2 (define post launch support model)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes service-level agreements and service-level key performance indicators for post-launch support." .
+
+bpot:TraceabilityData a owl:Class ;
+    rdfs:label "Traceability Data" ;
+    rdfs:comment "Minted: traceability record not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the genealogy and access history of product/material data accessible only via permitted touch points." .
+
+bpot:TroubleshootingMethodologyReview a owl:Class ;
+    rdfs:label "Troubleshooting Methodology Review" ;
+    rdfs:comment "Minted: output of 2.3.1.8.4; not in shared list. Descriptive." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records an appraisal of the design and approach for troubleshooting a product." .
+
+bpot:UserExperienceDesignSpecification a owl:Class ;
+    rdfs:label "User Experience Design Specification" ;
+    rdfs:comment "Minted: output of 2.3.1.4; not in shared list. Directive, is about the offering." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the usability and user-experience characteristics of a product or service offering." .
+
+bpot:WarrantyRecommendation a owl:Class ;
+    rdfs:label "Warranty Recommendation" ;
+    rdfs:comment "Output of 2.3.1.5." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a recommended warranty plan and pricing for a product or service." .
+
+bpot:BillOfMaterials a owl:Class ;
+    rdfs:label "Bill of Materials" ;
+    rdfs:comment "DUPLICATE RECONCILED to ONE Directive class: a BOM prescribes which components/parts must be used to build the product. Output of the 2.3 design act bpo:P16818 and the managed master-data object of the 2.1 act bpo:P11742." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that lists and prescribes the raw materials, components, and parts (across design, manufacturing, and service variants) required to produce an end product." ;
+    skos:example "An engineering, manufacturing, and service BOM for a new appliance." .
+
+bpot:BusinessStrategy rdfs:comment "Directive input the section aligns to (APQC cross-reference 'Develop a business strategy [10015]'); used as has-input where concepts are checked for alignment (2.1.1.2)." ;
+    skos:definition "A Directive Information Content Entity that prescribes an organization's intended overall course of business action." .
+
+bpot:DesignStaff a owl:Class ;
+    rdfs:label "Design Staff" ;
+    rdfs:comment "APQC 'solutioning and/or design staff' (group 2.3)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001954 ;
+            owl:someValuesFrom bpot:DesignCapability ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:DesignStaffRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that has a design capability and bears a design staff role." .
+
+bpot:LaunchPlan a owl:Class ;
+    rdfs:label "Product/Service Launch Plan" ;
+    rdfs:comment "Output of 2.1.2.1; input to launch-procedure validation (2.3.3.5)." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the program and procedures for introducing and launching a new product or service." .
+
+bpot:Market a owl:Class ;
+    rdfs:label "Market" ;
+    rdfs:comment "Subject of bpo:MarketStudy. Modeled as a BFO Object Aggregate (obo:BFO_0000027, a material aggregate of participant agents and offerings) -- more precise than bare Material Entity -- not as an ICE. This is the concrete-participant reading; the abstract socio-economic market-system sense is out of scope here." ;
+    rdfs:subClassOf obo:BFO_0000027 ;
+    skos:definition "An Object Aggregate of the buyers, sellers, and offerings within which an organization's products or services compete." .
+
+bpot:MarketData rdfs:comment "Reused naming from the reference module (apqc_1_1_1.ttl); minted here because it is not in apqc-ext.ttl." ;
+    skos:definition "A Descriptive Information Content Entity that describes features of a market, such as size, growth rate, trends, segments, and channels." .
+
+bpot:P10063 a owl:Class ;
+    rdfs:label "Evaluate performance of existing products/services against market opportunities" ;
+    rdfs:comment "Genus is appraisal (judging capabilities/performance); output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServicePerformanceData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketOpportunityData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServicePerformanceEvaluation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input product/service performance data and market opportunity data and has as output a product/service performance evaluation that identifies gaps against market expectations." ;
+    skos:example "A product team appraises current offerings on profitability and penetration and issues a performance evaluation flagging portfolio gaps." ;
+    bpot:apqcSourceText "Assessing the capabilities and performance of existing products/services, in light of market opportunities. Examine performance of the existing line of products/services, including measures of profitability, penetration, and value delivered. Identify gaps between existing solutions' portfolio or their performance levels, on the one hand, and the current market demand, available technologies, and/or customer expectations, on the other. Consider opportunities in the present market environment and any relation with the performance. Consider input from professional services providers." ;
+    bpot:hierarchyID "2.1.1.1" ;
+    bpot:pcfID "10063" .
+
+bpot:P10065 a owl:Class ;
+    rdfs:label "Perform discovery research" ;
+    rdfs:comment "Coordinates R&D to triangulate technologies; an information-processing act producing a descriptive technical assessment." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10071 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10072 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TechnologyData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TechnicalAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10070 ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that conducts early-stage research and development on emerging technologies and produces a technical assessment of technologies able to support a revised product/service portfolio." ;
+    skos:example "A research division runs an exploratory technology scan and reports which emerging technologies can close gaps in the current portfolio." ;
+    bpot:apqcSourceText "Coordinating R&D activity to identify new technologies to integrate into the revamped portfolio of products/services. Conduct early-stage R&D activity to close gaps between existing solution offerings and changing market expectations. Triangulate appropriate technologies that can support the development of a revised product/service portfolio." ;
+    bpot:hierarchyID "2.2.1" ;
+    bpot:pcfID "10065" .
+
+bpot:P10068 a owl:Class ;
+    rdfs:label "Identify potential improvements to existing products and services" ;
+    rdfs:comment "Although phrased as 'Identify', the definitional output is a prescriptive modification plan (Directive ICE), so the act is a formulation, not an Act of Identification (GOLDEN PRINCIPLE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketOpportunityData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceModificationPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that defines potential enhancements to current products or services and produces a product/service modification plan to capitalize on shifts in market expectations." ;
+    skos:example "A product manager defines a set of enhancements to an existing service line to match new market expectations." ;
+    bpot:apqcSourceText "Defining potential enhancements to current products/services in order to take advantage of a shift in market expectations. Identify how the existing line of products/services may be revised--through enhancements to individual solutions or across-the-board renovations--in order to capitalize on present opportunities in the market." ;
+    bpot:hierarchyID "2.2.2.5" ;
+    bpot:pcfID "10068" .
+
+bpot:P10070 a owl:Class ;
+    rdfs:label "Identify new technologies" ;
+    rdfs:comment "Discernment sense (information processing), not cco:ont00001261. R&D personnel are definitional participants ('research division(s) carry out the process'); senior management is typical." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TechnologyData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TechnicalAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ResearchAndDevelopmentPersonnel ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns recently developed technological advances leverageable for the product/service portfolio and produces a technical assessment registering them." ;
+    skos:example "A research division registers a shortlist of emerging technologies relevant to the next portfolio refresh." ;
+    bpot:apqcSourceText "Determining new technologies to revise the portfolio of solution offerings. Identify recently developed technological advances that can be leveraged in the development or advancement of the organization's product/service portfolio. Enlist senior management in conjunction with personnel responsible for the design, processing, and delivery of products/services. Have the organization's research division(s) carry out the process." ;
+    bpot:hierarchyID "2.2.1.1" ;
+    bpot:pcfID "10070" .
+
+bpot:P10071 a owl:Class ;
+    rdfs:label "Develop new technologies" ;
+    rdfs:comment "Builds a new technology from scratch; a Planned Act of creation, distinct from analysing or appraising existing technology. R&D personnel are participants." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ResearchAndDevelopmentPersonnel ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that builds new technological processes, models, or implements in-house in order to improve existing solutions or create new ones." ;
+    skos:example "An R&D group engineers a novel manufacturing process to enable a new product line." ;
+    bpot:apqcSourceText "Developing new technologies from scratch to integrate into a revised portfolio of solutions. Develop new technological processes, models, and/or implements in-house, with the objective of improving existing solutions or creating new ones. Consider market realities, as well as the portfolio of products/services. Assess the results in conjunction with senior executives and personnel responsible for the design, processing, and delivery of these solutions. Engage the R&D function, and consider external sources such as offshore providers, specialized research agencies, and crowdsourcing communities." ;
+    bpot:hierarchyID "2.2.1.2" ;
+    bpot:pcfID "10071" .
+
+bpot:P10072 a owl:Class ;
+    rdfs:label "Assess feasibility of integrating new leading technologies into product/service concepts" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): it evaluates/judges integration feasibility. Senior management is a definitional participant; supply-chain partners are typical." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:TechnologyData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FeasibilityAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SeniorManagement ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that judges the suitability of integrating new technologies into revised or new product/service concepts and produces a feasibility assessment." ;
+    skos:example "An evaluation panel appraises whether a custom sensor technology can be integrated into the next product generation and reports its feasibility." ;
+    bpot:apqcSourceText "Appraising the feasibility of integrating new technologies, whether developed as a custom solution or adopted from an external source, into revised portfolio of solution offerings. Examine recently developed technological advances for suitability to incorporate them into the concept of revised and/or new solution offerings. Enlist senior management, in consultation with in-house personnel responsible for the design, processing, and delivery of these solutions, as well as key supply-chain stakeholders." ;
+    bpot:hierarchyID "2.2.1.3" ;
+    bpot:pcfID "10072" .
+
+bpot:P10074 a owl:Class ;
+    rdfs:label "Prioritize and select new product/service concepts" ;
+    rdfs:comment "Genus is selection (choosing from a candidate set); output is a Directive ICE (the priority list) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServicePriorityList ],
+        bpot:ActOfSelection ;
+    skos:definition "An Act of Selection that has as input product/service concepts and has as output a product/service priority list prescribing the chosen concepts for the revised portfolio." ;
+    skos:example "A portfolio board ranks candidate concepts and selects those meeting cost/quality targets for the revised portfolio." ;
+    bpot:apqcSourceText "Selecting from among the potential new/revised solutions and capitalizing on market opportunities so that they meet the cost and quality prerequisites. Create an index of product/service concepts, and arrange them in order of preference. Base prioritization on adherence to Plan and develop cost and quality targets [10073], and choose options that would comprise the revised solution portfolio." ;
+    bpot:hierarchyID "2.1.1.3" ;
+    bpot:pcfID "10074" .
+
+bpot:P10077 a owl:Class ;
+    rdfs:label "Introduce new products/services" ;
+    rdfs:comment "Operations launch occurrent (category 2.0 permits material participants). No definitional informational output; the offering deployed is bpo:ProductServiceOffering (a participant, comment-level here since not every instance manifests a single material filler)." ;
+    rdfs:subClassOf cco:ont00000228 ;
+    skos:definition "A Planned Act in which an Organization deploys a new or revised product/service offering into the market through marketing, sales, delivery, and after-sales channels." ;
+    skos:example "A cross-functional team launches a revamped product line across marketing and distribution channels." ;
+    bpot:apqcSourceText "Launching revamped product/service portfolio in to the market. Introduction in to the marketplace is done by deploying effective channels for marketing, sales, delivery, and after-sales servicing. Introduce new/revised solution offerings in a concerted effort. Coordinate a cross-functional effort." ;
+    bpot:hierarchyID "2.1.2.2" ;
+    bpot:pcfID "10077" .
+
+bpot:P10078 a owl:Class ;
+    rdfs:label "Retire outdated products/services" ;
+    rdfs:comment "Operations withdrawal occurrent. Supply-chain-partner coordination is typical (comment-level), not definitional." ;
+    rdfs:subClassOf cco:ont00000228 ;
+    skos:definition "A Planned Act in which an Organization withdraws a nonconforming product/service offering from the market while sustaining after-sales servicing and goodwill." ;
+    skos:example "A firm retires an obsolete product line and stands up continued spares support." ;
+    bpot:apqcSourceText "Removing nonconforming products and services. Withdraw those products/services that do not conform to market realities and are not positioned to take advantage of prevailing opportunities. Coordinate with processing/delivery teams within the organization and key stakeholders in the supply chain. Create mechanisms for continued after-sales servicing, as well as deploy effective public relations efforts in order to preserve the image and goodwill of the organization through the process." ;
+    bpot:hierarchyID "2.1.2.3" ;
+    bpot:pcfID "10078" .
+
+bpot:P10083 a owl:Class ;
+    rdfs:label "Assign resources to product/service project" ;
+    rdfs:comment "Anchored to cco:ont00000511 (Act of Planning): the act produces a prescriptive allocation (Directive ICE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceAllocationPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19994 ],
+        cco:ont00000511 ;
+    skos:definition "An Act of Planning that allocates funds, personnel, and time to a product or service development project and produces a resource allocation plan." ;
+    skos:example "A programme manager assigns budget and engineers to a prioritized concept." ;
+    bpot:apqcSourceText "Allocating resources to the design, development, and evaluation of product/service concepts. Allocate funds, personnel, and time for developing the new and/or revised products/services. Begin to design the potential new product/service concepts that have been prioritized and selected for further development." ;
+    bpot:hierarchyID "2.3.1.1" ;
+    bpot:pcfID "10083" .
+
+bpot:P10084 a owl:Class ;
+    rdfs:label "Prepare high-level business case and technical assessment" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): both outputs are descriptive judgements." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BusinessCase ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TechnicalAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that weighs the costs and benefits and technical feasibility of shortlisted concepts and produces a business case and a technical assessment." ;
+    skos:example "A team prepares a cost-benefit business case and a technical-feasibility appraisal for two concepts." ;
+    bpot:apqcSourceText "Preparing a business-level business case and a technical feasibility assessment in order to move the product/service projects forward. Weigh the costs and benefits of designing, developing, and evaluating the shortlisted product/service concepts. Prepare a business case to justify the product/service projects. Conduct a technical appraisal to ensure that the organization has the technical know-how and resources to further develop these concepts." ;
+    bpot:hierarchyID "2.3.1.2" ;
+    bpot:pcfID "10084" .
+
+bpot:P10085 a owl:Class ;
+    rdfs:label "Develop product/service design specifications" ;
+    rdfs:comment "Genus bpo:ActOfDesign (output is a Directive ICE). Senior/design staff participate." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:DesignStaff ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that creates design specifications for new or revised product or service concepts as a standard to meet during development." ;
+    skos:example "Design staff draft a compliance-standard framework for a new product." ;
+    bpot:apqcSourceText "Creating design specifications. Create specifications for the design of new or revised product/service concepts as a measure to meet during development. Have the senior functional-level solutioning or design staff create a framework of compliance standards for these products/services." ;
+    bpot:hierarchyID "2.3.1.3" ;
+    bpot:pcfID "10085" .
+
+bpot:P10086 a owl:Class ;
+    rdfs:label "Document design specifications" ;
+    rdfs:comment "Genus bpo:ActOfDataManagement: the act records/organizes requirement ICEs. Output is a Directive requirement specification." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that records and structures the technical, quality, cost, ergonomic, safety, and servicing requirements to be met in the design of a product or service, producing a documented requirement specification." ;
+    skos:example "An engineer compiles an illustrated requirements document for the design team." ;
+    bpot:apqcSourceText "Documenting requirements to meet in the design of new or revised products/services. Specify technical, quality, and costing requirements, as well as ergonomic, safety, and servicing requirements for such products/services. Ensure the information presented can be understood by the personnel executing the design and includes examples, anecdotal references, and illustrations." ;
+    bpot:hierarchyID "2.3.1.6" ;
+    bpot:pcfID "10086" .
+
+bpot:P10087 a owl:Class ;
+    rdfs:label "Conduct mandatory and elective external reviews" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal). Input is the design specification; a regulatory authority participates in mandatory reviews." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ExternalReviewReport ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:RegulatoryAuthority ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that reviews a product or service design specification against external legal, regulatory, and industrial standards and produces an external review report." ;
+    skos:example "A regulator reviews a medical-device spec for legal compliance." ;
+    bpot:apqcSourceText "Conducting any mandatory and elective appraisals of the product/service design specifications in order to ensure compliance with external standards. Carry out external reviews of specifications created for the development of new product/service designs. Conduct mandatory appraisals such as legal and regulatory, as well as any optional assessments that, for instance, pitch the specifications against industrial benchmarks." ;
+    bpot:hierarchyID "2.3.1.7" ;
+    bpot:pcfID "10087" .
+
+bpot:P10088 a owl:Class ;
+    rdfs:label "Build prototypes/proof of concepts" ;
+    rdfs:comment "The prototype is a cco:Material Artifact (bpo:ProductServicePrototype); in this develop/plan category (2.0) the built material is the act's has-participant rather than an informational has-output (D3: informational outputs are ICEs). Design staff participate." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServicePrototype ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:DesignStaff ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that builds a product or service prototype in line with the design specification, taking the design specification as input and yielding a built prototype as its material participant." ;
+    skos:example "Design staff build a working proof-of-concept from the approved spec." ;
+    bpot:apqcSourceText "Building prototypes for shortlisted product/service concepts. Develop prototypes for those product/service concepts that have been identified for further development. Provide proof-of-concepts, and test any processes involved. Build prototypes in line with the design specifications already outlined. Enlist the solutioning and/or design staff." ;
+    bpot:hierarchyID "2.3.1.9" ;
+    bpot:pcfID "10088" .
+
+bpot:P10089 a owl:Class ;
+    rdfs:label "Eliminate quality and reliability problems" ;
+    rdfs:comment "The refined prototype (bpo:ProductServicePrototype, a Material Artifact) is the act's has-participant rather than an informational has-output: section 2.0 is a develop/plan category whose informational outputs (D3) are ICEs. Quality targets are definitional input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:QualityTarget ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServicePrototype ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that refines a product or service prototype to comply with required quality and reliability standards, taking quality and reliability targets as input and acting on the prototype as its material participant." ;
+    skos:example "Engineers tweak a prototype until it meets reliability targets." ;
+    bpot:apqcSourceText "Eliminating any problems relating to utility of the product/service over the course of its expected lifetime. Tweak the prototype in order to comply with the required quality and reliability standards. Further refine the prototype, so it may be subjected to testing." ;
+    bpot:hierarchyID "2.3.1.11" ;
+    bpot:pcfID "10089" .
+
+bpot:P10090 a owl:Class ;
+    rdfs:label "Conduct in-house product/service testing and evaluate feasibility" ;
+    rdfs:comment "Genus bpo:ActOfVerification (under Act of Appraisal): checks the prototype against standards, yielding a descriptive feasibility judgement. The prototype under test (bpo:ProductServicePrototype, a Material Artifact) is the material participant of the verification, not an informational has-input (D3: informational I/O in this develop/plan category are ICEs)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServicePrototype ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FeasibilityAssessment ],
+        bpot:ActOfVerification ;
+    skos:definition "An Act of Verification that tests product or service prototypes against design and usability standards and produces a feasibility assessment." ;
+    skos:example "A QA team validates a prototype's design and production feasibility in-house." ;
+    bpot:apqcSourceText "Carrying out an in-house appraisal of the prototypes in order to validate design and feasibility. Test the product/service prototypes to confirm their compliance with design and usability standards. Corroborate the viability of the design, and validate the feasibility of their production. Identify any areas for improvement." ;
+    bpot:hierarchyID "2.3.1.12" ;
+    bpot:pcfID "10090" .
+
+bpot:P10091 a owl:Class ;
+    rdfs:label "Identify design/development performance indicators" ;
+    rdfs:comment "Anchored to cco:ont00000511 (Act of Planning): defining indicators to measure against is a prescriptive specification (Directive ICE). GOLDEN PRINCIPLE: 'identify parameters to measure' here sets directive targets, not a descriptive finding." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PerformanceIndicatorSpecification ],
+        cco:ont00000511 ;
+    skos:definition "An Act of Planning that determines the parameters for measuring design and development performance and produces a performance indicator specification." ;
+    skos:example "A team defines the KPIs that will gate the prototype phase." ;
+    bpot:apqcSourceText "Identifying performance parameters. Determine the parameters to measure performance of the design and development of the product/service concepts into prototypes." ;
+    bpot:hierarchyID "2.3.1.13" ;
+    bpot:pcfID "10091" .
+
+bpot:P10092 a owl:Class ;
+    rdfs:label "Collaborate on design with suppliers and external partners" ;
+    rdfs:comment "Genus bpo:ActOfVerification: the text says 'verify feasibility'. Supply-chain partners participate via has participant." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FeasibilityAssessment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SupplyChainPartner ],
+        bpot:ActOfVerification ;
+    skos:definition "An Act of Verification that, with suppliers and external partners, checks the feasibility of co-producing the prototype's design and produces a feasibility assessment." ;
+    skos:example "Engineers and a contract manufacturer confirm a design can be co-produced." ;
+    bpot:apqcSourceText "Interacting with suppliers and manufactures to determine design decisions. Collaborate with vendors, suppliers, contractors, and subcontractors to verify feasibility of co-producing the prototype's design. Ensure that efforts can be coordinated with other stakeholders in the organization's supply chain ecosystem at the time of manufacturing, producing, or packaging the finished product/service." ;
+    bpot:hierarchyID "2.3.1.14" ;
+    bpot:pcfID "10092" .
+
+bpot:P10093 a owl:Class ;
+    rdfs:label "Prepare detailed market study" ;
+    rdfs:comment "Output bpo:MarketStudy carries is-about bpo:Market in the shared vocab. Input is market data." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:MarketStudy ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that examines the targeted market and produces a detailed market study about the market." ;
+    skos:example "A marketing team studies market size, trends, and segments for a new product." ;
+    bpot:apqcSourceText "Composing a detailed study of the market ecosystem in light of new products/services. Conduct a detailed analysis of the targeted market(s) in order to Introduce new products/services [10077]. Examine the competition, market size and growth rate, market trends, customer segments and their characteristics, market influencers, distribution channels, and profitability. Enlist in-house marketing and/or solutioning teams, or outsource to specialized professional services agencies." ;
+    bpot:hierarchyID "2.3.2.1" ;
+    bpot:pcfID "10093" .
+
+bpot:P10094 a owl:Class ;
+    rdfs:label "Conduct customer tests and interviews" ;
+    rdfs:comment "Customers participate (has participant). The report is descriptive and about the offering." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CustomerTestReport ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:Customer ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that conducts qualitative and quantitative customer tests and interviews of a new product or service and produces a customer test report capturing customer feedback." ;
+    skos:example "A team runs surveys and focus groups and reports prospective-customer feedback." ;
+    bpot:apqcSourceText "Conducting both qualitative and quantitative studies to determine the fit between the newly developed products/services and the customers. Conduct external tests of the new product/service, and then refine them to maximize the customer uptake. Gather feedback from prospective customers and targeted populations by conducting surveys, focus groups, interviews, and detailed studies. Enlist professional services such as public relations or market research organizations." ;
+    bpot:hierarchyID "2.3.2.2" ;
+    bpot:pcfID "10094" .
+
+bpot:P10095 a owl:Class ;
+    rdfs:label "Finalize product/service characteristics and business cases" ;
+    rdfs:comment "Genus bpo:ActOfFormulation (under Act of Planning): composes a Directive characteristics specification (the genuine defining output). Customer feedback is definitional input. Gate-F: the existential has-output to bpo:BusinessCase (Descriptive) was DROPPED. The business case is sourced from 'Revisit the high-level business case' -- a revisit of an artifact produced earlier at 2.3.1.2, i.e. typical/intermediate, not necessary for every instance; promoting a Descriptive co-output to owl:someValuesFrom on a directive-aligned Formulation act both over-committed per the Phase-3 existential-necessity rule and created GOLDEN-PRINCIPLE tension. The revisited business case is recorded here at comment level / as a CQ target only." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceCharacteristicsSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that finalizes the characteristics of a new product or service by weighing customer feedback against a cost-benefit analysis, producing a product/service characteristics specification." ;
+    skos:example "A team locks down the feature set and revises the business case after testing." ;
+    bpot:apqcSourceText "Finalizing the characteristics of new products/services by appropriately weighing feedback from prospective customers against a cost-benefit analysis in order to produce a profitable business proposition. Refine the attributes of the newly developed products/services, in light of the feedback and insights collected during Conduct customer tests and interviews [10094]. Revisit the high-level business case to justify the resources assigned to the product/service project against the anticipated benefits." ;
+    bpot:hierarchyID "2.3.2.3" ;
+    bpot:pcfID "10095" .
+
+bpot:P10096 a owl:Class ;
+    rdfs:label "Finalize technical requirements" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): re-evaluates technical capacity, a descriptive judgement. Input is the characteristics specification." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServiceCharacteristicsSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TechnicalAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that reassesses technical requirements in light of the finalized product or service characteristics and produces a revised technical assessment." ;
+    skos:example "Engineering revalidates technical feasibility after the feature set is locked." ;
+    bpot:apqcSourceText "Reassessing the technical requirements in light of the final product/service attributes. Revisit the technical assessment to revalidate the organization's capacity for progressing with new product/service projects, in light of the revised product/service characteristics." ;
+    bpot:hierarchyID "2.3.2.4" ;
+    bpot:pcfID "10096" .
+
+bpot:P10097 a owl:Class ;
+    rdfs:label "Identify requirements for changes to manufacturing/delivery processes" ;
+    rdfs:comment "Gate-F re-anchor: from bpo:ActOfIdentification to bpo:ActOfFormulation. Although phrased as 'Identify', the definitional output is a prescriptive modification plan (Directive ICE, shop-floor and supply-chain changes), so the act composes a directive and is a formulation, not an Act of Identification (GOLDEN PRINCIPLE override of the surface verb). Mirrors the parallel row bpo:P10068 (2.2.2.5), which has the identical Identify+ProductServiceModificationPlan shape and was likewise anchored at bpo:ActOfFormulation." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceModificationPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the changes required in manufacturing and delivery processes for a new product or service and produces a product/service modification plan." ;
+    skos:example "Industrial engineers determine the line and supply-chain changes a new SKU requires." ;
+    bpot:apqcSourceText "Identifying any changes that need to be effectuated in the organization's internal processes for manufacturing, and delivering the newly developed products/services. Determine if any changes need to be made to the production and distribution processes, in light of the new products/services. Begin production process planning. Prepare for factory layout planning. Generate shop-floor instructions and changes to the supply chain." ;
+    bpot:hierarchyID "2.3.3.2" ;
+    bpot:pcfID "10097" .
+
+bpot:P10098 a owl:Class ;
+    rdfs:label "Develop and test prototype production and/or service delivery process" ;
+    rdfs:comment "Output includes both a Directive ICE (the process design) and a Descriptive ICE (the trial-run test result). The prototype (bpo:ProductServicePrototype, a Material Artifact) is the material participant whose production process is being created and trial-run, not an informational has-input (D3: informational I/O in this develop/plan category are ICEs)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServicePrototype ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductionDeliveryProcessDesign ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PrototypeTestResult ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that creates the production or service-delivery process for prototyped offerings and tests it through trial runs, producing a production/delivery process design and a prototype test result." ;
+    skos:example "An operations team builds and trial-runs a pilot assembly line for a prototype." ;
+    bpot:apqcSourceText "Creating the new manufacturing/delivery processes for the new products/services, and testing them to ensure proper functioning. Create the production/delivery process for the prototypes that have been built for the new products/services. Conduct trial-runs to test these processes and their integration with the organization's other processes." ;
+    bpot:hierarchyID "2.3.1.10" ;
+    bpot:pcfID "10098" .
+
+bpot:P10099 a owl:Class ;
+    rdfs:label "Design and obtain necessary capabilities/materials and equipment" ;
+    rdfs:comment "Genus bpo:ActOfAcquisition (Planned Act): the defining outcome is obtaining held material entities. The obtained production equipment and raw materials (bpo:ProductionEquipment, bpo:RawMaterial) are the material participants the act brings under the organization's control, not informational has-outputs -- in this develop/plan category (2.0) material things participate rather than fill the informational output slot (D3: informational outputs are ICEs). Supply-chain partners (vendors) participate." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductionEquipment ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:RawMaterial ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SupplyChainPartner ],
+        bpot:ActOfAcquisition ;
+    skos:definition "A Planned Act of Acquisition that designs or sources, and obtains, the production equipment and raw materials needed to produce a new product or service." ;
+    skos:example "A plant sources CNC machinery and feedstock from external vendors for a new line." ;
+    bpot:apqcSourceText "Developing and/or sourcing the essential machinery needed for creating purpose-built processes, as well as the raw materials, to produce the new products/services. Either design the equipment and materials needed internally, or source from external vendors. Obtain the feedstock or raw materials needed to prepare the finished products, as well as the machinery - hardware and software - needed to arrange production lines, factory operations, assemblies, and manufacturing processes. Revisit the technologies that underpin the new or revised products/services in order to source the right equipment and materials." ;
+    bpot:hierarchyID "2.3.3.1" ;
+    bpot:pcfID "10099" .
+
+bpot:P10100 a owl:Class ;
+    rdfs:label "Install and validate production/service delivery process" ;
+    rdfs:comment "Installation brings the process into operation (development); the validation step is captured by the monitoring process part (11417). The production equipment used (bpo:ProductionEquipment, a Material Artifact) is the act's definitional material participant, not an informational has-input (D3: informational I/O in this develop/plan category are ICEs)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductionEquipment ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11417 ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that installs and initiates the production or service-delivery process using assembled equipment and validates its proper functioning." ;
+    skos:example "A plant installs the line, starts production, and validates output accuracy." ;
+    bpot:apqcSourceText "Finalizing production process or methodology. Install and initiate the production process to manufacture the new products, using the equipment and machinery already assembled. In the case of new services, implement delivery processes and methodologies. Validate processes for the accuracy of their operation and proper functioning." ;
+    bpot:hierarchyID "2.3.3.4" ;
+    bpot:pcfID "10100" .
+
+bpot:P11331 a owl:Class ;
+    rdfs:label "Define product/service requirements" ;
+    rdfs:comment "Parent of the eight requirement-derivation tasks; each is a process part." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19991 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16808 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16809 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16810 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16811 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16812 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19992 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16814 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the requirements related to creating a product or service and produces a product/service requirement specification." ;
+    skos:example "An engineering team determines and documents the full requirement set for a new device." ;
+    bpot:apqcSourceText "Determining requirements related to the creation of the product/service. Explain potential achievements that could be made." ;
+    bpot:hierarchyID "2.2.3.1" ;
+    bpot:pcfID "11331" .
+
+bpot:P11417 a owl:Class ;
+    rdfs:label "Monitor initial production runs" ;
+    rdfs:comment "Gate-F re-anchor: from cco:ont00000636 (Act of Appraisal) to cco:ont00000366 (Act of Information Processing). The only output is bpo:ProductServicePerformanceData -- raw measured/logged run metrics, NOT a descriptive evaluative judgement against a standard. Act of Appraisal (an Act of Measuring that yields a verdict) over-committed the act to a judgement it does not produce; monitoring/logging is a measuring/information-processing act whose output is data (GOLDEN PRINCIPLE: Information-Processing -> Descriptive ICE). The judgement is deferred to the downstream engineering-change act (11418), which this precedes (and feeds)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServicePerformanceData ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000063 ;
+            owl:someValuesFrom bpot:P11418 ],
+        cco:ont00000366 ;
+    skos:definition "An Act of Information Processing that regularly monitors and logs initial production runs of the production or delivery operations and produces product/service performance data." ;
+    skos:example "A line supervisor logs yield and defect rates across the first production runs." ;
+    bpot:apqcSourceText "Regularly monitoring production runs of the production and/or delivery operations." ;
+    bpot:hierarchyID "2.3.3.4.1" ;
+    bpot:pcfID "11417" .
+
+bpot:P11424 a owl:Class ;
+    rdfs:label "Review market performance" ;
+    rdfs:comment "Genus is analysis; output is a Descriptive ICE that is about the Market per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SalesReport ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:MarketStudy ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input sales reports and customer feedback and has as output a market study about the product/service's market position." ;
+    skos:example "A team reviews sales reports and survey responses to study a product's market position." ;
+    bpot:apqcSourceText "Conducting customer and market analysis to review progress and identify opportunities for increasing market position. Track and review product/service response through sales reports, website statistics, direct response from customers, and survey reports." ;
+    bpot:hierarchyID "2.1.2.5.2" ;
+    bpot:pcfID "11424" .
+
+bpot:P11425 a owl:Class ;
+    rdfs:label "Review effectiveness of supply chain and distribution network" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SupplyChainPerformanceData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplyChainEffectivenessReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input supply chain performance data and has as output a supply chain effectiveness review judging whether the network meets stakeholder demands." ;
+    skos:example "Logistics reviews each supply-chain intersection and judges overall network effectiveness." ;
+    bpot:apqcSourceText "Determining the performance of supply chain to all departments and logistics from input to shop floor. Seeking performance reviews at each intersection and communication channels. Review effectiveness of supply chain and distribution to check if it is meeting the demands of the various groups and organizations that are concerned with its activities (groups might include customers, partners, suppliers, and vendors)." ;
+    bpot:hierarchyID "2.1.2.5.3" ;
+    bpot:pcfID "11425" .
+
+bpot:P11426 a owl:Class ;
+    rdfs:label "Review quality and performance of the product/service" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CustomerFeedback ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:QualityPerformanceReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input customer feedback and has as output a quality performance review judging the delivered product/service's quality and performance." ;
+    skos:example "A quality team appraises complaints, recalls, and satisfaction data to judge delivered quality." ;
+    bpot:apqcSourceText "Identifying the quality and performance of the product/service delivered to customers. Analyze data from the customer feedback, audits, measures of customer satisfaction (such as product quality complaints and recalls), and organizational policies on delivery." ;
+    bpot:hierarchyID "2.1.2.5.5" ;
+    bpot:pcfID "11426" .
+
+bpot:P11427 a owl:Class ;
+    rdfs:label "Conduct financial review" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FinancialReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as output a financial review documenting the return on investment of the product/service delivered to market." ;
+    skos:example "Finance reviews the ROI of a launched product and documents the financial review." ;
+    bpot:apqcSourceText "Evaluating organization's financial reports and financial reporting processes. Review and document the ROI catered by the product/service delivery to the customer in the market." ;
+    bpot:hierarchyID "2.1.2.5.6" ;
+    bpot:pcfID "11427" .
+
+bpot:P11428 a owl:Class ;
+    rdfs:label "Conduct new product development process assessment" ;
+    rdfs:comment "Genus is analysis; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:NPDProcessAssessment ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as output a new-product-development process assessment of the development steps and their effect on existing products, resources, and functions." ;
+    skos:example "A team analyzes the NPD steps end-to-end and assesses their impact on resources and existing products." ;
+    bpot:apqcSourceText "Analyzing the steps involved in the development of new product, its effect on existing product, resources, and functions related to the development of the new product until its sale in the competitive market place." ;
+    bpot:hierarchyID "2.1.2.5.7" ;
+    bpot:pcfID "11428" .
+
+bpot:P11741 a owl:Class ;
+    rdfs:label "Manage materials master lists" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the master list)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:MaterialsMasterList ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output a materials master list controlling materials storage, utilization, and linked supplier details with permissible accessibility." ;
+    skos:example "A master-data steward updates the materials master list with new supplier linkages." ;
+    bpot:apqcSourceText "Controlling the details of materials' storage and utilization, supplier details linked to materials, in a defined sequential manner and ensuring regular updates with permissible accessibility." ;
+    bpot:hierarchyID "2.1.4.1" ;
+    bpot:pcfID "11741" .
+
+bpot:P11750 a owl:Class ;
+    rdfs:label "Review and approve data access requests" ;
+    rdfs:comment "Genus is appraisal (judging the request against policy); the output is a prescriptive authorization, so it is a Directive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:DataAccessRequest ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DataAccessDecision ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as input a data access request and has as output a data access decision permitting or denying access according to internal data-security policy." ;
+    skos:example "A data-security reviewer evaluates an access request against policy and grants or denies it." ;
+    bpot:apqcSourceText "Determining the requests pertaining to data accessibility. Review the requester details based on internal data security policies and permit data access only if internal policies and data access parameters are met." ;
+    bpot:hierarchyID "2.1.4.10" ;
+    bpot:pcfID "11750" .
+
+bpot:P12771 a owl:Class ;
+    rdfs:label "Manage regulatory requirements" ;
+    rdfs:comment "Modeled as a bounded coordinating data-management occurrent (creation/review/approval of submissions) so its three tasks have a partonomy parent; regulatory-authority participation is definitional. Output is a Descriptive ICE (the maintained record)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirementData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryRecord ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:RegulatoryAuthority ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12772 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12773 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P12776 ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as input regulatory requirement data and has as output a regulatory record maintaining the organization's regulatory submissions, and that has as process parts employee training, record maintenance, and submission-lifecycle management." ;
+    skos:example "A regulatory affairs team manages the creation, review, and approval lifecycle of a product's regulatory submissions." ;
+    bpot:apqcSourceText "Aligning regulatory activities related to managing industry requirements. Train employees on regulatory requirements. Records for the appropriate regulatory agencies must be maintained and the new product process must be approved by the appropriate regulatory body before it is published to the organization. The submission lifecycle - i.e. creation, review, and approval of the submission and its components must be managed in a collaborative fashion." ;
+    bpot:hierarchyID "2.1.3.5" ;
+    bpot:pcfID "12771" .
+
+bpot:P12772 a owl:Class ;
+    rdfs:label "Train employees on appropriate regulatory requirements" ;
+    rdfs:comment "Reuses CCO cco:ont00000234 (Act of Training): knowledge is imparted from one Agent to others. The training content is regulatory requirement data (input). Also asserts the redundant explicit anchor rdfs:subClassOf cco:ont00000228 (Planned Act): cco:ont00000234 Act of Training is a Planned Act in the pinned CCO closure, but the standalone Gate-C SHACL check (S2/S5) cannot see that cco→cco chain, so the anchor is made explicit per the house-style verify-before-assert pattern." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirementData ],
+        cco:ont00000228,
+        cco:ont00000234 ;
+    skos:definition "An Act of Training in which knowledge of the most recent enforced regulations is imparted to existing and new employees." ;
+    skos:example "A compliance officer trains staff on the latest enforced industry regulations." ;
+    bpot:apqcSourceText "Conducting training and impart learning to existing and new employees. Training will relate to the most recent/enforced regulations of the business to meet Manage regulatory requirements [12771]." ;
+    bpot:hierarchyID "2.1.3.5.1" ;
+    bpot:pcfID "12772" .
+
+bpot:P12773 a owl:Class ;
+    rdfs:label "Maintain records for regulatory agencies" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the maintained record). Regulatory authority is the agency for which records are kept (comment-level)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryRecord ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as output an updated regulatory record kept current for the appropriate regulatory agencies." ;
+    skos:example "A records team regularly updates the regulatory-agency submission archive." ;
+    bpot:apqcSourceText "Identifying steps and procedures to manage and regularly update the records for regulatory agencies. Updates will be made to safety procedures, identity and access management, software tools and applications, internal accessibility policies, internal quality parameters, etc." ;
+    bpot:hierarchyID "2.1.3.5.2" ;
+    bpot:pcfID "12773" .
+
+bpot:P12776 a owl:Class ;
+    rdfs:label "Manage regulatory submission life cycle" ;
+    rdfs:comment "Genus is data management; output is a Descriptive ICE (the maintained submission record)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirementData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryRecord ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that has as input regulatory requirement data and has as output a regulatory record reflecting the timely input and update of regulatory submission information." ;
+    skos:example "A regulatory team tracks reforms and updates the submission record on time." ;
+    bpot:apqcSourceText "Determine and follow the timely input and update of regulatory information by assessing reforms, regulatory policies, and guidelines." ;
+    bpot:hierarchyID "2.1.3.5.3" ;
+    bpot:pcfID "12776" .
+
+bpot:P16808 a owl:Class ;
+    rdfs:label "Derive interoperability requirements for products and services" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the interoperability a product or service must exhibit across multi-vendor and multi-network environments and produces a product/service requirement specification." ;
+    skos:example "An architect specifies the data-exchange standards the product must support to interoperate with third-party systems." ;
+    bpot:apqcSourceText "Determining the ability of products and services to work together, exchange and use information in a multi-vendor, multi-network, and multi-service environment." ;
+    bpot:hierarchyID "2.2.3.1.2" ;
+    bpot:pcfID "16808" .
+
+bpot:P16809 a owl:Class ;
+    rdfs:label "Derive safety requirements for products and services" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that develops the safety requirements a product or service must meet in line with health-and-safety guidelines and produces a product/service requirement specification." ;
+    skos:example "A safety engineer specifies the occupational and community safety requirements for a new appliance." ;
+    bpot:apqcSourceText "Developing safety requirements in line with environmental safety, occupational health and safety, and community health and safety guidelines." ;
+    bpot:hierarchyID "2.2.3.1.3" ;
+    bpot:pcfID "16809" .
+
+bpot:P16810 a owl:Class ;
+    rdfs:label "Derive security requirements for products and services" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the authentication, encryption, and hardware-security requirements a product or service must meet and produces a product/service requirement specification." ;
+    skos:example "A security architect specifies the cryptographic protocols and smart-card protections required for a connected device." ;
+    bpot:apqcSourceText "Implementing security requirements through authentication and encryption of CE device data stream.  Utilize security measures such as cryptographic protocols and hardware security (smart cards)." ;
+    bpot:hierarchyID "2.2.3.1.4" ;
+    bpot:pcfID "16810" .
+
+bpot:P16811 a owl:Class ;
+    rdfs:label "Derive regulatory compliance requirements" ;
+    rdfs:comment "Input regulatory requirement data is definitional; its source is the external regulatory authority. Gate-F: the [has participant some bpo:RegulatoryAuthority] restriction was DROPPED. The regulatory authority does NOT partake in the organization's internal act of deriving requirements; it merely issued the external directives the org must comply with (bfo:has participant requires the entity to be present in and partake of the occurrent). The authority dependency is expressed instead through the bpo:RegulatoryRequirementData input, whose source is the authority -- not via has-participant (a Phase-4 R-relation fix that avoids conflating 'source of the constraint' with 'participant of the act')." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirementData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the regulatory compliance requirements a product or service must satisfy under directives such as RoHS, WEEE, ELV, and REACH and produces a product/service requirement specification." ;
+    skos:example "A compliance engineer specifies the RoHS and REACH requirements a new electronic product must meet." ;
+    bpot:apqcSourceText "Meeting regulatory requirements set forth by such directives as RoHS, WEEE, ELV, and REACH. " ;
+    bpot:hierarchyID "2.2.3.1.5" ;
+    bpot:pcfID "16811" .
+
+bpot:P16812 a owl:Class ;
+    rdfs:label "Derive requirements from industry standards" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the requirements a product or service must meet to comply with industry standards and produces a product/service requirement specification." ;
+    skos:example "An engineer derives the device requirements needed to conform to the relevant CTA industry standards." ;
+    bpot:apqcSourceText "Complying with consumer electronic industry standards developed by the Consumer Technology Association (CTA)." ;
+    bpot:hierarchyID "2.2.3.1.6" ;
+    bpot:pcfID "16812" .
+
+bpot:P16813 a owl:Class ;
+    rdfs:label "Develop user experience design specifications" ;
+    rdfs:comment "Genus bpo:ActOfDesign: prescribes UX characteristics (Directive ICE about the offering)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:UserExperienceDesignSpecification ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that determines the usability and user experience of a product or service and produces a user experience design specification." ;
+    skos:example "A UX team specifies the interaction model and usability targets for an app." ;
+    bpot:apqcSourceText "Determining the usability and user experience of products and the business impact it creates." ;
+    bpot:hierarchyID "2.3.1.4" ;
+    bpot:pcfID "16813" .
+
+bpot:P16814 a owl:Class ;
+    rdfs:label "Derive 'services-as-a-product' offering" ;
+    rdfs:comment "Defines a tangible service offering (its scope and cost), i.e. articulates a product/service concept (Directive ICE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that productizes a service by defining its scope and cost and produces a product/service concept for the resulting offering." ;
+    skos:example "A team packages a consulting service into a fixed-scope, fixed-price offering." ;
+    bpot:apqcSourceText "Productizing the service by defining the scope of the service/cost.  Target market for the service and make the service more tangible." ;
+    bpot:hierarchyID "2.2.3.1.8" ;
+    bpot:pcfID "16814" .
+
+bpot:P16815 a owl:Class ;
+    rdfs:label "Define post launch support model" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupportModelSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that defines the service-level agreements and service-level KPIs for post-launch support and produces a post-launch support model specification." ;
+    skos:example "A service team specifies the SLAs and KPIs that will govern support after a product's launch." ;
+    bpot:apqcSourceText "Defining SLAs (Service Level Agreement) and service level KPIs (Key Performance Indicator). " ;
+    bpot:hierarchyID "2.2.3.2" ;
+    bpot:pcfID "16815" .
+
+bpot:P16817 a owl:Class ;
+    rdfs:label "Provide warranty-related recommendations" ;
+    rdfs:comment "Anchored to cco:ont00000511 (Act of Planning): output is a prescriptive recommendation (Directive ICE)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:WarrantyRecommendation ],
+        cco:ont00000511 ;
+    skos:definition "An Act of Planning that devises warranty plan and pricing specifications and produces a warranty recommendation." ;
+    skos:example "A product team recommends a two-year warranty plan with tiered pricing." ;
+    bpot:apqcSourceText "Providing warranty plan and pricing specifications for recommendation." ;
+    bpot:hierarchyID "2.3.1.5" ;
+    bpot:pcfID "16817" .
+
+bpot:P16818 a owl:Class ;
+    rdfs:label "Design and manage product data, design, and bill of materials" ;
+    rdfs:comment "Genus bpo:ActOfDataManagement: structuring product data and the BOM (a Directive ICE listing required materials/parts)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BillOfMaterials ],
+        bpot:ActOfDataManagement ;
+    skos:definition "An Act of Data Management that designs and maintains product data, design records, and the engineering, manufacturing, and service bills of materials for a product." ;
+    skos:example "A PLM engineer builds the manufacturing and service BOMs for a new appliance." ;
+    bpot:apqcSourceText "Designing the BOM-Bill of material, manufacturing BOM and Service BOMA bill of materials list for all the raw materials and components/parts used in the producing end product." ;
+    bpot:hierarchyID "2.3.1.8.5" ;
+    bpot:pcfID "16818" .
+
+bpot:P16819 a owl:Class ;
+    rdfs:label "Design for manufacturing" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that devises the application, hardware, mold, casting, mechanical, and electrical aspects of a product so that correct parts can be manufactured, producing a design specification." ;
+    skos:example "An engineer designs injection-mold tooling so a housing can be mass-produced." ;
+    bpot:apqcSourceText "Carrying out the steps necessary to appropriately manufacture correct parts.  This includes designing application, product hardware, mold, casting, mechanical, and electrical aspects of the product." ;
+    bpot:hierarchyID "2.3.1.8.1" ;
+    bpot:pcfID "16819" .
+
+bpot:P16820 a owl:Class ;
+    rdfs:label "Design for product servicing" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that creates a product service view enabling servicing and refurbishing, producing a serviceability design specification." ;
+    skos:example "A designer adds access panels and a service view so a unit can be refurbished." ;
+    bpot:apqcSourceText "Creating product application service view to allow for product servicing and refurbishing." ;
+    bpot:hierarchyID "2.3.1.8.2" ;
+    bpot:pcfID "16820" .
+
+bpot:P16821 a owl:Class ;
+    rdfs:label "Design for re-manufacturing" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that devises how core components are replaced and republished for re-manufacturing, producing a re-manufacturing design specification." ;
+    skos:example "An engineer designs a product so worn cores can be swapped and re-certified." ;
+    bpot:apqcSourceText "Replacing core components and republishing." ;
+    bpot:hierarchyID "2.3.1.8.3" ;
+    bpot:pcfID "16821" .
+
+bpot:P16822 a owl:Class ;
+    rdfs:label "Review product troubleshooting methodology" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): reviewing yields a descriptive judgement, not a design." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:TroubleshootingMethodologyReview ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that reviews the design and approach for troubleshooting a product and produces a troubleshooting methodology review." ;
+    skos:example "A reliability engineer reviews and critiques the product's diagnostic flow." ;
+    bpot:apqcSourceText "Reviewing the design and approach for troubleshooting the product." ;
+    bpot:hierarchyID "2.3.1.8.4" ;
+    bpot:pcfID "16822" .
+
+bpot:P16823 a owl:Class ;
+    rdfs:label "Design for product upgrades" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that devises hardware and software upgrade techniques for a product, producing an upgrade design specification." ;
+    skos:example "An engineer designs a modular slot so the device's firmware and memory can be upgraded." ;
+    bpot:apqcSourceText "Designing hardware and software upgrade techniques." ;
+    bpot:hierarchyID "2.3.1.8.6" ;
+    bpot:pcfID "16823" .
+
+bpot:P16826 a owl:Class ;
+    rdfs:label "Review infringement of patents and copyrights" ;
+    rdfs:comment "Genus is appraisal; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:InfringementAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that has as output an infringement assessment judging patentability and possible infringement, including open-source licensing usage." ;
+    skos:example "Counsel reviews a product for patentability and open-source license compliance and issues an infringement assessment." ;
+    bpot:apqcSourceText "Reviewing activities in regards to patentability and infringement. The usage of Open Source in commercial product development will be reviewed in regard to licensing, community development, etc." ;
+    bpot:hierarchyID "2.1.3.2" ;
+    bpot:pcfID "16826" .
+
+bpot:P17389 a owl:Class ;
+    rdfs:label "Identify product/service bundling opportunities" ;
+    rdfs:comment "Discernment sense (information processing); descriptive output. No precise shared output ICE exists for a 'bundling-opportunity register', so the output is recorded here rather than as a definitional restriction. Input is market opportunity data." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketOpportunityData ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns areas of growth in the product/service mix and produces a representation of the bundling opportunities available to demonstrate value to customers." ;
+    skos:example "A marketing analyst identifies opportunities to bundle complementary products to increase customer value." ;
+    bpot:apqcSourceText "Establishing areas of growth and further development of product/service mix, customization, market based changes, etc., to further demonstrate value to the customer in the competition." ;
+    bpot:hierarchyID "2.2.3.3" ;
+    bpot:pcfID "17389" .
+
+bpot:P19646 a owl:Class ;
+    rdfs:label "Carry out post launch analytics to test the acceptability in the market" ;
+    rdfs:comment "Genus is analysis; output is a Descriptive ICE per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServicePerformanceData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:MarketAcceptanceAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input product/service performance data and has as output a market acceptance analysis of user engagement and post-launch market performance." ;
+    skos:example "Analysts measure engagement metrics after launch and report market acceptance." ;
+    bpot:apqcSourceText "Measuring the performance of marketing once the product/services are launched. This broadly covers measuring user engagement and product's/service's performance in the market." ;
+    bpot:hierarchyID "2.1.2.5.1" ;
+    bpot:pcfID "19646" .
+
+bpot:P19647 a owl:Class ;
+    rdfs:label "Apply data and analytics to review supply chain methodologies" ;
+    rdfs:comment "Genus is analysis; output is a Descriptive ICE per the GOLDEN PRINCIPLE. Gate-F: the output filler was changed from the shared bpo:SupplyChainEffectivenessReview to the distinct bpo:SupplyChainMethodologyAnalysis, so this analysis act (.4) and the sibling appraisal act (.3, bpo:P11425) no longer collapse to the same output class while carrying different act genera. The .4 source is genuine analysis (drawing conclusions from raw data), producing a data-analytics conclusion distinct from the .3 effectiveness verdict." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:SupplyChainPerformanceData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:SupplyChainMethodologyAnalysis ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input supply chain performance data and has as output a supply chain methodology analysis correlating gaps and efficiencies across supply-chain channels." ;
+    skos:example "Analysts examine raw supply-chain data to correlate efficiency gaps across channels." ;
+    bpot:apqcSourceText "Collecting and examining raw data with the purpose of drawing conclusions about that information and correlate gaps and efficiencies to the existing supply chain channels. Apply the information to make better business decisions to the related supply chain methodologies to meet efficiency." ;
+    bpot:hierarchyID "2.1.2.5.4" ;
+    bpot:pcfID "19647" .
+
+bpot:P19669 a owl:Class ;
+    rdfs:label "Generate new product/service concepts" ;
+    rdfs:comment "Output is a product/service concept (Directive ICE), so the act is a formulation, not an analysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19986 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19987 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19988 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19989 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10068 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that produces and defines concepts for new product or service offerings." ;
+    skos:example "A concept team articulates three candidate service concepts for a new market segment." ;
+    bpot:apqcSourceText "Producing and defining ideologies for new product/service offerings." ;
+    bpot:hierarchyID "2.2.2" ;
+    bpot:pcfID "19669" .
+
+bpot:P19986 a owl:Class ;
+    rdfs:label "Gather new product/service ideas and requirements" ;
+    rdfs:comment "Gate-F re-anchor: from bpo:ActOfDataManagement to bpo:ActOfAcquisition. bpo:ActOfDataManagement denotes standing maintenance/governance of a body of ICEs (store, control, update, govern access), reserved here for the 2.1.4 master-data acts. A one-time collect/gather to feed concept generation ('Collecting necessary items, documents, regulatory requirements, etc.') is acquisition/intake -- obtaining an entity the Agent did not previously hold -- not corpus governance; bpo:ActOfDataManagement denoted the wrong information-processing sub-kind." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServiceIdea ],
+        bpot:ActOfAcquisition ;
+    skos:definition "An Act of Acquisition that obtains and assembles the product/service ideas, documents, and regulatory requirements not previously held, for use in concept generation." ;
+    skos:example "An analyst compiles submitted product ideas and the applicable regulatory requirements into a single working set." ;
+    bpot:apqcSourceText "Collecting necessary items, documents, regulatory requirements, etc., based on Generate and define new product/service ideas [19698]" ;
+    bpot:hierarchyID "2.2.2.1" ;
+    bpot:pcfID "19986" .
+
+bpot:P19987 a owl:Class ;
+    rdfs:label "Analyze new product/service ideas and requirements" ;
+    rdfs:comment "Information-processing review of concepts and requirements; descriptive output." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ProductServiceIdea ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that examines collected product/service ideas and requirements and produces an understanding of their suitability." ;
+    skos:example "A review board analyses the gathered ideas against the captured requirements to shortlist viable concepts." ;
+    bpot:apqcSourceText "Assessing and reviewing the concepts and requirements of Generate and define new product/service ideas [19698]" ;
+    bpot:hierarchyID "2.2.2.2" ;
+    bpot:pcfID "19987" .
+
+bpot:P19988 a owl:Class ;
+    rdfs:label "Evaluate new product/service inputs and requirements" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): assesses/reviews inputs and elements (automation, certifications, regulatory requirements) through defined analysis." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirementData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FeasibilityAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that judges the required inputs and necessary elements for a new product or service and produces a feasibility assessment." ;
+    skos:example "An evaluation team appraises the automation, hardware, and certification needs of a candidate product and reports feasibility." ;
+    bpot:apqcSourceText "Assessing and reviewing the required inputs and necessary elements such as automation, technology, hardware installation, regulatory requirements, certifications, etc., for new products/services through defined process and analysis." ;
+    bpot:hierarchyID "2.2.2.3" ;
+    bpot:pcfID "19988" .
+
+bpot:P19989 a owl:Class ;
+    rdfs:label "Formulate new product/service concepts" ;
+    rdfs:comment "Output is a Directive ICE (product/service concept), consistent with a formulation act." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceConcept ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that devises the ideas and elements of a new product or service and produces a product/service concept." ;
+    skos:example "A design team formulates a coherent product concept from a set of candidate ideas." ;
+    bpot:apqcSourceText "Devising ideas and elements necessary for thoughts on new product/service development." ;
+    bpot:hierarchyID "2.2.2.4" ;
+    bpot:pcfID "19989" .
+
+bpot:P19990 a owl:Class ;
+    rdfs:label "Define product/service development requirements" ;
+    rdfs:comment "Output is a Directive requirement specification (definitional). Gate-F: the [has participant some bpo:SupplyChainPartner] existential restriction was REMOVED. The source ('Collaborating with members of the supply chain ... For example ...') is illustrative, not necessary for every instance; the Phase-3 existential-necessity rule forbids promoting typical/exemplary participants to owl:someValuesFrom. Supply-chain collaboration to confirm feasibility is therefore recorded here as a typical participation / competency-question target only, not as a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11331 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16815 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P17389 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that identifies and captures the requirements governing development of a new product or service and produces a product/service requirement specification." ;
+    skos:example "A requirements team works with suppliers to define the availability and reliability requirements that will drive product development." ;
+    bpot:apqcSourceText "Encompassing the identification and capture of new product/service requirements or potential improvements to current products/services. Collaborating with members of the supply chain to ensure the feasibility of what is being defined in the requirements. For example, a product with manufacturing requirements that supply chain cannot currently fulfill requires a corporate decision to either upgrade manufacturing capabilities or abandon the new product. Enterprise-level effects and needs must be considered. Depending on the nature of the final product or service, these requirements are often defined as a set of abilities, such as availability or reliability, that influence product development decisions." ;
+    bpot:hierarchyID "2.2.3" ;
+    bpot:pcfID "19990" .
+
+bpot:P19991 a owl:Class ;
+    rdfs:label "Define basic functional requirements" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the functional operations required of a product or service and produces a product/service requirement specification." ;
+    skos:example "A team specifies the core functions a new appliance must perform." ;
+    bpot:apqcSourceText "Determining the operations of functions related to the product/service in the marketing environment." ;
+    bpot:hierarchyID "2.2.3.1.1" ;
+    bpot:pcfID "19991" .
+
+bpot:P19992 a owl:Class ;
+    rdfs:label "Develop user experience requirements" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ProductServiceRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the steps and tools needed to shape the user experience of a product or service and produces a product/service requirement specification." ;
+    skos:example "A UX team specifies the interaction requirements and tooling for a new application." ;
+    bpot:apqcSourceText "Identifying and creating steps and tools to develop the user experience. " ;
+    bpot:hierarchyID "2.2.3.1.7" ;
+    bpot:pcfID "19992" .
+
+bpot:P19993 a owl:Class ;
+    rdfs:label "Design and prototype products and services" ;
+    rdfs:comment "Models APQC 2.3.1. Children below are process parts via cco:ont00001777. The informational has-output (per D3) is the Directive ICE bpo:DesignSpecification; the built prototype (bpo:ProductServicePrototype, a Material Artifact) is a has-participant of the act, not an ICE output -- section 2.0 is a develop/plan category, so material things participate rather than fill the informational output slot." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:MarketData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:ProductServicePrototype ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10083 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10084 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10085 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16813 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16817 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10086 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10087 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19995 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10088 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10098 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10089 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10090 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10091 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10092 ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that designs and prototypes products and services in light of market data, producing a design specification (informational output) and building a product/service prototype (a material participant)." ;
+    skos:example "A design team sketches a new offering, drafts specifications, and builds a working prototype." ;
+    bpot:apqcSourceText "Sketching and standardizing product and service based on the market. Analyze the data market competitiveness and innovation attained for the product and service development." ;
+    bpot:hierarchyID "2.3.1" ;
+    bpot:pcfID "19993" .
+
+bpot:P19994 a owl:Class ;
+    rdfs:label "Identify requirements for product/service design/development partners" ;
+    rdfs:comment "Gate-F re-anchor: from bpo:ActOfIdentification to bpo:ActOfFormulation. The definitional output is a Directive ICE (bpo:PartnerRequirementSpecification, a directive specification of partner requirements), so a discernment genus disagrees with the directive output (GOLDEN PRINCIPLE). Aligns with the entire bpo:P11331 / 2.2.3.1.x 'Derive ... requirements' family, all anchored at bpo:ActOfFormulation -- a sibling-consistency fix as well." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:PartnerRequirementSpecification ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that determines the essential requirements for design and development collaborators and produces a partner requirement specification." ;
+    skos:example "A team specifies the certifications a co-development supplier must hold." ;
+    bpot:apqcSourceText "Determining essential elements for collaborators involved in blueprint/development of product/service." ;
+    bpot:hierarchyID "2.3.1.1.1" ;
+    bpot:pcfID "19994" .
+
+bpot:P19996 a owl:Class ;
+    rdfs:label "Test market for new or revised products and services" ;
+    rdfs:comment "Anchored to bpo:ActOfAnalysis (information processing): the group's defining output is a descriptive market study. Children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:MarketStudy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10093 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10094 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10095 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10096 ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that tests the market against new or revised offerings and produces a market study used to finalize product/service characteristics and technical requirements." ;
+    skos:example "A marketing team runs focus groups and finalizes the offering's attributes." ;
+    bpot:apqcSourceText "Expanding on the marketplace analysis that took place earlier in the product development lifecycle by testing the market against offerings. The results from this in-depth analysis will help the organization finalize product/service characteristics and technical requirements and also identify any needed changes in the manufacturing and delivery processes that support market delivery. To prepare a detailed market study that accounts for any changes in the global environment, the organization may want to conduct a series of interviews, workshops, and focus groups with potential and existing customers." ;
+    bpot:hierarchyID "2.3.2" ;
+    bpot:pcfID "19996" .
+
+bpot:P19997 a owl:Class ;
+    rdfs:label "Prepare for production/service delivery" ;
+    rdfs:comment "Anchored to bpo:ActOfDevelopment: the group brings production capability into being. Children are process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10099 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10097 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P11418 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P10100 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P19998 ],
+        bpot:ActOfDevelopment ;
+    skos:definition "An Act of Development that devises and installs the plans, procedures, equipment, and processes needed to produce and deliver an organization's new products and services." ;
+    skos:example "An operations group sources equipment and installs the production line for a new product." ;
+    bpot:apqcSourceText "Devising business plans and procedures for manufacturing/operations/production and delivery of services offered by the organization. Further in general terms the total amount of output that the manufacturing department is responsible to produce for each period." ;
+    bpot:hierarchyID "2.3.3" ;
+    bpot:pcfID "19997" .
+
+bpot:P19998 a owl:Class ;
+    rdfs:label "Validate launch procedures" ;
+    rdfs:comment "Genus bpo:ActOfVerification (under Act of Appraisal): the text says 'verify ... measures/processes'. Input is the launch plan." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:LaunchPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:FeasibilityAssessment ],
+        bpot:ActOfVerification ;
+    skos:definition "An Act of Verification that checks the measures, processes, and techniques involved in introducing a product or service and produces a feasibility assessment of the launch procedures." ;
+    skos:example "A launch team verifies the go-to-market procedures and tooling before release." ;
+    bpot:apqcSourceText "Verifying the measures/processes/techniques through systems and tools involved in the introduction of products and services." ;
+    bpot:hierarchyID "2.3.3.5" ;
+    bpot:pcfID "19998" .
+
+bpot:PerformanceIndicatorSpecification a owl:Class ;
+    rdfs:label "Performance Indicator Specification" ;
+    rdfs:comment "Output of 2.1.2.4 and 2.3.1.13. Directive: it stipulates how performance is to be measured." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the parameters and indicators used to measure product/service or development performance." .
+
+bpot:ProductServiceIdea a owl:Class ;
+    rdfs:label "Product/Service Idea" ;
+    rdfs:comment "Descriptive: an idea describes a possible offering; once a committed concept/plan is formed it is the Directive bpo:ProductServiceConcept (section 5)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a proposed new or improved product or service offering at the ideation stage." .
+
+bpot:ProductionEquipment a owl:Class ;
+    rdfs:label "Production Equipment" ;
+    rdfs:comment "APQC 'machinery - hardware and software - needed to arrange production lines' (2.3.3.1)." ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact that is machinery or tooling used to manufacture or deliver a product or service." .
+
+bpot:QualityTarget a owl:Class ;
+    rdfs:label "Quality Target" ;
+    rdfs:comment "Output of 2.1.1.4; reused as input to 2.3.1.11." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the intended quality standards for a product or service portfolio." .
+
+bpot:RegulatoryAuthority a owl:Class ;
+    rdfs:label "Regulatory Authority" ;
+    rdfs:comment "APQC 'sovereign or multinational authorities', 'appropriate regulatory body/agencies' (group 2.1.3)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:RegulatoryAuthorityRole ],
+        cco:ont00001180 ;
+    skos:definition "An Organization that bears a regulatory authority role in relation to a focal organization." .
+
+bpot:ResearchAndDevelopmentPersonnel a owl:Class ;
+    rdfs:label "Research and Development Personnel" ;
+    rdfs:comment "APQC 'research division(s)', 'R&D function' (group 2.2)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001954 ;
+            owl:someValuesFrom bpot:ResearchAndDevelopmentCapability ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:ResearchAndDevelopmentRole ],
+        cco:ont00001017 ;
+    skos:definition "An Agent that has a research-and-development capability and bears a research-and-development role." .
+
+bpot:SupplyChainPartner a owl:Class ;
+    rdfs:label "Supply Chain Partner" ;
+    rdfs:comment "APQC 'suppliers, vendors, contractors, subcontractors, distribution partners'. Use cco:Agent for individual partners." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:SupplyChainPartnerRole ],
+        cco:ont00001180 ;
+    skos:definition "An Organization that bears a supply chain partner role in relation to a focal organization." .
+
+bpot:SupplyChainPerformanceData a owl:Class ;
+    rdfs:label "Supply Chain Performance Data" ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the performance and effectiveness of a supply chain and distribution network." .
+
+bpot:CustomerFeedback skos:definition "A Descriptive Information Content Entity that describes responses, opinions, and satisfaction reported by customers about a product or service." .
+
+bpot:MarketOpportunityData a owl:Class ;
+    rdfs:label "Market Opportunity Data" ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes opportunities, demand, and gaps present in a market." .
+
+bpot:MarketStudy a owl:Class ;
+    rdfs:label "Market Study" ;
+    rdfs:comment "Output of 2.3.2.1 (prepare detailed market study)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:Market ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a detailed analysis of a market's competition, size, trends, segments, channels, and profitability." .
+
+bpot:P11418 a owl:Class ;
+    rdfs:label "Request engineering/process change" ;
+    rdfs:comment "Genus bpo:ActOfFormulation (under Act of Planning): the ECO is a prescriptive directive. Performance data from monitoring (11417) is a typical, non-definitional input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:EngineeringChangeOrder ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that requests changes to production or delivery operations by issuing a formal engineering change order." ;
+    skos:example "An engineer files an ECO to repair tooling and optimize an assembly step." ;
+    bpot:apqcSourceText "Requesting changes in the production and/or delivery operations for processing the new or revised products/services. Rectify any problems identified in the manufacturing or delivery processes (through Monitor production runs [11417]). Seek changes in components, repair machinery, optimize production lines, and tweak factory assemblies through a formal notice to the concerned division, known as an engineering change order." ;
+    bpot:hierarchyID "2.3.3.3" ;
+    bpot:pcfID "11418" .
+
+bpot:P19995 a owl:Class ;
+    rdfs:label "Design products/services" ;
+    rdfs:comment "Genus bpo:ActOfDesign. The six APQC tasks below are facet-specific design parts via cco:ont00001777." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DesignSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16819 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16820 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16821 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16822 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16818 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P16823 ],
+        bpot:ActOfDesign ;
+    skos:definition "An Act of Design that creates a customer-focused sketch and design of a product or service and produces a design specification." ;
+    skos:example "A designer produces a customer-focused product sketch and detailed design." ;
+    bpot:apqcSourceText "Creating a sketch of the customer focused product/service in Develop and Manage Products and Services [10003]." ;
+    bpot:hierarchyID "2.3.1.8" ;
+    bpot:pcfID "19995" .
+
+bpot:ProductServiceCharacteristicsSpecification a owl:Class ;
+    rdfs:label "Product/Service Characteristics Specification" ;
+    rdfs:comment "Output of 2.3.2.3 (finalize characteristics) and managed at 2.1.4.4. Directive: it fixes what the offering must be." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the finalized attributes and characteristics a new product or service is to have." .
+
+bpot:ProductServiceModificationPlan a owl:Class ;
+    rdfs:label "Product/Service Modification Plan" ;
+    rdfs:comment "Output of 2.1.1.6, 2.2.2.5, and 2.3.3.2." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a programmatic procedure for changing, designing, processing, and delivering products or services." .
+
+bpot:ProductServicePerformanceData a owl:Class ;
+    rdfs:label "Product/Service Performance Data" ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes the performance of existing products or services, including measures of profitability, market penetration, and value delivered." .
+
+bpot:RegulatoryRecord a owl:Class ;
+    rdfs:label "Regulatory Record" ;
+    rdfs:comment "Maintained/updated at 2.1.3.5.2-.3 by bpo:ActOfDataManagement instances." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that records information maintained for, or submitted to, a regulatory authority." .
+
+bpot:SeniorManagement rdfs:comment "APQC 'senior management executives'. cco:Agent (not bare material entity) excludes non-agentive participants." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000196 ;
+            owl:someValuesFrom bpot:SeniorManagementRole ] ;
+    skos:definition "An Agent that bears a senior management role." .
+
+bpot:TechnologyData rdfs:comment "Reused naming from the reference module; minted here for section 2.0." ;
+    skos:definition "A Descriptive Information Content Entity that describes deployed, emerging, and disruptive technologies relevant to product/service development." .
+
+bpot:TechnicalAssessment a owl:Class ;
+    rdfs:label "Technical Assessment" ;
+    rdfs:comment "Output of 2.3.1.2 / revisited in 2.3.2.4." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of an organization's technical capacity and know-how to develop a product or service." .
+
+bpot:FeasibilityAssessment a owl:Class ;
+    rdfs:label "Feasibility Assessment" ;
+    rdfs:comment "Output of feasibility/technical-assessment acts (2.2.1.3, 2.3.1.2, 2.3.2.4)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of whether a proposed technology, concept, or project can practicably be realized." .
+
+bpot:ProductServicePrototype a owl:Class ;
+    rdfs:label "Product/Service Prototype" ;
+    rdfs:comment "Material output of 2.3.1.9 (build prototypes) and material input to in-house testing (2.3.1.12). Anchored under cco:ont00000995 (Material Artifact). SCOPED to the material prototype -- a built physical instance used as a participant in build/test acts. Where a service prototype denotes a process design, mock workflow, or specification, model that as the appropriate ICE (Directive/Descriptive), not as this Material Artifact." ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact that is an early built instance of a prospective product or service produced to demonstrate and test its design." .
+
+bpot:RegulatoryRequirementData a owl:Class ;
+    rdfs:label "Regulatory Requirement Data" ;
+    rdfs:comment "Descriptive: it states which requirements obtain. The organization's own derived requirement specifications are Directive (see section 5)." ;
+    rdfs:subClassOf cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes public-policy, regulatory, and compliance requirements applicable to a product or service." .
+
+bpot:ProductServiceConcept a owl:Class ;
+    rdfs:label "Product/Service Concept" ;
+    rdfs:comment "Directive: a settled concept fixes a course of development (formulated at 2.2.2.4, selected at 2.1.1.3). Distinct from the earlier Descriptive bpo:ProductServiceIdea." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes a defined, committed concept for a new or revised product or service offering." .
+
+bpot:DesignSpecification a owl:Class ;
+    rdfs:label "Design Specification" ;
+    rdfs:comment "Output of 2.3.1.3, 2.3.1.4 (UX), documented at 2.3.1.6, designed against at 2.3.1.8, and managed at 2.1.4.5. Directive: a specification prescribes." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the technical, quality, ergonomic, safety, and servicing requirements to be met in the design of a product or service." .
+
+bpot:ProductServiceOffering a owl:Class ;
+    rdfs:label "Product/Service Offering" ;
+    rdfs:comment "Anchored at obo:BFO_0000001 (Entity) deliberately: APQC 'product/service' spans material products (continuants) and services (occurrents/dispositions), so no narrower common genus is asserted. Used as the subject filler of 'is about' and as the developed output of group 2.3." ;
+    rdfs:subClassOf obo:BFO_0000001 ;
+    skos:definition "An Entity that is a product or service offered, or proposed to be offered, by an organization to its customers." .
+
+bpot:ProductServiceRequirementSpecification a owl:Class ;
+    rdfs:label "Product/Service Requirement Specification" ;
+    rdfs:comment "Output of 2.2.3.1 and its derive-requirement tasks (2.2.3.1.1-.8), and documented at 2.3.1.6. Directive: requirements prescribe what must hold." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:ProductServiceOffering ],
+        cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the functional, interoperability, safety, security, regulatory-compliance, and experience requirements a product or service must satisfy." .
+

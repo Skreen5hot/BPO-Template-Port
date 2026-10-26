@@ -3,27 +3,181 @@
   "generated_by": "tools/ontology/corpus_digest.py",
   "merged": {
     "blank_nodes": {
-      "blank_nodes": 0,
-      "distinct_shapes": 0,
-      "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "triples_touching": 0
+      "blank_nodes": 4381,
+      "distinct_shapes": 4831,
+      "shape_sha256": "7e67f2d4b8054cb166a435cd9b3c695d103c5ca5b951dcbd0e7405f6ae77fb37",
+      "triples_touching": 17524
     },
-    "ground_sha256": "0e77a28b783cd699b0bf8f4fd21a503eb443832dc05028999fc11dbf69e8f64d",
-    "ground_triples": 14,
-    "triples": 14
+    "ground_sha256": "6ee5618238e68e56f9f4b89894b5141ba0bdf8807b84e027b3efbf1d03c74b03",
+    "ground_triples": 45153,
+    "triples": 62677
   },
   "note": "Ground triples and blank-node shape together cover every triple. Blank nodes are renamed by every parse, so their identities are erased and only their structure is digested.",
   "per_file": {
     "ontology/bpot.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 5,
+        "distinct_shapes": 12,
+        "shape_sha256": "dbeb84378348a817e85d01c7da9c89eef0f684f56586a24a8b618027d95e9ce2",
+        "triples_touching": 20
+      },
+      "ground_sha256": "0f66a06d9dc971fde09489051f417a15328bc5ecea613412b8884d9495d7a178",
+      "ground_triples": 351,
+      "triples": 371
+    },
+    "ontology/catalog.ttl": {
       "blank_nodes": {
         "blank_nodes": 0,
         "distinct_shapes": 0,
         "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "triples_touching": 0
       },
-      "ground_sha256": "c9a565e5c5cc9da2d34570f0434b3aea02cd298d0ae41c820c6a81ab084f6bc2",
-      "ground_triples": 7,
-      "triples": 7
+      "ground_sha256": "6b6bdac75932604ac8614a54ca33c671239bebceb4a4e062ab03eecc37b2a718",
+      "ground_triples": 19236,
+      "triples": 19236
+    },
+    "ontology/sections/pcf_1.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 363,
+        "distinct_shapes": 377,
+        "shape_sha256": "abce8704ea3a11ed162f63b41467db1696f367db106e705ba03435c55b00e83e",
+        "triples_touching": 1452
+      },
+      "ground_sha256": "c89131487b1a51681d73fde65d5d67cba8f971d4421336406069dbe73eac9542",
+      "ground_triples": 1815,
+      "triples": 3267
+    },
+    "ontology/sections/pcf_10.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 188,
+        "distinct_shapes": 255,
+        "shape_sha256": "16e13de261ed0e578f412c755223a7034183abdb5c8efe488160f4a887b96434",
+        "triples_touching": 752
+      },
+      "ground_sha256": "59880fdb00648a29c951d0a1814da525eb861069e7beefbba7929f08d7fdc58e",
+      "ground_triples": 1214,
+      "triples": 1966
+    },
+    "ontology/sections/pcf_11.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 107,
+        "distinct_shapes": 157,
+        "shape_sha256": "fa18540557b38d722f6908e62db157ccd9e218996cae8ba7b84ea986996d814c",
+        "triples_touching": 428
+      },
+      "ground_sha256": "f4430b94d29bde00d5d38cd25703566721724173549e90c4c19ba063c68bf31c",
+      "ground_triples": 771,
+      "triples": 1199
+    },
+    "ontology/sections/pcf_12.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 122,
+        "distinct_shapes": 176,
+        "shape_sha256": "5def14c02e4db9e14328384fdf81c6add9d024d6083e2c7b4834161d60f1b116",
+        "triples_touching": 488
+      },
+      "ground_sha256": "e785ee1fde666bd6e596cdbae1cd7fb9d90b02ebd0daf7924720b9699023d84c",
+      "ground_triples": 873,
+      "triples": 1361
+    },
+    "ontology/sections/pcf_13.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 456,
+        "distinct_shapes": 579,
+        "shape_sha256": "3296cdb4953eb195ee8f2d46895725028ae5d1ecf1e85b7a6bdaf14ac1a884a2",
+        "triples_touching": 1824
+      },
+      "ground_sha256": "cd88e8f678a5d8f7e0bf4aee38eb744ef2a2fcb82940796e42c0c6c546409833",
+      "ground_triples": 2913,
+      "triples": 4737
+    },
+    "ontology/sections/pcf_2.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 234,
+        "distinct_shapes": 274,
+        "shape_sha256": "2696537a39d5796e6a997b9cf58ac1fd170f30ba979673a666897dc5f296d07f",
+        "triples_touching": 936
+      },
+      "ground_sha256": "005b0fb1ac2a6dbe45bfc0bccf89324ee3df82e59112dadd0b8d7a01111514ac",
+      "ground_triples": 1328,
+      "triples": 2264
+    },
+    "ontology/sections/pcf_3.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 473,
+        "distinct_shapes": 520,
+        "shape_sha256": "48812a3a39d0ca001878eb929bf4c95fd8ee1ce526287896ff8d2d2eb9b00c1c",
+        "triples_touching": 1892
+      },
+      "ground_sha256": "8e22c801b21252e624faffb94ccd73badea98d2003bb646a3f2cf2ba738de334",
+      "ground_triples": 2524,
+      "triples": 4416
+    },
+    "ontology/sections/pcf_4.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 338,
+        "distinct_shapes": 419,
+        "shape_sha256": "015471a4d9ce8e384ec5c872d39ee82df5d207e8fb7c8d521c62c3f1cdc4f410",
+        "triples_touching": 1352
+      },
+      "ground_sha256": "ba1b61f7cf0ea40927a8c6d40605b83c07e720ce19099e26b484d75e09a699d7",
+      "ground_triples": 1931,
+      "triples": 3283
+    },
+    "ontology/sections/pcf_5.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 163,
+        "distinct_shapes": 194,
+        "shape_sha256": "df6a6f9017b6f392b7964b116ac7a913849cee43534d1b43f7f8d33e6f562d85",
+        "triples_touching": 652
+      },
+      "ground_sha256": "0d9ba0dcfc247c567062afe9bdbe54a5e46e9f5a647f90c2c1689f45128ac0dc",
+      "ground_triples": 951,
+      "triples": 1603
+    },
+    "ontology/sections/pcf_6.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 277,
+        "distinct_shapes": 305,
+        "shape_sha256": "c5894bd297610c0140fcdf7a57e0cd6c08ddc6c9eb83ccb48b09e9002f323263",
+        "triples_touching": 1108
+      },
+      "ground_sha256": "96c549fbdc8728dc5a77eb75d46fa195030e7a3d218aa7fa6afa342a4ece631b",
+      "ground_triples": 1430,
+      "triples": 2538
+    },
+    "ontology/sections/pcf_7.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 341,
+        "distinct_shapes": 371,
+        "shape_sha256": "1e1dcae28b9cd28c6a1ae0fd5baae24dd447c1613510cf7353c11871be5d2f58",
+        "triples_touching": 1364
+      },
+      "ground_sha256": "a32476a2409c476b0662f1e5b904ef71d15efd4e88c5151bc5c8b761db976383",
+      "ground_triples": 1894,
+      "triples": 3258
+    },
+    "ontology/sections/pcf_8.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 720,
+        "distinct_shapes": 759,
+        "shape_sha256": "2ecf02c6bada6a1daf324de7c30f931edaf42fdee37f93620f240e5882dc5652",
+        "triples_touching": 2880
+      },
+      "ground_sha256": "a6634da4187198f313b31a88c66de6f4b01b052170fdcd1e6fbad0ffd95866a8",
+      "ground_triples": 3819,
+      "triples": 6699
+    },
+    "ontology/sections/pcf_9.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 594,
+        "distinct_shapes": 611,
+        "shape_sha256": "9018ac27ec7aec30c3f5c78758a5bf05113530299e1b3b0bf59a2b294e58dc02",
+        "triples_touching": 2376
+      },
+      "ground_sha256": "8435421a943d29d050e286cd6b1ce40e34352b7d518ba7136c836e8c9efccb3b",
+      "ground_triples": 3121,
+      "triples": 5497
     },
     "ontology/vocabulary.ttl": {
       "blank_nodes": {
@@ -35,14 +189,40 @@
       "ground_sha256": "8b462508f40f410f699930d3d89ef892b5058cf7a9f17f485086a79d3cb51849",
       "ground_triples": 7,
       "triples": 7
+    },
+    "ontology/wiring.ttl": {
+      "blank_nodes": {
+        "blank_nodes": 0,
+        "distinct_shapes": 0,
+        "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "triples_touching": 0
+      },
+      "ground_sha256": "d1749aa240bc21e2a40cda8288f339540784b3ad75ce1e47dda316d24ce70031",
+      "ground_triples": 975,
+      "triples": 975
     }
   },
   "scope": {
-    "files": 2,
+    "files": 17,
     "from": "config/repository-layout.yaml, roles ontology-module and ontology-module-set",
     "paths": [
       "ontology/bpot.ttl",
-      "ontology/vocabulary.ttl"
+      "ontology/catalog.ttl",
+      "ontology/sections/pcf_1.ttl",
+      "ontology/sections/pcf_10.ttl",
+      "ontology/sections/pcf_11.ttl",
+      "ontology/sections/pcf_12.ttl",
+      "ontology/sections/pcf_13.ttl",
+      "ontology/sections/pcf_2.ttl",
+      "ontology/sections/pcf_3.ttl",
+      "ontology/sections/pcf_4.ttl",
+      "ontology/sections/pcf_5.ttl",
+      "ontology/sections/pcf_6.ttl",
+      "ontology/sections/pcf_7.ttl",
+      "ontology/sections/pcf_8.ttl",
+      "ontology/sections/pcf_9.ttl",
+      "ontology/vocabulary.ttl",
+      "ontology/wiring.ttl"
     ]
   }
 }

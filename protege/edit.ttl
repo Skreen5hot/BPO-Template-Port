@@ -11,7 +11,22 @@
 <https://fandaws.com/ontology/bpot/edit> a owl:Ontology ;
     rdfs:comment "Protégé entry point for Business Process Ontology: imports every module and every vendored file. Generated; declares no term." ;
     owl:imports <https://fandaws.com/ontology/bpot> ;
+    owl:imports <https://fandaws.com/ontology/bpot/catalog> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_1> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_10> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_11> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_12> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_13> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_2> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_3> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_4> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_5> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_6> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_7> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_8> ;
+    owl:imports <https://fandaws.com/ontology/bpot/sections/pcf_9> ;
     owl:imports <https://fandaws.com/ontology/bpot/vendor/bfo-core-extract> ;
     owl:imports <https://fandaws.com/ontology/bpot/vendor/bfo-disjointness> ;
     owl:imports <https://fandaws.com/ontology/bpot/vendor/cco-extract> ;
-    owl:imports <https://fandaws.com/ontology/bpot/vocabulary> .
+    owl:imports <https://fandaws.com/ontology/bpot/vocabulary> ;
+    owl:imports <https://fandaws.com/ontology/bpot/wiring> .

@@ -1,0 +1,1594 @@
+@prefix bpot: <https://fandaws.com/ontology/bpot#> .
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bpot:AccountantRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:AssetManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:BoardOfDirectorsRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:CultivateAnalystRelations bpot:requiresRole bpot:FinancialAnalystRole .
+
+bpot:CultivateLenderRelations bpot:requiresRole bpot:LenderRole .
+
+bpot:DataAnalystRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:EHSManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ExecutiveManagementRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ITRiskOwnerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:KnowledgeManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:LobbyistRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:LogisticsServiceProviderRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:MaintenanceTechnicianRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:P10024 bpot:requiresRole bpot:SeniorManagerRole .
+
+bpot:P10030 bpot:requiresRole bpot:SeniorManagerRole .
+
+bpot:P10035 bpot:requiresRole bpot:StrategyPersonnelRole .
+
+bpot:P10036 bpot:requiresRole bpot:StrategyPersonnelRole .
+
+bpot:P10046 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P10052 bpot:requiresRole bpot:StrategyPersonnelRole .
+
+bpot:P10059 bpot:requiresRole bpot:SeniorManagerRole .
+
+bpot:P10066 bpot:requiresRole bpot:SeniorManagementRole .
+
+bpot:P10073 bpot:requiresRole bpot:SeniorManagementRole .
+
+bpot:P10085 bpot:requiresRole bpot:DesignStaffRole .
+
+bpot:P10087 bpot:requiresRole bpot:RegulatoryAuthorityRole .
+
+bpot:P10088 bpot:requiresRole bpot:DesignStaffRole .
+
+bpot:P10092 bpot:requiresRole bpot:SupplyChainPartnerRole .
+
+bpot:P10094 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10099 bpot:requiresRole bpot:SupplyChainPartnerRole .
+
+bpot:P10102 bpot:requiresRole bpot:MarketingProfessionalRole .
+
+bpot:P10190 bpot:requiresRole bpot:SalesProfessionalRole .
+
+bpot:P10211 bpot:requiresRole bpot:SalesPartnerRole .
+
+bpot:P10236 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10237 bpot:requiresRole bpot:ManagerRole .
+
+bpot:P10243 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10265 bpot:requiresRole bpot:CarrierRole .
+
+bpot:P10287 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10290 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10319 bpot:requiresRole bpot:ManagerRole .
+
+bpot:P10331 bpot:requiresRole bpot:FieldServiceAgentRole .
+
+bpot:P10336 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10419 bpot:requiresRole bpot:HumanResourcesProfessionalRole .
+
+bpot:P10422 bpot:requiresRole bpot:EmployeeRole,
+        bpot:ManagerRole .
+
+bpot:P10436 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P10451 bpot:requiresRole bpot:HiringManagerRole .
+
+bpot:P10457 bpot:requiresRole bpot:JobCandidateRole .
+
+bpot:P10458 bpot:requiresRole bpot:JobCandidateRole .
+
+bpot:P10460 bpot:requiresRole bpot:JobCandidateRole .
+
+bpot:P10464 bpot:requiresRole bpot:JobCandidateRole .
+
+bpot:P10465 bpot:requiresRole bpot:JobCandidateRole .
+
+bpot:P10503 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10504 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10505 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10508 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10512 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10513 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10514 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10515 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10516 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10517 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10520 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10522 bpot:requiresRole bpot:HumanResourcesProfessionalRole .
+
+bpot:P10523 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10530 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10757 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10796 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10798 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10801 bpot:requiresRole bpot:BankingPartnerRole .
+
+bpot:P10806 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10811 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10813 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10862 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10865 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10867 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10868 bpot:requiresRole bpot:RegulatorRole .
+
+bpot:P10876 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10877 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P10882 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10883 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10902 bpot:requiresRole bpot:SubsidiaryRole .
+
+bpot:P10903 bpot:requiresRole bpot:SubsidiaryRole .
+
+bpot:P10904 bpot:requiresRole bpot:SubsidiaryRole .
+
+bpot:P10907 bpot:requiresRole bpot:SubsidiaryRole .
+
+bpot:P10923 bpot:requiresRole bpot:AuditorRole .
+
+bpot:P10924 bpot:requiresRole bpot:RegulatorRole .
+
+bpot:P10925 bpot:requiresRole bpot:CustomerRole,
+        bpot:SupplierRole .
+
+bpot:P10926 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10936 bpot:requiresRole bpot:RegulatorRole .
+
+bpot:P10962 bpot:requiresRole bpot:ConstructionContractorRole .
+
+bpot:P11037 bpot:requiresRole bpot:ShareholderRole .
+
+bpot:P11051 bpot:requiresRole bpot:AdvisorRole .
+
+bpot:P11054 bpot:requiresRole bpot:ComplianceOfficerRole .
+
+bpot:P11057 bpot:requiresRole bpot:OutsideCounselRole .
+
+bpot:P11059 bpot:requiresRole bpot:OutsideCounselRole .
+
+bpot:P11060 bpot:requiresRole bpot:AdvisorRole .
+
+bpot:P11132 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P11140 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P11141 bpot:requiresRole bpot:ChangeChampionRole .
+
+bpot:P11148 bpot:requiresRole bpot:ChangeManagerRole .
+
+bpot:P11182 bpot:requiresRole bpot:TraineeRole .
+
+bpot:P11195 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P11236 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P11238 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P11239 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P11241 bpot:requiresRole bpot:ProductManagerRole .
+
+bpot:P11687 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P12132 bpot:requiresRole bpot:ServiceDeliveryPersonnelRole .
+
+bpot:P12133 bpot:requiresRole bpot:ServiceDeliveryPersonnelRole .
+
+bpot:P12677 bpot:requiresRole bpot:FieldServiceAgentRole .
+
+bpot:P12722 bpot:requiresRole bpot:RegulatoryAuthorityRole .
+
+bpot:P12870 bpot:requiresRole bpot:ExecutiveRole .
+
+bpot:P12872 bpot:requiresRole bpot:AdvisorRole .
+
+bpot:P12873 bpot:requiresRole bpot:AdvisorRole .
+
+bpot:P12874 bpot:requiresRole bpot:GovernmentBodyRole .
+
+bpot:P12875 bpot:requiresRole bpot:RegulatoryAuthorityRole .
+
+bpot:P12876 bpot:requiresRole bpot:AuditorRole .
+
+bpot:P12878 bpot:requiresRole bpot:QuasiGovernmentBodyRole .
+
+bpot:P12879 bpot:requiresRole bpot:TradeOrIndustryGroupRole .
+
+bpot:P12881 bpot:requiresRole bpot:TradeOrIndustryGroupRole .
+
+bpot:P14094 bpot:requiresRole bpot:RegulatorRole .
+
+bpot:P16380 bpot:requiresRole bpot:BPMGovernanceLeaderRole .
+
+bpot:P16382 bpot:requiresRole bpot:ProcessOwnerRole .
+
+bpot:P16391 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P16393 bpot:requiresRole bpot:ProcessOwnerRole .
+
+bpot:P16397 bpot:requiresRole bpot:ProcessOwnerRole .
+
+bpot:P17055 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P17505 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P17507 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P17509 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P18126 bpot:requiresRole bpot:ProductManagerRole .
+
+bpot:P18641 bpot:requiresRole bpot:SalesPartnerRole .
+
+bpot:P18916 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P18925 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P18926 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P19221 bpot:requiresRole bpot:RegulatoryAuthorityRole .
+
+bpot:P19586 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P19587 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P19977 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P20012 bpot:requiresRole bpot:SalesProfessionalRole .
+
+bpot:P20021 bpot:requiresRole bpot:SalesPartnerRole .
+
+bpot:P20031 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20044 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20054 bpot:requiresRole bpot:DeliveryPartnerRole,
+        bpot:SupplierRole .
+
+bpot:P20057 bpot:requiresRole bpot:ServiceDeliveryPersonnelRole .
+
+bpot:P20060 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20065 bpot:requiresRole bpot:ServiceDeliveryPersonnelRole .
+
+bpot:P20081 bpot:requiresRole bpot:ServiceDeliveryPersonnelRole .
+
+bpot:P20091 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20103 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20108 bpot:requiresRole bpot:SupplierRole .
+
+bpot:P20117 bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20126 bpot:requiresRole bpot:CertificationAuthorityRole .
+
+bpot:P20145 bpot:requiresRole bpot:ChangeChampionRole .
+
+bpot:P20610 bpot:requiresRole bpot:ITCustomerRole .
+
+bpot:P20638 bpot:requiresRole bpot:ITCustomerRole .
+
+bpot:P20670 bpot:requiresRole bpot:EnterpriseArchitectRole .
+
+bpot:P20671 bpot:requiresRole bpot:EnterpriseArchitectRole .
+
+bpot:P20753 bpot:requiresRole bpot:ITServiceProviderRole .
+
+bpot:P20755 bpot:requiresRole bpot:ITServiceProviderRole .
+
+bpot:P20756 bpot:requiresRole bpot:ITUserRole .
+
+bpot:P20759 bpot:requiresRole bpot:ITUserRole .
+
+bpot:P20902 bpot:requiresRole bpot:ITServiceProviderRole .
+
+bpot:P20970 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P21440 bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P21442 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P21450 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P21455 bpot:requiresRole bpot:ProgramManagerRole,
+        bpot:StakeholderRole .
+
+bpot:P21599 bpot:requiresRole bpot:StakeholderRole .
+
+bpot:PortfolioManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ProfessionalServicesProviderRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:ProjectManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:QualityManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:RecruitmentVendorRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:RiskManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:SustainabilityManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:TrainerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:TreasurerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:WarrantyAdministratorRole rdfs:subClassOf cco:ont00000984 .
+
+<https://fandaws.com/ontology/bpot/wiring> a owl:Ontology ;
+    dcterms:creator "Aaron Damiano" ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://fandaws.com/ontology/bpo/capabilities/wiring> ;
+    dcterms:title "Business Process Ontology -- capability and role wiring" ;
+    rdfs:comment "Which capabilities and roles each process requires, and which processes each capability enables. Generated in BPO from its judgment tables; an overlay on the section modules." ;
+    owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/wiring.ttl> ;
+    owl:versionInfo "0.0.0" .
+
+bpot:AnalystRelationsManagementCapability bpot:enablesProcess bpot:P11036 .
+
+bpot:ApplicantDataManagementCapability bpot:enablesProcess bpot:P20124 .
+
+bpot:BPMGovernanceLeaderRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:BenchmarkingCapability bpot:enablesProcess bpot:P21584 .
+
+bpot:BusinessModelGovernanceCapability bpot:enablesProcess bpot:P20955 .
+
+bpot:CarrierRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:CertificationAuthorityRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:ChangeManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:CompetitiveAnalysisCapability bpot:enablesProcess bpot:P19945 .
+
+bpot:CompetitiveIntelligenceAnalystRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ComplianceManagementCapability bpot:enablesProcess bpot:P17468 .
+
+bpot:ComplianceOfficerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ConstructionContractorRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:CustomerServiceManagementCapability bpot:enablesProcess bpot:P20595 .
+
+bpot:DefaultAccountManagementCapability bpot:enablesProcess bpot:P14007 .
+
+bpot:DesignCapability bpot:enablesProcess bpot:P19995 .
+
+bpot:EmployeeReferralProgramCapability bpot:enablesProcess bpot:P10440 .
+
+bpot:ExecutiveRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:FacilityManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:FinancialAnalystRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:FleetManagementCapability bpot:enablesProcess bpot:P10341 .
+
+bpot:HiringManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:HumanResourcesInformationSystemCapability bpot:enablesProcess bpot:ActOfAdministration .
+
+bpot:ITCustomerRelationshipManagementCapability bpot:enablesProcess bpot:P20608 .
+
+bpot:ITInterdependencyManagementCapability bpot:enablesProcess bpot:P20690 .
+
+bpot:ITRollBackManagementCapability bpot:enablesProcess bpot:P20857 .
+
+bpot:ITServiceManagementCapability bpot:enablesProcess bpot:P20632 .
+
+bpot:ITStrategicAlignmentMaintenanceCapability bpot:enablesProcess bpot:P20657 .
+
+bpot:ITStrategicIntelligenceCapability bpot:enablesProcess bpot:P20655 .
+
+bpot:ImportExportControlCapability bpot:enablesProcess bpot:P17059 .
+
+bpot:InvestorRelationsCapability bpot:enablesProcess bpot:P11010 .
+
+bpot:JournalistRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:LenderRelationsManagementCapability bpot:enablesProcess bpot:P11035 .
+
+bpot:ManageCustomerRelationships bpot:requiresCapability bpot:SalesManagementCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:MarketingProfessionalRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:P10020 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P10037 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P10039 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P10043 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P10045 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P10063 bpot:requiresCapability bpot:ProductServicePortfolioManagementCapability .
+
+bpot:P10070 bpot:requiresCapability bpot:ResearchAndDevelopmentCapability ;
+    bpot:requiresRole bpot:ResearchAndDevelopmentRole .
+
+bpot:P10071 bpot:requiresCapability bpot:ResearchAndDevelopmentCapability ;
+    bpot:requiresRole bpot:ResearchAndDevelopmentRole .
+
+bpot:P10072 bpot:requiresCapability bpot:ResearchAndDevelopmentCapability ;
+    bpot:requiresRole bpot:SeniorManagementRole .
+
+bpot:P10074 bpot:requiresCapability bpot:ProductServicePortfolioManagementCapability .
+
+bpot:P10077 bpot:requiresCapability bpot:ProductServiceLifecycleManagementCapability .
+
+bpot:P10078 bpot:requiresCapability bpot:ProductServiceLifecycleManagementCapability .
+
+bpot:P10101 bpot:requiresCapability bpot:MarketIntelligenceCapability .
+
+bpot:P10106 bpot:requiresCapability bpot:MarketIntelligenceCapability .
+
+bpot:P10107 bpot:requiresCapability bpot:MarketIntelligenceCapability .
+
+bpot:P10130 bpot:requiresCapability bpot:PartnerManagementCapability .
+
+bpot:P10159 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10160 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10163 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P10164 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P10165 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P10166 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P10167 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10168 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10169 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10170 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10171 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10172 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10178 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10179 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10180 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10181 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P10187 bpot:requiresCapability bpot:PartnerManagementCapability .
+
+bpot:P10304 bpot:requiresCapability bpot:RawMaterialInventoryManagementCapability .
+
+bpot:P10390 bpot:requiresCapability bpot:CustomerServiceWorkforceManagementCapability .
+
+bpot:P10391 bpot:requiresCapability bpot:CustomerServiceWorkforceManagementCapability .
+
+bpot:P10392 bpot:requiresCapability bpot:CustomerServiceWorkforceManagementCapability .
+
+bpot:P10393 bpot:requiresCapability bpot:CustomerServiceWorkforceManagementCapability ;
+    bpot:requiresRole bpot:CustomerServiceRepresentativeRole .
+
+bpot:P10495 bpot:requiresCapability bpot:CompensationAndBenefitsCapability ;
+    bpot:requiresRole bpot:HumanResourcesProfessionalRole .
+
+bpot:P10497 bpot:requiresCapability bpot:CompensationAndBenefitsCapability .
+
+bpot:P10529 bpot:requiresCapability bpot:EmployeeCommunicationCapability .
+
+bpot:P10532 bpot:requiresCapability bpot:EmployeeCommunicationCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10732 bpot:requiresCapability bpot:FinancialManagementCapability .
+
+bpot:P10733 bpot:requiresCapability bpot:FinancialManagementCapability .
+
+bpot:P10751 bpot:requiresCapability bpot:FixedAssetProjectAccountingCapability .
+
+bpot:P10752 bpot:requiresCapability bpot:FixedAssetProjectAccountingCapability .
+
+bpot:P10762 bpot:requiresCapability bpot:InternalControlCapability .
+
+bpot:P10764 bpot:requiresCapability bpot:InternalControlCapability .
+
+bpot:P10767 bpot:requiresCapability bpot:InternationalFundsManagementCapability .
+
+bpot:P10768 bpot:requiresCapability bpot:InternationalFundsManagementCapability .
+
+bpot:P10769 bpot:requiresCapability bpot:InternationalFundsManagementCapability .
+
+bpot:P10770 bpot:requiresCapability bpot:InternationalFundsManagementCapability .
+
+bpot:P10816 bpot:requiresCapability bpot:FinancialPolicyManagementCapability .
+
+bpot:P10817 bpot:requiresCapability bpot:FinancialPolicyManagementCapability .
+
+bpot:P10818 bpot:requiresCapability bpot:FinancialPolicyManagementCapability .
+
+bpot:P10866 bpot:requiresCapability bpot:TaxManagementCapability .
+
+bpot:P10871 bpot:requiresCapability bpot:InternalAuditManagementCapability .
+
+bpot:P10885 bpot:requiresCapability bpot:TreasuryManagementCapability .
+
+bpot:P10889 bpot:requiresCapability bpot:InternalAuditManagementCapability .
+
+bpot:P10893 bpot:requiresCapability bpot:TreasuryManagementCapability .
+
+bpot:P10965 bpot:requiresCapability bpot:FacilityManagementCapability ;
+    bpot:requiresRole bpot:FacilityManagerRole .
+
+bpot:P10966 bpot:requiresCapability bpot:FacilityManagementCapability .
+
+bpot:P11010 bpot:requiresCapability bpot:InvestorRelationsCapability .
+
+bpot:P11012 bpot:requiresCapability bpot:StakeholderRelationshipManagementCapability .
+
+bpot:P11013 bpot:requiresCapability bpot:LegalAndComplianceCapability .
+
+bpot:P11035 bpot:requiresCapability bpot:LenderRelationsManagementCapability .
+
+bpot:P11036 bpot:requiresCapability bpot:AnalystRelationsManagementCapability .
+
+bpot:P11038 bpot:requiresCapability bpot:StakeholderRelationshipManagementCapability .
+
+bpot:P11039 bpot:requiresCapability bpot:StakeholderRelationshipManagementCapability .
+
+bpot:P11040 bpot:requiresCapability bpot:StakeholderRelationshipManagementCapability .
+
+bpot:P11041 bpot:requiresCapability bpot:StakeholderRelationshipManagementCapability .
+
+bpot:P11045 bpot:requiresCapability bpot:LegalAndComplianceCapability .
+
+bpot:P11047 bpot:requiresCapability bpot:LegalAndComplianceCapability .
+
+bpot:P11048 bpot:requiresCapability bpot:LegalAndComplianceCapability .
+
+bpot:P11066 bpot:requiresCapability bpot:PublicRelationsCapability ;
+    bpot:requiresRole bpot:CommunityRole .
+
+bpot:P11067 bpot:requiresCapability bpot:PublicRelationsCapability ;
+    bpot:requiresRole bpot:JournalistRole .
+
+bpot:P11068 bpot:requiresCapability bpot:PublicRelationsCapability ;
+    bpot:requiresRole bpot:GovernmentBodyRole .
+
+bpot:P11069 bpot:requiresCapability bpot:PublicRelationsCapability .
+
+bpot:P11070 bpot:requiresCapability bpot:PublicRelationsCapability ;
+    bpot:requiresRole bpot:MediaOutletRole .
+
+bpot:P11095 bpot:requiresCapability bpot:KnowledgeManagementCapability .
+
+bpot:P11096 bpot:requiresCapability bpot:KnowledgeManagementCapability .
+
+bpot:P11135 bpot:requiresCapability bpot:ChangeManagementCapability .
+
+bpot:P11136 bpot:requiresCapability bpot:ChangeManagementCapability .
+
+bpot:P11137 bpot:requiresCapability bpot:ChangeManagementCapability .
+
+bpot:P11180 bpot:requiresCapability bpot:EHSManagementCapability .
+
+bpot:P11181 bpot:requiresCapability bpot:EHSManagementCapability .
+
+bpot:P11201 bpot:requiresCapability bpot:RemediationManagementCapability .
+
+bpot:P11202 bpot:requiresCapability bpot:RemediationManagementCapability ;
+    bpot:requiresRole bpot:SubjectMatterExpertRole .
+
+bpot:P11203 bpot:requiresCapability bpot:RemediationManagementCapability .
+
+bpot:P11204 bpot:requiresCapability bpot:RemediationManagementCapability .
+
+bpot:P11205 bpot:requiresCapability bpot:RemediationManagementCapability .
+
+bpot:P11206 bpot:requiresCapability bpot:RemediationManagementCapability .
+
+bpot:P11221 bpot:requiresCapability bpot:BusinessResiliencyCapability .
+
+bpot:P11222 bpot:requiresCapability bpot:BusinessResiliencyCapability .
+
+bpot:P11223 bpot:requiresCapability bpot:BusinessResiliencyCapability .
+
+bpot:P11224 bpot:requiresCapability bpot:BusinessResiliencyCapability .
+
+bpot:P11495 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P11496 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P11497 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P11741 bpot:requiresCapability bpot:ProductDataManagementCapability .
+
+bpot:P11750 bpot:requiresCapability bpot:ProductDataManagementCapability .
+
+bpot:P12669 bpot:requiresCapability bpot:WarrantyManagementCapability .
+
+bpot:P12672 bpot:requiresCapability bpot:WarrantyManagementCapability .
+
+bpot:P12771 bpot:requiresCapability bpot:IntellectualPropertyManagementCapability ;
+    bpot:requiresRole bpot:RegulatoryAuthorityRole .
+
+bpot:P12974 bpot:requiresCapability bpot:TreasuryManagementCapability .
+
+bpot:P14007 bpot:requiresCapability bpot:DefaultAccountManagementCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P14079 bpot:requiresCapability bpot:TreasuryManagementCapability .
+
+bpot:P16379 bpot:requiresCapability bpot:BusinessProcessManagementCapability .
+
+bpot:P16384 bpot:requiresCapability bpot:BusinessProcessManagementCapability .
+
+bpot:P16387 bpot:requiresCapability bpot:BusinessProcessManagementCapability .
+
+bpot:P16392 bpot:requiresCapability bpot:BusinessProcessManagementCapability .
+
+bpot:P16439 bpot:requiresCapability bpot:EnterpriseRiskManagementCapability .
+
+bpot:P16445 bpot:requiresCapability bpot:EnterpriseRiskManagementCapability .
+
+bpot:P16464 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16465 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16466 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16467 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16468 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16469 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P16471 bpot:requiresCapability bpot:BusinessResiliencyCapability .
+
+bpot:P16500 bpot:requiresCapability bpot:ChannelManagementCapability .
+
+bpot:P16501 bpot:requiresCapability bpot:ChannelManagementCapability .
+
+bpot:P16573 bpot:requiresCapability bpot:ChannelManagementCapability .
+
+bpot:P16574 bpot:requiresCapability bpot:ChannelManagementCapability .
+
+bpot:P16575 bpot:requiresCapability bpot:ChannelManagementCapability .
+
+bpot:P16630 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P16826 bpot:requiresCapability bpot:IntellectualPropertyManagementCapability .
+
+bpot:P16937 bpot:requiresCapability bpot:CustomerInquiryManagementCapability ;
+    bpot:requiresRole bpot:SalesAgentRole .
+
+bpot:P16944 bpot:requiresCapability bpot:EmployeeCommunicationCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P17462 bpot:requiresCapability bpot:EnterpriseRiskManagementCapability .
+
+bpot:P17468 bpot:requiresCapability bpot:ComplianceManagementCapability .
+
+bpot:P17472 bpot:requiresCapability bpot:EnterpriseQualityManagementCapability .
+
+bpot:P17482 bpot:requiresCapability bpot:EnterpriseQualityManagementCapability .
+
+bpot:P17492 bpot:requiresCapability bpot:EnterpriseQualityManagementCapability .
+
+bpot:P17498 bpot:requiresCapability bpot:EnterpriseQualityManagementCapability .
+
+bpot:P17684 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P18130 bpot:requiresCapability bpot:MarketingManagementCapability .
+
+bpot:P18948 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P19209 bpot:requiresCapability bpot:AssetConstructionCapability .
+
+bpot:P19224 bpot:requiresCapability bpot:AssetConstructionCapability .
+
+bpot:P19229 bpot:requiresCapability bpot:AssetConstructionCapability .
+
+bpot:P19239 bpot:requiresCapability bpot:AssetMaintenanceCapability .
+
+bpot:P19245 bpot:requiresCapability bpot:AssetMaintenanceCapability .
+
+bpot:P19253 bpot:requiresCapability bpot:AssetMaintenanceCapability .
+
+bpot:P19258 bpot:requiresCapability bpot:AssetDispositionCapability .
+
+bpot:P19595 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P19596 bpot:requiresCapability bpot:RegulatoryComplianceManagementCapability .
+
+bpot:P19945 bpot:requiresCapability bpot:CompetitiveAnalysisCapability ;
+    bpot:requiresRole bpot:CompetitiveIntelligenceAnalystRole .
+
+bpot:P19949 bpot:requiresCapability bpot:StrategicPlanningCapability .
+
+bpot:P19959 bpot:requiresCapability bpot:CustomerExperienceManagementCapability .
+
+bpot:P19960 bpot:requiresCapability bpot:CustomerExperienceManagementCapability .
+
+bpot:P19964 bpot:requiresCapability bpot:CustomerExperienceManagementCapability .
+
+bpot:P19971 bpot:requiresCapability bpot:CustomerExperienceManagementCapability .
+
+bpot:P19995 bpot:requiresCapability bpot:DesignCapability .
+
+bpot:P20009 bpot:requiresCapability bpot:PricingCapability .
+
+bpot:P20026 bpot:requiresCapability bpot:ServiceDeliveryGovernanceCapability .
+
+bpot:P20041 bpot:requiresCapability bpot:DemandForecastingCapability .
+
+bpot:P20043 bpot:requiresCapability bpot:DemandForecastingCapability .
+
+bpot:P20045 bpot:requiresCapability bpot:DemandForecastingCapability .
+
+bpot:P20050 bpot:requiresCapability bpot:ResourceManagementCapability .
+
+bpot:P20056 bpot:requiresCapability bpot:ResourceManagementCapability .
+
+bpot:P20058 bpot:requiresCapability bpot:ServiceDeliveryCapability .
+
+bpot:P20059 bpot:requiresCapability bpot:ServiceDeliveryCapability .
+
+bpot:P20069 bpot:requiresCapability bpot:ServiceDeliveryCapability .
+
+bpot:P20076 bpot:requiresCapability bpot:ServiceDeliveryCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P20077 bpot:requiresCapability bpot:ServiceDeliveryCapability .
+
+bpot:P20110 bpot:requiresCapability bpot:RecallManagementCapability .
+
+bpot:P20124 bpot:requiresCapability bpot:ApplicantDataManagementCapability .
+
+bpot:P20139 bpot:requiresCapability bpot:AssetConstructionCapability .
+
+bpot:P20595 bpot:requiresCapability bpot:CustomerServiceManagementCapability .
+
+bpot:P20604 bpot:requiresCapability bpot:FinancialPolicyManagementCapability .
+
+bpot:P20608 bpot:requiresCapability bpot:ITCustomerRelationshipManagementCapability .
+
+bpot:P20632 bpot:requiresCapability bpot:ITServiceManagementCapability .
+
+bpot:P20655 bpot:requiresCapability bpot:ITStrategicIntelligenceCapability .
+
+bpot:P20657 bpot:requiresCapability bpot:ITStrategicAlignmentMaintenanceCapability .
+
+bpot:P20690 bpot:requiresCapability bpot:ITInterdependencyManagementCapability .
+
+bpot:P20706 bpot:requiresCapability bpot:ITRiskManagementCapability .
+
+bpot:P20721 bpot:requiresCapability bpot:ITRiskManagementCapability .
+
+bpot:P20766 bpot:requiresCapability bpot:InformationManagementCapability .
+
+bpot:P20770 bpot:requiresCapability bpot:InformationManagementCapability .
+
+bpot:P20776 bpot:requiresCapability bpot:InformationManagementCapability .
+
+bpot:P20779 bpot:requiresCapability bpot:InformationManagementCapability .
+
+bpot:P20782 bpot:requiresCapability bpot:InternalAuditManagementCapability .
+
+bpot:P20785 bpot:requiresCapability bpot:DevelopAndManageServicesSolutionsCapability .
+
+bpot:P20808 bpot:requiresCapability bpot:DevelopAndManageServicesSolutionsCapability .
+
+bpot:P20817 bpot:requiresCapability bpot:DevelopAndManageServicesSolutionsCapability .
+
+bpot:P20857 bpot:requiresCapability bpot:ITRollBackManagementCapability .
+
+bpot:P20888 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20889 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20890 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20891 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20892 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20893 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20915 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20916 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20917 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20918 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20919 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20920 bpot:requiresCapability bpot:ITInfrastructureManagementCapability .
+
+bpot:P20921 bpot:requiresCapability bpot:ITSupportCapability .
+
+bpot:P20923 bpot:requiresCapability bpot:ITSupportCapability .
+
+bpot:P20955 bpot:requiresCapability bpot:BusinessModelGovernanceCapability .
+
+bpot:P20960 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P20961 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P20962 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P20963 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P20964 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P20965 bpot:requiresCapability bpot:KnowledgeManagementCapability .
+
+bpot:P20969 bpot:requiresCapability bpot:KnowledgeManagementCapability .
+
+bpot:P21437 bpot:requiresCapability bpot:EmployeeRelationsCapability .
+
+bpot:P21438 bpot:requiresCapability bpot:CompensationAndBenefitsCapability ;
+    bpot:requiresRole bpot:HumanResourcesProfessionalRole .
+
+bpot:P21439 bpot:requiresCapability bpot:CompensationAndBenefitsCapability ;
+    bpot:requiresRole bpot:HumanResourcesProfessionalRole .
+
+bpot:P21441 bpot:requiresCapability bpot:WorkforceAnalyticsCapability .
+
+bpot:P21447 bpot:requiresCapability bpot:WorkforceAnalyticsCapability .
+
+bpot:P21453 bpot:requiresCapability bpot:BusinessProcessManagementCapability .
+
+bpot:P21457 bpot:requiresCapability bpot:ChangeManagementCapability .
+
+bpot:P21459 bpot:requiresCapability bpot:AnalyticsCapability ;
+    bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P21460 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P21461 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P21462 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P21463 bpot:requiresCapability bpot:AnalyticsCapability ;
+    bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P21464 bpot:requiresCapability bpot:AnalyticsCapability .
+
+bpot:P21574 bpot:requiresCapability bpot:InternalControlCapability .
+
+bpot:P21579 bpot:requiresCapability bpot:AssetDispositionCapability .
+
+bpot:P21581 bpot:requiresCapability bpot:AssetDispositionCapability .
+
+bpot:P21582 bpot:requiresCapability bpot:AssetDispositionCapability .
+
+bpot:P21584 bpot:requiresCapability bpot:BenchmarkingCapability .
+
+bpot:P21587 bpot:requiresCapability bpot:EHSManagementCapability .
+
+bpot:P21589 bpot:requiresCapability bpot:SustainabilityManagementCapability .
+
+bpot:P21598 bpot:requiresCapability bpot:SustainabilityManagementCapability .
+
+bpot:ProcurementCapability bpot:enablesProcess bpot:P10216 .
+
+bpot:ProductionCapability bpot:enablesProcess bpot:P10217 .
+
+bpot:ProgramManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:QuasiGovernmentBodyRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:RawMaterialInventoryManagementCapability bpot:enablesProcess bpot:P10304 .
+
+bpot:RecallManagementCapability bpot:enablesProcess bpot:P20110 .
+
+bpot:RecruitmentChannelManagementCapability bpot:enablesProcess bpot:P10440 .
+
+bpot:RecruitmentVendorManagementCapability bpot:enablesProcess bpot:P10440 .
+
+bpot:RestitutionManagementCapability bpot:enablesProcess bpot:P17059 .
+
+bpot:SalesAgentRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:SalesManagementCapability bpot:enablesProcess bpot:ManageCustomerRelationships .
+
+bpot:ServiceDeliveryDevelopmentManagementCapability bpot:enablesProcess bpot:P20027 .
+
+bpot:ServiceDeliveryPerformanceManagementCapability bpot:enablesProcess bpot:P20027 .
+
+bpot:SupplyChainPlanningCapability bpot:enablesProcess bpot:P10215 .
+
+bpot:TalentAcquisitionCapability bpot:enablesProcess bpot:P10410 .
+
+bpot:TaxManagementCapability bpot:enablesProcess bpot:P10866 .
+
+bpot:TimeAndAttendanceManagementCapability bpot:enablesProcess bpot:ActOfAdministration .
+
+bpot:WorkforceDeploymentCapability bpot:enablesProcess bpot:P10413 .
+
+bpot:AccountingCapability bpot:enablesProcess bpot:P10729,
+        bpot:P10730 .
+
+bpot:ActOfAdministration bpot:requiresCapability bpot:HumanResourcesInformationSystemCapability,
+        bpot:TimeAndAttendanceManagementCapability .
+
+bpot:AuditorRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ChangeChampionRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:CustomerServiceRepresentativeRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:DesignStaffRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:EnterpriseArchitectRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:FacilityManagementCapability bpot:enablesProcess bpot:P10965,
+        bpot:P10966 .
+
+bpot:FieldServiceAgentRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:FixedAssetProjectAccountingCapability bpot:enablesProcess bpot:P10751,
+        bpot:P10752 .
+
+bpot:GovernmentBodyRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:ITRiskManagementCapability bpot:enablesProcess bpot:P20706,
+        bpot:P20721 .
+
+bpot:ITSupportCapability bpot:enablesProcess bpot:P20921,
+        bpot:P20923 .
+
+bpot:LaborRelationsCapability bpot:enablesProcess bpot:P10484,
+        bpot:P10531 .
+
+bpot:OutsideCounselRole rdfs:subClassOf cco:ont00000506 .
+
+bpot:P10215 bpot:requiresCapability bpot:SupplyChainManagementCapability,
+        bpot:SupplyChainPlanningCapability .
+
+bpot:P10216 bpot:requiresCapability bpot:ProcurementCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P10217 bpot:requiresCapability bpot:ProductionCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P10338 bpot:requiresCapability bpot:LogisticsManagementCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P10340 bpot:requiresCapability bpot:LogisticsManagementCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P10394 bpot:requiresCapability bpot:CustomerInquiryManagementCapability,
+        bpot:CustomerServiceCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10395 bpot:requiresCapability bpot:CustomerInquiryManagementCapability,
+        bpot:CustomerServiceCapability ;
+    bpot:requiresRole bpot:CustomerServiceRepresentativeRole .
+
+bpot:P10396 bpot:requiresCapability bpot:CustomerInquiryManagementCapability,
+        bpot:CustomerServiceCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10397 bpot:requiresCapability bpot:CustomerComplaintManagementCapability,
+        bpot:CustomerServiceCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10398 bpot:requiresCapability bpot:CustomerComplaintManagementCapability,
+        bpot:CustomerServiceCapability .
+
+bpot:P10399 bpot:requiresCapability bpot:CustomerComplaintManagementCapability,
+        bpot:CustomerServiceCapability .
+
+bpot:P10400 bpot:requiresCapability bpot:CustomerComplaintManagementCapability,
+        bpot:CustomerServiceCapability ;
+    bpot:requiresRole bpot:CustomerRole .
+
+bpot:P10410 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:TalentAcquisitionCapability .
+
+bpot:P10413 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:WorkforceDeploymentCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10417 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:WorkforcePlanningCapability .
+
+bpot:P10474 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeOrientationAndDeploymentCapability .
+
+bpot:P10479 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeePerformanceManagementCapability .
+
+bpot:P10481 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeePerformanceManagementCapability .
+
+bpot:P10484 bpot:requiresCapability bpot:EmployeeRelationsCapability,
+        bpot:LaborRelationsCapability ;
+    bpot:requiresRole bpot:EmployeeRole,
+        bpot:ManagerRole .
+
+bpot:P10487 bpot:requiresCapability bpot:EmployeeCareerDevelopmentCapability,
+        bpot:EmployeeDevelopmentCapability .
+
+bpot:P10488 bpot:requiresCapability bpot:EmployeeCareerDevelopmentCapability,
+        bpot:EmployeeDevelopmentCapability .
+
+bpot:P10490 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:P10491 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:P10492 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:P10493 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10531 bpot:requiresCapability bpot:EmployeeRelationsCapability,
+        bpot:LaborRelationsCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P10729 bpot:requiresCapability bpot:AccountingCapability,
+        bpot:FinancialManagementCapability .
+
+bpot:P10730 bpot:requiresCapability bpot:AccountingCapability,
+        bpot:FinancialManagementCapability .
+
+bpot:P11049 bpot:requiresCapability bpot:IntellectualPropertyManagementCapability,
+        bpot:LegalAndComplianceCapability .
+
+bpot:P11119 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability .
+
+bpot:P11243 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeOrientationAndDeploymentCapability .
+
+bpot:P13482 bpot:requiresCapability bpot:CustomerInquiryManagementCapability,
+        bpot:CustomerServiceCapability .
+
+bpot:P16402 bpot:requiresCapability bpot:PortfolioManagementCapability,
+        bpot:PortfolioProgramProjectManagementCapability .
+
+bpot:P16403 bpot:requiresCapability bpot:PortfolioManagementCapability,
+        bpot:PortfolioProgramProjectManagementCapability .
+
+bpot:P16404 bpot:requiresCapability bpot:PortfolioManagementCapability,
+        bpot:PortfolioProgramProjectManagementCapability ;
+    bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P16406 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProgramManagementCapability .
+
+bpot:P16407 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProgramManagementCapability ;
+    bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P16408 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProgramManagementCapability .
+
+bpot:P16409 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProgramManagementCapability .
+
+bpot:P16411 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability .
+
+bpot:P16413 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability .
+
+bpot:P16414 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability .
+
+bpot:P16417 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability ;
+    bpot:requiresRole bpot:StakeholderRole .
+
+bpot:P16418 bpot:requiresCapability bpot:PortfolioProgramProjectManagementCapability,
+        bpot:ProjectManagementCapability .
+
+bpot:P16928 bpot:requiresCapability bpot:CustomerInquiryManagementCapability,
+        bpot:CustomerServiceCapability .
+
+bpot:P16940 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:P17045 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:WorkforcePlanningCapability .
+
+bpot:P17046 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:WorkforcePlanningCapability .
+
+bpot:P17050 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeOrientationAndDeploymentCapability .
+
+bpot:P17051 bpot:requiresCapability bpot:EmployeeCareerDevelopmentCapability,
+        bpot:EmployeeDevelopmentCapability ;
+    bpot:requiresRole bpot:EmployeeRole .
+
+bpot:P17059 bpot:requiresCapability bpot:ImportExportControlCapability,
+        bpot:RestitutionManagementCapability .
+
+bpot:P19072 bpot:requiresCapability bpot:CustomerComplaintManagementCapability,
+        bpot:CustomerServiceCapability .
+
+bpot:P20125 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:P20936 bpot:requiresCapability bpot:LogisticsManagementCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P20958 bpot:requiresCapability bpot:HumanCapitalManagementCapability,
+        bpot:WorkforcePlanningCapability .
+
+bpot:P21434 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeePerformanceManagementCapability .
+
+bpot:P21436 bpot:requiresCapability bpot:EmployeeDevelopmentCapability,
+        bpot:EmployeeTrainingCapability .
+
+bpot:PartnerManagementCapability bpot:enablesProcess bpot:P10130,
+        bpot:P10187 .
+
+bpot:ProductDataManagementCapability bpot:enablesProcess bpot:P11741,
+        bpot:P11750 .
+
+bpot:ProductManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ProductServiceLifecycleManagementCapability bpot:enablesProcess bpot:P10077,
+        bpot:P10078 .
+
+bpot:ProductServicePortfolioManagementCapability bpot:enablesProcess bpot:P10063,
+        bpot:P10074 .
+
+bpot:ResearchAndDevelopmentRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ResourceManagementCapability bpot:enablesProcess bpot:P20050,
+        bpot:P20056 .
+
+bpot:SalesProfessionalRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ServiceDeliveryGovernanceCapability bpot:enablesProcess bpot:P20026,
+        bpot:P20027 .
+
+bpot:SustainabilityManagementCapability bpot:enablesProcess bpot:P21589,
+        bpot:P21598 .
+
+bpot:WarrantyManagementCapability bpot:enablesProcess bpot:P12669,
+        bpot:P12672 .
+
+bpot:WorkforceAnalyticsCapability bpot:enablesProcess bpot:P21441,
+        bpot:P21447 .
+
+bpot:AssetMaintenanceCapability bpot:enablesProcess bpot:P19239,
+        bpot:P19245,
+        bpot:P19253 .
+
+bpot:DemandForecastingCapability bpot:enablesProcess bpot:P20041,
+        bpot:P20043,
+        bpot:P20045 .
+
+bpot:DevelopAndManageServicesSolutionsCapability bpot:enablesProcess bpot:P20785,
+        bpot:P20808,
+        bpot:P20817 .
+
+bpot:EHSManagementCapability bpot:enablesProcess bpot:P11180,
+        bpot:P11181,
+        bpot:P21587 .
+
+bpot:EmployeeCareerDevelopmentCapability bpot:enablesProcess bpot:P10487,
+        bpot:P10488,
+        bpot:P17051 .
+
+bpot:EmployeeCommunicationCapability bpot:enablesProcess bpot:P10529,
+        bpot:P10532,
+        bpot:P16944 .
+
+bpot:EmployeeOrientationAndDeploymentCapability bpot:enablesProcess bpot:P10474,
+        bpot:P11243,
+        bpot:P17050 .
+
+bpot:EmployeePerformanceManagementCapability bpot:enablesProcess bpot:P10479,
+        bpot:P10481,
+        bpot:P21434 .
+
+bpot:EmployeeRelationsCapability bpot:enablesProcess bpot:P10484,
+        bpot:P10531,
+        bpot:P21437 .
+
+bpot:EnterpriseRiskManagementCapability bpot:enablesProcess bpot:P16439,
+        bpot:P16445,
+        bpot:P17462 .
+
+bpot:IntellectualPropertyManagementCapability bpot:enablesProcess bpot:P11049,
+        bpot:P12771,
+        bpot:P16826 .
+
+bpot:InternalAuditManagementCapability bpot:enablesProcess bpot:P10871,
+        bpot:P10889,
+        bpot:P20782 .
+
+bpot:InternalControlCapability bpot:enablesProcess bpot:P10762,
+        bpot:P10764,
+        bpot:P21574 .
+
+bpot:MarketIntelligenceCapability bpot:enablesProcess bpot:P10101,
+        bpot:P10106,
+        bpot:P10107 .
+
+bpot:P10341 bpot:requiresCapability bpot:FleetManagementCapability,
+        bpot:LogisticsManagementCapability,
+        bpot:SupplyChainManagementCapability .
+
+bpot:P10440 bpot:requiresCapability bpot:EmployeeReferralProgramCapability,
+        bpot:RecruitmentChannelManagementCapability,
+        bpot:RecruitmentVendorManagementCapability .
+
+bpot:P20027 bpot:requiresCapability bpot:ServiceDeliveryDevelopmentManagementCapability,
+        bpot:ServiceDeliveryGovernanceCapability,
+        bpot:ServiceDeliveryPerformanceManagementCapability .
+
+bpot:PortfolioManagementCapability bpot:enablesProcess bpot:P16402,
+        bpot:P16403,
+        bpot:P16404 .
+
+bpot:ProcessOwnerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ResearchAndDevelopmentCapability bpot:enablesProcess bpot:P10070,
+        bpot:P10071,
+        bpot:P10072 .
+
+bpot:SeniorManagementRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:SeniorManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:StrategyPersonnelRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:AssetConstructionCapability bpot:enablesProcess bpot:P19209,
+        bpot:P19224,
+        bpot:P19229,
+        bpot:P20139 .
+
+bpot:AssetDispositionCapability bpot:enablesProcess bpot:P19258,
+        bpot:P21579,
+        bpot:P21581,
+        bpot:P21582 .
+
+bpot:ChangeManagementCapability bpot:enablesProcess bpot:P11135,
+        bpot:P11136,
+        bpot:P11137,
+        bpot:P21457 .
+
+bpot:CompensationAndBenefitsCapability bpot:enablesProcess bpot:P10495,
+        bpot:P10497,
+        bpot:P21438,
+        bpot:P21439 .
+
+bpot:CustomerExperienceManagementCapability bpot:enablesProcess bpot:P19959,
+        bpot:P19960,
+        bpot:P19964,
+        bpot:P19971 .
+
+bpot:CustomerServiceWorkforceManagementCapability bpot:enablesProcess bpot:P10390,
+        bpot:P10391,
+        bpot:P10392,
+        bpot:P10393 .
+
+bpot:EnterpriseQualityManagementCapability bpot:enablesProcess bpot:P17472,
+        bpot:P17482,
+        bpot:P17492,
+        bpot:P17498 .
+
+bpot:FinancialManagementCapability bpot:enablesProcess bpot:P10729,
+        bpot:P10730,
+        bpot:P10732,
+        bpot:P10733 .
+
+bpot:FinancialPolicyManagementCapability bpot:enablesProcess bpot:P10816,
+        bpot:P10817,
+        bpot:P10818,
+        bpot:P20604 .
+
+bpot:InformationManagementCapability bpot:enablesProcess bpot:P20766,
+        bpot:P20770,
+        bpot:P20776,
+        bpot:P20779 .
+
+bpot:InternationalFundsManagementCapability bpot:enablesProcess bpot:P10767,
+        bpot:P10768,
+        bpot:P10769,
+        bpot:P10770 .
+
+bpot:KnowledgeManagementCapability bpot:enablesProcess bpot:P11095,
+        bpot:P11096,
+        bpot:P20965,
+        bpot:P20969 .
+
+bpot:LogisticsManagementCapability bpot:enablesProcess bpot:P10338,
+        bpot:P10340,
+        bpot:P10341,
+        bpot:P20936 .
+
+bpot:ManagerRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:ProgramManagementCapability bpot:enablesProcess bpot:P16406,
+        bpot:P16407,
+        bpot:P16408,
+        bpot:P16409 .
+
+bpot:RegulatorRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:TreasuryManagementCapability bpot:enablesProcess bpot:P10885,
+        bpot:P10893,
+        bpot:P12974,
+        bpot:P14079 .
+
+bpot:WorkforcePlanningCapability bpot:enablesProcess bpot:P10417,
+        bpot:P17045,
+        bpot:P17046,
+        bpot:P20958 .
+
+bpot:BusinessProcessManagementCapability bpot:enablesProcess bpot:P16379,
+        bpot:P16384,
+        bpot:P16387,
+        bpot:P16392,
+        bpot:P21453 .
+
+bpot:BusinessResiliencyCapability bpot:enablesProcess bpot:P11221,
+        bpot:P11222,
+        bpot:P11223,
+        bpot:P11224,
+        bpot:P16471 .
+
+bpot:ChannelManagementCapability bpot:enablesProcess bpot:P16500,
+        bpot:P16501,
+        bpot:P16573,
+        bpot:P16574,
+        bpot:P16575 .
+
+bpot:CustomerComplaintManagementCapability bpot:enablesProcess bpot:P10397,
+        bpot:P10398,
+        bpot:P10399,
+        bpot:P10400,
+        bpot:P19072 .
+
+bpot:HumanResourcesProfessionalRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:LegalAndComplianceCapability bpot:enablesProcess bpot:P11013,
+        bpot:P11045,
+        bpot:P11047,
+        bpot:P11048,
+        bpot:P11049 .
+
+bpot:PublicRelationsCapability bpot:enablesProcess bpot:P11066,
+        bpot:P11067,
+        bpot:P11068,
+        bpot:P11069,
+        bpot:P11070 .
+
+bpot:RegulatoryAuthorityRole rdfs:subClassOf cco:ont00000187 .
+
+bpot:ServiceDeliveryCapability bpot:enablesProcess bpot:P20058,
+        bpot:P20059,
+        bpot:P20069,
+        bpot:P20076,
+        bpot:P20077 .
+
+bpot:ServiceDeliveryPersonnelRole rdfs:subClassOf cco:ont00000984 .
+
+bpot:StakeholderRelationshipManagementCapability bpot:enablesProcess bpot:P11012,
+        bpot:P11038,
+        bpot:P11039,
+        bpot:P11040,
+        bpot:P11041 .
+
+bpot:CustomerInquiryManagementCapability bpot:enablesProcess bpot:P10394,
+        bpot:P10395,
+        bpot:P10396,
+        bpot:P13482,
+        bpot:P16928,
+        bpot:P16937 .
+
+bpot:HumanCapitalManagementCapability bpot:enablesProcess bpot:P10410,
+        bpot:P10413,
+        bpot:P10417,
+        bpot:P17045,
+        bpot:P17046,
+        bpot:P20958 .
+
+bpot:ProjectManagementCapability bpot:enablesProcess bpot:P11119,
+        bpot:P16411,
+        bpot:P16413,
+        bpot:P16414,
+        bpot:P16417,
+        bpot:P16418 .
+
+bpot:RemediationManagementCapability bpot:enablesProcess bpot:P11201,
+        bpot:P11202,
+        bpot:P11203,
+        bpot:P11204,
+        bpot:P11205,
+        bpot:P11206 .
+
+bpot:StrategicPlanningCapability bpot:enablesProcess bpot:P10020,
+        bpot:P10037,
+        bpot:P10039,
+        bpot:P10043,
+        bpot:P10045,
+        bpot:P19949 .
+
+bpot:EmployeeTrainingCapability bpot:enablesProcess bpot:P10490,
+        bpot:P10491,
+        bpot:P10492,
+        bpot:P10493,
+        bpot:P16940,
+        bpot:P20125,
+        bpot:P21436 .
+
+bpot:SupplyChainManagementCapability bpot:enablesProcess bpot:P10215,
+        bpot:P10216,
+        bpot:P10217,
+        bpot:P10338,
+        bpot:P10340,
+        bpot:P10341,
+        bpot:P20936 .
+
+bpot:RegulatoryComplianceManagementCapability bpot:enablesProcess bpot:P16464,
+        bpot:P16465,
+        bpot:P16466,
+        bpot:P16467,
+        bpot:P16468,
+        bpot:P16469,
+        bpot:P19595,
+        bpot:P19596 .
+
+bpot:CustomerServiceCapability bpot:enablesProcess bpot:P10394,
+        bpot:P10395,
+        bpot:P10396,
+        bpot:P10397,
+        bpot:P10398,
+        bpot:P10399,
+        bpot:P10400,
+        bpot:P13482,
+        bpot:P16928,
+        bpot:P19072 .
+
+bpot:PricingCapability bpot:enablesProcess bpot:P10163,
+        bpot:P10164,
+        bpot:P10165,
+        bpot:P10166,
+        bpot:P11495,
+        bpot:P11496,
+        bpot:P11497,
+        bpot:P17684,
+        bpot:P18948,
+        bpot:P20009 .
+
+bpot:AnalyticsCapability bpot:enablesProcess bpot:P20960,
+        bpot:P20961,
+        bpot:P20962,
+        bpot:P20963,
+        bpot:P20964,
+        bpot:P21459,
+        bpot:P21460,
+        bpot:P21461,
+        bpot:P21462,
+        bpot:P21463,
+        bpot:P21464 .
+
+bpot:ITInfrastructureManagementCapability bpot:enablesProcess bpot:P20888,
+        bpot:P20889,
+        bpot:P20890,
+        bpot:P20891,
+        bpot:P20892,
+        bpot:P20893,
+        bpot:P20915,
+        bpot:P20916,
+        bpot:P20917,
+        bpot:P20918,
+        bpot:P20919,
+        bpot:P20920 .
+
+bpot:PortfolioProgramProjectManagementCapability bpot:enablesProcess bpot:P11119,
+        bpot:P16402,
+        bpot:P16403,
+        bpot:P16404,
+        bpot:P16406,
+        bpot:P16407,
+        bpot:P16408,
+        bpot:P16409,
+        bpot:P16411,
+        bpot:P16413,
+        bpot:P16414,
+        bpot:P16417,
+        bpot:P16418 .
+
+bpot:MarketingManagementCapability bpot:enablesProcess bpot:P10159,
+        bpot:P10160,
+        bpot:P10167,
+        bpot:P10168,
+        bpot:P10169,
+        bpot:P10170,
+        bpot:P10171,
+        bpot:P10172,
+        bpot:P10178,
+        bpot:P10179,
+        bpot:P10180,
+        bpot:P10181,
+        bpot:P16630,
+        bpot:P18130 .
+
+bpot:EmployeeDevelopmentCapability bpot:enablesProcess bpot:P10474,
+        bpot:P10479,
+        bpot:P10481,
+        bpot:P10487,
+        bpot:P10488,
+        bpot:P10490,
+        bpot:P10491,
+        bpot:P10492,
+        bpot:P10493,
+        bpot:P11243,
+        bpot:P16940,
+        bpot:P17050,
+        bpot:P17051,
+        bpot:P20125,
+        bpot:P21434,
+        bpot:P21436 .
+
+bpot:EmployeeRole rdfs:subClassOf cco:ont00000984 .
+
