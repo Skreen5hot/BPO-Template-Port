@@ -33,10 +33,10 @@ and say why in §8.
 | All classes ported | 2026-10-24 13:37 | `tools/port_from_bpo.py`, one run, ~1 min. Lossless check 13:38; counts confirmed 15:57 (§3) |
 | All properties and axioms ported | 2026-10-24 13:37 | Same run. Mapping set added 15:55 (5,051 rows, checker clean) |
 | Validation gate green (`tools/ontology/validate.py --gate`) | 2026-10-26 04:06 | Local, 03:29–04:06 (37 min), with the PO-approved changes: "the baseline describes reality" (wellformedness 57 recorded, all other rungs 0 violations). Needed the `validate.py` patch (§5) to finish at all |
-| Reasoner green (Reasoning workflow) | | |
-| Everything green, port complete | | |
+| Reasoner green (Reasoning workflow) | 2026-10-26 04:21 | CI run 40290127342, 14 min, on the full port. Locally green on the first run (10-24 13:58) |
+| Everything green, port complete | not reached (port complete 2026-10-26 04:21) | Port complete and published; Pages green (04:10, site shows 3,129 authored terms), Reasoning green, Checks **red at one step by PO decision**: IRI lint on `bpot:P10530_SuggestionProgram` (§4, §6). Every Checks step before it passed in CI, the validation gate included; the 7 after it were skipped by fail-fast and were run locally instead (§7) |
 
-Hands-on time in total, excluding waiting: ___ hours.
+Hands-on time in total, excluding waiting: **~7 hours** (10-24 13:17–16:40; 10-25 04:05–05:10 and 20:26–21:50; 10-26 03:20–04:30). Machine time on top: validation runs of 35 min to 2 h each (×5), a 15.5 h test run stopped unfinished, a 1 h test re-run. Waiting on PO answers: ~17 h overnight in total (§6). Calendar: 1 day 15 h from start to the complete port.
 
 ## 3. Coverage: did everything come across?
 
@@ -53,7 +53,7 @@ Hands-on time in total, excluding waiting: ___ hours.
 
 Source counts: rdflib over BPO's 18 ontology files at `bc64e91` (terms in the `bpo#`
 namespace); BPO's `corpus_index.tsv` agrees (5,050 rows). Port counts: rdflib over the 17
-modules; the site and corpus-digest figures are added once the port is pushed.
+modules. Site, after the push: `data/terms.json` counts **authored 3,129** (= 3,119 classes + 10 properties) and **upstream 152**; concepts are on the vocabulary page, not in the term index. `corpus_digest.py`: 62,677 triples merged, 45,153 ground, 4,381 blank nodes (17,524 triples touching).
 
 Source counts: from the source repository's own tooling or a reasoner report.
 Ported counts: the site's `data/terms.json` (`counts`), and
@@ -95,7 +95,7 @@ result. Then classify every finding.
 
 | Check | Command | Findings on first run |
 |---|---|---|
-| Validation ladder | `python tools/ontology/validate.py` | Unpatched: **did not finish** (13:43 → killed 15:39, 1 h 56 min; see §5, §7). Patched: 34 min 52 s, exit 1, `passed: False`. Violations (gated): wellformedness **57**, skos **1**, realist 0, annotation-profile 0. Warnings (not gated): realist **540**, annotation-profile **3,119**. All four fixtures still rejected (9/25/10/10) |
+| Validation ladder | `python tools/ontology/validate.py` | (`--gate` green locally 10-26 04:06 and in CI 04:21.) Unpatched: **did not finish** (13:43 → killed 15:39, 1 h 56 min; see §5, §7). Patched: 34 min 52 s, exit 1, `passed: False`. Violations (gated): wellformedness **57**, skos **1**, realist 0, annotation-profile 0. Warnings (not gated): realist **540**, annotation-profile **3,119**. All four fixtures still rejected (9/25/10/10) |
 | IRI linter | `python tools/ontology/iri_lint.py` | exit 1; 21 files, **1 finding**: `ontology/sections/pcf_7.ttl:942 naming_convention bpot:P10530_SuggestionProgram`. No `unverified`, no `readable_label`, no undeclared authored IRI across 5,051 terms |
 | Reasoner | `python tools/ontology/reason.py` | exit 0, **0 findings**: "ROBOT 1.9.10, ELK, over 17 module(s) and bfo.ttl, cco.ttl -- consistent; nothing unsatisfiable". ~1 min locally (13:57 → 13:58), so CI's 12 min on an empty ontology is mostly setup, not reasoning |
 | Competency questions | `python tools/ontology/competency.py` | exit 0, "no competency questions yet". BPO has none in this form; vacuously green |
@@ -184,6 +184,11 @@ tool is broken), *unsure*.
 The output of `python tools/template_status.py` at the end, pasted whole:
 
 ```
+  94 owned file(s); recorded f1412848cc58f36e (unreleased), now 54c93e746583595c
+    changed  tools/ontology/validate.py
+    added    tests/test_bpo_port.py
+
+  this project has diverged from the template it was made from in the files above. That is allowed; it is what the next template update will have to merge.
 ```
 
 For each file it lists:
@@ -246,10 +251,10 @@ surprised, including small ones. One line each, as it happens.
 
 ## 8. Overall
 
-- Did you finish within the timebox? If not, where did it stop?
-- Would you start your next ontology from this template? Yes / with changes / no, and why.
-- The three changes to the template that would have saved you the most time:
-  1.
-  2.
-  3.
-- Anything the template made easier than you expected:
+- **Did you finish within the timebox?** Yes, for the port: complete, mapped, reasoned, validated against a recorded baseline and published 1 day 15 h after starting (timebox 3 working days; target 2 days). Not for "everything green": Checks stays red at IRI lint by the PO's decision to keep `bpot:P10530_SuggestionProgram`, and **releases cannot be built** (`tools/release.py` does not finish on this corpus). First green CI took 26 min against a 2 h target.
+- **Would you start your next ontology from this template?** **With changes.** Setup was fast and clear (init, layout contract, vendoring, mappings, reasoning all worked first time, and the README was enough for setup). But the checks were built and timed on toy ontologies. Three of them (the realist shapes, the test suite, the release build) do not complete at BPO's size without a change, and one needed a template-file patch just to finish. A template that cannot validate or release a 3,000-class ontology is not yet ready to bet new work on.
+- **The three changes to the template that would have saved the most time:**
+  1. **Make the checks scale, and test that they do.** Inline the focus node in SPARQL constraints (the patch in §5, or an upstream pyshacl/rdflib fix); replace `to_canonical_graph` in `release.py` with a canonicalization that copes with thousands of similar restrictions; add a size test (thousands of classes and restrictions) to the template's own suite with a time budget. This cost ~3 h hands-on and ~20 h of machine time.
+  2. **Let a project carry known findings everywhere, by identity.** The validation baseline is a count per rung; IRI lint has no baseline at all; the site refuses outright. A port arrives with findings. One mechanism (a list of findings, each with focus, check and reason) honoured by every check would have avoided the red Checks job, the fail-fast masking of 8 steps, and two questions to the PO.
+  3. **One contract for what a term must carry.** The site requires a `skos:definition` on every authored term and one value per language; the ladder does not check either for properties. Put the site's rules in the shapes (and document them), so a port fails at the gate, not at deploy. Also say where a project's own tests go (`tests/` is template-owned) and how to map a predecessor ontology in SSSOM (no `semapv` justification fits a namespace move).
+- **Anything the template made easier than you expected:** `init_project.py` (one clean run, ~1 min); the layout contract (four modules declared, right first time); vendoring by reference (133 seeds to a 151-term extract with no hand work); the SSSOM checker (5,051 rows, 0 findings first time); the IRI linter (one true finding across 5,051 terms, no noise); the reasoner (ELK over the full pinned BFO + CCO, 1 min locally); the falsification fixtures, which made it possible to *prove* the `validate.py` patch changed nothing; and the validation gate's refusal to raise a count without a stated reason, which forced every accepted finding into words.
