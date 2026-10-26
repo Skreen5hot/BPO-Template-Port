@@ -108,8 +108,55 @@ def stable_shape(source, message) -> str:
     return "_:constraint-" + digest[:12]
 
 
+def bind_this_inline() -> None:
+    """Write an IRI focus node into each SPARQL constraint, not only bind it.
+
+    pyshacl runs every SPARQL constraint once per focus node and passes the
+    node as an initBinding. rdflib applies initBindings after it has
+    evaluated the pattern, so `$this rdfs:subClassOf+ obo:BFO_0000001` is
+    walked for every class in the graph and then filtered to one: each
+    focus node costs a whole-graph evaluation, and a run is quadratic in the
+    corpus. Measured on the Business Process Ontology port (3,119 classes):
+    the realist set took 1,390 s on one section of thirteen, the full run
+    did not finish in two hours, and one focus node took 0.865 s pre-bound
+    against 0.028 s with its IRI in the query text.
+
+    So where the focus node is an IRI, it is also substituted for `$this`
+    in the query body. The binding stays, so a projected `$this` and a
+    message's {$this} are what they were. A blank-node or literal focus
+    node has no query-text form and is pre-bound as before.
+    """
+    import re
+
+    import rdflib
+    from pyshacl.helper.sparql_query_helper import SPARQLQueryHelper
+
+    original = SPARQLQueryHelper.pre_bind_variables
+    if getattr(original, "inlines_this", False):
+        return
+    variable = re.compile(r"[$?]this(?![A-Za-z0-9_])")
+
+    def pre_bind_variables(self, thisnode, valuenode=None, extravars=None):
+        bindings, text = original(self, thisnode, valuenode=valuenode,
+                                  extravars=extravars)
+        if "this" in bindings and isinstance(thisnode, rdflib.URIRef):
+            # The outermost braces only: a GROUP BY or ORDER BY after them
+            # takes a variable, never an IRI.
+            start, end = text.find("{"), text.rfind("}")
+            if 0 <= start < end:
+                text = (text[:start] + variable.sub(
+                    lambda _: "<%s>" % thisnode, text[start:end])
+                    + text[end:])
+        return bindings, text
+
+    pre_bind_variables.inlines_this = True
+    SPARQLQueryHelper.pre_bind_variables = pre_bind_variables
+
+
 def run(data, shapes) -> dict:
     from pyshacl import validate as shacl
+
+    bind_this_inline()
 
     conforms, results_graph, results_text = shacl(
         data_graph=data, shacl_graph=shapes, inference="none",
