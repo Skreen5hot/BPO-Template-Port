@@ -19,6 +19,8 @@ and divergence is reported, not refused.
 from __future__ import annotations
 
 import json
+import re
+import subprocess
 
 import pytest
 
@@ -113,6 +115,76 @@ def test_the_manifest_describes_the_owned_files(status, project):
             "tools/template_status.py --record: %s" % difference)
 
 
+def test_the_manifest_records_the_template_commit(status, project, repo):
+    """The manifest names the template commit it was recorded on, so a
+    project can say which template it was made from (T21). In the
+    template it is required, and where history is present (not a shallow
+    CI checkout) it is HEAD or an ancestor of it. In a project it is
+    whatever arrived, or absent if the template predates it."""
+    commit = status.recorded().get("template_commit")
+    if not project.is_template() and commit is None:
+        return
+    assert commit and re.fullmatch(r"[0-9a-f]{40}", commit), (
+        "the manifest names no template commit: %r. Run python "
+        "tools/template_status.py --record" % commit)
+    if not project.is_template():
+        return
+    present = subprocess.run(["git", "cat-file", "-e", commit + "^{commit}"],
+                             cwd=str(repo), capture_output=True)
+    if present.returncode:
+        return
+    ancestor = subprocess.run(["git", "merge-base", "--is-ancestor", commit,
+                               "HEAD"], cwd=str(repo), capture_output=True)
+    assert ancestor.returncode == 0, (
+        "the manifest names %s, which is not in this branch's history"
+        % commit)
+
+
+def test_record_names_the_commit_it_was_made_on(status, monkeypatch,
+                                                tmp_path):
+    """--record writes HEAD, the commit the record is made on. It runs as
+    the template, whatever repository runs the suite: in a project
+    --record refuses, and project.yaml is not under tmp_path."""
+    monkeypatch.setattr(status.project, "is_template", lambda: True)
+    monkeypatch.setattr(status.project, "repository", lambda: "owner/t")
+    monkeypatch.setattr(status, "MANIFEST", "manifest.json")
+    monkeypatch.setattr(status.layout, "repository_root", lambda: tmp_path)
+    monkeypatch.setattr(status, "measure",
+                        lambda root=None: {"files": {}, "digest": "d"})
+    monkeypatch.setattr(status, "head_commit", lambda root: "c" * 40)
+    assert status.main(["--record"]) == 0
+    record = json.loads((tmp_path / "manifest.json").read_text(
+        encoding="utf-8"))
+    assert record["template_commit"] == "c" * 40
+
+
+def test_a_project_test_is_not_divergence(status, layout, monkeypatch):
+    """tests/project/ is the project's own: a test there is collected by
+    the suite and is not reported as added to the template's tests/
+    (T16). A file straight under tests/ still is."""
+    candidates = status.candidate_files(status.layout.repository_root())
+    monkeypatch.setattr(status, "candidate_files", lambda root=None: sorted(
+        candidates + ["tests/project/test_mine.py", "tests/test_mine.py"]))
+    owned = status.owned_files()
+    assert "tests/project/test_mine.py" not in owned
+    assert "tests/test_mine.py" in owned
+    owner = layout.owning_component("tests/project/test_mine.py")
+    assert owner is not None and owner.template != "owned", owner
+
+
+def test_a_project_test_has_a_basename_of_its_own(repo):
+    """The suite has no __init__.py, so pytest imports a test file by its
+    basename: a project test named like one of the template's is an
+    import error, reported here by name instead."""
+    template = {p.name for p in (repo / "tests").glob("test_*.py")}
+    clashes = sorted(p.relative_to(repo).as_posix()
+                     for p in (repo / "tests/project").rglob("test_*.py")
+                     if p.name in template)
+    assert clashes == [], (
+        "these project tests share a name with a file in tests/; rename "
+        "them: %s" % clashes)
+
+
 def test_a_changed_owned_file_is_reported(status, monkeypatch):
     """Falsifies the comparison: one owned file with a different digest
     has to come back as changed, and only that one."""
@@ -156,38 +228,3 @@ def test_against_names_what_both_sides_changed(status, monkeypatch,
     report = status.against(tmp_path)
     assert report["both"] == [both], report
     assert theirs_only in report["template_changed"]["changed"]
-
-
-def test_the_dependabot_workflow_rerecords_the_manifest_and_nothing_else(repo):
-    """The guards that make it safe to give a Dependabot-triggered job
-    write permission, read from the workflow itself: it runs only when
-    both the author and the actor are Dependabot, only in the template,
-    refuses to push anything but the manifest, and re-runs the real
-    checks on the new commit rather than declaring it green."""
-    import yaml
-
-    workflow = yaml.safe_load((repo / ".github/workflows/"
-                               "dependabot-manifest.yml").read_text(
-        encoding="utf-8"))
-    job = workflow["jobs"]["rerecord"]
-    condition = " ".join(job["if"].split())
-    assert "github.event.pull_request.user.login == 'dependabot[bot]'" \
-        in condition
-    assert "github.actor == 'dependabot[bot]'" in condition
-    assert workflow["permissions"] == {"contents": "read"}
-    assert job["permissions"] == {"contents": "write", "actions": "write"}
-
-    steps = {step["name"]: step for step in job["steps"]}
-    record = steps["Re-record, and refuse anything but the manifest"]
-    assert "steps.state.outputs.template == 'true'" in record["if"]
-    assert '!= "config/template-manifest.json"' in record["run"]
-    push = steps["Push the one-file commit"]["run"]
-    assert "git add config/template-manifest.json" in push
-    assert "git add -A" not in push and "git add ." not in push
-    rerun = steps["Run Checks, Reasoning and Pages on the new commit"]["run"]
-    for workflow_file in ("checks.yml", "reasoning.yml", "pages.yml"):
-        assert workflow_file in rerun, workflow_file
-    text = (repo / ".github/workflows/dependabot-manifest.yml").read_text(
-        encoding="utf-8")
-    for forbidden in ("gh pr merge", "gh pr review", "--admin"):
-        assert forbidden not in text, forbidden

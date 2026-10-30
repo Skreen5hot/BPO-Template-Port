@@ -1,0 +1,8 @@
+actions/checkout | pinned v7.0.1 3d3c42e5aac5ba805825da76410c181273ba90b1 | tag->3d3c42e5aac5ba805825da76410c181273ba90b1 | match=yes | latest v7.0.1 2026-07-20T15:10:05Z
+actions/setup-python | pinned v7.1.0 6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 | tag->6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 | match=yes | latest v7.1.0 2026-10-22T02:56:04Z
+actions/setup-java | pinned v6.1.0 b843ebf9b913146b38da2eaa7aeddf76074ae1ad | tag->b843ebf9b913146b38da2eaa7aeddf76074ae1ad | match=yes | latest v6.1.0 2026-10-14T20:17:01Z
+actions/cache | pinned v6.1.0 55cc8345863c7cc4c66a329aec7e433d2d1c52a9 | tag->55cc8345863c7cc4c66a329aec7e433d2d1c52a9 | match=yes | latest v6.1.0 2026-06-26T19:17:06Z
+actions/configure-pages | pinned v6.0.0 45bfe0192ca1faeb007ade9deae92b16b8254a0d | tag->45bfe0192ca1faeb007ade9deae92b16b8254a0d | match=yes | latest v6.0.0 2026-03-25T17:00:49Z
+actions/upload-pages-artifact | pinned v5.0.0 fc324d3547104276b827a68afc52ff2a11cc49c9 | tag->fc324d3547104276b827a68afc52ff2a11cc49c9 | match=yes | latest v5.0.0 2026-04-10T18:22:59Z
+actions/upload-artifact | pinned v7.0.2 cf430e030ddbb5b0abf93d22962f4752f3646cd9 | tag->cf430e030ddbb5b0abf93d22962f4752f3646cd9 | match=yes | latest v7.0.2 2026-10-07T10:08:14Z
+actions/deploy-pages | pinned v5.0.1 368f82528645a54fb793d4d04e342629a3f51346 | tag->368f82528645a54fb793d4d04e342629a3f51346 | match=yes | latest v5.0.1 2026-09-01T21:31:19Z

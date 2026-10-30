@@ -1,0 +1,6 @@
+pytest | pinned 9.2.0 | latest 9.2.0 (2026-10-27) | osv advisories at pin: none
+PyYAML | pinned 6.0.3 | latest 6.0.3 (2025-09-25) | osv advisories at pin: none
+rdflib | pinned 7.6.0 | latest 7.6.0 (2026-02-13) | osv advisories at pin: none
+pyshacl | pinned 0.40.2 | latest 0.40.2 (2026-10-28) | osv advisories at pin: none
+pyoxigraph | pinned 0.5.13 | latest 0.5.13 (2026-10-22) | osv advisories at pin: none
+Markdown | pinned 3.11.2 | latest 3.11.2 (2026-10-19) | osv advisories at pin: none

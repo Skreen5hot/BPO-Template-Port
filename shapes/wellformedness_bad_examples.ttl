@@ -67,6 +67,63 @@ bpot:FixtureWellFormed a owl:Class ;
     rdfs:label "Well formed" ;
     skos:definition "One label, one definition, nothing to report." .
 
+# -- W6: a label that is an IRI -------------------------------------
+
+bpot:FixtureIriLabel a owl:Class ;
+    rdfs:label bpot:FixtureWellFormed ;
+    skos:definition "Labelled with a reference, not with text." .
+
+# -- W7: a definition that is an IRI ----------------------------------
+
+bpot:FixtureIriDefinition a owl:Class ;
+    rdfs:label "IRI definition" ;
+    skos:definition bpot:FixtureWellFormed .
+
+# -- W8: two comments, same language (T8) ----------------------------
+#
+# Checked by the annotation profile's agree_across_modules list, not by
+# these shapes: rdfs:comment is not part of the term contract. The BPO
+# port had 129 comment rows of this kind across its modules.
+
+bpot:FixtureDriftedComment a owl:Class ;
+    rdfs:label "Drifted comment" ;
+    skos:definition "A class whose comment differs between modules." ;
+    rdfs:comment "As one module says it." , "As another module says it." .
+
+# A comment in two languages is not drift.
+bpot:FixtureMultilingualComment a owl:Class ;
+    rdfs:label "Multilingual comment"@en ;
+    skos:definition "A class with one comment per language."@en ;
+    rdfs:comment "In English."@en , "En francais."@fr .
+
+# -- P1 to P5: properties, held to the class contract -----------------
+#
+# The BPO port's properties had no definitions, and the shapes, written
+# for classes, passed them; the site refused them at deploy.
+
+bpot:fixtureUndefinedProperty a owl:ObjectProperty ;
+    rdfs:label "undefined property" .
+
+bpot:fixtureUnlabelledProperty a owl:DatatypeProperty ;
+    skos:definition "A property with a definition and no label." .
+
+bpot:fixtureDriftedProperty a owl:AnnotationProperty ;
+    rdfs:label "first name"@en , "second name"@en ;
+    skos:definition "A property with two English labels."@en .
+
+bpot:fixtureIriLabelProperty a owl:ObjectProperty ;
+    rdfs:label bpot:FixtureWellFormed ;
+    skos:definition "A property labelled with a reference." .
+
+bpot:fixtureIriDefinitionProperty a owl:ObjectProperty ;
+    rdfs:label "IRI-defined property" ;
+    skos:definition bpot:FixtureWellFormed .
+
+# A well-formed property, multilingual: not reported.
+bpot:fixtureWellFormedProperty a owl:ObjectProperty ;
+    rdfs:label "well formed property"@en , "propriete bien formee"@fr ;
+    skos:definition "A property with one label and one definition per language."@en .
+
 # A term carrying the same value twice is not drift -- an RDF graph is a
 # set, so the duplicate collapses on parse and there is nothing to find.
 # Here so that the rule is known to be about disagreement rather than

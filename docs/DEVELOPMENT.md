@@ -23,8 +23,16 @@ python -m pytest tests/ -q -p no:randomly
 ```
 
 The tests marked `reasoning` need Java 11 or later (they run the pinned ROBOT jar); without
-Java they fail, by design, rather than skip. To run everything else, as the Checks workflow
-does: `python -m pytest tests/ -q -p no:randomly -m "not reasoning"`.
+Java they fail, by design, rather than skip. The tests marked `scale` take a few minutes
+(two release builds of a 3,200-class benchmark). To run everything else, as the Checks
+workflow does: `python -m pytest tests/ -q -p no:randomly -m "not reasoning and not scale and not corpus"`.
+Tests marked `corpus` do work that grows with the live ontology -- two release builds of it
+-- and run in the Scale workflow; a project's own test that does the same should carry the
+mark.
+
+A project's own tests go in `tests/project/`, which the suite collects and the template does
+not own, so `tools/template_status.py` does not report them as divergence. Give each file a
+basename no file in `tests/` has; `tests/test_template.py` refuses a clash.
 
 `tools/` is deliberately not an installed package. It is a directory of scripts that the
 tests import by path, so there is no build step between writing a tool and testing the
@@ -78,9 +86,9 @@ python -m pytest tests/ -q -p no:randomly     # all of the above, plus the falsi
 | `disposition.py` | a file matching two rules, or none; an adjudication naming no file; a `LICENSE` naming zero or two recognised licences |
 | `disposition.py --check` | a tracked file that may not be redistributed; a vendored extract whose required attribution is missing from `vendor/NOTICE.md` |
 | `vendor_upstream.py` | an upstream term the corpus or the shapes name that no extract describes; an extract whose digest is not what the manifest records |
-| `validate.py --gate` | a rung with more findings than `config/validation-baseline.json` records, a rung with fewer that has not been re-recorded, a shape set the fixture does not exercise, a rung blocked on missing vocabulary, a violation against a vendored term, and a rung the baseline does not mention |
-| `validate.py --record` | raising any recorded count without `--accept-regression "<why>"`. Lowering is always free |
-| `iri_lint.py` | an upstream IRI its pinned release does not have (`unverified`), a readable name where the upstream mints ids (`readable_label`, with the id suggested), an id in the wrong case (`case_mismatch`), a deprecated upstream term, an authored file typing an upstream term (`redeclared_upstream`), an authored IRI nothing declares (`dangling_ref`); and, as exit 2, a file it cannot read or parse |
+| `findings.py` | a register entry without a check, identity, severity, reason, owner or review date; a proposal's `TODO` placeholder left in; a review that is not a date; an entry repeated; an entry about an upstream term that does not name the upstream |
+| `validate.py --gate` | a violation or warning no register entry accepts; an entry that matches nothing; a shape set the fixture does not exercise; a rung blocked on missing vocabulary. Among the findings: every rule the site's term contract depends on -- an authored class **or property** without one literal label and definition per language, a term whose text differs between modules; and, read module by module, a module without exactly one header, header text that is not one literal per language, a term declared in two modules, declared third-party text whose module header lacks its source, release or attribution; and a class breaking one of the project's scheme rules |
+| `iri_lint.py` | an upstream IRI its pinned release does not have (`unverified`), a readable name where the upstream mints ids (`readable_label`, with the id suggested), an id in the wrong case (`case_mismatch`), a deprecated upstream term, an authored file typing an upstream term (`redeclared_upstream`), an authored IRI nothing declares (`dangling_ref`) -- each unless the findings register accepts it -- and, over the whole scope, an entry that matches nothing; and, as exit 2, a file it cannot read or parse |
 | `competency.py` | an answerable question whose query gives a different answer, or none where rows were expected; an expectation nothing can fail (`rows: []`, `count: 0`, `ask: false`); a question depending on a term nobody defines; an example file that does not exist or lies outside `examples/` |
 | `profile_shapes.py --check` | `shapes/annotation_profile_shapes.ttl` differing from what `config/annotation-profile.yaml` generates; a profile property no pinned upstream or W3C vocabulary defines |
 | `reason.py` | an unsatisfiable authored class; an ontology with no model; example individuals inconsistent with it; and, as exit 2, no Java, a ROBOT jar that is not the pinned one, or an answer from ROBOT it cannot read |
@@ -104,8 +112,9 @@ python tools/ontology/corpus_digest.py -o config/corpus-digest.json
 
 ## Writing a term
 
-Authored terms live in the project namespace with readable local names
-(`<prefix>:MaintenanceAct`). Upstream terms are referenced by their own IRIs, which for BFO
+Authored terms live in the project namespace. New ones get readable local names
+(`<prefix>:MaintenanceAct`); a ported scheme of identifiers is kept and declared instead
+(`docs/PORTING.md`, section 6). Upstream terms are referenced by their own IRIs, which for BFO
 and CCO are opaque: `obo:BFO_0000015` is *process* and `cco:ont00001180` is
 *organization*, and neither is a name anybody should type from memory.
 
@@ -239,10 +248,29 @@ result the severity of the node shape that holds it, so a warning needs a node s
 own (see `rs:AuthoredClassReviewShape`). The gate counts `sh:Violation` results; warnings
 are reported beside them and never block.
 
-**Write SPARQL so each property path is in the block that binds its subject.** rdflib
-evaluates a group split by a `FILTER` or a `UNION` on its own; a `?x rdfs:subClassOf* ?y`
-there runs with `?x` unbound over every node in the graph. Use path alternatives (`|`, `^`)
-instead of `UNION`, and put filters last.
+**SPARQL constraints run in Oxigraph, not pyshacl.** pyshacl evaluates a SPARQL constraint
+once per focus node through rdflib, which is quadratic: on the Business Process Ontology's
+3,119 classes the ladder did not finish in two hours. `tools/ontology/sparql_constraints.py`
+runs each constraint once, its focus nodes in a `VALUES` block, and the ladder on BPO takes
+about 22 seconds; pyshacl still runs the core constraints. It supports what the template's
+shapes use -- SPARQL targets, `sh:select` constraints projecting `$this` with one
+`sh:message`, `sh:prefixes`, `sh:deactivated`, severity on the node shape -- and **refuses**
+anything else (`sh:ask`, a subquery, `$value`, another kind of target) rather than skipping
+it. A new shape that needs one of those is a change to the runner, with a case in
+`tests/test_scale.py`. `tests/test_scale.py` holds the two engines to the same records on
+every fixture; `validate.run(..., engine="pyshacl")` is the reference.
+
+**Write SPARQL so each property path is in the block that binds its subject.** Written for
+rdflib, and still good practice: rdflib evaluates a group split by a `FILTER` or a `UNION`
+on its own, and a `?x rdfs:subClassOf* ?y` there runs with `?x` unbound over every node in
+the graph. Use path alternatives (`|`, `^`) instead of `UNION`, and put filters last.
+
+**Size.** `python tools/ontology/benchmark.py` generates a corpus a little larger than BPO
+(3,200 classes, 4,500 alike restrictions) with one planted defect per check. The `scale`
+tests in `tests/test_scale.py` run the ladder and two release builds on it within 15
+minutes each (decision 11), in the Scale workflow, weekly and on any change to the tools,
+shapes or pins, together with the `corpus` tests. Locally:
+`python -m pytest tests/ -m "scale or corpus"`.
 
 ---
 
@@ -257,7 +285,10 @@ instead of `UNION`, and put filters last.
 | a restriction's filler not disjoint with the property's range, the restricted class not disjoint with its domain | violation |
 | the filler, or the class, not known to fall under that range or domain | warning |
 | one asserted named parent | warning |
-| the definition names the parent's label (genus–differentia) | warning |
+| the definition names the parent's label (genus–differentia), ignoring a trailing `(…)` in that label | warning |
+| a label does not end in a parenthetical qualifier — a note about the term belongs in `skos:altLabel`, `rdfs:comment` or the definition | warning |
+| no object property asserted from one class to another (punning: OWL reads both as individuals) | violation |
+| no restriction on an annotation property | violation |
 | a deprecated term names `dcterms:isReplacedBy` or a `skos:historyNote` | violation |
 | every ontology header under the IRI base has a title, licence, creator, version IRI and version info | violation |
 
@@ -283,6 +314,28 @@ Edit the YAML and regenerate; never the shapes:
 ```bash
 python tools/ontology/profile_shapes.py
 ```
+
+Its `agree_across_modules` list names the annotations a term may carry only one value of
+per language, across every module: by default `rdfs:label`, `skos:definition` and
+`rdfs:comment`. A module that inlines another's term carries a copy of its text, and the
+copies drift; each difference is a finding, by identity. Label and definition must stay on
+the list as violations — the wellformedness shapes check them as the term contract — and
+each other entry gets its own generated constraint, with its own severity.
+
+## Third-party text inside a module
+
+The licensing disposition is per file, so a module quoting another work is one file under
+your licence, and the quotation is invisible to it. Declare each annotation property that
+carries third-party text in `config/third-party-text.yaml`: the source, its release, the
+licence and the attribution you were told of. Then every module holding values of it must
+name the source and release in a `dcterms:source` on its header, and carry the attribution
+in `dcterms:rights`; `validate.py --gate` fails a module that does not, and
+`disposition.py` lists the text apart from the module's licence.
+
+The template ships no declaration and decides nothing: the values are whoever advises you
+on licensing. What these checks may say about the result is with Legal
+(`communications/legal/`), and the report says so until they answer. Nothing can find
+third-party text that is not declared.
 
 ## Competency questions and examples
 
@@ -359,6 +412,27 @@ requires the committed extracts to be byte-identical.
 
 ---
 
+## Pins
+
+Every dependency is pinned exactly, and nothing updates a pin by itself: there is no
+Dependabot (template decision 16). What a project starts with is what the template was
+released with, which may already be stale or carry a published vulnerability. **Checking
+every pin is the first thing a project does**, before its first push, and it is repeated
+before each release.
+
+| Pin | Where | How to check |
+|---|---|---|
+| GitHub Actions, by commit SHA, version in the trailing comment | `.github/workflows/*.yml` (`uses:`) | each action's releases page, or `gh api repos/<owner>/<action>/releases/latest` |
+| Python packages, exact versions | `requirements-dev.txt` | `python -m pip list --outdated`, and the advisories at https://osv.dev |
+| BFO and CCO, by commit and digest | `config/upstream-sources.yaml` | the upstream repositories; a move is a decision, then `vendor_upstream.py --rebuild` |
+| ROBOT, by version and digest | `config/reasoning.yaml` | the ROBOT releases; a move is a decision |
+
+An update changes a template-owned file, so `tools/template_status.py` will report it.
+That is expected: it is the record that the project moved the pin. Run the suite after
+each change.
+
+---
+
 ## The template
 
 `config/template-manifest.json` is the digest of every template-owned file as the template
@@ -369,6 +443,10 @@ made from.
 python tools/template_status.py                                 # what this project changed
 python tools/template_status.py --against ../Ontology-Template  # what the template changed since
 ```
+
+The manifest's `template_commit` is the template commit it was recorded on, and `label` the
+template release (or `unreleased`). Porting an existing ontology into a project is
+`docs/PORTING.md`, with its report form in `docs/porting/`.
 
 ---
 
@@ -426,7 +504,10 @@ that is not BFO-aligned never becomes a claim about this ontology's types.
 ## Naming, deprecation, and what changed
 
 `docs/governance/` holds the policy, each rule beside the check that holds it. Local names
-follow `config/naming.yaml` (the linter's `naming_convention`); a deprecated term names a
+follow `config/naming.yaml` (the linter's `naming_convention`). An IRI scheme that gives a
+local-name pattern a meaning — `P<number>` for a process type — is a **scheme rule** there:
+a pattern that must, or must not, sit under a category through `rdfs:subClassOf`, gated by
+the validator under `where: naming`. None ships enabled. A deprecated term names a
 replacement or a reason (the realist deprecated-term shape).
 `tools/ontology/term_diff.py` reports the terms added, removed, deprecated or changed
 between two commits — the Term diff workflow comments it on every pull request, and the
@@ -439,13 +520,11 @@ Release workflow ships it as `CHANGES.md`, inside the checksums.
   parent, a source, and why.
 - **Pull requests** carry a checklist (`.github/pull_request_template.md`) of the checks a
   change of each kind needs.
-- **Dependabot** proposes updates to the SHA-pinned actions and the exact Python pins as
-  pull requests; each runs the checks and is merged by a person. It does not touch the
-  ontology or ROBOT pins, which move by decision. In the template, where those files are
-  template-owned, `.github/workflows/dependabot-manifest.yml` re-records
-  `config/template-manifest.json` on a Dependabot pull request -- that file and nothing
-  else -- and re-runs Checks and Reasoning on the result, so the pull request is judged on
-  what the update does. It approves and merges nothing.
+- **Pins are checked by a person, not updated by a bot.** There is no Dependabot (decision
+  16 of the template). The actions are pinned by commit SHA, the Python packages exactly,
+  BFO, CCO and ROBOT by commit or version and digest. Checking every one is the first step
+  of using the template ("Pins", above), and moving one is a
+  change like any other: the suite, and a commit that says why.
 - **`research/`** is the project's own notes. Sources go in `docs/Reference/`, never
   tracked; `disposition.py --check` refuses anything in `research/` that is not a note,
   table or bibliography, and any file that is a byte copy of reference material.
@@ -490,6 +569,9 @@ The header's ontology IRI is `<iri_base>/<id>-base` (or `-full`), the version IR
 come from the main module's header. To build locally: `python tools/release.py --version
 1.2.0` (into `dist/`, gitignored). RDF/XML and JSON-LD are written by the tool, flat and
 sorted, because rdflib's writers for both are not deterministic across processes.
+Blank nodes are labelled by structure (`tools/ontology/canon.py`): linear for the tree-shaped
+blank nodes OWL in Turtle produces, where rdflib's canonicalization did not finish one BPO
+build in five hours. A blank node with two parents, or on a cycle, falls back to rdflib.
 
 ---
 
@@ -502,7 +584,7 @@ disk will not run the explorer's scripts: `python -m http.server -d _site 8000`.
 
 | Page | Read from |
 |---|---|
-| Home, Status | the project file, the term counts, the validation baseline, the lint and competency results, `docs/decisions/`, the latest `v*` tag |
+| Home, Status | the project file, the term counts, the findings register, the lint and competency results, `docs/decisions/`, the latest `v*` tag |
 | Explore | every authored term and every upstream term, as `data/terms.json`; category from the `rdfs:subClassOf` chain, never a name |
 | Modules, Downloads | the modules, the shape sets, the pins and the extracts, with checksums; a byte-reproducible bundle of the authored files |
 | Vocabulary | each authored `skos:ConceptScheme`, as a tree |
@@ -515,14 +597,26 @@ disk will not run the explorer's scripts: `python -m http.server -d _site 8000`.
 labels, the reviewer guidance, the notices -- and no figure the build can read. The
 fragments in `site/pages/` and the assets in `site/src/` are the template's.
 
-**What the build refuses**: an authored term with no label or definition, or two in one
-language; a class reaching two unrelated BFO categories; a placeholder nothing fills; a page
-fragment no navigation entry names; an asset that is not `.css` or `.js`; and a source file
-with CRLF line endings, because the downloads are those bytes and would differ from CI's.
+**One term contract.** The build refuses nothing about the ontology's content. A term with
+no definition, two labels in one language, text that differs between modules, a label that
+is an IRI, two unrelated BFO categories, a module with no header or two: each is a finding
+`validate.py --gate` fails on, and one the register can accept -- so a site that refused it
+would fail at deploy on an ontology every check passed. The term is published as it is:
+every variant of its label and definition with the modules each comes from, the finding
+noted on the term and listed on the status page, and the register's accepted findings about
+it shown with their reasons. Nothing is chosen between variants. `tests/test_term_contract.py`
+puts one planted corpus through the site and the validator and requires them to agree.
+
+**What the build refuses** is its own inputs: a placeholder nothing fills; a page fragment
+no navigation entry names; an asset that is not `.css` or `.js`; a vendored file no pin
+produces; and a source file with CRLF line endings, because the downloads are those bytes
+and would differ from CI's. The Checks job builds and checks the site, so each fails a pull
+request, not a deploy.
 **What the checker refuses**: a page without its structure (lang, one title, one `<h1>`,
 `<main id="main">`), a resource from another origin, an inline script or `on*` handler, a
-root-absolute or unresolved link or fragment, and a download or bundle that does not match
-its checksums.
+root-absolute or unresolved link or fragment, a download or bundle that does not match
+its checksums, and a term whose text differs within a language published without a note,
+as one of its variants, or missing from the status page.
 
 **Publishing.** The ontology is public; how it was made need not be. The Pages workflow
 builds, checks and proves the build reproducible on every push and pull request (pull
@@ -575,18 +669,41 @@ template's roadmap.
 
 ## Conventions
 
-### Paying down a finding
+### Accepting a finding, and paying one down
 
-Findings are recorded per shape set in `config/validation-baseline.json`, and the gate
-requires the file to describe reality — *more* is a regression, *fewer* means re-record so
-the reduction shows up in a diff:
+A finding a project accepts rather than fixes is an entry in `config/findings-register.yaml`,
+one per finding, shared by the validator and the IRI linter. An entry names the finding by
+identity -- the check, the shape set or file, the term, the shape or rule, a digest of the
+message, the severity -- and says why it is accepted, who answers for it, and when it is
+looked at again. `tools/findings.py` states the fields; the policy is decision 11's:
+
+- a new violation fails;
+- a new warning fails unless it is entered;
+- a new info is reported;
+- an entry that matches nothing fails, so a fix removes its entry in the same commit;
+- a review date that has passed is reported, not failed.
+
+A finding about a pinned upstream's term (CCO's Organization, not under Agent) is entered
+with `upstream: CCO <IRI>`, and the status page lists those apart. Each check prints the
+entries for its new findings, for a person to complete:
 
 ```bash
-python tools/ontology/validate.py --record     # after fixing something
+python tools/ontology/validate.py --propose
+python tools/ontology/iri_lint.py --propose
 ```
 
-`--record` refuses to raise a count without `--accept-regression "<why>"`, and writes the
-reason beside the number it excuses.
+An entry still carrying the proposal's `TODO` is refused. `--reason`, `--owner` and
+`--review` fill every proposed entry at once, for a port that arrives with many findings
+of one kind; that is a decision about all of them, and the commit should say whose.
+
+`validate.py -o report.json` writes every finding, not a sample, and the validator says
+which shape set it is on, on stderr.
+
+### The Checks job
+
+Every check step is marked `continue-on-error` and has an id; the last step fails the job
+and lists every check that did not pass. One failure no longer hides the checks after it.
+`tests/test_findings.py` fails on a check step without either.
 
 ### Recording a decision
 

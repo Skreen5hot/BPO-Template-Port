@@ -192,6 +192,22 @@ components:
 
   # ---- Documentation -------------------------------------------------
 
+  - id: config.gitattributes
+    path: .gitattributes
+    role: configuration
+    template: owned
+    description: >-
+      LF line endings throughout. Every digest in the repository is over
+      LF bytes, so a CRLF checkout would change them all.
+
+  - id: config.gitignore
+    path: .gitignore
+    role: configuration
+    template: owned
+    description: >-
+      What is never tracked: the virtual environments, caches, the built
+      site and release output.
+
   - id: docs.readme
     path: README.md
     role: documentation
@@ -228,6 +244,24 @@ components:
       How a repository made from this template is built, and why. Carried
       from BFO-Aligned ValueNet, where the method was worked out, through
       ARO and the BCO.
+
+  - id: docs.porting
+    path: docs/PORTING.md
+    role: documentation
+    template: owned
+    description: >-
+      How to bring a predecessor ontology into a project made from this
+      template: the namespace move and its mapping set, the module
+      headers, the lossless check, the findings it arrives with, and the
+      naming scheme it already has.
+
+  - id: docs.porting-form
+    path: docs/porting
+    role: documentation
+    template: owned
+    description: >-
+      The port report form, kept blank. A port copies it to research/
+      and fills it in as it goes; init leaves research/ alone.
 
   - id: docs.governance
     path: docs/governance
@@ -457,6 +491,14 @@ components:
       repository. Written by tools/init_project.py; read by every tool
       through tools/project.py.
 
+  - id: config.findings-register
+    path: config/findings-register.yaml
+    role: configuration
+    description: >-
+      Every finding a check accepts rather than fails on, one entry each by
+      identity, with a reason, an owner and a review date. Written by a
+      person; read by the validator, the IRI linter and the site.
+
   - id: config.annotation-profile
     path: config/annotation-profile.yaml
     role: configuration
@@ -488,7 +530,19 @@ components:
     role: configuration
     description: >-
       The local-name conventions for authored classes, properties and
-      concepts, checked by the IRI linter and the vocabulary generator.
+      concepts, checked by the IRI linter and the vocabulary generator;
+      and the project's scheme rules (none by default), gated by the
+      validator.
+
+  - id: config.third-party-text
+    path: config/third-party-text.yaml
+    role: configuration
+    description: >-
+      The annotation properties that carry third-party text, each with
+      the source, release, licence and attribution the project was told
+      of. The template declares none. The validator holds each module
+      using one to its declaration; the disposition report lists the
+      text apart from the module's licence.
 
   - id: config.layout
     path: config/repository-layout.yaml
@@ -515,8 +569,8 @@ components:
     role: configuration
     template: owned
     description: >-
-      Dependabot (the SHA-pinned actions and the exact Python pins), the
-      term-request and defect issue forms, and the pull-request checklist.
+      The term-request and defect issue forms, and the pull-request
+      checklist. No Dependabot: pins are checked by a person (decision 16).
 
   - id: ci.workflows
     path: .github/workflows
@@ -533,6 +587,23 @@ components:
     description: >-
       The suite, including the falsifications: every check here is shown
       to fail on the thing it protects against.
+
+  - id: tests.project
+    path: tests/project
+    role: tool
+    description: >-
+      The project's own tests: what the project's decisions require of
+      its ontology, beyond what the template checks. Collected by the
+      suite like any other test, and not template-owned, so a test here
+      is not reported as divergence from the template (T16).
+
+  - id: tool.findings
+    path: tools/findings.py
+    role: tool
+    template: owned
+    description: >-
+      The findings register: reads and checks it, and judges a check's
+      findings against it -- accepted, new, stale, due for review.
 
   - id: tool.layout
     path: tools/layout.py
@@ -575,6 +646,14 @@ components:
       Exactly one disposition per tracked file, derived from role and
       adjudication rather than from a list of filenames.
 
+  - id: tool.third-party-text
+    path: tools/licensing/third_party.py
+    role: tool
+    template: owned
+    description: >-
+      Reads and checks the third-party text declarations. Records what a
+      project declares and checks it is present; judges no licence.
+
   - id: tool.vendor-upstream
     path: tools/ontology/vendor_upstream.py
     role: tool
@@ -591,7 +670,7 @@ components:
     description: >-
       The SHACL ladder: every shape set against the authored ontology plus
       the vendored extracts, and against the fixtures built to break it.
-      Gates against the baseline.
+      Gates through the findings register.
 
   - id: tool.iri-lint
     path: tools/ontology/iri_lint.py
@@ -682,6 +761,15 @@ components:
       audited against the source commit; the modules are authored from
       here on, not regenerated.
 
+  - id: tool.upgrade
+    path: tools/upgrade_to_v010.py
+    role: tool
+    description: >-
+      One-shot upgrade of this project from the template it was made from
+      (2455bcc) to template v0.1.0, for WP6 Phase A: a three-way merge of
+      every file the template changed, with init's transforms applied to
+      both template sides. Kept so the upgrade can be audited.
+
   - id: tool.mappings
     path: tools/ontology/mappings.py
     role: tool
@@ -707,6 +795,33 @@ components:
       Keeps the modules that declare format: canonical in canonical Turtle,
       for modules edited in Protégé.
 
+  - id: tool.benchmark
+    path: tools/ontology/benchmark.py
+    role: tool
+    template: owned
+    description: >-
+      Generates a corpus a little larger than the Business Process
+      Ontology, with one planted defect per kind of check, so the
+      template's time budgets are measured on a real size.
+
+  - id: tool.sparql-constraints
+    path: tools/ontology/sparql_constraints.py
+    role: tool
+    template: owned
+    description: >-
+      Evaluates the shapes' SPARQL constraints set-based in Oxigraph,
+      held record for record to pyshacl's results; refuses any SHACL
+      feature it does not evaluate.
+
+  - id: tool.canon
+    path: tools/ontology/canon.py
+    role: tool
+    template: owned
+    description: >-
+      Canonical blank-node labels by structure, linear for tree-shaped
+      blank nodes, rdflib's canonicalization otherwise; used by the
+      release build and the canonical-form check.
+
   - id: protege
     path: protege
     role: generated-artifact
@@ -721,14 +836,6 @@ components:
     template: owned
     description: >-
       Ground digest and blank-node fingerprint of the authored ontology.
-
-  - id: generated.validation-baseline
-    path: config/validation-baseline.json
-    role: generated-artifact
-    generator: tool.validate
-    description: >-
-      The findings this repository is known to carry, per shape set. The
-      gate keeps it from growing without a recorded reason.
 
   - id: generated.corpus-digest
     path: config/corpus-digest.json
