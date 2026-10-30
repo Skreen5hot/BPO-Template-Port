@@ -216,9 +216,10 @@ Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked a
   variants of 53 terms, which the validator reports (53 warnings), cannot be seen on the site
   (finding P-A5).
 
-**Not done: the visual run in a browser.** No browser was available to this session. That
-means the rendering, the screenshots, the per-term checklist and the planted conflict. It is
-left for a person; the data side above is what it checks against.
+**The visual run in a browser:** the BPO architect inspected the explorer in a browser on
+2026-10-30 and found it good. This is an inspection, not the fuller evidence planned: no
+screenshots, no per-term checklist and no planted conflict were recorded. The data check
+above is the per-term evidence.
 
 ## 8. Classification (11:03–11:09), approved; register committed 14:21, dispose stage 14:22–14:54
 
@@ -281,9 +282,8 @@ The S1 evaluation's six stages (§3 there), re-rated for v0.1.0 on BPO:
 **Remaining detection gaps on BPO:** APQC text and its release (G1, G2), pending declaration
 and Legal; and property semantics (G4), which needs review by design.
 
-**Phase A status (14:54):** steps 1 to 6, 8 and 9 done. Step 7 is done for the data
-(§7). The visual run in a browser is still open: screenshots, the per-term checklist and
-the planted conflict need a person with a browser.
+**Phase A status:** done. Every step is complete; step 7's browser run was an inspection by
+the BPO architect, without screenshots or checklist (§7).
 
 ## Findings of Phase A
 
