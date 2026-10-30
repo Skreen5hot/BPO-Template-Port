@@ -217,7 +217,9 @@ Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked a
   (finding P-A5).
 
 **The visual run in a browser:** the BPO architect inspected the explorer in a browser on
-2026-10-30 and found it good. This is an inspection, not the fuller evidence planned: no
+2026-10-30 and found it good. The build inspected was the local v0.1.0 site built from S1
+(the build checked above), served locally; not the public Pages site, which still shows
+`main`'s build on the old template. This is an inspection, not the fuller evidence planned: no
 screenshots, no per-term checklist and no planted conflict were recorded. The data check
 above is the per-term evidence.
 
