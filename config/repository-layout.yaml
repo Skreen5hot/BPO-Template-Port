@@ -268,6 +268,15 @@ components:
       The terms this repository is offered under. Read by the licensing
       tool rather than assumed.
 
+  - id: notice.apqc
+    path: NOTICE.md
+    role: documentation
+    description: >-
+      APQC's PCF notice, copied verbatim from BPO's NOTICE.md (b3b7ff3):
+      which material here is APQC's rather than MIT, and where it is.
+      APQC's licence requires the notice with every copy and derivative
+      work; the site carries it in every page's footer.
+
 
   # ---- Vendored upstream ontology ------------------------------------
   #

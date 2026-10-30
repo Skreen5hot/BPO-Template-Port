@@ -53,5 +53,6 @@ template version it was made from.
 
 ## Licence
 
-[MIT](LICENSE). The vendored extracts carry their upstream licences: BFO CC BY 4.0, CCO
-BSD-3-Clause.
+[MIT](LICENSE), except the material derived from the APQC Process Classification
+Framework® (PCF) 7.4, which is used under APQC's licence: see [NOTICE.md](NOTICE.md). The
+vendored extracts carry their upstream licences: BFO CC BY 4.0, CCO BSD-3-Clause.

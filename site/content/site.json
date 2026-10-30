@@ -29,7 +29,7 @@
       "why": "When IRIs do not resolve over HTTP, rendering them as links sends a reader to a 404 and implies the ontology is broken; the footer says so and IRIs are copyable text. Set resolve to true once they do."
     },
     "acknowledgment": {
-      "text": "",
+      "text": "Contains material derived from the APQC Process Classification Framework® (PCF), Cross-Industry version 7.4 (element IDs, hierarchy IDs, names and descriptions), taken from the Business Process Ontology and used under APQC's licence, not the MIT licence; see NOTICE.md in the repository. Not endorsed by APQC. APQC's notice: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.",
       "why": "Who besides the licence holder made this, and how -- including substantive assistance from AI agents. Empty prints only the licence holder."
     },
     "build_label": {
