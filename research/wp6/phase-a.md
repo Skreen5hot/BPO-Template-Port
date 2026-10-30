@@ -199,7 +199,7 @@ Java 21. Private-repository minutes.
 pass: `validate`, `iri_lint`, `tests`. All three fail for one reason: v0.1.0's findings
 register is empty, so every accepted finding is new until it is entered (§8).
 
-## 7. The explorer (11:05)
+## 7. The explorer (11:00–11:03)
 
 Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked against
 `config/annotation-drift.tsv`:
@@ -214,7 +214,7 @@ Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked a
 means the rendering, the screenshots, the per-term checklist and the planted conflict. It is
 left for a person; the data side above is what it checks against.
 
-## 8. Classification (11:10–11:40) — awaiting the architect
+## 8. Classification (11:03–11:09) — awaiting the architect
 
 `research/wp6/classification.md`. Every one of the 4,323 S0 findings is in exactly one of 17
 classes (`tools/wp6_classify.py`; `measure/s0/classes.tsv`). Each class has a proposed
