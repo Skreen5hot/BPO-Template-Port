@@ -430,8 +430,7 @@ bpot:PartnerManagementCapability a owl:Class ;
     dcterms:creator "Aaron Damiano" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://fandaws.com/ontology/bpo/slice/3.0>,
-        "APQC Process Classification Framework (Cross-Industry)",
-        "APQC Process Classification Framework (Cross-Industry) v7.4" ;
+        "APQC Process Classification Framework (Cross-Industry)" ;
     dcterms:title "Business Process Ontology -- PCF 3.0 Market and Sell Products and Services" ;
     rdfs:comment "Reality layer for APQC PCF category 3.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
     owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_3.ttl> ;

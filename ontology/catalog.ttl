@@ -17562,6 +17562,16 @@ bpot:PCF_21601 a owl:NamedIndividual,
     bpot:hierarchyID "13.9.2.3" ;
     bpot:pcfID "21601" .
 
+bpot:PCF_10003 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Develop and Manage Products and Services" ;
+    bpot:apqcSourceText "Detailing practices and procedures related to the concept of developing and managing products and services. These are reflected in the process groups Govern and manage product/service development program [19696], Generate and define new product/service ideas [19698], and Develop products and services [10062]." ;
+    bpot:hierarchyID "2.0" ;
+    bpot:pcfID "10003" .
+
 bpot:PCF_10018 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -18035,6 +18045,16 @@ bpot:PCF_20004 a owl:NamedIndividual,
     bpot:hierarchyID "3.2.3.7" ;
     bpot:pcfID "20004" .
 
+bpot:PCF_20025 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Deliver Services" ;
+    bpot:apqcSourceText "Offering services to customers. This is the act of providing service delivery as a core business practice and covers identifying strategies for performing service delivery, managing resources, and delivering services to the customer." ;
+    bpot:hierarchyID "5.0" ;
+    bpot:pcfID "20025" .
+
 bpot:PCF_20040 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -18156,16 +18176,15 @@ bpot:PCF_21598 a owl:NamedIndividual,
     bpot:hierarchyID "13.9.2" ;
     bpot:pcfID "21598" .
 
-bpot:PCF_10003 a owl:NamedIndividual,
+bpot:PCF_10002 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
     rdfs:comment "APQC level: Category" ;
     skos:inScheme bpot:PCF ;
-    skos:prefLabel "Develop and Manage Products and Services" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Detailing practices and procedures related to the concept of developing and managing products and services. These are reflected in the process groups Govern and manage product/service development program [19696], Generate and define new product/service ideas [19698], and Develop products and services [10062]." ;
-    bpot:hierarchyID "2.0" ;
-    bpot:pcfID "10003" .
+    skos:prefLabel "Develop Vision and Strategy" ;
+    bpot:apqcSourceText "Establishing a direction and vision for an organization. This involves defining the business concept and long-term vision, as well as developing the business strategy and managing strategic initiatives. Processes in this category focus on creating a vision, a mission, and strategic objectives, and culminate in creating measures to ensure that the organization is moving in the desired direction." ;
+    bpot:hierarchyID "1.0" ;
+    bpot:pcfID "10002" .
 
 bpot:PCF_10107 a owl:NamedIndividual,
         skos:Concept,
@@ -18607,6 +18626,16 @@ bpot:PCF_16405 a owl:NamedIndividual,
     bpot:hierarchyID "13.2.2" ;
     bpot:pcfID "16405" .
 
+bpot:PCF_16437 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Manage Enterprise Risk, Compliance, Remediation, and Resiliency" ;
+    bpot:apqcSourceText "Ensuring that an organization effectively manages its risk. Process groups are aligned with traditional risk management activities." ;
+    bpot:hierarchyID "11.0" ;
+    bpot:pcfID "16437" .
+
 bpot:PCF_16795 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -18673,6 +18702,16 @@ bpot:PCF_17487 a owl:NamedIndividual,
     bpot:hierarchyID "13.3.2.2" ;
     bpot:pcfID "17487" .
 
+bpot:PCF_19207 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Acquire, Construct, and Manage Assets" ;
+    bpot:apqcSourceText "Relating to the design, construction, acquisition, and management of both productive and non-productive assets." ;
+    bpot:hierarchyID "10.0" ;
+    bpot:pcfID "19207" .
+
 bpot:PCF_19224 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -18728,16 +18767,15 @@ bpot:PCF_19996 a owl:NamedIndividual,
     bpot:hierarchyID "2.3.2" ;
     bpot:pcfID "19996" .
 
-bpot:PCF_20025 a owl:NamedIndividual,
+bpot:PCF_20022 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
     rdfs:comment "APQC level: Category" ;
     skos:inScheme bpot:PCF ;
-    skos:prefLabel "Deliver Services" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Offering services to customers. This is the act of providing service delivery as a core business practice and covers identifying strategies for performing service delivery, managing resources, and delivering services to the customer." ;
-    bpot:hierarchyID "5.0" ;
-    bpot:pcfID "20025" .
+    skos:prefLabel "Manage Supply Chain for Physical Products" ;
+    bpot:apqcSourceText "Performing supply chain activities include planning supply chain, procuring materials and services, and managing logistics." ;
+    bpot:hierarchyID "4.0" ;
+    bpot:pcfID "20022" .
 
 bpot:PCF_20027 a owl:NamedIndividual,
         skos:Concept,
@@ -18926,16 +18964,25 @@ bpot:PCF_21582 a owl:NamedIndividual,
     bpot:hierarchyID "10.4.10" ;
     bpot:pcfID "21582" .
 
-bpot:PCF_10002 a owl:NamedIndividual,
+bpot:PCF_10004 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
     rdfs:comment "APQC level: Category" ;
     skos:inScheme bpot:PCF ;
-    skos:prefLabel "Develop Vision and Strategy" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Establishing a direction and vision for an organization. This involves defining the business concept and long-term vision, as well as developing the business strategy and managing strategic initiatives. Processes in this category focus on creating a vision, a mission, and strategic objectives, and culminate in creating measures to ensure that the organization is moving in the desired direction." ;
-    bpot:hierarchyID "1.0" ;
-    bpot:pcfID "10002" .
+    skos:prefLabel "Market and Sell Products and Services" ;
+    bpot:apqcSourceText "Outlining process groups related to understanding markets, customers, and capabilities; developing marketing strategies; executing marketing plans; developing sales strategies; developing and managing marketing plans; and managing sales partners and alliances." ;
+    bpot:hierarchyID "3.0" ;
+    bpot:pcfID "10004" .
+
+bpot:PCF_10012 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Manage External Relationships" ;
+    bpot:apqcSourceText "Fostering external relationships with stakeholders of the entity, including investors, government and industry, the board of directors, and the general public. This is not related to customer management." ;
+    bpot:hierarchyID "12.0" ;
+    bpot:pcfID "10012" .
 
 bpot:PCF_10067 a owl:NamedIndividual,
         skos:Concept,
@@ -19256,17 +19303,6 @@ bpot:PCF_16387 a owl:NamedIndividual,
     bpot:hierarchyID "13.1.3" ;
     bpot:pcfID "16387" .
 
-bpot:PCF_16437 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage Enterprise Risk, Compliance, Remediation, and Resiliency" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Ensuring that an organization effectively manages its risk. Process groups are aligned with traditional risk management activities." ;
-    bpot:hierarchyID "11.0" ;
-    bpot:pcfID "16437" .
-
 bpot:PCF_16439 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -19344,17 +19380,6 @@ bpot:PCF_18924 a owl:NamedIndividual,
     bpot:hierarchyID "3.2.6" ;
     bpot:pcfID "18924" .
 
-bpot:PCF_19207 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Acquire, Construct, and Manage Assets" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Relating to the design, construction, acquisition, and management of both productive and non-productive assets." ;
-    bpot:hierarchyID "10.0" ;
-    bpot:pcfID "19207" .
-
 bpot:PCF_19229 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -19421,16 +19446,15 @@ bpot:PCF_20006 a owl:NamedIndividual,
     bpot:hierarchyID "3.2.4" ;
     bpot:pcfID "20006" .
 
-bpot:PCF_20022 a owl:NamedIndividual,
+bpot:PCF_20085 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
     rdfs:comment "APQC level: Category" ;
     skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage Supply Chain for Physical Products" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Performing supply chain activities include planning supply chain, procuring materials and services, and managing logistics." ;
-    bpot:hierarchyID "4.0" ;
-    bpot:pcfID "20022" .
+    skos:prefLabel "Manage Customer Service" ;
+    bpot:apqcSourceText "Managing customers before and after the delivery of services. This includes developing and planning customer service practices with an eye on steering processes relating to inquiries after sales, feedback, warranties, and recalls. " ;
+    bpot:hierarchyID "6.0" ;
+    bpot:pcfID "20085" .
 
 bpot:PCF_20089 a owl:NamedIndividual,
         skos:Concept,
@@ -19640,28 +19664,6 @@ bpot:PCF_21589 a owl:NamedIndividual,
     bpot:apqcSourceText "Developing sustainability (ESG) capabilities for the organization. Understand and communicate legal, regulatory, and social/environmental requirements. Establish policies, objectives, guidelines and approaches for ESG efforts and reporting." ;
     bpot:hierarchyID "13.9.1" ;
     bpot:pcfID "21589" .
-
-bpot:PCF_10004 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Market and Sell Products and Services" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Outlining process groups related to understanding markets, customers, and capabilities; developing marketing strategies; executing marketing plans; developing sales strategies; developing and managing marketing plans; and managing sales partners and alliances." ;
-    bpot:hierarchyID "3.0" ;
-    bpot:pcfID "10004" .
-
-bpot:PCF_10012 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage External Relationships" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Fostering external relationships with stakeholders of the entity, including investors, government and industry, the board of directors, and the general public. This is not related to customer management." ;
-    bpot:hierarchyID "12.0" ;
-    bpot:pcfID "10012" .
 
 bpot:PCF_10019 a owl:NamedIndividual,
         skos:Concept,
@@ -19915,17 +19917,6 @@ bpot:PCF_20050 a owl:NamedIndividual,
     bpot:apqcSourceText "Identifying the need for and creating a resource plan. Understand resource demand and align with capacity, skills, and capabilities. Enlist suppliers and partners to supplement needed skills and capabilities. Monitor and manage capabilities and skills with an eye on critical resources and supplier capacity." ;
     bpot:hierarchyID "5.2.2" ;
     bpot:pcfID "20050" .
-
-bpot:PCF_20085 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage Customer Service" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Managing customers before and after the delivery of services. This includes developing and planning customer service practices with an eye on steering processes relating to inquiries after sales, feedback, warranties, and recalls. " ;
-    bpot:hierarchyID "6.0" ;
-    bpot:pcfID "20085" .
 
 bpot:PCF_20110 a owl:NamedIndividual,
         skos:Concept,
@@ -20356,6 +20347,16 @@ bpot:PCF_20077 a owl:NamedIndividual,
     bpot:hierarchyID "5.3.3" ;
     bpot:pcfID "20077" .
 
+bpot:PCF_20607 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Manage Information Technology (IT)" ;
+    bpot:apqcSourceText "Managing process groups relevant to the business of information technology within an organization. The process groups include \"Develop and manage IT customer relationships\", \"Develop and manage IT business strategy\", \" Develop and manage IT resilience and risk\", \" Manage information\", \" Develop and manage services/solutions\", \"Deploy services/solutions\", and \" Create and manage support services/solutions\"." ;
+    bpot:hierarchyID "8.0" ;
+    bpot:pcfID "20607" .
+
 bpot:PCF_20608 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -20476,6 +20477,16 @@ bpot:PCF_20858 a owl:NamedIndividual,
     bpot:apqcSourceText "Strategizing and executing changes in IT solutions and services. Create a plan for deploying the changes. Communicate with stakeholders about the changes. Administer and implement the changes. Train the resources who will be affected by these changes. Install changes and verify their effect." ;
     bpot:hierarchyID "8.6.5" ;
     bpot:pcfID "20858" .
+
+bpot:PCF_10007 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Develop and Manage Human Capital" ;
+    bpot:apqcSourceText "Delivering processes traditionally defined as \"human resources\". Process groups include those related to developing and maintaining workforce strategy, recruiting employees, developing and counseling employees, managing employee relations, rewarding and retaining employees, redeploying and retiring employees, managing employee information, and managing employee communications." ;
+    bpot:hierarchyID "7.0" ;
+    bpot:pcfID "10007" .
 
 bpot:PCF_10041 a owl:NamedIndividual,
         skos:Concept,
@@ -20664,17 +20675,6 @@ bpot:PCF_20147 a owl:NamedIndividual,
     bpot:hierarchyID "13.6.3" ;
     bpot:pcfID "20147" .
 
-bpot:PCF_20607 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage Information Technology (IT)" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Managing process groups relevant to the business of information technology within an organization. The process groups include \"Develop and manage IT customer relationships\", \"Develop and manage IT business strategy\", \" Develop and manage IT resilience and risk\", \" Manage information\", \" Develop and manage services/solutions\", \"Deploy services/solutions\", and \" Create and manage support services/solutions\"." ;
-    bpot:hierarchyID "8.0" ;
-    bpot:pcfID "20607" .
-
 bpot:PCF_20706 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -20752,16 +20752,15 @@ bpot:PCF_21583 a owl:NamedIndividual,
     bpot:hierarchyID "10.4.11" ;
     bpot:pcfID "21583" .
 
-bpot:PCF_10007 a owl:NamedIndividual,
+bpot:PCF_10013 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
     rdfs:comment "APQC level: Category" ;
     skos:inScheme bpot:PCF ;
-    skos:prefLabel "Develop and Manage Human Capital" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Delivering processes traditionally defined as \"human resources\". Process groups include those related to developing and maintaining workforce strategy, recruiting employees, developing and counseling employees, managing employee relations, rewarding and retaining employees, redeploying and retiring employees, managing employee information, and managing employee communications." ;
-    bpot:hierarchyID "7.0" ;
-    bpot:pcfID "10007" .
+    skos:prefLabel "Develop and Manage Business Capabilities" ;
+    bpot:apqcSourceText "Performing activities by an organization that are fundamental to the successful operation of the organization, even across functions in a business. Capabilities defined in the PCF include business process management; portfolio, program, and project management; quality management; change management; benchmarking; environmental health and safety management; and knowledge management." ;
+    bpot:hierarchyID "13.0" ;
+    bpot:pcfID "10013" .
 
 bpot:PCF_10015 a owl:NamedIndividual,
         skos:Concept,
@@ -20917,17 +20916,6 @@ bpot:PCF_20848 a owl:NamedIndividual,
     bpot:hierarchyID "8.6.4" ;
     bpot:pcfID "20848" .
 
-bpot:PCF_10013 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Develop and Manage Business Capabilities" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Performing activities by an organization that are fundamental to the successful operation of the organization, even across functions in a business. Capabilities defined in the PCF include business process management; portfolio, program, and project management; quality management; change management; benchmarking; environmental health and safety management; and knowledge management." ;
-    bpot:hierarchyID "13.0" ;
-    bpot:pcfID "10013" .
-
 bpot:PCF_10017 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -21049,6 +21037,16 @@ bpot:PCF_10756 a owl:NamedIndividual,
     bpot:hierarchyID "9.6.1" ;
     bpot:pcfID "10756" .
 
+bpot:PCF_17058 a owl:NamedIndividual,
+        skos:Concept,
+        cco:ont00000853 ;
+    rdfs:comment "APQC level: Category" ;
+    skos:inScheme bpot:PCF ;
+    skos:prefLabel "Manage Financial Resources" ;
+    bpot:apqcSourceText "Overseeing key back-office processes for organizations. This category includes process groups related to planning and management accounting, revenue accounting, general accounting and reporting, fixed-asset project accounting, payroll, accounts payable and expense reimbursements, treasury operations, internal controls, tax management, international funds/consolidation, and global trade services." ;
+    bpot:hierarchyID "9.0" ;
+    bpot:pcfID "17058" .
+
 bpot:PCF_20959 a owl:NamedIndividual,
         skos:Concept,
         cco:ont00000853 ;
@@ -21092,17 +21090,6 @@ bpot:PCF_17042 a owl:NamedIndividual,
     bpot:apqcSourceText "Maintaining master data of finished products and inventory. Identify the requirements of finished products at the destination, as well as partner requirements. Calculate the consolidation at source. Manage replenishment planning. Create and administer a dispatch plan. Calculate load plans for destinations and partners. Manage the cost of supplying these products. Ensure effective utilization of capacity." ;
     bpot:hierarchyID "4.1.5" ;
     bpot:pcfID "17042" .
-
-bpot:PCF_17058 a owl:NamedIndividual,
-        skos:Concept,
-        cco:ont00000853 ;
-    rdfs:comment "APQC level: Category" ;
-    skos:inScheme bpot:PCF ;
-    skos:prefLabel "Manage Financial Resources" ;
-    skos:topConceptOf bpot:PCF ;
-    bpot:apqcSourceText "Overseeing key back-office processes for organizations. This category includes process groups related to planning and management accounting, revenue accounting, general accounting and reporting, fixed-asset project accounting, payroll, accounts payable and expense reimbursements, treasury operations, internal controls, tax management, international funds/consolidation, and global trade services." ;
-    bpot:hierarchyID "9.0" ;
-    bpot:pcfID "17058" .
 
 bpot:PCF_19993 a owl:NamedIndividual,
         skos:Concept,
@@ -21150,18 +21137,5 @@ bpot:PCF_21457 a owl:NamedIndividual,
 
 bpot:PCF a skos:ConceptScheme ;
     rdfs:label "APQC Process Classification Framework (Cross-Industry)" ;
-    skos:hasTopConcept bpot:PCF_10002,
-        bpot:PCF_10003,
-        bpot:PCF_10004,
-        bpot:PCF_10007,
-        bpot:PCF_10012,
-        bpot:PCF_10013,
-        bpot:PCF_16437,
-        bpot:PCF_17058,
-        bpot:PCF_19207,
-        bpot:PCF_20022,
-        bpot:PCF_20025,
-        bpot:PCF_20085,
-        bpot:PCF_20607 ;
     skos:prefLabel "APQC PCF Cross-Industry v7.4" .
 

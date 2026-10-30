@@ -247,33 +247,27 @@ bpot:StrategistRole a owl:Class ;
 
 bpot:bearsPermission a owl:AnnotationProperty ;
     rdfs:label "bears permission" ;
-    rdfs:comment "Role -> Action Permission class the role carries. The deontic hook (RDM/IEE authors the permission)." ;
-    skos:definition "An annotation property that relates a Role class to an Action Permission class whose applicable instances authorize processes performed by agents bearing that Role, subject to the governing regulations." .
+    rdfs:comment "Role -> Action Permission class the role carries. The deontic hook (RDM/IEE authors the permission)." .
 
 bpot:enablesProcess a owl:AnnotationProperty ;
     rdfs:label "enables process" ;
-    rdfs:comment "Capability -> process class whose execution it enables. Operational inverse of bpo:requiresCapability; BFO grounding is 'has realization' (a capability is realized in such processes). Used for authoring scope and wiring-coherence checks." ;
-    skos:definition "An annotation property that relates an Agent Capability class to a Process class for which bearing an instance of that capability type is a necessary condition for an agent's performance, providing the authored direction of the class-level capability requirement mapping." .
+    rdfs:comment "Capability -> process class whose execution it enables. Operational inverse of bpo:requiresCapability; BFO grounding is 'has realization' (a capability is realized in such processes). Used for authoring scope and wiring-coherence checks." .
 
-bpot:requiresCapability a owl:AnnotationProperty ;
+bpot:requiresCapability a owl:ObjectProperty ;
     rdfs:label "requires capability" ;
-    rdfs:comment "Process class -> the capability an agent must bear to perform it. DERIVED from bpo:enablesProcess (author scope once on the capability; generate this inverse onto the process, so the two never drift -- PHASE1 §8). Intended domain: a process universal (reaches obo:BFO_0000015); intended range: a class reaching cco:ont00001379 Agent Capability (an Organization Capability cco:ont00000568 qualifies, since 568 ⊑ 1379). Matching is species-satisfies-genus: an agent bearing C_a satisfies a requirement C_p iff C_a rdfs:subClassOf* C_p. Range enforced by SHACL C5." ;
-    skos:definition "An annotation property that relates a Process class to an Agent Capability class whose instances must be borne by an agent assigned to perform a process of that type." .
+    rdfs:comment "Process class -> the capability an agent must bear to perform it. DERIVED from bpo:enablesProcess (author scope once on the capability; generate this inverse onto the process, so the two never drift -- PHASE1 §8). Intended domain: a process universal (reaches obo:BFO_0000015); intended range: a class reaching cco:ont00001379 Agent Capability (an Organization Capability cco:ont00000568 qualifies, since 568 ⊑ 1379). Matching is species-satisfies-genus: an agent bearing C_a satisfies a requirement C_p iff C_a rdfs:subClassOf* C_p. Range enforced by SHACL C5." .
 
-bpot:requiresPermission a owl:AnnotationProperty ;
+bpot:requiresPermission a owl:ObjectProperty ;
     rdfs:label "requires permission" ;
-    rdfs:comment "Process class -> the Action Permission that must be held for the work to be authorized. Intended range: a class reaching cco:ont00000751 Action Permission. The RDM/IEE layer owns the permission catalogue and the gate conflict-resolution; this seam is declared but LEFT UNPOPULATED in Phase 1. Range enforced by SHACL C7." ;
-    skos:definition "An annotation property that relates a Process class to an Action Permission class whose applicable instances must permit processes of that type for their execution to be authorized." .
+    rdfs:comment "Process class -> the Action Permission that must be held for the work to be authorized. Intended range: a class reaching cco:ont00000751 Action Permission. The RDM/IEE layer owns the permission catalogue and the gate conflict-resolution; this seam is declared but LEFT UNPOPULATED in Phase 1. Range enforced by SHACL C7." .
 
-bpot:requiresRole a owl:AnnotationProperty ;
+bpot:requiresRole a owl:ObjectProperty ;
     rdfs:label "requires role" ;
-    rdfs:comment "Process class -> the role in whose capacity the work must be performed. Intended domain: a process universal; intended range: a class reaching obo:BFO_0000023 Role (typically a cco:ont00000984 Occupation Role or cco:ont00000187 Authority Role). Same species-satisfies-genus matching as bpo:requiresCapability. Range enforced by SHACL C6." ;
-    skos:definition "An annotation property that relates a Process class to a Role class whose instances must be borne by an agent performing a process of that type in the required capacity." .
+    rdfs:comment "Process class -> the role in whose capacity the work must be performed. Intended domain: a process universal; intended range: a class reaching obo:BFO_0000023 Role (typically a cco:ont00000984 Occupation Role or cco:ont00000187 Authority Role). Same species-satisfies-genus matching as bpo:requiresCapability. Range enforced by SHACL C6." .
 
 bpot:routable a owl:AnnotationProperty ;
     rdfs:label "routable" ;
-    rdfs:comment "Process Contract facet: marks a process universal as one the composer may route to a registered agent. Asserted alongside bpo:requiresCapability/bpo:requiresRole so the compiled graph is maximally queryable without inference." ;
-    skos:definition "An annotation property whose Boolean value indicates whether a Process class is eligible for routing by the composer to a registered agent, independently of whether a particular agent satisfies the requirements for its execution." .
+    rdfs:comment "Process Contract facet: marks a process universal as one the composer may route to a registered agent. Asserted alongside bpo:requiresCapability/bpo:requiresRole so the compiled graph is maximally queryable without inference." .
 
 bpot:ActOfDevelopment a owl:Class ;
     rdfs:label "Act of Development" ;

@@ -8,9 +8,9 @@
       "shape_sha256": "7e67f2d4b8054cb166a435cd9b3c695d103c5ca5b951dcbd0e7405f6ae77fb37",
       "triples_touching": 17524
     },
-    "ground_sha256": "6ee5618238e68e56f9f4b89894b5141ba0bdf8807b84e027b3efbf1d03c74b03",
-    "ground_triples": 45153,
-    "triples": 62677
+    "ground_sha256": "35490fb971320cf5f35e2e5994934afaff115b30e02587ffcd8a287757bdd660",
+    "ground_triples": 45104,
+    "triples": 62628
   },
   "note": "Ground triples and blank-node shape together cover every triple. Blank nodes are renamed by every parse, so their identities are erased and only their structure is digested.",
   "per_file": {
@@ -21,9 +21,9 @@
         "shape_sha256": "dbeb84378348a817e85d01c7da9c89eef0f684f56586a24a8b618027d95e9ce2",
         "triples_touching": 20
       },
-      "ground_sha256": "0f66a06d9dc971fde09489051f417a15328bc5ecea613412b8884d9495d7a178",
-      "ground_triples": 351,
-      "triples": 371
+      "ground_sha256": "d56d2cc02c8f6a441073ff033e4faf23099ade77a8b91bebf3d1f14a1db4dbf3",
+      "ground_triples": 345,
+      "triples": 365
     },
     "ontology/catalog.ttl": {
       "blank_nodes": {
@@ -32,9 +32,9 @@
         "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "triples_touching": 0
       },
-      "ground_sha256": "6b6bdac75932604ac8614a54ca33c671239bebceb4a4e062ab03eecc37b2a718",
-      "ground_triples": 19236,
-      "triples": 19236
+      "ground_sha256": "6bf5d93536990c6c7ba47569b8a692fac62a74fba6c5fcfe05e7655eead1fd3b",
+      "ground_triples": 19210,
+      "triples": 19210
     },
     "ontology/sections/pcf_1.ttl": {
       "blank_nodes": {
@@ -43,9 +43,9 @@
         "shape_sha256": "abce8704ea3a11ed162f63b41467db1696f367db106e705ba03435c55b00e83e",
         "triples_touching": 1452
       },
-      "ground_sha256": "c89131487b1a51681d73fde65d5d67cba8f971d4421336406069dbe73eac9542",
-      "ground_triples": 1815,
-      "triples": 3267
+      "ground_sha256": "9a8b07c63e57d2155f3af7b87dcecbc068d07661041853bd66d33abcd49db621",
+      "ground_triples": 1810,
+      "triples": 3262
     },
     "ontology/sections/pcf_10.ttl": {
       "blank_nodes": {
@@ -54,9 +54,9 @@
         "shape_sha256": "16e13de261ed0e578f412c755223a7034183abdb5c8efe488160f4a887b96434",
         "triples_touching": 752
       },
-      "ground_sha256": "59880fdb00648a29c951d0a1814da525eb861069e7beefbba7929f08d7fdc58e",
-      "ground_triples": 1214,
-      "triples": 1966
+      "ground_sha256": "dde3f47af19d156de1200a636550875d17d8ab95dc8c6310b99ac1ecd1947d37",
+      "ground_triples": 1213,
+      "triples": 1965
     },
     "ontology/sections/pcf_11.ttl": {
       "blank_nodes": {
@@ -65,9 +65,9 @@
         "shape_sha256": "fa18540557b38d722f6908e62db157ccd9e218996cae8ba7b84ea986996d814c",
         "triples_touching": 428
       },
-      "ground_sha256": "f4430b94d29bde00d5d38cd25703566721724173549e90c4c19ba063c68bf31c",
-      "ground_triples": 771,
-      "triples": 1199
+      "ground_sha256": "26e114df6bd86ade5b92327713791f4433b4388a51696bd5e54aee1c7dde8956",
+      "ground_triples": 770,
+      "triples": 1198
     },
     "ontology/sections/pcf_12.ttl": {
       "blank_nodes": {
@@ -76,9 +76,9 @@
         "shape_sha256": "5def14c02e4db9e14328384fdf81c6add9d024d6083e2c7b4834161d60f1b116",
         "triples_touching": 488
       },
-      "ground_sha256": "e785ee1fde666bd6e596cdbae1cd7fb9d90b02ebd0daf7924720b9699023d84c",
-      "ground_triples": 873,
-      "triples": 1361
+      "ground_sha256": "ee88abfce13fe2a8f2445875145db42b8d7377d1e87a9b2dbb9d6c60f8a19b14",
+      "ground_triples": 872,
+      "triples": 1360
     },
     "ontology/sections/pcf_13.ttl": {
       "blank_nodes": {
@@ -87,9 +87,9 @@
         "shape_sha256": "3296cdb4953eb195ee8f2d46895725028ae5d1ecf1e85b7a6bdaf14ac1a884a2",
         "triples_touching": 1824
       },
-      "ground_sha256": "cd88e8f678a5d8f7e0bf4aee38eb744ef2a2fcb82940796e42c0c6c546409833",
-      "ground_triples": 2913,
-      "triples": 4737
+      "ground_sha256": "e2989e051f82a4720ed2a0d7f792f8058c5cf9549ce77bc0d8288926b844eb84",
+      "ground_triples": 2912,
+      "triples": 4736
     },
     "ontology/sections/pcf_2.ttl": {
       "blank_nodes": {
@@ -98,9 +98,9 @@
         "shape_sha256": "2696537a39d5796e6a997b9cf58ac1fd170f30ba979673a666897dc5f296d07f",
         "triples_touching": 936
       },
-      "ground_sha256": "005b0fb1ac2a6dbe45bfc0bccf89324ee3df82e59112dadd0b8d7a01111514ac",
-      "ground_triples": 1328,
-      "triples": 2264
+      "ground_sha256": "ac6f598139a1582f461d78c7ea32f449ae6084a4c013423809f8902d2e1a447e",
+      "ground_triples": 1327,
+      "triples": 2263
     },
     "ontology/sections/pcf_3.ttl": {
       "blank_nodes": {
@@ -109,9 +109,9 @@
         "shape_sha256": "48812a3a39d0ca001878eb929bf4c95fd8ee1ce526287896ff8d2d2eb9b00c1c",
         "triples_touching": 1892
       },
-      "ground_sha256": "8e22c801b21252e624faffb94ccd73badea98d2003bb646a3f2cf2ba738de334",
-      "ground_triples": 2524,
-      "triples": 4416
+      "ground_sha256": "56a98b75256ed80e15610062a668f75da001fe83bf78f6bb01d905fde04a0b90",
+      "ground_triples": 2523,
+      "triples": 4415
     },
     "ontology/sections/pcf_4.ttl": {
       "blank_nodes": {
@@ -120,9 +120,9 @@
         "shape_sha256": "015471a4d9ce8e384ec5c872d39ee82df5d207e8fb7c8d521c62c3f1cdc4f410",
         "triples_touching": 1352
       },
-      "ground_sha256": "ba1b61f7cf0ea40927a8c6d40605b83c07e720ce19099e26b484d75e09a699d7",
-      "ground_triples": 1931,
-      "triples": 3283
+      "ground_sha256": "8f3fbc50ef2dd0826df30a2598f294c4ff334468460494025dfc4f8e5fb8fb2d",
+      "ground_triples": 1930,
+      "triples": 3282
     },
     "ontology/sections/pcf_5.ttl": {
       "blank_nodes": {
@@ -131,9 +131,9 @@
         "shape_sha256": "df6a6f9017b6f392b7964b116ac7a913849cee43534d1b43f7f8d33e6f562d85",
         "triples_touching": 652
       },
-      "ground_sha256": "0d9ba0dcfc247c567062afe9bdbe54a5e46e9f5a647f90c2c1689f45128ac0dc",
-      "ground_triples": 951,
-      "triples": 1603
+      "ground_sha256": "e469faef2c284ea913d1cdfa0d04897f43e9ec38a6d956a050d01c086f6d57f3",
+      "ground_triples": 950,
+      "triples": 1602
     },
     "ontology/sections/pcf_6.ttl": {
       "blank_nodes": {
@@ -142,9 +142,9 @@
         "shape_sha256": "c5894bd297610c0140fcdf7a57e0cd6c08ddc6c9eb83ccb48b09e9002f323263",
         "triples_touching": 1108
       },
-      "ground_sha256": "96c549fbdc8728dc5a77eb75d46fa195030e7a3d218aa7fa6afa342a4ece631b",
-      "ground_triples": 1430,
-      "triples": 2538
+      "ground_sha256": "0e936f8293768c3b7e80d1ce34a5445dadb4628d28c7992aa9d74a6c35739893",
+      "ground_triples": 1429,
+      "triples": 2537
     },
     "ontology/sections/pcf_7.ttl": {
       "blank_nodes": {
@@ -153,9 +153,9 @@
         "shape_sha256": "1e1dcae28b9cd28c6a1ae0fd5baae24dd447c1613510cf7353c11871be5d2f58",
         "triples_touching": 1364
       },
-      "ground_sha256": "a32476a2409c476b0662f1e5b904ef71d15efd4e88c5151bc5c8b761db976383",
-      "ground_triples": 1894,
-      "triples": 3258
+      "ground_sha256": "a83735617d13804c46e32ea8bbcd75c83382f1aa360e01ea5e6809de079c8024",
+      "ground_triples": 1893,
+      "triples": 3257
     },
     "ontology/sections/pcf_8.ttl": {
       "blank_nodes": {
@@ -164,9 +164,9 @@
         "shape_sha256": "2ecf02c6bada6a1daf324de7c30f931edaf42fdee37f93620f240e5882dc5652",
         "triples_touching": 2880
       },
-      "ground_sha256": "a6634da4187198f313b31a88c66de6f4b01b052170fdcd1e6fbad0ffd95866a8",
-      "ground_triples": 3819,
-      "triples": 6699
+      "ground_sha256": "b7c82e1fdb495d93ee64f22734f04295516dd0dbfb25a18eb87188daafcbb5da",
+      "ground_triples": 3818,
+      "triples": 6698
     },
     "ontology/sections/pcf_9.ttl": {
       "blank_nodes": {
@@ -175,9 +175,9 @@
         "shape_sha256": "9018ac27ec7aec30c3f5c78758a5bf05113530299e1b3b0bf59a2b294e58dc02",
         "triples_touching": 2376
       },
-      "ground_sha256": "8435421a943d29d050e286cd6b1ce40e34352b7d518ba7136c836e8c9efccb3b",
-      "ground_triples": 3121,
-      "triples": 5497
+      "ground_sha256": "417728c110e9476e9b96c48d267b47d2eafe75ccfcdf752f8d621610c2e5f3ff",
+      "ground_triples": 3120,
+      "triples": 5496
     },
     "ontology/vocabulary.ttl": {
       "blank_nodes": {

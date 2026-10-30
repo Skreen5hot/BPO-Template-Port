@@ -5,6 +5,13 @@ and writes the modules and the SSSOM mapping set from it. Re-running it on the
 same source commit gives the same bytes.
 
     python tools/port_from_bpo.py ../BusinessProcessOntology
+    python tools/port_from_bpo.py ../BusinessProcessOntology --unchanged
+
+--unchanged writes S0 for the template evaluation (WP6, amendment A2): BPO
+ported with only the port's own mechanics (namespace, headers, duplicates,
+bridges, and the header's cited sources), without the four changes the PO
+approved on 2026-10-26 (top concepts, retyped properties, property
+definitions, the release on every module).
 
 What it does to the source, and nothing else:
 
@@ -142,6 +149,8 @@ def closure(graph: rdflib.Graph, node, out: list):
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("source", type=Path, help="a BusinessProcessOntology checkout")
+    parser.add_argument("--unchanged", action="store_true",
+                        help="S0: none of the PO-approved changes")
     args = parser.parse_args(argv)
     config = project.load()
     namespace, iri_base = config["namespace"], config["iri_base"]
@@ -212,7 +221,8 @@ def main(argv=None) -> int:
                 origin.setdefault(str(rename(s, namespace)), path)
 
         tops = 0
-        for scheme in list(out.subjects(RDF.type, SKOS.ConceptScheme)):
+        for scheme in ([] if args.unchanged else
+                       list(out.subjects(RDF.type, SKOS.ConceptScheme))):
             for concept in sorted(out.subjects(SKOS.inScheme, scheme)):
                 if (concept, SKOS.broader, None) not in out:
                     out.add((scheme, SKOS.hasTopConcept, concept))
@@ -221,7 +231,7 @@ def main(argv=None) -> int:
         if tops:
             print("  %s: %d top concept(s) added" % (path, tops))
 
-        for local in RETYPED:
+        for local in () if args.unchanged else RETYPED:
             term = URIRef(namespace + local)
             if (term, RDF.type, OWL.ObjectProperty) in out:
                 out.remove((term, RDF.type, OWL.ObjectProperty))
@@ -230,9 +240,10 @@ def main(argv=None) -> int:
         # BPO's slice headers cite the framework without its release, and
         # those of PCF 5 and 6 not at all; every row came from the release
         # the catalog names.
-        if any(out.subject_objects(URIRef(namespace + "apqcSourceText"))):
+        if not args.unchanged and any(
+                out.subject_objects(URIRef(namespace + "apqcSourceText"))):
             out.add((header, DCTERMS.source, Literal(PCF_RELEASE)))
-        for local, text in DEFINITIONS.items():
+        for local, text in ({} if args.unchanged else DEFINITIONS).items():
             term = URIRef(namespace + local)
             if (term, RDF.type, None) in out:
                 out.add((term, SKOS.definition, Literal(text)))

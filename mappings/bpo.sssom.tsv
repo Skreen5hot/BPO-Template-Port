@@ -5058,7 +5058,7 @@ bpot:designatesProcessType	designates process type	skos:exactMatch	bpo:designate
 bpot:enablesProcess	enables process	skos:exactMatch	bpo:enablesProcess	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:hierarchyID	APQC Hierarchy ID	skos:exactMatch	bpo:hierarchyID	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:pcfID	APQC PCF ID	skos:exactMatch	bpo:pcfID	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
-bpot:requiresCapability	requires capability	skos:exactMatch	bpo:requiresCapability	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
-bpot:requiresPermission	requires permission	skos:exactMatch	bpo:requiresPermission	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
-bpot:requiresRole	requires role	skos:exactMatch	bpo:requiresRole	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
+bpot:requiresCapability	requires capability	skos:exactMatch	bpo:requiresCapability	semapv:UnspecifiedMatching	owl object property	namespace move: the same term, ported unchanged
+bpot:requiresPermission	requires permission	skos:exactMatch	bpo:requiresPermission	semapv:UnspecifiedMatching	owl object property	namespace move: the same term, ported unchanged
+bpot:requiresRole	requires role	skos:exactMatch	bpo:requiresRole	semapv:UnspecifiedMatching	owl object property	namespace move: the same term, ported unchanged
 bpot:routable	routable	skos:exactMatch	bpo:routable	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
