@@ -1,8 +1,11 @@
 # WP6 Phase A — classification of the S0 findings
 
-**Status: PROPOSED.** Each class needs the BPO architect's approval (amendment A5). Once
-approved, the classification is fixed before S2 is measured (A6). Any later change is a new,
-dated entry here, with its reason.
+**Status: APPROVED.** The BPO architect approved every class, K01 to K17, as proposed, on
+2026-10-30 (amendment A5). The "Proposed" column below is the approved classification. It is
+fixed before S2 is measured (A6). Any later change is a new, dated entry here, with its reason.
+
+The register entries in `config/findings-register.yaml` are written from this table by
+`tools/wp6_register.py`: one per S1 finding, with its class's classification, reason and owner.
 
 ## How the findings are classified
 

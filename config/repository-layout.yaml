@@ -787,6 +787,22 @@ components:
       check, and writes each finding by register identity to
       research/wp6/measure/<state>/.
 
+  - id: tool.wp6-classify
+    path: tools/wp6_classify.py
+    role: tool
+    description: >-
+      Assigns every finding of a measured WP6 state to exactly one finding
+      class (research/wp6/classification.md), by mechanical tests against
+      the pinned CCO; refuses a finding in no class or in two.
+
+  - id: tool.wp6-register
+    path: tools/wp6_register.py
+    role: tool
+    description: >-
+      Writes config/findings-register.yaml from the approved WP6
+      classification: findings.propose() once per class, with that class's
+      reason and owner, one entry per finding (amendment A5).
+
   - id: tool.mappings
     path: tools/ontology/mappings.py
     role: tool
