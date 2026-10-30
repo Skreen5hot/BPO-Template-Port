@@ -44,4 +44,17 @@ individuals: null
 #:     must_sit_under: http://purl.obolibrary.org/obo/BFO_0000015
 #:     severity: violation
 #:     why: A P-number names a process type.
-scheme_rules: []
+#:
+#: BPO's D7 scheme (BPO's Gate F, scripts/refintegrity_check.py): a
+#: P<pcfID> IRI names a process type, so a capability must not wear one.
+#: BPO's second D7 rule (a non-capability class with a pcfID is named
+#: P<pcfID>) compares a local name with a literal, which a scheme rule
+#: cannot state; it is not configured here.
+scheme_rules:
+  - id: capability-as-process
+    pattern: 'P[0-9]+'
+    must_not_sit_under: https://www.commoncoreontologies.org/ont00000568
+    severity: warning
+    why: >-
+      A P-number names a process type (BPO D7); an Organization Capability
+      wearing one is BPO's tracked backlog of 39.

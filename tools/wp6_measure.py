@@ -57,7 +57,7 @@ def run(name: str, args: list[str], rows: list, timeout=7200):
     last = [line.strip() for line in out.splitlines() if line.strip()]
     rows.append((name, str(code), "%.1f" % seconds,
                  (last[-1] if last else "").replace("\t", " ")[:200]))
-    print("  %-22s exit %-7s %7.1f s  %s" % rows[-1], flush=True)
+    print("  %-22s exit %-7s %7s s  %s" % rows[-1], flush=True)
     return code, out
 
 
