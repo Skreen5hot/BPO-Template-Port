@@ -199,6 +199,12 @@ Java 21. Private-repository minutes.
 pass: `validate`, `iri_lint`, `tests`. All three fail for one reason: v0.1.0's findings
 register is empty, so every accepted finding is new until it is entered (§8).
 
+**Run 3, with the register filled** (`0f4c5e3`, S1 content; run 41106582545, 18:23:53Z to
+18:32:13Z): **green, 8 min 20 s.** The verdict step reads "every check passed". Validation:
+3,748 accepted, 0 new, 0 stale. IRI lint: 1 accepted. Tests: 396 passed, 0 failed, in 7 min
+12 s, so the 4 earlier test failures were all the empty register. The 3.1 MB register
+does not measurably slow the job.
+
 ## 7. The explorer (11:00–11:03)
 
 Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked against
@@ -214,7 +220,7 @@ Built from S1 with v0.1.0. The explorer's data (`data/terms.json`) was checked a
 means the rendering, the screenshots, the per-term checklist and the planted conflict. It is
 left for a person; the data side above is what it checks against.
 
-## 8. Classification (11:03–11:09) — awaiting the architect
+## 8. Classification (11:03–11:09), approved; register committed 14:21, dispose stage 14:22–14:54
 
 `research/wp6/classification.md`. Every one of the 4,323 S0 findings is in exactly one of 17
 classes (`tools/wp6_classify.py`; `measure/s0/classes.tsv`). Each class has a proposed
@@ -230,13 +236,35 @@ Proposed:
 | unsure | 8 |
 | template bug | 0 |
 
-**Not done until the architect approves the classes (A5):**
+**Approved.** The BPO architect approved every class as proposed, on 2026-10-30 (A5). The
+classification is now fixed for S2 (A6).
 
-- the register entries;
-- the template's dispose stage, exercised;
-- the Checks verdict on S1 with the register filled.
+**The register** (`0f4c5e3`): 3,749 entries, one per S1 finding (validate 3,748, iri_lint 1),
+each with its class's classification, reason and owner, review 2027-04-30. The 5 K13
+entries name the upstream (`CCO …/ont00001180`). K02, K14 and K15 have no entries: S1 fixed
+them. `--propose` takes one reason, owner and review for all of a check's new findings, so it
+cannot write a reason per class (finding P-A6). `tools/wp6_register.py` calls the template's
+own `findings.propose()` once per class instead. Writing 3,749 entries took 1 min 28 s;
+`findings.py` reads them without complaint.
 
-## 9. The template-controls verdict, re-rated (draft)
+**The dispose stage, exercised** on S1 with the register filled. `validate.py --gate` locally
+(1 min 31 s):
+
+| Plant | Count | Gate | What it names |
+|---|---:|---|---|
+| none | 3,748 | pass | 3,748 accepted, 0 new, 0 stale |
+| A. a new class with no definition source | 3,749 | **fail** | `NEW Warning … WP6PlantedClass` |
+| B. a finding fixed (definition source added), its entry left | 3,747 | **fail** | `STALE … AccountApprovalDecision -- it matches nothing; if it was fixed, remove the entry in this commit` |
+| C. one entry deleted | 3,748 | **fail** | `NEW Warning … AccountApprovalDecision` |
+| A + B together | **3,748** | **fail** | both, by name |
+
+A + B is the case the count-based gate at `2455bcc` passed: one fixed, one introduced, the
+same total. It now fails. Each plant was reverted; the working tree was clean after.
+
+The tests passed locally too (396 passed; 27 min 52 s on this machine, against 7 min 12 s on
+the runner).
+
+## 9. The template-controls verdict, re-rated
 
 The S1 evaluation's six stages (§3 there), re-rated for v0.1.0 on BPO:
 
@@ -244,14 +272,18 @@ The S1 evaluation's six stages (§3 there), re-rated for v0.1.0 on BPO:
 |---|---|---|---|
 | Detect | strong for structure, missing punning, licensing, scheme rules | **stronger**: placement (563), comment drift (53), scheme rule (39), properties' definitions (10) now automatic | §4, §5 |
 | Report | one count per check; 20-sample JSON; fail-fast | **by identity**, every finding, every check run | §4, §6 |
-| Evaluate | nowhere to classify | register fields (reason, owner, review, upstream) | `tools/findings.py` |
-| Dispose | count per rung; IRI lint none | **available, not yet exercised on BPO**: awaits §8 | — |
+| Evaluate | nowhere to classify | **used**: every finding in one of 17 classes, approved per class, carried by reason, owner, review and `upstream`. Weakness: no field for the classification itself (real, false alarm, unsure), so it lives in the reason text (P-A7) | §8, `classification.md` |
+| Dispose | count per rung; IRI lint none | **works at BPO scale, by identity**: 3,749 entries; a new finding, a stale entry and a fix-plus-new at an unchanged count each fail, by name; Checks green with every finding answered for. Weakness: `--propose` writes one reason per run, not per class (P-A6) | §6, §8 |
 | Correct | — | unchanged: the template reports, people fix | — |
 | Verify | checks did not finish at BPO size | **finish**: validation 15 s, Checks 6–9 min, release 2.5–3.5 min | §4, §6 |
 | Keep up with the template | — | **no procedure**; the checks are not covered by `--against` | §2 |
 
 **Remaining detection gaps on BPO:** APQC text and its release (G1, G2), pending declaration
 and Legal; and property semantics (G4), which needs review by design.
+
+**Phase A status (14:54):** steps 1 to 6, 8 and 9 done. Step 7 is done for the data
+(§7). The visual run in a browser is still open: screenshots, the per-term checklist and
+the planted conflict need a person with a browser.
 
 ## Findings of Phase A
 
@@ -262,4 +294,6 @@ and Legal; and property semantics (G4), which needs review by design.
 | P-A3 | `template_status.py --against` does not cover the checks a project runs: shapes, fixtures, profile, naming and reasoning config are project-owned. A ROBOT move is invisible to it | template |
 | P-A4 | A scheme rule cannot relate a local name to a literal (BPO's second D7 rule) | template (expressiveness) |
 | P-A5 | The explorer shows no comments, so comment drift reported by the validator is invisible on the site | template |
+| P-A6 | `--propose` takes one reason, owner and review for every new finding of a check, so a project that disposes by class (A5) cannot use it as it stands. A filter (by rule, or by a list of identities) would do | template |
+| P-A7 | The register has no field for a finding's classification (real, false alarm, unsure; `upstream` alone has one). The S2 verdict counts real defects, which then has to be read from the reason text or from our `classes.tsv` | template |
 | G3 | S1's mapping rows say "ported unchanged" for 3 re-typed properties | ours (port) |
