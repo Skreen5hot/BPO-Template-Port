@@ -770,6 +770,23 @@ components:
       every file the template changed, with init's transforms applied to
       both template sides. Kept so the upgrade can be audited.
 
+  - id: tool.lossless-check
+    path: tools/lossless_check.py
+    role: tool
+    description: >-
+      The lossless check of docs/PORTING.md section 4 for the BPO port:
+      every BPO statement, renamed, against every statement of a port tree.
+      Shows S0 adds nothing and S1 adds exactly the PO-approved changes.
+
+  - id: tool.wp6-measure
+    path: tools/wp6_measure.py
+    role: tool
+    description: >-
+      Measures one WP6 evaluation state with this branch's instrument: checks
+      the state's content is byte-identical to its tag (A3), runs every
+      check, and writes each finding by register identity to
+      research/wp6/measure/<state>/.
+
   - id: tool.mappings
     path: tools/ontology/mappings.py
     role: tool
