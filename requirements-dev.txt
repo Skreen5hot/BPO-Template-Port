@@ -24,7 +24,7 @@
 # nothing here imports them, and the rule is to take out a pin nothing
 # exercises. Add each back in the commit that adds what needs it.
 
-pytest==9.1.1
+pytest==9.2.0
 PyYAML==6.0.3
 rdflib==7.6.0
 pyshacl==0.40.1
