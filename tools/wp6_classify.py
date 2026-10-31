@@ -21,6 +21,12 @@ pinned CCO, stated with each:
   K03/K04/K05  "definition does not name its parent": K03 when that parent
            is redundant in the K06 sense; K04 when the class has another
            named parent; K05 when it is the only one.
+  K08/K18/K19  "two different rdfs:comment values" (amended 2026-10-31, A6,
+           the BPO architect's decision): K18 when every comment variant
+           of the term is in one module other than bpot.ttl (a review
+           addendum, false alarm); K19 when that one module is bpot.ttl,
+           where the port merged three BPO files (real, the port's); K08
+           otherwise. From TAG's config/annotation-drift.tsv.
 """
 
 from __future__ import annotations
@@ -75,7 +81,20 @@ def label_is_pcf_name(g, c) -> bool:
     return any(str(x) in names for x in g.objects(c, RDFS.label))
 
 
-def classify(row: dict, g: Graph) -> list[str]:
+def comment_modules(tag: str) -> dict:
+    """bpot:<local> -> the modules giving it a comment, at TAG."""
+    text = subprocess.run(["git", "show", "%s:config/annotation-drift.tsv"
+                           % tag], cwd=ROOT, capture_output=True, check=True,
+                          ).stdout.decode("utf-8")
+    out = {}
+    for row in csv.DictReader(text.splitlines(), delimiter="	",
+                              quoting=csv.QUOTE_NONE):
+        if row["property"] == "comment":
+            out.setdefault(row["term"], set()).add(row["module"])
+    return out
+
+
+def classify(row: dict, g: Graph, modules: dict) -> list[str]:
     rule, msg, where = row["rule"], row["message"], row["where"]
     focus = URIRef(row["focus"])
     out = []
@@ -99,7 +118,12 @@ def classify(row: dict, g: Graph) -> list[str]:
         rest = [p for p in parents if not redundant(g, focus, p)]
         out.append("K06" if len(rest) == 1 else "K07")
     if "two different rdfs:comment values" in msg:
-        out.append("K08")
+        where_from = modules.get("bpot:" + str(focus).rsplit("#", 1)[1], set())
+        if len(where_from) == 1:
+            out.append("K19" if where_from == {"ontology/bpot.ttl"}
+                       else "K18")
+        else:
+            out.append("K08")
     if "two different http://www.w3.org/2004/02/skos/core#definition" in msg:
         out.append("K09")
     if "two different http://www.w3.org/2000/01/rdf-schema#label" in msg:
@@ -129,9 +153,10 @@ def main(argv) -> int:
         rows = list(csv.DictReader(f, delimiter="\t",
                                    quoting=csv.QUOTE_NONE))
     g = content(tag)
+    modules = comment_modules(tag)
     lines, counts, bad = ["\t".join(KEYS + ("class",))], {}, []
     for row in rows:
-        classes = classify(row, g)
+        classes = classify(row, g, modules)
         if len(classes) != 1:
             bad.append((classes, row["message"][:120]))
             continue

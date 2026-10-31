@@ -38,7 +38,7 @@ S1 needs no classes of its own.
 | K05 | Definition does not name its only parent (realist, warning) | 11 | 11 | **real** (low) | BPO architect | The genus named is an ancestor or another class: "an organization capability…" under Stakeholder Relationship Management Capability; P20799 "an act of design…" under Act of Formulation; the FNSR markers, whose definitions name no parent | B9 |
 | K06 | More than one named parent, all but one redundant (realist, warning) | 216 | 216 | **real** (low) | BPO architect | Every parent but one is already an ancestor of another asserted parent in the pinned CCO. These are BPO's co-asserted allowlist parents, which keep each slice valid offline. They are redundant once CCO is in scope, as it is here | B13 |
 | K07 | More than one named parent, genuinely (realist, warning) | 8 | 8 | **unsure** | BPO architect | 7 delivery-fleet roles sit under the `FNSR Role` marker and also under Occupation or Authority Role. Using a marker as a genus is the "defined class written as a primitive one" the shape warns of. The 8th, IT Infrastructure Component (IT Asset + Information Processing Artifact), may be a genuine dual nature | B13 |
-| K08 | Two different comments in one language (annotation profile, warning) | 53 | 53 | **real** | BPO architect | Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`) | B1 |
+| K08 | Two different comments in one language, from different modules (annotation profile, warning) | 43 | 43 | **real** | BPO architect | Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`). *Amended 2026-10-31: was 53; 10 moved to K18 and K19* | B1 |
 | K09 | Two different definitions in one language (wellformedness, violation) | 51 | 51 | **real** (high) | BPO architect | The same IRI reads differently depending on which module is loaded | B1 |
 | K10 | Two different labels in one language (wellformedness, violation) | 6 | 6 | **real** (high) | BPO architect | As K09, for labels | B1 |
 | K11 | A `P<number>` class under Organization Capability (naming: scheme rule, warning) | 39 | 39 | **real** | BPO | BPO's own tracked backlog (Gate F, FR-18 baseline 39): capabilities wearing process-type IRIs. Reproduced exactly by the configured scheme rule | B15 |
@@ -48,10 +48,15 @@ S1 needs no classes of its own.
 | K15 | Concept scheme has no top concept (SKOS, violation) | 1 | 0 | **real** | BPO (fixed in S1 by the PO, answered by 2026-10-25) | The PCF scheme names no top concept, so a SKOS consumer has no entry point | B12 |
 | K16 | `P10530_SuggestionProgram` breaks the class naming convention (IRI lint) | 1 | 1 | **real** | BPO architect | A non-PCF class with a PCF-style IRI and an underscore. The PO kept it on 2026-10-26; it is real and not fixed | B4 |
 | K17 | Label ends in a parenthetical, and the label is the PCF row's own name verbatim (realist, warning) | 9 | 9 | **false alarm** | BPO architect | e.g. "Process accounts payable (AP)". This is APQC's name for the element, reproduced as the PCF scheme gives it. The check cannot tell a source's own name from an editorial note. Test: a `P<id>` class whose label equals `PCF_<id>`'s `skos:prefLabel` | B10 |
+| K18 | Two different comments in one language, both in one BPO module (annotation profile, warning) | 7 | 7 | **false alarm** | BPO architect | A second comment added in review (a caution or false-friend note) in the same slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31 (A6), the BPO architect's decision* | B1 |
+| K19 | Two different comments in one language, both in `bpot.ttl`, from different BPO files (annotation profile, warning) | 3 | 3 | **real** | the port (BPOT) | The port merged BPO's registry and capability files into one module, so a registry note and an inlined-copy note now sit on one term. Created by the port, not by BPO. *Added 2026-10-31 (A6), the BPO architect's decision* | B1 |
 | | **Total** | **4,323** | **3,749** | | | | |
 
-Proposed totals for S0: **real 4,301** (145 of them consequential on K06), **upstream 5**,
-**false alarm 9**, **unsure 8**, **template bug 0**.
+Totals for S0, as approved on 2026-10-30: **real 4,301** (145 of them consequential on K06),
+**upstream 5**, **false alarm 9**, **unsure 8**, **template bug 0**.
+
+Totals for S0 after the dated change of 2026-10-31 (below): **real 4,294**, **upstream 5**,
+**false alarm 16**, **unsure 8**, **template bug 0**.
 
 ## Known defects no check finds (detection gaps)
 
@@ -65,3 +70,36 @@ These are recorded so the S2 verdict does not read "no finding" as "no defect".
 | G4 | S0, S1: `bearsPermission` and `enablesProcess` semantics | Needs review; no tool can catch it | B7, B8 |
 | G5 | S0, S1: comments cite the old `bpo:` CURIEs | Prose | B16 |
 | G6 | S0, S1: BPO's second D7 rule (a non-capability class with a `pcfID` is named `P<pcfID>`) | A scheme rule cannot compare a local name with a literal. At S0 and S1 the count is 0, measured outside the instrument | B15 |
+
+## Changes to the classification (A6: new, dated, with reasons)
+
+### 2026-10-31 — K08 split into K08, K18 and K19
+
+**Decided by:** the BPO architect, in the Phase B decisions of 2026-10-31 (§10 there).
+
+**Why:** the reason given for K08, "inlined copies of a shared term have drifted", was wrong
+for 10 of its 53 findings. This was found while tracing every drift variant to its BPO commit
+(`research/wp6/phase-b/b1-origins.tsv`):
+
+- **7** have both comment variants in one BPO slice. A second comment was added in review, a
+  caution or false-friend note: LetterOfCredit, MaterialSafetyDataSheet, RealProperty,
+  RegulatoryRequirementsStatement, BusinessResiliencyCapability, ChannelManagementCapability,
+  P17497. **Now K18, false alarm.**
+- **3** have both variants in `bpot.ttl`, which the port made by merging three BPO files:
+  ActOfDevelopment, ActOfFormulation, ActOfVerification. **Now K19, real, owned by the port.**
+
+**How:** `tools/wp6_classify.py` assigns them mechanically, from each term's comment modules in
+the state's `config/annotation-drift.tsv`. The register is rewritten from this table by
+`tools/wp6_register.py`, and only these 10 entries change.
+
+**Effect:** S0 real 4,301 → 4,294, false alarm 9 → 16. The approved table of 2026-10-30 is
+kept above, with the amendment marked in it.
+
+### 2026-10-31 — figures corrected in the Phase B record, not in this classification
+
+- **B13** is 216 redundant parent axioms on 216 classes (K06). The 145 K03 genus warnings
+  follow from them, and the 8 K07 are separate. K03 stays **real** and is documented as an
+  *accepted architecture exception*: BPO keeps the parents (decision of 2026-10-31). It is not
+  counted as resolved.
+- **B8** has 356 pairs, not 361.
+- **`ont00000965`** is labelled "Prescriptive Information Content Entity" in CCO 2.0.

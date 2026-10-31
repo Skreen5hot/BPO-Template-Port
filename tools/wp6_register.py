@@ -32,7 +32,9 @@ sys.path.insert(0, str(ROOT / "tools"))
 import findings  # noqa: E402
 
 TABLE = ROOT / "research" / "wp6" / "classification.md"
-APPROVED = "approved by the BPO architect, 2026-10-30"
+APPROVED = "approved by the BPO architect, %s"
+#: Classes approved later than the table of 2026-10-30 (A6: dated changes).
+DATES = {"K18": "2026-10-31", "K19": "2026-10-31"}
 UPSTREAM = {"K13": "CCO https://www.commoncoreontologies.org/ont00001180"}
 
 
@@ -66,7 +68,7 @@ def main(argv) -> int:
     for name in sorted(by_class):
         verdict, owner, reason = table[name]
         text = "%s, %s (WP6 class %s, %s; research/wp6/classification.md)" % (
-            verdict, reason, name, APPROVED)
+            verdict, reason, name, APPROVED % DATES.get(name, "2026-10-30"))
         proposed = yaml.safe_load(findings.propose(
             by_class[name], text, owner, review)) or []
         for entry in proposed:

@@ -50018,21 +50018,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfAcquisition carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#ActOfDevelopment
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 7c20d650b17ec209
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#ActOfDevelopment carries two different rdfs:comment values
-    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
-    on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50044,8 +50032,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfDisposition carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50057,8 +50046,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfFinancialTransaction carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50070,21 +50060,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfForecasting carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#ActOfFormulation
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 74e1a2075f4dc179
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#ActOfFormulation carries two different rdfs:comment values
-    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
-    on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50096,8 +50074,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfRemuneration carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50109,21 +50088,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ActOfReporting carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#ActOfVerification
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 1012faeee9262c18
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#ActOfVerification carries two different rdfs:comment values
-    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
-    on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50135,8 +50102,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Budget carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50148,21 +50116,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#BusinessCase carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#BusinessResiliencyCapability
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 5f1353e6e7633659
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#BusinessResiliencyCapability carries two different rdfs:comment
-    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
-    depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50174,21 +50130,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#BusinessStrategy carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#ChannelManagementCapability
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 370351d42a353590
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#ChannelManagementCapability carries two different rdfs:comment
-    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
-    depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50200,8 +50144,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#CompetitorRole carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50213,8 +50158,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#CompliancePolicy carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50226,8 +50172,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Customer carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50239,8 +50186,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#CustomerFeedback carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50252,8 +50200,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#CustomerProfile carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50265,8 +50214,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#CustomerRole carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50278,8 +50228,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#DemandForecast carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50291,8 +50242,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#DispositionDecision carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50304,8 +50256,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Employee carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50317,8 +50270,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#GoNoGoDecision carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50330,8 +50284,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#IntellectualPropertyManagementCapability carries two different
     rdfs:comment values in the same language. Inlined copies of a term have drifted, so its comment reads
     differently depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50343,21 +50298,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Invoice carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#LetterOfCredit
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 8cf06eb46ea82d04
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#LetterOfCredit carries two different rdfs:comment values
-    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
-    on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50369,8 +50312,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ManagementPersonnel carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50382,34 +50326,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#MarketData carries two different rdfs:comment values in
     the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#MaterialSafetyDataSheet
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: c9d2c4f4d6f4d13c
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#MaterialSafetyDataSheet carries two different rdfs:comment
-    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
-    depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#P17497
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 7eae17629f69407c
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#P17497 carries two different rdfs:comment values in the
-    same language. Inlined copies of a term have drifted, so its comment reads differently depending on
-    which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50421,8 +50340,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#PaymentInstrument carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50434,8 +50354,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#PerformanceIndicatorSpecification carries two different
     rdfs:comment values in the same language. Inlined copies of a term have drifted, so its comment reads
     differently depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50447,8 +50368,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#PerformanceMeasure carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50460,21 +50382,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RawMaterial carries two different rdfs:comment values in
     the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#RealProperty
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 9bcdb2c33e3a786a
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#RealProperty carries two different rdfs:comment values
-    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
-    on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50486,8 +50396,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RegulatoryAuthority carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50499,8 +50410,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RegulatoryAuthorityRole carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50512,8 +50424,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RegulatoryRequirement carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50525,21 +50438,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RegulatoryRequirementData carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
-  owner: BPO architect
-  review: '2027-04-30'
-- check: validate
-  where: validation.annotation-profile
-  focus: https://fandaws.com/ontology/bpot#RegulatoryRequirementsStatement
-  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
-  digest: 262fe7da0bd948a8
-  severity: Warning
-  text: Term https://fandaws.com/ontology/bpot#RegulatoryRequirementsStatement carries two different rdfs:comment
-    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
-    depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50551,8 +50452,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RemediationPlan carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50564,8 +50466,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#RootCauseAnalysis carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50577,8 +50480,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#SalesLead carries two different rdfs:comment values in
     the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50590,8 +50494,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#SeniorManagement carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50603,8 +50508,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#ServiceLevelAgreement carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50616,8 +50522,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Stakeholder carries two different rdfs:comment values in
     the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50629,8 +50536,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#StakeholderRole carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50642,8 +50550,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#Supplier carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50655,8 +50564,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#TrainingPlan carries two different rdfs:comment values
     in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50668,8 +50578,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#designatesProcessType carries two different rdfs:comment
     values in the same language. Inlined copies of a term have drifted, so its comment reads differently
     depending on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50681,8 +50592,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#hierarchyID carries two different rdfs:comment values in
     the same language. Inlined copies of a term have drifted, so its comment reads differently depending
     on which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -50694,8 +50606,9 @@ entries:
   text: Term https://fandaws.com/ontology/bpot#pcfID carries two different rdfs:comment values in the
     same language. Inlined copies of a term have drifted, so its comment reads differently depending on
     which module is loaded.
-  reason: 'real, Inlined copies of a shared term have drifted: 129 comment variants across 53 terms (`config/annotation-drift.tsv`)
-    (WP6 class K08, approved by the BPO architect, 2026-10-30; research/wp6/classification.md)'
+  reason: 'real, Inlined copies of a shared term carry different notes across modules (`config/annotation-drift.tsv`).
+    *Amended 2026-10-31: was 53; 10 moved to K18 and K19* (WP6 class K08, approved by the BPO architect,
+    2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
   review: '2027-04-30'
 - check: validate
@@ -52332,4 +52245,144 @@ entries:
     a `P<id>` class whose label equals `PCF_<id>`''s `skos:prefLabel` (WP6 class K17, approved by the
     BPO architect, 2026-10-30; research/wp6/classification.md)'
   owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#BusinessResiliencyCapability
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 5f1353e6e7633659
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#BusinessResiliencyCapability carries two different rdfs:comment
+    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
+    depending on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#ChannelManagementCapability
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 370351d42a353590
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#ChannelManagementCapability carries two different rdfs:comment
+    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
+    depending on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#LetterOfCredit
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 8cf06eb46ea82d04
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#LetterOfCredit carries two different rdfs:comment values
+    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
+    on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#MaterialSafetyDataSheet
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: c9d2c4f4d6f4d13c
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#MaterialSafetyDataSheet carries two different rdfs:comment
+    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
+    depending on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#P17497
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 7eae17629f69407c
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#P17497 carries two different rdfs:comment values in the
+    same language. Inlined copies of a term have drifted, so its comment reads differently depending on
+    which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#RealProperty
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 9bcdb2c33e3a786a
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#RealProperty carries two different rdfs:comment values
+    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
+    on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#RegulatoryRequirementsStatement
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 262fe7da0bd948a8
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#RegulatoryRequirementsStatement carries two different rdfs:comment
+    values in the same language. Inlined copies of a term have drifted, so its comment reads differently
+    depending on which module is loaded.
+  reason: 'false alarm, A second comment added in review (a caution or false-friend note) in the same
+    slice: BPO practice and legal RDF; the one-comment rule meets a legitimate practice. *Added 2026-10-31
+    (A6), the BPO architect''s decision* (WP6 class K18, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)'
+  owner: BPO architect
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#ActOfDevelopment
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 7c20d650b17ec209
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#ActOfDevelopment carries two different rdfs:comment values
+    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
+    on which module is loaded.
+  reason: real, The port merged BPO's registry and capability files into one module, so a registry note
+    and an inlined-copy note now sit on one term. Created by the port, not by BPO. *Added 2026-10-31 (A6),
+    the BPO architect's decision* (WP6 class K19, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)
+  owner: the port (BPOT)
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#ActOfFormulation
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 74e1a2075f4dc179
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#ActOfFormulation carries two different rdfs:comment values
+    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
+    on which module is loaded.
+  reason: real, The port merged BPO's registry and capability files into one module, so a registry note
+    and an inlined-copy note now sit on one term. Created by the port, not by BPO. *Added 2026-10-31 (A6),
+    the BPO architect's decision* (WP6 class K19, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)
+  owner: the port (BPOT)
+  review: '2027-04-30'
+- check: validate
+  where: validation.annotation-profile
+  focus: https://fandaws.com/ontology/bpot#ActOfVerification
+  rule: https://fandaws.com/ontology/bpot/shapes/annotation-profile#AuthoredTermAgreementShape1
+  digest: 1012faeee9262c18
+  severity: Warning
+  text: Term https://fandaws.com/ontology/bpot#ActOfVerification carries two different rdfs:comment values
+    in the same language. Inlined copies of a term have drifted, so its comment reads differently depending
+    on which module is loaded.
+  reason: real, The port merged BPO's registry and capability files into one module, so a registry note
+    and an inlined-copy note now sit on one term. Created by the port, not by BPO. *Added 2026-10-31 (A6),
+    the BPO architect's decision* (WP6 class K19, approved by the BPO architect, 2026-10-31; research/wp6/classification.md)
+  owner: the port (BPOT)
   review: '2027-04-30'

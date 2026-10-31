@@ -1,6 +1,6 @@
 # WP6 Phase B — change and decision record, B1 to B18
 
-**Status: DRAFT, for the BPO architect.** Every disposition below is *proposed*. Nothing has
+**Status: DECIDED 2026-10-31** (§8). Sections 1–7 are the record as reviewed, at `16a42f4`; the decisions, and what they change in it, are in §8. Sections 1–7 were *proposals*. Nothing has
 been changed in BPO. The trials of the back-port candidates ran in scratch copies of BPO and
 were thrown away (§3).
 
@@ -267,7 +267,7 @@ and **3 were created by the port**, which merged three BPO files into one module
 | Original and result | 5 findings (K13): `has recipient` (`ont00001922`, range Agent) restricted to BoardOfDirectors (P11042, P11043) and RegulatoryAuthority (P19596); `has capability` (`ont00001954`, domain Agent) on ServiceProvider and SupplyChainOrganization |
 | Nature | none; a decision record |
 | Mechanism | Detected by the template's realist domain/range check; known and documented in BPO, never tested |
-| Evidence | **CCO 2.0 is inconsistent with itself here** (verified in the pinned CCO): `has capability` has domain Agent (`1017`) and range Agent Capability (`1379`); CCO's own Organization Capability (`568`) ⊑ `1379`; Organization (`1180`) ⊑ Group of Agents (`300`), not ⊑ Agent. So CCO cannot let an Organization have an Organization Capability without inferring it to be an Agent |
+| Evidence | **A domain/range tension in CCO 2.0, not an inconsistency** (corrected 2026-10-31; the first draft said "inconsistent"): `has capability` has domain Agent (`1017`) and range Agent Capability (`1379`); CCO's Organization Capability (`568`) ⊑ `1379`; Organization (`1180`) ⊑ Group of Agents (`300`), not ⊑ Agent. Asserting that an organization has a capability therefore *entails* that it is an Agent. That is not a contradiction: CCO 2.0 declares no disjointness between Organization and Agent, and the merged corpus is consistent under ELK. The entailments of the 5 cases are to be documented before they are accepted (§8) |
 | Proposed disposition | Record BPO's pattern as a decision: organizations are kept as organizations, and the 5 are accepted as **upstream** (K13 is so classified). Check CCO v2.2 for a change before S2. If a fix is wanted, the alternative is to restrict to a member agent of the organization |
 | Rationale | Forcing Organization ⊑ Agent would contradict CCO; restating the relation on member agents changes BPO's meaning |
 
@@ -391,3 +391,42 @@ parent", so it passes a class whose other definition contradicts it.
 
 Once these are decided and made in BPO, the S2 commit can be named. S2u and S2 are then
 ported and measured with the same instrument, and the quality review follows separately.
+
+## 8. Decisions of the BPO architect, 2026-10-31
+
+From the architect's Phase B decisions of 2026-10-31. Each item is traced from here to its
+BPO commit, the resulting axioms, its validation evidence, and the comparison.
+
+| Item | Decision | Work |
+|---|---|---|
+| Design | **S2u approved**; A9 to the Template Team for formal acceptance before the four-state measurement. S0 and S1 are kept unchanged; S2u and S2 come from one approved BPO commit. The report must separate asserted axioms, the inferred class hierarchy, annotation text, intended meaning, and operational consequences such as dispatch. **Equal hierarchies are not semantic equivalence** | A9 message; report structure |
+| B1 | Routine reconciliation approved (wording, narrowing, genus, registry copies), preserving each class's intended referents. Canonical definitions for shared terms; genuinely module-specific comments kept. **PerformanceMeasure:** separate, with the Descriptive sense kept and the specification as a new Prescriptive ICE class; review every reference before redirecting. **CustomerProfile:** separate, with the individual-record sense kept, the segment sense identified independently, and a group of customers never classed as an ICE. **SeniorManagement:** merge only if both roles are the same role borne by the same kind of entity; otherwise keep both, with their differentiae. **RegulatoryAuthority:** review regulator role against regulatory-authority role | BPO, per term |
+| B3 | **Approved**: the APQC release named on the relevant BPO modules | BPO |
+| B5 | **Approved conditionally**: the ten definitions, with those depending on B6, B7 and B8 finalized after them | BPO, last of the four |
+| B6 | **Approved, option (a)**: annotation properties; SHACL kept; no instance-level restrictions | BPO |
+| B12 | **Approved**, in the catalog generator, not the generated file | BPO |
+| Back-ports | All four tested **together with the other corrections** before the S2 commit; individual success does not show the absence of interactions | combined validation |
+| B4 | **Approved**: a non-PCF identifier (`SuggestionProgramManagement` acceptable if it denotes the administrative process), with a replacement mapping and provenance. A mandatory process-part relation needs its own justification: the compound row alone is not enough | BPO |
+| B7 | **Approved**: `permissionApplicableToRole`, with a migration mapping and the old identifier deprecated. An annotation-level association of role and permission types, not BFO's bearer relation, and not evidence that an agent holds an effective permission. CCO's Action Permission kept | BPO |
+| B8 | **Full 356-pair audit approved; the automatic inference from `enablesProcess` to `requiresCapability` is not.** The 197 axiom-derived and 159 table pairs are reviewed separately, and each is classed as a possible realization, an enabling relation, or a necessary requirement. Only justified requirements feed dispatch. Existing BFO/CCO relations are used where they apply, and any class-level index stays annotation-level. S1's overly strong necessity reading is kept as evidence and corrected in the new source and port | BPO, the audit |
+| B9 | Review the genuine mismatches. **The 145 K03 are accepted architecture exceptions** (B13 parents kept), not counted as resolved. The other 88 are reviewed one by one | BPO |
+| B10 | Clear qualifiers move to annotations; the 9 APQC labels stay. **"Request for Proposal (RFP/RFQ)" is reviewed separately**: an RFP and an RFQ may be different artifacts | BPO |
+| B11 | Document the pattern; keep the 5 for explicit review; never assert Organization ⊑ Agent. **Accept them as upstream-constraint exceptions only after documenting their actual entailments.** Stay on CCO 2.0; a newer CCO is a separate assessment | BPO decision record |
+| B13 | **Keep the 216** (architecture difference, not a defect). **K07:** the 7 delivery-role grouping parents become annotation-level membership if regression shows classification and dispatch preserved. ITInfrastructureComponent keeps both parents, reviewed. **Gate F fixed to traverse inherited superclasses**, independently | BPO |
+| B14 | `ont00001754` for APQC-derived classes with a traceable `pcfID`, separating APQC's source from BPO's authorship of the wording. For BPO-authored definitions, real authorship, with no invented external source | BPO |
+| B16 | BPO unchanged. The port keeps the historical text and explains its namespace provenance; no 1,224 edits | port |
+| B18 | Titles and source-version provenance carried. BPO's release number is **not** the port's own version unless intended. False "self-contained" comments removed | port tool |
+| B2 | Closed (ADR-003); the notice and rights metadata carried forward | port tool (S2) |
+| B15 | Stays in BPO's backlog | — |
+| B17 | BPO keeps its three offline restatements; the port omits them | — |
+| §5 | **The dated A6 correction is approved**: K18, K19 and the reason, count and terminology corrections. Done 2026-10-31 (`classification.md`, "Changes"; register regenerated; gate passes) | done |
+| Template | **P-B1 registered as a confirmed detection gap**: each definition is evaluated on its own. Separate detection requirements: possible homonyms, duplicate classes, and relations whose names or definitions claim more than their axioms. Not to be counted as solved by syntactic checks: semantic identity needs human assessment | Template Team message |
+| S2 | **No S2 commit authorized yet.** BPO prepares a proposed correction commit from `685f1f2` or later, with a reviewable history, passing BPO's complete suite. Then one immutable SHA serves both S2u and S2. A9 must be accepted first. The quality review is separate | — |
+
+**A point raised before acting (CustomerProfile).** The s1 definition reads "A Descriptive
+ICE that **describes** a group of customers…". That is information *about* a segment, not the
+segment itself. So both senses are ICEs: one about a segment, one about one customer. The
+group itself is not modelled at all. Following the decision, a group of customers is not
+classed as an ICE. The split is between two information entities, and the group is modelled
+only if a slice refers to the group itself. To be confirmed against s1's usage before the
+change is made.
