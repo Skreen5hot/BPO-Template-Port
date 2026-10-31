@@ -1,0 +1,4 @@
+# BPO 685f1f2, candidate b3
+#  13 files changed, 39640 insertions(+), 29438 deletions(-)
+gate	exit	seconds	last_lines
+corpus_check (ELK, Gate F)	0	305	dangling_ref              0   (baseline 0) / pcf-without-P-iri         0   (baseline 0) / readable_label            0   (baseline 0)

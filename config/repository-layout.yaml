@@ -803,6 +803,44 @@ components:
       classification: findings.propose() once per class, with that class's
       reason and owner, one entry per finding (amendment A5).
 
+  - id: tool.wp6-entailments
+    path: tools/wp6_entailments.py
+    role: tool
+    description: >-
+      The class hierarchy a WP6 state entails (pinned ROBOT, ELK, with the
+      pinned BFO and CCO), and the differences between states: tells an
+      asserted-axiom change from an entailment change (Phase B memo).
+
+  - id: tool.wp6-b1
+    path: tools/wp6_b1.py
+    role: tool
+    description: >-
+      Traces each drifted annotation variant (B1) to the BPO commit that
+      introduced it.
+
+  - id: tool.wp6-b13
+    path: tools/wp6_b13.py
+    role: tool
+    description: >-
+      One row per asserted parent of every multi-parent class (B13), with
+      the path that makes it redundant; writes the candidate ontology with
+      the redundant parents removed.
+
+  - id: tool.wp6-backport-trial
+    path: tools/wp6_backport_trial.py
+    role: tool
+    description: >-
+      Applies one candidate change to a scratch worktree of BPO and runs
+      BPO's own gates there; nothing in BPO is changed (Phase B memo).
+
+  - id: tool.wp6-manifest
+    path: tools/wp6_manifest.py
+    role: tool
+    description: >-
+      Records what a WP6 state was built and measured with: content and
+      instrument commits, template revision, dependency versions, ROBOT and
+      upstream digests, and the digest of every deciding file.
+
   - id: tool.mappings
     path: tools/ontology/mappings.py
     role: tool
