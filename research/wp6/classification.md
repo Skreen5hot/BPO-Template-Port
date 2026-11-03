@@ -102,4 +102,28 @@ kept above, with the amendment marked in it.
   *accepted architecture exception*: BPO keeps the parents (decision of 2026-10-31). It is not
   counted as resolved.
 - **B8** has 356 pairs, not 361.
-- **`ont00000965`** is labelled "Prescriptive Information Content Entity" in CCO 2.0.
+- **`ont00000965`** is labelled "Prescriptive Information Content Entity" in CCO 2.0. *Reversed 2026-11-03 (below): wrong for the pinned release.*
+
+### 2026-11-03 — `ont00000965`'s label: the 2026-10-31 correction reversed (evidence correction)
+
+The 2026-10-31 entry above is kept as it was written. It is wrong for the release this
+experiment pins, and is reversed here on evidence the BPO architect required before
+approving the reversal (decision of 2026-11-03).
+
+| Property | The pinned release |
+|---|---|
+| CCO release | `v2.0-2024-11-06` |
+| CCO commit | `510dad76be0ef710b65a421075af912af25342b7` |
+| Merged-file SHA-256 | `e609db27478a2c8b52b9bb5eb5ac979ac323510e851c368e4d9ec7d1c153fe5b` (the port's `.upstream-cache/cco.ttl`; BPO's `vendor/cco/` since BPO `f311fa7`) |
+| `ont00000965` label | "Directive Information Content Entity" (altLabel "Directive ICE"); "Prescriptive" does not occur in the file |
+| `ont00000908` label | "Act of Artifact Processing" |
+
+**Why the earlier entry was wrong.** CCO's development branch relabelled `965`
+"Prescriptive" on 2025-06-02, but its module files kept the `2024-11-06` version IRI until
+2026-04-07. A file from that period carries the 2024-11-06 version IRI with later
+content. The entry most likely rests on such a file (not verified: the file it came
+from was not kept); a check of the version IRI alone cannot tell such a file from the release.
+
+**Effect on the register.** None on any finding or class: the label is annotation text,
+and the IRI is the same in every file. Where this record or the Phase B change record says
+"Prescriptive ICE" for `965`, read "Directive ICE" for the pinned release.

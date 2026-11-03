@@ -1,6 +1,6 @@
 # WP6 Phase B — change and decision record, B1 to B18
 
-**Status: DECIDED 2026-10-31** (§8). Sections 1–7 are the record as reviewed, at `16a42f4`; the decisions, and what they change in it, are in §8. Sections 1–7 were *proposals*. Nothing has
+**Status: DECIDED 2026-10-31** (§8). §9 (2026-11-03) reverses one §5 correction on evidence and records a finding. Sections 1–7 are the record as reviewed, at `16a42f4`; the decisions, and what they change in it, are in §8. Sections 1–7 were *proposals*. Nothing has
 been changed in BPO. The trials of the back-port candidates ran in scratch copies of BPO and
 were thrown away (§3).
 
@@ -220,7 +220,7 @@ and **3 were created by the port**, which merged three BPO files into one module
 
 | | |
 |---|---|
-| Original | an annotation property whose label says a role *bears* a permission. In BFO, *bears* is the relation of a bearer to its dependent continuants. CCO's Action Permission (`ont00000751`) ⊑ Process Regulation (`1324`) ⊑ `965` (labelled "Prescriptive Information Content Entity" in CCO 2.0) ⊑ ICE: a generically dependent continuant, which a role cannot bear (verified in the pinned CCO) |
+| Original | an annotation property whose label says a role *bears* a permission. In BFO, *bears* is the relation of a bearer to its dependent continuants. CCO's Action Permission (`ont00000751`) ⊑ Process Regulation (`1324`) ⊑ `965` (labelled "Prescriptive Information Content Entity" in CCO 2.0 [*2026-11-03: wrong for the pinned release, which labels it "Directive Information Content Entity"; §9*]) ⊑ ICE: a generically dependent continuant, which a role cannot bear (verified in the pinned CCO) |
 | Result | S1: the definition is corrected (a policy association); the label is unchanged |
 | Nature | semantic (definition); none in OWL (annotation property, no axioms use it) |
 | Mechanism | Human review (the BPO evaluation); no check can find it (G4) |
@@ -355,7 +355,7 @@ and **3 were created by the port**, which merged three BPO files into one module
 | K08's reason ("inlined copies of a shared term have drifted") | True for 43 of the 53. **7 are deliberate review addenda**: two comments in one slice, BPO practice, legal RDF. **3 were created by the port**, which merged three BPO files into one module. Proposed: the 7 reclassified **false alarm** (the one-comment rule against a legitimate practice), the 3 kept **real** but owned by the port. Under A6 this is a new, dated register change with this reason, and needs the architect's approval |
 | B8's count | 356 `enablesProcess` pairs, not 361 |
 | B13 in the memo ("145 potentially redundant parents") | 216 redundant parent axioms on 216 classes. The 145 are K03 genus findings that follow from them. The 8 uncertain are K07 |
-| `965`'s label | CCO 2.0 labels it "Prescriptive Information Content Entity". BPO's docs and this record's earlier text say "Directive"; the IRI is the same |
+| `965`'s label | CCO 2.0 labels it "Prescriptive Information Content Entity". BPO's docs and this record's earlier text say "Directive"; the IRI is the same. **Reversed 2026-11-03 (§9):** the pinned release file labels it "Directive Information Content Entity"; BPO's docs were right |
 
 ## 6. Detection: what the framework found, and what it did not
 
@@ -430,3 +430,23 @@ group itself is not modelled at all. Following the decision, a group of customer
 classed as an ICE. The split is between two information entities, and the group is modelled
 only if a slice refers to the group itself. To be confirmed against s1's usage before the
 change is made.
+
+## 9. Evidence correction and finding, 2026-11-03
+
+**The §5 correction of `965`'s label is reversed** (BPO architect, 2026-11-03, after the
+evidence check required on 2026-11-02). The pinned release file, CCO `v2.0-2024-11-06`
+(commit `510dad7`, SHA-256 `e609db27…`), labels `ont00000965` "Directive Information
+Content Entity" and `ont00000908` "Act of Artifact Processing". The §5 row and the B7
+parenthesis are kept as written, with dated notes. Evidence and history:
+`classification.md`, "2026-11-03"; BPO `docs/wp6/cco-pin.md`.
+
+**Finding E-B1 (positive): the experiment exposed a dependency-provenance defect that a
+version-IRI check alone would not catch.**
+
+| | |
+|---|---|
+| Defect | BPO declared the CCO `2024-11-06` pin while vendoring the `2026-04-04` release. Separately, CCO's development branch kept the `2024-11-06` version IRI on module files relabelled after the release (2025-06-02 to 2026-04-07), so a file can carry the pinned version IRI with other content |
+| Found by | Comparing BPO's vendored file with the port's upstream cache, which the template pins by commit and SHA-256 (`config/upstream-sources.yaml`). Human review then traced the label discrepancy to the development-branch history |
+| Effect on BPO | Text quoting the 2026 release as if pinned (908's label on 24 lines, several "verified" definitions, "Prescriptive ICE" as a class name) was restored to the pinned wording (BPO `231f148`). Under the two releases no `bpo:` inferred subclass pair differs |
+| Fix in BPO | BPO `f311fa7`: Gate B and `corpus_check.sh` refuse a vendored CCO file whose SHA-256 or version IRI differs from the pin. Tested against the 2026 file |
+| Attribution | The template's digest pinning made the comparison possible; the check BPO now runs is BPO's own. Counted as a substantive engineering improvement found by the experiment, not as a template check that fired |
