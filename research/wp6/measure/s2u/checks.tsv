@@ -1,23 +1,23 @@
 check	exit	seconds	last_line
-project	0	0.7	this checkout  Skreen5hot/BPO-Template-Port  (origin https://github.com/Skreen5hot/BPO-Template-Port.git)
-layout	0	1.0	never tracked: ['reference.third-party']
-disposition_all	0	23.0	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
-vendor_upstream	1	17.6	FINDING: 1 upstream term(s) named here are not described by any extract, so a shape walking through them still has no chain: https://www.commoncoreontologies.org/ont00000870
-validate	1	75.5	... validation.wellformedness: the fixtures
-validate_gate	1	0.0	24 new, 3279 stale, 1 structural problem(s)
-iri_lint	1	19.1	}
-reason	0	25.9	consistent; nothing unsatisfiable
-competency	0	9.8	no competency questions yet
-mappings	0	10.0	1 mapping set(s), 5056 mapping(s), 0 finding(s)
-profile_shapes	0	0.6	shapes/annotation_profile_shapes.ttl is current
-vocabulary	0	9.5	ontology/vocabulary.ttl is current
-protege	0	13.8	protege is current
-normalize	0	0.8	no module declares format: canonical
-disposition	0	15.2	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
-third_party	0	0.6	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
-findings	0	2.3	5 about upstream terms
-communications	1	1.5	open: none
-template_status	0	1.3	every owned file is as the manifest records
-site_build	0	73.2	tree digest f49148014ecae6c97bc01a980303b8517287de845a513ecdd8a192c6769d82ef
-site_check	0	3.3	9 page(s) checked: structure, origins, links, fragments, downloads, bundle, term index
-release	0	172.7	C:/Users/aaron/AppData/Local/Temp/tmpm8_4ehxf/release/bpot-0.0.0/SHA256SUMS
+project	0	0.5	this checkout  Skreen5hot/BPO-Template-Port  (origin https://github.com/Skreen5hot/BPO-Template-Port.git)
+layout	0	0.6	never tracked: ['reference.third-party']
+disposition_all	0	9.7	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
+vendor_upstream	0	8.8	extracts present, digests match, every reference resolves
+validate	1	40.1	... validation.wellformedness: the fixtures
+validate_gate	1	0.0	29 new, 1948 stale, 0 structural problem(s)
+iri_lint	1	14.6	}
+reason	0	17.7	consistent; nothing unsatisfiable
+competency	0	7.0	no competency questions yet
+mappings	0	7.0	1 mapping set(s), 5056 mapping(s), 0 finding(s)
+profile_shapes	0	0.5	shapes/annotation_profile_shapes.ttl is current
+vocabulary	0	6.4	ontology/vocabulary.ttl is current
+protege	0	6.7	protege is current
+normalize	0	0.4	no module declares format: canonical
+disposition	0	8.0	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
+third_party	0	0.3	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
+findings	0	1.6	5 about upstream terms
+communications	1	0.9	open: none
+template_status	0	0.8	every owned file is as the manifest records
+site_build	0	52.4	tree digest 0e5c73d810bca3f9ad4248679bf444d654d359c48c04ec0a33be58427dfa07ec
+site_check	0	2.8	9 page(s) checked: structure, origins, links, fragments, downloads, bundle, term index
+release	0	127.6	C:/Users/aaron/AppData/Local/Temp/tmpxh92tqgs/release/bpot-0.0.0/SHA256SUMS
