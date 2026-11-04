@@ -12,7 +12,10 @@
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://fandaws.com/ontology/bpo/capabilities>,
         <https://fandaws.com/ontology/bpo/delivery>,
-        <https://fandaws.com/ontology/bpo/ext> ;
+        <https://fandaws.com/ontology/bpo/ext>,
+        "Business Process Ontology 0.4.1, module “APQC Phase 1: Capability / Role bridge layer” (https://fandaws.com/ontology/bpo/capabilities; Skreen5hot/BusinessProcessOntology at commit 2b86c91)",
+        "Business Process Ontology 0.4.1, module “APQC Phase 1: Delivery-process universals + Process-Contract participants” (https://fandaws.com/ontology/bpo/delivery; Skreen5hot/BusinessProcessOntology at commit 2b86c91)",
+        "Business Process Ontology 0.4.1, module “APQC Shared Extension: recurring local act genera (D9)” (https://fandaws.com/ontology/bpo/ext; Skreen5hot/BusinessProcessOntology at commit 2b86c91)" ;
     dcterms:title "Business Process Ontology" ;
     rdfs:comment "Business processes of the APQC Process Classification Framework (Cross-Industry, v7.4), as BFO 2020 / CCO v2.0 process universals, organization capabilities and roles." ;
     owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0> ;
@@ -26,7 +29,7 @@ bpot:ActOfAccounting a owl:Class ;
 
 bpot:ActOfAcquisition a owl:Class ;
     rdfs:label "Act of Acquisition" ;
-    rdfs:comment "Local extension (D9). Rejected cco:ont00000950 'Act of Maintenance' (modifying Material Artifacts) and cco:ont00000402 'Act of Communication' (mere ICE transfer). Securing/obtaining a held entity anchors at the generic Planned Act. Expected to recur in procurement/asset-acquisition categories (4.0, 10.0)." ;
+    rdfs:comment "Local extension (D9). Rejected cco:ont00000950 'Act of Maintenance' (modifying Material Artifacts) and cco:ont00000402 'Act of Communication' (mere ICE transfer). Securing/obtaining a held entity anchors at the generic Planned Act. Expected to recur in procurement/asset-acquisition categories (4.0, 10.0). Also rejected cco:ont00001334 (Act of Purchasing) and cco:ont00000389 (Act of Buying): both require a Financial Instrument and descend from cco:ont00000836 (Act of Financial Instrument Use), too narrow for non-purchase acquisitions such as obtaining permits/licenses from an authority or securing financing; purchasing is a species of acquisition, not its genus." ;
     rdfs:subClassOf cco:ont00000228 ;
     skos:definition "A Planned Act in which an Agent obtains from some authority or supplier an entity (such as an authorization, license, or resource) that the Agent did not previously hold." .
 
@@ -57,9 +60,11 @@ bpot:ActOfCardAdministration a owl:Class ;
 
 bpot:ActOfCommunication a owl:Class ;
     rdfs:label "Act of Communication (shared anchor)" ;
-    rdfs:comment "PROPOSE-EXT (D9). Shared anchor that wraps the VERIFIED cco:ont00000402 (Act of Communication, def: 'A Planned Act in which some Information Content Entity is transferred from some Agent to Another'; parent cco:ont00000228) so the recurring 'communicate'/'convey'/'escalate'/'route' rows reuse one consistent, D6-verified parent rather than re-citing the raw IRI per class. NOT cco:ont00000379 'Act of Representative Communication' (the methodology's flagged false-friend, the truth-committing subclass): plain conveyance/escalation does not assert truth, whereas reporting (bpo:ActOfReporting) does and therefore anchors under ont00000379. The cco:ont00000228 co-anchor is retained because SHACL S2 evaluates rdfs:subClassOf+ over the module graph only. Recurs in 8.0." ;
+    dcterms:isReplacedBy cco:ont00000402 ;
+    rdfs:comment "DEPRECATED 2026-11-02 (WP6, BPO architect): the same class as cco:ont00000402 Act of Communication; use that directly (with cco:ont00000228 co-asserted where a standalone SHACL S2 graph needs the allowlisted anchor). Kept declared because the BCO vendors this registry. Earlier note: PROPOSE-EXT (D9). Shared anchor that wraps the VERIFIED cco:ont00000402 (Act of Communication, def: 'A Planned Act in which some Information Content Entity is transferred from some Agent to Another'; parent cco:ont00000228) so the recurring 'communicate'/'convey'/'escalate'/'route' rows reuse one consistent, D6-verified parent rather than re-citing the raw IRI per class. NOT cco:ont00000379 'Act of Representative Communication' (the methodology's flagged false-friend, the truth-committing subclass): plain conveyance/escalation does not assert truth, whereas reporting (bpo:ActOfReporting) does and therefore anchors under ont00000379. The cco:ont00000228 co-anchor is retained because SHACL S2 evaluates rdfs:subClassOf+ over the module graph only. Recurs in 8.0." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000402 ;
+    owl:deprecated true ;
     skos:definition "A Planned Act in which an Agent transfers one or more Information Content Entities to one or more other Agents." .
 
 bpot:ActOfDataManagement a owl:Class ;
@@ -70,41 +75,42 @@ bpot:ActOfDataManagement a owl:Class ;
 
 bpot:ActOfDeployment a owl:Class ;
     rdfs:label "Act of Deployment" ;
-    rdfs:comment "PROPOSE-EXT (D9). Anchored at the generic cco:ont00000228 (Planned Act) because deployment places and configures a (often material) IT component into operation: it acts on material participants (IT infrastructure components / software releases, attached via obo:BFO_0000057 has participant), so it is neither a pure information-processing act nor a service-rendering act. Rejected bpo:ActOfServiceProvision (renders an intangible service rather than installing/configuring a discrete component), cco:ont00000950 (Act of Maintenance: restores/preserves an existing artifact's qualities rather than first making it operational), and cco:ont00000908 (Act of Material Artifact Processing: fabricates/transforms matter rather than installing/configuring an already-built component). Recurs in IT/operations install-and-configure activities (8.0, 9.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). Anchored at the generic cco:ont00000228 (Planned Act) because deployment places and configures a (often material) IT component into operation: it acts on material participants (IT infrastructure components / software releases, attached via obo:BFO_0000057 has participant), so it is neither a pure information-processing act nor a service-rendering act. Rejected bpo:ActOfServiceProvision (renders an intangible service rather than installing/configuring a discrete component), cco:ont00000950 (Act of Maintenance: restores/preserves an existing artifact's qualities rather than first making it operational), and cco:ont00000908 (Act of Artifact Processing: fabricates/transforms matter rather than installing/configuring an already-built component). Recurs in IT/operations install-and-configure activities (8.0, 9.0)." ;
     rdfs:subClassOf cco:ont00000228 ;
     skos:definition "A Planned Act in which an Agent installs, configures, distributes, or otherwise makes operationally available an IT component, software release, or solution within an organization's environment." .
 
 bpot:ActOfDesign a owl:Class ;
     rdfs:label "Act of Design" ;
-    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no generic design act; designing produces a Directive ICE (a design/architecture specification) prescribing an artifact-to-be, so it is anchored under cco:ont00000511 (Act of Planning), not under cco:ont00000908 (Act of Material Artifact Processing), which physically operates on existing matter. Rejected cco:ont00000051 (Act of Construction) and cco:ont00001359 (Act of Manufacturing) as both build/mass-produce finished goods rather than authoring a concept-stage design. Recurs across develop/design categories (2.0, 4.0, 7.0, 8.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no generic design act; designing produces a Directive ICE (a design/architecture specification) prescribing an artifact-to-be, so it is anchored under cco:ont00000511 (Act of Planning), not under cco:ont00000908 (Act of Artifact Processing), which physically operates on existing matter. Rejected cco:ont00000051 (Act of Construction) and cco:ont00001359 (Act of Manufacturing) as both build/mass-produce finished goods rather than authoring a concept-stage design. Recurs across develop/design categories (2.0, 4.0, 7.0, 8.0)." ;
     rdfs:subClassOf cco:ont00000511 ;
     skos:definition "An Act of Planning in which an Agent devises and specifies the form, structure, and behavior of a prospective product, service, solution, process, or architecture and produces a Directive Information Content Entity (a design specification) that prescribes how it is to be realized." .
 
 bpot:ActOfDisposition a owl:Class ;
     rdfs:label "Act of Disposition" ;
-    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no generic disposal/disposition Act. Anchored at the generic cco:ont00000228 (Planned Act) because disposition spans physical destruction/recycling AND ownership transfer (sale/trade) AND waste-stream removal -- not all of which physically process a material artifact. Rejected cco:ont00000908 (Act of Material Artifact Processing: too narrow -- excludes sale/abandonment), cco:ont00000950 (Act of Maintenance: preserves/restores Qualities, the opposite of retiring an asset), and cco:ont00000970 (Act of Artifact Modification: changes an artifact's qualities, not its service/ownership status). Recurs across asset end-of-life: decommission, sale/trade, recycle, abandonment, hazardous-material/waste disposition (10.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no generic disposal/disposition Act. Anchored at the generic cco:ont00000228 (Planned Act) because disposition spans physical destruction/recycling AND ownership transfer (sale/trade) AND waste-stream removal -- not all of which physically process a material artifact. Rejected cco:ont00000908 (Act of Artifact Processing: too narrow -- excludes sale/abandonment), cco:ont00000950 (Act of Maintenance: preserves/restores Qualities, the opposite of retiring an asset), and cco:ont00000970 (Act of Artifact Modification: changes an artifact's qualities, not its service/ownership status). Recurs across asset end-of-life: decommission, sale/trade, recycle, abandonment, hazardous-material/waste disposition (10.0). Also rejected cco:ont00001336 (Act of Ownership) and its parent cco:ont00001232 (Act of Possession): these model an agent HOLDING / exercising control over property (a state of possession), not relinquishing or transferring it; CCO 2.0 has no Act of Selling / Act of Ownership Transfer." ;
     rdfs:subClassOf cco:ont00000228 ;
     skos:definition "A Planned Act in which an Agent removes an asset or portion of material from active service, ownership, or possession at its end-of-life by retiring, selling, dismantling, recycling, abandoning, or otherwise applying a terminal disposition to it or its parts in accordance with applicable requirements." .
 
 bpot:ActOfFinancialTransaction a owl:Class ;
     rdfs:label "Act of Financial Transaction" ;
-    rdfs:comment "PROPOSE-EXT (D9). Re-anchored from the bare cco:ont00000228 to cco:ont00000836 (Act of Financial Instrument Use): every subclass uses/transfers a Financial Instrument (money and cash are Financial Instruments in CCO -- cf. Portion of Cash cco:ont00000475 subClassOf 537), and CCO models settlements, loans, purchases, deposits, withdrawals and exchanges uniformly under 836. Rejected cco:ont00001334 'Act of Purchasing' and cco:ont00000389 'Act of Buying' (both acquire a good/service -- too narrow) and cco:ont00000366 'Act of Information Processing' (a payment moves a material/financial-instrument filler, not only an ICE). cco:ont00000228 co-asserted because 836 falls outside the S2 standalone-SHACL allowlist. Recurs in payment/treasury/trade categories (9.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). Re-anchored from the bare cco:ont00000228 to cco:ont00000836 (Act of Financial Instrument Use): every subclass here uses/transfers a Financial Instrument (money and cash are Financial Instruments in CCO -- cf. Portion of Cash cco:ont00000475 subClassOf 537), and CCO models settlements, loans, purchases, deposits, withdrawals and exchanges uniformly under 836, so the earlier claim that this genus is 'broader than financial-instrument use' was incorrect (investments and exchanges still USE financial instruments). Rejected cco:ont00001334 'Act of Purchasing' and cco:ont00000389 'Act of Buying' (both acquire a good/service -- too narrow for payments/remittances/trades/deposits) and cco:ont00000366 'Act of Information Processing' (a payment moves a material/financial-instrument filler, not only an ICE). cco:ont00000228 co-asserted because 836 falls outside the S2 standalone-SHACL allowlist. Recurs in payment/treasury/trade categories (9.0)." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000836 ;
-    skos:definition "A Planned Act in which an Agent transfers or uses money or a Financial Instrument to or from another Agent in settlement of an obligation, an investment, or an exchange." .
+    skos:definition "An Act of Financial Instrument Use in which an Agent transfers or uses money or a Financial Instrument to or from another Agent in settlement of an obligation, an investment, or an exchange." .
 
 bpot:ActOfForecasting a owl:Class ;
     rdfs:label "Act of Forecasting" ;
-    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000371 (Act of Prediction, verified: 'A Planned Act that involves the generation of a Predictive Information Content entity that is intended to describe an uncertain possible future event, value, entity, or attribute'; parent cco:ont00000228), whose definitional output is a Predictive ICE (cco:ont00000626 ⊑ cco:ont00000853 Descriptive ICE) -- exactly the genus of a sales/demand/volume/ROI forecast. A thin specialization (quantitative, history-driven business projection) kept shared so slice agents need not re-derive the anchor. Output is a PREDICTIVE ICE (a Descriptive ICE about an uncertain future), per the GOLDEN PRINCIPLE. Recurs in 3.0 and 6.0." ;
+    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000371 (Act of Prediction, verified: 'A Planned Act that involves the generation of a Predictive Information Content entity that is intended to describe an uncertain possible future event, value, entity, or attribute'; parent cco:ont00000228), whose definitional output is a Predictive ICE (cco:ont00000626 subClassOf cco:ont00000853 Descriptive ICE) -- exactly the genus of a sales/demand/volume/ROI forecast. Used where a process's definitional output is a forecast or projection of an uncertain future state, as opposed to bpo:ActOfAnalysis, whose output is a plain Descriptive ICE about an existing subject. Output is a PREDICTIVE ICE (a Descriptive ICE about an uncertain future), per the GOLDEN PRINCIPLE. cco:ont00000228 co-asserted so the class anchors to an S2-allowlisted Planned Act. Recurs in slices 3.0, 4.0, 5.0, 6.0, 8.0 and 10.0." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000371 ;
-    skos:definition "An Act of Prediction in which an Agent extrapolates from historical and current Information Content Entities to produce a Predictive Information Content Entity that estimates a future quantity such as demand, volume, revenue, or value." .
+    skos:definition "An Act of Prediction in which an Agent extrapolates from historical and current Information Content Entities to produce a Predictive Information Content Entity that estimates an uncertain future quantity, event, or condition, such as demand, volume, revenue, or value." .
 
 bpot:ActOfIdentification a owl:Class ;
-    rdfs:label "Act of Identification (discernment sense)" ;
+    rdfs:label "Act of Identification" ;
     rdfs:comment "Local extension (D9). NOT cco:ont00001261 'Act of Identifying' (a communication act). APQC 'Identify ...' denotes discernment, i.e. information processing." ;
     rdfs:subClassOf cco:ont00000366 ;
-    skos:definition "An Act of Information Processing in which an Agent discerns and enumerates entities of a given kind and produces an Information Content Entity that registers them." .
+    skos:definition "An Act of Information Processing in which an Agent discerns and enumerates entities of a given kind and produces an Information Content Entity that registers them." ;
+    skos:scopeNote "Identification in the sense of discerning and enumerating entities of a given kind (risks, needs, opportunities), not of establishing which particular individual something is. The sense was written into the label as '(discernment sense)' until WP6 B10, 2026-10-31." .
 
 bpot:ActOfImplementation a owl:Class ;
     rdfs:label "Act of Implementation" ;
@@ -157,10 +163,10 @@ bpot:ActOfProcessControl a owl:Class ;
 
 bpot:ActOfProduction a owl:Class ;
     rdfs:label "Act of Production" ;
-    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000908 (Act of Material Artifact Processing, verified: 'A Planned Act of performing a series of physical operations on a material artifact in order to change or preserve the artifact'; parent cco:ont00000228), the common parent of Act of Manufacturing (cco:ont00001359) and Act of Artifact Assembly. Generalizes produce/assemble-product where APQC covers both mass manufacturing and assembly; cco:ont00001359 (mass production for sale) alone is too narrow and Assembly alone excludes non-assembly production, so the shared genus sits at their common parent. The material product is attached via obo:BFO_0000057 (has participant), NOT has output -- a deliberate CORPUS-LOCAL CONVENTION (not a missing output): cco:has output is used only for informational (ICE) outputs in these reality slices, so material products produced or moved by operations attach via bfo:has participant. CCO itself permits a material has-output; adopting that pattern corpus-wide is an open policy option (see methodology section 10). Recurs in physical-production categories (4.0, 6.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000908 (Act of Artifact Processing, verified: 'A Planned Act of performing a series of mechanical or chemical operations on something in order to change or preserve it'; parent cco:ont00000228), the common parent of Act of Manufacturing (cco:ont00001359) and Act of Artifact Assembly. Generalizes produce/assemble-product where APQC covers both mass manufacturing and assembly; cco:ont00001359 (mass production for sale) alone is too narrow and Assembly alone excludes non-assembly production, so the shared genus sits at their common parent. The material product is attached via obo:BFO_0000057 (has participant), NOT has output -- a deliberate CORPUS-LOCAL CONVENTION (not a missing output): cco:has output is used only for informational (ICE) outputs in these reality slices, so material products produced or moved by operations attach via bfo:has participant. CCO itself permits a material has-output; adopting that pattern corpus-wide is an open policy option (see methodology section 10). Recurs in physical-production categories (4.0, 6.0)." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000908 ;
-    skos:definition "An Act of Material Artifact Processing in which an Agent transforms raw materials and components into finished Material Artifacts according to a production specification or schedule." .
+    skos:definition "An Act of Artifact Processing in which an Agent transforms raw materials and components into finished Material Artifacts according to a production specification or schedule." .
 
 bpot:ActOfRelationshipManagement a owl:Class ;
     rdfs:label "Act of Relationship Management" ;
@@ -171,17 +177,17 @@ bpot:ActOfRelationshipManagement a owl:Class ;
 
 bpot:ActOfRemuneration a owl:Class ;
     rdfs:label "Act of Remuneration" ;
-    rdfs:comment "PROPOSE-EXT (D9). Inlines the verified CCO leaf cco:ont00000449 (Act of Remuneration, subClassOf cco:ont00001334 Act of Purchasing subClassOf cco:ont00000836) for payroll rows whose APQC text is salary/compensation disbursement to employees -- a closer genus than bpo:ActOfFinancialTransaction. NOT used for payroll-TAX remittance to a government authority. cco:ont00000228 co-asserted because 449 is outside the standalone-SHACL S2 process-anchor allowlist." ;
+    rdfs:comment "PROPOSE-EXT (D9). Inlines the verified CCO leaf cco:ont00000449 (Act of Remuneration, subClassOf cco:ont00001334 Act of Purchasing subClassOf cco:ont00000836) for payroll rows whose APQC text is salary/compensation disbursement to employees -- a closer genus than bpo:ActOfFinancialTransaction. NOT used for payroll-TAX remittance to a government authority (the recipient is not the compensated employee; those keep bpo:ActOfFinancialTransaction). cco:ont00000228 co-asserted because 449 is outside the standalone-SHACL S2 process-anchor allowlist." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000449 ;
     skos:definition "An Act of Remuneration in which an Employer disburses a Financial Instrument (salary, wages, bonus, or other compensation) to an Employee for services performed." .
 
 bpot:ActOfReporting a owl:Class ;
     rdfs:label "Act of Reporting" ;
-    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no broad reporting class spanning compilation and assertion. Anchored under cco:ont00000379 (Act of Representative Communication), with cco:ont00000228 (Planned Act) co-anchored so standalone SHACL resolves the act chain: reporting transfers to recipients a descriptive account (report, statement, scorecard, filing) asserting an organization's condition or results. Pure submission of an already-prepared report may use the verified leaf cco:ont00000151 directly." ;
+    rdfs:comment "PROPOSE-EXT (D9). CCO 2.0 has no broad reporting class spanning compilation and assertion. Anchored under cco:ont00000379 (Act of Representative Communication), with cco:ont00000228 (Planned Act) co-anchored so standalone SHACL resolves the act chain {366,636,511,228}. The genus of DISSEMINATE-class reporting acts, whose source makes sharing/reporting to an audience definitional; COMPILE-class acts that merely create, record or summarize a report ICE stay at cco:ont00000366 (Act of Information Processing). Pure submission of an already-prepared report may use the verified leaf cco:ont00000151 (Act of Reporting, subClassOf 379 subClassOf 402: 'performed by giving a detailed account or statement') directly." ;
     rdfs:subClassOf cco:ont00000228,
         cco:ont00000379 ;
-    skos:definition "An Act of Representative Communication in which an Agent transfers to one or more recipients a Descriptive Information Content Entity (such as a report, statement, scorecard, or filing) that asserts, as true, a representation of an organization's condition or results." .
+    skos:definition "An Act of Representative Communication in which an Agent transfers to one or more recipients a Descriptive Information Content Entity (such as a report, statement, scorecard, or filing) that asserts, as true, a detailed account of some subject matter, such as an organization's condition or results." .
 
 bpot:ActOfResolution a owl:Class ;
     rdfs:label "Act of Resolution" ;
@@ -209,13 +215,13 @@ bpot:ActOfSelling a owl:Class ;
 
 bpot:ActOfServiceProvision a owl:Class ;
     rdfs:label "Act of Service Provision" ;
-    rdfs:comment "PROPOSE-EXT (D9). Operations-category signature genus for 'deliver/render/execute/deploy/operate a service' processes. Anchored at the generic cco:ont00000228 (Planned Act) because service provision need not produce or modify an artifact and need not transfer an ICE. Rejected cco:ont00000908 (Act of Material Artifact Processing: its product is a modified Material Artifact, whereas a service need not modify matter) and cco:ont00000402 (Act of Communication: mere ICE transfer). Recurs in operations/IT-service categories (4.0, 5.0, 6.0, 8.0, 9.0, 10.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). Operations-category signature genus for 'deliver/render/execute/deploy/operate a service' processes. Anchored at the generic cco:ont00000228 (Planned Act) because service provision need not produce or modify an artifact and need not transfer an ICE. Rejected cco:ont00000908 (Act of Artifact Processing: its product is a modified Material Artifact, whereas a service need not modify matter) and cco:ont00000402 (Act of Communication: mere ICE transfer). Recurs in operations/IT-service categories (4.0, 5.0, 6.0, 8.0, 9.0, 10.0)." ;
     rdfs:subClassOf cco:ont00000228 ;
     skos:definition "A Planned Act in which an Agent renders a service to a customer by carrying out and completing the tasks that fulfil an agreed service need." .
 
 bpot:ActOfTransportation a owl:Class ;
     rdfs:label "Act of Transportation" ;
-    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000065 (Act of Location Change, verified: 'An Act of Motion in which the location of some Object is changed by some Agent'; parent cco:ont00000357 Act of Motion -> ... -> Planned Act), the parent of cco:ont00000595 'Act of Cargo Transportation'. Generalizes inbound/outbound movement, picking-packing-shipping, and warehouse transfers; cco:ont00000595 is a close fit but is scoped to a Payload being conveyed, whereas bpo:ActOfTransportation also covers internal warehouse transfers and deployment. Recurs across physical-logistics categories (4.0, 6.0, 9.0)." ;
+    rdfs:comment "PROPOSE-EXT (D9). Anchored under cco:ont00000065 (Act of Location Change, verified: 'An Act of Motion in which the location of some Object is changed by some Agent'; parent cco:ont00000357 Act of Motion -> ... -> Planned Act), the parent of cco:ont00000595 'Act of Cargo Transportation'. Generalizes inbound/outbound movement, picking-packing-shipping, and warehouse transfers; cco:ont00000595 is a close fit but is scoped to manufactured goods moved through some Transportation Agent (pinned CCO 2024-11-06), whereas bpo:ActOfTransportation also covers internal warehouse transfers and deployment. Recurs across physical-logistics categories (4.0, 6.0, 9.0)." ;
     rdfs:subClassOf cco:ont00000065,
         cco:ont00000228 ;
     skos:definition "An Act of Location Change in which an Agent moves materials or finished products from one supply-chain location to another, such as from a source to a warehouse, distribution center, or customer." .
@@ -228,37 +234,53 @@ bpot:ApproveImplementationPlan a owl:Class ;
 
 bpot:ApproverRole a owl:Class ;
     rdfs:label "Approver role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000187 ;
-    skos:definition "The authority role occupied by the party who may approve passage through a review/approval gate." ;
-    bpot:bearsPermission bpot:ApproveImplementationPlanPermission .
+    rdfs:subClassOf cco:ont00000187 ;
+    skos:definition "An Authority Role that is borne by an Agent in virtue of being empowered to approve passage through a review or approval gate." ;
+    bpot:inGrouping bpot:Role ;
+    bpot:permissionApplicableToRole bpot:ApproveImplementationPlanPermission .
 
 bpot:MarketAnalystRole a owl:Class ;
     rdfs:label "Market analyst role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent acting as a market/competitive analyst within a strategy effort." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of acting as a market or competitive analyst within a strategy effort." ;
+    bpot:inGrouping bpot:Role .
+
+bpot:PlanAuthoringCapability a owl:Class ;
+    rdfs:label "Plan authoring capability" ;
+    rdfs:subClassOf bpot:Capability ;
+    skos:definition "An Agent Capability that enables its bearer to author phased roadmaps and tactical implementation plans from a normative spec, with falsifiable acceptance criteria." ;
+    bpot:enablesProcess bpot:AuthorImplementationPlan,
+        bpot:AuthorRoadmap .
 
 bpot:StrategistRole a owl:Class ;
     rdfs:label "Strategist role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent acting as a strategy author/owner." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of authoring and owning a strategy." ;
+    bpot:inGrouping bpot:Role .
 
 bpot:bearsPermission a owl:AnnotationProperty ;
     rdfs:label "bears permission" ;
-    rdfs:comment "Role -> Action Permission class the role carries. The deontic hook (RDM/IEE authors the permission)." ;
+    dcterms:isReplacedBy bpot:permissionApplicableToRole ;
+    rdfs:comment "DEPRECATED 2026-10-31 (WP6 B7). Use bpo:permissionApplicableToRole. The label asserted a BFO bearer relation that cannot hold between a role and an Action Permission." ;
+    owl:deprecated true ;
     skos:definition "An annotation property that relates a Role class to an Action Permission class whose applicable instances authorize processes performed by agents bearing that Role, subject to the governing regulations." .
 
 bpot:enablesProcess a owl:AnnotationProperty ;
-    rdfs:label "enables process" ;
-    rdfs:comment "Capability -> process class whose execution it enables. Operational inverse of bpo:requiresCapability; BFO grounding is 'has realization' (a capability is realized in such processes). Used for authoring scope and wiring-coherence checks." ;
-    skos:definition "An annotation property that relates an Agent Capability class to a Process class for which bearing an instance of that capability type is a necessary condition for an agent's performance, providing the authored direction of the class-level capability requirement mapping." .
+    rdfs:label "can be realized in process" ;
+    rdfs:comment "Capability class -> process class. Each pair is classified in capabilities/b8_pairs.tsv (WP6 B8); bpo:requiresCapability is no longer its inverse. The IRI keeps its historical name: labelled 'enables process' until 2026-11-03, when the BPO architect (WP6 B5 review) narrowed the label and definition to possible realization, because B8 found no enabling-only relation (docs/migrations.tsv). Used for authoring scope and wiring-coherence checks." ;
+    skos:definition "An annotation property that relates an Agent Capability class to a Process class whose instances can realize instances of that capability type." ;
+    skos:scopeNote "This class-level association entails neither that any instance of the capability is actually realized, nor that bearing the capability is a necessary requirement for performing a process of that type. That a particular capability instance is realized in a particular process instance is stated with BFO's realized in (obo:BFO_0000054) between the instances." .
+
+bpot:inGrouping a owl:AnnotationProperty ;
+    rdfs:label "in grouping" ;
+    rdfs:comment "Replaces the delivery roles' subclass axioms to the bpo:Role marker (WP6 B13 K07, BPO architect 2026-10-31): a marker used as a genus wrote a selection vocabulary as a primitive class. SHACL C2 targets members through this property as well as through subclassing." ;
+    skos:definition "An annotation property that relates a class to a BPO grouping class whose vocabulary it belongs to, without asserting that it is a subclass of the grouping." .
 
 bpot:requiresCapability a owl:AnnotationProperty ;
     rdfs:label "requires capability" ;
-    rdfs:comment "Process class -> the capability an agent must bear to perform it. DERIVED from bpo:enablesProcess (author scope once on the capability; generate this inverse onto the process, so the two never drift -- PHASE1 §8). Intended domain: a process universal (reaches obo:BFO_0000015); intended range: a class reaching cco:ont00001379 Agent Capability (an Organization Capability cco:ont00000568 qualifies, since 568 ⊑ 1379). Matching is species-satisfies-genus: an agent bearing C_a satisfies a requirement C_p iff C_a rdfs:subClassOf* C_p. Range enforced by SHACL C5." ;
-    skos:definition "An annotation property that relates a Process class to an Agent Capability class whose instances must be borne by an agent assigned to perform a process of that type." .
+    rdfs:comment "Process class -> the capability an agent must bear to perform it. Generated only for capability -> process pairs that capabilities/b8_pairs.tsv classifies as necessary requirements (WP6 B8, BPO architect 2026-11-02); it was the inverse of every bpo:enablesProcess pair (PHASE1 §8), which made each possible realization a requirement. Intended domain: a process universal (reaches obo:BFO_0000015); intended range: a class reaching cco:ont00001379 Agent Capability (an Organization Capability cco:ont00000568 qualifies, since 568 ⊑ 1379). Matching is species-satisfies-genus: an agent bearing C_a satisfies a requirement C_p iff C_a rdfs:subClassOf* C_p. Range enforced by SHACL C5." ;
+    skos:definition "An annotation property that relates a Process class to an Agent Capability class whose instances must be borne by an agent assigned to perform a process of that type." ;
+    skos:scopeNote "A requirement is asserted only where the capability's definition shows that every performance of the process exercises it (WP6 B8; BPO architect, 2026-11-03); it is a definition-supported necessity, not an OWL entailment, and it is not generated for every process. Two interpretations hold. (1) The capability must be borne by the agent that actually performs the process: the ability of an organization, a team or a supporting participant is not attributed to an individual. (2) Performing the process is evidence of the capability, but not evidence available before assignment: dispatch must rely on independent evidence of the agent's abilities (in scripts/matchability.py, the capabilities each agent declares in capabilities/agents.json)." .
 
 bpot:requiresPermission a owl:AnnotationProperty ;
     rdfs:label "requires permission" ;
@@ -290,15 +312,15 @@ bpot:ActOfVerification a owl:Class ;
     skos:definition "An Act of Appraisal in which an Agent subjects a product, service, solution, system, plan, control, or process to a test, audit, trial, or review against specified requirements and produces a Descriptive Information Content Entity that records whether and to what extent the requirements are met." .
 
 bpot:ApproveImplementationPlanPermission a owl:Class ;
-    rdfs:label "Approve implementation plan (permission)" ;
+    rdfs:label "Approve Implementation Plan Permission" ;
     rdfs:subClassOf cco:ont00000751 ;
-    skos:definition "Permission to authorize passage of an implementation plan beyond its review gate. RDM/IEE-owned; stubbed here to show the role->permission seam." .
+    skos:definition "An Action Permission that authorizes passage of an implementation plan beyond its review gate. RDM/IEE-owned; stubbed here to show the role->permission seam." .
 
 bpot:ArchitectRole a owl:Class ;
     rdfs:label "Architect role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent authoring and reviewing a build's structural decisions." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of authoring and reviewing a build's structural decisions." ;
+    bpot:inGrouping bpot:Role .
 
 bpot:ArchitectureCapability a owl:Class ;
     rdfs:label "Architecture capability" ;
@@ -313,6 +335,7 @@ bpot:ArchitecturePlan a owl:Class ;
 
 bpot:AuthorArchitecture a owl:Class ;
     rdfs:label "Author architecture" ;
+    rdfs:comment "WP6 B8 necessity audit (BPO architect, 2026-11-03): bpo:requiresCapability bpo:ArchitectureCapability is kept as a necessary requirement. The capability is defined as the ability to author a build's structural plan: its module boundaries, exported interfaces, and layering, which is what every instance of this process does, so an agent that performs the process has that ability (docs/wp6/b8-audit.md). Accepted by the BPO architect (2026-11-03) as a definition-supported necessity, not an OWL entailment: an agent that successfully performs an act of this kind demonstrates the ability to perform it. The capability must be borne by the agent that performs the act, and dispatch relies on evidence of that agent's abilities available before assignment (see the scope note of bpo:requiresCapability). The principle does not generate requirements for other processes." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
             owl:someValuesFrom bpot:ArchitecturePlan ],
@@ -324,23 +347,23 @@ bpot:AuthorArchitecture a owl:Class ;
 
 bpot:AuthorImplementationPlan a owl:Class ;
     rdfs:label "Author implementation plan" ;
+    rdfs:comment "WP6 B8 (BPO architect, 2026-11-03): the triple 'bpo:requiresCapability bpo:PlanAuthoringCapability' was removed after the necessity audit (docs/wp6/b8-audit.md). That capability is the ability to author both phased roadmaps and implementation plans, so an agent able to author only implementation plans still performs this process without bearing it. The capability can be realized in this process (bpo:enablesProcess on the capability is kept)." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
             owl:someValuesFrom bpot:ImplementationPlanArtifact ],
         bpot:ActOfFormulation ;
     skos:definition "An Act of Formulation in which a planning agent composes a tactical implementation plan, with falsifiable acceptance criteria, for a roadmap phase." ;
-    bpot:requiresCapability bpot:PlanAuthoringCapability ;
     bpot:requiresRole bpot:PlannerRole ;
     bpot:routable true .
 
 bpot:AuthorRoadmap a owl:Class ;
     rdfs:label "Author roadmap" ;
+    rdfs:comment "WP6 B8 (BPO architect, 2026-11-03): the triple 'bpo:requiresCapability bpo:PlanAuthoringCapability' was removed after the necessity audit (docs/wp6/b8-audit.md). That capability is the ability to author both phased roadmaps and implementation plans, so an agent able to author only roadmaps still performs this process without bearing it. The capability can be realized in this process (bpo:enablesProcess on the capability is kept)." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
             owl:someValuesFrom bpot:RoadmapPlan ],
         bpot:ActOfFormulation ;
     skos:definition "An Act of Formulation in which a planning agent composes a phased roadmap from a normative specification." ;
-    bpot:requiresCapability bpot:PlanAuthoringCapability ;
     bpot:requiresRole bpot:PlannerRole ;
     bpot:routable true .
 
@@ -357,12 +380,13 @@ bpot:CodeImplementationCapability a owl:Class ;
 
 bpot:DeveloperRole a owl:Class ;
     rdfs:label "Developer role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent implementing planned modules as code change sets." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of implementing planned modules as code change sets." ;
+    bpot:inGrouping bpot:Role .
 
 bpot:EvaluateOutput a owl:Class ;
     rdfs:label "Evaluate output" ;
+    rdfs:comment "WP6 B8 necessity audit (BPO architect, 2026-11-03): bpo:requiresCapability bpo:EvaluationCapability is kept as a necessary requirement. The capability is defined as the ability to evaluate an artifact against its acceptance criteria, which is what every instance of this process does, so an agent that performs the process has that ability (docs/wp6/b8-audit.md). Accepted by the BPO architect (2026-11-03) as a definition-supported necessity, not an OWL entailment: an agent that successfully performs an act of this kind demonstrates the ability to perform it. The capability must be borne by the agent that performs the act, and dispatch relies on evidence of that agent's abilities available before assignment (see the scope note of bpo:requiresCapability). The principle does not generate requirements for other processes." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
             owl:someValuesFrom bpot:JudgeVerdict ],
@@ -380,12 +404,13 @@ bpot:EvaluationCapability a owl:Class ;
 
 bpot:EvaluatorRole a owl:Class ;
     rdfs:label "Evaluator role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent evaluating artifacts against their acceptance criteria." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of evaluating artifacts against their acceptance criteria." ;
+    bpot:inGrouping bpot:Role .
 
 bpot:ImplementPhase a owl:Class ;
     rdfs:label "Implement phase" ;
+    rdfs:comment "WP6 B8 necessity audit (BPO architect, 2026-11-03): bpo:requiresCapability bpo:CodeImplementationCapability is kept as a necessary requirement. The capability is defined as the ability to implement a planned module as a working code change set, which is what every instance of this process does, so an agent that performs the process has that ability (docs/wp6/b8-audit.md). Accepted by the BPO architect (2026-11-03) as a definition-supported necessity, not an OWL entailment: an agent that successfully performs an act of this kind demonstrates the ability to perform it. The capability must be borne by the agent that performs the act, and dispatch relies on evidence of that agent's abilities available before assignment (see the scope note of bpo:requiresCapability). The principle does not generate requirements for other processes." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
             owl:someValuesFrom bpot:CodeChangeSet ],
@@ -410,18 +435,16 @@ bpot:RoadmapPlan a owl:Class ;
     rdfs:subClassOf cco:ont00000965 ;
     skos:definition "A Directive Information Content Entity that lays out, in phases over time, the intended sequence of outcomes and the work to reach them." .
 
-bpot:PlanAuthoringCapability a owl:Class ;
-    rdfs:label "Plan authoring capability" ;
-    rdfs:subClassOf bpot:Capability ;
-    skos:definition "Competence to author phased roadmaps and tactical implementation plans from a normative spec, with falsifiable acceptance criteria." ;
-    bpot:enablesProcess bpot:AuthorImplementationPlan,
-        bpot:AuthorRoadmap .
+bpot:permissionApplicableToRole a owl:AnnotationProperty ;
+    rdfs:label "permission applicable to role" ;
+    rdfs:comment "Role -> Action Permission class. The deontic hook (RDM/IEE authors the permission). Replaces bpo:bearsPermission (WP6 B7, BPO architect 2026-10-31): an Action Permission is a Process Regulation, a Directive ICE (cco:ont00000751 -> 1324 -> 965), a generically dependent continuant that no role can bear." ;
+    skos:definition "An annotation property that relates a Role class to an Action Permission class (cco:ont00000751) as a type-level association: permissions of that type apply to agents in roles of that type. It is not the BFO bearer relation, and it does not by itself establish that any agent holds an effective permission." .
 
 bpot:PlannerRole a owl:Class ;
     rdfs:label "Planner role" ;
-    rdfs:subClassOf bpot:Role,
-        cco:ont00000984 ;
-    skos:definition "The occupation role of an agent producing planning documents in a delivery loop." .
+    rdfs:subClassOf cco:ont00000984 ;
+    skos:definition "An Occupation Role that is borne by an Agent in virtue of producing planning documents in a delivery loop." ;
+    bpot:inGrouping bpot:Role .
 
 bpot:ActOfFormulation a owl:Class ;
     rdfs:label "Act of Formulation" ;
@@ -433,10 +456,10 @@ bpot:ActOfFormulation a owl:Class ;
 bpot:Capability a owl:Class ;
     rdfs:label "FNSR Capability" ;
     rdfs:subClassOf cco:ont00001379 ;
-    skos:definition "A competence borne by an agent in virtue of which it can successfully perform some kind of process. Realized in process executions; a feasibility filter for dispatch." .
+    skos:definition "An Agent Capability in virtue of which its bearer can successfully perform some kind of process. Realized in process executions; a feasibility filter for dispatch." .
 
 bpot:Role a owl:Class ;
     rdfs:label "FNSR Role" ;
     rdfs:subClassOf obo:BFO_0000023 ;
-    skos:definition "A position an agent occupies while performing work. Frames the work and may bear permissions; not a competence and not an action." .
+    skos:definition "A Role that an Agent occupies while performing work. It frames the work and may have permissions applicable to it; it is neither a competence nor an action." .
 

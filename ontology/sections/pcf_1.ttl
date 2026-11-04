@@ -9,10 +9,7 @@
 bpot:BusinessModelGovernanceCapability a owl:Class ;
     rdfs:label "Business Model Governance Capability" ;
     rdfs:comment "Realizable behind the standing functions 1.4.2 'Maintain business models' / 1.4.3 'Establish business model governance' when R5 demotes them from process to capability." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P20955 ],
-        cco:ont00000568 ;
+    rdfs:subClassOf cco:ont00000568 ;
     skos:definition "An Organization Capability that inheres in an Organization in virtue of its capacity to maintain and govern its business models through intentional acts of review, update, and control." .
 
 bpot:BusinessUnit a owl:Class ;
@@ -333,9 +330,12 @@ bpot:pcfID a owl:AnnotationProperty ;
 <https://fandaws.com/ontology/bpot/sections/pcf_1> a owl:Ontology ;
     dcterms:creator "Aaron Damiano" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:rights """Contains material derived from the APQC Process Classification Framework® (PCF), Cross-Industry version 7.4 (element IDs, hierarchy IDs, names and descriptions), used under APQC's licence, whose notice follows. That material is not covered by this repository's MIT licence (see NOTICE.md). This module is not endorsed by APQC.
+
+©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.""" ;
     dcterms:source <https://fandaws.com/ontology/bpo/slice/1.0>,
-        "APQC Process Classification Framework (Cross-Industry)",
-        "APQC Process Classification Framework (Cross-Industry) v7.4" ;
+        "APQC Process Classification Framework (Cross-Industry) v7.4",
+        "Business Process Ontology 0.4.1, module “APQC reality-layer slice 1.0: Develop Vision and Strategy” (https://fandaws.com/ontology/bpo/slice/1.0; Skreen5hot/BusinessProcessOntology at commit 2b86c91)" ;
     dcterms:title "Business Process Ontology -- PCF 1.0 Develop Vision and Strategy" ;
     rdfs:comment "Reality layer for APQC PCF category 1.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
     owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_1.ttl> ;
@@ -380,12 +380,9 @@ bpot:BusinessUnitRole a owl:Class ;
 
 bpot:CompetitiveAnalysisCapability a owl:Class ;
     rdfs:label "Competitive Analysis Capability" ;
-    rdfs:comment "Carried over from the 1.1.1 reference module; the realized-in filler is re-pointed to bpo:P19945 (this module's IRI for 'Identify competitors / Analyze competitors')." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P19945 ],
-        cco:ont00001379 ;
-    skos:definition "An Agent Capability that is realized in Acts of Analyzing Competitors." .
+    rdfs:comment "Carried over from the 1.1.1 reference module; the realized-in filler is re-pointed to bpo:P19945 (this module's IRI for 'Identify competitors / Analyze competitors'). WP6 B8 step 1 (BPO architect, 2026-11-03): the realized-in (obo:BFO_0000054) restrictions were removed, because a capability can exist unrealized; the processes it can be realized in are bpo:enablesProcess pairs from capabilities/capability_scope.json." ;
+    rdfs:subClassOf cco:ont00001379 ;
+    skos:definition "An Agent Capability that can be realized in Acts of Analyzing Competitors." .
 
 bpot:CompetitiveBenchmark a owl:Class ;
     rdfs:label "Competitive Benchmark" ;
@@ -452,7 +449,14 @@ bpot:Customer a owl:Class ;
             owl:onProperty obo:BFO_0000196 ;
             owl:someValuesFrom bpot:CustomerRole ],
         cco:ont00001017 ;
-    skos:definition "An Agent that bears a customer role." .
+    skos:definition "An Agent that bears a customer role in relation to an organization from which it obtains, or seeks to obtain, products or services." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): An Agent that bears a customer role." .
+
+bpot:CustomerDataSpecification a owl:Class ;
+    rdfs:label "Customer Data Specification" ;
+    rdfs:comment "Output of P19966 (Define single view of the customer). WP6 (BPO architect, 2026-11-02): it was typed bpo:CustomerProfile, a Descriptive ICE, which broke the GOLDEN PRINCIPLE for a formulation act." ;
+    rdfs:subClassOf cco:ont00000965 ;
+    skos:definition "A Directive Information Content Entity that prescribes the parameters by which an organization's data about its customers is to be aggregated and represented, as in a single view of the customer." .
 
 bpot:CustomerJourneyMap a owl:Class ;
     rdfs:label "Customer Journey Map" ;
@@ -524,7 +528,7 @@ bpot:FinancialHealthAnalysis a owl:Class ;
 bpot:FinancialStatement a owl:Class ;
     rdfs:label "Financial Statement" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes the financial state of an organization, including its balance sheet, income, cash flows, equity, and liquidity." .
+    skos:definition "A Descriptive Information Content Entity that describes an organization's financial position and results, comprising its balance sheet, income statement, cash-flow statement, and statement of changes in equity." .
 
 bpot:GoNoGoDecision a owl:Class ;
     rdfs:label "Go/No-Go Decision" ;
@@ -615,7 +619,8 @@ bpot:P10015 a owl:Class ;
     skos:example "An organization's annual strategic-planning programme that produces a refreshed mission, long-term strategy, and organizational design." ;
     bpot:apqcSourceText "Developing an organization's mission statement, strategy, and business design. Create a concise statement that clearly articulates the mission of the organization, outlining practicable targets to Establish a strategic vision [10020]. Delineate strategic options by matching these alternatives with the organization's internal capabilities. Create an organizational design, and identify goals by developing strategies at the functional and process levels." ;
     bpot:hierarchyID "1.2" ;
-    bpot:pcfID "10015" .
+    bpot:pcfID "10015" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10015. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10016 a owl:Class ;
     rdfs:label "Develop and measure strategic initiatives" ;
@@ -646,7 +651,8 @@ bpot:P10016 a owl:Class ;
     skos:example "An organization's annual strategic-initiative cycle, from drafting candidate initiatives to evaluating the executed ones." ;
     bpot:apqcSourceText "Managing strategic initiatives, from development through selection, execution, and evaluation. Conduct and oversee strategic projects supporting long-term objectives. Administer programs of strategic significance by developing such initiatives, select the most appropriate projects, and formulate measures to assess their impact." ;
     bpot:hierarchyID "1.3" ;
-    bpot:pcfID "10016" .
+    bpot:pcfID "10016" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10016. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P17040 a owl:Class ;
     rdfs:label "Define the business concept and long-term vision" ;
@@ -674,7 +680,8 @@ bpot:P17040 a owl:Class ;
     skos:example "An executive team integrates market and capability analyses into a ten-year business concept and vision." ;
     bpot:apqcSourceText "Creating a conceptual framework of the organization's business activity and strategic vision with long-term applicability. Scout the organization's internal capabilities, as well as the customer's needs and desires, to identify a fit that can be used to advance a conceptual structure of the organization's business activity. Conduct analysis in light of relevant externalities and large-scale shifts in the market landscape." ;
     bpot:hierarchyID "1.1" ;
-    bpot:pcfID "17040" .
+    bpot:pcfID "17040" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17040. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20944 a owl:Class ;
     rdfs:label "Develop and maintain business models" ;
@@ -696,7 +703,8 @@ bpot:P20944 a owl:Class ;
     skos:example "An organization's program to design its business model, keep it current against market feedback, and govern its evolution over a planning horizon." ;
     bpot:apqcSourceText "Establishing how an organization creates, delivers and captures value or makes profit. Identify the products or services that a business will sell, its target market, anticipated expenses, and other core aspects of its modus operandi. Revise the plan as required to reflect changing circumstances." ;
     bpot:hierarchyID "1.4" ;
-    bpot:pcfID "20944" .
+    bpot:pcfID "20944" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20944. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:PartnerRole a owl:Class ;
     rdfs:label "Partner Role" ;
@@ -735,7 +743,8 @@ bpot:ProfessionalServicesProviderRole a owl:Class ;
 bpot:RegulatoryConcernRegister a owl:Class ;
     rdfs:label "Regulatory Concern Register" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes identified public-policy and regulatory concerns." .
+    skos:definition "A Descriptive Information Content Entity that describes identified public-policy, regulatory, and intellectual-property concerns and needs." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes identified public-policy and regulatory concerns." .
 
 bpot:RegulatoryData a owl:Class ;
     rdfs:label "Regulatory Data" ;
@@ -751,12 +760,13 @@ bpot:RequiredCapabilityList a owl:Class ;
 bpot:ResearchPublication a owl:Class ;
     rdfs:label "Research Publication" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity published as a report, brief, or article and used as analytic input." .
+    skos:definition "A Descriptive Information Content Entity published as a report, brief, or article and used as analytic or developmental input." .
 
 bpot:RootCauseAnalysis a owl:Class ;
     rdfs:label "Root Cause Analysis" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes the underlying causes of a problematic outcome, such as a negative customer experience." .
+    skos:definition "A Descriptive Information Content Entity that describes the identified underlying causes of a problem, such as a non-conformance, a product fault, or a negative customer experience, and the reasoning that establishes them." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes the underlying causes of a problematic outcome, such as a negative customer experience." .
 
 bpot:SeniorManagerRole a owl:Class ;
     rdfs:label "Senior Manager Role" ;
@@ -815,7 +825,8 @@ bpot:SystemsAndTechnologyAnalysis a owl:Class ;
 bpot:TechnologyAssessment a owl:Class ;
     rdfs:label "Technology Assessment" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes a judgement of current, emerging, and disruptive technologies." .
+    skos:definition "A Descriptive Information Content Entity that describes a judgement of current, emerging, and disruptive technologies and their relevance to an organization." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes a judgement of current, emerging, and disruptive technologies." .
 
 bpot:TechnologyData a owl:Class ;
     rdfs:label "Technology Data" ;
@@ -855,12 +866,21 @@ bpot:CommunicationStrategy a owl:Class ;
 bpot:CompetitorData a owl:Class ;
     rdfs:label "Competitor Data" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes competitors and their products or services." .
+    skos:definition "A Descriptive Information Content Entity that describes competing organizations and their products or services." .
 
 bpot:CoreCompetencyAnalysis a owl:Class ;
     rdfs:label "Core Competency Analysis" ;
     rdfs:subClassOf cco:ont00000853 ;
     skos:definition "A Descriptive Information Content Entity that describes the strategically significant competences and capacities that differentiate an organization in its market." .
+
+bpot:CustomerSegmentProfile a owl:Class ;
+    rdfs:label "Customer Segment Profile" ;
+    rdfs:comment "Split from bpo:CustomerProfile (WP6 (BPO architect, 2026-11-02)), which keeps the individual-customer sense (slice 6). Output of 1.1.2.3 (P19947, Assess customer needs and wants) and 1.2.8.2.1 (P16612, Define and manage personas)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001808 ;
+            owl:someValuesFrom bpot:Customer ],
+        cco:ont00000853 ;
+    skos:definition "A Descriptive Information Content Entity that describes a group or segment of customers, or a persona constructed to represent one, with respect to their characteristics, needs, and behavioral patterns." .
 
 bpot:DueDiligenceReport a owl:Class ;
     rdfs:label "Due-Diligence Report" ;
@@ -914,7 +934,8 @@ bpot:P10017 a owl:Class ;
     skos:example "An organization's yearly strategic environmental scan culminating in an external-environment assessment." ;
     bpot:apqcSourceText "Assessing all forces, entities, and systems that are external to an organization but can affect its operation. Analyze far-reaching currents in the macroeconomic situation, assess the competition, evaluate technological changes, and identify societal as well as ecological issues of concern. Create a big-picture understanding of externalities, with sufficient depth across individual aspects." ;
     bpot:hierarchyID "1.1.1" ;
-    bpot:pcfID "10017" .
+    bpot:pcfID "10017" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10017. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10018 a owl:Class ;
     rdfs:label "Survey market and determine customer needs and wants" ;
@@ -942,7 +963,8 @@ bpot:P10018 a owl:Class ;
     skos:example "A market-research team surveys a segment and reports the customer needs the firm should address." ;
     bpot:apqcSourceText "Examining the market to identify customer required solutions. Assess the relevant market(s) to determine the products/services that are needed or wanted by customers. Carry out quantitative and qualitative analyses to capture and investigate products/services. Employ creative techniques that allow for a closer appreciation of the customer, and design relevant solutions." ;
     bpot:hierarchyID "1.1.2" ;
-    bpot:pcfID "10018" .
+    bpot:pcfID "10018" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10018. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10019 a owl:Class ;
     rdfs:label "Assess the internal environment" ;
@@ -976,7 +998,8 @@ bpot:P10019 a owl:Class ;
     skos:example "A strategy team reviews the firm's capabilities and produces an internal-environment assessment." ;
     bpot:apqcSourceText "Undertaking a review of the organization's in-house skills and resources in order to create a big-picture understanding of internal capacities. Assess the organization's capabilities in order to advance the advantageous and weed out the detrimental aspects. Identify synergic associations within the backdrop of the forces and players active in the market, and take into account all externalities." ;
     bpot:hierarchyID "1.1.3" ;
-    bpot:pcfID "10019" .
+    bpot:pcfID "10019" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10019. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10020 a owl:Class ;
     rdfs:label "Establish strategic vision" ;
@@ -998,7 +1021,8 @@ bpot:P10020 a owl:Class ;
     skos:example "An executive team establishes a ten-year vision and aligns stakeholders behind it." ;
     bpot:apqcSourceText "Establishing the organization's long-term vision as a strategic positioning and engagement of stakeholders. Institute the vision by creating strategic orientations of all stakeholders. Understand the strategy development frameworks in this context." ;
     bpot:hierarchyID "1.1.4" ;
-    bpot:pcfID "10020" .
+    bpot:pcfID "10020" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10020. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10021 a owl:Class ;
     rdfs:label "Analyze and evaluate competition" ;
@@ -1020,7 +1044,8 @@ bpot:P10021 a owl:Class ;
     skos:example "An analyst benchmarks rivals and issues an assessment of the competitive forces in the sector." ;
     bpot:apqcSourceText "Assessing the competitive forces in the marketplace that could potentially affect the organization. Analyze various aspects of business competition including competing firms. Aggregate competitive intelligence, create benchmarks to juxtapose processes and performance metrics, and inject crucial information about the competition into management models to synthesize insights." ;
     bpot:hierarchyID "1.1.1.2" ;
-    bpot:pcfID "10021" .
+    bpot:pcfID "10021" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10021. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10022 a owl:Class ;
     rdfs:label "Identify economic trends" ;
@@ -1036,7 +1061,8 @@ bpot:P10022 a owl:Class ;
     skos:example "An economist reviews indicators and reports the trends likely to affect the firm over five years." ;
     bpot:apqcSourceText "Determining large-scale macroeconomic shifts and trends, with medium to long-term relevance for the organization. Vet the immediate and the larger economic ecosystem to identify broad-based movements that affect the organization. In the immediate vicinity, for example, examine the stock price of key vendors/suppliers in the organizational value-chain. In the larger economic ecosystem, analyze according to geographical distribution where factors such as interest rates, taxation structures, oil prices, and unemployment rates are explored." ;
     bpot:hierarchyID "1.1.1.4" ;
-    bpot:pcfID "10022" .
+    bpot:pcfID "10022" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10022. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10023 a owl:Class ;
     rdfs:label "Identify political and regulatory factors" ;
@@ -1052,7 +1078,8 @@ bpot:P10023 a owl:Class ;
     skos:example "A compliance team screens jurisdictions and registers the regulatory changes that bear on the firm." ;
     bpot:apqcSourceText "Identifying areas of concern pertaining to public policy and regulation, established by sovereign or multinational authorities. Examine various regions and geopolitical formations to identify those political and regulatory issues-present or developing-that can potentially affect the organization. Plan for an iterative process, partitioned across regional and geopolitical entities that have a direct bearing on the organization's activities. Assess changes in environmental compliance, product standards, trade barriers, etc." ;
     bpot:hierarchyID "1.1.1.5" ;
-    bpot:pcfID "10023" .
+    bpot:pcfID "10023" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10023. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10024 a owl:Class ;
     rdfs:label "Assess new technologies" ;
@@ -1071,7 +1098,8 @@ bpot:P10024 a owl:Class ;
     skos:example "Senior managers appraise an emerging technology and issue a technology assessment." ;
     bpot:apqcSourceText "Assessing developments in technologies presently being used by the business, new technologies that have a potential for the business, and any disruptive innovations. Conduct a survey of advancement in technologies that are already deployed with inputs from the personnel closely working with them, tracking utility and feasibility for deployment. Arrange for mid- to senior-level management personnel who explore contingent uses to assess new and disruptive technologies. Follow up with desk research, involving physical scoping and viability assessment." ;
     bpot:hierarchyID "1.1.1.8" ;
-    bpot:pcfID "10024" .
+    bpot:pcfID "10024" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10024. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10025 a owl:Class ;
     rdfs:label "Analyze demographics" ;
@@ -1087,7 +1115,8 @@ bpot:P10025 a owl:Class ;
     skos:example "A team analyzes census data and produces a demographic profile of a target market." ;
     bpot:apqcSourceText "Analyzing statistical data relating to the size, distribution, and composition of relevant populations, as well as their characteristics. Perform quantitative analysis over raw data-sets gathered from well-founded sources such as government census or large, private databases. Consider employing primary research in collecting required statistics. Use comprehensive studies (reports, briefs, and articles) to assist with the analysis, in place of raw data." ;
     bpot:hierarchyID "1.1.1.9" ;
-    bpot:pcfID "10025" .
+    bpot:pcfID "10025" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10025. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10026 a owl:Class ;
     rdfs:label "Identify social and cultural changes" ;
@@ -1103,7 +1132,8 @@ bpot:P10026 a owl:Class ;
     skos:example "A market researcher distinguishes generational value shifts relevant to the brand." ;
     bpot:apqcSourceText "Distinguishing changes in societal makeup, as well as the cultural composite. Isolate shifts in the societal composition and distribution, as well as the value systems and attributes that bind the organization together. Analyze well-regarded publications--and gather the perspective of public intellectuals and opinion leaders--on relevant issues." ;
     bpot:hierarchyID "1.1.1.7" ;
-    bpot:pcfID "10026" .
+    bpot:pcfID "10026" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10026. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10027 a owl:Class ;
     rdfs:label "Identify environmental factors" ;
@@ -1122,7 +1152,8 @@ bpot:P10027 a owl:Class ;
     skos:example "An ESG analyst registers ecological risks drawn from scientific publications and expert input." ;
     bpot:apqcSourceText "Identifying changes in ecological ecosystems that can be directly or indirectly detrimental to the organization. Analyze ecological factors within the immediate ecosystem for near to middle-term impact. Analyze the ecology, at large, to get a sense of long-term shifts and concerns. Gather analyses from research publications. Speak to subject matter experts. Engage with advocacy groups, lawyers, journalists, and the active populations." ;
     bpot:hierarchyID "1.1.1.6" ;
-    bpot:pcfID "10027" .
+    bpot:pcfID "10027" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10027. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10028 a owl:Class ;
     rdfs:label "Conduct qualitative/quantitative research and assessments" ;
@@ -1141,7 +1172,8 @@ bpot:P10028 a owl:Class ;
     skos:example "Researchers run a survey and focus groups and distill the findings into a needs assessment." ;
     bpot:apqcSourceText "Investigating key market features and customer characteristics, using qualitative and quantitative measures to capture relevant aspects. Distill key ingredients that allow the organization to Capture customer needs and wants [19946], and Assess customer needs and wants [19947]. Conduct standardized appraisals by defining selection parameters and setting quotas." ;
     bpot:hierarchyID "1.1.2.1" ;
-    bpot:pcfID "10028" .
+    bpot:pcfID "10028" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10028. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10030 a owl:Class ;
     rdfs:label "Analyze organizational characteristics" ;
@@ -1160,7 +1192,8 @@ bpot:P10030 a owl:Class ;
     skos:example "Senior executives examine the firm's differentiating attributes and document an organizational-characteristics analysis." ;
     bpot:apqcSourceText "Identifying and examining key attributes that differentiate the organization in the market and those that underscore the core of its operations. Consider how the organization functions. Reflect over tangible and intangible aspects in order to spot critical correlations and the interplay between these attributes. Have senior executives conduct the analysis, with input from management and operational personnel." ;
     bpot:hierarchyID "1.1.3.1" ;
-    bpot:pcfID "10030" .
+    bpot:pcfID "10030" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10030. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10031 a owl:Class ;
     rdfs:label "Create baselines for current processes" ;
@@ -1176,7 +1209,8 @@ bpot:P10031 a owl:Class ;
     skos:example "Management surveys archival performance records and derives process baselines for benchmarking." ;
     bpot:apqcSourceText "Establishing baselines that provide standards for assessing performance levels and allow for a relational benchmarking of current processes. Undertake a survey of archival performance records, conducted in conjunction by the management and the operations personnel. Take into account the organization's internal objectives, particularly for process improvement and enhancement. Understand industry best practices." ;
     bpot:hierarchyID "1.1.3.3" ;
-    bpot:pcfID "10031" .
+    bpot:pcfID "10031" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10031. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10032 a owl:Class ;
     rdfs:label "Analyze systems and technology" ;
@@ -1192,7 +1226,8 @@ bpot:P10032 a owl:Class ;
     skos:example "An IT team surveys deployed automation systems and documents a systems-and-technology analysis." ;
     bpot:apqcSourceText "Analyzing the capabilities of technology and process automation systems deployed within the organization in order to direct future associated processes. Conduct a broad-based survey to examine various aspects associated with such systems and technologies, with the objective of identifying key facets that are of interest. Investigate the intended purpose, purpose served, utility, longevity, remaining service-life, repair or service requirements, etc." ;
     bpot:hierarchyID "1.1.3.4" ;
-    bpot:pcfID "10032" .
+    bpot:pcfID "10032" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10032. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10033 a owl:Class ;
     rdfs:label "Analyze financial health" ;
@@ -1208,7 +1243,8 @@ bpot:P10033 a owl:Class ;
     skos:example "A finance team scrutinizes the balance sheet and cash-flow statements and reports the firm's financial health." ;
     bpot:apqcSourceText "Appraising the financial state of the organization so that management can create resource allocation strategies. Scrutinize the organization's financials--including balance sheets, statements of income, cash-flows, equity holdings, and liquidity--with the objective of understanding the organization's financial health and capacities. (This analysis directly feeds into Conduct organizational restructuring opportunities [16792] and Define a business concept and long-term vision [17040].)" ;
     bpot:hierarchyID "1.1.3.5" ;
-    bpot:pcfID "10033" .
+    bpot:pcfID "10033" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10033. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10034 a owl:Class ;
     rdfs:label "Identify core competencies" ;
@@ -1224,7 +1260,8 @@ bpot:P10034 a owl:Class ;
     skos:example "Senior executives determine and document the firm's core competencies for its value proposition." ;
     bpot:apqcSourceText "Determining a strategically significant aggregate of competence and capacities that differentiates the organization in the market. Identify distinguishing attributes including unique skills and resources and its brand and services in the marketplace. Have senior executives and management personnel assess competencies in order to further develop these capabilities into distinct commercial value propositions." ;
     bpot:hierarchyID "1.1.3.6" ;
-    bpot:pcfID "10034" .
+    bpot:pcfID "10034" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10034. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10035 a owl:Class ;
     rdfs:label "Align stakeholders around strategic vision" ;
@@ -1243,15 +1280,13 @@ bpot:P10035 a owl:Class ;
     skos:example "Senior strategy personnel map stakeholders and produce a plan to align them with the vision." ;
     bpot:apqcSourceText "Orienting those entities, associated with the organization that have a direct bearing on its operations and output, in a way that advances its strategic vision. Map all stakeholders in strategic configurations, within the architectural layout of the marketplace, and position the organization relative to them. (This exercise is undertaken by senior strategy personnel, drawing upon the process Define a business concept and long-term vision [17040].)" ;
     bpot:hierarchyID "1.1.4.2" ;
-    bpot:pcfID "10035" .
+    bpot:pcfID "10035" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10035. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10036 a owl:Class ;
     rdfs:label "Communicate strategic vision to stakeholders" ;
     rdfs:comment "Anchored to cco:ont00000402 (Act of Communication, verified v2.0): an ICE (the vision/alignment plan) is transferred from the organization to its stakeholders." ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001921 ;
-            owl:someValuesFrom bpot:StakeholderAlignmentPlan ],
-        [ a owl:Restriction ;
             owl:onProperty cco:ont00001921 ;
             owl:someValuesFrom bpot:StrategicVision ],
         [ a owl:Restriction ;
@@ -1260,13 +1295,17 @@ bpot:P10036 a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty obo:BFO_0000057 ;
             owl:someValuesFrom bpot:StrategyPersonnel ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:StakeholderAlignmentPlan ],
         cco:ont00000228,
         cco:ont00000402 ;
     skos:definition "An Act of Communication that has as input a stakeholder alignment plan and a strategic vision and conveys the vision to stakeholders by means of a communication strategy." ;
     skos:example "Strategy personnel and marketing convey the vision to stakeholders through tailored channels." ;
     bpot:apqcSourceText "Developing and executing communication strategies to convey an alignment plan of all organizational stakeholders, which helps the organization realize its vision. Create custom communication strategies and delivery channels with the objective of orienting stakeholders according to the configuration maps created in the process Align stakeholders around a strategic vision [10035]. Have senior strategy personnel closely collaborate with the communications/marketing team." ;
     bpot:hierarchyID "1.1.4.3" ;
-    bpot:pcfID "10036" .
+    bpot:pcfID "10036" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10036. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10037 a owl:Class ;
     rdfs:label "Develop overall mission statement" ;
@@ -1288,7 +1327,8 @@ bpot:P10037 a owl:Class ;
     skos:example "An executive team drafts, ratifies, and circulates a one-paragraph corporate mission statement." ;
     bpot:apqcSourceText "Establishing an overarching, compact statement that concisely underscores the mission of the organization. Define and communicate a clear and succinct mission statement, which encapsulates how the organization aims to proceed in order to Establish a strategic vision [10020]. Solicit critical inputs from senior management and strategy executives, and collaborate with marketing or personnel from allied functions." ;
     bpot:hierarchyID "1.2.1" ;
-    bpot:pcfID "10037" .
+    bpot:pcfID "10037" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10037. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10038 a owl:Class ;
     rdfs:label "Define and evaluate strategic options to achieve the mission" ;
@@ -1334,7 +1374,8 @@ bpot:P10038 a owl:Class ;
     skos:example "Strategy leadership enumerates and weighs make-vs-buy, B2B, B2C, partnership, and improvement options before committing to a direction." ;
     bpot:apqcSourceText "Assessing sets of strategic decisions designed to drive the organization's long-term objectives. Identify various strategies concerning core functional areas. Appraise strategic options in light of auxiliary decision frameworks that ensure smooth functioning, the advancement of functional efficiencies, and vitality. Involve senior management executives, especially strategy and/or business unit personnel, with need-based consultative assistance from professional services providers." ;
     bpot:hierarchyID "1.2.2" ;
-    bpot:pcfID "10038" .
+    bpot:pcfID "10038" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10038. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10039 a owl:Class ;
     rdfs:label "Set/Develop long-term enterprise strategy" ;
@@ -1371,7 +1412,8 @@ bpot:P10039 a owl:Class ;
     skos:example "The executive committee commits to and elaborates a ten-year enterprise strategy." ;
     bpot:apqcSourceText "Developing a strategy for the achievement of business goals over the distant future. Adopt one of the strategic options for realizing its mission over the long term. Enlist senior management executives, comprising strategy and/or business unit personnel." ;
     bpot:hierarchyID "1.2.3" ;
-    bpot:pcfID "10039" .
+    bpot:pcfID "10039" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10039. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10040 a owl:Class ;
     rdfs:label "Coordinate and align cross-functional and process strategies" ;
@@ -1387,7 +1429,8 @@ bpot:P10040 a owl:Class ;
     skos:example "A PMO calibrates each division's annual plan to the enterprise strategy and publishes the alignment plan." ;
     bpot:apqcSourceText "Aligning the approach and method of individual units, departments, systems, and operations within the organization, in accordance with the larger strategic course adopted. Employ the organization's strategic path to guide the functions, divisions, and operations. Calibrate the plan and method of each functional area, as well as the processes therein, to Select the long-term business strategy [10039]." ;
     bpot:hierarchyID "1.2.4" ;
-    bpot:pcfID "10040" .
+    bpot:pcfID "10040" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10040. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10041 a owl:Class ;
     rdfs:label "Create organizational design" ;
@@ -1424,7 +1467,8 @@ bpot:P10041 a owl:Class ;
     skos:example "An org-design team produces a new operating-structure framework aligned to strategy." ;
     bpot:apqcSourceText "Formulating a design for the organization's resources that allow it to meet its objectives. Develop a new framework for molding the organization's various processes into a coherent and seamless whole." ;
     bpot:hierarchyID "1.2.5" ;
-    bpot:pcfID "10041" .
+    bpot:pcfID "10041" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10041. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10042 a owl:Class ;
     rdfs:label "Develop and set organizational objectives" ;
@@ -1449,7 +1493,8 @@ bpot:P10042 a owl:Class ;
     skos:example "Leadership sets the firm's annual organization-wide objectives in support of the mission." ;
     bpot:apqcSourceText "Developing overall goals for the organization that help in accomplishing its mission. Formulate organization-wide targets in the near to middle term, which will accumulate and propel the organization to realize its long-term objectives, as outlined in Develop an overall mission statement [10037]. Enlist business unit heads or equivalent personnel, in close collaboration with senior management executives." ;
     bpot:hierarchyID "1.2.6" ;
-    bpot:pcfID "10042" .
+    bpot:pcfID "10042" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10042. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10043 a owl:Class ;
     rdfs:label "Formulate business unit strategies" ;
@@ -1471,7 +1516,8 @@ bpot:P10043 a owl:Class ;
     skos:example "Each division head drafts a unit strategy aligned to enterprise goals." ;
     bpot:apqcSourceText "Charting a strategic course for business units in order to leverage opportunities, sidestep hurdles, and create synergies among each other. Create strategic road maps for the organization's units--in light of their individual resources and requirements, as well as their relationships with other business units--to achieve organizational goals." ;
     bpot:hierarchyID "1.2.7" ;
-    bpot:pcfID "10043" .
+    bpot:pcfID "10043" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10043. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10044 a owl:Class ;
     rdfs:label "Define current business" ;
@@ -1487,7 +1533,8 @@ bpot:P10044 a owl:Class ;
     skos:example "A strategy team documents the firm's de-facto business and core capacities before redrafting the mission." ;
     bpot:apqcSourceText "Defining the status quo relating to the de facto core of what the business is. Reflect over the fundamental essence of what the business accomplishes and the manner in which it operates. Look beyond the obvious solution capabilities to delineate capacities that form the basis of the business engine. Involve senior executives and management personnel and possibly professional services providers." ;
     bpot:hierarchyID "1.2.1.1" ;
-    bpot:pcfID "10044" .
+    bpot:pcfID "10044" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10044. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10045 a owl:Class ;
     rdfs:label "Formulate mission" ;
@@ -1500,7 +1547,8 @@ bpot:P10045 a owl:Class ;
     skos:example "Executives translate the long-term vision into a concise, actionable mission statement." ;
     bpot:apqcSourceText "Outlining actionable objectives that effectively set a course to fulfill the organization's vision. In this fundamental activity, articulate certain goals or targets in broad but practicable terms to reach long-term objectives." ;
     bpot:hierarchyID "1.2.1.2" ;
-    bpot:pcfID "10045" .
+    bpot:pcfID "10045" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10045. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10046 a owl:Class ;
     rdfs:label "Communicate mission" ;
@@ -1517,7 +1565,8 @@ bpot:P10046 a owl:Class ;
     skos:example "Leadership rolls out the new mission to employees, customers, and the public across email, town halls, and the website." ;
     bpot:apqcSourceText "Developing and executing a communication strategy to convey the mission statement. Create a universal communication strategy and appropriate delivery channels, with the objective of leveraging the latter to execute the former. Convey the inherent message of the mission to all stakeholders, including employees, customers, and the public. Ensure collaboration between senior strategy personnel and the communications/marketing team." ;
     bpot:hierarchyID "1.2.1.3" ;
-    bpot:pcfID "10046" .
+    bpot:pcfID "10046" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10046. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10047 a owl:Class ;
     rdfs:label "Define strategic options" ;
@@ -1536,7 +1585,8 @@ bpot:P10047 a owl:Class ;
     skos:example "A strategy team enumerates make-vs-buy and market-entry permutations consistent with the mission." ;
     bpot:apqcSourceText "Defining the various options available to achieve the goals highlighted in the mission statement. Delineate (in accordance with a predefined criteria) the various permutations of strategic decisions that would help the organization achieve the objectives outlined in Develop overall mission statement [10037]. Involve senior management and key strategy personnel, with timely help from professional services providers." ;
     bpot:hierarchyID "1.2.2.1" ;
-    bpot:pcfID "10047" .
+    bpot:pcfID "10047" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10047. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10048 a owl:Class ;
     rdfs:label "Assess and analyze impact of each option" ;
@@ -1558,7 +1608,8 @@ bpot:P10048 a owl:Class ;
     skos:example "Analysts model the projected impact of each candidate strategy on revenue and operations." ;
     bpot:apqcSourceText "Scoping and probing to study the impact of strategic options for fulfilling the organization's objectives. Estimate a measure of the impact effectuated by each set of strategic decisions, which comprise Define strategic options [10047]. Closely examine the consequences of each option." ;
     bpot:hierarchyID "1.2.2.2" ;
-    bpot:pcfID "10048" .
+    bpot:pcfID "10048" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10048. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10049 a owl:Class ;
     rdfs:label "Evaluate breadth and depth of organizational structure" ;
@@ -1571,7 +1622,8 @@ bpot:P10049 a owl:Class ;
     skos:example "An org-design analyst assesses the firm's span-of-control and reporting layers." ;
     bpot:apqcSourceText "Evaluating the structural makeup of the organization, including pertinent features of and associated synergies among constituent elements. Examine the organization's architectural framework, paying close attention to the individual elements, the relations among them, and the conjoint and co-acting forces therein. Analyze functions and processes, as well as work-related positions. Scrutinize various relevant characteristics associated with each of them, depending upon the scale, scope, and type of organization." ;
     bpot:hierarchyID "1.2.5.1" ;
-    bpot:pcfID "10049" .
+    bpot:pcfID "10049" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10049. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10050 a owl:Class ;
     rdfs:label "Perform job-specific roles mapping and value-added analyses" ;
@@ -1584,7 +1636,8 @@ bpot:P10050 a owl:Class ;
     skos:example "An analyst maps every role to its value contribution across operations." ;
     bpot:apqcSourceText "Appraising job-specific roles within the organizational chart and their hierarchical architecture. Analyze a map of work-related roles within the organizational structure. Examine the value added by the positions associated with jobs to be performed and how they stack up within the organization's operations." ;
     bpot:hierarchyID "1.2.5.2" ;
-    bpot:pcfID "10050" .
+    bpot:pcfID "10050" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10050. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10051 a owl:Class ;
     rdfs:label "Develop role activity diagrams to assess hand-off activity" ;
@@ -1597,7 +1650,8 @@ bpot:P10051 a owl:Class ;
     skos:example "An analyst breaks a manager role into tasks and charts the hand-offs between them." ;
     bpot:apqcSourceText "Examining the constituent exercises and undertakings within a work-related position for the purpose of effective delegation. Deconstruct job-specific roles into activities and visualize the relations among them, with the objective of assigning responsibilities to the appropriate personnel." ;
     bpot:hierarchyID "1.2.5.3" ;
-    bpot:pcfID "10051" .
+    bpot:pcfID "10051" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10051. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10052 a owl:Class ;
     rdfs:label "Perform organization redesign workshops" ;
@@ -1614,7 +1668,8 @@ bpot:P10052 a owl:Class ;
     skos:example "Facilitators run redesign workshops to walk staff through the new structure and role map." ;
     bpot:apqcSourceText "Organizing workshop sessions to adopt organizational redesign. Communicate the organizational structure and mapping of responsibilities against job roles in order to facilitate an effective understanding among personnel. Use a collaborative process that may include participative workshop sessions." ;
     bpot:hierarchyID "1.2.5.4" ;
-    bpot:pcfID "10052" .
+    bpot:pcfID "10052" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10052. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10053 a owl:Class ;
     rdfs:label "Design the relationships between organizational units" ;
@@ -1627,7 +1682,8 @@ bpot:P10053 a owl:Class ;
     skos:example "Designers formalize the dependencies and shared resources between two divisions." ;
     bpot:apqcSourceText "Fleshing out the connections and dependencies among the various units of the organization. Delineate the relationship among business units or process frameworks within the organization, in terms of activities, synergies, and shared resources and responsibilities. Formalize relationships among business units so that any mutual coherence is clearly understood and can be attended to." ;
     bpot:hierarchyID "1.2.5.5" ;
-    bpot:pcfID "10053" .
+    bpot:pcfID "10053" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10053. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10054 a owl:Class ;
     rdfs:label "Develop role analysis and activity diagrams for key processes" ;
@@ -1640,7 +1696,8 @@ bpot:P10054 a owl:Class ;
     skos:example "An analyst maps roles to each step of the order-to-cash process." ;
     bpot:apqcSourceText "Creating an understanding of the fit between job roles and organizational processes in order to properly place personnel. Deconstruct key processes into constituent activities, and examine job-related roles. Take cues from Develop role activity diagrams to assess hand-off activity [10051]. Map appropriate positions against these important processes, which in turn expedite the deployment of staff members." ;
     bpot:hierarchyID "1.2.5.6" ;
-    bpot:pcfID "10054" .
+    bpot:pcfID "10054" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10054. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10055 a owl:Class ;
     rdfs:label "Assess organizational implication of feasible alternatives" ;
@@ -1656,7 +1713,8 @@ bpot:P10055 a owl:Class ;
     skos:example "An analyst weighs the multi-year impact of three candidate structures." ;
     bpot:apqcSourceText "Probing the repercussions of all practicable organizational design options. Analyze the significance and impact of workable organizational structure options. Closely examine the long-term impact of these frameworks over the functioning of the organization." ;
     bpot:hierarchyID "1.2.5.7" ;
-    bpot:pcfID "10055" .
+    bpot:pcfID "10055" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10055. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10056 a owl:Class ;
     rdfs:label "Migrate to new organization" ;
@@ -1672,7 +1730,8 @@ bpot:P10056 a owl:Class ;
     skos:example "Leadership formally ratifies the new operating structure and authorizes the move to it." ;
     bpot:apqcSourceText "Embracing and ratifying a new organizational structure. (Assume the new framework to be the best fit through Assess the organizational implications of feasible alternatives [10055].)" ;
     bpot:hierarchyID "1.2.5.8" ;
-    bpot:pcfID "10056" .
+    bpot:pcfID "10056" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10056. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10057 a owl:Class ;
     rdfs:label "Develop strategic initiatives" ;
@@ -1694,7 +1753,8 @@ bpot:P10057 a owl:Class ;
     skos:example "A strategy team drafts a slate of discretionary projects to advance the firm's ten-year goals." ;
     bpot:apqcSourceText "Developing strategic projects that help fulfill long-term goals. Develop time-bound projects that are discretionary in nature and lie beyond the scope of the organization's routine operations." ;
     bpot:hierarchyID "1.3.1" ;
-    bpot:pcfID "10057" .
+    bpot:pcfID "10057" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10057. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10058 a owl:Class ;
     rdfs:label "Evaluate strategic initiatives" ;
@@ -1716,7 +1776,8 @@ bpot:P10058 a owl:Class ;
     skos:example "A review board appraises each candidate initiative for fit with the firm's vision and constraints." ;
     bpot:apqcSourceText "Examining projects of strategic significance that lie outside the purview of the organization's routine operations. Closely analyze strategic initiatives for their applicability and feasibility, given the organization's vision." ;
     bpot:hierarchyID "1.3.2" ;
-    bpot:pcfID "10058" .
+    bpot:pcfID "10058" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10058. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10059 a owl:Class ;
     rdfs:label "Select strategic initiatives" ;
@@ -1741,7 +1802,8 @@ bpot:P10059 a owl:Class ;
     skos:example "Senior managers and strategists pick the initiatives the firm will fund this cycle." ;
     bpot:apqcSourceText "Selecting relevant projects of strategic significance that create opportunities for the organization to realize its long-term objectives, on the basis of their suitability to the organization's constraints and reality. Select from the process Evaluate strategic initiatives [10058], based on their applicability and feasibility for the organization. Enlist senior management, especially strategy personnel." ;
     bpot:hierarchyID "1.3.3" ;
-    bpot:pcfID "10059" .
+    bpot:pcfID "10059" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10059. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P10060 a owl:Class ;
     rdfs:label "Establish high-level measures" ;
@@ -1763,7 +1825,8 @@ bpot:P10060 a owl:Class ;
     skos:example "A team defines the high-level KPIs by which the initiatives' impact will be judged." ;
     bpot:apqcSourceText "Devising measures to examine strategic projects. Formulate evaluation criteria to assess the strategic initiatives for the level of impact." ;
     bpot:hierarchyID "1.3.4" ;
-    bpot:pcfID "10060" .
+    bpot:pcfID "10060" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 10060. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P13289 a owl:Class ;
     rdfs:label "Identify implications for key operating model business elements that require change" ;
@@ -1779,7 +1842,8 @@ bpot:P13289 a owl:Class ;
     skos:example "An analyst lists the staffing and policy changes a candidate strategy would force on the operating model." ;
     bpot:apqcSourceText "Determine impacts of elements such as staffing, skills, training, new markets, technology, or policies within operating model which needs change." ;
     bpot:hierarchyID "1.2.2.2.1" ;
-    bpot:pcfID "13289" .
+    bpot:pcfID "13289" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 13289. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P13290 a owl:Class ;
     rdfs:label "Identify implications for key technology aspects" ;
@@ -1795,7 +1859,8 @@ bpot:P13290 a owl:Class ;
     skos:example "An architect identifies the ROI and architecture impacts of a proposed strategy." ;
     bpot:apqcSourceText "Determining key factors for technology ROI, benefits, architecture, etc." ;
     bpot:hierarchyID "1.2.2.2.2" ;
-    bpot:pcfID "13290" .
+    bpot:pcfID "13290" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 13290. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P14189 a owl:Class ;
     rdfs:label "Develop sustainability strategy" ;
@@ -1808,7 +1873,8 @@ bpot:P14189 a owl:Class ;
     skos:example "A sustainability office formulates the firm's long-term ESG strategy and resource commitments." ;
     bpot:apqcSourceText "Formulating strategic options that create opportunities for the sustenance and prosperity of the business in the long run. Go beyond business longevity to consider alternate strategies that allow the organizations preservation of vitality over time. Earmark resources and target processes, the former of which are dedicated to the absorption of sustainable practices in the latter." ;
     bpot:hierarchyID "1.2.3.2" ;
-    bpot:pcfID "14189" .
+    bpot:pcfID "14189" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 14189. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P14197 a owl:Class ;
     rdfs:label "Develop lean/continuous improvement strategy" ;
@@ -1821,7 +1887,8 @@ bpot:P14197 a owl:Class ;
     skos:example "A lean office formulates the multi-year continuous-improvement roadmap." ;
     bpot:apqcSourceText "Developing strategies for the optimization of processes and the improvement of functional areas in order to improve the bottom line. Create a road map of decision choices that would allow the organization to continuously enhance process efficiencies and advance performance standards." ;
     bpot:hierarchyID "1.2.3.7" ;
-    bpot:pcfID "14197" .
+    bpot:pcfID "14197" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 14197. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16612 a owl:Class ;
     rdfs:label "Define and manage personas" ;
@@ -1831,13 +1898,14 @@ bpot:P16612 a owl:Class ;
             owl:someValuesFrom bpot:CustomerData ],
         [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CustomerProfile ],
+            owl:someValuesFrom bpot:CustomerSegmentProfile ],
         bpot:ActOfIdentification ;
-    skos:definition "An Act of Identification that discerns the demographic and behavioral characteristics defining customer personas and produces a customer profile." ;
+    skos:definition "An Act of Identification that discerns the demographic and behavioral characteristics defining customer personas and produces a customer segment profile describing them." ;
     skos:example "A marketer defines three buyer personas from demographic and behavioral data." ;
     bpot:apqcSourceText "Identifying a set of characteristics that define the demographic and behavioral patterns of the customer. Further, use persona scoring to design your marketing strategies around personas, and measure and optimize your interactions with the contacts classified by a certain persona." ;
     bpot:hierarchyID "1.2.8.2.1" ;
-    bpot:pcfID "16612" .
+    bpot:pcfID "16612" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16612. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16790 a owl:Class ;
     rdfs:label "Evaluate intellectual property" ;
@@ -1850,7 +1918,8 @@ bpot:P16790 a owl:Class ;
     skos:example "Legal counsel establishes a procedure for screening incoming filings for IP-infringement risk." ;
     bpot:apqcSourceText "Establishing measures and procedures for identifying various intellectual property threats and concerns." ;
     bpot:hierarchyID "1.1.1.10" ;
-    bpot:pcfID "16790" .
+    bpot:pcfID "16790" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16790. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16792 a owl:Class ;
     rdfs:label "Conduct organization restructuring opportunities" ;
@@ -1872,7 +1941,8 @@ bpot:P16792 a owl:Class ;
     skos:example "A corporate-development team probes merger and divestment options and documents a restructuring opportunity analysis." ;
     bpot:apqcSourceText "Examining the scope and contingencies for restructuring based on market situation and internal realities. Map the market forces over which any and all probabilities can be probed for utility and viability. Once the restructuring options have been analyzed and the due-diligence performed, execute the deal. Consider seeking professional services for assistance in formalizing these opportunities." ;
     bpot:hierarchyID "1.1.5" ;
-    bpot:pcfID "16792" .
+    bpot:pcfID "16792" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16792. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16793 a owl:Class ;
     rdfs:label "Identify restructuring opportunities" ;
@@ -1891,7 +1961,8 @@ bpot:P16793 a owl:Class ;
     skos:example "A strategy team surveys the market and internal readiness and lists viable restructuring opportunities." ;
     bpot:apqcSourceText "Identifying opportunities for restructuring the organization, through an analysis of internal viability and external contingency. Conduct a broad-based survey of the market landscape, taking the large-scale trends and movements into account, to determine the necessity and possibility of restructuring the organization. Review the organization's internal capacities, the readiness of its process frameworks, the robustness of its financials, the capableness of its systems, the resourcefulness of its personnel, etc. for assimilating an extensive overhaul." ;
     bpot:hierarchyID "1.1.5.1" ;
-    bpot:pcfID "16793" .
+    bpot:pcfID "16793" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16793. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16794 a owl:Class ;
     rdfs:label "Perform due-diligence" ;
@@ -1907,7 +1978,8 @@ bpot:P16794 a owl:Class ;
     skos:example "Advisors audit a target company's financials and legal status and issue a due-diligence report." ;
     bpot:apqcSourceText "Auditing the status quo of the probabilities, before formalizing any restructuring of the organization with another entity. Systematically investigate all entities discerned to be of interest in Identify restructuring opportunities [16793], to verify all tangible and substantial facts. Consider engaging specialist professional services including legal, accounting, and consulting help." ;
     bpot:hierarchyID "1.1.5.2" ;
-    bpot:pcfID "16794" .
+    bpot:pcfID "16794" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16794. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16795 a owl:Class ;
     rdfs:label "Analyze deal options" ;
@@ -1935,7 +2007,8 @@ bpot:P16795 a owl:Class ;
     skos:example "A corporate-development team compares acquisition and divestment options and documents a deal-option analysis." ;
     bpot:apqcSourceText "Examining various options shortlisted for assimilating new entities into the organization or dissociating from it. Undertake a piecemeal and comprehensive consideration of each option identified for acquisition, merger, de-merger, and divestment. Consider intangible and non-material aspects of the entities involved and synergic aspects. Consider the assistance of specialist professional services." ;
     bpot:hierarchyID "1.1.5.3" ;
-    bpot:pcfID "16795" .
+    bpot:pcfID "16795" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16795. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16796 a owl:Class ;
     rdfs:label "Evaluate acquisition options" ;
@@ -1951,7 +2024,8 @@ bpot:P16796 a owl:Class ;
     skos:example "An M&A team appraises an acquisition target's fit and reports its business value." ;
     bpot:apqcSourceText "Appraising entities identified as being suitable for acquisition, taking into account the restructuring opportunities in the internal and external context. Verify the appropriateness and viability of the short-listed options. Ensure these entities pertain to the state-of-affairs in the market, as well as fit with the resources and capabilities of the organization." ;
     bpot:hierarchyID "1.1.5.3.1" ;
-    bpot:pcfID "16796" .
+    bpot:pcfID "16796" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16796. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16797 a owl:Class ;
     rdfs:label "Evaluate merger options" ;
@@ -1967,7 +2041,8 @@ bpot:P16797 a owl:Class ;
     skos:example "A strategy team appraises a merger candidate's fit and reports its business value." ;
     bpot:apqcSourceText "Appraising entities identified as being suitable for a merger, taking stock of the restructuring opportunities within the firm and the market. Verify the appropriateness and viability of such options. Assess these entities to ensure their pertinence to the contextual state-of-affairs in the market, as well as a fit with the resources and capabilities of the organization itself. (This process can be carried out, in its entirety, by qualified in-house personnel or may be designated to specialist professional services providers.)" ;
     bpot:hierarchyID "1.1.5.3.2" ;
-    bpot:pcfID "16797" .
+    bpot:pcfID "16797" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16797. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16798 a owl:Class ;
     rdfs:label "Evaluate de-merger options" ;
@@ -1983,7 +2058,8 @@ bpot:P16798 a owl:Class ;
     skos:example "A corporate-development team evaluates spinning off a subsidiary and reports its business value." ;
     bpot:apqcSourceText "Evaluating departments and subsidiaries within the organization, and/or previously merged entities, to assess the appropriateness of a de-merger, taking account of the fit between these entities as well as any relevant externalities. Examine the pertinence and soundness of a formalized dissociation." ;
     bpot:hierarchyID "1.1.5.3.3" ;
-    bpot:pcfID "16798" .
+    bpot:pcfID "16798" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16798. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16799 a owl:Class ;
     rdfs:label "Evaluate divesture options" ;
@@ -1999,7 +2075,8 @@ bpot:P16799 a owl:Class ;
     skos:example "A strategy team evaluates divesting a business unit and reports its business value." ;
     bpot:apqcSourceText "Evaluating departments and/or subsidiaries within the organization to assess the appropriateness of a divestment, taking account of all market externalities. Examine any internal entities that have been identified to be suitable for dismemberment from the organization. Ensure the pertinence and soundness of such a move." ;
     bpot:hierarchyID "1.1.5.3.4" ;
-    bpot:pcfID "16799" .
+    bpot:pcfID "16799" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16799. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16803 a owl:Class ;
     rdfs:label "Develop partner/alliance strategy" ;
@@ -2012,7 +2089,8 @@ bpot:P16803 a owl:Class ;
     skos:example "An alliance office drafts the multi-year partnership strategy and its success measures." ;
     bpot:apqcSourceText "Defining direction and plan objectives for partnering with other companies to deliver product/services. Focus on creating a vision and strategic objectives and culminate in creating measures for the strategic alliance or partnership." ;
     bpot:hierarchyID "1.2.3.1" ;
-    bpot:pcfID "16803" .
+    bpot:pcfID "16803" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16803. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16805 a owl:Class ;
     rdfs:label "Develop merger/demerger/acquisition/exit strategy" ;
@@ -2025,7 +2103,8 @@ bpot:P16805 a owl:Class ;
     skos:example "Corporate development drafts the M&A strategy and the screening criteria for targets." ;
     bpot:apqcSourceText "Defining a strategy for corporate development. Include providing a framework for evaluating merger and acquisition candidates; and planning for a value creation through merging/demerging with a company, acquiring a company, or exiting from an already merged/acquired company." ;
     bpot:hierarchyID "1.2.3.3" ;
-    bpot:pcfID "16805" .
+    bpot:pcfID "16805" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16805. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P18083 a owl:Class ;
     rdfs:label "Select partnerships and relationships to support the extended enterprise" ;
@@ -2044,7 +2123,8 @@ bpot:P18083 a owl:Class ;
     skos:example "Executives decide to outsource distribution and franchise dealerships rather than run them in-house." ;
     bpot:apqcSourceText "Supporting the design, manufacture and distribution of product and services through the extended enterprise model.  This is concerned with the strategic decisions on make vs buy, in house or out sourced.  Senior Executives map out how they want to run their business.  Make strategic choices as to whether to buy in components / sub-assemblies, run their own distribution fleet or contract out, own their dealerships or franchise out, etc.  Strategize with partnerships. Collaborate design consideration at strategy level for automotive and procurement act within the Target Operating Model set at strategy level." ;
     bpot:hierarchyID "1.2.2.1.1" ;
-    bpot:pcfID "18083" .
+    bpot:pcfID "18083" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 18083. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P18916 a owl:Class ;
     rdfs:label "Communicate strategies internally and externally" ;
@@ -2061,7 +2141,8 @@ bpot:P18916 a owl:Class ;
     skos:example "Leadership rolls out the new strategy to staff, customers, and suppliers via briefings and publications." ;
     bpot:apqcSourceText "Conveying planned procedures and methods to both internal departments and external stakeholders like customers, suppliers, etc., in an effective manner based on organizational objective." ;
     bpot:hierarchyID "1.2.9" ;
-    bpot:pcfID "18916" .
+    bpot:pcfID "18916" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 18916. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19507 a owl:Class ;
     rdfs:label "Execute strategic initiatives" ;
@@ -2074,7 +2155,28 @@ bpot:P19507 a owl:Class ;
     skos:example "Project teams carry out the funded initiatives across the organization." ;
     bpot:apqcSourceText "Successfully implement strategic initiatives. Execution of strategy is also defined as the process of implementing logical set of connected activities by an organization to make a strategy work." ;
     bpot:hierarchyID "1.3.5" ;
-    bpot:pcfID "19507" .
+    bpot:pcfID "19507" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19507. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P19945 a owl:Class ;
+    rdfs:label "Analyze competitors" ;
+    rdfs:comment "Carried over from GOLD module (bpo:AnalyzeCompetitors). Represents APQC 1.1.1.1 as an occurrent, not as the analysis artifact (that is bpo:CompetitorAnalysis) nor an organizational function." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:CompetitorData ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CompetitorAnalysis ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:CompetitiveIntelligenceAnalyst ],
+        bpot:ActOfAnalysis ;
+    skos:definition "An Act of Analysis that has as input competitor data and has as output a competitor analysis about one or more competitors." ;
+    skos:example "A competitive-intelligence team reviews market reports and produces a competitor analysis." ;
+    bpot:apqcSourceText "Identifying your competitors, their service and/or product. Evaluating competitors strategies to determine their strengths and weaknesses relative to those of your own product or service." ;
+    bpot:hierarchyID "1.1.1.1" ;
+    bpot:pcfID "19945" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19945. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19946 a owl:Class ;
     rdfs:label "Capture customer needs and wants" ;
@@ -2090,23 +2192,25 @@ bpot:P19946 a owl:Class ;
     skos:example "A marketing analyst collects survey responses and registers the unmet needs of a customer segment." ;
     bpot:apqcSourceText "Identifying and collecting customers' wants and needs of a product and/or services from a marketing perspective. Identify which consumer needs are important and whether needs are being met by current products/services." ;
     bpot:hierarchyID "1.1.2.2" ;
-    bpot:pcfID "19946" .
+    bpot:pcfID "19946" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19946. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19947 a owl:Class ;
     rdfs:label "Assess customer needs and wants" ;
-    rdfs:comment "Re-anchored (Gate-F) from cco:ont00000636 (Act of Appraisal) to bpo:ActOfIdentification: the source is 'creating customer profiles ... identify particular groups of people/organizations' -- profiling/segmentation is discernment, and its Descriptive output bpo:CustomerProfile agrees with the Information-Processing genus. Rejected Act of Appraisal: there is no evaluative value-judgement here, only characterization of segments." ;
+    rdfs:comment "Re-anchored (Gate-F) from cco:ont00000636 (Act of Appraisal) to bpo:ActOfIdentification: the source is 'creating customer profiles ... identify particular groups of people/organizations' -- profiling/segmentation is discernment, and its Descriptive output bpo:CustomerSegmentProfile agrees with the Information-Processing genus. Rejected Act of Appraisal: there is no evaluative value-judgement here, only characterization of segments." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001921 ;
             owl:someValuesFrom bpot:CustomerNeedsAssessment ],
         [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CustomerProfile ],
+            owl:someValuesFrom bpot:CustomerSegmentProfile ],
         bpot:ActOfIdentification ;
-    skos:definition "An Act of Identification that discerns and characterizes groups of customers who benefit from an organization's products or services and produces a customer profile of those groups and their needs." ;
+    skos:definition "An Act of Identification that discerns and characterizes groups of customers who benefit from an organization's products or services and produces a customer segment profile of those groups and their needs." ;
     skos:example "An analyst segments the market and builds customer profiles for the strategy team." ;
     bpot:apqcSourceText "Creating customer profiles to get a picture of customers and their needs. Identify particular groups of people/organizations that benefit from your product/services and then selling to them." ;
     bpot:hierarchyID "1.1.2.3" ;
-    bpot:pcfID "19947" .
+    bpot:pcfID "19947" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19947. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19948 a owl:Class ;
     rdfs:label "Analyze internal operations" ;
@@ -2122,7 +2226,8 @@ bpot:P19948 a owl:Class ;
     skos:example "An operations team measures the effectiveness of key processes and reports an internal-operations analysis." ;
     bpot:apqcSourceText "Identify key elements of operations and measure effectiveness of these elements within internal operations." ;
     bpot:hierarchyID "1.1.3.2" ;
-    bpot:pcfID "19948" .
+    bpot:pcfID "19948" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19948. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19949 a owl:Class ;
     rdfs:label "Define the strategic vision" ;
@@ -2138,7 +2243,8 @@ bpot:P19949 a owl:Class ;
     skos:example "A strategy team drafts and documents the firm's strategic vision statement." ;
     bpot:apqcSourceText "Developing goals to define organizations vision. Define and document ideas, direction, and activities which enable the organization to reach these goals." ;
     bpot:hierarchyID "1.1.4.1" ;
-    bpot:pcfID "19949" .
+    bpot:pcfID "19949" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19949. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19950 a owl:Class ;
     rdfs:label "Develop global support strategy" ;
@@ -2151,7 +2257,8 @@ bpot:P19950 a owl:Class ;
     skos:example "A shared-services office formulates the plan to deliver global support at scale." ;
     bpot:apqcSourceText "Developing a plan to deploy support services and support functions throughout the organization globally. Arrange the organizations functional support areas to create efficiencies of scale in the delivery of support services, globally." ;
     bpot:hierarchyID "1.2.3.5" ;
-    bpot:pcfID "19950" .
+    bpot:pcfID "19950" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19950. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19951 a owl:Class ;
     rdfs:label "Develop shared services strategy" ;
@@ -2164,7 +2271,8 @@ bpot:P19951 a owl:Class ;
     skos:example "A transformation office formulates the strategy to consolidate functions into shared services." ;
     bpot:apqcSourceText "Charting a plan to leverage internal services and support functions throughout the organization. Delineate a framework of parameters and criteria to selectively filter service areas for inclusion among the organizations common resources. Arrange the organizations functional areas to create efficiencies of scale in the delivery of internal services." ;
     bpot:hierarchyID "1.2.3.6" ;
-    bpot:pcfID "19951" .
+    bpot:pcfID "19951" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19951. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19952 a owl:Class ;
     rdfs:label "Develop innovation strategy" ;
@@ -2177,7 +2285,8 @@ bpot:P19952 a owl:Class ;
     skos:example "An R&D leadership team formulates the three-year innovation roadmap." ;
     bpot:apqcSourceText "Developing a plan and vision to encourage advancements in technology or product/services. Create a roadmap for changing or innovating the business model to make business operations more competitive. Set up new R&D services for changing or bringing new value propositions, services, production processes, and invention of technology not previously used by competitors etc." ;
     bpot:hierarchyID "1.2.3.4" ;
-    bpot:pcfID "19952" .
+    bpot:pcfID "19952" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19952. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19953 a owl:Class ;
     rdfs:label "Identify organizational objectives" ;
@@ -2190,7 +2299,8 @@ bpot:P19953 a owl:Class ;
     skos:example "Strategy leadership drafts the outcome-oriented objectives that will guide employee effort." ;
     bpot:apqcSourceText "Creating and developing strategic objectives that establishes a process to outline expected outcomes and guide employees' efforts." ;
     bpot:hierarchyID "1.2.6.1" ;
-    bpot:pcfID "19953" .
+    bpot:pcfID "19953" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19953. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19954 a owl:Class ;
     rdfs:label "Establish baseline metrics" ;
@@ -2206,7 +2316,8 @@ bpot:P19954 a owl:Class ;
     skos:example "A performance office defines the KPI baselines for each function from the organizational goals." ;
     bpot:apqcSourceText "Establishing baselines that provide standards for assessing performance. Create metrics and KPI's for various functions/processes/activities based on organizational goals." ;
     bpot:hierarchyID "1.2.6.2" ;
-    bpot:pcfID "19954" .
+    bpot:pcfID "19954" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19954. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19955 a owl:Class ;
     rdfs:label "Monitor performance against objective" ;
@@ -2222,7 +2333,8 @@ bpot:P19955 a owl:Class ;
     skos:example "A performance office defines the quarterly methodology and cadence for monitoring each function's KPIs." ;
     bpot:apqcSourceText "Defining methodology and frequency of assessment for measuring and monitoring performance of various functions/processes/activities against standard set goals." ;
     bpot:hierarchyID "1.2.6.3" ;
-    bpot:pcfID "19955" .
+    bpot:pcfID "19955" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19955. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19956 a owl:Class ;
     rdfs:label "Analyze business unit strategies" ;
@@ -2238,7 +2350,8 @@ bpot:P19956 a owl:Class ;
     skos:example "An analyst assesses a division's results against its KPI targets." ;
     bpot:apqcSourceText "Assessing the performance of a business unit against set organizational goals which are based on pre-defined metrics collected through various business unit operations." ;
     bpot:hierarchyID "1.2.7.1" ;
-    bpot:pcfID "19956" .
+    bpot:pcfID "19956" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19956. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19957 a owl:Class ;
     rdfs:label "Identify core competency for each business unit" ;
@@ -2254,7 +2367,8 @@ bpot:P19957 a owl:Class ;
     skos:example "An analyst catalogs each unit's distinctive technical capabilities." ;
     bpot:apqcSourceText "Determining the resources and skills of each business unit based on knowledge and technical capacity. Enable business units to meet customer needs and grow in a competitive marketplace." ;
     bpot:hierarchyID "1.2.7.2" ;
-    bpot:pcfID "19957" .
+    bpot:pcfID "19957" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19957. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19958 a owl:Class ;
     rdfs:label "Refine business unit strategies in support of organizational strategy" ;
@@ -2270,7 +2384,8 @@ bpot:P19958 a owl:Class ;
     skos:example "A division reworks its strategy to drop initiatives that conflict with the enterprise strategy." ;
     bpot:apqcSourceText "Evaluating existing business unit strategy based on the company's strategy and eliminate unwanted/unnecessary resources/elements and re-consider necessary resources to meet the overall company's strategy." ;
     bpot:hierarchyID "1.2.7.3" ;
-    bpot:pcfID "19958" .
+    bpot:pcfID "19958" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19958. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19959 a owl:Class ;
     rdfs:label "Develop customer experience strategy" ;
@@ -2295,7 +2410,8 @@ bpot:P19959 a owl:Class ;
     skos:example "A CX office drafts the multi-year roadmap for improving customer experience." ;
     bpot:apqcSourceText "Defining a roadmap to meet customer expectations while considering how it will affect the business." ;
     bpot:hierarchyID "1.2.8" ;
-    bpot:pcfID "19959" .
+    bpot:pcfID "19959" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19959. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19960 a owl:Class ;
     rdfs:label "Assess customer experience" ;
@@ -2320,7 +2436,8 @@ bpot:P19960 a owl:Class ;
     skos:example "A CX team scores satisfaction from survey responses on delivered services." ;
     bpot:apqcSourceText "Measuring customer feedback in regard to product and services effectiveness based on overall satisfaction. The data to be analyzed is collected through surveys, customer responses, and feedbacks based on the delivered products/services." ;
     bpot:hierarchyID "1.2.8.1" ;
-    bpot:pcfID "19960" .
+    bpot:pcfID "19960" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19960. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19961 a owl:Class ;
     rdfs:label "Identify and review customer touchpoints" ;
@@ -2336,7 +2453,8 @@ bpot:P19961 a owl:Class ;
     skos:example "A CX analyst enumerates and reviews every channel through which customers reach the brand." ;
     bpot:apqcSourceText "Creating methods to gauge customer experiences, expectations, and suggestions. Review both liked and disliked areas of product/services to be delivered. Evaluate touchpoints based on the nature of product/service in the market e.g., billboards, web sites, direct mail, service calls, etc." ;
     bpot:hierarchyID "1.2.8.1.1" ;
-    bpot:pcfID "19961" .
+    bpot:pcfID "19961" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19961. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19962 a owl:Class ;
     rdfs:label "Assess customer experience across touchpoints" ;
@@ -2352,7 +2470,8 @@ bpot:P19962 a owl:Class ;
     skos:example "A CX team scores experience quality at each interaction across the customer lifecycle." ;
     bpot:apqcSourceText "Evaluating customer experiences, expectations, and suggestions in both liked and disliked areas of the product or services. Analyze all modes of communication, human and physical interactions, or customers experience during the relationship lifecycle with your organization. Evaluate the gaps/further development/alterations to the existing product/service to attain better customer response." ;
     bpot:hierarchyID "1.2.8.1.2" ;
-    bpot:pcfID "19962" .
+    bpot:pcfID "19962" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19962. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19963 a owl:Class ;
     rdfs:label "Perform root cause analysis of problematic customer experiences" ;
@@ -2368,7 +2487,8 @@ bpot:P19963 a owl:Class ;
     skos:example "An analyst traces recurring complaints to a flawed onboarding step." ;
     bpot:apqcSourceText "Analyzing the core reason for the customer experience/feedback/response about the product/service to take considerable action for better customer experience." ;
     bpot:hierarchyID "1.2.8.1.3" ;
-    bpot:pcfID "19963" .
+    bpot:pcfID "19963" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19963. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19964 a owl:Class ;
     rdfs:label "Design customer experience" ;
@@ -2405,7 +2525,8 @@ bpot:P19964 a owl:Class ;
     skos:example "A CX team designs the target interaction model from voice-of-customer research." ;
     bpot:apqcSourceText "Creating a design of how customers interact with the business by analyzing data captured through various customer interaction and customer involvement. These will be captured through various channels such as customer satisfaction surveys, feedback forms, product reviews, targeted studies, observational studies, or voice of customer research." ;
     bpot:hierarchyID "1.2.8.2" ;
-    bpot:pcfID "19964" .
+    bpot:pcfID "19964" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19964. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19965 a owl:Class ;
     rdfs:label "Create customer journey maps" ;
@@ -2421,20 +2542,22 @@ bpot:P19965 a owl:Class ;
     skos:example "A CX designer charts the end-to-end journey from awareness to renewal." ;
     bpot:apqcSourceText "Creating a story of the customer's experience: from initial contact, through the process of engagement and into a long-term relationship. The goal is to teach organization about the customer." ;
     bpot:hierarchyID "1.2.8.2.2" ;
-    bpot:pcfID "19965" .
+    bpot:pcfID "19965" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19965. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19966 a owl:Class ;
     rdfs:label "Define single view of the customer for the organization" ;
-    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): 'defining parameters ... which enable the tracking of customers' composes a prescriptive specification." ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (Act of Planning): 'defining parameters ... which enable the tracking of customers' composes a prescriptive specification. Output re-typed WP6 (BPO architect, 2026-11-02) from bpo:CustomerProfile (Descriptive) to bpo:CustomerDataSpecification (Directive), as the GOLDEN PRINCIPLE requires." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CustomerProfile ],
+            owl:someValuesFrom bpot:CustomerDataSpecification ],
         bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that defines the parameters for an aggregated, holistic representation of customer data and produces a customer profile specification." ;
+    skos:definition "An Act of Formulation that defines the parameters for an aggregated, holistic representation of customer data and produces a customer data specification." ;
     skos:example "A data team defines the unified customer-record parameters spanning all channels." ;
     bpot:apqcSourceText "Defining parameters to show aggregated, consistent, and holistic representation of known data about customers. Define key parameters which enable the tracking of customers and communications across every channel." ;
     bpot:hierarchyID "1.2.8.2.3" ;
-    bpot:pcfID "19966" .
+    bpot:pcfID "19966" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19966. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19967 a owl:Class ;
     rdfs:label "Define a vision for the customer experience" ;
@@ -2447,7 +2570,8 @@ bpot:P19967 a owl:Class ;
     skos:example "Leadership articulates the guiding vision for every customer interaction." ;
     bpot:apqcSourceText "Establishing a direction and vision on how the organization behaves towards customers in a consistent, effective way. The key attributes for customer experience vision consists of emotional connection, commitments and expectations, compelling value proposition, and ease of understanding the organization's behavior." ;
     bpot:hierarchyID "1.2.8.2.4" ;
-    bpot:pcfID "19967" .
+    bpot:pcfID "19967" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19967. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19968 a owl:Class ;
     rdfs:label "Validate with customers" ;
@@ -2463,7 +2587,8 @@ bpot:P19968 a owl:Class ;
     skos:example "A product team validates the pricing assumptions through customer interviews." ;
     bpot:apqcSourceText "Creating a process to validate the sales process and the assumptions that underpin the business model. Understand if the products/services have a repeatable, scalable business model around that product." ;
     bpot:hierarchyID "1.2.8.2.5" ;
-    bpot:pcfID "19968" .
+    bpot:pcfID "19968" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19968. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19969 a owl:Class ;
     rdfs:label "Align experience with brand values and business strategies" ;
@@ -2479,7 +2604,8 @@ bpot:P19969 a owl:Class ;
     skos:example "A brand team aligns the service experience to the brand promise and strategy." ;
     bpot:apqcSourceText "Aligning and defining a relevant, differentiated, and credible value proposition for the brand. Align experience to ensure that the product and service quality is consistent with brand promise and business strategies." ;
     bpot:hierarchyID "1.2.8.2.6" ;
-    bpot:pcfID "19969" .
+    bpot:pcfID "19969" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19969. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19970 a owl:Class ;
     rdfs:label "Develop content strategy" ;
@@ -2492,7 +2618,8 @@ bpot:P19970 a owl:Class ;
     skos:example "A content team formulates the editorial and distribution strategy for the year." ;
     bpot:apqcSourceText "Planning, development, and management of content-written or in other media. Getting the right content to the right user at the right time through strategic planning of content creation, delivery, and governance." ;
     bpot:hierarchyID "1.2.8.2.7" ;
-    bpot:pcfID "19970" .
+    bpot:pcfID "19970" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19970. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19971 a owl:Class ;
     rdfs:label "Design customer experience support structure" ;
@@ -2511,7 +2638,8 @@ bpot:P19971 a owl:Class ;
     skos:example "A CX office designs the support model and rollout timeframe for the new experience." ;
     bpot:apqcSourceText "Creating a roadmap for customer experience support with an overall approach, process flow, and impact timeframe." ;
     bpot:hierarchyID "1.2.8.3" ;
-    bpot:pcfID "19971" .
+    bpot:pcfID "19971" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19971. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19972 a owl:Class ;
     rdfs:label "Identify required capabilities" ;
@@ -2524,7 +2652,8 @@ bpot:P19972 a owl:Class ;
     skos:example "A CX lead lists the analytics and service skills the support team must have." ;
     bpot:apqcSourceText "Determining the necessary skills and competencies required to efficiently collect customer experiences through the support structure." ;
     bpot:hierarchyID "1.2.8.3.1" ;
-    bpot:pcfID "19972" .
+    bpot:pcfID "19972" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19972. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19973 a owl:Class ;
     rdfs:label "Identify impact on functional processes" ;
@@ -2537,7 +2666,8 @@ bpot:P19973 a owl:Class ;
     skos:example "An analyst identifies how the new CX support model changes the call-center workflow." ;
     bpot:apqcSourceText "Identifying the affect of customer experience through customer experience support structure on other functions of customer services related to customer." ;
     bpot:hierarchyID "1.2.8.3.2" ;
-    bpot:pcfID "19973" .
+    bpot:pcfID "19973" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19973. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19974 a owl:Class ;
     rdfs:label "Develop customer experience roadmap to develop and implement defined capabilities" ;
@@ -2550,7 +2680,8 @@ bpot:P19974 a owl:Class ;
     skos:example "A CX office publishes the roadmap and talent plan to stand up the new capabilities." ;
     bpot:apqcSourceText "Defining a standard guideline to create and execute the capacities of registering customer experiences in a timely manner. Create a common understanding of what behaviors are required to implement the strategy. Define what talent/skills your organization needs to reach customer experience goals." ;
     bpot:hierarchyID "1.2.8.4" ;
-    bpot:pcfID "19974" .
+    bpot:pcfID "19974" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19974. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19975 a owl:Class ;
     rdfs:label "Identify strategic priorities" ;
@@ -2566,7 +2697,8 @@ bpot:P19975 a owl:Class ;
     skos:example "Leadership ranks its objectives and issues the priorities that govern the year's budgeting." ;
     bpot:apqcSourceText "Creating a statement of the organization's direction to guide decision making around the allocation of resources. Provide a focus on the organization's overarching goals to ensure coherent and considered action. Strategic objectives are ranked by their importance in achieving the strategic goals. All subsequent operational or tactical planning and resource allocation is based on strategic priorities" ;
     bpot:hierarchyID "1.3.1.1" ;
-    bpot:pcfID "19975" .
+    bpot:pcfID "19975" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19975. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19976 a owl:Class ;
     rdfs:label "Develop strategic initiatives based on business/customer value" ;
@@ -2579,7 +2711,8 @@ bpot:P19976 a owl:Class ;
     skos:example "A team frames its candidate initiatives explicitly around customer value drivers." ;
     bpot:apqcSourceText "Creating a statement of the organization's direction based on what is considered \"value\" to the customer or business." ;
     bpot:hierarchyID "1.3.1.2" ;
-    bpot:pcfID "19976" .
+    bpot:pcfID "19976" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19976. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19977 a owl:Class ;
     rdfs:label "Review with stakeholders" ;
@@ -2595,7 +2728,8 @@ bpot:P19977 a owl:Class ;
     skos:example "Strategists hold a review session reporting strategy evaluation results to the board and partners." ;
     bpot:apqcSourceText "Developing a process for stakeholder dialog that is integrated into the assessment of business strategies. Report on the evaluation of the business objectives, strategies, subject, or past events." ;
     bpot:hierarchyID "1.3.1.3" ;
-    bpot:pcfID "19977" .
+    bpot:pcfID "19977" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19977. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19978 a owl:Class ;
     rdfs:label "Determine business value for each strategic priority" ;
@@ -2611,7 +2745,8 @@ bpot:P19978 a owl:Class ;
     skos:example "Analysts score each priority by the benefit it adds to the business." ;
     bpot:apqcSourceText "Establishing a standard measure of value to determine the business worth for each of the Identify strategic priorities [19975]. List the effectiveness and utility for every important strategic element based on the benefit it adds to the business." ;
     bpot:hierarchyID "1.3.2.1" ;
-    bpot:pcfID "19978" .
+    bpot:pcfID "19978" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19978. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19979 a owl:Class ;
     rdfs:label "Determine the customer value for each strategic priority" ;
@@ -2630,7 +2765,8 @@ bpot:P19979 a owl:Class ;
     skos:example "A team appraises what customers gain from offerings tied to each strategic priority." ;
     bpot:apqcSourceText "Analyzing the value preposition; the value the customer gets from a product/services for each of your Identify strategic priorities [19975]. Customer value is the satisfaction a consumer feels after making a purchase for goods or services relative to what he/she must give up to receive them." ;
     bpot:hierarchyID "1.3.2.2" ;
-    bpot:pcfID "19979" .
+    bpot:pcfID "19979" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19979. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19980 a owl:Class ;
     rdfs:label "Prioritize strategic initiatives" ;
@@ -2646,7 +2782,8 @@ bpot:P19980 a owl:Class ;
     skos:example "A filter scores initiatives so the team can list them most- to least-important." ;
     bpot:apqcSourceText "Listing the most effective procedures in the order of most important to the least. Create measures or filter for determining which of many \"strategic initiatives\" is most important to the least important." ;
     bpot:hierarchyID "1.3.3.1" ;
-    bpot:pcfID "19980" .
+    bpot:pcfID "19980" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19980. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19981 a owl:Class ;
     rdfs:label "Communicate strategic initiatives to business units and stakeholders" ;
@@ -2662,7 +2799,8 @@ bpot:P19981 a owl:Class ;
     skos:example "Leadership drafts the communication plan and roadmap so every business unit will understand the chosen initiatives." ;
     bpot:apqcSourceText "Establishing procedures for communications within the organization which creates the road map for successful understanding of strategic initiatives for both business units and stakeholders (internal and external)." ;
     bpot:hierarchyID "1.3.3.2" ;
-    bpot:pcfID "19981" .
+    bpot:pcfID "19981" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19981. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19982 a owl:Class ;
     rdfs:label "Identify business value drivers" ;
@@ -2675,7 +2813,8 @@ bpot:P19982 a owl:Class ;
     skos:example "Analysts enumerate the operational and financial factors that move enterprise value." ;
     bpot:apqcSourceText "Determining key indicators or factors responsible for driving business value. Key business value drivers comprise of operational, financial, and sustainability drivers." ;
     bpot:hierarchyID "1.3.4.1" ;
-    bpot:pcfID "19982" .
+    bpot:pcfID "19982" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19982. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19983 a owl:Class ;
     rdfs:label "Establish baselines for business value drivers" ;
@@ -2691,7 +2830,8 @@ bpot:P19983 a owl:Class ;
     skos:example "The team derives the starting-period value of each driver as its assessment benchmark." ;
     bpot:apqcSourceText "Establishing baseline measures that provide standards for assessing performance of Identify business value drivers [19982]." ;
     bpot:hierarchyID "1.3.4.2" ;
-    bpot:pcfID "19983" .
+    bpot:pcfID "19983" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19983. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P19984 a owl:Class ;
     rdfs:label "Monitor performance against baselines" ;
@@ -2708,7 +2848,8 @@ bpot:P19984 a owl:Class ;
     skos:example "A PMO tracks each driver's running value against its baseline to flag off-course initiatives." ;
     bpot:apqcSourceText "Overseeing the progress of activities to ensure they are on-course and on-schedule in meeting the objectives and performance targets against Establish baselines for business value drivers [19983]." ;
     bpot:hierarchyID "1.3.4.3" ;
-    bpot:pcfID "19984" .
+    bpot:pcfID "19984" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19984. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20945 a owl:Class ;
     rdfs:label "Develop business models" ;
@@ -2739,7 +2880,8 @@ bpot:P20945 a owl:Class ;
     skos:example "A strategy team integrates the firm's business concept and strategy into a formally adopted business model." ;
     bpot:apqcSourceText "Creating an economic model that describes the goals of an organization and the business processes needed to achieve those goals. This involves information gathering, securing necessary approvals and authorizations, integrating with preexisting models, including the general business concept [10002] and business strategy [10015], and formally accepting the model as the basis for organization's day-to-day operations." ;
     bpot:hierarchyID "1.4.1" ;
-    bpot:pcfID "20945" .
+    bpot:pcfID "20945" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20945. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20946 a owl:Class ;
     rdfs:label "Assemble business model information" ;
@@ -2755,7 +2897,8 @@ bpot:P20946 a owl:Class ;
     skos:example "An analyst gathers cost, market, and process documents into a single business-model information pack." ;
     bpot:apqcSourceText "Collecting all relevant materials needed to develop the business model, so that it can adequately model its processes." ;
     bpot:hierarchyID "1.4.1.1" ;
-    bpot:pcfID "20946" .
+    bpot:pcfID "20946" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20946. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20947 a owl:Class ;
     rdfs:label "Secure appropriate approvals" ;
@@ -2768,7 +2911,8 @@ bpot:P20947 a owl:Class ;
     skos:example "A compliance officer secures the licenses needed to operate the proposed line of business." ;
     bpot:apqcSourceText "Obtaining required permissions, licenses and authorizations that legitimize the business, help to mitigate associated risks and safeguard the operations." ;
     bpot:hierarchyID "1.4.1.2" ;
-    bpot:pcfID "20947" .
+    bpot:pcfID "20947" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20947. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20948 a owl:Class ;
     rdfs:label "Identify integration points with existing models" ;
@@ -2787,7 +2931,8 @@ bpot:P20948 a owl:Class ;
     skos:example "A modeller maps where the new business model touches the existing operating model to prevent contradictions." ;
     bpot:apqcSourceText "Ensuring coherence with pre-exsiting models to avoid contradictions between models. Make sure that all models represent the same long-term vision." ;
     bpot:hierarchyID "1.4.1.3" ;
-    bpot:pcfID "20948" .
+    bpot:pcfID "20948" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20948. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20949 a owl:Class ;
     rdfs:label "Adopt the business model" ;
@@ -2803,7 +2948,8 @@ bpot:P20949 a owl:Class ;
     skos:example "An executive board formally adopts the proposed business model as the company's operating basis." ;
     bpot:apqcSourceText "Consenting to a particular business model and formally accepting it to serve as the set of guiding principles in operating the company." ;
     bpot:hierarchyID "1.4.1.4" ;
-    bpot:pcfID "20949" .
+    bpot:pcfID "20949" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20949. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20950 a owl:Class ;
     rdfs:label "Maintain business models" ;
@@ -2828,7 +2974,8 @@ bpot:P20950 a owl:Class ;
     skos:example "A product team runs its periodic review and reissues the business model to reflect new market behavior." ;
     bpot:apqcSourceText "Revising and updating business models to reflect the changes in the marketed services, product inventory, market behavior, available resources or accrued expenses. Determine how and when to modify the accepted business model in response to incoming feedback." ;
     bpot:hierarchyID "1.4.2" ;
-    bpot:pcfID "20950" .
+    bpot:pcfID "20950" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20950. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20951 a owl:Class ;
     rdfs:label "Establish business model maintenance parameters" ;
@@ -2841,7 +2988,8 @@ bpot:P20951 a owl:Class ;
     skos:example "A governance lead sets a quarterly review cadence and assigns owners for business-model updates." ;
     bpot:apqcSourceText "Determining the timeline, procedures and responsibilities for reviewing the business model and for updating it to best serve the organization." ;
     bpot:hierarchyID "1.4.2.1" ;
-    bpot:pcfID "20951" .
+    bpot:pcfID "20951" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20951. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20952 a owl:Class ;
     rdfs:label "Accept business model feedback parameters" ;
@@ -2854,7 +3002,8 @@ bpot:P20952 a owl:Class ;
     skos:example "A team decides that only structured customer-survey and churn signals will drive model changes." ;
     bpot:apqcSourceText "Deciding the type of responses, reactions, sentiments and insights that are crucial to be taken into consideration with business model maintenance." ;
     bpot:hierarchyID "1.4.2.2" ;
-    bpot:pcfID "20952" .
+    bpot:pcfID "20952" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20952. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20953 a owl:Class ;
     rdfs:label "Prioritize and manage incoming feedback" ;
@@ -2870,7 +3019,8 @@ bpot:P20953 a owl:Class ;
     skos:example "A product council ranks incoming feedback and flags the items that mandate model changes." ;
     bpot:apqcSourceText "Evaluating the feedback regarding products, services, processes or resources. Determine which judgments are critical and mandate changes to the current business model to better deliver the desired value" ;
     bpot:hierarchyID "1.4.2.3" ;
-    bpot:pcfID "20953" .
+    bpot:pcfID "20953" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20953. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P20954 a owl:Class ;
     rdfs:label "Update existing models" ;
@@ -2883,7 +3033,22 @@ bpot:P20954 a owl:Class ;
     skos:example "A team revises the in-force business model to reflect prioritized feedback and new market conditions." ;
     bpot:apqcSourceText "Modifying the business models that are presently in use in response to incoming feedback or changing markets to achieve the enterprise business goals." ;
     bpot:hierarchyID "1.4.2.4" ;
-    bpot:pcfID "20954" .
+    bpot:pcfID "20954" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20954. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P20955 a owl:Class ;
+    rdfs:label "Establish business model governance" ;
+    rdfs:comment "R5/R6: the bounded establishing act passes R5 and is modeled here as a process; the standing governance function it stands up is the pre-existing shared bpo:BusinessModelGovernanceCapability (Organization Capability), reused (not re-minted) and linked via obo:BFO_0000054 (realized in). WP6 B8 step 1 (BPO architect, 2026-11-03): the realized-in (obo:BFO_0000054) restrictions of the capabilities named here were removed; the link is now a possible realization (bpo:enablesProcess)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BusinessModelGovernancePolicy ],
+        cco:ont00000511 ;
+    skos:definition "An Act of Planning that creates and implements the strategy, responsibilities, and control mechanisms for governing an organization's business models and produces a business-model governance policy." ;
+    skos:example "An organization stands up a model-governance board with a charter, owners, and review controls." ;
+    bpot:apqcSourceText "Creating and implementing a strategy, responsibilities and control mechanisms for managing business models that are timely, efficient and cost-effective." ;
+    bpot:hierarchyID "1.4.3" ;
+    bpot:pcfID "20955" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 20955. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21421 a owl:Class ;
     rdfs:label "Identify potential product or service alternatives" ;
@@ -2902,7 +3067,8 @@ bpot:P21421 a owl:Class ;
     skos:example "A product team weighs a substitute on the market and commits to a no-go decision." ;
     bpot:apqcSourceText "Examining if there are other existing products or services in the marketplace, and building the business case to make a go/no go decision based upon substitutions." ;
     bpot:hierarchyID "1.1.1.3" ;
-    bpot:pcfID "21421" .
+    bpot:pcfID "21421" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21421. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21422 a owl:Class ;
     rdfs:label "Review execution of strategic initiatives" ;
@@ -2918,7 +3084,8 @@ bpot:P21422 a owl:Class ;
     skos:example "A quarterly steering review assesses how the executed initiatives are performing." ;
     bpot:apqcSourceText "Periodic review of initiatives based performance, conditions, and marketplace response." ;
     bpot:hierarchyID "1.3.6" ;
-    bpot:pcfID "21422" .
+    bpot:pcfID "21422" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21422. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21423 a owl:Class ;
     rdfs:label "Refine strategic initiatives and project plans as needed" ;
@@ -2934,7 +3101,8 @@ bpot:P21423 a owl:Class ;
     skos:example "After a downturn, the team rewrites two initiatives' project plans to fit the new market." ;
     bpot:apqcSourceText "Performing required updates to strategic initiatives based upon changes in the marketplace or performance." ;
     bpot:hierarchyID "1.3.7" ;
-    bpot:pcfID "21423" .
+    bpot:pcfID "21423" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21423. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21606 a owl:Class ;
     rdfs:label "Evaluate B2B options" ;
@@ -2950,7 +3118,8 @@ bpot:P21606 a owl:Class ;
     skos:example "Strategists weigh new B2B channels against the firm's historical B2B performance." ;
     bpot:apqcSourceText "Evaluating future business to business opportunities against past and current approaches and performance. Gather insights into what competitors and other similar organizations are doing and the needs, goals, and expectations of stakeholders and partners to understand potential future impact." ;
     bpot:hierarchyID "1.2.2.3" ;
-    bpot:pcfID "21606" .
+    bpot:pcfID "21606" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21606. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21607 a owl:Class ;
     rdfs:label "Evaluate B2C options" ;
@@ -2966,7 +3135,8 @@ bpot:P21607 a owl:Class ;
     skos:example "Strategists assess new direct-to-consumer offerings against historical B2C results." ;
     bpot:apqcSourceText "Evaluating future business to customer opportunities against past and current approaches and performance. Gather insights into what competitors and other similar organizations are doing and the needs, goals, and expectations of customers and partners to understand potential future impact." ;
     bpot:hierarchyID "1.2.2.4" ;
-    bpot:pcfID "21607" .
+    bpot:pcfID "21607" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21607. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21608 a owl:Class ;
     rdfs:label "Evaluate partner/alliance options" ;
@@ -2979,7 +3149,8 @@ bpot:P21608 a owl:Class ;
     skos:example "An alliance team weighs the cost and benefit of candidate distribution partners." ;
     bpot:apqcSourceText "Evaluating partnership and alliance opportunities to deliver products/services. Understand existing product and market models in use across the markets you serve, evolving trends, and the cost/benefit of potential new/updated partnership/alliance options." ;
     bpot:hierarchyID "1.2.2.5" ;
-    bpot:pcfID "21608" .
+    bpot:pcfID "21608" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21608. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21609 a owl:Class ;
     rdfs:label "Evaluate IP acquisition options" ;
@@ -2992,7 +3163,8 @@ bpot:P21609 a owl:Class ;
     skos:example "A team appraises licensing versus acquiring a patent portfolio." ;
     bpot:apqcSourceText "Evaluating intellectual property acquisition options available to scale, modernize, and/or extend product/service reach. Understand the cost, risk, timing and lifecycle value of candidate acquisitions." ;
     bpot:hierarchyID "1.2.2.6" ;
-    bpot:pcfID "21609" .
+    bpot:pcfID "21609" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21609. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21610 a owl:Class ;
     rdfs:label "Evaluate innovation options" ;
@@ -3005,7 +3177,8 @@ bpot:P21610 a owl:Class ;
     skos:example "An innovation board weighs candidate R&D bets for the coming cycle." ;
     bpot:apqcSourceText "Evaluating innovation options to advance technology, products/services, and/or operational performance." ;
     bpot:hierarchyID "1.2.2.7" ;
-    bpot:pcfID "21610" .
+    bpot:pcfID "21610" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21610. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21611 a owl:Class ;
     rdfs:label "Evaluate sustainability options" ;
@@ -3018,7 +3191,8 @@ bpot:P21611 a owl:Class ;
     skos:example "A sustainability office appraises the cost and benefit of carbon-reduction initiatives." ;
     bpot:apqcSourceText "Evaluating sustainability requirements, stakeholder expectations, and value proposition for options. Understand the potential activities and changes across environmental, social, and governance, the effort required, cost to implement, and benefits gained. The analysis should consider sustainable product/service lifecycles, operations, infrastructure, performance, and workforce." ;
     bpot:hierarchyID "1.2.2.8" ;
-    bpot:pcfID "21611" .
+    bpot:pcfID "21611" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21611. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21612 a owl:Class ;
     rdfs:label "Evaluate global support options" ;
@@ -3031,7 +3205,8 @@ bpot:P21612 a owl:Class ;
     skos:example "A shared-services team appraises centralized versus regional global support models." ;
     bpot:apqcSourceText "Evaluating options for global support services and functions. This should include structure, scale, adaptability to change, and alternative delivery models to balance cost, performance, and customer value." ;
     bpot:hierarchyID "1.2.2.9" ;
-    bpot:pcfID "21612" .
+    bpot:pcfID "21612" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21612. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21613 a owl:Class ;
     rdfs:label "Evaluate shared services options" ;
@@ -3044,7 +3219,8 @@ bpot:P21613 a owl:Class ;
     skos:example "A team appraises consolidating finance and HR into a shared-services center." ;
     bpot:apqcSourceText "Evaluating options for shared services and support functions. This should include structure, scale, adaptability to change, and alternative delivery models to balance cost, performance, and operational efficiencies." ;
     bpot:hierarchyID "1.2.2.10" ;
-    bpot:pcfID "21613" .
+    bpot:pcfID "21613" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21613. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P21614 a owl:Class ;
     rdfs:label "Evaluate lean/continuous improvement options" ;
@@ -3057,7 +3233,8 @@ bpot:P21614 a owl:Class ;
     skos:example "A continuous-improvement office appraises lean initiatives for the operations division." ;
     bpot:apqcSourceText "Evaluating options to enhance and optimize processes and functional areas. Understand alternatives to strengthen business capabilities, enhance process efficiencies, and advance performance standards." ;
     bpot:hierarchyID "1.2.2.11" ;
-    bpot:pcfID "21614" .
+    bpot:pcfID "21614" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 21614. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:RoleActivityDiagram a owl:Class ;
     rdfs:label "Role Activity Diagram" ;
@@ -3071,51 +3248,10 @@ bpot:StakeholderAlignmentPlan a owl:Class ;
         cco:ont00000974 ;
     skos:definition "A Plan that prescribes how stakeholders are to be oriented and positioned in support of an organization's strategic vision." .
 
-bpot:CustomerProfile a owl:Class ;
-    rdfs:label "Customer Profile" ;
-    rdfs:comment "Covers APQC customer profiles, personas, and the 'single view of the customer'." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001808 ;
-            owl:someValuesFrom bpot:Customer ],
-        cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes a group of customers with respect to their characteristics, needs, and behavioral patterns." .
-
 bpot:OrganizationalStructureAssessment a owl:Class ;
     rdfs:label "Organizational Structure Assessment" ;
     rdfs:subClassOf cco:ont00000853 ;
     skos:definition "A Descriptive Information Content Entity that describes the evaluated breadth, depth, and implications of an organization's structural makeup." .
-
-bpot:P19945 a owl:Class ;
-    rdfs:label "Analyze competitors" ;
-    rdfs:comment "Carried over from GOLD module (bpo:AnalyzeCompetitors). Represents APQC 1.1.1.1 as an occurrent, not as the analysis artifact (that is bpo:CompetitorAnalysis) nor an organizational function." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001921 ;
-            owl:someValuesFrom bpot:CompetitorData ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CompetitorAnalysis ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000057 ;
-            owl:someValuesFrom bpot:CompetitiveIntelligenceAnalyst ],
-        bpot:ActOfAnalysis ;
-    skos:definition "An Act of Analysis that has as input competitor data and has as output a competitor analysis about one or more competitors." ;
-    skos:example "A competitive-intelligence team reviews market reports and produces a competitor analysis." ;
-    bpot:apqcSourceText "Identifying your competitors, their service and/or product. Evaluating competitors strategies to determine their strengths and weaknesses relative to those of your own product or service." ;
-    bpot:hierarchyID "1.1.1.1" ;
-    bpot:pcfID "19945" .
-
-bpot:P20955 a owl:Class ;
-    rdfs:label "Establish business model governance" ;
-    rdfs:comment "R5/R6: the bounded establishing act passes R5 and is modeled here as a process; the standing governance function it stands up is the pre-existing shared bpo:BusinessModelGovernanceCapability (Organization Capability), reused (not re-minted) and linked via obo:BFO_0000054 (realized in)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:BusinessModelGovernancePolicy ],
-        cco:ont00000511 ;
-    skos:definition "An Act of Planning that creates and implements the strategy, responsibilities, and control mechanisms for governing an organization's business models and produces a business-model governance policy." ;
-    skos:example "An organization stands up a model-governance board with a charter, owners, and review controls." ;
-    bpot:apqcSourceText "Creating and implementing a strategy, responsibilities and control mechanisms for managing business models that are timely, efficient and cost-effective." ;
-    bpot:hierarchyID "1.4.3" ;
-    bpot:pcfID "20955" .
 
 bpot:RestructuringOpportunityAnalysis a owl:Class ;
     rdfs:label "Restructuring Opportunity Analysis" ;
@@ -3137,7 +3273,8 @@ bpot:Stakeholder a owl:Class ;
             owl:onProperty obo:BFO_0000196 ;
             owl:someValuesFrom bpot:StakeholderRole ],
         cco:ont00001017 ;
-    skos:definition "An Agent that bears a stakeholder role." .
+    skos:definition "An Agent that bears a stakeholder role in virtue of being able to affect, or be affected by, an organization or its initiatives, actions, objectives, or policies." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): An Agent that bears a stakeholder role." .
 
 bpot:StrategicInitiativeEvaluation a owl:Class ;
     rdfs:label "Strategic Initiative Evaluation" ;
@@ -3178,7 +3315,8 @@ bpot:PerformanceMetric a owl:Class ;
 bpot:PerformanceReport a owl:Class ;
     rdfs:label "Performance Report" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes monitored performance of functions, processes, or initiatives against established baselines or objectives." .
+    skos:definition "A Descriptive Information Content Entity that describes the monitored performance of a function, process, channel, program, or initiative, including trends, deviations, and gaps against baselines or objectives." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes monitored performance of functions, processes, or initiatives against established baselines or objectives." .
 
 bpot:BusinessValueAssessment a owl:Class ;
     rdfs:label "Business Value Assessment" ;
@@ -3188,7 +3326,7 @@ bpot:BusinessValueAssessment a owl:Class ;
 bpot:CustomerData a owl:Class ;
     rdfs:label "Customer Data" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes customers, their characteristics, and their needs and wants." .
+    skos:definition "A Descriptive Information Content Entity that describes customers, their characteristics, needs, and behavior." .
 
 bpot:CustomerExperienceRoadmap a owl:Class ;
     rdfs:label "Customer Experience Roadmap" ;
@@ -3206,7 +3344,8 @@ bpot:MarketData a owl:Class ;
     rdfs:label "Market Data" ;
     rdfs:comment "Carried over from the 1.1.1 reference module (same IRI, same definition) so this self-contained module has every filler declared." ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes features of a market." .
+    skos:definition "A Descriptive Information Content Entity that describes features, conditions, and dynamics of a market, such as its size, growth, trends, segments, channels, prices, and supply conditions." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes features of a market." .
 
 bpot:MissionStatement a owl:Class ;
     rdfs:label "Mission Statement" ;
@@ -3259,7 +3398,8 @@ bpot:StrategicOption a owl:Class ;
 bpot:CustomerFeedback a owl:Class ;
     rdfs:label "Customer Feedback" ;
     rdfs:subClassOf cco:ont00000853 ;
-    skos:definition "A Descriptive Information Content Entity that describes responses, reactions, sentiments, and insights expressed by customers about products, services, or experiences." .
+    skos:definition "A Descriptive Information Content Entity that describes customers' responses to, opinions of, or evaluations of an organization's products, services, or experiences." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes responses, reactions, sentiments, and insights expressed by customers about products, services, or experiences." .
 
 bpot:InternalCapabilityData a owl:Class ;
     rdfs:label "Internal Capability Data" ;
@@ -3277,5 +3417,6 @@ bpot:BusinessStrategy a owl:Class ;
     rdfs:comment "Reuses CCO Plan (ont00000974) rather than minting under ont00000965, because the CCO Plan definition ('prescribes some set of intended Intentional Acts through which some Agent expects to achieve some Objective') fits a strategy exactly. Base genus for the strategy outputs of 1.2.3, 1.2.7, and 1.2.8." ;
     rdfs:subClassOf cco:ont00000965,
         cco:ont00000974 ;
-    skos:definition "A Plan that prescribes the set of intended intentional acts through which an organization expects to achieve its long-term business objectives." .
+    skos:definition "A Plan that prescribes an organization's overall direction, goals, and competitive positioning, and the intended courses of action through which it expects to achieve its long-term business objectives." ;
+    skos:scopeNote "As used in section 1.0 before WP6 B1 (2026-10-31): A Plan that prescribes the set of intended intentional acts through which an organization expects to achieve its long-term business objectives." .
 
