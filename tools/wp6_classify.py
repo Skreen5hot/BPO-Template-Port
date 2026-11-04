@@ -27,6 +27,11 @@ pinned CCO, stated with each:
            addendum, false alarm); K19 when that one module is bpot.ttl,
            where the port merged three BPO files (real, the port's); K08
            otherwise. From TAG's config/annotation-drift.tsv.
+  K02/K21  the placement shape (proposed 2026-11-04, A6, pending the BPO
+           architect): K02 when a class "is related to" a class by an
+           object property, the only message it gave on S0 and S1; K21
+           when a class reaches no BFO category. K20: a class (not a
+           property, K14) with no skos:definition. First seen on S2u.
 """
 
 from __future__ import annotations
@@ -101,7 +106,10 @@ def classify(row: dict, g: Graph, modules: dict) -> list[str]:
     if "has no definition source" in msg:
         out.append("K01")
     if rule.endswith("AuthoredClassPlacementShape"):
-        out.append("K02")
+        if " is related to " in msg:
+            out.append("K02")
+        if "reaches no BFO category" in msg:
+            out.append("K21")
     if "does not name its parent" in msg:
         label = re.search(r'parent, "(.*)"\. A genus', msg).group(1)
         parents = named_parents(g, focus)
@@ -139,6 +147,8 @@ def classify(row: dict, g: Graph, modules: dict) -> list[str]:
         out.append("K13")
     if msg == "Property has no skos:definition.":
         out.append("K14")
+    if msg == "Class has no skos:definition.":
+        out.append("K20")
     if "Concept scheme has no top concept" in msg:
         out.append("K15")
     if row["check"] == "iri_lint" and rule == "naming_convention":

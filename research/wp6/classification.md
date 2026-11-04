@@ -127,3 +127,36 @@ from was not kept); a check of the version IRI alone cannot tell such a file fro
 **Effect on the register.** None on any finding or class: the label is annotation text,
 and the IRI is the same in every file. Where this record or the Phase B change record says
 "Prescriptive ICE" for `965`, read "Directive ICE" for the pinned release.
+
+### 2026-11-04 — K20 and K21 for S2u/S2, and K02 narrowed (PROPOSED, pending the BPO architect)
+
+**Why:** S2u and S2 (BPO `2b86c91`) give two findings that no class covers, both on
+`bpot:SeniorManagementRole`:
+
+- *wellformedness, violation:* "Class has no skos:definition." K14 is for properties only.
+- *realist placement, violation:* "Class reaches no BFO category". The classifier put every
+  placement-shape finding in K02, because on S0 and S1 that shape gave only one message,
+  "Class … is related to … by an object property". This finding would have been misfiled
+  as K02.
+
+Their cause is BPO's B1 consolidation (`d117716`). It deprecated `SeniorManagementRole`
+(`owl:deprecated`, `dct:isReplacedBy bpo:SeniorManagerRole`) and removed its definition and
+its parent. The template's deprecation policy (`docs/governance/deprecation.md`) says that a
+deprecated term "keeps its label, definition and parent, so what it meant stays readable".
+BPO's later deprecation of `ActOfCommunication` (`ff87b3b`) did keep them. BPO's own gates
+pass the class: they do not check deprecated classes for a definition or a placement.
+
+**Proposed:**
+
+| Class | Finding | S0 | S1 | S2u | S2 | Proposed | Owner | Reason |
+|---|---|---:|---:|---:|---:|---|---|---|
+| K20 | Class has no `skos:definition` (wellformedness, violation) | 0 | 0 | 1 | 1 | **real** (low) | BPO architect | A deprecated class lost its definition when it was deprecated (B1, `d117716`). A regression introduced by a Phase B correction |
+| K21 | Class reaches no BFO category (realist placement, violation) | 0 | 0 | 1 | 1 | **real** (low) | BPO architect | The same class lost its parent at the same time |
+
+**K02 narrowed:** a placement-shape finding is K02 only when its message says the class "is
+related to" a class. The S0 and S1 classifications are unchanged by this: rerun, their
+`classes.tsv` are byte for byte as committed.
+
+**Not fixed in BPO.** Phase B's correction scope is closed (BPO architect, 2026-11-03). This
+is recorded and classed as a recommendation: restore the definition and the `BFO_0000023`
+parent on the deprecated class, beside `owl:deprecated`.
