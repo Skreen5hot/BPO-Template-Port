@@ -467,4 +467,9 @@ recommendations for BPO's next cycle, not as blockers: the 37-class capability-a
 backlog (with its 111 realized-in restrictions and 20 definitions), and the R5/R6
 act-versus-capability methodology question.
 
-**Next, under A9:** S2u and S2 are not ported until the Template Team formally accepts A9.
+**Next, under A9.** The Template Team accepted A9 on 2026-10-31 (template decision 24;
+`communications/example/incoming/2026-10-31-wp6-a9-accepted.md` on `main`), with three
+clarifications: S2 is ported with template v0.1.0, as S1 was; the four template-prompted
+changes (B3, B5, B6, B12) count with the template's effect, and S2u → S2 is not presented
+as its whole effect; the kept `dct:rights` notice is a declared port change, accepted
+without its legal premise. S2u and S2 are ported from BPO `2b86c91`.
