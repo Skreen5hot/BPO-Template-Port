@@ -450,3 +450,21 @@ version-IRI check alone would not catch.**
 | Effect on BPO | Text quoting the 2026 release as if pinned (908's label on 24 lines, several "verified" definitions, "Prescriptive ICE" as a class name) was restored to the pinned wording (BPO `231f148`). Under the two releases no `bpo:` inferred subclass pair differs |
 | Fix in BPO | BPO `f311fa7`: Gate B and `corpus_check.sh` refuse a vendored CCO file whose SHA-256 or version IRI differs from the pin. Tested against the 2026 file |
 | Attribution | The template's digest pinning made the comparison possible; the check BPO now runs is BPO's own. Counted as a substantive engineering improvement found by the experiment, not as a template check that fired |
+
+## 10. The S2 source commit, accepted 2026-11-04
+
+**BPO `2b86c91800336044f7ca4e5c21459245fe54a8ee`** (branch `wp6-s2-corrections`, kept
+unmerged) is accepted by the BPO architect as the one immutable source commit for both S2u
+and S2. It is 39 commits on `685f1f2`, one decision or record per commit, and carries the
+decisions of 2026-10-31 and 2026-11-03. BPO's complete suite passes on it: Gates A–D on all
+13 slices, corpus ELK consistent with no unsatisfiable class, Gate F at its baseline (37),
+C1–C7 with no violation, dispatch 30 routable / 167 gaps over 197 processes. Per-commit
+effects: BPO `docs/wp6/semantic-impact-2026-11-03.md`; meaning changes made with the IRI
+kept or replaced: BPO `docs/migrations.tsv`.
+
+The BPO architect closed Phase B's correction scope on 2026-11-03. Outside it, recorded as
+recommendations for BPO's next cycle, not as blockers: the 37-class capability-as-process
+backlog (with its 111 realized-in restrictions and 20 definitions), and the R5/R6
+act-versus-capability methodology question.
+
+**Next, under A9:** S2u and S2 are not ported until the Template Team formally accepts A9.
