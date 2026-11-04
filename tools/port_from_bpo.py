@@ -6,12 +6,25 @@ same source commit gives the same bytes.
 
     python tools/port_from_bpo.py ../BusinessProcessOntology
     python tools/port_from_bpo.py ../BusinessProcessOntology --unchanged
+    python tools/port_from_bpo.py ../BusinessProcessOntology --carry-headers
 
 --unchanged writes S0 for the template evaluation (WP6, amendment A2): BPO
 ported with only the port's own mechanics (namespace, headers, duplicates,
 bridges, and the header's cited sources), without the four changes the PO
 approved on 2026-10-26 (top concepts, retyped properties, property
 definitions, the release on every module).
+
+Without --unchanged each of the four is made only where the source does not
+already make it: a definition only for a property that has none, the
+release only on a header that names it nowhere. On BPO bc64e91 this is S1
+byte for byte; on a BPO that has adopted them (WP6 Phase B: B3, B5, B6,
+B12) it adds nothing in their place (BPO architect, 2026-11-04).
+
+--carry-headers (S2u and S2, a declared change of the port's mechanics
+under A9 section 5) also carries each BPO header's dcterms:rights verbatim
+(B2: APQC's notice), and its title and version as a dcterms:source literal
+naming the BPO module, its version and the source commit (B18). The port's
+own title and version are kept: a header holds one of each.
 
 What it does to the source, and nothing else:
 
@@ -151,7 +164,12 @@ def main(argv=None) -> int:
     parser.add_argument("source", type=Path, help="a BusinessProcessOntology checkout")
     parser.add_argument("--unchanged", action="store_true",
                         help="S0: none of the PO-approved changes")
+    parser.add_argument("--carry-headers", action="store_true",
+                        help="S2u, S2: carry BPO's rights, titles and version")
+    parser.add_argument("--source-commit",
+                        help="the BPO commit read (default: the checkout's HEAD)")
     args = parser.parse_args(argv)
+    commit = args.source_commit or source_commit(args.source)
     config = project.load()
     namespace, iri_base = config["namespace"], config["iri_base"]
 
@@ -195,6 +213,11 @@ def main(argv=None) -> int:
                 for cited in graph.objects(old_header, DCTERMS.source):
                     if isinstance(cited, Literal):
                         out.add((header, DCTERMS.source, cited))
+                if args.carry_headers:
+                    for rights in graph.objects(old_header, DCTERMS.rights):
+                        out.add((header, DCTERMS.rights, rights))
+                    out.add((header, DCTERMS.source, Literal(described(
+                        graph, old_header, commit))))
             headers = set(graph.subjects(RDF.type, OWL.Ontology))
             for s, p, o in sorted(graph, key=lambda t: (str(t[0]), str(t[1]), str(t[2]))):
                 if isinstance(s, BNode) or s in headers:
@@ -224,7 +247,9 @@ def main(argv=None) -> int:
         for scheme in ([] if args.unchanged else
                        list(out.subjects(RDF.type, SKOS.ConceptScheme))):
             for concept in sorted(out.subjects(SKOS.inScheme, scheme)):
-                if (concept, SKOS.broader, None) not in out:
+                if (concept, SKOS.broader, None) not in out and not (
+                        (scheme, SKOS.hasTopConcept, concept) in out
+                        and (concept, SKOS.topConceptOf, scheme) in out):
                     out.add((scheme, SKOS.hasTopConcept, concept))
                     out.add((concept, SKOS.topConceptOf, scheme))
                     tops += 1
@@ -241,11 +266,15 @@ def main(argv=None) -> int:
         # those of PCF 5 and 6 not at all; every row came from the release
         # the catalog names.
         if not args.unchanged and any(
-                out.subject_objects(URIRef(namespace + "apqcSourceText"))):
+                out.subject_objects(URIRef(namespace + "apqcSourceText"))) \
+                and not any(PCF_RELEASE in str(cited) for cited
+                            in out.objects(header, DCTERMS.source)):
             out.add((header, DCTERMS.source, Literal(PCF_RELEASE)))
         for local, text in ({} if args.unchanged else DEFINITIONS).items():
             term = URIRef(namespace + local)
-            if (term, RDF.type, None) in out:
+            if (term, RDF.type, None) in out and not any(
+                    (term, SKOS.definition, None) in g
+                    for g in [out] + [g for _, g in graphs]):
                 out.add((term, SKOS.definition, Literal(text)))
         graphs.append((path, out))
 
@@ -269,7 +298,8 @@ def main(argv=None) -> int:
     for source, s, p, o in dropped_bridges:
         print("    %s  %s %s %s" % (source, s, p, o))
     print("  %d BPO IRI(s) renamed" % len(renamed))
-    print("  wrote %s, %d row(s)" % (SSSOM, write_mapping(namespace, renamed, kinds, labels)))
+    print("  wrote %s, %d row(s)" % (SSSOM, write_mapping(
+        namespace, renamed, kinds, labels, commit)))
     rows = drift(namespace, graphs)
     (ROOT / DRIFT).write_bytes(("\n".join(
         ["\t".join(("term", "property", "module", "value"))]
@@ -348,8 +378,29 @@ KINDS = {
 }
 
 
+def source_commit(source: Path) -> str:
+    """The abbreviated commit of the BPO checkout, for the provenance."""
+    import subprocess
+    done = subprocess.run(["git", "rev-parse", "--short=7", "HEAD"],
+                          cwd=source, capture_output=True, text=True)
+    if done.returncode:
+        raise SystemExit("%s is not a git checkout: name the commit with "
+                         "--source-commit" % source)
+    return done.stdout.strip()
+
+
+def described(graph: rdflib.Graph, header, commit: str) -> str:
+    """A BPO header as a citation: title, version, repository and commit."""
+    title = graph.value(header, DCTERMS.title)
+    version = graph.value(header, OWL.versionInfo)
+    return "Business Process Ontology%s, module %s(%s; " \
+        "Skreen5hot/BusinessProcessOntology at commit %s)" % (
+            " %s" % version if version else "",
+            "“%s” " % title if title else "", header, commit)
+
+
 def write_mapping(namespace: str, renamed: dict, kinds: dict,
-                  labels: dict) -> int:
+                  labels: dict, commit: str) -> int:
     """Every ported term to the BPO term it was, one row each.
 
     The checker wants the subject to be a term declared here, so the rows
@@ -360,7 +411,8 @@ def write_mapping(namespace: str, renamed: dict, kinds: dict,
         "# mapping_set_id: https://fandaws.com/ontology/bpot/mappings/bpo",
         "# mapping_set_description: Every term of this ontology to the term of the "
         "Business Process Ontology (Skreen5hot/BusinessProcessOntology, commit "
-        "bc64e91) it was ported from. Same term, same local name, new namespace.",
+        "%s) it was ported from. Same term, same local name, new namespace."
+        % commit,
         "# license: https://opensource.org/licenses/MIT",
         "# creator_label:",
         "#   - Aaron Damiano",

@@ -7,6 +7,12 @@ A realist ontology aligned to BFO 2020 and CCO v2.0. Terms are minted in
 and any identifier scheme the project keeps, are in
 [`docs/governance/naming.md`](docs/governance/naming.md).
 
+Every term is ported from the Business Process Ontology
+(`Skreen5hot/BusinessProcessOntology`) under the same local name, so `bpo:X` there is
+`bpot:X` here (`mappings/bpo.sssom.tsv`). Comments and definitions are carried as BPO
+wrote them, so where they cite `bpo:` terms, read `bpot:`. The text is kept, not
+rewritten: this repository is a test bed for the BPO port (WP6, B16).
+
 > **New here?** Read [`docs/HANDOFF.md`](docs/HANDOFF.md) first for what is in this
 > repository and what is not. [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) is how to run
 > things; [`docs/process/PROCESS.md`](docs/process/PROCESS.md) is why it is built this way.
