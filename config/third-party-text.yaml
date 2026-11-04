@@ -29,4 +29,23 @@
 
 format_version: 1
 
-declarations: []
+# BPO's values (WP6 B2; BPO ADR-003). Declared for S2u and S2 on the BPO
+# architect's decision of 2026-11-04, a declared change under A9 section 5.
+# The attribution is APQC's notice, verbatim (BPO config.PCF_NOTICE).
+
+declarations:
+  - property: https://fandaws.com/ontology/bpot#apqcSourceText   # the verbatim element descriptions
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.
+  - property: https://fandaws.com/ontology/bpot#pcfID   # the element IDs
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.
+  - property: https://fandaws.com/ontology/bpot#hierarchyID   # the hierarchy IDs
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.
