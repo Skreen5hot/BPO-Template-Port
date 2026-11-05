@@ -33,3 +33,9 @@
 *.png -text
 *.xlsx -text
 .DS_Store -text
+
+# The communications record is digest-bound: an incoming body must stay
+# the original's bytes, whatever its line endings, so git never converts
+# them here (communications protocol 1.1, Rule 7). Last, so it overrides
+# the `*` rule above.
+communications/** -text
