@@ -1798,7 +1798,7 @@ validate	validation.realist	https://fandaws.com/ontology/bpot#SalesForecast	http
 validate	validation.realist	https://fandaws.com/ontology/bpot#SalesForecast	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	2601c8e5ec7e1a26	Warning	K03
 validate	validation.realist	https://fandaws.com/ontology/bpot#SalesProfessionalRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	09fa0ba19f975b25	Warning	K06
 validate	validation.realist	https://fandaws.com/ontology/bpot#SalesProfessionalRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	c8886c493c236039	Warning	K04
-validate	validation.realist	https://fandaws.com/ontology/bpot#SeniorManagementRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassPlacementShape	5a25d88404459956	Violation	K21
+validate	validation.realist	https://fandaws.com/ontology/bpot#SeniorManagementRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassPlacementShape	5a25d88404459956	Violation	U
 validate	validation.realist	https://fandaws.com/ontology/bpot#SeniorManagerRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	09fa0ba19f975b25	Warning	K06
 validate	validation.realist	https://fandaws.com/ontology/bpot#SeniorManagerRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	4d7229ccb14653c4	Warning	K04
 validate	validation.realist	https://fandaws.com/ontology/bpot#ServiceDeliveryPersonnelRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	09fa0ba19f975b25	Warning	K06
@@ -1827,4 +1827,4 @@ validate	validation.realist	https://fandaws.com/ontology/bpot#Warehouse	https://
 validate	validation.realist	https://fandaws.com/ontology/bpot#Warehouse	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	853cbbc0fc2002eb	Warning	K03
 validate	validation.realist	https://fandaws.com/ontology/bpot#WarrantyAdministratorRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	09fa0ba19f975b25	Warning	K06
 validate	validation.realist	https://fandaws.com/ontology/bpot#WarrantyAdministratorRole	https://fandaws.com/ontology/bpot/shapes/realist#AuthoredClassReviewShape	32858f90ab7b929f	Warning	K04
-validate	validation.wellformedness	https://fandaws.com/ontology/bpot#SeniorManagementRole	_:constraint-b8c9ef65663b	b8c9ef65663b61be	Violation	K20
+validate	validation.wellformedness	https://fandaws.com/ontology/bpot#SeniorManagementRole	_:constraint-b8c9ef65663b	b8c9ef65663b61be	Violation	U

@@ -128,7 +128,7 @@ from was not kept); a check of the version IRI alone cannot tell such a file fro
 and the IRI is the same in every file. Where this record or the Phase B change record says
 "Prescriptive ICE" for `965`, read "Directive ICE" for the pinned release.
 
-### 2026-11-04 — K20 and K21 for S2u/S2, and K02 narrowed (PROPOSED, pending the BPO architect)
+### 2026-11-04 — K20 and K21 for S2u/S2, and K02 narrowed (proposed; decided 2026-11-17, below)
 
 **Why:** S2u and S2 (BPO `2b86c91`) give two findings that no class covers, both on
 `bpot:SeniorManagementRole`:
@@ -160,3 +160,25 @@ related to" a class. The S0 and S1 classifications are unchanged by this: rerun,
 **Not fixed in BPO.** Phase B's correction scope is closed (BPO architect, 2026-11-03). This
 is recorded and classed as a recommendation: restore the definition and the `BFO_0000023`
 parent on the deprecated class, beside `owl:deprecated`.
+
+### 2026-11-17 — Decided: K20 and K21 not added; K02 narrowed (BPO architect)
+
+**Decision** (BPO architect, 2026-11-17, A6):
+
+- **K20 and K21 are not added.** The class list stays as fixed for S2. The two findings
+  are reported as **unclassified** (`U` in `classes.tsv`, 2 on S2u and S2). Nothing is lost
+  to the comparison: their cause is recorded above, in the comparison (§5) and in the
+  evaluation, and the recommendation stands.
+- **K02 is narrowed, as proposed.** Without it, the placement finding would be miscounted
+  as K02.
+
+**Reason:** a frozen list is extended only when the comparison needs it. Two findings with
+one documented cause do not need new classes.
+
+**Effect:** `wp6_classify.py` was rerun on all four states, in an environment rebuilt from
+the manifests' pins.
+
+- S0 and S1: `classes.tsv` is byte for byte as committed.
+- S2u and S2: only the two rows change, from K20 and K21 to `U`.
+
+No finding count changes.
