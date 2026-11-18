@@ -30,8 +30,7 @@ Of the template's findings:
 | Concept scheme without a top concept, properties without definitions | 1 + 10 | B12, B5 |
 
 It also detected **the one regression a correction introduced**. BPO's B1 deprecation of
-`SeniorManagementRole` removed its definition and parent (two findings, left unclassified by
-decision, 2026-11-17). BPO's own gates passed
+`SeniorManagementRole` removed its definition and parent (K20, K21). BPO's own gates passed
 it, so the template caught a defect the source project's validation missed.
 
 **False alarms are few.** 16 at S0 (K17 9, K18 7), all from the label and comment checks.
@@ -144,7 +143,7 @@ substitute for referent-level review**.
 **BPO**
 
 1. Restore `SeniorManagementRole`'s definition and its `BFO_0000023` parent beside
-   `owl:deprecated` (the two unclassified findings). It is the only regression.
+   `owl:deprecated` (K20/K21). It is the only regression.
 2. Decide how BPO-authored definitions record their authorship (K01, 1,291).
 3. Assess the 37-class capability-as-process backlog, with its 111 realized-in
    restrictions and 20 definitions.

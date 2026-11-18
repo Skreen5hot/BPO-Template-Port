@@ -176,11 +176,12 @@ routability.
 | K12 / K17 parenthetical label | 9 / 9 | same | 1 / 9 | 1 / 9 | 8 / 0 | 0 | B10. The 1 left is the deprecated `ActOfCommunication`'s "(shared anchor)"; K17 is APQC's own names (false alarm) |
 | K13 Organization where CCO wants an Agent | 5 | 5 | 5 | 5 | 0 | 0 | B11: documented, upstream |
 | K14 / K15 / K16 | 10 / 1 / 1 | 0 / 0 / 1 | 0 | 0 | 12 | 0 | B5, B12, B4 |
-| **Unclassified** (`U`): a class without definition; a class that reaches no BFO category | 0 | 0 | 2 | — | — | 2 | **Regression.** See below |
+| **K20** class without definition | 0 | 0 | 1 | — | — | 1 | **Regression.** See below |
+| **K21** class reaches no BFO category | 0 | 0 | 1 | — | — | 1 | **Regression.** See below |
 | **Total** | **4,323** | **3,749** | **1,829** | 1,800 | 2,523 | 29 | |
 
-**The two unclassified findings** fit no class on the fixed list. The BPO architect decided
-on 2026-11-17 (A6, `classification.md`) to add no class for them. Both are on `bpot:SeniorManagementRole`. BPO's
+**K20 and K21** were approved by the BPO architect on 2026-11-05, under A6
+(`classification.md`). Both findings are on `bpot:SeniorManagementRole`. BPO's
 B1 consolidation (`d117716`) deprecated the class and removed its definition and parent.
 The template's deprecation policy keeps both, and BPO's later deprecation of
 `ActOfCommunication` (`ff87b3b`) did keep them. BPO's gates do not check deprecated classes
@@ -197,7 +198,7 @@ recorded as a recommendation.
 | **Detected by BPO's own gates, corrected by BPO** | Decision A (Gate F's capability-as-process rule, which the template's configured scheme rule reproduces exactly as K11) |
 | **Detected by human review** | B2 (licensing), B7, **B8** (the 356 pairs, 197 axioms, 57 definitions, delivery requirements), B16, B17, B18, `ITServiceSolution`, P12721 (found in the CCO-pin evidence work, E-B1) |
 | **Detected by the experiment's comparison, not a check** | E-B1, the CCO pin defect (template digest pinning made it visible) |
-| **Introduced by a correction, detected by the template** | The two unclassified findings, `SeniorManagementRole` |
+| **Introduced by a correction, detected by the template** | K20/K21, `SeniorManagementRole` |
 
 ## 7. Measurement incidents in this run
 
@@ -213,8 +214,8 @@ recorded as a recommendation.
   pins). All measurements here ran in the Phase A environment, whose distributions equal
   the S0/S1 manifests.
 - **Classifier.** `wp6_classify.py` put every placement-shape finding in K02. Narrowed to
-  the message, with S0 and S1 reclassified byte for byte (decided 2026-11-17, A6).
+  the message, with S0 and S1 reclassified byte for byte (approved with K20/K21, 2026-11-05).
 - **The measurement environment was rebuilt (2026-11-17).** Temp-folder cleanup had
   damaged the Phase A environment. It was rebuilt outside the temp folder from the
-  manifests' pins, which its `pip freeze` matches exactly. Reclassifying S0 and S1 in the
-  rebuilt environment reproduced their committed `classes.tsv` byte for byte.
+  manifests' pins, which its `pip freeze` matches exactly. Reclassifying all four
+  states in it reproduced every committed `classes.tsv` byte for byte.

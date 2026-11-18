@@ -128,7 +128,7 @@ from was not kept); a check of the version IRI alone cannot tell such a file fro
 and the IRI is the same in every file. Where this record or the Phase B change record says
 "Prescriptive ICE" for `965`, read "Directive ICE" for the pinned release.
 
-### 2026-11-04 — K20 and K21 for S2u/S2, and K02 narrowed (proposed; decided 2026-11-17, below)
+### 2026-11-04 — K20 and K21 for S2u/S2, and K02 narrowed (proposed; APPROVED 2026-11-05, below)
 
 **Why:** S2u and S2 (BPO `2b86c91`) give two findings that no class covers, both on
 `bpot:SeniorManagementRole`:
@@ -161,24 +161,26 @@ related to" a class. The S0 and S1 classifications are unchanged by this: rerun,
 is recorded and classed as a recommendation: restore the definition and the `BFO_0000023`
 parent on the deprecated class, beside `owl:deprecated`.
 
-### 2026-11-17 — Decided: K20 and K21 not added; K02 narrowed (BPO architect)
+### 2026-11-05 — Approved: K20, K21 and the narrowed K02 (BPO architect)
 
-**Decision** (BPO architect, 2026-11-17, A6):
+The BPO architect approved all three as proposed. The approval is recorded in the Template
+Team's WP6 closeout (`EXAMPLE-BPOT-2026-11-05-wp6-closed`, condition 1; template decision
+30), which made it a condition of closing WP6. This record was not updated at the time.
 
-- **K20 and K21 are not added.** The class list stays as fixed for S2. The two findings
-  are reported as **unclassified** (`U` in `classes.tsv`, 2 on S2u and S2). Nothing is lost
-  to the comparison: their cause is recorded above, in the comparison (§5) and in the
-  evaluation, and the recommendation stands.
-- **K02 is narrowed, as proposed.** Without it, the placement finding would be miscounted
-  as K02.
+### 2026-11-17 — K20 and K21 declined (WITHDRAWN 2026-11-18)
 
-**Reason:** a frozen list is extended only when the comparison needs it. Two findings with
-one documented cause do not need new classes.
+On 2026-11-17 the BPO architect declined K20 and K21, and the two findings were reported as
+unclassified (`80a8c38`). Neither the architect nor this team knew of the 2026-11-05
+approval, because the Template Team's closing message had not reached this record.
 
-**Effect:** `wp6_classify.py` was rerun on all four states, in an environment rebuilt from
-the manifests' pins.
+### 2026-11-18 — The 2026-11-05 approval reinstated (BPO architect)
 
-- S0 and S1: `classes.tsv` is byte for byte as committed.
-- S2u and S2: only the two rows change, from K20 and K21 to `U`.
+The BPO architect reinstated the 2026-11-05 approval, and the 2026-11-17 decision is
+withdrawn.
 
-No finding count changes.
+- **Why:** it came first, and WP6 was closed on it.
+- **Effect:** the 2026-11-17 change is reverted.
+  - `classes.tsv` for all four states is byte for byte as at `838120e`, the measurement the
+    Template Team confirmed.
+  - The comparison and the evaluation read K20 and K21 again.
+  - No finding count changed at any point.
