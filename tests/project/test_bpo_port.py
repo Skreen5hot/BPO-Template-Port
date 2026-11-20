@@ -24,6 +24,16 @@ PROPERTIES = ("apqcSourceText", "designatesProcessType", "hierarchyID",
               "requiresPermission", "bearsPermission", "enablesProcess",
               "routable")
 
+#: Definitions BPO has since reworded itself. The port keeps BPO's text
+#: where BPO has one (port_from_bpo.py, "only where absent"; A9 section 5),
+#: so these are BPO's words, not the PO-approved port text of 2026-10-26.
+#: enablesProcess: BPO's WP6 B8 narrowing (2026-11-03), "can realize".
+BPO_REWORDED = {
+    "enablesProcess": "An annotation property that relates an Agent "
+                      "Capability class to a Process class whose instances "
+                      "can realize instances of that capability type.",
+}
+
 
 @pytest.fixture(scope="module")
 def port():
@@ -60,7 +70,7 @@ def test_each_bpo_property_is_an_annotation_property(merged, ns, local):
 @pytest.mark.parametrize("local", PROPERTIES)
 def test_each_bpo_property_carries_its_approved_definition(merged, ns, port, local):
     assert list(merged.objects(ns[local], SKOS.definition)) == [
-        Literal(port.DEFINITIONS[local])]
+        Literal(BPO_REWORDED.get(local, port.DEFINITIONS[local]))]
 
 
 def test_no_object_property_is_minted_here(merged, ns):
@@ -71,15 +81,15 @@ def test_no_object_property_is_minted_here(merged, ns):
     assert minted == []
 
 
-def test_requires_capability_is_exactly_the_mirror_of_enables_process(merged, ns):
-    # enablesProcess is authored; requiresCapability is derived from it by
-    # a transformation rule, not an owl:inverseOf (annotation properties
-    # have no inverses). Neither may hold a pair the other lacks.
+def test_every_capability_requirement_is_an_enabled_pair(merged, ns):
+    # Since BPO's WP6 B8 (2026-11-03) requiresCapability is no longer the
+    # mirror of enablesProcess: a pair becomes a requirement only when BPO
+    # classifies it as necessary. So every requirement must still be an
+    # enabled pair, read in the other direction; not every pair need be one.
     enabled = {(process, capability) for capability, process
                in merged.subject_objects(ns.enablesProcess)}
     required = set(merged.subject_objects(ns.requiresCapability))
-    assert enabled and enabled == required, (
-        sorted(enabled - required)[:5], sorted(required - enabled)[:5])
+    assert enabled and required <= enabled, sorted(required - enabled)[:5]
 
 
 def test_every_routable_value_is_a_boolean(merged, ns):
@@ -105,8 +115,12 @@ def test_every_source_description_is_in_a_module_that_names_the_release(modules,
     assert holding
     for path, module in holding:
         header = next(module.subjects(RDF.type, OWL.Ontology))
-        assert Literal(port.PCF_RELEASE) in set(
-            module.objects(header, DCTERMS.source)), path
+        # The port adds the release only where BPO's header lacks it; BPO's
+        # own headers name it with the category ("…v7.4, Category 2.0").
+        sources = {str(v) for v in module.objects(header, DCTERMS.source)
+                   if isinstance(v, Literal)}
+        assert any(s == port.PCF_RELEASE or s.startswith(port.PCF_RELEASE + ",")
+                   for s in sources), path
 
 
 def test_the_drift_is_exactly_the_recorded_drift(modules, ns, port):
