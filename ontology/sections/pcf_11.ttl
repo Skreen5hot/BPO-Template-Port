@@ -25,7 +25,7 @@ bpot:EnterpriseRiskManagementCapability a owl:Class ;
     rdfs:label "Enterprise Risk Management Capability" ;
     rdfs:comment "Models the standing function of 11.1 'Manage enterprise risk' (R5/R6). The realized-in axioms to the bounded 11.1 acts are carried by bpo:P17060 below, which is this capability's reality-layer correlate." ;
     rdfs:subClassOf cco:ont00000568 ;
-    skos:definition "An Organization Capability that is realized in acts of establishing risk frameworks and policies and of overseeing, coordinating, and managing risk across an organization and its business units." .
+    skos:definition "An Organization Capability that can be realized in acts of establishing risk frameworks and policies and of overseeing, coordinating, and managing risk across an organization and its business units." .
 
 bpot:ExecutiveManagement a owl:Class ;
     rdfs:label "Executive Management" ;
@@ -162,9 +162,12 @@ bpot:designatesProcessType rdfs:comment "Bridges a catalog node (bpo:PCF_<pcfID>
 <https://fandaws.com/ontology/bpot/sections/pcf_11> a owl:Ontology ;
     dcterms:creator "Aaron Damiano" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:rights """Contains material derived from the APQC Process Classification Framework® (PCF), Cross-Industry version 7.4 (element IDs, hierarchy IDs, names and descriptions), used under APQC's licence, whose notice follows. That material is not covered by this repository's MIT licence (see NOTICE.md). This module is not endorsed by APQC.
+
+©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.""" ;
     dcterms:source <https://fandaws.com/ontology/bpo/slice/11.0>,
-        "APQC Process Classification Framework (Cross-Industry)",
-        "APQC Process Classification Framework (Cross-Industry) v7.4" ;
+        "APQC Process Classification Framework (Cross-Industry) v7.4",
+        "Business Process Ontology 0.4.1, module “APQC reality-layer slice 11.0: Manage Enterprise Risk, Compliance, Remediation, and Resiliency” (https://fandaws.com/ontology/bpo/slice/11.0; Skreen5hot/BusinessProcessOntology at commit 2b86c91)" ;
     dcterms:title "Business Process Ontology -- PCF 11.0 Manage Enterprise Risk, Compliance, Remediation, and Resiliency" ;
     rdfs:comment "Reality layer for APQC PCF category 11.0: the process universals that pass the bounded-occurrent test, the organization capabilities, roles and information content entities they use." ;
     owl:versionIRI <https://fandaws.com/ontology/bpot/0.0.0/sections/pcf_11.ttl> ;
@@ -201,27 +204,13 @@ bpot:BusinessResiliencyCapability a owl:Class ;
     rdfs:label "Business Resiliency Capability" ;
     rdfs:comment "Models APQC process group 11.4 ('Manage business resiliency') under R5/R6: it is a standing function with no natural end, so it is an Organization Capability (cco:ont00000568) realized in its constituent acts, NOT a process. Per R3/R5 it carries no has-process-part to its children. rdfs:label/skos:definition are supplied in the shared-vocabulary block above.",
         "Models the standing function of 11.4 'Manage business resiliency' (R5/R6)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11222 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11223 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11224 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16471 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11221 ],
-        cco:ont00000568 ;
-    skos:definition "An Organization Capability that is realized in acts of developing resilience strategy, planning, testing, and maintaining continuous business operations, and sharing risk knowledge so an organization can rapidly adapt to disruption." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that can be realized in acts of developing resilience strategy, planning, testing, and maintaining continuous business operations, and sharing risk knowledge so an organization can rapidly adapt to disruption." ;
     skos:example "An enterprise's standing ability to keep critical operations running and recover quickly during a regional outage." ;
     bpot:apqcSourceText "Including the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat. Develop a more dynamic, strategic, and integrated approach to managing compliance obligations." ;
     bpot:hierarchyID "11.4" ;
-    bpot:pcfID "11216" .
+    bpot:pcfID "11216" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11216. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:ComplianceAssessment a owl:Class ;
     rdfs:label "Compliance Assessment" ;
@@ -240,9 +229,8 @@ bpot:ComplianceOfficerRole a owl:Class ;
     rdfs:subClassOf obo:BFO_0000023 ;
     skos:definition "A Role that is borne by an Agent in virtue of being tasked with validating, maintaining, and ensuring an organization's enduring compliance with applicable regulations and legislation." .
 
-bpot:ComplianceReport rdfs:label "Compliance Report" ;
-    rdfs:comment "Transferred ICE of 11.2.2.8 (compile and communicate internal and regulatory compliance reports): an already-compiled report submitted to regulators, modeled as the `has input` of P19596 (cco:ont00000151 communication/submission act), not its output. Descriptive: it represents compliance state." ;
-    skos:definition "A Descriptive Information Content Entity that describes an organization's compliance status for submission to internal stakeholders or regulatory agencies." .
+bpot:ComplianceReport rdfs:comment "Transferred ICE of 11.2.2.8 (compile and communicate internal and regulatory compliance reports): an already-compiled report submitted to regulators, modeled as the `has input` of P19596 (cco:ont00000151 communication/submission act), not its output. Descriptive: it represents compliance state." ;
+    skos:scopeNote "As used in section 11.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity that describes an organization's compliance status for submission to internal stakeholders or regulatory agencies." .
 
 bpot:ComplianceScorecard a owl:Class ;
     rdfs:label "Compliance Scorecard" ;
@@ -330,6 +318,255 @@ bpot:LegalAnalysis a owl:Class ;
     rdfs:subClassOf cco:ont00000853 ;
     skos:definition "A Descriptive Information Content Entity that describes an examination of regulatory and legislative frameworks bearing on an organization's remediation obligations, including liabilities for compensation, fines, and corrective effort." .
 
+bpot:P11201 a owl:Class ;
+    rdfs:label "Create remediation plans" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (subClassOf cco:ont00000511 Act of Planning): the act makes a plan, so its definitional output is a Directive ICE (bpo:RemediationPlan)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RemediationPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes a remediation plan prescribing the corrective actions needed to treat adulteration or damage and restore an affected area to operation." ;
+    skos:example "An environmental team drafts a remediation plan for a contaminated site so it can return to operational status." ;
+    bpot:apqcSourceText "Creating plans for remediation efforts. Make a plan to address a case of environmental adulteration. Identify and treat the adulteration so that the area will become operational again." ;
+    bpot:hierarchyID "11.3.1" ;
+    bpot:pcfID "11201" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11201. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11202 a owl:Class ;
+    rdfs:label "Contact and confer with experts" ;
+    rdfs:comment "Gate-F reconciliation: anchored under cco:ont00000379 (Act of Representative Communication, a truth-committed conveyance; subClassOf cco:ont00000402 Act of Communication), with cco:ont00000228 (Planned Act) co-asserted for the standalone S2 act anchor (379 is outside the allowlist {366,636,511,228}). The act's defining axioms -- bpo:SubjectMatterExpert as the has-sender (cco:ont00001844) and bpo:ExpertAdvice (a Descriptive ICE) as the conveyed has-output -- describe the SME->organization advice transfer, which is a representative communication. Previously modeled as cco:ont00000133 (Act of Directive Communication) on the 'soliciting' reading; but that genus casts the soliciting organization as sender and the SME as hearer, contradicting the asserted SME-as-sender axiom, so the genus was reconciled to 379. The earlier rejection of bpo:ActOfAcquisition still stands: obtaining advice by conferral is communication, not procurement (cco:ont00000228-scoped acquisition of an authorization/license/resource). bpo:SubjectMatterExpert is also a definitional participant (obo:BFO_0000057)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ExpertAdvice ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001844 ;
+            owl:someValuesFrom bpot:SubjectMatterExpert ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000057 ;
+            owl:someValuesFrom bpot:SubjectMatterExpert ],
+        cco:ont00000228,
+        cco:ont00000379 ;
+    skos:definition "An Act of Representative Communication in which subject matter experts, conferred with by the organization, convey their expert advice -- committing to its truth -- so that their suggestions can be incorporated into remediation planning." ;
+    skos:example "A remediation lead convenes subject matter experts and captures their advice to refine the remediation plan." ;
+    bpot:apqcSourceText "Discussing and soliciting advice from experts for in order to incorporate their suggestion (regarding Create remediation plans [11201])." ;
+    bpot:hierarchyID "11.3.2" ;
+    bpot:pcfID "11202" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11202. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11203 a owl:Class ;
+    rdfs:label "Identify/dedicate resources" ;
+    rdfs:comment "Gate-F fix (false-friend genus + GOLDEN PRINCIPLE / sibling consistency): RE-ANCHORED from cco:ont00000636 (Act of Appraisal) to bpo:ActOfIdentification (subClassOf cco:ont00000366 Act of Information Processing). Rejected cco:ont00000636: verified in the pinned CCO file, Act of Appraisal is 'An Act of Measuring that involves evaluating, assessing, estimating, or judging the nature, VALUE, importance, condition, or QUALITY of something' (e.g. a critic rating a restaurant). The source text is NOT a value/quality judgement on a scale; it is discernment/enumeration ('DISCERN the resources NEEDED for remediation efforts'). 'Judge what resources are needed' is a surface-word false friend for 'judge the value/quality of resources'. This also matches the sibling 'Identify enterprise level risks' (P16446), an identical 'identify/discern X needed' act anchored at bpo:ActOfIdentification. Output remains the Descriptive ICE bpo:ResourceRequirementsAssessment, so the GOLDEN PRINCIPLE (Information-Processing/discernment -> Descriptive) still holds. The downstream allocation/dedication of resources is operational and non-definitional, so it is not promoted to a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ResourceRequirementsAssessment ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns the resources needed for managing remediation efforts and produces a resource requirements assessment to guide their dedication." ;
+    skos:example "A remediation manager discerns staffing, equipment, and funding needs and records a resource requirements assessment." ;
+    bpot:apqcSourceText "Identifying and dedicating the resources for managing remediation efforts. Discern the resources needed for remediation efforts. Dispense with resources in a sound and well-reasoned manner." ;
+    bpot:hierarchyID "11.3.3" ;
+    bpot:pcfID "11203" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11203. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11204 a owl:Class ;
+    rdfs:label "Investigate legal aspects" ;
+    rdfs:comment "Anchored to bpo:ActOfInvestigation (subClassOf cco:ont00000366 Act of Information Processing): the act examines input regulatory-requirement ICEs and yields a Descriptive ICE (bpo:LegalAnalysis). bpo:RegulatoryRequirement is definitional as input." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirement ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:LegalAnalysis ],
+        bpot:ActOfInvestigation ;
+    skos:definition "An Act of Investigation that examines the regulatory and legislative frameworks bearing on remediation and produces a legal analysis of the organization's obligations and the accuracy of applicable rules and procedures." ;
+    skos:example "Counsel reviews environmental statutes and international covenants and issues a legal analysis of remediation liabilities." ;
+    bpot:apqcSourceText "Examining regulatory and legislative frameworks. Obligate the organization to remediate any damages through compensations, fines, and any other remedial efforts necessitated to correct the situations. Analyze local environmental laws, binding international covenants, etc. in order to examine legal accuracy about the rules and procedures." ;
+    bpot:hierarchyID "11.3.4" ;
+    bpot:pcfID "11204" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11204. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11205 a owl:Class ;
+    rdfs:label "Investigate damage cause" ;
+    rdfs:comment "Anchored to bpo:ActOfInvestigation (subClassOf cco:ont00000366 Act of Information Processing): the act examines evidence of damage and yields a Descriptive ICE (bpo:DamageCauseAnalysis)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:DamageCauseAnalysis ],
+        bpot:ActOfInvestigation ;
+    skos:definition "An Act of Investigation that studies the environmental, physical, or social causes of damage and produces a damage cause analysis that can inform better policies and regulations." ;
+    skos:example "Investigators study a contamination incident and document the chain of causes that led to the damage." ;
+    bpot:apqcSourceText "Studying the causes of damage, which could be environmental, physical, social, etc. at country level in order to institute better policies and regulations." ;
+    bpot:hierarchyID "11.3.5" ;
+    bpot:pcfID "11205" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11205. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11206 a owl:Class ;
+    rdfs:label "Amend or create policy" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (subClassOf cco:ont00000511 Act of Planning): crafting/amending a policy-and-procedure framework yields a Directive ICE (bpo:RemediationPolicy)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RemediationPolicy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that crafts a new framework of remediation policies and procedures, or revises an existing one, to align with applicable national and international regulatory frameworks." ;
+    skos:example "A policy team revises the company-wide remediation policy to reflect new international environmental covenants." ;
+    bpot:apqcSourceText "Crafting a new framework of policies and procedures for deploying remediation efforts, or change existing policies and procedures. Adapt the policy structure to the context of the apposite national and international regulatory frameworks." ;
+    bpot:hierarchyID "11.3.6" ;
+    bpot:pcfID "11206" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11206. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11221 a owl:Class ;
+    rdfs:label "Develop the business resilience strategy" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (under cco:ont00000511 Act of Planning): its definitional output is a Directive ICE (a strategy), per the GOLDEN PRINCIPLE. Models APQC 11.4.1 as an occurrent, not the strategy artifact (bpo:BusinessResilienceStrategy) nor a standing function." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BusinessResilienceStrategy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes and articulates a business resilience strategy prescribing how an organization rapidly adapts to disturbances while maintaining continuous operations and protecting employees, assets, and brand equity." ;
+    skos:example "A resilience team drafts the enterprise's business resilience strategy for the coming planning cycle." ;
+    bpot:apqcSourceText "Creating a strategy for rapidly adapting to disturbances. Maintain continuous business processes and protecting employees, assets, and overall brand equity." ;
+    bpot:hierarchyID "11.4.1" ;
+    bpot:pcfID "11221" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11221. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11222 a owl:Class ;
+    rdfs:label "Perform continuous business operations planning" ;
+    rdfs:comment "Anchored to bpo:ActOfFormulation (under cco:ont00000511 Act of Planning): the definitional output is a Directive ICE (a continuity plan), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BusinessContinuityPlan ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes and articulates a business continuity plan prescribing the measures required to ensure continuous business operations." ;
+    skos:example "A continuity planner produces the business continuity plan for the firm's critical processes." ;
+    bpot:apqcSourceText "Developing plans to ensure continuous business operations." ;
+    bpot:hierarchyID "11.4.2" ;
+    bpot:pcfID "11222" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11222. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11223 a owl:Class ;
+    rdfs:label "Test continuous business operations" ;
+    rdfs:comment "Anchored to bpo:ActOfVerification (inlined; Act of Appraisal cco:ont00000636; also information-processing in character): testing exercises operations against a standard and yields a Descriptive ICE (a test result), per the GOLDEN PRINCIPLE. The business continuity plan is a typical (not definitional) input, so it is noted here rather than promoted to a restriction." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ContinuityTestResult ],
+        bpot:ActOfVerification ;
+    skos:definition "An Act of Verification that exercises the organization's ongoing, non-stop activities against the business continuity plan and produces a continuity test result recording whether those operations perform as intended." ;
+    skos:example "A resilience team runs a failover drill and records the continuity test result." ;
+    bpot:apqcSourceText "Assessing ongoing activities within the organization that are not intended to stop except for in an emergency." ;
+    bpot:hierarchyID "11.4.3" ;
+    bpot:pcfID "11223" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11223. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P11224 a owl:Class ;
+    rdfs:label "Maintain continuous business operations" ;
+    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): despite the APQC label 'Maintain', the Element Description is evaluative ('Evaluating ... Determine which activities ... perform best'), so the definitional output is a Descriptive ICE (an evaluation/judgement), per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:BusinessOperationsEvaluation ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates ongoing business operations to judge which activities generate revenue, perform best, and provide good returns, and produces a business operations evaluation." ;
+    skos:example "An operations analyst evaluates ongoing activities and issues a business operations evaluation ranking them by return." ;
+    bpot:apqcSourceText "Evaluating business operations. Determine which activities generate revenues, perform best, and provide good returns." ;
+    bpot:hierarchyID "11.4.4" ;
+    bpot:pcfID "11224" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11224. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16464 a owl:Class ;
+    rdfs:label "Develop regulatory compliance procedures" ;
+    rdfs:comment "Output is a Directive ICE (bpo:CompliancePolicy), so anchored under bpo:ActOfFormulation (Act of Planning) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CompliancePolicy ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes procedures and methodologies for complying with relevant laws and regulations, producing a compliance policy and procedure specification." ;
+    skos:example "A compliance function documents the step-by-step procedures the firm follows to satisfy a new regulation." ;
+    bpot:apqcSourceText "Developing procedures and methodologies to comply with relevant laws and regulations of an organization's obedience to laws, guidelines, strategies and stipulations related to business." ;
+    bpot:hierarchyID "11.2.2.1" ;
+    bpot:pcfID "16464" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16464. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16465 a owl:Class ;
+    rdfs:label "Identify applicable regulatory requirements" ;
+    rdfs:comment "Anchored under bpo:ActOfIdentification (Act of Information Processing): the act discerns/enumerates applicable requirements. Gate-F fix (GOLDEN PRINCIPLE / Phase-3): the prior `has output some bpo:RegulatoryRequirement` was WRONG -- bpo:RegulatoryRequirement is a DIRECTIVE ICE 'issued by a governing authority', and an information-processing/discernment act does not author that directive (the comment itself notes 'the requirements are not authored here'). The act's true definitional output is a DESCRIPTIVE determination of WHICH requirements apply (bpo:ApplicableRequirementsDetermination, subClassOf cco:ont00000853), which agrees with the ext ActOfIdentification definition ('produces an ICE that registers them') and the GOLDEN PRINCIPLE. The pre-existing body of regulation is the act's INPUT/subject (the candidate regulation it screens), now modeled as `has input some bpo:RegulatoryRequirement`." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:RegulatoryRequirement ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ApplicableRequirementsDetermination ],
+        bpot:ActOfIdentification ;
+    skos:definition "An Act of Identification that discerns which regulatory requirements apply to the organization and produces an applicable requirements determination registering them." ;
+    skos:example "A compliance officer screens the legal landscape and registers which statutes and rules the organization must obey." ;
+    bpot:apqcSourceText "Determining the regulatory requirements that are most appropriate for the organization. Identify goals in order to follow the appropriate rules and regulations, guidelines, and strategies." ;
+    bpot:hierarchyID "11.2.2.2" ;
+    bpot:pcfID "16465" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16465. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16466 a owl:Class ;
+    rdfs:label "Monitor the regulatory environment for changing or emerging regulations" ;
+    rdfs:comment "Anchored under bpo:ActOfMonitoring (inlined above). Output is a Descriptive ICE (bpo:RegulatoryEnvironmentAnalysis), satisfying the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RegulatoryEnvironmentAnalysis ],
+        bpot:ActOfMonitoring ;
+    skos:definition "An Act of Monitoring that repeatedly observes and analyzes the regulatory environment to detect new or changed statutes, policies, and enactments, producing a regulatory environment analysis." ;
+    skos:example "A regulatory-affairs team continuously scans government bulletins and reports newly issued rules affecting the firm." ;
+    bpot:apqcSourceText "Analyzing and overseeing the regulatory environment in order to spot any changing or emerging regulations. This process element calls upon the organization to monitor the regulatory environment for any new statutes, policies, and enactments issued by the respective government authorities or those which have been updated." ;
+    bpot:hierarchyID "11.2.2.3" ;
+    bpot:pcfID "16466" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16466. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16467 a owl:Class ;
+    rdfs:label "Assess current compliance position and identify weaknesses or shortfalls therein" ;
+    rdfs:comment "Anchored under cco:ont00000636 (Act of Appraisal): the act evaluates and judges performance. Output is a Descriptive ICE (bpo:ComplianceAssessment) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplianceAssessment ],
+        cco:ont00000636 ;
+    skos:definition "An Act of Appraisal that evaluates the organization's current compliance position against applicable regulations and judges its weaknesses and shortfalls, producing a compliance assessment." ;
+    skos:example "An internal review judges where the firm falls short of its regulatory obligations and documents the gaps." ;
+    bpot:apqcSourceText "Evaluating current regulatory policies and regulations. Assess their performance. Make necessary changes." ;
+    bpot:hierarchyID "11.2.2.4" ;
+    bpot:pcfID "16467" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16467. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16468 a owl:Class ;
+    rdfs:label "Implement missing or stronger regulatory compliance controls and policies" ;
+    rdfs:comment "Anchored directly under cco:ont00000228 (Planned Act): implementing controls is the carrying-out of prescribed controls, not the production of a new informational artifact, so it bears no definitional has-output restriction. The control and policy specifications it enacts (bpo:ComplianceControl, bpo:CompliancePolicy) are typical prescriptive inputs rather than definitional outputs." ;
+    rdfs:subClassOf cco:ont00000228 ;
+    skos:definition "A Planned Act that puts into effect missing or strengthened regulatory compliance controls and policies as required to close identified compliance gaps." ;
+    skos:example "Following a gap assessment, the firm deploys an additional access-control policy to meet a regulatory requirement." ;
+    bpot:apqcSourceText "Assessing the current policies and policies. Implement missing and necessary changes environmental changes, political changes, technological changes, etc." ;
+    bpot:hierarchyID "11.2.2.5" ;
+    bpot:pcfID "16468" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16468. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16469 a owl:Class ;
+    rdfs:label "Monitor and test regulatory compliance position and existing controls" ;
+    rdfs:comment "Anchored under bpo:ActOfVerification (inlined above): the act tests whether existing controls satisfy requirements. Output is a Descriptive ICE (bpo:ComplianceMonitoringReport) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplianceMonitoringReport ],
+        bpot:ActOfVerification ;
+    skos:definition "An Act of Verification that tests the robustness of the organization's compliance controls, frameworks, and procedures against regulatory requirements, producing a compliance monitoring report of their performance and any necessary changes." ;
+    skos:example "An assurance team runs control tests and reports which compliance controls hold and which must be revised." ;
+    bpot:apqcSourceText "Monitoring, appraising, and evaluating the compliance position of the organization in order to fine-tune for effective remediation. Track efforts for handling regulatory and compliance requirements necessitated by law. Test the robustness of internal frameworks, procedures, and approaches for dealing with these requirements, in order to clearly identify any necessary changes." ;
+    bpot:hierarchyID "11.2.2.6" ;
+    bpot:pcfID "16469" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16469. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P16471 a owl:Class ;
+    rdfs:label "Share knowledge of specific risks across other parts of the organization" ;
+    rdfs:comment "Gate-F fix (sibling/parallel-row consistency): RE-ANCHORED from the generic cco:ont00000402 (Act of Communication) to cco:ont00000151 (Act of Reporting, an Act of Representative Communication) to match its semantically parallel 11.1 sibling P16443 (11.1.1.4 'Coordinate the sharing of risk knowledge', source 'Share risk information within the organization'), which is anchored at cco:ont00000151. Both rows describe an agent conveying bpo:RiskKnowledge across the organization; reconciling them to ONE genus removes the former split (402 vs 151). Also reconciled the I/O pattern: the former `has input some bpo:RiskKnowledge` restriction was DROPPED (a report 'gives an account', it does not consume the same ICE it emits), leaving the single Descriptive output bpo:RiskKnowledge to match P16443's output-only pattern. Cross-reference: P16443." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:RiskKnowledge ],
+        cco:ont00000151,
+        cco:ont00000228 ;
+    skos:definition "An Act of Reporting that gives other parts of the organization a detailed account of risk knowledge about business operations so that prospective risks can be avoided." ;
+    skos:example "A risk manager circulates lessons learned about a near-miss disruption to other business units." ;
+    bpot:apqcSourceText "Sharing information about risks and resilience strategies of business operations across the organization so that prospective risks can be avoided." ;
+    bpot:hierarchyID "11.4.5" ;
+    bpot:pcfID "16471" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16471. The definition is BPO's own wording, written from the element's name and description." .
+
 bpot:P17060 a owl:Class ;
     rdfs:label "Manage enterprise risk" ;
     rdfs:comment "R5: standing function ('Manage ... for the entire organization', no natural end) -> modeled as Organization Capability (cco:ont00000568), not a process. Realized in the bounded child processes 11.1.1-11.1.3. Corresponds to the shared bpo:EnterpriseRiskManagementCapability." ;
@@ -347,7 +584,60 @@ bpot:P17060 a owl:Class ;
     skos:example "A firm's enterprise risk management office that sets risk policy and oversees risk across all business units." ;
     bpot:apqcSourceText "Creating requisite frameworks and coordinating all risk management activities for the entire organization and each function. Manage the enterprise risk by outlining the risk policies and procedures. Monitor and communicate all risk management activities. Encourage correspondence among the business units. Manage the risk of all business units and functions." ;
     bpot:hierarchyID "11.1" ;
-    bpot:pcfID "17060" .
+    bpot:pcfID "17060" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17060. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P17468 a owl:Class ;
+    rdfs:label "Establish compliance framework and policies" ;
+    rdfs:comment "Anchored under bpo:ActOfFormulation (Act of Planning) per the GOLDEN PRINCIPLE: 'establish a framework and policies' composes a Directive ICE. Its APQC children 17469 and 17470 are process parts (cco:ont00001777); standing-function children 14133 and 14137 are Organization Capabilities, not process parts." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:CompliancePolicy ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P17469 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom bpot:P17470 ],
+        bpot:ActOfFormulation ;
+    skos:definition "An Act of Formulation that composes and articulates an organization's compliance policies and procedures, producing a compliance policy and procedure specification." ;
+    skos:example "A compliance team drafts the enterprise compliance policy-and-procedure set governing how the organization meets its legal obligations." ;
+    bpot:apqcSourceText "Developing a set of procedures detailing an organization's progress in complying with established guidelines, provisions, and legislation." ;
+    bpot:hierarchyID "11.2.1" ;
+    bpot:pcfID "17468" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17468. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P19595 a owl:Class ;
+    rdfs:label "Compile and communicate compliance scorecard(s)" ;
+    rdfs:comment "Anchored under bpo:ActOfReporting (PROPOSE-EXT, compilation sense). Output is a Descriptive ICE (bpo:ComplianceScorecard) per the GOLDEN PRINCIPLE." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001986 ;
+            owl:someValuesFrom bpot:ComplianceScorecard ],
+        bpot:ActOfReporting ;
+    skos:definition "An Act of Reporting that compiles compliance metrics into a graphical representation and conveys it to stakeholders, producing a compliance scorecard." ;
+    skos:example "A compliance function publishes a red/amber/green dashboard summarizing the firm's compliance health." ;
+    bpot:apqcSourceText "Creating a graphical representation of metrics in order to communicate the general health of the organization in relation to risk and compliancy." ;
+    bpot:hierarchyID "11.2.2.7" ;
+    bpot:pcfID "19595" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19595. The definition is BPO's own wording, written from the element's name and description." .
+
+bpot:P19596 a owl:Class ;
+    rdfs:label "Compile and communicate internal and regulatory compliance reports" ;
+    rdfs:comment "Gate-F fix (genus vs verbatim source / sibling consistency): RE-ANCHORED from bpo:ActOfReporting (PROPOSE-EXT, compilation sense) to cco:ont00000151 (Act of Reporting, an Act of Representative Communication). Verified cco:ont00000151: 'An Act of Representative Communication performed by giving a detailed account or statement' (subClassOf cco:ont00000379). Reason: although the LABEL says 'compile and communicate', the verbatim apqcSourceText describes ONLY 'Submitting compliance reports to regulatory agencies' -- the mere transfer of an already-existing report, which the bpo:ActOfReporting comment explicitly scopes OUT (it belongs to cco:ont00000151). This also reconciles with the 11.1 reporting siblings (P16443/P16444/P16451/P16462) deliberately anchored at cco:ont00000151. Consequently bpo:ComplianceReport is the TRANSFERRED ICE (`has input`, not has output -- the report pre-exists this submission act), and bpo:RegulatoryAuthority is the definitional recipient via cco:ont00001922 (verified 'has recipient', subPropertyOf BFO_0000057, domain Act of Communication). Rejected option (b) (split compile+submit into two acts) as over-modeling for a single PCF row whose source describes only submission. Compilation of the report is covered upstream (the scorecard/report-creation acts)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001921 ;
+            owl:someValuesFrom bpot:ComplianceReport ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001922 ;
+            owl:someValuesFrom bpot:RegulatoryAuthority ],
+        cco:ont00000151,
+        cco:ont00000228 ;
+    skos:definition "An Act of Reporting that submits an already-compiled compliance report to internal stakeholders and regulatory agencies, giving them a detailed account of the organization's compliance status." ;
+    skos:example "The firm files its periodic securities-compliance report with the relevant regulator." ;
+    bpot:apqcSourceText "Submitting compliance reports to regulatory agencies. These reports can be made to environmental, securities, or human resources agencies as stipulated by the local governing body." ;
+    bpot:hierarchyID "11.2.2.8" ;
+    bpot:pcfID "19596" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 19596. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:RegulatorRelationshipManagementCapability a owl:Class ;
     rdfs:label "Regulator Relationship Management Capability" ;
@@ -356,38 +646,14 @@ bpot:RegulatorRelationshipManagementCapability a owl:Class ;
     skos:definition "An Organization Capability that inheres in an organization in virtue of its capacity to develop and preserve appropriate working relationships with its regulators without compromising the legal basis of those relationships." .
 
 bpot:RegulatoryAuthority rdfs:comment "Recipient/counterparty in 11.2 (maintain relationships with regulators 11.2.2.9; submit reports 11.2.2.8) and source of requirements investigated in 11.3.4." ;
-    skos:definition "An Organization that bears a regulatory-authority role, issuing laws, statutes, permits, or requirements and overseeing an organization's compliance." .
+    skos:scopeNote "As used in section 11.0 before WP6 B1 (2026-10-31): An Organization that bears a regulatory-authority role, issuing laws, statutes, permits, or requirements and overseeing an organization's compliance." .
 
 bpot:RegulatoryComplianceManagementCapability a owl:Class ;
     rdfs:label "Regulatory Compliance Management Capability" ;
-    rdfs:comment "Reality-layer correlate of APQC 11.2.2 (PCF 16463), a standing 'Manage' function with no natural end; modeled as a capability (R5/R6). Its APQC children that are bounded occurrents (16464, 16465, 16466, 16467, 16468, 16469, 19595, 19596) are the acts in which it is realized -- not process parts, since a capability is not a process. bpo:RegulatoryComplianceManagementCapability is a specialization of bpo:ComplianceManagementCapability." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16464 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16465 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16466 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16467 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16468 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P16469 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P19595 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P19596 ],
-        bpot:ComplianceManagementCapability,
+    rdfs:comment "Reality-layer correlate of APQC 11.2.2 (PCF 16463), a standing 'Manage' function with no natural end; modeled as a capability (R5/R6). Its APQC children that are bounded occurrents (16464, 16465, 16466, 16467, 16468, 16469, 19595, 19596) are the acts in which it is realized -- not process parts, since a capability is not a process. bpo:RegulatoryComplianceManagementCapability is a specialization of bpo:ComplianceManagementCapability. WP6 B8 step 1 (BPO architect, 2026-11-03): the realized-in (obo:BFO_0000054) restrictions were removed, because a capability can exist unrealized; the processes it can be realized in are bpo:enablesProcess pairs from capabilities/capability_scope.json." ;
+    rdfs:subClassOf bpot:ComplianceManagementCapability,
         cco:ont00000568 ;
-    skos:definition "An Organization Capability that inheres in an organization in virtue of its capacity to obey the laws, guidelines, strategies, and stipulations applicable to its business, realized in acts of developing procedures, identifying requirements, monitoring the regulatory environment, assessing and testing its compliance position, implementing controls, and reporting on compliance." .
+    skos:definition "A Compliance Management Capability that inheres in an organization in virtue of its capacity to obey the laws, guidelines, strategies, and stipulations applicable to its business, and that can be realized in acts of developing procedures, identifying requirements, monitoring the regulatory environment, assessing and testing its compliance position, implementing controls, and reporting on compliance." .
 
 bpot:RegulatoryEnvironmentAnalysis a owl:Class ;
     rdfs:label "Regulatory Environment Analysis" ;
@@ -398,35 +664,18 @@ bpot:RegulatoryEnvironmentAnalysis a owl:Class ;
 bpot:RemediationManagementCapability a owl:Class ;
     rdfs:label "Remediation Management Capability" ;
     rdfs:comment "Models the standing function of 11.3 'Manage remediation efforts' (R5/R6)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11201 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11202 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11203 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11204 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11205 ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P11206 ],
-        cco:ont00000568 ;
-    skos:definition "An Organization Capability that is realized in acts of planning, resourcing, investigating, and policy-making for the remediation of environmental adulteration." ;
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that can be realized in acts of planning, resourcing, investigating, and policy-making for the remediation of environmental adulteration." ;
     bpot:apqcSourceText "Administering the efforts and activities for remediation. This process element requires the organization to create plans for corrective action in collaboration with government agencies and pertinent professional services agencies which specialize in remediation efforts relevant to the organization's operations. Additionally, the organization needs to consult experts to validate the plan, determine resources allocation, resolve any legal concerns, and formulate a company-wide policy for remediation." ;
     bpot:hierarchyID "11.3" ;
-    bpot:pcfID "11185" .
+    bpot:pcfID "11185" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 11185. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:RemediationPlan rdfs:comment "Output of 11.3.1 (create remediation plans), produced by bpo:ActOfFormulation (reused from ext). Directive: a plan prescribes intended corrective acts." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001808 ;
             owl:someValuesFrom bpot:ContaminatedMaterial ] ;
-    skos:definition "A Directive Information Content Entity, about a case of contamination, that prescribes the corrective actions for identifying and treating environmental adulteration so that an affected area becomes operational again." .
+    skos:scopeNote "As used in section 11.0 before WP6 B1 (2026-10-31): A Directive Information Content Entity, about a case of contamination, that prescribes the corrective actions for identifying and treating environmental adulteration so that an affected area becomes operational again." .
 
 bpot:RemediationPolicy a owl:Class ;
     rdfs:label "Remediation Policy" ;
@@ -477,157 +726,14 @@ bpot:SubjectMatterExpertRole a owl:Class ;
 bpot:ComplianceManagementCapability a owl:Class ;
     rdfs:label "Compliance Management Capability" ;
     rdfs:comment "Models the standing function of 11.2 'Manage compliance' (R5/R6). Its regulatory-compliance facet is further specialized by bpo:RegulatoryComplianceManagementCapability." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000054 ;
-            owl:someValuesFrom bpot:P17468 ],
-        cco:ont00000568 ;
-    skos:definition "An Organization Capability that is realized in acts of establishing compliance frameworks and policies and of managing enduring compliance with industry regulations and government legislation." .
+    rdfs:subClassOf cco:ont00000568 ;
+    skos:definition "An Organization Capability that can be realized in acts of establishing compliance frameworks and policies and of managing enduring compliance with industry regulations and government legislation." .
 
 bpot:EnterpriseRiskReport a owl:Class ;
     rdfs:label "Enterprise Risk Report" ;
     rdfs:comment "Shared reporting output across 11.1.1.5, 11.1.2.6, and 11.1.3.7. Descriptive (it represents the state of risk), produced by Act of Reporting." ;
     rdfs:subClassOf cco:ont00000853 ;
     skos:definition "A Descriptive Information Content Entity that describes hazard, financial, and operational risks and risk-management activities for presentation to executive management and the board." .
-
-bpot:P11201 a owl:Class ;
-    rdfs:label "Create remediation plans" ;
-    rdfs:comment "Anchored to bpo:ActOfFormulation (subClassOf cco:ont00000511 Act of Planning): the act makes a plan, so its definitional output is a Directive ICE (bpo:RemediationPlan)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:RemediationPlan ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that composes a remediation plan prescribing the corrective actions needed to treat adulteration or damage and restore an affected area to operation." ;
-    skos:example "An environmental team drafts a remediation plan for a contaminated site so it can return to operational status." ;
-    bpot:apqcSourceText "Creating plans for remediation efforts. Make a plan to address a case of environmental adulteration. Identify and treat the adulteration so that the area will become operational again." ;
-    bpot:hierarchyID "11.3.1" ;
-    bpot:pcfID "11201" .
-
-bpot:P11202 a owl:Class ;
-    rdfs:label "Contact and confer with experts" ;
-    rdfs:comment "Gate-F reconciliation: anchored under cco:ont00000379 (Act of Representative Communication, a truth-committed conveyance; subClassOf cco:ont00000402 Act of Communication), with cco:ont00000228 (Planned Act) co-asserted for the standalone S2 act anchor (379 is outside the allowlist {366,636,511,228}). The act's defining axioms -- bpo:SubjectMatterExpert as the has-sender (cco:ont00001844) and bpo:ExpertAdvice (a Descriptive ICE) as the conveyed has-output -- describe the SME->organization advice transfer, which is a representative communication. Previously modeled as cco:ont00000133 (Act of Directive Communication) on the 'soliciting' reading; but that genus casts the soliciting organization as sender and the SME as hearer, contradicting the asserted SME-as-sender axiom, so the genus was reconciled to 379. The earlier rejection of bpo:ActOfAcquisition still stands: obtaining advice by conferral is communication, not procurement (cco:ont00000228-scoped acquisition of an authorization/license/resource). bpo:SubjectMatterExpert is also a definitional participant (obo:BFO_0000057)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ExpertAdvice ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001844 ;
-            owl:someValuesFrom bpot:SubjectMatterExpert ],
-        [ a owl:Restriction ;
-            owl:onProperty obo:BFO_0000057 ;
-            owl:someValuesFrom bpot:SubjectMatterExpert ],
-        cco:ont00000228,
-        cco:ont00000379 ;
-    skos:definition "An Act of Representative Communication in which subject matter experts, conferred with by the organization, convey their expert advice -- committing to its truth -- so that their suggestions can be incorporated into remediation planning." ;
-    skos:example "A remediation lead convenes subject matter experts and captures their advice to refine the remediation plan." ;
-    bpot:apqcSourceText "Discussing and soliciting advice from experts for in order to incorporate their suggestion (regarding Create remediation plans [11201])." ;
-    bpot:hierarchyID "11.3.2" ;
-    bpot:pcfID "11202" .
-
-bpot:P11203 a owl:Class ;
-    rdfs:label "Identify/dedicate resources" ;
-    rdfs:comment "Gate-F fix (false-friend genus + GOLDEN PRINCIPLE / sibling consistency): RE-ANCHORED from cco:ont00000636 (Act of Appraisal) to bpo:ActOfIdentification (subClassOf cco:ont00000366 Act of Information Processing). Rejected cco:ont00000636: verified in the pinned CCO file, Act of Appraisal is 'An Act of Measuring that involves evaluating, assessing, estimating, or judging the nature, VALUE, importance, condition, or QUALITY of something' (e.g. a critic rating a restaurant). The source text is NOT a value/quality judgement on a scale; it is discernment/enumeration ('DISCERN the resources NEEDED for remediation efforts'). 'Judge what resources are needed' is a surface-word false friend for 'judge the value/quality of resources'. This also matches the sibling 'Identify enterprise level risks' (P16446), an identical 'identify/discern X needed' act anchored at bpo:ActOfIdentification. Output remains the Descriptive ICE bpo:ResourceRequirementsAssessment, so the GOLDEN PRINCIPLE (Information-Processing/discernment -> Descriptive) still holds. The downstream allocation/dedication of resources is operational and non-definitional, so it is not promoted to a restriction." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ResourceRequirementsAssessment ],
-        bpot:ActOfIdentification ;
-    skos:definition "An Act of Identification that discerns the resources needed for managing remediation efforts and produces a resource requirements assessment to guide their dedication." ;
-    skos:example "A remediation manager discerns staffing, equipment, and funding needs and records a resource requirements assessment." ;
-    bpot:apqcSourceText "Identifying and dedicating the resources for managing remediation efforts. Discern the resources needed for remediation efforts. Dispense with resources in a sound and well-reasoned manner." ;
-    bpot:hierarchyID "11.3.3" ;
-    bpot:pcfID "11203" .
-
-bpot:P11204 a owl:Class ;
-    rdfs:label "Investigate legal aspects" ;
-    rdfs:comment "Anchored to bpo:ActOfInvestigation (subClassOf cco:ont00000366 Act of Information Processing): the act examines input regulatory-requirement ICEs and yields a Descriptive ICE (bpo:LegalAnalysis). bpo:RegulatoryRequirement is definitional as input." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001921 ;
-            owl:someValuesFrom bpot:RegulatoryRequirement ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:LegalAnalysis ],
-        bpot:ActOfInvestigation ;
-    skos:definition "An Act of Investigation that examines the regulatory and legislative frameworks bearing on remediation and produces a legal analysis of the organization's obligations and the accuracy of applicable rules and procedures." ;
-    skos:example "Counsel reviews environmental statutes and international covenants and issues a legal analysis of remediation liabilities." ;
-    bpot:apqcSourceText "Examining regulatory and legislative frameworks. Obligate the organization to remediate any damages through compensations, fines, and any other remedial efforts necessitated to correct the situations. Analyze local environmental laws, binding international covenants, etc. in order to examine legal accuracy about the rules and procedures." ;
-    bpot:hierarchyID "11.3.4" ;
-    bpot:pcfID "11204" .
-
-bpot:P11205 a owl:Class ;
-    rdfs:label "Investigate damage cause" ;
-    rdfs:comment "Anchored to bpo:ActOfInvestigation (subClassOf cco:ont00000366 Act of Information Processing): the act examines evidence of damage and yields a Descriptive ICE (bpo:DamageCauseAnalysis)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:DamageCauseAnalysis ],
-        bpot:ActOfInvestigation ;
-    skos:definition "An Act of Investigation that studies the environmental, physical, or social causes of damage and produces a damage cause analysis that can inform better policies and regulations." ;
-    skos:example "Investigators study a contamination incident and document the chain of causes that led to the damage." ;
-    bpot:apqcSourceText "Studying the causes of damage, which could be environmental, physical, social, etc. at country level in order to institute better policies and regulations." ;
-    bpot:hierarchyID "11.3.5" ;
-    bpot:pcfID "11205" .
-
-bpot:P11206 a owl:Class ;
-    rdfs:label "Amend or create policy" ;
-    rdfs:comment "Anchored to bpo:ActOfFormulation (subClassOf cco:ont00000511 Act of Planning): crafting/amending a policy-and-procedure framework yields a Directive ICE (bpo:RemediationPolicy)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:RemediationPolicy ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that crafts a new framework of remediation policies and procedures, or revises an existing one, to align with applicable national and international regulatory frameworks." ;
-    skos:example "A policy team revises the company-wide remediation policy to reflect new international environmental covenants." ;
-    bpot:apqcSourceText "Crafting a new framework of policies and procedures for deploying remediation efforts, or change existing policies and procedures. Adapt the policy structure to the context of the apposite national and international regulatory frameworks." ;
-    bpot:hierarchyID "11.3.6" ;
-    bpot:pcfID "11206" .
-
-bpot:P11221 a owl:Class ;
-    rdfs:label "Develop the business resilience strategy" ;
-    rdfs:comment "Anchored to bpo:ActOfFormulation (under cco:ont00000511 Act of Planning): its definitional output is a Directive ICE (a strategy), per the GOLDEN PRINCIPLE. Models APQC 11.4.1 as an occurrent, not the strategy artifact (bpo:BusinessResilienceStrategy) nor a standing function." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:BusinessResilienceStrategy ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that composes and articulates a business resilience strategy prescribing how an organization rapidly adapts to disturbances while maintaining continuous operations and protecting employees, assets, and brand equity." ;
-    skos:example "A resilience team drafts the enterprise's business resilience strategy for the coming planning cycle." ;
-    bpot:apqcSourceText "Creating a strategy for rapidly adapting to disturbances. Maintain continuous business processes and protecting employees, assets, and overall brand equity." ;
-    bpot:hierarchyID "11.4.1" ;
-    bpot:pcfID "11221" .
-
-bpot:P11222 a owl:Class ;
-    rdfs:label "Perform continuous business operations planning" ;
-    rdfs:comment "Anchored to bpo:ActOfFormulation (under cco:ont00000511 Act of Planning): the definitional output is a Directive ICE (a continuity plan), per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:BusinessContinuityPlan ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that composes and articulates a business continuity plan prescribing the measures required to ensure continuous business operations." ;
-    skos:example "A continuity planner produces the business continuity plan for the firm's critical processes." ;
-    bpot:apqcSourceText "Developing plans to ensure continuous business operations." ;
-    bpot:hierarchyID "11.4.2" ;
-    bpot:pcfID "11222" .
-
-bpot:P11223 a owl:Class ;
-    rdfs:label "Test continuous business operations" ;
-    rdfs:comment "Anchored to bpo:ActOfVerification (inlined; Act of Appraisal cco:ont00000636; also information-processing in character): testing exercises operations against a standard and yields a Descriptive ICE (a test result), per the GOLDEN PRINCIPLE. The business continuity plan is a typical (not definitional) input, so it is noted here rather than promoted to a restriction." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ContinuityTestResult ],
-        bpot:ActOfVerification ;
-    skos:definition "An Act of Verification that exercises the organization's ongoing, non-stop activities against the business continuity plan and produces a continuity test result recording whether those operations perform as intended." ;
-    skos:example "A resilience team runs a failover drill and records the continuity test result." ;
-    bpot:apqcSourceText "Assessing ongoing activities within the organization that are not intended to stop except for in an emergency." ;
-    bpot:hierarchyID "11.4.3" ;
-    bpot:pcfID "11223" .
-
-bpot:P11224 a owl:Class ;
-    rdfs:label "Maintain continuous business operations" ;
-    rdfs:comment "Anchored to cco:ont00000636 (Act of Appraisal): despite the APQC label 'Maintain', the Element Description is evaluative ('Evaluating ... Determine which activities ... perform best'), so the definitional output is a Descriptive ICE (an evaluation/judgement), per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:BusinessOperationsEvaluation ],
-        cco:ont00000636 ;
-    skos:definition "An Act of Appraisal that evaluates ongoing business operations to judge which activities generate revenue, perform best, and provide good returns, and produces a business operations evaluation." ;
-    skos:example "An operations analyst evaluates ongoing activities and issues a business operations evaluation ranking them by return." ;
-    bpot:apqcSourceText "Evaluating business operations. Determine which activities generate revenues, perform best, and provide good returns." ;
-    bpot:hierarchyID "11.4.4" ;
-    bpot:pcfID "11224" .
 
 bpot:P16439 a owl:Class ;
     rdfs:label "Establish the enterprise risk framework and policies" ;
@@ -655,7 +761,8 @@ bpot:P16439 a owl:Class ;
     skos:example "A risk committee drafting the firm's enterprise risk policy framework for the coming year." ;
     bpot:apqcSourceText "Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financial, operational, and strategic risks." ;
     bpot:hierarchyID "11.1.1" ;
-    bpot:pcfID "16439" .
+    bpot:pcfID "16439" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16439. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16440 a owl:Class ;
     rdfs:label "Determine risk tolerance for organization" ;
@@ -668,7 +775,8 @@ bpot:P16440 a owl:Class ;
     skos:example "A board setting the maximum acceptable annual value-at-risk for the enterprise." ;
     bpot:apqcSourceText "Recognizing the organization's tolerance for risk, given risk-return trade-offs for one or more anticipated and predictable consequences." ;
     bpot:hierarchyID "11.1.1.1" ;
-    bpot:pcfID "16440" .
+    bpot:pcfID "16440" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16440. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16441 a owl:Class ;
     rdfs:label "Develop and maintain enterprise risk policies and procedures" ;
@@ -681,7 +789,8 @@ bpot:P16441 a owl:Class ;
     skos:example "A risk team updating the corporate risk policy manual after a regulatory change." ;
     bpot:apqcSourceText "Establishing and maintaining the policies and procedures for managing risk. Create rules and regulations for enterprise risk dealing with hazardous, financial, operational, and strategic risks." ;
     bpot:hierarchyID "11.1.1.2" ;
-    bpot:pcfID "16441" .
+    bpot:pcfID "16441" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16441. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16442 a owl:Class ;
     rdfs:label "Identify and implement enterprise risk management tools" ;
@@ -694,7 +803,8 @@ bpot:P16442 a owl:Class ;
     skos:example "Selecting and configuring a GRC platform and a Monte-Carlo risk-modeling tool as the firm's standard ERM toolset." ;
     bpot:apqcSourceText "Recognizing and implementing tools for managing risk. Identify and apply enterprise risk management tools. Leverage methods and processes to manage risks and opportunities associated with business objectives." ;
     bpot:hierarchyID "11.1.1.3" ;
-    bpot:pcfID "16442" .
+    bpot:pcfID "16442" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16442. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16443 a owl:Class ;
     rdfs:label "Coordinate the sharing of risk knowledge across the organization" ;
@@ -708,7 +818,8 @@ bpot:P16443 a owl:Class ;
     skos:example "A risk manager circulating an operational-risk briefing to all business-unit heads." ;
     bpot:apqcSourceText "Communicating the knowledge about risk within the organization. Identify operational risks. Share risk information within the organization." ;
     bpot:hierarchyID "11.1.1.4" ;
-    bpot:pcfID "16443" .
+    bpot:pcfID "16443" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16443. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16444 a owl:Class ;
     rdfs:label "Prepare and report enterprise risk to executive management and board" ;
@@ -722,7 +833,8 @@ bpot:P16444 a owl:Class ;
     skos:example "The CRO presenting the quarterly enterprise risk report to the audit committee." ;
     bpot:apqcSourceText "Preparing and presenting reports about enterprise risk to the management of the organization. Create reports for management on hazard risks (e.g., property damage and liability torts), financial risks (e.g., currency and liquidity risks), and operational risks (e.g., product failure, customer satisfaction, social trends, and competition)." ;
     bpot:hierarchyID "11.1.1.5" ;
-    bpot:pcfID "16444" .
+    bpot:pcfID "16444" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16444. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16445 a owl:Class ;
     rdfs:label "Oversee and coordinate enterprise risk management activities" ;
@@ -759,7 +871,8 @@ bpot:P16445 a owl:Class ;
     skos:example "An enterprise-risk steering cycle that runs identify, assess, mitigate, verify, monitor, and report across the year." ;
     bpot:apqcSourceText "Coordinating to plan, organize, lead, and control the activities of an organization in order to minimize the special effects of risk on capital and earnings." ;
     bpot:hierarchyID "11.1.2" ;
-    bpot:pcfID "16445" .
+    bpot:pcfID "16445" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16445. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16446 a owl:Class ;
     rdfs:label "Identify enterprise level risks" ;
@@ -772,7 +885,8 @@ bpot:P16446 a owl:Class ;
     skos:example "A workshop enumerating strategic and operational risks into the corporate risk register." ;
     bpot:apqcSourceText "Determining risks that could thwart objectives. Document and communicate the concern." ;
     bpot:hierarchyID "11.1.2.1" ;
-    bpot:pcfID "16446" .
+    bpot:pcfID "16446" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16446. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16447 a owl:Class ;
     rdfs:label "Assess risks to determine which to mitigate" ;
@@ -785,7 +899,8 @@ bpot:P16447 a owl:Class ;
     skos:example "Scoring each registered risk by likelihood and impact to prioritize mitigation." ;
     bpot:apqcSourceText "Identifying options/actions to enhance opportunities and reduce threats. Recognize the root reasons of the identified risks." ;
     bpot:hierarchyID "11.1.2.2" ;
-    bpot:pcfID "16447" .
+    bpot:pcfID "16447" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16447. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16448 a owl:Class ;
     rdfs:label "Develop risk mitigation and management strategy and integrate with existing performance management processes" ;
@@ -801,7 +916,8 @@ bpot:P16448 a owl:Class ;
     skos:example "Drafting a hedging-and-controls strategy and integrating it into the annual performance plan." ;
     bpot:apqcSourceText "Developing activities to improve opportunities and lessen threats. Specify the organization's objectives. Evolve strategies and policies to attain these objectives. Assign resources to project objectives." ;
     bpot:hierarchyID "11.1.2.3" ;
-    bpot:pcfID "16448" .
+    bpot:pcfID "16448" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16448. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16449 a owl:Class ;
     rdfs:label "Verify business unit and functional risk mitigation plans are implemented" ;
@@ -814,7 +930,8 @@ bpot:P16449 a owl:Class ;
     skos:example "Auditing a division to confirm its mitigation controls are in place and operating." ;
     bpot:apqcSourceText "Checking that the blueprint created for managing risk in individual business units and divisions is correctly effectuated. Validate the implementation of all activities geared to mitigate risks." ;
     bpot:hierarchyID "11.1.2.4" ;
-    bpot:pcfID "16449" .
+    bpot:pcfID "16449" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16449. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16450 a owl:Class ;
     rdfs:label "Ensure risks and risk mitigation actions are monitored" ;
@@ -827,7 +944,8 @@ bpot:P16450 a owl:Class ;
     skos:example "A dashboard tracking key risk indicators and the status of open mitigation actions each month." ;
     bpot:apqcSourceText "Ensuring risk monitoring and mitigation activities. Monitor actions to enhance opportunities and reduce threats to project objectives." ;
     bpot:hierarchyID "11.1.2.5" ;
-    bpot:pcfID "16450" .
+    bpot:pcfID "16450" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16450. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16451 a owl:Class ;
     rdfs:label "Report on enterprise risk activities" ;
@@ -841,7 +959,8 @@ bpot:P16451 a owl:Class ;
     skos:example "Compiling the period's risk-treatment activities into a report for governance." ;
     bpot:apqcSourceText "Creating a report of activities to address hazard risks, liability torts, financial risks, operational risks, social trends, competition, etc." ;
     bpot:hierarchyID "11.1.2.6" ;
-    bpot:pcfID "16451" .
+    bpot:pcfID "16451" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16451. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16452 a owl:Class ;
     rdfs:label "Coordinate business unit and functional risk management activities" ;
@@ -854,7 +973,8 @@ bpot:P16452 a owl:Class ;
     skos:example "Aligning each division's risk plan and assigning shared resources across the enterprise program." ;
     bpot:apqcSourceText "Coordinating risk management activities to improve opportunities and lessen threats. Specify the organization's objectives. Assign resources to project objectives." ;
     bpot:hierarchyID "11.1.2.7" ;
-    bpot:pcfID "16452" .
+    bpot:pcfID "16452" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16452. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16453 a owl:Class ;
     rdfs:label "Ensure that each business unit/function follows the enterprise risk management process" ;
@@ -867,7 +987,8 @@ bpot:P16453 a owl:Class ;
     skos:example "Reviewing a division against the ERM process checklist." ;
     bpot:apqcSourceText "Checking each business unit's/function's options and activities to improve opportunities and lessen threats." ;
     bpot:hierarchyID "11.1.2.8" ;
-    bpot:pcfID "16453" .
+    bpot:pcfID "16453" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16453. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16454 a owl:Class ;
     rdfs:label "Ensure that each business unit/function follows the enterprise risk reporting process" ;
@@ -880,7 +1001,8 @@ bpot:P16454 a owl:Class ;
     skos:example "Confirming each unit submits its risk report on the prescribed cadence and template." ;
     bpot:apqcSourceText "Checking the reporting process of each business unit's/function's options and activities to improve opportunities and lessen threats." ;
     bpot:hierarchyID "11.1.2.9" ;
-    bpot:pcfID "16454" .
+    bpot:pcfID "16454" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16454. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16456 a owl:Class ;
     rdfs:label "Identify risks" ;
@@ -893,7 +1015,8 @@ bpot:P16456 a owl:Class ;
     skos:example "A project team listing the events that could delay delivery into its risk register." ;
     bpot:apqcSourceText "Developing a timely and continuous process to identify activities that might hinder a project's goals." ;
     bpot:hierarchyID "11.1.3.1" ;
-    bpot:pcfID "16456" .
+    bpot:pcfID "16456" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16456. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16457 a owl:Class ;
     rdfs:label "Assess risks using enterprise risk framework policies and procedures" ;
@@ -909,7 +1032,8 @@ bpot:P16457 a owl:Class ;
     skos:example "Using the corporate risk-scoring framework to rate a proposed venture's exposure." ;
     bpot:apqcSourceText "Determining the possibility that a specified undesirable event will occur using established tools, implements, and frameworks. Use risk assessments to determine, for example, whether to undertake a particular venture, what rate of return a particular investment requires, and how to mitigate an activity's potential losses." ;
     bpot:hierarchyID "11.1.3.2" ;
-    bpot:pcfID "16457" .
+    bpot:pcfID "16457" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16457. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16458 a owl:Class ;
     rdfs:label "Develop mitigation plans for risks" ;
@@ -928,7 +1052,8 @@ bpot:P16458 a owl:Class ;
     skos:example "Drafting a mitigation plan with controls, owners, and contingency arrangements for the top risks." ;
     bpot:apqcSourceText "Developing possibilities and arrangements to improve opportunities and reduce deviations to project objectives." ;
     bpot:hierarchyID "11.1.3.3" ;
-    bpot:pcfID "16458" .
+    bpot:pcfID "16458" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16458. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16459 a owl:Class ;
     rdfs:label "Implement mitigation plans for risks" ;
@@ -941,7 +1066,8 @@ bpot:P16459 a owl:Class ;
     skos:example "Standing up the controls and contingency arrangements specified in the approved mitigation plan." ;
     bpot:apqcSourceText "Executing mitigation plans to improve opportunities and reduce deviations to project objectives." ;
     bpot:hierarchyID "11.1.3.4" ;
-    bpot:pcfID "16459" .
+    bpot:pcfID "16459" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16459. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16460 a owl:Class ;
     rdfs:label "Monitor risks" ;
@@ -954,7 +1080,8 @@ bpot:P16460 a owl:Class ;
     skos:example "Watching key risk indicators on a recurring basis and flagging breaches." ;
     bpot:apqcSourceText "Identifying, examining, and recognizing/justifying any improbability in investment decision making." ;
     bpot:hierarchyID "11.1.3.5" ;
-    bpot:pcfID "16460" .
+    bpot:pcfID "16460" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16460. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16461 a owl:Class ;
     rdfs:label "Analyze risk activities and update plans" ;
@@ -970,7 +1097,8 @@ bpot:P16461 a owl:Class ;
     skos:example "Reviewing the period's incidents and revising the mitigation plan accordingly." ;
     bpot:apqcSourceText "Examining the impact of risk activities in order to update the existing scheme of risk management. Analyze and substantiate the potential for adverse consequences to occur. Consider the risks associated with the activity and the methods available to manage those risks." ;
     bpot:hierarchyID "11.1.3.6" ;
-    bpot:pcfID "16461" .
+    bpot:pcfID "16461" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16461. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P16462 a owl:Class ;
     rdfs:label "Report on risk activities" ;
@@ -984,99 +1112,8 @@ bpot:P16462 a owl:Class ;
     skos:example "Submitting the unit's monthly risk-status report to the program lead." ;
     bpot:apqcSourceText "Creating reports on risk activities, and communicating them to management. Prepare reports on the potential for adverse safety consequences." ;
     bpot:hierarchyID "11.1.3.7" ;
-    bpot:pcfID "16462" .
-
-bpot:P16464 a owl:Class ;
-    rdfs:label "Develop regulatory compliance procedures" ;
-    rdfs:comment "Output is a Directive ICE (bpo:CompliancePolicy), so anchored under bpo:ActOfFormulation (Act of Planning) per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CompliancePolicy ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that composes procedures and methodologies for complying with relevant laws and regulations, producing a compliance policy and procedure specification." ;
-    skos:example "A compliance function documents the step-by-step procedures the firm follows to satisfy a new regulation." ;
-    bpot:apqcSourceText "Developing procedures and methodologies to comply with relevant laws and regulations of an organization's obedience to laws, guidelines, strategies and stipulations related to business." ;
-    bpot:hierarchyID "11.2.2.1" ;
-    bpot:pcfID "16464" .
-
-bpot:P16465 a owl:Class ;
-    rdfs:label "Identify applicable regulatory requirements" ;
-    rdfs:comment "Anchored under bpo:ActOfIdentification (Act of Information Processing): the act discerns/enumerates applicable requirements. Gate-F fix (GOLDEN PRINCIPLE / Phase-3): the prior `has output some bpo:RegulatoryRequirement` was WRONG -- bpo:RegulatoryRequirement is a DIRECTIVE ICE 'issued by a governing authority', and an information-processing/discernment act does not author that directive (the comment itself notes 'the requirements are not authored here'). The act's true definitional output is a DESCRIPTIVE determination of WHICH requirements apply (bpo:ApplicableRequirementsDetermination, subClassOf cco:ont00000853), which agrees with the ext ActOfIdentification definition ('produces an ICE that registers them') and the GOLDEN PRINCIPLE. The pre-existing body of regulation is the act's INPUT/subject (the candidate regulation it screens), now modeled as `has input some bpo:RegulatoryRequirement`." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001921 ;
-            owl:someValuesFrom bpot:RegulatoryRequirement ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ApplicableRequirementsDetermination ],
-        bpot:ActOfIdentification ;
-    skos:definition "An Act of Identification that discerns which regulatory requirements apply to the organization and produces an applicable requirements determination registering them." ;
-    skos:example "A compliance officer screens the legal landscape and registers which statutes and rules the organization must obey." ;
-    bpot:apqcSourceText "Determining the regulatory requirements that are most appropriate for the organization. Identify goals in order to follow the appropriate rules and regulations, guidelines, and strategies." ;
-    bpot:hierarchyID "11.2.2.2" ;
-    bpot:pcfID "16465" .
-
-bpot:P16466 a owl:Class ;
-    rdfs:label "Monitor the regulatory environment for changing or emerging regulations" ;
-    rdfs:comment "Anchored under bpo:ActOfMonitoring (inlined above). Output is a Descriptive ICE (bpo:RegulatoryEnvironmentAnalysis), satisfying the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:RegulatoryEnvironmentAnalysis ],
-        bpot:ActOfMonitoring ;
-    skos:definition "An Act of Monitoring that repeatedly observes and analyzes the regulatory environment to detect new or changed statutes, policies, and enactments, producing a regulatory environment analysis." ;
-    skos:example "A regulatory-affairs team continuously scans government bulletins and reports newly issued rules affecting the firm." ;
-    bpot:apqcSourceText "Analyzing and overseeing the regulatory environment in order to spot any changing or emerging regulations. This process element calls upon the organization to monitor the regulatory environment for any new statutes, policies, and enactments issued by the respective government authorities or those which have been updated." ;
-    bpot:hierarchyID "11.2.2.3" ;
-    bpot:pcfID "16466" .
-
-bpot:P16467 a owl:Class ;
-    rdfs:label "Assess current compliance position and identify weaknesses or shortfalls therein" ;
-    rdfs:comment "Anchored under cco:ont00000636 (Act of Appraisal): the act evaluates and judges performance. Output is a Descriptive ICE (bpo:ComplianceAssessment) per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ComplianceAssessment ],
-        cco:ont00000636 ;
-    skos:definition "An Act of Appraisal that evaluates the organization's current compliance position against applicable regulations and judges its weaknesses and shortfalls, producing a compliance assessment." ;
-    skos:example "An internal review judges where the firm falls short of its regulatory obligations and documents the gaps." ;
-    bpot:apqcSourceText "Evaluating current regulatory policies and regulations. Assess their performance. Make necessary changes." ;
-    bpot:hierarchyID "11.2.2.4" ;
-    bpot:pcfID "16467" .
-
-bpot:P16468 a owl:Class ;
-    rdfs:label "Implement missing or stronger regulatory compliance controls and policies" ;
-    rdfs:comment "Anchored directly under cco:ont00000228 (Planned Act): implementing controls is the carrying-out of prescribed controls, not the production of a new informational artifact, so it bears no definitional has-output restriction. The control and policy specifications it enacts (bpo:ComplianceControl, bpo:CompliancePolicy) are typical prescriptive inputs rather than definitional outputs." ;
-    rdfs:subClassOf cco:ont00000228 ;
-    skos:definition "A Planned Act that puts into effect missing or strengthened regulatory compliance controls and policies as required to close identified compliance gaps." ;
-    skos:example "Following a gap assessment, the firm deploys an additional access-control policy to meet a regulatory requirement." ;
-    bpot:apqcSourceText "Assessing the current policies and policies. Implement missing and necessary changes environmental changes, political changes, technological changes, etc." ;
-    bpot:hierarchyID "11.2.2.5" ;
-    bpot:pcfID "16468" .
-
-bpot:P16469 a owl:Class ;
-    rdfs:label "Monitor and test regulatory compliance position and existing controls" ;
-    rdfs:comment "Anchored under bpo:ActOfVerification (inlined above): the act tests whether existing controls satisfy requirements. Output is a Descriptive ICE (bpo:ComplianceMonitoringReport) per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ComplianceMonitoringReport ],
-        bpot:ActOfVerification ;
-    skos:definition "An Act of Verification that tests the robustness of the organization's compliance controls, frameworks, and procedures against regulatory requirements, producing a compliance monitoring report of their performance and any necessary changes." ;
-    skos:example "An assurance team runs control tests and reports which compliance controls hold and which must be revised." ;
-    bpot:apqcSourceText "Monitoring, appraising, and evaluating the compliance position of the organization in order to fine-tune for effective remediation. Track efforts for handling regulatory and compliance requirements necessitated by law. Test the robustness of internal frameworks, procedures, and approaches for dealing with these requirements, in order to clearly identify any necessary changes." ;
-    bpot:hierarchyID "11.2.2.6" ;
-    bpot:pcfID "16469" .
-
-bpot:P16471 a owl:Class ;
-    rdfs:label "Share knowledge of specific risks across other parts of the organization" ;
-    rdfs:comment "Gate-F fix (sibling/parallel-row consistency): RE-ANCHORED from the generic cco:ont00000402 (Act of Communication) to cco:ont00000151 (Act of Reporting, an Act of Representative Communication) to match its semantically parallel 11.1 sibling P16443 (11.1.1.4 'Coordinate the sharing of risk knowledge', source 'Share risk information within the organization'), which is anchored at cco:ont00000151. Both rows describe an agent conveying bpo:RiskKnowledge across the organization; reconciling them to ONE genus removes the former split (402 vs 151). Also reconciled the I/O pattern: the former `has input some bpo:RiskKnowledge` restriction was DROPPED (a report 'gives an account', it does not consume the same ICE it emits), leaving the single Descriptive output bpo:RiskKnowledge to match P16443's output-only pattern. Cross-reference: P16443." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:RiskKnowledge ],
-        cco:ont00000151,
-        cco:ont00000228 ;
-    skos:definition "An Act of Reporting that gives other parts of the organization a detailed account of risk knowledge about business operations so that prospective risks can be avoided." ;
-    skos:example "A risk manager circulates lessons learned about a near-miss disruption to other business units." ;
-    bpot:apqcSourceText "Sharing information about risks and resilience strategies of business operations across the organization so that prospective risks can be avoided." ;
-    bpot:hierarchyID "11.4.5" ;
-    bpot:pcfID "16471" .
+    bpot:pcfID "16462" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 16462. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P17462 a owl:Class ;
     rdfs:label "Manage business unit and function risk" ;
@@ -1107,26 +1144,8 @@ bpot:P17462 a owl:Class ;
     skos:example "A business unit running its annual risk-and-controls cycle." ;
     bpot:apqcSourceText "Analyzing the threats a business unit/function faces to prioritize the controls it implements.." ;
     bpot:hierarchyID "11.1.3" ;
-    bpot:pcfID "17462" .
-
-bpot:P17468 a owl:Class ;
-    rdfs:label "Establish compliance framework and policies" ;
-    rdfs:comment "Anchored under bpo:ActOfFormulation (Act of Planning) per the GOLDEN PRINCIPLE: 'establish a framework and policies' composes a Directive ICE. Its APQC children 17469 and 17470 are process parts (cco:ont00001777); standing-function children 14133 and 14137 are Organization Capabilities, not process parts." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:CompliancePolicy ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001777 ;
-            owl:someValuesFrom bpot:P17469 ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001777 ;
-            owl:someValuesFrom bpot:P17470 ],
-        bpot:ActOfFormulation ;
-    skos:definition "An Act of Formulation that composes and articulates an organization's compliance policies and procedures, producing a compliance policy and procedure specification." ;
-    skos:example "A compliance team drafts the enterprise compliance policy-and-procedure set governing how the organization meets its legal obligations." ;
-    bpot:apqcSourceText "Developing a set of procedures detailing an organization's progress in complying with established guidelines, provisions, and legislation." ;
-    bpot:hierarchyID "11.2.1" ;
-    bpot:pcfID "17468" .
+    bpot:pcfID "17462" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17462. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P17469 a owl:Class ;
     rdfs:label "Develop enterprise compliance policies and procedures" ;
@@ -1139,7 +1158,8 @@ bpot:P17469 a owl:Class ;
     skos:example "An organization authors its enterprise code of conduct and the procedures implementing it." ;
     bpot:apqcSourceText "Creating a standardized approach to ethics and compliance. Have a programmatic approach for compliance that focuses on the definite risks the organization faces." ;
     bpot:hierarchyID "11.2.1.1" ;
-    bpot:pcfID "17469" .
+    bpot:pcfID "17469" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17469. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P17470 a owl:Class ;
     rdfs:label "Implement enterprise compliance activities" ;
@@ -1149,7 +1169,8 @@ bpot:P17470 a owl:Class ;
     skos:example "Compliance staff roll out and operate the ethics-and-compliance program defined by the policy set." ;
     bpot:apqcSourceText "Implementing standardized for ethics and compliance. Have a programmatic approach, built from the top down, to enterprise compliance that focuses on the definite risks the organization faces." ;
     bpot:hierarchyID "11.2.1.2" ;
-    bpot:pcfID "17470" .
+    bpot:pcfID "17470" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 17470. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:P18129 a owl:Class ;
     rdfs:label "Assess adequacy of insurance coverage" ;
@@ -1162,37 +1183,8 @@ bpot:P18129 a owl:Class ;
     skos:example "Comparing current policy limits to projected exposures and recommending added coverage." ;
     bpot:apqcSourceText "Evaluating the changing needs for insurance coverage. Research available insurance providers and offerings." ;
     bpot:hierarchyID "11.1.3.3.1" ;
-    bpot:pcfID "18129" .
-
-bpot:P19595 a owl:Class ;
-    rdfs:label "Compile and communicate compliance scorecard(s)" ;
-    rdfs:comment "Anchored under bpo:ActOfReporting (PROPOSE-EXT, compilation sense). Output is a Descriptive ICE (bpo:ComplianceScorecard) per the GOLDEN PRINCIPLE." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001986 ;
-            owl:someValuesFrom bpot:ComplianceScorecard ],
-        bpot:ActOfReporting ;
-    skos:definition "An Act of Reporting that compiles compliance metrics into a graphical representation and conveys it to stakeholders, producing a compliance scorecard." ;
-    skos:example "A compliance function publishes a red/amber/green dashboard summarizing the firm's compliance health." ;
-    bpot:apqcSourceText "Creating a graphical representation of metrics in order to communicate the general health of the organization in relation to risk and compliancy." ;
-    bpot:hierarchyID "11.2.2.7" ;
-    bpot:pcfID "19595" .
-
-bpot:P19596 a owl:Class ;
-    rdfs:label "Compile and communicate internal and regulatory compliance reports" ;
-    rdfs:comment "Gate-F fix (genus vs verbatim source / sibling consistency): RE-ANCHORED from bpo:ActOfReporting (PROPOSE-EXT, compilation sense) to cco:ont00000151 (Act of Reporting, an Act of Representative Communication). Verified cco:ont00000151: 'An Act of Representative Communication performed by giving a detailed account or statement' (subClassOf cco:ont00000379). Reason: although the LABEL says 'compile and communicate', the verbatim apqcSourceText describes ONLY 'Submitting compliance reports to regulatory agencies' -- the mere transfer of an already-existing report, which the bpo:ActOfReporting comment explicitly scopes OUT (it belongs to cco:ont00000151). This also reconciles with the 11.1 reporting siblings (P16443/P16444/P16451/P16462) deliberately anchored at cco:ont00000151. Consequently bpo:ComplianceReport is the TRANSFERRED ICE (`has input`, not has output -- the report pre-exists this submission act), and bpo:RegulatoryAuthority is the definitional recipient via cco:ont00001922 (verified 'has recipient', subPropertyOf BFO_0000057, domain Act of Communication). Rejected option (b) (split compile+submit into two acts) as over-modeling for a single PCF row whose source describes only submission. Compilation of the report is covered upstream (the scorecard/report-creation acts)." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cco:ont00001921 ;
-            owl:someValuesFrom bpot:ComplianceReport ],
-        [ a owl:Restriction ;
-            owl:onProperty cco:ont00001922 ;
-            owl:someValuesFrom bpot:RegulatoryAuthority ],
-        cco:ont00000151,
-        cco:ont00000228 ;
-    skos:definition "An Act of Reporting that submits an already-compiled compliance report to internal stakeholders and regulatory agencies, giving them a detailed account of the organization's compliance status." ;
-    skos:example "The firm files its periodic securities-compliance report with the relevant regulator." ;
-    bpot:apqcSourceText "Submitting compliance reports to regulatory agencies. These reports can be made to environmental, securities, or human resources agencies as stipulated by the local governing body." ;
-    bpot:hierarchyID "11.2.2.8" ;
-    bpot:pcfID "19596" .
+    bpot:pcfID "18129" ;
+    cco:ont00001754 "APQC Process Classification Framework (Cross-Industry) v7.4, element 18129. The definition is BPO's own wording, written from the element's name and description." .
 
 bpot:RiskKnowledge a owl:Class ;
     rdfs:label "Risk Knowledge" ;
@@ -1228,10 +1220,11 @@ bpot:SubjectMatterExpert a owl:Class ;
     skos:definition "An Agent that bears a subject-matter-expert role and is consulted to validate remediation plans." .
 
 bpot:CompliancePolicy a owl:Class ;
-    rdfs:label "Compliance Policy and Procedure" ;
+    rdfs:label "Compliance Policy" ;
     rdfs:comment "Shared output across 11.2.1.1 (enterprise compliance policies) and 11.2.2.1 (regulatory compliance procedures). Directive: prescribes compliance conduct." ;
     rdfs:subClassOf cco:ont00000965 ;
-    skos:definition "A Directive Information Content Entity that prescribes an organization's standardized approach to ethics and compliance and the procedures for complying with applicable guidelines, provisions, and legislation." .
+    skos:definition "A Directive Information Content Entity that prescribes an organization's rules, approach, and procedures for adhering to applicable statutes, regulations, guidelines, and ethical standards." ;
+    skos:scopeNote "As used in section 11.0 before WP6 B1 (2026-10-31): A Directive Information Content Entity that prescribes an organization's standardized approach to ethics and compliance and the procedures for complying with applicable guidelines, provisions, and legislation." .
 
 bpot:EnterpriseRiskPolicy a owl:Class ;
     rdfs:label "Enterprise Risk Policy and Procedure" ;
@@ -1243,14 +1236,13 @@ bpot:RegulatoryRequirement a owl:Class ;
     rdfs:label "Regulatory Requirement" ;
     rdfs:comment "Directive (not Descriptive): a regulatory requirement prescribes obligatory conduct. Shared input across 11.2 (identify applicable requirements 11.2.2.2) and 11.3 (investigate legal aspects 11.3.4). Anchored to cco:ont00000965 (Directive/Prescriptive ICE)." ;
     rdfs:subClassOf cco:ont00000965 ;
-    skos:definition "A Directive Information Content Entity, issued by a governing authority, that prescribes a law, guideline, statute, or stipulation with which an organization must comply." .
+    skos:definition "A Directive Information Content Entity, issued by a governing authority, that prescribes a law, statute, regulatory direction, guideline, or legal principle with which an organization must comply." .
 
-bpot:RiskAssessment rdfs:label "Risk Assessment" ;
-    rdfs:comment "Shared output of appraisal acts (11.1.2.2, 11.1.3.2). Descriptive (a judgement), per GOLDEN PRINCIPLE for Act of Appraisal." ;
+bpot:RiskAssessment rdfs:comment "Shared output of appraisal acts (11.1.2.2, 11.1.3.2). Descriptive (a judgement), per GOLDEN PRINCIPLE for Act of Appraisal." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cco:ont00001808 ;
             owl:someValuesFrom bpot:Risk ] ;
-    skos:definition "A Descriptive Information Content Entity, about one or more risks, that describes a judgement of the likelihood and impact of those risks together with their root causes, used to determine which to mitigate." .
+    skos:scopeNote "As used in section 11.0 before WP6 B1 (2026-10-31): A Descriptive Information Content Entity, about one or more risks, that describes a judgement of the likelihood and impact of those risks together with their root causes, used to determine which to mitigate." .
 
 bpot:RiskMonitoringReport a owl:Class ;
     rdfs:label "Risk Monitoring Report" ;

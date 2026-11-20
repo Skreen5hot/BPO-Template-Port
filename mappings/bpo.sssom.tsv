@@ -1,5 +1,5 @@
 # mapping_set_id: https://fandaws.com/ontology/bpot/mappings/bpo
-# mapping_set_description: Every term of this ontology to the term of the Business Process Ontology (Skreen5hot/BusinessProcessOntology, commit bc64e91) it was ported from. Same term, same local name, new namespace.
+# mapping_set_description: Every term of this ontology to the term of the Business Process Ontology (Skreen5hot/BusinessProcessOntology, commit 2b86c91) it was ported from. Same term, same local name, new namespace.
 # license: https://opensource.org/licenses/MIT
 # creator_label:
 #   - Aaron Damiano
@@ -31,7 +31,7 @@ bpot:ActOfDisposition	Act of Disposition	skos:exactMatch	bpo:ActOfDisposition	se
 bpot:ActOfFinancialTransaction	Act of Financial Transaction	skos:exactMatch	bpo:ActOfFinancialTransaction	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ActOfForecasting	Act of Forecasting	skos:exactMatch	bpo:ActOfForecasting	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ActOfFormulation	Act of Formulation	skos:exactMatch	bpo:ActOfFormulation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:ActOfIdentification	Act of Identification (discernment sense)	skos:exactMatch	bpo:ActOfIdentification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:ActOfIdentification	Act of Identification	skos:exactMatch	bpo:ActOfIdentification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ActOfImplementation	Act of Implementation	skos:exactMatch	bpo:ActOfImplementation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ActOfImprovement	Act of Improvement	skos:exactMatch	bpo:ActOfImprovement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ActOfInvestigation	Act of Investigation	skos:exactMatch	bpo:ActOfInvestigation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -68,7 +68,7 @@ bpot:ApplicantDataManagementCapability	Applicant Data Management Capability	skos
 bpot:ApplicantRecord	Applicant Record	skos:exactMatch	bpo:ApplicantRecord	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ApprovalLimitSpecification	Approval Limit Specification	skos:exactMatch	bpo:ApprovalLimitSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ApproveImplementationPlan	Approve implementation plan	skos:exactMatch	bpo:ApproveImplementationPlan	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:ApproveImplementationPlanPermission	Approve implementation plan (permission)	skos:exactMatch	bpo:ApproveImplementationPlanPermission	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:ApproveImplementationPlanPermission	Approve Implementation Plan Permission	skos:exactMatch	bpo:ApproveImplementationPlanPermission	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ApproverRole	Approver role	skos:exactMatch	bpo:ApproverRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ArchitectRole	Architect role	skos:exactMatch	bpo:ArchitectRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ArchitectureCapability	Architecture capability	skos:exactMatch	bpo:ArchitectureCapability	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -229,9 +229,9 @@ bpot:ComplianceMonitoringReport	Compliance Monitoring Report	skos:exactMatch	bpo
 bpot:ComplianceOfficer	Compliance Officer	skos:exactMatch	bpo:ComplianceOfficer	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ComplianceOfficerRole	Compliance Officer Role	skos:exactMatch	bpo:ComplianceOfficerRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CompliancePersonnel	Compliance Personnel	skos:exactMatch	bpo:CompliancePersonnel	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:CompliancePolicy	Compliance Policy and Procedure	skos:exactMatch	bpo:CompliancePolicy	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:CompliancePolicy	Compliance Policy	skos:exactMatch	bpo:CompliancePolicy	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ComplianceProgram	Compliance Program	skos:exactMatch	bpo:ComplianceProgram	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:ComplianceReport	Internal Controls Compliance Report	skos:exactMatch	bpo:ComplianceReport	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:ComplianceReport	Compliance Report	skos:exactMatch	bpo:ComplianceReport	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ComplianceScorecard	Compliance Scorecard	skos:exactMatch	bpo:ComplianceScorecard	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ConsensusDemandForecast	Consensus Demand Forecast	skos:exactMatch	bpo:ConsensusDemandForecast	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ConsolidatedFinancialStatement	Consolidated Financial Statement	skos:exactMatch	bpo:ConsolidatedFinancialStatement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -290,6 +290,7 @@ bpot:CustomerCompensationOffer	Customer Compensation Offer	skos:exactMatch	bpo:C
 bpot:CustomerComplaint	Customer Complaint	skos:exactMatch	bpo:CustomerComplaint	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerComplaintManagementCapability	Customer Complaint Management Capability	skos:exactMatch	bpo:CustomerComplaintManagementCapability	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerData	Customer Data	skos:exactMatch	bpo:CustomerData	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:CustomerDataSpecification	Customer Data Specification	skos:exactMatch	bpo:CustomerDataSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerExperienceAssessment	Customer Experience Assessment	skos:exactMatch	bpo:CustomerExperienceAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerExperienceManagementCapability	Customer Experience Management Capability	skos:exactMatch	bpo:CustomerExperienceManagementCapability	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerExperienceRoadmap	Customer Experience Roadmap	skos:exactMatch	bpo:CustomerExperienceRoadmap	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -311,6 +312,7 @@ bpot:CustomerRequirements	Customer Requirements	skos:exactMatch	bpo:CustomerRequ
 bpot:CustomerResearchFindings	Customer Research Findings	skos:exactMatch	bpo:CustomerResearchFindings	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerRole	Customer Role	skos:exactMatch	bpo:CustomerRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerSatisfactionAssessment	Customer Satisfaction Assessment	skos:exactMatch	bpo:CustomerSatisfactionAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:CustomerSegmentProfile	Customer Segment Profile	skos:exactMatch	bpo:CustomerSegmentProfile	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerServiceCapability	Customer Service Capability	skos:exactMatch	bpo:CustomerServiceCapability	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerServiceChannelStrategy	Customer Service Channel Strategy	skos:exactMatch	bpo:CustomerServiceChannelStrategy	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:CustomerServiceExperienceSpecification	Customer Service Experience Specification	skos:exactMatch	bpo:CustomerServiceExperienceSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -451,7 +453,6 @@ bpot:ExternalEnvironmentAppraisal	External Environment Appraisal	skos:exactMatch
 bpot:ExternalEnvironmentAssessment	External Environment Assessment	skos:exactMatch	bpo:ExternalEnvironmentAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ExternalITSupportProvider	External IT Support Provider	skos:exactMatch	bpo:ExternalITSupportProvider	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ExternalReviewReport	External Review Report	skos:exactMatch	bpo:ExternalReviewReport	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:Facility	Facility (asset)	skos:exactMatch	bpo:Facility	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:FacilityDesign	Facility Design	skos:exactMatch	bpo:FacilityDesign	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:FacilityManagementCapability	Facility Management Capability	skos:exactMatch	bpo:FacilityManagementCapability	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:FacilityManagementPersonnel	Facility Management Personnel	skos:exactMatch	bpo:FacilityManagementPersonnel	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -796,7 +797,7 @@ bpot:NonconformanceRecord	Nonconformance Record	skos:exactMatch	bpo:Nonconforman
 bpot:NonconformanceTrendAnalysis	Nonconformance Trend Analysis	skos:exactMatch	bpo:NonconformanceTrendAnalysis	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ObjectiveAlignmentAssessment	Objective Alignment Assessment	skos:exactMatch	bpo:ObjectiveAlignmentAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ObjectiveRealizationReport	Objective Realization Report	skos:exactMatch	bpo:ObjectiveRealizationReport	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:Offering	Offering (product)	skos:exactMatch	bpo:Offering	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:Offering	Offering	skos:exactMatch	bpo:Offering	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:OmniChannelStrategy	Omni-Channel Strategy	skos:exactMatch	bpo:OmniChannelStrategy	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:OnboardingProgramEvaluation	Onboarding Program Evaluation	skos:exactMatch	bpo:OnboardingProgramEvaluation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:OnboardingProgramSpecification	Onboarding Program Specification	skos:exactMatch	bpo:OnboardingProgramSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -1242,10 +1243,9 @@ bpot:P10524	Manage and maintain employee data	skos:exactMatch	bpo:P10524	semapv:
 bpot:P10526	Develop and manage employee measures	skos:exactMatch	bpo:P10526	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10529	Develop employee communication plan	skos:exactMatch	bpo:P10529	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10530	Manage/Collect employee suggestions and perform employee research	skos:exactMatch	bpo:P10530	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:P10530_SuggestionProgram	Manage employee suggestion program	skos:exactMatch	bpo:P10530_SuggestionProgram	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10531	Manage employee grievances	skos:exactMatch	bpo:P10531	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10532	Deliver employee communications	skos:exactMatch	bpo:P10532	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:P10728	Perform planning and management accounting (capability)	skos:exactMatch	bpo:P10728	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:P10728	Planning and Management Accounting Capability	skos:exactMatch	bpo:P10728	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10729	Perform revenue accounting	skos:exactMatch	bpo:P10729	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10730	Perform general accounting and reporting	skos:exactMatch	bpo:P10730	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10732	Process payroll	skos:exactMatch	bpo:P10732	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -1299,7 +1299,7 @@ bpot:P10784	Perform life cycle costing	skos:exactMatch	bpo:P10784	semapv:Unspeci
 bpot:P10785	Optimize customer and product mix	skos:exactMatch	bpo:P10785	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10786	Track performance of new-customer and product strategies	skos:exactMatch	bpo:P10786	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10787	Prepare activity-based performance measures	skos:exactMatch	bpo:P10787	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:P10788	Manage continuous cost improvement (capability)	skos:exactMatch	bpo:P10788	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:P10788	Continuous Cost Improvement Capability	skos:exactMatch	bpo:P10788	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10789	Establish credit policies	skos:exactMatch	bpo:P10789	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10790	Analyze/Approve new account applications	skos:exactMatch	bpo:P10790	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:P10791	Review existing accounts	skos:exactMatch	bpo:P10791	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4587,7 +4587,8 @@ bpot:PerformanceAssessment	Performance Assessment	skos:exactMatch	bpo:Performanc
 bpot:PerformanceData	Performance Data	skos:exactMatch	bpo:PerformanceData	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:PerformanceImprovementPlan	Performance Improvement Plan	skos:exactMatch	bpo:PerformanceImprovementPlan	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:PerformanceIndicatorSpecification	Performance Indicator Specification	skos:exactMatch	bpo:PerformanceIndicatorSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:PerformanceMeasure	Performance Measure Specification	skos:exactMatch	bpo:PerformanceMeasure	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:PerformanceMeasure	Performance Measure	skos:exactMatch	bpo:PerformanceMeasure	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:PerformanceMeasureSpecification	Performance Measure Specification	skos:exactMatch	bpo:PerformanceMeasureSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:PerformanceMeasurement	Performance Measurement	skos:exactMatch	bpo:PerformanceMeasurement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:PerformanceMetric	Performance Metric	skos:exactMatch	bpo:PerformanceMetric	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:PerformanceMonitoringMethodSpecification	Performance Monitoring Method Specification	skos:exactMatch	bpo:PerformanceMonitoringMethodSpecification	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4787,7 +4788,7 @@ bpot:RemediationPolicy	Remediation Policy	skos:exactMatch	bpo:RemediationPolicy	
 bpot:ReplacementNeedAssessment	Replacement Need Assessment	skos:exactMatch	bpo:ReplacementNeedAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ReplenishmentPlan	Replenishment Plan	skos:exactMatch	bpo:ReplenishmentPlan	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ReprocessingRecord	Reprocessing and Disposal Activity Record	skos:exactMatch	bpo:ReprocessingRecord	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:RequestForProposal	Request for Proposal (RFP/RFQ)	skos:exactMatch	bpo:RequestForProposal	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:RequestForProposal	Request for Proposal	skos:exactMatch	bpo:RequestForProposal	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RequestForQuotation	Request for Quotation	skos:exactMatch	bpo:RequestForQuotation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RequiredCapabilityList	Required Capability List	skos:exactMatch	bpo:RequiredCapabilityList	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RequisitionApprovalDecision	Requisition Approval Decision	skos:exactMatch	bpo:RequisitionApprovalDecision	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4817,7 +4818,7 @@ bpot:ReviewedRequisition	Reviewed Requisition	skos:exactMatch	bpo:ReviewedRequis
 bpot:RewardsAndIncentivesPlan	Rewards and Incentives Plan	skos:exactMatch	bpo:RewardsAndIncentivesPlan	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:Risk	Risk	skos:exactMatch	bpo:Risk	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RiskAnalysisReport	Risk Analysis Report	skos:exactMatch	bpo:RiskAnalysisReport	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:RiskAssessment	Financial Risk Assessment	skos:exactMatch	bpo:RiskAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:RiskAssessment	Risk Assessment	skos:exactMatch	bpo:RiskAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RiskExposureData	Risk Exposure Data	skos:exactMatch	bpo:RiskExposureData	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RiskKnowledge	Risk Knowledge	skos:exactMatch	bpo:RiskKnowledge	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:RiskManager	Risk Manager	skos:exactMatch	bpo:RiskManager	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4878,7 +4879,7 @@ bpot:ServiceDeliveryProcessSpecification	Service Delivery Process Specification	
 bpot:ServiceDeliveryRecord	Service Delivery Record	skos:exactMatch	bpo:ServiceDeliveryRecord	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ServiceDeliveryReview	Service Delivery Review	skos:exactMatch	bpo:ServiceDeliveryReview	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ServiceDeliverySatisfactionAssessment	Service Delivery Satisfaction Assessment	skos:exactMatch	bpo:ServiceDeliverySatisfactionAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
-bpot:ServiceDeliverySolution	Service Delivery Solution (deployed artifact)	skos:exactMatch	bpo:ServiceDeliverySolution	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:ServiceDeliverySolution	Service Delivery Solution	skos:exactMatch	bpo:ServiceDeliverySolution	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ServiceDeliveryStrategy	Service Delivery Strategy	skos:exactMatch	bpo:ServiceDeliveryStrategy	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ServiceKnowledgeBase	Service Knowledge Base	skos:exactMatch	bpo:ServiceKnowledgeBase	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:ServiceLevelAgreement	Service Level Agreement	skos:exactMatch	bpo:ServiceLevelAgreement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4935,6 +4936,7 @@ bpot:Subsidiary	Subsidiary	skos:exactMatch	bpo:Subsidiary	semapv:UnspecifiedMatc
 bpot:SubsidiaryRole	Subsidiary Role	skos:exactMatch	bpo:SubsidiaryRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SubstitutionBusinessCase	Substitution Business Case	skos:exactMatch	bpo:SubstitutionBusinessCase	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SuccessionPlan	Succession Plan	skos:exactMatch	bpo:SuccessionPlan	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:SuggestionProgramManagement	Manage employee suggestion program	skos:exactMatch	bpo:SuggestionProgramManagement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SuggestionRegister	Employee Suggestion Register	skos:exactMatch	bpo:SuggestionRegister	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:Supplier	Supplier	skos:exactMatch	bpo:Supplier	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplierCapacityProfile	Supplier Capacity Profile	skos:exactMatch	bpo:SupplierCapacityProfile	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -4945,6 +4947,7 @@ bpot:SupplierQuote	Supplier Quote	skos:exactMatch	bpo:SupplierQuote	semapv:Unspe
 bpot:SupplierRecoveryClaim	Supplier Recovery Claim	skos:exactMatch	bpo:SupplierRecoveryClaim	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplierRole	Supplier Role	skos:exactMatch	bpo:SupplierRole	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplierSelectionDecision	Supplier Selection Decision	skos:exactMatch	bpo:SupplierSelectionDecision	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
+bpot:SupplierSolicitation	Supplier Solicitation	skos:exactMatch	bpo:SupplierSolicitation	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplierValidationAssessment	Supplier Validation Assessment	skos:exactMatch	bpo:SupplierValidationAssessment	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplierWarrantyResponsibilityAgreement	Supplier Warranty Responsibility Agreement	skos:exactMatch	bpo:SupplierWarrantyResponsibilityAgreement	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
 bpot:SupplyChainEffectivenessReview	Supply Chain Effectiveness Review	skos:exactMatch	bpo:SupplyChainEffectivenessReview	semapv:UnspecifiedMatching	owl class	namespace move: the same term, ported unchanged
@@ -5055,9 +5058,11 @@ bpot:Workspace	Workspace	skos:exactMatch	bpo:Workspace	semapv:UnspecifiedMatchin
 bpot:apqcSourceText	APQC source description	skos:exactMatch	bpo:apqcSourceText	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:bearsPermission	bears permission	skos:exactMatch	bpo:bearsPermission	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:designatesProcessType	designates process type	skos:exactMatch	bpo:designatesProcessType	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
-bpot:enablesProcess	enables process	skos:exactMatch	bpo:enablesProcess	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
+bpot:enablesProcess	can be realized in process	skos:exactMatch	bpo:enablesProcess	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:hierarchyID	APQC Hierarchy ID	skos:exactMatch	bpo:hierarchyID	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
+bpot:inGrouping	in grouping	skos:exactMatch	bpo:inGrouping	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:pcfID	APQC PCF ID	skos:exactMatch	bpo:pcfID	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
+bpot:permissionApplicableToRole	permission applicable to role	skos:exactMatch	bpo:permissionApplicableToRole	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:requiresCapability	requires capability	skos:exactMatch	bpo:requiresCapability	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:requiresPermission	requires permission	skos:exactMatch	bpo:requiresPermission	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged
 bpot:requiresRole	requires role	skos:exactMatch	bpo:requiresRole	semapv:UnspecifiedMatching	owl annotation property	namespace move: the same term, ported unchanged

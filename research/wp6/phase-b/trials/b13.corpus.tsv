@@ -1,0 +1,4 @@
+# BPO 685f1f2, candidate b13
+#  14 files changed, 39546 insertions(+), 29642 deletions(-)
+gate	exit	seconds	last_lines
+corpus_check (ELK, Gate F)	1	305	pcf-without-P-iri         0   (baseline 0) / readable_label            0   (baseline 0) / * capability-as-process: 30 (expected 39) -- a finding was resolved; fix it, or update BASELINE in this script deliberately.

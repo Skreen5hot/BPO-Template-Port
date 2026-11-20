@@ -1,0 +1,4 @@
+# BPO 685f1f2, candidate none
+# no change
+gate	exit	seconds	last_lines
+corpus_check (ELK, Gate F)	0	399	dangling_ref              0   (baseline 0) / pcf-without-P-iri         0   (baseline 0) / readable_label            0   (baseline 0)

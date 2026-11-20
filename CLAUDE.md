@@ -6,9 +6,13 @@ method.
 
 ## Rules that are easy to break
 
-- **Namespace.** Author terms in `https://fandaws.com/ontology/bpot#` (prefix `bpot:`) with readable local
-  names. The value lives in `config/project.yaml`; the SPARQL in `shapes/` repeats it and
-  `tests/test_namespace.py` holds the two together. Change it with both in one commit.
+- **Namespace.** Author terms in `https://fandaws.com/ontology/bpot#` (prefix `bpot:`). New terms get
+  readable local names; a ported scheme of identifiers is kept and declared in
+  `config/naming.yaml` (`docs/PORTING.md`). The value lives in `config/project.yaml`; the
+  SPARQL in `shapes/` repeats it and `tests/test_namespace.py` holds the two together.
+  Change it with both in one commit.
+- **A project test goes in `tests/project/`**, never beside the template's in `tests/`,
+  which the template owns.
 - **Upstream terms are referenced, never redeclared, and never written from memory.**
   BFO is `obo:BFO_*`, CCO is `cco:ont*` — opaque ids, not readable names. Grep the vendored
   register (`vendor/<id>/<id>-register.json`, every term with its label) before using one.
@@ -19,7 +23,7 @@ method.
 - **A new shape set arrives with its negative fixture** and positive controls in the same
   commit, and its constraint messages are listed by name in a test.
 - **Generated files are regenerated, never edited**: `vendor/**`, `vendor/NOTICE.md`,
-  `config/upstream-extracts.json`, `config/validation-baseline.json`,
+  `config/upstream-extracts.json`,
   `config/corpus-digest.json`. Each names its generator in the layout contract.
   `config/template-manifest.json` is the record of the template this was made from; leave it.
 - **Decisions are the architect's.** Record an act verbatim in `docs/decisions/` with the
@@ -45,6 +49,10 @@ method.
 ```
 
 If the ontology changed: `tools/ontology/corpus_digest.py -o config/corpus-digest.json`, and
-`tools/ontology/validate.py --record` if a finding was fixed. Commit messages carry the
+remove the entry in `config/findings-register.yaml` for a finding that was fixed. A finding
+is accepted only by an entry a person completes (`--propose` prints it); never write the
+reason or the owner for them. Commit messages carry the
 reasoning — what was wrong, why the fix is the fix, what was measured, what is not covered.
-Nothing is pushed without the architect's say-so.
+Nothing is pushed without the architect's say-so, except the first push, which completes
+setting the repository up (the template README's last step, with Pages enabled first) and
+is covered by the request to set it up.

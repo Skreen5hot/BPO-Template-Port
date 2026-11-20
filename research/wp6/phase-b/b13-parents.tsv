@@ -1,0 +1,449 @@
+class	label	parent	status	redundant_via	asserted_in	finding
+bpot:AccountantRole	Accountant Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_9.ttl	K06
+bpot:AccountantRole	Accountant Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ActOfAdvocacy	Act of Advocacy	cco:ont00000228	redundant	cco:ont00001327 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfAdvocacy	Act of Advocacy	cco:ont00001327	needed		ontology/bpot.ttl	K06
+bpot:ActOfCommunication	Act of Communication (shared anchor)	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfCommunication	Act of Communication (shared anchor)	cco:ont00000402	needed		ontology/bpot.ttl	K06
+bpot:ActOfFinancialTransaction	Act of Financial Transaction	cco:ont00000228	redundant	cco:ont00000836 ⊑ cco:ont00000566 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfFinancialTransaction	Act of Financial Transaction	cco:ont00000836	needed		ontology/bpot.ttl	K06
+bpot:ActOfForecasting	Act of Forecasting	cco:ont00000228	redundant	cco:ont00000371 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfForecasting	Act of Forecasting	cco:ont00000371	needed		ontology/bpot.ttl	K06
+bpot:ActOfPayment	Act of Payment	cco:ont00000228	redundant	cco:ont00000836 ⊑ cco:ont00000566 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfPayment	Act of Payment	cco:ont00000836	needed		ontology/bpot.ttl	K06
+bpot:ActOfProduction	Act of Production	cco:ont00000228	redundant	cco:ont00000908 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfProduction	Act of Production	cco:ont00000908	needed		ontology/bpot.ttl	K06
+bpot:ActOfRelationshipManagement	Act of Relationship Management	cco:ont00000228	redundant	cco:ont00000433 ⊑ cco:ont00001327 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfRelationshipManagement	Act of Relationship Management	cco:ont00000433	needed		ontology/bpot.ttl	K06
+bpot:ActOfRemuneration	Act of Remuneration	cco:ont00000228	redundant	cco:ont00000449 ⊑ cco:ont00001334 ⊑ cco:ont00000836 ⊑ cco:ont00000566 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfRemuneration	Act of Remuneration	cco:ont00000449	needed		ontology/bpot.ttl	K06
+bpot:ActOfReporting	Act of Reporting	cco:ont00000228	redundant	cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ActOfReporting	Act of Reporting	cco:ont00000379	needed		ontology/bpot.ttl	K06
+bpot:ActOfTransportation	Act of Transportation	cco:ont00000065	needed		ontology/bpot.ttl	K06
+bpot:ActOfTransportation	Act of Transportation	cco:ont00000228	redundant	cco:ont00000065 ⊑ cco:ont00000357 ⊑ cco:ont00000228	ontology/bpot.ttl	K06
+bpot:ApproverRole	Approver role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:ApproverRole	Approver role	cco:ont00000187	needed		ontology/bpot.ttl	K07
+bpot:ArchitectRole	Architect role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:ArchitectRole	Architect role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:AssetManagerRole	Asset Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_10.ttl	K06
+bpot:AssetManagerRole	Asset Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:AuditorRole	Auditor Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_9.ttl	K06
+bpot:AuditorRole	Auditor Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:BPMGovernanceLeaderRole	BPM Governance Leader Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:BPMGovernanceLeaderRole	BPM Governance Leader Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:BoardOfDirectorsRole	Board of Directors Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:BoardOfDirectorsRole	Board of Directors Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:BusinessAuthorization	Business Authorization	cco:ont00000751	needed		ontology/sections/pcf_1.ttl	K06
+bpot:BusinessAuthorization	Business Authorization	cco:ont00000965	redundant	cco:ont00000751 ⊑ cco:ont00001324 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:BusinessStrategy	Business Strategy	cco:ont00000965	redundant	cco:ont00000974 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:BusinessStrategy	Business Strategy	cco:ont00000974	needed		ontology/sections/pcf_1.ttl	K06
+bpot:CarrierRole	Carrier Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_4.ttl	K06
+bpot:CarrierRole	Carrier Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:CertificationAuthorityRole	Certification Authority Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_7.ttl	K06
+bpot:CertificationAuthorityRole	Certification Authority Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:ChangeChampionRole	Change Champion Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:ChangeChampionRole	Change Champion Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ChangeManagerRole	Change Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:ChangeManagerRole	Change Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:CommunicationStrategy	Communication Strategy	cco:ont00000965	redundant	cco:ont00000974 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:CommunicationStrategy	Communication Strategy	cco:ont00000974	needed		ontology/sections/pcf_1.ttl	K06
+bpot:CompetitiveIntelligenceAnalystRole	Competitive Intelligence Analyst Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_1.ttl	K06
+bpot:CompetitiveIntelligenceAnalystRole	Competitive Intelligence Analyst Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ComplianceOfficerRole	Compliance Officer Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_11.ttl	K06
+bpot:ComplianceOfficerRole	Compliance Officer Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ConstructionContractorRole	Construction Contractor Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_10.ttl	K06
+bpot:ConstructionContractorRole	Construction Contractor Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:ContactVolumeForecast	Contact Volume Forecast	cco:ont00000626	needed		ontology/sections/pcf_6.ttl	K06
+bpot:ContactVolumeForecast	Contact Volume Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_6.ttl	K06
+bpot:CorporateCreditCard	Corporate Credit Card	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_9.ttl	K06
+bpot:CorporateCreditCard	Corporate Credit Card	cco:ont00000995	needed		ontology/sections/pcf_9.ttl	K06
+bpot:CustomerExperienceRoadmap	Customer Experience Roadmap	cco:ont00000965	redundant	cco:ont00000974 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:CustomerExperienceRoadmap	Customer Experience Roadmap	cco:ont00000974	needed		ontology/sections/pcf_1.ttl	K06
+bpot:CustomerLifetimeValue	Customer Lifetime Value Estimate	cco:ont00000626	needed		ontology/sections/pcf_3.ttl	K06
+bpot:CustomerLifetimeValue	Customer Lifetime Value Estimate	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_3.ttl	K06
+bpot:CustomerServiceRepresentativeRole	Customer Service Representative Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_6.ttl	K06
+bpot:CustomerServiceRepresentativeRole	Customer Service Representative Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:DataAnalystRole	Data Analyst Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:DataAnalystRole	Data Analyst Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:DefectiveProduct	Defective Product	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_6.ttl	K06
+bpot:DefectiveProduct	Defective Product	cco:ont00000995	needed		ontology/sections/pcf_6.ttl	K06
+bpot:DemandForecast	Demand Forecast	cco:ont00000626	needed		ontology/sections/pcf_4.ttl	K06
+bpot:DemandForecast	Demand Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_4.ttl	K06
+bpot:DesignStaffRole	Design Staff Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_2.ttl	K06
+bpot:DesignStaffRole	Design Staff Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:DeveloperRole	Developer role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:DeveloperRole	Developer role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:DistributionCenter	Distribution Center	obo:BFO_0000040	redundant	cco:ont00000192 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:DistributionCenter	Distribution Center	cco:ont00000192	needed		ontology/sections/pcf_4.ttl	K06
+bpot:EHSManagerRole	EHS Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:EHSManagerRole	EHS Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:EmployeeRole	Employee Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_7.ttl	K06
+bpot:EmployeeRole	Employee Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:EnterpriseArchitectRole	Enterprise Architect Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_8.ttl	K06
+bpot:EnterpriseArchitectRole	Enterprise Architect Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:EvaluatorRole	Evaluator role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:EvaluatorRole	Evaluator role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:ExecutiveManagementRole	Executive Management Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_11.ttl	K06
+bpot:ExecutiveManagementRole	Executive Management Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ExecutiveRole	Executive Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:ExecutiveRole	Executive Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:FacilityManagerRole	Facility Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_10.ttl	K06
+bpot:FacilityManagerRole	Facility Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:FieldServiceAgentRole	Field Service Agent Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_6.ttl	K06
+bpot:FieldServiceAgentRole	Field Service Agent Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:FinancialAnalystRole	Financial Analyst Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:FinancialAnalystRole	Financial Analyst Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:FinancialInstrument	Traded Financial Instrument	obo:BFO_0000040	redundant	cco:ont00000537 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_9.ttl	K06
+bpot:FinancialInstrument	Traded Financial Instrument	cco:ont00000537	needed		ontology/sections/pcf_9.ttl	K06
+bpot:FinishedProduct	Finished Product	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:FinishedProduct	Finished Product	cco:ont00000995	needed		ontology/sections/pcf_4.ttl	K06
+bpot:GovernmentBodyRole	Government Body Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:GovernmentBodyRole	Government Body Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:HiringManagerRole	Hiring Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_7.ttl	K06
+bpot:HiringManagerRole	Hiring Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:HumanResourcesProfessionalRole	Human Resources Professional Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_7.ttl	K06
+bpot:HumanResourcesProfessionalRole	Human Resources Professional Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ITAsset	IT Asset	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_8.ttl	K06
+bpot:ITAsset	IT Asset	cco:ont00000995	needed		ontology/sections/pcf_8.ttl	K06
+bpot:ITInfrastructureComponent	IT Infrastructure Component	bpot:ITAsset	needed		ontology/sections/pcf_8.ttl	K07
+bpot:ITInfrastructureComponent	IT Infrastructure Component	cco:ont00000117	needed		ontology/sections/pcf_8.ttl	K07
+bpot:ITRiskOwnerRole	IT Risk Owner Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_8.ttl	K06
+bpot:ITRiskOwnerRole	IT Risk Owner Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ITServiceDemandForecast	IT Service Demand Forecast	cco:ont00000626	needed		ontology/sections/pcf_8.ttl	K06
+bpot:ITServiceDemandForecast	IT Service Demand Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_8.ttl	K06
+bpot:InventoryItem	Inventory Item	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:InventoryItem	Inventory Item	cco:ont00000995	needed		ontology/sections/pcf_4.ttl	K06
+bpot:JournalistRole	Journalist Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:JournalistRole	Journalist Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:KnowledgeManagerRole	Knowledge Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:KnowledgeManagerRole	Knowledge Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:LobbyistRole	Lobbyist Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:LobbyistRole	Lobbyist Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:LogisticsServiceProviderRole	Logistics Service Provider Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_4.ttl	K06
+bpot:LogisticsServiceProviderRole	Logistics Service Provider Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:MaintenanceRequirementsForecast	Maintenance Requirements Forecast	cco:ont00000626	needed		ontology/sections/pcf_10.ttl	K06
+bpot:MaintenanceRequirementsForecast	Maintenance Requirements Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_10.ttl	K06
+bpot:MaintenanceTechnicianRole	Maintenance Technician Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_10.ttl	K06
+bpot:MaintenanceTechnicianRole	Maintenance Technician Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ManageBuildingRenovation	Manage building renovation	cco:ont00000228	redundant	cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:ManageBuildingRenovation	Manage building renovation	cco:ont00000970	needed		ontology/sections/pcf_10.ttl	K06
+bpot:ManagerRole	Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_4.ttl	K06
+bpot:ManagerRole	Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:MarketAnalystRole	Market analyst role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:MarketAnalystRole	Market analyst role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:MarketingProfessionalRole	Marketing Professional Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_3.ttl	K06
+bpot:MarketingProfessionalRole	Marketing Professional Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:OrganizationalObjective	Organizational Objective	cco:ont00000476	needed		ontology/sections/pcf_1.ttl	K06
+bpot:OrganizationalObjective	Organizational Objective	cco:ont00000965	redundant	cco:ont00000476 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:OutsideCounselRole	Outside Counsel Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:OutsideCounselRole	Outside Counsel Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:P10036	Communicate strategic vision to stakeholders	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_1.ttl	K06
+bpot:P10036	Communicate strategic vision to stakeholders	cco:ont00000402	needed		ontology/sections/pcf_1.ttl	K06
+bpot:P10046	Communicate mission	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_1.ttl	K06
+bpot:P10046	Communicate mission	cco:ont00000402	needed		ontology/sections/pcf_1.ttl	K06
+bpot:P10052	Perform organization redesign workshops	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_1.ttl	K06
+bpot:P10052	Perform organization redesign workshops	cco:ont00000402	needed		ontology/sections/pcf_1.ttl	K06
+bpot:P10200	Handle sales order inquiries including post-order fulfillment transactions	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P10200	Handle sales order inquiries including post-order fulfillment transactions	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P10211	Provide sales and product/service training to sales partners/alliances	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P10211	Provide sales and product/service training to sales partners/alliances	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P10272	Calculate performance measures	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P10272	Calculate performance measures	cco:ont00000345	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P10290	Negotiate and establish contracts	cco:ont00000228	redundant	cco:ont00000684 ⊑ cco:ont00000821 ⊑ cco:ont00001162 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10290	Negotiate and establish contracts	cco:ont00000684	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10318	Calibrate test equipment	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10318	Calibrate test equipment	cco:ont00000950	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10336	Solicit customer feedback on services delivered	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10336	Solicit customer feedback on services delivered	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10345	Communicate outsourcing needs	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10345	Communicate outsourcing needs	cco:ont00000402	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10366	Perform salvage activities	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10366	Perform salvage activities	cco:ont00000402	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10369	Perform quality testing	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10369	Perform quality testing	cco:ont00000345	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10373	Communicate quality specifications	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10373	Communicate quality specifications	cco:ont00000402	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10374	Perform testing using the standard testing procedure	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P10374	Perform testing using the standard testing procedure	cco:ont00000345	needed		ontology/sections/pcf_4.ttl	K06
+bpot:P10394	Receive customer problems, requests, and inquiries	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10394	Receive customer problems, requests, and inquiries	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10395	Resolve customer problems, requests, and inquiries	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10395	Resolve customer problems, requests, and inquiries	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10396	Respond to customer problems, requests, and inquiries	cco:ont00000228	redundant	cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10396	Respond to customer problems, requests, and inquiries	cco:ont00000379	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10397	Receive customer complaints	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10397	Receive customer complaints	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10398	Route customer complaints	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10398	Route customer complaints	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10400	Respond to customer complaints	cco:ont00000228	redundant	cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P10400	Respond to customer complaints	cco:ont00000379	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P10422	Communicate HR strategies	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10422	Communicate HR strategies	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10436	Communicate plans and provide updates to stakeholders	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10436	Communicate plans and provide updates to stakeholders	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10448	Post job requisitions	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10448	Post job requisitions	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10451	Notify hiring manager	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10451	Notify hiring manager	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10493	Develop, conduct, and manage employee and/or management training programs	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10493	Develop, conduct, and manage employee and/or management training programs	cco:ont00000234	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10526	Develop and manage employee measures	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10526	Develop and manage employee measures	cco:ont00000345	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10532	Deliver employee communications	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P10532	Deliver employee communications	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P10779	Measure cost drivers	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_9.ttl	K06
+bpot:P10779	Measure cost drivers	cco:ont00000345	needed		ontology/sections/pcf_9.ttl	K06
+bpot:P10877	Respond to AP inquiries	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_9.ttl	K06
+bpot:P10877	Respond to AP inquiries	cco:ont00000402	needed		ontology/sections/pcf_9.ttl	K06
+bpot:P10902	Manage and facilitate inter-company borrowing transactions	cco:ont00000228	redundant	cco:ont00000884 ⊑ cco:ont00000836 ⊑ cco:ont00000566 ⊑ cco:ont00000228	ontology/sections/pcf_9.ttl	K06
+bpot:P10902	Manage and facilitate inter-company borrowing transactions	cco:ont00000884	needed		ontology/sections/pcf_9.ttl	K06
+bpot:P10947	Perform preventative asset maintenance	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P10947	Perform preventative asset maintenance	cco:ont00000950	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P10962	Manage construction or modification to building	cco:ont00000051	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P10962	Manage construction or modification to building	cco:ont00000228	redundant	cco:ont00000051 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P10964	Change fit/form/function of workspace and facilities	cco:ont00000228	redundant	cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P10964	Change fit/form/function of workspace and facilities	cco:ont00000970	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P11010	Build investor relationships	bpot:InvestorRelationsCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11010	Build investor relationships	cco:ont00000568	redundant	bpot:InvestorRelationsCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11012	Manage relations with board of directors	bpot:StakeholderRelationshipManagementCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11012	Manage relations with board of directors	cco:ont00000568	redundant	bpot:StakeholderRelationshipManagementCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11013	Manage legal and ethical issues	bpot:LegalAndComplianceCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11013	Manage legal and ethical issues	cco:ont00000568	redundant	bpot:LegalAndComplianceCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11035	Plan, build, and manage lender relations	bpot:LenderRelationsManagementCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11035	Plan, build, and manage lender relations	cco:ont00000568	redundant	bpot:LenderRelationsManagementCapability ⊑ bpot:StakeholderRelationshipManagementCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11036	Plan, build, and manage analyst relations	bpot:AnalystRelationsManagementCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11036	Plan, build, and manage analyst relations	cco:ont00000568	redundant	bpot:AnalystRelationsManagementCapability ⊑ bpot:StakeholderRelationshipManagementCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11037	Communicate with shareholders	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P11037	Communicate with shareholders	cco:ont00000402	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11045	Manage corporate governance policies	bpot:LegalAndComplianceCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11045	Manage corporate governance policies	cco:ont00000568	redundant	bpot:LegalAndComplianceCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11047	Ensure compliance	bpot:LegalAndComplianceCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11047	Ensure compliance	cco:ont00000568	redundant	bpot:LegalAndComplianceCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11048	Manage outside counsel	bpot:LegalAndComplianceCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11048	Manage outside counsel	cco:ont00000568	redundant	bpot:LegalAndComplianceCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11049	Protect intellectual property	bpot:IntellectualPropertyManagementCapability	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11049	Protect intellectual property	cco:ont00000568	redundant	bpot:IntellectualPropertyManagementCapability ⊑ cco:ont00000568	ontology/sections/pcf_12.ttl	K06
+bpot:P11051	Provide legal advice/counseling	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P11051	Provide legal advice/counseling	cco:ont00000402	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11070	Issue press releases	cco:ont00000228	redundant	cco:ont00000588 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P11070	Issue press releases	cco:ont00000588	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P11182	Train and educate functional employees	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P11182	Train and educate functional employees	cco:ont00000234	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P11194	Measure and report EHS performance	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P11194	Measure and report EHS performance	cco:ont00000345	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P11202	Contact and confer with experts	cco:ont00000228	redundant	cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P11202	Contact and confer with experts	cco:ont00000379	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P11236	Solicit customer feedback on complaint handling and resolution	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P11236	Solicit customer feedback on complaint handling and resolution	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P11238	Gather and solicit post-sale customer feedback on products and services	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P11238	Gather and solicit post-sale customer feedback on products and services	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P11241	Provide feedback and insights to appropriate teams (product design/development, marketing, manufacturing)	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P11241	Provide feedback and insights to appropriate teams (product design/development, marketing, manufacturing)	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P11468	Communicate planning information to customer teams	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P11468	Communicate planning information to customer teams	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P11687	Solicit customer feedback on customer service experience	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P11687	Solicit customer feedback on customer service experience	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P11781	Receive Request For Proposal (RFP)/Request For Quote (RFQ)	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P11781	Receive Request For Proposal (RFP)/Request For Quote (RFQ)	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P11790	Submit/present bid/proposal/quote to customer	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P11790	Submit/present bid/proposal/quote to customer	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P12132	Deliver operations training	cco:ont00000228	redundant	cco:ont00001075 ⊑ cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_5.ttl	K06
+bpot:P12132	Deliver operations training	cco:ont00001075	needed		ontology/sections/pcf_5.ttl	K06
+bpot:P12133	Deliver technical training	cco:ont00000228	redundant	cco:ont00001075 ⊑ cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_5.ttl	K06
+bpot:P12133	Deliver technical training	cco:ont00001075	needed		ontology/sections/pcf_5.ttl	K06
+bpot:P12181	Maintain awareness of and communicate regulatory requirements	cco:ont00000151	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P12181	Maintain awareness of and communicate regulatory requirements	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P12187	Manage documentation and reporting	cco:ont00000151	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P12187	Manage documentation and reporting	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P12673	Communicate warranty policies and offerings	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P12673	Communicate warranty policies and offerings	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P12721	Ship hazardous material	cco:ont00000228	redundant	cco:ont00000595 ⊑ cco:ont00000065 ⊑ cco:ont00000357 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P12721	Ship hazardous material	cco:ont00000595	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P12722	Provide government reporting	cco:ont00000151	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P12722	Provide government reporting	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P12772	Train employees on appropriate regulatory requirements	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_2.ttl	K06
+bpot:P12772	Train employees on appropriate regulatory requirements	cco:ont00000234	needed		ontology/sections/pcf_2.ttl	K06
+bpot:P12840	Report incidents and risks to regulatory bodies	cco:ont00000228	redundant	cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P12840	Report incidents and risks to regulatory bodies	cco:ont00000379	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P12872	Receive input from internal advisors	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P12872	Receive input from internal advisors	cco:ont00000402	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P12873	Receive input from external advisors	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P12873	Receive input from external advisors	cco:ont00000402	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P12876	Respond to audit inquiries	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_12.ttl	K06
+bpot:P12876	Respond to audit inquiries	cco:ont00000402	needed		ontology/sections/pcf_12.ttl	K06
+bpot:P13131	Demolish and secure	cco:ont00000228	redundant	cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P13131	Demolish and secure	cco:ont00000970	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P14094	Communicate with customs	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_9.ttl	K06
+bpot:P14094	Communicate with customs	cco:ont00000402	needed		ontology/sections/pcf_9.ttl	K06
+bpot:P16391	Publish processes	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P16391	Publish processes	cco:ont00000402	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P16393	Provide process training	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P16393	Provide process training	cco:ont00000234	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P16443	Coordinate the sharing of risk knowledge across the organization	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P16443	Coordinate the sharing of risk knowledge across the organization	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P16444	Prepare and report enterprise risk to executive management and board	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P16444	Prepare and report enterprise risk to executive management and board	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P16451	Report on enterprise risk activities	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P16451	Report on enterprise risk activities	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P16462	Report on risk activities	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P16462	Report on risk activities	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P16471	Share knowledge of specific risks across other parts of the organization	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P16471	Share knowledge of specific risks across other parts of the organization	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P16630	Manage product images	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P16630	Manage product images	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P16937	Deliver opportunity to sales team	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P16937	Deliver opportunity to sales team	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P17484	Conduct test and collect data	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P17484	Conduct test and collect data	cco:ont00000345	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P17507	Maintain talent capabilities and competencies	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P17507	Maintain talent capabilities and competencies	cco:ont00000234	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P17508	Incorporate EQMS messaging into communication channels	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P17508	Incorporate EQMS messaging into communication channels	cco:ont00000402	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P18126	Provide customer feedback to product management on customer service experience	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P18126	Provide customer feedback to product management on customer service experience	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P18130	Manage product copy	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P18130	Manage product copy	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P18641	Provide marketing materials to sales partners/alliances	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P18641	Provide marketing materials to sales partners/alliances	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P18916	Communicate strategies internally and externally	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_1.ttl	K06
+bpot:P18916	Communicate strategies internally and externally	cco:ont00000402	needed		ontology/sections/pcf_1.ttl	K06
+bpot:P19232	Construct new assets	cco:ont00000051	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19232	Construct new assets	cco:ont00000228	redundant	cco:ont00000051 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19233	Augment existing assets	cco:ont00000228	redundant	cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19233	Augment existing assets	cco:ont00000970	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19253	Perform asset maintenance	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19253	Perform asset maintenance	cco:ont00000950	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19254	Perform routine asset maintenance	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19254	Perform routine asset maintenance	cco:ont00000950	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19255	Perform corrective asset maintenance and repairs	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19255	Perform corrective asset maintenance and repairs	cco:ont00000950	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19257	Perform unplanned maintenance and repairs	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P19257	Perform unplanned maintenance and repairs	cco:ont00000950	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P19596	Compile and communicate internal and regulatory compliance reports	cco:ont00000151	needed		ontology/sections/pcf_11.ttl	K06
+bpot:P19596	Compile and communicate internal and regulatory compliance reports	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_11.ttl	K06
+bpot:P19984	Monitor performance against baselines	cco:ont00000228	redundant	cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_1.ttl	K06
+bpot:P19984	Monitor performance against baselines	cco:ont00000345	needed		ontology/sections/pcf_1.ttl	K06
+bpot:P20012	Manage customer meetings/workshops	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P20012	Manage customer meetings/workshops	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P20019	Provide certification enablement training	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P20019	Provide certification enablement training	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P20021	Provide support to partners/alliances	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_3.ttl	K06
+bpot:P20021	Provide support to partners/alliances	cco:ont00000402	needed		ontology/sections/pcf_3.ttl	K06
+bpot:P20090	Agree on warranty responsibilities with suppliers	cco:ont00000228	redundant	cco:ont00000684 ⊑ cco:ont00000821 ⊑ cco:ont00001162 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20090	Agree on warranty responsibilities with suppliers	cco:ont00000684	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20091	Define warranty related offerings for customers	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20091	Define warranty related offerings for customers	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20096	Receive warranty claim	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20096	Receive warranty claim	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20103	Notify originator of approve/reject decision	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20103	Notify originator of approve/reject decision	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20113	Manage recall related communications	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20113	Manage recall related communications	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20114	Submit regulatory reports	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20114	Submit regulatory reports	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20117	Solicit customer feedback on cross-channel experience	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_6.ttl	K06
+bpot:P20117	Solicit customer feedback on cross-channel experience	cco:ont00000402	needed		ontology/sections/pcf_6.ttl	K06
+bpot:P20690	Report IT service and project performance	cco:ont00000151	needed		ontology/sections/pcf_8.ttl	K06
+bpot:P20690	Report IT service and project performance	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_8.ttl	K06
+bpot:P20696	Communicate business technology value contribution	cco:ont00000151	needed		ontology/sections/pcf_8.ttl	K06
+bpot:P20696	Communicate business technology value contribution	cco:ont00000228	redundant	cco:ont00000151 ⊑ cco:ont00000379 ⊑ cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_8.ttl	K06
+bpot:P20859	Conduct IT training	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_8.ttl	K06
+bpot:P20859	Conduct IT training	cco:ont00000234	needed		ontology/sections/pcf_8.ttl	K06
+bpot:P20970	Sustain awareness and engagement	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P20970	Sustain awareness and engagement	cco:ont00000402	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P21448	Transform workforce analysis data	cco:ont00000228	redundant	cco:ont00001158 ⊑ cco:ont00000366 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P21448	Transform workforce analysis data	cco:ont00001158	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P21450	Communicate workforce analysis outcomes	cco:ont00000228	redundant	cco:ont00000402 ⊑ cco:ont00000228	ontology/sections/pcf_7.ttl	K06
+bpot:P21450	Communicate workforce analysis outcomes	cco:ont00000402	needed		ontology/sections/pcf_7.ttl	K06
+bpot:P21579	Dismantle assets	cco:ont00000228	redundant	cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_10.ttl	K06
+bpot:P21579	Dismantle assets	cco:ont00000970	needed		ontology/sections/pcf_10.ttl	K06
+bpot:P21599	Provide sustainability training	cco:ont00000228	redundant	cco:ont00000234 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P21599	Provide sustainability training	cco:ont00000234	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P21602	Measure sustainability performance	cco:ont00000228	redundant	cco:ont00000636 ⊑ cco:ont00000345 ⊑ cco:ont00000228	ontology/sections/pcf_13.ttl	K06
+bpot:P21602	Measure sustainability performance	cco:ont00000636	needed		ontology/sections/pcf_13.ttl	K06
+bpot:P21604	Manage repair/refurbishment	cco:ont00000228	redundant	cco:ont00000950 ⊑ cco:ont00000970 ⊑ cco:ont00000908 ⊑ cco:ont00000228	ontology/sections/pcf_4.ttl	K06
+bpot:P21604	Manage repair/refurbishment	cco:ont00000950	needed		ontology/sections/pcf_4.ttl	K06
+bpot:PaymentInstrument	Payment Instrument	obo:BFO_0000040	redundant	cco:ont00000537 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_9.ttl	K06
+bpot:PaymentInstrument	Payment Instrument	cco:ont00000537	needed		ontology/sections/pcf_9.ttl	K06
+bpot:PlannerRole	Planner role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:PlannerRole	Planner role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:PortfolioManagerRole	Portfolio Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:PortfolioManagerRole	Portfolio Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ProcessOwnerRole	Process Owner Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:ProcessOwnerRole	Process Owner Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ProductManagerRole	Product Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_6.ttl	K06
+bpot:ProductManagerRole	Product Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ProductSample	Product Sample	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:ProductSample	Product Sample	cco:ont00000995	needed		ontology/sections/pcf_4.ttl	K06
+bpot:ProductionEquipment	Production Equipment	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:ProductionEquipment	Production Equipment	cco:ont00000995	needed		ontology/sections/pcf_2.ttl	K06
+bpot:ProductionFacility	Production Facility	obo:BFO_0000040	redundant	cco:ont00000192 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:ProductionFacility	Production Facility	cco:ont00000192	needed		ontology/sections/pcf_4.ttl	K06
+bpot:ProductionLot	Production Lot	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:ProductionLot	Production Lot	cco:ont00000995	needed		ontology/sections/pcf_4.ttl	K06
+bpot:ProfessionalServicesProviderRole	Professional Services Provider Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_1.ttl	K06
+bpot:ProfessionalServicesProviderRole	Professional Services Provider Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:ProgramManagerRole	Program Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:ProgramManagerRole	Program Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ProjectManagerRole	Project Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:ProjectManagerRole	Project Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:PurchasingForecast	Customer Purchasing Forecast	cco:ont00000626	needed		ontology/sections/pcf_3.ttl	K06
+bpot:PurchasingForecast	Customer Purchasing Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_3.ttl	K06
+bpot:QualityManagerRole	Quality Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:QualityManagerRole	Quality Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:QuasiGovernmentBodyRole	Quasi-Government Body Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_12.ttl	K06
+bpot:QuasiGovernmentBodyRole	Quasi-Government Body Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:ROIForecast	Return-on-Investment Forecast	cco:ont00000626	needed		ontology/sections/pcf_3.ttl	K06
+bpot:ROIForecast	Return-on-Investment Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_3.ttl	K06
+bpot:RawMaterial	Raw Material	obo:BFO_0000040	redundant	cco:ont00000457 ⊑ cco:ont00001084 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_2.ttl	K06
+bpot:RawMaterial	Raw Material	cco:ont00000457	needed		ontology/sections/pcf_4.ttl	K06
+bpot:RecruitmentVendorRole	Recruitment Vendor Role	obo:BFO_0000023	redundant	cco:ont00000506 ⊑ obo:BFO_0000023	ontology/sections/pcf_7.ttl	K06
+bpot:RecruitmentVendorRole	Recruitment Vendor Role	cco:ont00000506	needed		ontology/wiring.ttl	K06
+bpot:RegulatorRole	Regulator Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_9.ttl	K06
+bpot:RegulatorRole	Regulator Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:RegulatoryAuthorityRole	Regulatory Authority Role	obo:BFO_0000023	redundant	cco:ont00000187 ⊑ obo:BFO_0000023	ontology/sections/pcf_2.ttl	K06
+bpot:RegulatoryAuthorityRole	Regulatory Authority Role	cco:ont00000187	needed		ontology/wiring.ttl	K06
+bpot:RegulatoryComplianceManagementCapability	Regulatory Compliance Management Capability	bpot:ComplianceManagementCapability	needed		ontology/sections/pcf_11.ttl	K06
+bpot:RegulatoryComplianceManagementCapability	Regulatory Compliance Management Capability	cco:ont00000568	redundant	bpot:ComplianceManagementCapability ⊑ cco:ont00000568	ontology/sections/pcf_11.ttl	K06
+bpot:ResearchAndDevelopmentRole	Research and Development Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_2.ttl	K06
+bpot:ResearchAndDevelopmentRole	Research and Development Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ReturnedProduct	Returned Product	obo:BFO_0000040	redundant	cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:ReturnedProduct	Returned Product	cco:ont00000995	needed		ontology/sections/pcf_4.ttl	K06
+bpot:RiskManagerRole	Risk Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_11.ttl	K06
+bpot:RiskManagerRole	Risk Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:SalesAgentRole	Sales Agent Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_6.ttl	K06
+bpot:SalesAgentRole	Sales Agent Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:SalesForecast	Sales Forecast	cco:ont00000626	needed		ontology/sections/pcf_3.ttl	K06
+bpot:SalesForecast	Sales Forecast	cco:ont00000853	redundant	cco:ont00000626 ⊑ cco:ont00000853	ontology/sections/pcf_3.ttl	K06
+bpot:SalesProfessionalRole	Sales Professional Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_3.ttl	K06
+bpot:SalesProfessionalRole	Sales Professional Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:SeniorManagementRole	Senior Management Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_2.ttl	K06
+bpot:SeniorManagementRole	Senior Management Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:SeniorManagerRole	Senior Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_1.ttl	K06
+bpot:SeniorManagerRole	Senior Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:ServiceDeliveryPersonnelRole	Service Delivery Personnel Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_5.ttl	K06
+bpot:ServiceDeliveryPersonnelRole	Service Delivery Personnel Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:StakeholderAlignmentPlan	Stakeholder Alignment Plan	cco:ont00000965	redundant	cco:ont00000974 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:StakeholderAlignmentPlan	Stakeholder Alignment Plan	cco:ont00000974	needed		ontology/sections/pcf_1.ttl	K06
+bpot:StrategicPriority	Strategic Priority	cco:ont00000476	needed		ontology/sections/pcf_1.ttl	K06
+bpot:StrategicPriority	Strategic Priority	cco:ont00000965	redundant	cco:ont00000476 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:StrategistRole	Strategist role	bpot:Role	needed		ontology/bpot.ttl	K07
+bpot:StrategistRole	Strategist role	cco:ont00000984	needed		ontology/bpot.ttl	K07
+bpot:StrategyAlignmentPlan	Strategy Alignment Plan	cco:ont00000965	redundant	cco:ont00000974 ⊑ cco:ont00000965	ontology/sections/pcf_1.ttl	K06
+bpot:StrategyAlignmentPlan	Strategy Alignment Plan	cco:ont00000974	needed		ontology/sections/pcf_1.ttl	K06
+bpot:StrategyPersonnelRole	Strategy Personnel Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_1.ttl	K06
+bpot:StrategyPersonnelRole	Strategy Personnel Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:SustainabilityManagerRole	Sustainability Manager Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_13.ttl	K06
+bpot:SustainabilityManagerRole	Sustainability Manager Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:TrainerRole	Trainer Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_5.ttl	K06
+bpot:TrainerRole	Trainer Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:TrainingMaterial	Training Material	obo:BFO_0000040	redundant	cco:ont00000253 ⊑ obo:BFO_0000030 ⊑ obo:BFO_0000040	ontology/sections/pcf_5.ttl	K06
+bpot:TrainingMaterial	Training Material	cco:ont00000253	needed		ontology/sections/pcf_5.ttl	K06
+bpot:TransportationVehicle	Transportation Vehicle	obo:BFO_0000040	redundant	cco:ont00000713 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:TransportationVehicle	Transportation Vehicle	cco:ont00000713	needed		ontology/sections/pcf_4.ttl	K06
+bpot:TreasurerRole	Treasurer Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_9.ttl	K06
+bpot:TreasurerRole	Treasurer Role	cco:ont00000984	needed		ontology/wiring.ttl	K06
+bpot:Warehouse	Warehouse	obo:BFO_0000040	redundant	cco:ont00000192 ⊑ cco:ont00000995 ⊑ obo:BFO_0000040	ontology/sections/pcf_4.ttl	K06
+bpot:Warehouse	Warehouse	cco:ont00000192	needed		ontology/sections/pcf_4.ttl	K06
+bpot:WarrantyAdministratorRole	Warranty Administrator Role	obo:BFO_0000023	redundant	cco:ont00000984 ⊑ obo:BFO_0000023	ontology/sections/pcf_6.ttl	K06
+bpot:WarrantyAdministratorRole	Warranty Administrator Role	cco:ont00000984	needed		ontology/wiring.ttl	K06

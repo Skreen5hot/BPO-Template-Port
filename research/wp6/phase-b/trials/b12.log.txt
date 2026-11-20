@@ -1,0 +1,684 @@
+===== gates A-D slice 1 (exit 0)
+[OK] ontology\slices\apqc_1_0.ttl
+  A Syntax               PASS  3284 triples
+  B IRI resolution       PASS  24 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 2 (exit 0)
+[OK] ontology\slices\apqc_2_0.ttl
+  A Syntax               PASS  2352 triples
+  B IRI resolution       PASS  25 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 3 (exit 0)
+[OK] ontology\slices\apqc_3_0.ttl
+  A Syntax               PASS  4495 triples
+  B IRI resolution       PASS  21 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 4 (exit 0)
+[OK] ontology\slices\apqc_4_0.ttl
+  A Syntax               PASS  3368 triples
+  B IRI resolution       PASS  31 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 5 (exit 0)
+[OK] ontology\slices\apqc_5_0.ttl
+  A Syntax               PASS  1681 triples
+  B IRI resolution       PASS  23 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 6 (exit 0)
+[OK] ontology\slices\apqc_6_0.ttl
+  A Syntax               PASS  2649 triples
+  B IRI resolution       PASS  29 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 7 (exit 0)
+[OK] ontology\slices\apqc_7_0.ttl
+  A Syntax               PASS  3322 triples
+  B IRI resolution       PASS  21 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 8 (exit 0)
+[OK] ontology\slices\apqc_8_0.ttl
+  A Syntax               PASS  6787 triples
+  B IRI resolution       PASS  26 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 9 (exit 0)
+[OK] ontology\slices\apqc_9_0.ttl
+  A Syntax               PASS  5621 triples
+  B IRI resolution       PASS  31 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 10 (exit 0)
+[OK] ontology\slices\apqc_10_0.ttl
+  A Syntax               PASS  2047 triples
+  B IRI resolution       PASS  29 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 11 (exit 0)
+[OK] ontology\slices\apqc_11_0.ttl
+  A Syntax               PASS  1265 triples
+  B IRI resolution       PASS  23 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 12 (exit 0)
+[OK] ontology\slices\apqc_12_0.ttl
+  A Syntax               PASS  1461 triples
+  B IRI resolution       PASS  25 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== gates A-D slice 13 (exit 0)
+[OK] ontology\slices\apqc_13_0.ttl
+  A Syntax               PASS  4821 triples
+  B IRI resolution       PASS  21 CCO/OBO IRIs resolve
+  C SHACL                PASS  zero violations
+  D Reasoner             PASS  consistent; no unsatisfiable classes (ELK) 
+
+
+===== corpus_check (ELK, Gate F) (exit 127)
+Namespace guard: no retired example.org IRIs or ex: prefix (ADR-002)
+fatal: not a git repository: /mnt/c/Users/aaron/AppData/Local/Temp/bpo-trial-7f86wiq5/bpo/C:/Users/aaron/OneDrive/Documents/BusinessProcessOntology/.git/worktrees/bpo4
+fatal: not a git repository: /mnt/c/Users/aaron/AppData/Local/Temp/bpo-trial-7f86wiq5/bpo/C:/Users/aaron/OneDrive/Documents/BusinessProcessOntology/.git/worktrees/bpo4
+scripts/corpus_check.sh: line 20: python: command not found
+
+===== validate_caps (C1-C7) (exit 0)
+[structural C1-C4  (module + CCO)] 13948 triples  conforms=True  violations=0  (17.6s)
+[coherence  C1-C7  (module + wiring + slices + CCO)] 57201 triples  conforms=True  violations=0  (47.3s)
+
+CAPABILITY LAYER: OK -- zero violations
+
+===== matchability (exit 0)
+MATCHABILITY  fleet=12  reqs-on=453 processes  ROUTABLE=62  GAPS=391
+
+Routable:
+  + bpo:AuthorImplementationPlan via agent.planner.v1   {'capability': ['bpo:PlanAuthoringCapability'], 'role': ['bpo:PlannerRole']}
+  + bpo:AuthorRoadmap via agent.planner.v1   {'capability': ['bpo:PlanAuthoringCapability'], 'role': ['bpo:PlannerRole']}
+  + bpo:P10020 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P10024 via agent.strategy_lead.v1   {'role': ['bpo:SeniorManagerRole']}
+  + bpo:P10030 via agent.strategy_lead.v1   {'role': ['bpo:SeniorManagerRole']}
+  + bpo:P10035 via agent.strategy_lead.v1   {'role': ['bpo:StrategyPersonnelRole']}
+  + bpo:P10036 via agent.strategy_lead.v1   {'role': ['bpo:StrategyPersonnelRole']}
+  + bpo:P10037 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P10039 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P10043 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P10045 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P10052 via agent.strategy_lead.v1   {'role': ['bpo:StrategyPersonnelRole']}
+  + bpo:P10059 via agent.strategy_lead.v1   {'role': ['bpo:SeniorManagerRole']}
+  + bpo:P10070 via agent.product_designer.v1   {'capability': ['bpo:ResearchAndDevelopmentCapability'], 'role': ['bpo:ResearchAndDevelopmentRole']}
+  + bpo:P10071 via agent.product_designer.v1   {'capability': ['bpo:ResearchAndDevelopmentCapability'], 'role': ['bpo:ResearchAndDevelopmentRole']}
+  + bpo:P10085 via agent.product_designer.v1   {'role': ['bpo:DesignStaffRole']}
+  + bpo:P10088 via agent.product_designer.v1   {'role': ['bpo:DesignStaffRole']}
+  + bpo:P10102 via agent.marketing.v1   {'role': ['bpo:MarketingProfessionalRole']}
+  + bpo:P10159 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10160 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10167 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10168 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10169 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10170 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10171 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10172 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10178 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10179 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10180 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10181 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P10190 via agent.sales.v1   {'role': ['bpo:SalesProfessionalRole']}
+  + bpo:P10237 via agent.supply_chain.v1   {'role': ['bpo:ManagerRole']}
+  + bpo:P10319 via agent.supply_chain.v1   {'role': ['bpo:ManagerRole']}
+  + bpo:P10419 via agent.hr.v1   {'role': ['bpo:HumanResourcesProfessionalRole']}
+  + bpo:P10522 via agent.hr.v1   {'role': ['bpo:HumanResourcesProfessionalRole']}
+  + bpo:P10729 via agent.finance.v1   {'capability': ['bpo:AccountingCapability', 'bpo:FinancialManagementCapability']}
+  + bpo:P10730 via agent.finance.v1   {'capability': ['bpo:AccountingCapability', 'bpo:FinancialManagementCapability']}
+  + bpo:P10732 via agent.finance.v1   {'capability': ['bpo:FinancialManagementCapability']}
+  + bpo:P10733 via agent.finance.v1   {'capability': ['bpo:FinancialManagementCapability']}
+  + bpo:P16439 via agent.risk.v1   {'capability': ['bpo:EnterpriseRiskManagementCapability']}
+  + bpo:P16445 via agent.risk.v1   {'capability': ['bpo:EnterpriseRiskManagementCapability']}
+  + bpo:P16630 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P17462 via agent.risk.v1   {'capability': ['bpo:EnterpriseRiskManagementCapability']}
+  + bpo:P18130 via agent.marketing.v1   {'capability': ['bpo:MarketingManagementCapability']}
+  + bpo:P19945 via agent.market_analysis.v1   {'capability': ['bpo:CompetitiveAnalysisCapability'], 'role': ['bpo:CompetitiveIntelligenceAnalystRole']}
+  + bpo:P19949 via agent.strategy_lead.v1   {'capability': ['bpo:StrategicPlanningCapability']}
+  + bpo:P19995 via agent.product_designer.v1   {'capability': ['bpo:DesignCapability']}
+  + bpo:P20012 via agent.sales.v1   {'role': ['bpo:SalesProfessionalRole']}
+  + bpo:P20670 via agent.it_ops.v1   {'role': ['bpo:EnterpriseArchitectRole']}
+  + bpo:P20671 via agent.it_ops.v1   {'role': ['bpo:EnterpriseArchitectRole']}
+  + bpo:P20888 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20889 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20890 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20891 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20892 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20893 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20915 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20916 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20917 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20918 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20919 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+  + bpo:P20920 via agent.it_ops.v1   {'capability': ['bpo:ITInfrastructureManagementCapability']}
+
+Coverage gaps (deliverable, not a failure):
+  - bpo:ActOfAdministration unmet={'capability': ['bpo:HumanResourcesInformationSystemCapability', 'bpo:TimeAndAttendanceManagementCapability']}
+  - bpo:AuthorArchitecture unmet={'capability': ['bpo:ArchitectureCapability'], 'role': ['bpo:ArchitectRole']}
+  - bpo:CultivateAnalystRelations unmet={'role': ['bpo:FinancialAnalystRole']}
+  - bpo:CultivateLenderRelations unmet={'role': ['bpo:LenderRole']}
+  - bpo:EvaluateOutput unmet={'capability': ['bpo:EvaluationCapability'], 'role': ['bpo:EvaluatorRole']}
+  - bpo:ImplementPhase unmet={'capability': ['bpo:CodeImplementationCapability'], 'role': ['bpo:DeveloperRole']}
+  - bpo:ManageCustomerRelationships unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10046 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P10063 unmet={'capability': ['bpo:ProductServicePortfolioManagementCapability']}
+  - bpo:P10066 unmet={'role': ['bpo:SeniorManagementRole']}
+  - bpo:P10072 unmet={'role': ['bpo:SeniorManagementRole']}
+  - bpo:P10073 unmet={'role': ['bpo:SeniorManagementRole']}
+  - bpo:P10074 unmet={'capability': ['bpo:ProductServicePortfolioManagementCapability']}
+  - bpo:P10077 unmet={'capability': ['bpo:ProductServiceLifecycleManagementCapability']}
+  - bpo:P10078 unmet={'capability': ['bpo:ProductServiceLifecycleManagementCapability']}
+  - bpo:P10087 unmet={'role': ['bpo:RegulatoryAuthorityRole']}
+  - bpo:P10092 unmet={'role': ['bpo:SupplyChainPartnerRole']}
+  - bpo:P10094 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10099 unmet={'role': ['bpo:SupplyChainPartnerRole']}
+  - bpo:P10101 unmet={'capability': ['bpo:MarketIntelligenceCapability']}
+  - bpo:P10106 unmet={'capability': ['bpo:MarketIntelligenceCapability']}
+  - bpo:P10107 unmet={'capability': ['bpo:MarketIntelligenceCapability']}
+  - bpo:P10130 unmet={'capability': ['bpo:PartnerManagementCapability']}
+  - bpo:P10163 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P10164 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P10165 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P10166 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P10187 unmet={'capability': ['bpo:PartnerManagementCapability']}
+  - bpo:P10211 unmet={'role': ['bpo:SalesPartnerRole']}
+  - bpo:P10215 unmet={'capability': ['bpo:SupplyChainPlanningCapability']}
+  - bpo:P10216 unmet={'capability': ['bpo:ProcurementCapability']}
+  - bpo:P10217 unmet={'capability': ['bpo:ProductionCapability']}
+  - bpo:P10236 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10243 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10265 unmet={'role': ['bpo:CarrierRole']}
+  - bpo:P10287 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10290 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10304 unmet={'capability': ['bpo:RawMaterialInventoryManagementCapability']}
+  - bpo:P10331 unmet={'role': ['bpo:FieldServiceAgentRole']}
+  - bpo:P10336 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10338 unmet={'capability': ['bpo:LogisticsManagementCapability']}
+  - bpo:P10340 unmet={'capability': ['bpo:LogisticsManagementCapability']}
+  - bpo:P10341 unmet={'capability': ['bpo:FleetManagementCapability', 'bpo:LogisticsManagementCapability']}
+  - bpo:P10390 unmet={'capability': ['bpo:CustomerServiceWorkforceManagementCapability']}
+  - bpo:P10391 unmet={'capability': ['bpo:CustomerServiceWorkforceManagementCapability']}
+  - bpo:P10392 unmet={'capability': ['bpo:CustomerServiceWorkforceManagementCapability']}
+  - bpo:P10393 unmet={'capability': ['bpo:CustomerServiceWorkforceManagementCapability']}
+  - bpo:P10394 unmet={'capability': ['bpo:CustomerInquiryManagementCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P10395 unmet={'capability': ['bpo:CustomerInquiryManagementCapability']}
+  - bpo:P10396 unmet={'capability': ['bpo:CustomerInquiryManagementCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P10397 unmet={'capability': ['bpo:CustomerComplaintManagementCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P10398 unmet={'capability': ['bpo:CustomerComplaintManagementCapability']}
+  - bpo:P10399 unmet={'capability': ['bpo:CustomerComplaintManagementCapability']}
+  - bpo:P10400 unmet={'capability': ['bpo:CustomerComplaintManagementCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P10410 unmet={'capability': ['bpo:TalentAcquisitionCapability']}
+  - bpo:P10413 unmet={'capability': ['bpo:WorkforceDeploymentCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P10417 unmet={'capability': ['bpo:WorkforcePlanningCapability']}
+  - bpo:P10422 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10436 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P10440 unmet={'capability': ['bpo:EmployeeReferralProgramCapability', 'bpo:RecruitmentChannelManagementCapability', 'bpo:RecruitmentVendorManagementCapability']}
+  - bpo:P10451 unmet={'role': ['bpo:HiringManagerRole']}
+  - bpo:P10457 unmet={'role': ['bpo:JobCandidateRole']}
+  - bpo:P10458 unmet={'role': ['bpo:JobCandidateRole']}
+  - bpo:P10460 unmet={'role': ['bpo:JobCandidateRole']}
+  - bpo:P10464 unmet={'role': ['bpo:JobCandidateRole']}
+  - bpo:P10465 unmet={'role': ['bpo:JobCandidateRole']}
+  - bpo:P10474 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeOrientationAndDeploymentCapability']}
+  - bpo:P10479 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeePerformanceManagementCapability']}
+  - bpo:P10481 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeePerformanceManagementCapability']}
+  - bpo:P10484 unmet={'capability': ['bpo:EmployeeRelationsCapability', 'bpo:LaborRelationsCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P10487 unmet={'capability': ['bpo:EmployeeCareerDevelopmentCapability', 'bpo:EmployeeDevelopmentCapability']}
+  - bpo:P10488 unmet={'capability': ['bpo:EmployeeCareerDevelopmentCapability', 'bpo:EmployeeDevelopmentCapability']}
+  - bpo:P10490 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P10491 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P10492 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P10493 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P10495 unmet={'capability': ['bpo:CompensationAndBenefitsCapability']}
+  - bpo:P10497 unmet={'capability': ['bpo:CompensationAndBenefitsCapability']}
+  - bpo:P10503 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10504 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10505 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10508 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10512 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10513 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10514 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10515 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10516 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10517 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10520 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10523 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10529 unmet={'capability': ['bpo:EmployeeCommunicationCapability']}
+  - bpo:P10530 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10531 unmet={'capability': ['bpo:EmployeeRelationsCapability', 'bpo:LaborRelationsCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P10532 unmet={'capability': ['bpo:EmployeeCommunicationCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P10751 unmet={'capability': ['bpo:FixedAssetProjectAccountingCapability']}
+  - bpo:P10752 unmet={'capability': ['bpo:FixedAssetProjectAccountingCapability']}
+  - bpo:P10757 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10762 unmet={'capability': ['bpo:InternalControlCapability']}
+  - bpo:P10764 unmet={'capability': ['bpo:InternalControlCapability']}
+  - bpo:P10767 unmet={'capability': ['bpo:InternationalFundsManagementCapability']}
+  - bpo:P10768 unmet={'capability': ['bpo:InternationalFundsManagementCapability']}
+  - bpo:P10769 unmet={'capability': ['bpo:InternationalFundsManagementCapability']}
+  - bpo:P10770 unmet={'capability': ['bpo:InternationalFundsManagementCapability']}
+  - bpo:P10796 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10798 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10801 unmet={'role': ['bpo:BankingPartnerRole']}
+  - bpo:P10806 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10811 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P10813 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10816 unmet={'capability': ['bpo:FinancialPolicyManagementCapability']}
+  - bpo:P10817 unmet={'capability': ['bpo:FinancialPolicyManagementCapability']}
+  - bpo:P10818 unmet={'capability': ['bpo:FinancialPolicyManagementCapability']}
+  - bpo:P10862 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10865 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10866 unmet={'capability': ['bpo:TaxManagementCapability']}
+  - bpo:P10867 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10868 unmet={'role': ['bpo:RegulatorRole']}
+  - bpo:P10871 unmet={'capability': ['bpo:InternalAuditManagementCapability']}
+  - bpo:P10876 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10877 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P10882 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10883 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10885 unmet={'capability': ['bpo:TreasuryManagementCapability']}
+  - bpo:P10889 unmet={'capability': ['bpo:InternalAuditManagementCapability']}
+  - bpo:P10893 unmet={'capability': ['bpo:TreasuryManagementCapability']}
+  - bpo:P10902 unmet={'role': ['bpo:SubsidiaryRole']}
+  - bpo:P10903 unmet={'role': ['bpo:SubsidiaryRole']}
+  - bpo:P10904 unmet={'role': ['bpo:SubsidiaryRole']}
+  - bpo:P10907 unmet={'role': ['bpo:SubsidiaryRole']}
+  - bpo:P10923 unmet={'role': ['bpo:AuditorRole']}
+  - bpo:P10924 unmet={'role': ['bpo:RegulatorRole']}
+  - bpo:P10925 unmet={'role': ['bpo:CustomerRole', 'bpo:SupplierRole']}
+  - bpo:P10926 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P10936 unmet={'role': ['bpo:RegulatorRole']}
+  - bpo:P10962 unmet={'role': ['bpo:ConstructionContractorRole']}
+  - bpo:P10965 unmet={'capability': ['bpo:FacilityManagementCapability'], 'role': ['bpo:FacilityManagerRole']}
+  - bpo:P10966 unmet={'capability': ['bpo:FacilityManagementCapability']}
+  - bpo:P11010 unmet={'capability': ['bpo:InvestorRelationsCapability']}
+  - bpo:P11012 unmet={'capability': ['bpo:StakeholderRelationshipManagementCapability']}
+  - bpo:P11013 unmet={'capability': ['bpo:LegalAndComplianceCapability']}
+  - bpo:P11035 unmet={'capability': ['bpo:LenderRelationsManagementCapability']}
+  - bpo:P11036 unmet={'capability': ['bpo:AnalystRelationsManagementCapability']}
+  - bpo:P11037 unmet={'role': ['bpo:ShareholderRole']}
+  - bpo:P11038 unmet={'capability': ['bpo:StakeholderRelationshipManagementCapability']}
+  - bpo:P11039 unmet={'capability': ['bpo:StakeholderRelationshipManagementCapability']}
+  - bpo:P11040 unmet={'capability': ['bpo:StakeholderRelationshipManagementCapability']}
+  - bpo:P11041 unmet={'capability': ['bpo:StakeholderRelationshipManagementCapability']}
+  - bpo:P11045 unmet={'capability': ['bpo:LegalAndComplianceCapability']}
+  - bpo:P11047 unmet={'capability': ['bpo:LegalAndComplianceCapability']}
+  - bpo:P11048 unmet={'capability': ['bpo:LegalAndComplianceCapability']}
+  - bpo:P11049 unmet={'capability': ['bpo:IntellectualPropertyManagementCapability', 'bpo:LegalAndComplianceCapability']}
+  - bpo:P11051 unmet={'role': ['bpo:AdvisorRole']}
+  - bpo:P11054 unmet={'role': ['bpo:ComplianceOfficerRole']}
+  - bpo:P11057 unmet={'role': ['bpo:OutsideCounselRole']}
+  - bpo:P11059 unmet={'role': ['bpo:OutsideCounselRole']}
+  - bpo:P11060 unmet={'role': ['bpo:AdvisorRole']}
+  - bpo:P11066 unmet={'capability': ['bpo:PublicRelationsCapability'], 'role': ['bpo:CommunityRole']}
+  - bpo:P11067 unmet={'capability': ['bpo:PublicRelationsCapability'], 'role': ['bpo:JournalistRole']}
+  - bpo:P11068 unmet={'capability': ['bpo:PublicRelationsCapability'], 'role': ['bpo:GovernmentBodyRole']}
+  - bpo:P11069 unmet={'capability': ['bpo:PublicRelationsCapability']}
+  - bpo:P11070 unmet={'capability': ['bpo:PublicRelationsCapability'], 'role': ['bpo:MediaOutletRole']}
+  - bpo:P11095 unmet={'capability': ['bpo:KnowledgeManagementCapability']}
+  - bpo:P11096 unmet={'capability': ['bpo:KnowledgeManagementCapability']}
+  - bpo:P11119 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability']}
+  - bpo:P11132 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P11135 unmet={'capability': ['bpo:ChangeManagementCapability']}
+  - bpo:P11136 unmet={'capability': ['bpo:ChangeManagementCapability']}
+  - bpo:P11137 unmet={'capability': ['bpo:ChangeManagementCapability']}
+  - bpo:P11140 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P11141 unmet={'role': ['bpo:ChangeChampionRole']}
+  - bpo:P11148 unmet={'role': ['bpo:ChangeManagerRole']}
+  - bpo:P11180 unmet={'capability': ['bpo:EHSManagementCapability']}
+  - bpo:P11181 unmet={'capability': ['bpo:EHSManagementCapability']}
+  - bpo:P11182 unmet={'role': ['bpo:TraineeRole']}
+  - bpo:P11195 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P11201 unmet={'capability': ['bpo:RemediationManagementCapability']}
+  - bpo:P11202 unmet={'capability': ['bpo:RemediationManagementCapability'], 'role': ['bpo:SubjectMatterExpertRole']}
+  - bpo:P11203 unmet={'capability': ['bpo:RemediationManagementCapability']}
+  - bpo:P11204 unmet={'capability': ['bpo:RemediationManagementCapability']}
+  - bpo:P11205 unmet={'capability': ['bpo:RemediationManagementCapability']}
+  - bpo:P11206 unmet={'capability': ['bpo:RemediationManagementCapability']}
+  - bpo:P11221 unmet={'capability': ['bpo:BusinessResiliencyCapability']}
+  - bpo:P11222 unmet={'capability': ['bpo:BusinessResiliencyCapability']}
+  - bpo:P11223 unmet={'capability': ['bpo:BusinessResiliencyCapability']}
+  - bpo:P11224 unmet={'capability': ['bpo:BusinessResiliencyCapability']}
+  - bpo:P11236 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P11238 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P11239 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P11241 unmet={'role': ['bpo:ProductManagerRole']}
+  - bpo:P11243 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeOrientationAndDeploymentCapability']}
+  - bpo:P11495 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P11496 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P11497 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P11687 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P11741 unmet={'capability': ['bpo:ProductDataManagementCapability']}
+  - bpo:P11750 unmet={'capability': ['bpo:ProductDataManagementCapability']}
+  - bpo:P12132 unmet={'role': ['bpo:ServiceDeliveryPersonnelRole']}
+  - bpo:P12133 unmet={'role': ['bpo:ServiceDeliveryPersonnelRole']}
+  - bpo:P12669 unmet={'capability': ['bpo:WarrantyManagementCapability']}
+  - bpo:P12672 unmet={'capability': ['bpo:WarrantyManagementCapability']}
+  - bpo:P12677 unmet={'role': ['bpo:FieldServiceAgentRole']}
+  - bpo:P12722 unmet={'role': ['bpo:RegulatoryAuthorityRole']}
+  - bpo:P12771 unmet={'capability': ['bpo:IntellectualPropertyManagementCapability'], 'role': ['bpo:RegulatoryAuthorityRole']}
+  - bpo:P12870 unmet={'role': ['bpo:ExecutiveRole']}
+  - bpo:P12872 unmet={'role': ['bpo:AdvisorRole']}
+  - bpo:P12873 unmet={'role': ['bpo:AdvisorRole']}
+  - bpo:P12874 unmet={'role': ['bpo:GovernmentBodyRole']}
+  - bpo:P12875 unmet={'role': ['bpo:RegulatoryAuthorityRole']}
+  - bpo:P12876 unmet={'role': ['bpo:AuditorRole']}
+  - bpo:P12878 unmet={'role': ['bpo:QuasiGovernmentBodyRole']}
+  - bpo:P12879 unmet={'role': ['bpo:TradeOrIndustryGroupRole']}
+  - bpo:P12881 unmet={'role': ['bpo:TradeOrIndustryGroupRole']}
+  - bpo:P12974 unmet={'capability': ['bpo:TreasuryManagementCapability']}
+  - bpo:P13482 unmet={'capability': ['bpo:CustomerInquiryManagementCapability']}
+  - bpo:P14007 unmet={'capability': ['bpo:DefaultAccountManagementCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P14079 unmet={'capability': ['bpo:TreasuryManagementCapability']}
+  - bpo:P14094 unmet={'role': ['bpo:RegulatorRole']}
+  - bpo:P16379 unmet={'capability': ['bpo:BusinessProcessManagementCapability']}
+  - bpo:P16380 unmet={'role': ['bpo:BPMGovernanceLeaderRole']}
+  - bpo:P16382 unmet={'role': ['bpo:ProcessOwnerRole']}
+  - bpo:P16384 unmet={'capability': ['bpo:BusinessProcessManagementCapability']}
+  - bpo:P16387 unmet={'capability': ['bpo:BusinessProcessManagementCapability']}
+  - bpo:P16391 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P16392 unmet={'capability': ['bpo:BusinessProcessManagementCapability']}
+  - bpo:P16393 unmet={'role': ['bpo:ProcessOwnerRole']}
+  - bpo:P16397 unmet={'role': ['bpo:ProcessOwnerRole']}
+  - bpo:P16402 unmet={'capability': ['bpo:PortfolioManagementCapability', 'bpo:PortfolioProgramProjectManagementCapability']}
+  - bpo:P16403 unmet={'capability': ['bpo:PortfolioManagementCapability', 'bpo:PortfolioProgramProjectManagementCapability']}
+  - bpo:P16404 unmet={'capability': ['bpo:PortfolioManagementCapability', 'bpo:PortfolioProgramProjectManagementCapability'], 'role': ['bpo:StakeholderRole']}
+  - bpo:P16406 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProgramManagementCapability']}
+  - bpo:P16407 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProgramManagementCapability'], 'role': ['bpo:StakeholderRole']}
+  - bpo:P16408 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProgramManagementCapability']}
+  - bpo:P16409 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProgramManagementCapability']}
+  - bpo:P16411 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability']}
+  - bpo:P16413 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability']}
+  - bpo:P16414 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability']}
+  - bpo:P16417 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability'], 'role': ['bpo:StakeholderRole']}
+  - bpo:P16418 unmet={'capability': ['bpo:PortfolioProgramProjectManagementCapability', 'bpo:ProjectManagementCapability']}
+  - bpo:P16464 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16465 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16466 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16467 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16468 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16469 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P16471 unmet={'capability': ['bpo:BusinessResiliencyCapability']}
+  - bpo:P16500 unmet={'capability': ['bpo:ChannelManagementCapability']}
+  - bpo:P16501 unmet={'capability': ['bpo:ChannelManagementCapability']}
+  - bpo:P16573 unmet={'capability': ['bpo:ChannelManagementCapability']}
+  - bpo:P16574 unmet={'capability': ['bpo:ChannelManagementCapability']}
+  - bpo:P16575 unmet={'capability': ['bpo:ChannelManagementCapability']}
+  - bpo:P16826 unmet={'capability': ['bpo:IntellectualPropertyManagementCapability']}
+  - bpo:P16928 unmet={'capability': ['bpo:CustomerInquiryManagementCapability']}
+  - bpo:P16937 unmet={'capability': ['bpo:CustomerInquiryManagementCapability'], 'role': ['bpo:SalesAgentRole']}
+  - bpo:P16940 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P16944 unmet={'capability': ['bpo:EmployeeCommunicationCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P17045 unmet={'capability': ['bpo:WorkforcePlanningCapability']}
+  - bpo:P17046 unmet={'capability': ['bpo:WorkforcePlanningCapability']}
+  - bpo:P17050 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeOrientationAndDeploymentCapability']}
+  - bpo:P17051 unmet={'capability': ['bpo:EmployeeCareerDevelopmentCapability', 'bpo:EmployeeDevelopmentCapability'], 'role': ['bpo:EmployeeRole']}
+  - bpo:P17055 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P17059 unmet={'capability': ['bpo:ImportExportControlCapability', 'bpo:RestitutionManagementCapability']}
+  - bpo:P17468 unmet={'capability': ['bpo:ComplianceManagementCapability']}
+  - bpo:P17472 unmet={'capability': ['bpo:EnterpriseQualityManagementCapability']}
+  - bpo:P17482 unmet={'capability': ['bpo:EnterpriseQualityManagementCapability']}
+  - bpo:P17492 unmet={'capability': ['bpo:EnterpriseQualityManagementCapability']}
+  - bpo:P17498 unmet={'capability': ['bpo:EnterpriseQualityManagementCapability']}
+  - bpo:P17505 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P17507 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P17509 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P17684 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P18126 unmet={'role': ['bpo:ProductManagerRole']}
+  - bpo:P18641 unmet={'role': ['bpo:SalesPartnerRole']}
+  - bpo:P18916 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P18925 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P18926 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P18948 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P19072 unmet={'capability': ['bpo:CustomerComplaintManagementCapability']}
+  - bpo:P19209 unmet={'capability': ['bpo:AssetConstructionCapability']}
+  - bpo:P19221 unmet={'role': ['bpo:RegulatoryAuthorityRole']}
+  - bpo:P19224 unmet={'capability': ['bpo:AssetConstructionCapability']}
+  - bpo:P19229 unmet={'capability': ['bpo:AssetConstructionCapability']}
+  - bpo:P19239 unmet={'capability': ['bpo:AssetMaintenanceCapability']}
+  - bpo:P19245 unmet={'capability': ['bpo:AssetMaintenanceCapability']}
+  - bpo:P19253 unmet={'capability': ['bpo:AssetMaintenanceCapability']}
+  - bpo:P19258 unmet={'capability': ['bpo:AssetDispositionCapability']}
+  - bpo:P19586 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P19587 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P19595 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P19596 unmet={'capability': ['bpo:RegulatoryComplianceManagementCapability']}
+  - bpo:P19959 unmet={'capability': ['bpo:CustomerExperienceManagementCapability']}
+  - bpo:P19960 unmet={'capability': ['bpo:CustomerExperienceManagementCapability']}
+  - bpo:P19964 unmet={'capability': ['bpo:CustomerExperienceManagementCapability']}
+  - bpo:P19971 unmet={'capability': ['bpo:CustomerExperienceManagementCapability']}
+  - bpo:P19977 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P20009 unmet={'capability': ['bpo:PricingCapability']}
+  - bpo:P20021 unmet={'role': ['bpo:SalesPartnerRole']}
+  - bpo:P20026 unmet={'capability': ['bpo:ServiceDeliveryGovernanceCapability']}
+  - bpo:P20027 unmet={'capability': ['bpo:ServiceDeliveryDevelopmentManagementCapability', 'bpo:ServiceDeliveryGovernanceCapability', 'bpo:ServiceDeliveryPerformanceManagementCapability']}
+  - bpo:P20031 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20041 unmet={'capability': ['bpo:DemandForecastingCapability']}
+  - bpo:P20043 unmet={'capability': ['bpo:DemandForecastingCapability']}
+  - bpo:P20044 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20045 unmet={'capability': ['bpo:DemandForecastingCapability']}
+  - bpo:P20050 unmet={'capability': ['bpo:ResourceManagementCapability']}
+  - bpo:P20054 unmet={'role': ['bpo:DeliveryPartnerRole', 'bpo:SupplierRole']}
+  - bpo:P20056 unmet={'capability': ['bpo:ResourceManagementCapability']}
+  - bpo:P20057 unmet={'role': ['bpo:ServiceDeliveryPersonnelRole']}
+  - bpo:P20058 unmet={'capability': ['bpo:ServiceDeliveryCapability']}
+  - bpo:P20059 unmet={'capability': ['bpo:ServiceDeliveryCapability']}
+  - bpo:P20060 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20065 unmet={'role': ['bpo:ServiceDeliveryPersonnelRole']}
+  - bpo:P20069 unmet={'capability': ['bpo:ServiceDeliveryCapability']}
+  - bpo:P20076 unmet={'capability': ['bpo:ServiceDeliveryCapability'], 'role': ['bpo:CustomerRole']}
+  - bpo:P20077 unmet={'capability': ['bpo:ServiceDeliveryCapability']}
+  - bpo:P20081 unmet={'role': ['bpo:ServiceDeliveryPersonnelRole']}
+  - bpo:P20091 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20103 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20108 unmet={'role': ['bpo:SupplierRole']}
+  - bpo:P20110 unmet={'capability': ['bpo:RecallManagementCapability']}
+  - bpo:P20117 unmet={'role': ['bpo:CustomerRole']}
+  - bpo:P20124 unmet={'capability': ['bpo:ApplicantDataManagementCapability']}
+  - bpo:P20125 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P20126 unmet={'role': ['bpo:CertificationAuthorityRole']}
+  - bpo:P20139 unmet={'capability': ['bpo:AssetConstructionCapability']}
+  - bpo:P20145 unmet={'role': ['bpo:ChangeChampionRole']}
+  - bpo:P20595 unmet={'capability': ['bpo:CustomerServiceManagementCapability']}
+  - bpo:P20604 unmet={'capability': ['bpo:FinancialPolicyManagementCapability']}
+  - bpo:P20608 unmet={'capability': ['bpo:ITCustomerRelationshipManagementCapability']}
+  - bpo:P20610 unmet={'role': ['bpo:ITCustomerRole']}
+  - bpo:P20632 unmet={'capability': ['bpo:ITServiceManagementCapability']}
+  - bpo:P20638 unmet={'role': ['bpo:ITCustomerRole']}
+  - bpo:P20655 unmet={'capability': ['bpo:ITStrategicIntelligenceCapability']}
+  - bpo:P20657 unmet={'capability': ['bpo:ITStrategicAlignmentMaintenanceCapability']}
+  - bpo:P20690 unmet={'capability': ['bpo:ITInterdependencyManagementCapability']}
+  - bpo:P20706 unmet={'capability': ['bpo:ITRiskManagementCapability']}
+  - bpo:P20721 unmet={'capability': ['bpo:ITRiskManagementCapability']}
+  - bpo:P20753 unmet={'role': ['bpo:ITServiceProviderRole']}
+  - bpo:P20755 unmet={'role': ['bpo:ITServiceProviderRole']}
+  - bpo:P20756 unmet={'role': ['bpo:ITUserRole']}
+  - bpo:P20759 unmet={'role': ['bpo:ITUserRole']}
+  - bpo:P20766 unmet={'capability': ['bpo:InformationManagementCapability']}
+  - bpo:P20770 unmet={'capability': ['bpo:InformationManagementCapability']}
+  - bpo:P20776 unmet={'capability': ['bpo:InformationManagementCapability']}
+  - bpo:P20779 unmet={'capability': ['bpo:InformationManagementCapability']}
+  - bpo:P20782 unmet={'capability': ['bpo:InternalAuditManagementCapability']}
+  - bpo:P20785 unmet={'capability': ['bpo:DevelopAndManageServicesSolutionsCapability']}
+  - bpo:P20808 unmet={'capability': ['bpo:DevelopAndManageServicesSolutionsCapability']}
+  - bpo:P20817 unmet={'capability': ['bpo:DevelopAndManageServicesSolutionsCapability']}
+  - bpo:P20857 unmet={'capability': ['bpo:ITRollBackManagementCapability']}
+  - bpo:P20902 unmet={'role': ['bpo:ITServiceProviderRole']}
+  - bpo:P20921 unmet={'capability': ['bpo:ITSupportCapability']}
+  - bpo:P20923 unmet={'capability': ['bpo:ITSupportCapability']}
+  - bpo:P20936 unmet={'capability': ['bpo:LogisticsManagementCapability']}
+  - bpo:P20955 unmet={'capability': ['bpo:BusinessModelGovernanceCapability']}
+  - bpo:P20958 unmet={'capability': ['bpo:WorkforcePlanningCapability']}
+  - bpo:P20960 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P20961 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P20962 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P20963 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P20964 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P20965 unmet={'capability': ['bpo:KnowledgeManagementCapability']}
+  - bpo:P20969 unmet={'capability': ['bpo:KnowledgeManagementCapability']}
+  - bpo:P20970 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P21434 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeePerformanceManagementCapability']}
+  - bpo:P21436 unmet={'capability': ['bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeTrainingCapability']}
+  - bpo:P21437 unmet={'capability': ['bpo:EmployeeRelationsCapability']}
+  - bpo:P21438 unmet={'capability': ['bpo:CompensationAndBenefitsCapability']}
+  - bpo:P21439 unmet={'capability': ['bpo:CompensationAndBenefitsCapability']}
+  - bpo:P21440 unmet={'role': ['bpo:EmployeeRole']}
+  - bpo:P21441 unmet={'capability': ['bpo:WorkforceAnalyticsCapability']}
+  - bpo:P21442 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P21447 unmet={'capability': ['bpo:WorkforceAnalyticsCapability']}
+  - bpo:P21450 unmet={'role': ['bpo:StakeholderRole']}
+  - bpo:P21453 unmet={'capability': ['bpo:BusinessProcessManagementCapability']}
+  - bpo:P21455 unmet={'role': ['bpo:ProgramManagerRole', 'bpo:StakeholderRole']}
+  - bpo:P21457 unmet={'capability': ['bpo:ChangeManagementCapability']}
+  - bpo:P21459 unmet={'capability': ['bpo:AnalyticsCapability'], 'role': ['bpo:StakeholderRole']}
+  - bpo:P21460 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P21461 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P21462 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P21463 unmet={'capability': ['bpo:AnalyticsCapability'], 'role': ['bpo:StakeholderRole']}
+  - bpo:P21464 unmet={'capability': ['bpo:AnalyticsCapability']}
+  - bpo:P21574 unmet={'capability': ['bpo:InternalControlCapability']}
+  - bpo:P21579 unmet={'capability': ['bpo:AssetDispositionCapability']}
+  - bpo:P21581 unmet={'capability': ['bpo:AssetDispositionCapability']}
+  - bpo:P21582 unmet={'capability': ['bpo:AssetDispositionCapability']}
+  - bpo:P21584 unmet={'capability': ['bpo:BenchmarkingCapability']}
+  - bpo:P21587 unmet={'capability': ['bpo:EHSManagementCapability']}
+  - bpo:P21589 unmet={'capability': ['bpo:SustainabilityManagementCapability']}
+  - bpo:P21598 unmet={'capability': ['bpo:SustainabilityManagementCapability']}
+  - bpo:P21599 unmet={'role': ['bpo:StakeholderRole']}
+
+Fleet gaps (no agent bears): {'capability': ['bpo:AnalystRelationsManagementCapability', 'bpo:AnalyticsCapability', 'bpo:ApplicantDataManagementCapability', 'bpo:ArchitectureCapability', 'bpo:AssetConstructionCapability', 'bpo:AssetDispositionCapability', 'bpo:AssetMaintenanceCapability', 'bpo:BenchmarkingCapability', 'bpo:BusinessModelGovernanceCapability', 'bpo:BusinessProcessManagementCapability', 'bpo:BusinessResiliencyCapability', 'bpo:ChangeManagementCapability', 'bpo:ChannelManagementCapability', 'bpo:CodeImplementationCapability', 'bpo:CompensationAndBenefitsCapability', 'bpo:ComplianceManagementCapability', 'bpo:CustomerComplaintManagementCapability', 'bpo:CustomerExperienceManagementCapability', 'bpo:CustomerInquiryManagementCapability', 'bpo:CustomerServiceManagementCapability', 'bpo:CustomerServiceWorkforceManagementCapability', 'bpo:DefaultAccountManagementCapability', 'bpo:DemandForecastingCapability', 'bpo:DevelopAndManageServicesSolutionsCapability', 'bpo:EHSManagementCapability', 'bpo:EmployeeCareerDevelopmentCapability', 'bpo:EmployeeCommunicationCapability', 'bpo:EmployeeDevelopmentCapability', 'bpo:EmployeeOrientationAndDeploymentCapability', 'bpo:EmployeePerformanceManagementCapability', 'bpo:EmployeeReferralProgramCapability', 'bpo:EmployeeRelationsCapability', 'bpo:EmployeeTrainingCapability', 'bpo:EnterpriseQualityManagementCapability', 'bpo:EvaluationCapability', 'bpo:FacilityManagementCapability', 'bpo:FinancialPolicyManagementCapability', 'bpo:FixedAssetProjectAccountingCapability', 'bpo:FleetManagementCapability', 'bpo:HumanResourcesInformationSystemCapability', 'bpo:ITCustomerRelationshipManagementCapability', 'bpo:ITInterdependencyManagementCapability', 'bpo:ITRiskManagementCapability', 'bpo:ITRollBackManagementCapability', 'bpo:ITServiceManagementCapability', 'bpo:ITStrategicAlignmentMaintenanceCapability', 'bpo:ITStrategicIntelligenceCapability', 'bpo:ITSupportCapability', 'bpo:ImportExportControlCapability', 'bpo:InformationManagementCapability', 'bpo:IntellectualPropertyManagementCapability', 'bpo:InternalAuditManagementCapability', 'bpo:InternalControlCapability', 'bpo:InternationalFundsManagementCapability', 'bpo:InvestorRelationsCapability', 'bpo:KnowledgeManagementCapability', 'bpo:LaborRelationsCapability', 'bpo:LegalAndComplianceCapability', 'bpo:LenderRelationsManagementCapability', 'bpo:LogisticsManagementCapability', 'bpo:MarketIntelligenceCapability', 'bpo:PartnerManagementCapability', 'bpo:PortfolioManagementCapability', 'bpo:PortfolioProgramProjectManagementCapability', 'bpo:PricingCapability', 'bpo:ProcurementCapability', 'bpo:ProductDataManagementCapability', 'bpo:ProductServiceLifecycleManagementCapability', 'bpo:ProductServicePortfolioManagementCapability', 'bpo:ProductionCapability', 'bpo:ProgramManagementCapability', 'bpo:ProjectManagementCapability', 'bpo:PublicRelationsCapability', 'bpo:RawMaterialInventoryManagementCapability', 'bpo:RecallManagementCapability', 'bpo:RecruitmentChannelManagementCapability', 'bpo:RecruitmentVendorManagementCapability', 'bpo:RegulatoryComplianceManagementCapability', 'bpo:RemediationManagementCapability', 'bpo:ResourceManagementCapability', 'bpo:RestitutionManagementCapability', 'bpo:ServiceDeliveryCapability', 'bpo:ServiceDeliveryDevelopmentManagementCapability', 'bpo:ServiceDeliveryGovernanceCapability', 'bpo:ServiceDeliveryPerformanceManagementCapability', 'bpo:StakeholderRelationshipManagementCapability', 'bpo:SupplyChainPlanningCapability', 'bpo:SustainabilityManagementCapability', 'bpo:TalentAcquisitionCapability', 'bpo:TaxManagementCapability', 'bpo:TimeAndAttendanceManagementCapability', 'bpo:TreasuryManagementCapability', 'bpo:WarrantyManagementCapability', 'bpo:WorkforceAnalyticsCapability', 'bpo:WorkforceDeploymentCapability', 'bpo:WorkforcePlanningCapability'], 'role': ['bpo:AdvisorRole', 'bpo:ArchitectRole', 'bpo:AuditorRole', 'bpo:BPMGovernanceLeaderRole', 'bpo:BankingPartnerRole', 'bpo:CarrierRole', 'bpo:CertificationAuthorityRole', 'bpo:ChangeChampionRole', 'bpo:ChangeManagerRole', 'bpo:CommunityRole', 'bpo:ComplianceOfficerRole', 'bpo:ConstructionContractorRole', 'bpo:CustomerRole', 'bpo:DeliveryPartnerRole', 'bpo:DeveloperRole', 'bpo:EmployeeRole', 'bpo:EvaluatorRole', 'bpo:ExecutiveRole', 'bpo:FacilityManagerRole', 'bpo:FieldServiceAgentRole', 'bpo:FinancialAnalystRole', 'bpo:GovernmentBodyRole', 'bpo:HiringManagerRole', 'bpo:ITCustomerRole', 'bpo:ITServiceProviderRole', 'bpo:ITUserRole', 'bpo:JobCandidateRole', 'bpo:JournalistRole', 'bpo:LenderRole', 'bpo:MediaOutletRole', 'bpo:OutsideCounselRole', 'bpo:ProcessOwnerRole', 'bpo:ProductManagerRole', 'bpo:ProgramManagerRole', 'bpo:QuasiGovernmentBodyRole', 'bpo:RegulatorRole', 'bpo:RegulatoryAuthorityRole', 'bpo:SalesAgentRole', 'bpo:SalesPartnerRole', 'bpo:SeniorManagementRole', 'bpo:ServiceDeliveryPersonnelRole', 'bpo:ShareholderRole', 'bpo:StakeholderRole', 'bpo:SubjectMatterExpertRole', 'bpo:SubsidiaryRole', 'bpo:SupplierRole', 'bpo:SupplyChainPartnerRole', 'bpo:TradeOrIndustryGroupRole', 'bpo:TraineeRole']}
+
+report -> ontology\reports\matchability.json
+
+===== consistency_audit (exit 0)
+======================================================================
+1. HEADER / VERSION / IMPORTS / STALE-PROSE DRIFT
+======================================================================
+apqc_1_0.ttl         ver=0.4.1  
+apqc_2_0.ttl         ver=0.4.1  
+apqc_3_0.ttl         ver=0.4.1    <<<
+      L941:reused from apqc-ext
+      L952:reused from apqc-ext
+      L964:reused from apqc-ext
+      L1470:reused from apqc-ext
+apqc_4_0.ttl         ver=0.4.1  
+apqc_5_0.ttl         ver=0.4.1  
+apqc_6_0.ttl         ver=0.4.1  
+apqc_7_0.ttl         ver=0.4.1  
+apqc_8_0.ttl         ver=0.4.1  
+apqc_9_0.ttl         ver=0.4.1    <<<
+      L1150:reused from apqc-ext
+      L1249:reused from apqc-ext
+apqc_10_0.ttl        ver=0.4.1  
+apqc_11_0.ttl        ver=0.4.1  
+apqc_12_0.ttl        ver=0.4.1  
+apqc_13_0.ttl        ver=0.4.1    <<<
+      L1443:reused from apqc-ext
+      L3016:reused from apqc-ext
+      L3241:reused from apqc-ext
+apqc-ext.ttl         ver=0.4.1    <<<
+      L16:owl:imports
+      L29:owl:imports
+
+======================================================================
+2. GENUS (bpo:ActOf*) ANCHOR CONSISTENCY
+======================================================================
+bpo:ActOfAccounting          in  2 files
+bpo:ActOfAcquisition         in 12 files
+bpo:ActOfAdministration      in  2 files
+bpo:ActOfAdvocacy            in  2 files
+bpo:ActOfAnalysis            in 13 files
+bpo:ActOfCardAdministration  in  2 files
+bpo:ActOfCommunication       in  2 files
+bpo:ActOfDataManagement      in  3 files
+bpo:ActOfDeployment          in  2 files
+bpo:ActOfDesign              in  3 files
+bpo:ActOfDevelopment         in  3 files
+bpo:ActOfDisposition         in  2 files
+bpo:ActOfFinancialTransaction in  2 files
+bpo:ActOfForecasting         in  7 files
+bpo:ActOfFormulation         in 14 files
+bpo:ActOfIdentification      in 13 files
+bpo:ActOfImplementation      in  2 files
+bpo:ActOfImprovement         in  2 files
+bpo:ActOfInvestigation       in  2 files
+bpo:ActOfMonitoring          in 11 files
+bpo:ActOfNegotiation         in  4 files
+bpo:ActOfOrganizationalEstablishment in  2 files
+bpo:ActOfPayment             in  2 files
+bpo:ActOfProcessControl      in  2 files
+bpo:ActOfProduction          in  2 files
+bpo:ActOfRelationshipManagement in  2 files
+bpo:ActOfRemuneration        in  2 files
+bpo:ActOfReporting           in  5 files
+bpo:ActOfResolution          in  2 files
+bpo:ActOfScheduling          in  4 files
+bpo:ActOfSelection           in 13 files
+bpo:ActOfSelling             in  2 files
+bpo:ActOfServiceProvision    in  4 files
+bpo:ActOfTransportation      in  2 files
+bpo:ActOfVerification        in  4 files
+
+======================================================================
+3. SHARED-CLASS (>=2 files) ANCHOR CONSISTENCY
+======================================================================
+bpo:BusinessStrategy                <<< DIVERGENT across 3 files
+      apqc_10_0.ttl        ['cco:ont00000965']
+      apqc_1_0.ttl         ['cco:ont00000965', 'cco:ont00000974']
+      apqc_2_0.ttl         ['cco:ont00000965']
+bpo:ProductionEquipment             <<< DIVERGENT across 2 files
+      apqc_2_0.ttl         ['cco:ont00000995']
+      apqc_4_0.ttl         ['cco:ont00000995', 'obo:BFO_0000040']
+bpo:RawMaterial                     <<< DIVERGENT across 2 files
+      apqc_2_0.ttl         ['obo:BFO_0000040']
+      apqc_4_0.ttl         ['cco:ont00000457', 'obo:BFO_0000040']
+bpo:ReturnedProduct                 <<< DIVERGENT across 2 files
+      apqc_4_0.ttl         ['cco:ont00000995', 'obo:BFO_0000040']
+      apqc_6_0.ttl         ['cco:ont00000995']
+
+  shared classes in >=2 files: 61; divergent: 4
+
+======================================================================
+4. CO-PARENT CHECK (out-of-allowlist anchors needing a co-parent)
+======================================================================
+  bpo:FinancialForecast in apqc_9_0.ttl: ['cco:ont00000626'] -- Predictive 626 missing 853 co-parent
+  bpo:P10773 in apqc_9_0.ttl: ['cco:ont00000371'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10796 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10896 in apqc_9_0.ttl: ['cco:ont00000371'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10907 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10923 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10924 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10925 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P10926 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P20604 in apqc_9_0.ttl: ['cco:ont00000402'] -- process anchor outside S2, missing 228 co-parent
+  bpo:P20916 in apqc_8_0.ttl: ['cco:ont00000950'] -- process anchor outside S2, missing 228 co-parent
+
+  co-parent issues: 11

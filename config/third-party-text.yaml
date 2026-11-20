@@ -1,0 +1,51 @@
+# Third-party text inside the ontology (T9, T23).
+#
+# A module that quotes another work -- a framework's descriptions, a
+# standard's definitions -- is still one file under this project's
+# licence, so the per-file licensing check cannot see the quotation. List
+# here each annotation property that carries such text, and the checks
+# hold every module using it to the declaration:
+#
+#   property     the annotation property's IRI
+#   source       the work, as the module header names it in dcterms:source
+#   release      its release, named in that same dcterms:source value
+#   licence      what you have been told it is under: an SPDX identifier,
+#                or "unknown"
+#   attribution  the attribution you have been told is required, carried
+#                verbatim in the module header's dcterms:rights
+#
+# The values are the project's, from whoever advises it on licensing.
+# The template ships none and judges none of them: these checks say the
+# declaration is present, not that redistribution is permitted
+# (tools/licensing/third_party.py).
+#
+# Example, not a recommendation:
+#
+#   - property: https://example.org/vocabulary#sourceText
+#     source: Example Framework
+#     release: v1.0
+#     licence: unknown
+#     attribution: Contains text from Example Framework v1.0.
+
+format_version: 1
+
+# BPO's values (WP6 B2; BPO ADR-003). Declared for S2u and S2 on the BPO
+# architect's decision of 2026-11-04, a declared change under A9 section 5.
+# The attribution is APQC's notice, verbatim (BPO config.PCF_NOTICE).
+
+declarations:
+  - property: https://fandaws.com/ontology/bpot#apqcSourceText   # the verbatim element descriptions
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.
+  - property: https://fandaws.com/ontology/bpot#pcfID   # the element IDs
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.
+  - property: https://fandaws.com/ontology/bpot#hierarchyID   # the hierarchy IDs
+    source: APQC Process Classification Framework
+    release: v7.4
+    licence: LicenseRef-APQC-PCF
+    attribution: ©2024 APQC. ALL RIGHTS RESERVED. This Process Classification Framework® (“PCF”) is the copyrighted intellectual property of APQC. APQC encourages the wide distribution, discussion, and use of the PCF for classifying and defining organizational processes. Accordingly, APQC hereby grants you a perpetual, worldwide, royalty-free license to use, copy, publish, modify, and create derivative works of the PCF, provided that all copies of the PCF and any derivative works contain a copy of this notice.

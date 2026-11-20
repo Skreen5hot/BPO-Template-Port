@@ -1,0 +1,33 @@
+{
+  "consistent": true,
+  "examples": [],
+  "examples_consistent": null,
+  "modules": [
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/bpot.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_1.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_10.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_11.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_12.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_13.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_2.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_3.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_4.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_5.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_6.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_7.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_8.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/sections/pcf_9.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/catalog.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/wiring.ttl",
+    "C:/Users/aaron/OneDrive/Documents/BPO-Template-Port/ontology/vocabulary.ttl"
+  ],
+  "ok": true,
+  "reasoner": "ELK",
+  "robot": "1.9.11",
+  "unsatisfiable_authored": [],
+  "unsatisfiable_upstream": [],
+  "upstream_files": [
+    "bfo.ttl",
+    "cco.ttl"
+  ]
+}

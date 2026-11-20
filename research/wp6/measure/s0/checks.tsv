@@ -1,0 +1,23 @@
+check	exit	seconds	last_line
+project	0	2.1	this checkout  Skreen5hot/BPO-Template-Port  (origin https://github.com/Skreen5hot/BPO-Template-Port.git)
+layout	0	1.3	never tracked: ['reference.third-party']
+disposition_all	0	4.5	third-party-redistributed  CC-BY-4.0         3
+vendor_upstream	0	31.8	extracts present, digests match, every reference resolves
+validate	1	108.9	... validation.wellformedness: the fixtures
+validate_gate	1	0.0	4322 new, 0 stale, 0 structural problem(s)
+iri_lint	1	20.6	}
+reason	0	58.0	consistent; nothing unsatisfiable
+competency	0	20.8	no competency questions yet
+mappings	0	18.3	1 mapping set(s), 5051 mapping(s), 0 finding(s)
+profile_shapes	0	1.9	shapes/annotation_profile_shapes.ttl is current
+vocabulary	0	16.5	ontology/vocabulary.ttl is current
+protege	0	14.9	protege is current
+normalize	0	0.6	no module declares format: canonical
+disposition	0	2.1	third-party-redistributed  CC-BY-4.0         3
+third_party	0	0.5	PENDING LEGAL (EXAMPLE-LEGAL-2026-10-28-t9-third-party-text): proposed wording, not yet Legal's. This report records what the project declares about third-party text and checks that the declared sourc
+findings	0	0.5	config/findings-register.yaml: 0 entries (validate 0, iri_lint 0)
+communications	0	1.1	open: none
+template_status	0	2.1	every owned file is as the manifest records
+site_build	0	87.7	tree digest 9a14f100723bcc2171b06047f82dc970960de10ed0bad00af0858d905fd5b8b8
+site_check	0	5.7	9 page(s) checked: structure, origins, links, fragments, downloads, bundle, term index
+release	0	209.8	C:/Users/aaron/AppData/Local/Temp/tmpksjhqzcn/release/bpot-0.0.0/SHA256SUMS

@@ -11,7 +11,7 @@
 #
 # Common Core Ontologies v2.0. Copyright (c) 2017 CUBRC, Inc., licensed BSD-3-Clause.
 #
-# This is not Common Core Ontologies. It carries 75 terms described in full and 1
+# This is not Common Core Ontologies. It carries 74 terms described in full and 1
 # declared as stubs, selected because this repository names them or
 # because a selected term's ancestry passes through them.
 #
@@ -53,12 +53,6 @@ cco:ont00000065 rdf:type owl:Class .
 cco:ont00000065 rdfs:label "Act of Location Change"@en .
 cco:ont00000065 rdfs:subClassOf cco:ont00000357 .
 cco:ont00000065 skos:definition "An Act of Motion in which the location of some Object is changed by some Agent."@en .
-
-cco:ont00000117 cco:ont00001760 "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
-cco:ont00000117 rdf:type owl:Class .
-cco:ont00000117 rdfs:label "Information Processing Artifact"@en .
-cco:ont00000117 rdfs:subClassOf cco:ont00000995 .
-cco:ont00000117 skos:definition "A Material Artifact that is designed to use algorithms to transform some Information Content Entity into another Information Content Entity."@en .
 
 cco:ont00000151 cco:ont00001754 "http://www.merriam-webster.com/dictionary/report" .
 cco:ont00000151 cco:ont00001760 "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
@@ -229,12 +223,6 @@ cco:ont00000588 rdfs:label "Act of Mass Media Communication"@en .
 cco:ont00000588 rdfs:subClassOf cco:ont00000402 .
 cco:ont00000588 skos:definition "An Act of Communication intended to reach a large audience using a medium such as the internet, television, radio, newspaper, and magazine."@en .
 
-cco:ont00000595 cco:ont00001760 "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
-cco:ont00000595 rdf:type owl:Class .
-cco:ont00000595 rdfs:label "Act of Cargo Transportation"@en .
-cco:ont00000595 rdfs:subClassOf cco:ont00000065 .
-cco:ont00000595 skos:definition "An Act of Location Change involving the movement of manufactured goods through some Transportation Agent."@en .
-
 cco:ont00000626 cco:ont00001760 "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 cco:ont00000626 rdf:type owl:Class .
 cco:ont00000626 rdfs:comment "Since predictions are inherently about not-yet-existant things, the Modal Relation Ontology term 'describes' (i.e. mro:describes) should be used (instead of the standard cco:describes) to relate instances of Predictive Information Content Entity to the entities they are about."@en .
@@ -297,6 +285,13 @@ cco:ont00000853 rdfs:label "Descriptive Information Content Entity"@en .
 cco:ont00000853 rdfs:subClassOf cco:ont00000958 .
 cco:ont00000853 skos:altLabel "Descriptive ICE"@en .
 cco:ont00000853 skos:definition "An Information Content Entity that consists of a set of propositions that describe some Entity."@en .
+
+cco:ont00000870 cco:ont00001760 "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+cco:ont00000870 rdf:type owl:Class .
+cco:ont00000870 rdfs:label "Infrastructure System"@en .
+cco:ont00000870 rdfs:subClassOf obo:BFO_0000040 .
+cco:ont00000870 skos:altLabel "Infrastructure"@en .
+cco:ont00000870 skos:definition "A Material Entity that is composed of elements bearing Infrastructure Roles and is by itself sufficient to provide a planned service or benefit to some organization that maintains its elements."@en .
 
 cco:ont00000884 cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Loan&oldid=1063513958"^^xsd:anyURI .
 cco:ont00000884 cco:ont00001760 "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .

@@ -1,0 +1,13 @@
+===== corpus_check (ELK, Gate F) (exit 1)
+Namespace guard: no retired example.org IRIs or ex: prefix (ADR-002)
+[notice]  PASS  15 PCF-bearing modules state APQC's notice (NOTICE.md)
+Merging 13 slices + ext + catalog + capability layer (roles+delivery+wiring) + CCO; reasoning with ELK...
+EXIT 0  (0 = consistent, no unsatisfiable classes)
+
+Gate F -- referential integrity + D7 scheme (vendored RefIntegrity linter; needs node)...
+[F RefIntegrity]  FAIL  deviation from baseline:
+    capability-as-process    30   (baseline 39)
+    dangling_ref              0   (baseline 0)
+    pcf-without-P-iri         0   (baseline 0)
+    readable_label            0   (baseline 0)
+  * capability-as-process: 30 (expected 39) -- a finding was resolved; fix it, or update BASELINE in this script deliberately.
