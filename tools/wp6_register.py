@@ -34,18 +34,23 @@ import findings  # noqa: E402
 TABLE = ROOT / "research" / "wp6" / "classification.md"
 APPROVED = "approved by the BPO architect, %s"
 #: Classes approved later than the table of 2026-10-30 (A6: dated changes).
-DATES = {"K18": "2026-10-31", "K19": "2026-10-31"}
+DATES = {"K18": "2026-10-31", "K19": "2026-10-31",
+         "K20": "2026-11-05", "K21": "2026-11-05"}
 UPSTREAM = {"K13": "CCO https://www.commoncoreontologies.org/ont00001180"}
 
 
 def classes() -> dict:
-    """Class -> (classification, owner, reason), from the approved table."""
+    """Class -> (classification, owner, reason), from the approved tables:
+    the 2026-10-30 table (S0, S1: 8 columns) and the 2026-11-04 one, which
+    adds S2u and S2 (9 columns). A class's first row wins."""
     out = {}
     for line in TABLE.read_text(encoding="utf-8").splitlines():
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) == 8 and re.fullmatch(r"K[0-9]{2}", cells[0]):
-            verdict = cells[4].replace("**", "")
-            out[cells[0]] = (verdict, cells[5], cells[6])
+        if (len(cells) in (8, 9) and re.fullmatch(r"K[0-9]{2}", cells[0])
+                and cells[0] not in out):
+            verdict, owner, reason = cells[6:9] if len(cells) == 9 \
+                else cells[4:7]
+            out[cells[0]] = (verdict.replace("**", ""), owner, reason)
     return out
 
 
